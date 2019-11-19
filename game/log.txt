@@ -1,4 +1,4 @@
-Tue Nov 19 12:01:38 2019
+Tue Nov 19 12:23:25 2019
 Linux-4.9.0-7-amd64-x86_64-with-debian-9.9
 Ren'Py 7.3.2.320
  
@@ -7,12 +7,12 @@ Bootstrap to the start of init.init took 0.13s
 Early init took 0.00s
 Loader init took 0.02s
 Loading error handling took 0.04s
-Loading script took 0.19s
+Loading script took 0.18s
 Loading save slot metadata. took 0.00s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
 Running init code took 0.16s
-Loading analysis data took 0.10s
+Loading analysis data took 0.09s
 Analyze and compile ATL took 0.01s
 Index archives took 0.00s
 Dump and make backups. took 0.00s
@@ -22,17 +22,17 @@ Initial gc. took 0.04s
 DPI scale factor: 1.000000
 Creating interface object took 0.11s
 Cleaning stores took 0.00s
-Init translation took 0.13s
+Init translation took 0.12s
 Build styles took 0.02s
-Load screen analysis took 0.05s
+Load screen analysis took 0.06s
 Analyze screens took 0.00s
 Save screen analysis took 0.00s
-Prepare screens took 0.22s
+Prepare screens took 0.23s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.00s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.05s
+Interface start took 0.06s
 
 primary display bounds: (0, 0, 1280, 1024)
 swap interval: 1 frames
@@ -278,11 +278,11 @@ Texture testing:
 - 2048px textures work.
 FBO Maximum Texture Size: 8192
 Root FBO is: 0
-Total time until interface ready: 1.59754800797s
+Total time until interface ready: 1.67092299461s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.016244 seconds.
-- Frame drawn at 0.031626 seconds.
-- Frame drawn at 0.039175 seconds.
-- Frame drawn at 0.053418 seconds.
-- 0.053418 seconds to render 5 frames.
+- Frame drawn at 0.012788 seconds.
+- Frame drawn at 0.022232 seconds.
+- Frame drawn at 0.049958 seconds.
+- Frame drawn at 0.065721 seconds.
+- 0.065721 seconds to render 5 frames.

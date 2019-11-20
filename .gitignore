@@ -1,5 +1,6 @@
 /log.txt
 /game/log.txt
 /game/saves/*
+/game/cache/*
 
 *.rpyc

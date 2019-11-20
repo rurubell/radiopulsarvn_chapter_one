@@ -18,7 +18,7 @@ image Kenji_Home_Kitchen = "./images/bg/Kenji_Home_Kitchen/Kenji_Home_Kitchen.jp
 
 label start:
     
-    show midori_00 with dissolve
+    show Sea_Midori_Scene with dissolve
     
     "Перед мною стояла зеленоволосая девушка в купальнике."
     "Кажется, она радовалась чему-то. Улыбалась. Неужели мне улыбалась?"
@@ -48,7 +48,7 @@ label start:
     kenji "Я твой создатель!"
     
     show midori_02 with dissolve
-    hide midori_00 with dissolve
+    hide Sea_Midori_Scene
     
     "Я потёр глаза и чуть отодвинулся от монитора."
     "Да, Мидори вышла очень миленькой."

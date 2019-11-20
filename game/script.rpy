@@ -1,4 +1,4 @@
-﻿define kenji = Character( "Кендзи", color="#BBFF88" )
+define kenji = Character( "Кендзи", color="#BBFF88" )
 define aiko = Character( "Айко", color="#FF888B" )
 define kasumi = Character( "Касуми", color="#88C0FF" )
 define vatan = Character( "Ватанабе", color="#009900" )

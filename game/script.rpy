@@ -10,7 +10,7 @@ image midori_01 = "./images/cg/Green-Haired_Girl/01.png"
 image midori_02 = "./images/cg/Green-Haired_Girl/02.png"
 image midori_03 = "./images/cg/Green-Haired_Girl/03.png"
 image midori_04 = "./images/cg/Green-Haired_Girl/04.png"
-image midori_05 = "./images/cg/Green-Haired_Girl/05.png"
+image midori_05 = "./images/cg/Green-Haired_Girl/05.png" #1234
 
 image Kenji_Bedroom = "./images/bg/Kenji_Bedroom/kenji_bedroom.jpg"
 image Kenji_Home_Kitchen = "./images/bg/Kenji_Home_Kitchen/Kenji_Home_Kitchen.jpg"

@@ -1,0 +1,22 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "script.rpy", line 266, in script
+    ken "И что сегодня на завтрак?"
+Exception: Sayer 'ken' is not defined.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "script.rpy", line 266, in script
+    ken "И что сегодня на завтрак?"
+  File "/home/daniel/Documents/Sources/renpy/renpy-7.3.2-sdk/renpy/ast.py", line 676, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "/home/daniel/Documents/Sources/renpy/renpy-7.3.2-sdk/renpy/ast.py", line 574, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who.encode("utf-8"))
+Exception: Sayer 'ken' is not defined.
+
+Linux-4.9.0-7-amd64-x86_64-with-debian-9.9
+Ren'Py 7.3.2.320
+radiopulsarvn 1.0
+Sat Nov 23 00:28:23 2019

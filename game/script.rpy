@@ -277,16 +277,20 @@ label start:
     "Затем аккуратно расставила передо мной тарелки, ложку для бульона, палочки для еды. Все в лучшем виде."
     "Даже розовая таблеточка — ферменты для пищеварения, которые мне прописали много лет назад — не забыта."
     
-    image Kenji_1st_Day_Breakfast_Aiko = "./images/cg/Kenji_1st_Day_Breakfast/Aiko.png"
-    show Kenji_1st_Day_Breakfast_Aiko with moveinright
+    image Kenji_1st_Day_Breakfast_Normal_Aiko_Say = "./images/cg/Kenji_1st_Day_Breakfast/Normal_Aiko_Say.png"
+    show Kenji_1st_Day_Breakfast_Normal_Aiko_Say with moveinright
     
     aiko "Папа и мама звонили."
+    
+    image Kenji_1st_Day_Breakfast_Normal_Aiko_Silent = "./images/cg/Kenji_1st_Day_Breakfast/Normal_Aiko_Silent.png"
+    show Kenji_1st_Day_Breakfast_Normal_Aiko_Silent
+    hide Kenji_1st_Day_Breakfast_Normal_Aiko_Say
     
     "Меня от этой новости немного передёрнуло, отца я побаивался."
     "Но, последнюю неделю я вёл себя хорошо, не думаю что Айко могла про меня наябедничать."
     "Я ждал, от Айко что она скажет что-то еще, но она не стала продолжать. Значит — все нормально!"
     
-    hide Kenji_1st_Day_Breakfast_Aiko with moveoutright
+    hide Kenji_1st_Day_Breakfast_Normal_Aiko_Silent with moveoutright
     
     "Довольно странно то, что Айко так просто называла моего отца «папой»."
     "Дело в том, что Айко была мне не родной сестрой, сводной. Отец, шесть лет назад женился на вдове, мисс Макото."
@@ -332,17 +336,25 @@ label start:
     
     "Я вновь взял ложку для бульона, но вдруг, Айко остановила меня."
     
-    show Kenji_1st_Day_Breakfast_Aiko with moveinright
+    show Kenji_1st_Day_Breakfast_Normal_Aiko_Say with moveinright
     
     aiko "Ты не забыл?"
+    
+    show Kenji_1st_Day_Breakfast_Normal_Aiko_Silent
+    hide Kenji_1st_Day_Breakfast_Normal_Aiko_Say
+    
     kenji "Не забыл «что»?"
+    
+    show Kenji_1st_Day_Breakfast_Normal_Aiko_Say
+    hide Kenji_1st_Day_Breakfast_Normal_Aiko_Silent
+    
     aiko "Сегодня четверг, сегодня день выброса электронных приборов."
     aiko "Мама же просила освободить кладовку!"
     
-    hide Kenji_1st_Day_Breakfast_Aiko with moveoutright
+    hide Kenji_1st_Day_Breakfast_Normal_Aiko_Say with moveoutright
     
     "Черт! Я помнил про это вчера, но с утра конечно позабыл все на свете. Новость, скажу я вам — не из приятных!"
-    "Вытащить его на свет божий за день, ну никак не выйдет. Уйдёт несколько дней."
+    "Барахла в кладовке превеликое множество. Вытащить его на свет божий за день, ну никак не выйдет. Уйдёт несколько дней."
     "Конечно, никто никуда не спешит. Отец и тётя Асука приедут ещё очень не скоро. Если вообще, навестят нас до конца лета."
     "Можно и ещё один день профилонить. Отмахнуться от заботы, и поднажать в следующий четверг."
     "Но если вдруг позвонит отец. Не очень хочется слушать его нравоучения. А Айко меня сдаст наверняка."
@@ -350,26 +362,57 @@ label start:
     
     kenji "Айко! Ты ещё не налила себе порцию?"
     
-    show Kenji_1st_Day_Breakfast_Aiko with moveinright
+    show Kenji_1st_Day_Breakfast_Normal_Aiko_Say with moveinright
     
     aiko "Что? Нет. Но собираюсь."
+    
+    show Kenji_1st_Day_Breakfast_Normal_Aiko_Silent
+    hide Kenji_1st_Day_Breakfast_Normal_Aiko_Say
+    
     kenji "Возьми мою, я суп не буду!"
+    
+    image Kenji_1st_Day_Breakfast_Surprised_Aiko_Say = "./images/cg/Kenji_1st_Day_Breakfast/Surprised_Aiko_Say.png"
+    image Kenji_1st_Day_Breakfast_Surprised_Aiko_Silent = "./images/cg/Kenji_1st_Day_Breakfast/Surprised_Aiko_Silent.png"
+    show Kenji_1st_Day_Breakfast_Surprised_Aiko_Say
+    hide Kenji_1st_Day_Breakfast_Normal_Aiko_Silent
+    
     aiko "Это ещё почему?"
+    
+    show Kenji_1st_Day_Breakfast_Surprised_Aiko_Silent
+    hide Kenji_1st_Day_Breakfast_Surprised_Aiko_Say
     
     "Не то, чтобы я вдруг внезапно перестал быть голодным. Но мне требовалось оставить место в желудке для кое-чего другого."
     
     kenji "Мне салата хватит! А вместо супа, достань ка мне из холодильника баночку пива!"
     kenji "Там же ещё осталось?"
+    
+    image Kenji_1st_Day_Breakfast_Angry_Aiko_Say = "./images/cg/Kenji_1st_Day_Breakfast/Angry_Aiko_Say.png"
+    image Kenji_1st_Day_Breakfast_Angry_Aiko_Silent = "./images/cg/Kenji_1st_Day_Breakfast/Angry_Aiko_Silent.png"
+    
+    show Kenji_1st_Day_Breakfast_Angry_Aiko_Say
+    hide Kenji_1st_Day_Breakfast_Surprised_Aiko_Silent
+    
     aiko "Пиво! С утра?!"
+    
+    show Kenji_1st_Day_Breakfast_Angry_Aiko_Silent
+    hide Kenji_1st_Day_Breakfast_Angry_Aiko_Say
+    
     kenji "А что такого?"
+    
+    show Kenji_1st_Day_Breakfast_Angry_Aiko_Say
+    hide Kenji_1st_Day_Breakfast_Angry_Aiko_Silent
+    
     aiko "Нет, ничего! Суп ты теперь вообще есть не будешь? Может мне начать варить пиво для тебя, вместо него?"
+    
+    show Kenji_1st_Day_Breakfast_Angry_Aiko_Silent
+    hide Kenji_1st_Day_Breakfast_Angry_Aiko_Say
     
     "Голос Айко был крайне возмущён."
     
     kenji "Остынь Айко. Мне надо, понимаешь? Это как лекарство. Я же на улицу пойду. А там люди кругом."
     kenji "Это мне для храбрости!"
     
-    hide Kenji_1st_Day_Breakfast_Aiko with moveoutright
+    hide Kenji_1st_Day_Breakfast_Angry_Aiko_Silent with moveoutright
     
     "Конечно Айко не понять меня."
     "Но мне — тридцатилетнему затворнику проводящему дни и ночи напролёт в сети, известно, что не столько трудно таскать это барахло."

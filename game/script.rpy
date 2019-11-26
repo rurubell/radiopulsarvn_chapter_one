@@ -283,6 +283,14 @@ label start:
     aiko "Папа и мама звонили."
     
     image Kenji_1st_Day_Breakfast_Normal_Aiko_Silent = "./images/cg/Kenji_1st_Day_Breakfast/Normal_Aiko_Silent.png"
+    image Kenji_1st_Day_Breakfast_TV_Strange_Movie = "./images/cg/Kenji_1st_Day_Breakfast/TV_Strange_Movie.png"
+    image Kenji_1st_Day_Breakfast_Confused_Aiko = "./images/cg/Kenji_1st_Day_Breakfast/Confused_Aiko.png"
+    image Kenji_1st_Day_Breakfast_TV_News = "./images/cg/Kenji_1st_Day_Breakfast/TV_News.png"
+    image Kenji_1st_Day_Breakfast_Surprised_Aiko_Say = "./images/cg/Kenji_1st_Day_Breakfast/Surprised_Aiko_Say.png"
+    image Kenji_1st_Day_Breakfast_Surprised_Aiko_Silent = "./images/cg/Kenji_1st_Day_Breakfast/Surprised_Aiko_Silent.png"
+    image Kenji_1st_Day_Breakfast_Angry_Aiko_Say = "./images/cg/Kenji_1st_Day_Breakfast/Angry_Aiko_Say.png"
+    image Kenji_1st_Day_Breakfast_Angry_Aiko_Silent = "./images/cg/Kenji_1st_Day_Breakfast/Angry_Aiko_Silent.png"
+    
     show Kenji_1st_Day_Breakfast_Normal_Aiko_Silent
     hide Kenji_1st_Day_Breakfast_Normal_Aiko_Say
     
@@ -306,7 +314,6 @@ label start:
     
     "Я взялся за ложку для бульона, но тут моё внимание отвлёк работающий телевизор."
     
-    image Kenji_1st_Day_Breakfast_TV_Strange_Movie = "./images/cg/Kenji_1st_Day_Breakfast/TV_Strange_Movie.png"
     show Kenji_1st_Day_Breakfast_TV_Strange_Movie with moveinleft
     
     "На экране какой-то тип в школьной форме держал за плечи худенькую девушку"
@@ -314,7 +321,6 @@ label start:
     
     tv "С-сэмпай!"
     
-    image Kenji_1st_Day_Breakfast_Confused_Aiko = "./images/cg/Kenji_1st_Day_Breakfast/Confused_Aiko.png"
     show Kenji_1st_Day_Breakfast_Confused_Aiko with moveinright
     
     "Я перевёл взгляд на Айко. Что за дурацкий канал она врубила с утра пораньше?"
@@ -325,7 +331,6 @@ label start:
     "Хвала богам, пульт лежал на столе и через мгновение был у меня в руках."
     "Я перебирал каналы, пока не нашёл что-то наиболее нейтральное"
     
-    image Kenji_1st_Day_Breakfast_TV_News = "./images/cg/Kenji_1st_Day_Breakfast/TV_News.png"
     show Kenji_1st_Day_Breakfast_TV_News with dissolve
     hide Kenji_1st_Day_Breakfast_TV_Strange_Movie
     
@@ -371,8 +376,6 @@ label start:
     
     kenji "Возьми мою, я суп не буду!"
     
-    image Kenji_1st_Day_Breakfast_Surprised_Aiko_Say = "./images/cg/Kenji_1st_Day_Breakfast/Surprised_Aiko_Say.png"
-    image Kenji_1st_Day_Breakfast_Surprised_Aiko_Silent = "./images/cg/Kenji_1st_Day_Breakfast/Surprised_Aiko_Silent.png"
     show Kenji_1st_Day_Breakfast_Surprised_Aiko_Say
     hide Kenji_1st_Day_Breakfast_Normal_Aiko_Silent
     
@@ -385,9 +388,6 @@ label start:
     
     kenji "Мне салата хватит! А вместо супа, достань ка мне из холодильника баночку пива!"
     kenji "Там же ещё осталось?"
-    
-    image Kenji_1st_Day_Breakfast_Angry_Aiko_Say = "./images/cg/Kenji_1st_Day_Breakfast/Angry_Aiko_Say.png"
-    image Kenji_1st_Day_Breakfast_Angry_Aiko_Silent = "./images/cg/Kenji_1st_Day_Breakfast/Angry_Aiko_Silent.png"
     
     show Kenji_1st_Day_Breakfast_Angry_Aiko_Say
     hide Kenji_1st_Day_Breakfast_Surprised_Aiko_Silent
@@ -421,7 +421,36 @@ label start:
     
     "Айко с угрюмым видом кинула черпак в кастрюлю и закрыла её."
     
+    image Kenji_1st_Day_Breakfast_Fridge_Normal_Aiko_Say = "./images/cg/Kenji_1st_Day_Breakfast/Fridge_Normal_Aiko_Say.png"
+    image Kenji_1st_Day_Breakfast_Fridge_Normal_Aiko_Silent = "./images/cg/Kenji_1st_Day_Breakfast/Fridge_Normal_Aiko_Silent.png"
+    image Kenji_1st_Day_Breakfast_Fridge_Surprised_Aiko_Say = "./images/cg/Kenji_1st_Day_Breakfast/Fridge_Surprised_Aiko_Say.png"
+    image Kenji_1st_Day_Breakfast_Fridge_Surprised_Aiko_Silent = "./images/cg/Kenji_1st_Day_Breakfast/Fridge_Surprised_Aiko_Silent.png"
+    image Kenji_1st_Day_Breakfast_Fridge_Angry_Aiko_Say = "./images/cg/Kenji_1st_Day_Breakfast/Fridge_Angry_Aiko_Say.png"
+    image Kenji_1st_Day_Breakfast_Fridge_Angry_Aiko_Silent = "./images/cg/Kenji_1st_Day_Breakfast/Fridge_Angry_Aiko_Silent.png"
+    image Kenji_1st_Day_Breakfast_Fridge_Irritated_Aiko = "./images/cg/Kenji_1st_Day_Breakfast/Fridge_Irritated_Aiko.png"
     
-    "END"
+    "Открыла холодильник и с недовольной гримасой на лице сделала приглашающий жест рукой в сторону пива, которое стояло в дверце холодильника."
+    
+    show Kenji_1st_Day_Breakfast_Fridge_Normal_Aiko_Silent with moveinright
+    
+    "На мою радость там было целых три банки."
+    
+    show Kenji_1st_Day_Breakfast_Fridge_Normal_Aiko_Say
+    hide Kenji_1st_Day_Breakfast_Fridge_Normal_Aiko_Silent
+    
+    aiko "Ну, какое тебе?"
+    kenji "Да оно же одинаковое, любую!"
+    
+    show Kenji_1st_Day_Breakfast_Fridge_Surprised_Aiko_Say
+    hide Kenji_1st_Day_Breakfast_Fridge_Normal_Aiko_Say
+    
+    aiko "Ты чего думаешь, я в сортах пива — спец?"
+    
+    show Kenji_1st_Day_Breakfast_Fridge_Irritated_Aiko
+    hide Kenji_1st_Day_Breakfast_Fridge_Surprised_Aiko_Say
+    
+    "Айко взяла из холодильника одну из банок."
+    "Мне показалось, что сейчас она небрежно кинет банку мне, настолько недовольное было у неё выражение лица."
+    "Но нет, она этого не сделала, а аккуратно поставила пиво на мою дощечку для еды."
     
     return

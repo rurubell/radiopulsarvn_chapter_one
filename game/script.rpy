@@ -446,11 +446,20 @@ label start:
     
     aiko "Ты чего думаешь, я в сортах пива — спец?"
     
-    show Kenji_1st_Day_Breakfast_Fridge_Irritated_Aiko
+    show Kenji_1st_Day_Breakfast_Fridge_Irritated_Aiko with dissolve
     hide Kenji_1st_Day_Breakfast_Fridge_Surprised_Aiko_Say
     
     "Айко взяла из холодильника одну из банок."
     "Мне показалось, что сейчас она небрежно кинет банку мне, настолько недовольное было у неё выражение лица."
     "Но нет, она этого не сделала, а аккуратно поставила пиво на мою дощечку для еды."
+    
+    image Kenji_1st_Day_Breakfast_Food_With_Beer = "./images/cg/Kenji_1st_Day_Breakfast/Food_With_Beer.png" 
+    show Kenji_1st_Day_Breakfast_Food_With_Beer with dissolve
+    hide Kenji_1st_Day_Breakfast_Fridge_Irritated_Aiko
+    hide Kenji_1st_Day_Breakfast_Food
+    
+    
+    
+    ""
     
     return

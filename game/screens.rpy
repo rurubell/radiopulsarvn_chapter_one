@@ -23,6 +23,7 @@ style hyperlink_text:
 
 style gui_text:
     properties gui.text_properties("interface")
+    outlines [ ( absolute(4), "#00000099", absolute(0), absolute(0) ) ]
 
 
 style button:

@@ -1,3 +1,7 @@
+init python:
+    None
+
+
 define kenji = Character( "Кендзи", color="#BBFF88" )
 define aiko = Character( "Айко", color="#FF888B" )
 define kasumi = Character( "Касуми", color="#88C0FF" )
@@ -5,6 +9,8 @@ define vatan = Character( "Ватанабе", color="#009900" )
 define zak = Character( "Заказчик", color="#FFC95C" )
 define tv = Character( "Телевизор", color="#FFC95C" )
 #тест
+
+
 
 image Kenji_Bedroom = "./images/bg/Kenji_Bedroom/kenji_bedroom.jpg"
 image Kenji_Home_Kitchen_Day = "./images/bg/Kenji_Home_Kitchen/Kenji_Home_Kitchen_Day.jpg"

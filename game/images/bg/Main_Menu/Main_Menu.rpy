@@ -39,6 +39,37 @@ image Main_Menu_BG:
         "Main_Menu_other"
     
     contains:
+        "Main_Menu_sfx"
+        
+        choice:
+            linear 1 alpha 0.9
+            #"Main_Menu_sfx"
+            linear 1 alpha 1.0
+            
+        choice:
+            linear 1 alpha 0.8
+            #"Main_Menu_sfx"
+            linear 1 alpha 1.0
+        
+        choice:
+            linear 1 alpha 0.7
+            #"Main_Menu_sfx"
+            linear 1 alpha 1.0
+        
+        choice:
+            linear 1 alpha 0.6
+            #"Main_Menu_sfx"
+            linear 1 alpha 1.0
+        
+        choice:
+            linear 1 alpha 0.5
+            #"Main_Menu_sfx"
+            linear 1 alpha 1.0
+        
+        pause 0.5
+        repeat
+    
+    contains:
         choice:
             alpha 0.0
             "Main_Menu_flare_00"

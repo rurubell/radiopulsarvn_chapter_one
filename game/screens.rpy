@@ -12,6 +12,7 @@ init offset = -1
 style default:
     properties gui.text_properties()
     language gui.language
+    outlines [ ( absolute(3), "#000000FF", absolute(0), absolute(0) ) ]
 
 style input:
     properties gui.text_properties("input", accent=True)

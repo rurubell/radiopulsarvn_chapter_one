@@ -33,10 +33,10 @@ image Main_Menu_BG:
         repeat
     
     contains:
-        "Main_Menu_wires"
+        "Main_Menu_other"
     
     contains:
-        "Main_Menu_other"
+        "Main_Menu_wires"
     
     contains:
         "Main_Menu_sfx"

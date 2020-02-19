@@ -1,6 +1,6 @@
-image Day_Clouds_00 = "./images/bg/Clouds/Day/day_clouds_00.png"
-image Day_Clouds_01 = "./images/bg/Clouds/Day/day_clouds_01.png"
-image Day_Clouds_02 = "./images/bg/Clouds/Day/day_clouds_02.png"
+image Day_Clouds_00 = "./images/bg/Outdoor/Clouds/Day/day_clouds_00.png"
+image Day_Clouds_01 = "./images/bg/Outdoor/Clouds/Day/day_clouds_01.png"
+image Day_Clouds_02 = "./images/bg/Outdoor/Clouds/Day/day_clouds_02.png"
 
 
 image Day_Clouds:

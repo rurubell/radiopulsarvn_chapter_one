@@ -5,7 +5,7 @@ init python:
 define kenji = Character( "Кендзи", color="#BBFF88" )
 define aiko = Character( "Айко", color="#FF888B" )
 define kasumi = Character( "Касуми", color="#88C0FF" )
-define vatan = Character( "Ватанабе", color="#009900" )
+define vatanabe = Character( "Ватанабе", color="#009900" )
 define zak = Character( "Заказчик", color="#FFC95C" )
 define tv = Character( "Телевизор", color="#FFC95C" )
 
@@ -13,13 +13,16 @@ define tv = Character( "Телевизор", color="#FFC95C" )
 
 label start:
     image dust = Dust( "./images/other/dust.png" )
+    image Dream_Frame = "./images/cg/Misc/Dream_Frame/Dream_Frame.png"
     
-    image midori_00 = "./images/cg/Green-Haired_Girl/00.png"
-    image midori_01 = "./images/cg/Green-Haired_Girl/01.png"
-    image midori_02 = "./images/cg/Green-Haired_Girl/02.png"
-    image midori_03 = "./images/cg/Green-Haired_Girl/03.png"
-    image midori_04 = "./images/cg/Green-Haired_Girl/04.png"
-    image midori_05 = "./images/cg/Green-Haired_Girl/05.png"
+    #СЦЕНА - ДЕНЬ 1, МИДОРИ
+    
+    image midori_00 = "./images/cg/DAY_01/Green-Haired_Girl/00.png"
+    image midori_01 = "./images/cg/DAY_01/Green-Haired_Girl/01.png"
+    image midori_02 = "./images/cg/DAY_01/Green-Haired_Girl/02.png"
+    image midori_03 = "./images/cg/DAY_01/Green-Haired_Girl/03.png"
+    image midori_04 = "./images/cg/DAY_01/Green-Haired_Girl/04.png"
+    image midori_05 = "./images/cg/DAY_01/Green-Haired_Girl/05.png"
     
     show Sea_Midori_Scene with dissolve
     
@@ -187,6 +190,9 @@ label start:
     "А ведь это героиня популярного сейчас аниме сериала. Я его конечно не смотрел, но подозреваю, что там она отличница, президент кружка чайных церемоний, волонтер в местном храме и вообще — всем ребятам пример!"
     "Если бы она только знала, какую гадость с ней сделал такой никчёмный человек как я..."
 
+    #КОНЕЦ СЦЕНЫ - ДЕНЬ 1, МИДОРИ
+    #СЦЕНА - ДЕНЬ 1, ЗАВТРАК С АЙКО
+
     "Кендзи!"
     
     "Я настолько ушел в свои мысли что не сразу сообразил - меня зовут."
@@ -204,8 +210,6 @@ label start:
     
     "Я повернулся обратно к монитору. Там как и раньше красовалась Мидори, над которой я сегодня как следует поиздевался."
     "Черт! Я бы ни за что не стал, добровольно демонстрировать такое творчество своей младшей сестре! Как не вовремя она зашла! "
-    
-    ######################
     
     hide monitor_with_Midori
     scene monitor_with_Kenji_desktop
@@ -251,24 +255,24 @@ label start:
     "Поставила на него две деревянные подставки. Протерла их. "
     "Затем аккуратно расставила передо мной тарелки, положила палочки для еды. Все в лучшем виде. "
     
-    image Kenji_1st_Day_Breakfast_Food = "./images/cg/Kenji_1st_Day_Breakfast/Food.png"
+    image Kenji_1st_Day_Breakfast_Food = "./images/cg/DAY_01/Kenji_1st_Day_Breakfast/Food.png"
     scene Kenji_1st_Day_Breakfast_Food with dissolve
     
     "Даже розовые таблетки — ферменты для пищеварения, которые мне прописали много лет назад — не забыты."
     
-    image Kenji_1st_Day_Breakfast_Normal_Aiko_Say = "./images/cg/Kenji_1st_Day_Breakfast/Normal_Aiko_Say.png"
+    image Kenji_1st_Day_Breakfast_Normal_Aiko_Say = "./images/cg/DAY_01/Kenji_1st_Day_Breakfast/Normal_Aiko_Say.png"
     show Kenji_1st_Day_Breakfast_Normal_Aiko_Say with moveinright
     
     aiko "Папа и мама звонили."
     
-    image Kenji_1st_Day_Breakfast_Normal_Aiko_Silent = "./images/cg/Kenji_1st_Day_Breakfast/Normal_Aiko_Silent.png"
-    image Kenji_1st_Day_Breakfast_TV_Strange_Movie = "./images/cg/Kenji_1st_Day_Breakfast/TV_Strange_Movie.png"
-    image Kenji_1st_Day_Breakfast_Confused_Aiko = "./images/cg/Kenji_1st_Day_Breakfast/Confused_Aiko.png"
-    image Kenji_1st_Day_Breakfast_TV_News = "./images/cg/Kenji_1st_Day_Breakfast/TV_News.png"
-    image Kenji_1st_Day_Breakfast_Surprised_Aiko_Say = "./images/cg/Kenji_1st_Day_Breakfast/Surprised_Aiko_Say.png"
-    image Kenji_1st_Day_Breakfast_Surprised_Aiko_Silent = "./images/cg/Kenji_1st_Day_Breakfast/Surprised_Aiko_Silent.png"
-    image Kenji_1st_Day_Breakfast_Angry_Aiko_Say = "./images/cg/Kenji_1st_Day_Breakfast/Angry_Aiko_Say.png"
-    image Kenji_1st_Day_Breakfast_Angry_Aiko_Silent = "./images/cg/Kenji_1st_Day_Breakfast/Angry_Aiko_Silent.png"
+    image Kenji_1st_Day_Breakfast_Normal_Aiko_Silent = "./images/cg/DAY_01/Kenji_1st_Day_Breakfast/Normal_Aiko_Silent.png"
+    image Kenji_1st_Day_Breakfast_TV_Strange_Movie = "./images/cg/DAY_01/Kenji_1st_Day_Breakfast/TV_Strange_Movie.png"
+    image Kenji_1st_Day_Breakfast_Confused_Aiko = "./images/cg/DAY_01/Kenji_1st_Day_Breakfast/Confused_Aiko.png"
+    image Kenji_1st_Day_Breakfast_TV_News = "./images/cg/DAY_01/Kenji_1st_Day_Breakfast/TV_News.png"
+    image Kenji_1st_Day_Breakfast_Surprised_Aiko_Say = "./images/cg/DAY_01/Kenji_1st_Day_Breakfast/Surprised_Aiko_Say.png"
+    image Kenji_1st_Day_Breakfast_Surprised_Aiko_Silent = "./images/cg/DAY_01/Kenji_1st_Day_Breakfast/Surprised_Aiko_Silent.png"
+    image Kenji_1st_Day_Breakfast_Angry_Aiko_Say = "./images/cg/DAY_01/Kenji_1st_Day_Breakfast/Angry_Aiko_Say.png"
+    image Kenji_1st_Day_Breakfast_Angry_Aiko_Silent = "./images/cg/DAY_01/Kenji_1st_Day_Breakfast/Angry_Aiko_Silent.png"
     
     show Kenji_1st_Day_Breakfast_Normal_Aiko_Silent
     hide Kenji_1st_Day_Breakfast_Normal_Aiko_Say
@@ -400,16 +404,15 @@ label start:
 
     "Айко с угрюмым видом кинула черпак в кастрюлю и пошла к холодильнику."
     
-    image Kenji_1st_Day_Breakfast_Fridge_Normal_Aiko_Say = "./images/cg/Kenji_1st_Day_Breakfast/Fridge_Normal_Aiko_Say.png"
-    image Kenji_1st_Day_Breakfast_Fridge_Normal_Aiko_Silent = "./images/cg/Kenji_1st_Day_Breakfast/Fridge_Normal_Aiko_Silent.png"
-    image Kenji_1st_Day_Breakfast_Fridge_Surprised_Aiko_Say = "./images/cg/Kenji_1st_Day_Breakfast/Fridge_Surprised_Aiko_Say.png"
-    image Kenji_1st_Day_Breakfast_Fridge_Surprised_Aiko_Silent = "./images/cg/Kenji_1st_Day_Breakfast/Fridge_Surprised_Aiko_Silent.png"
-    image Kenji_1st_Day_Breakfast_Fridge_Angry_Aiko_Say = "./images/cg/Kenji_1st_Day_Breakfast/Fridge_Angry_Aiko_Say.png"
-    image Kenji_1st_Day_Breakfast_Fridge_Angry_Aiko_Silent = "./images/cg/Kenji_1st_Day_Breakfast/Fridge_Angry_Aiko_Silent.png"
-    image Kenji_1st_Day_Breakfast_Fridge_Irritated_Aiko = "./images/cg/Kenji_1st_Day_Breakfast/Fridge_Irritated_Aiko.png"
+    image Kenji_1st_Day_Breakfast_Fridge_Normal_Aiko_Say = "./images/cg/DAY_01/Kenji_1st_Day_Breakfast/Fridge_Normal_Aiko_Say.png"
+    image Kenji_1st_Day_Breakfast_Fridge_Normal_Aiko_Silent = "./images/cg/DAY_01/Kenji_1st_Day_Breakfast/Fridge_Normal_Aiko_Silent.png"
+    image Kenji_1st_Day_Breakfast_Fridge_Surprised_Aiko_Say = "./images/cg/DAY_01/Kenji_1st_Day_Breakfast/Fridge_Surprised_Aiko_Say.png"
+    image Kenji_1st_Day_Breakfast_Fridge_Surprised_Aiko_Silent = "./images/cg/DAY_01/Kenji_1st_Day_Breakfast/Fridge_Surprised_Aiko_Silent.png"
+    image Kenji_1st_Day_Breakfast_Fridge_Angry_Aiko_Say = "./images/cg/DAY_01/Kenji_1st_Day_Breakfast/Fridge_Angry_Aiko_Say.png"
+    image Kenji_1st_Day_Breakfast_Fridge_Angry_Aiko_Silent = "./images/cg/DAY_01/Kenji_1st_Day_Breakfast/Fridge_Angry_Aiko_Silent.png"
+    image Kenji_1st_Day_Breakfast_Fridge_Irritated_Aiko = "./images/cg/DAY_01/Kenji_1st_Day_Breakfast/Fridge_Irritated_Aiko.png"
     
-    show Kenji_1st_Day_Breakfast_Fridge_Normal_Aiko_Say
-    hide Kenji_1st_Day_Breakfast_Fridge_Normal_Aiko_Silent
+    show Kenji_1st_Day_Breakfast_Fridge_Normal_Aiko_Say with moveinright
     
     aiko "Ну, какое тебе?"
     kenji "Да оно же одинаковое, любое!"
@@ -422,25 +425,330 @@ label start:
     show Kenji_1st_Day_Breakfast_Fridge_Irritated_Aiko with dissolve
     hide Kenji_1st_Day_Breakfast_Fridge_Surprised_Aiko_Say
     
-    "Айко взяла из холодильника одну из банок."
-    "Мне показалось, что сейчас она небрежно кинет банку мне, настолько недовольное было у неё выражение лица."
-    "Но нет, она этого не сделала, а аккуратно поставила пиво на мою дощечку для еды."
+    "Айко взяла из холодильника одну из банок. Мне показалось, что сейчас она небрежно кинет банку мне, настолько недовольное было у неё лицо. "
     
-    image Kenji_1st_Day_Breakfast_Food_With_Beer = "./images/cg/Kenji_1st_Day_Breakfast/Food_With_Beer.png" 
-    show Kenji_1st_Day_Breakfast_Food_With_Beer with dissolve
-    hide Kenji_1st_Day_Breakfast_Fridge_Irritated_Aiko
-    hide Kenji_1st_Day_Breakfast_Food
+    image Kenji_1st_Day_Breakfast_Food_With_Beer = "./images/cg/DAY_01/Kenji_1st_Day_Breakfast/Food_With_Beer.png" 
+    scene Kenji_1st_Day_Breakfast_Food_With_Beer with dissolve
     
-    "Затем она забрала мою порцию супа и мою ложку для бульона. Села напротив меня."
-    "Я взял холодную банку, и дёрнул за открывашку. Затем я схватил розовые таблеточки, запихнул их в рот и запил пивом."
-    "При виде этого, по лицу Айко пробежала странная гримаса, но она ничего не сказала и принялась за еду."
-    "Я тоже не медлил и торопливо потягивал пиво из банки, закусывая рисом и кусочками амлета."
+    "Но нет, она поставила пиво на подставку, забрала мою порцию супа и села напротив."
+    "Я взял в руки банку, и дёрнул за открывашку. "
+    "Затем я схватил розовую таблеточку, запихнул её в рот и запил пивом. "
+    "Увидев это, Айко изобразила гримасу неодобрения, но промолчала, и принялась за еду. "
+    "Я тоже не медлил и торопливо потягивал пиво из банки, закусывая салатом. "
     "Есть я старался быстро, но и аккуратно чтобы не испачкать стол и не раздосадовать Айко снова."
     
     scene Day_Kenji_Home_Kitchen_Other with dissolve
     show expression AlphaMask( "Day_Kenji_Home_Kitchen_Mask", At( "dust", center )) as mask
     
+    "Когда банка опустела, я почувствовал, что достиг нужной кондиции и двинулся к кладовке."
+    "Пора приниматься за дело!"
     
-    ""
+    #КОНЕЦ СЦЕНЫ - ДЕНЬ 1, ЗАВТРАК С АЙКО
+    #СЦЕНА - ДЕНЬ 1, ВЫНОС МУСОРА 
+    
+    image Day_Kenji_Home_Pantry_Mask = "./images/bg/Indoor/Kenji_Home_Pantry/Day_Kenji_Home_Pantry_Mask.png"
+    image Day_Kenji_Home_Pantry_Other_00 = "./images/bg/Indoor/Kenji_Home_Pantry/Day_Kenji_Home_Pantry_Other_00.jpg"
+    image Day_Kenji_Home_Pantry_Other_01 = "./images/bg/Indoor/Kenji_Home_Pantry/Day_Kenji_Home_Pantry_Other_01.jpg"
+    image Day_Kenji_Home_Pantry_Other_02 = "./images/bg/Indoor/Kenji_Home_Pantry/Day_Kenji_Home_Pantry_Other_02.jpg"
+    image Day_Kenji_Home_Pantry_Other_03 = "./images/bg/Indoor/Kenji_Home_Pantry/Day_Kenji_Home_Pantry_Other_03.jpg"
+    
+    scene Day_Kenji_Home_Pantry_Other_00 with dissolve
+    show expression AlphaMask( "Day_Kenji_Home_Pantry_Mask", At( "dust", center )) as mask
+    
+    "Всю левую половину кладовки, занимал стеллаж, который тётя Асука планировала освободить и устроить здесь гардероб. "
+    "Не знаю, зачем ей это вдруг понадобилось, учитывая, что в доме она не живет несколько лет."
+    "Но спорить с ней не хотелось. Барахлу, что лежит на этих полках, действительно, давно место на свалке."
+
+    "А может быть причина не в этом? Не нужен ей никакой гардероб, а хочется тете Асуке избавиться от вещей навевающих неприятные воспоминания? "
+    "Дело в том, что всё лежащее на полках некогда принадлежало её бывшему мужу, Макото Кайоши."
+
+    "Макото-сан умер десять лет назад. А точнее — погиб. Он был радиолюбителем, или как это называется? "
+    "Сидел вечерами в радиоэфире и болтал с другими, такими же «чокнутыми», как назвала их тётя Асука. "
+    "Она вспоминала что ее муж мог просиживать в своей комнате часами и выбегать с радостными криками, в моменты когда ему удавалось принять сигнал совершенно незнакомых ему людей. "
+    "Иногда даже от иностранцев."
+
+    "Как это похоже на меня! Я тоже часами сижу за компьютером. "
+    "И если вдруг мне напишет какой иностранец, с предложением нарисовать что-то для него или просто с похвалой моей галереи. "
+    "Я наверняка буду как Макото-сан, бегать и голосить на весь дом о таком успехе."
+
+    "Еще Макото-сан тратил много денег на оборудование. Чего конечно не одобряла тётя Асука. "
+    "В общем как это обычно и бывает - жена не особо была рада увлечениям мужа. "
+    "Айко на все это отцовское барахло тоже похоже наплевать. Она совсем его не помнит. "
+    "Ну да, фотографий в альбоме и урны с прахом на местном кладбище ей достаточно. Кому нужна груда металлолома?"
+    
+    image TV_Heap = "images/cg/DAY_01/Kenji_Moves_Trash/TV_Heap/TV_Heap.png"
+    image TV_Heap_Dream:
+        contains:
+            "TV_Heap"
+        contains:
+            "Dream_Frame"
+            
+    scene TV_Heap_Dream with dissolve
+    
+    "Однажды в детстве я проходил с отцом мимо площадки для сбора мусора. Там возвышалась грандиозная пирамида из телевизоров всех форм и размеров."
+    "«Дядя Сато помер, телемастер» - пояснил мне отец. "
+    "Потом мы с мальчишками устроили настоящую бойню. Расстреляли всю эту кучу камнями, пока не разбили каждый телек вдребезги."
+    "Нам конечно здорово влетело, а на асфальте в том месте ещё несколько лет поблескивали кристаллики стекла."
+    
+    scene Day_Kenji_Home_Pantry_Other_00 with dissolve
+    show expression AlphaMask( "Day_Kenji_Home_Pantry_Mask", At( "dust", center )) as mask
+    
+    "Тогда нам было весело, а мне, сейчас, не очень. Умер человек — и вся его жизнь оказалась на свалке. "
+    "Чтобы напоследок, люди по этим вещам могли определить, кто же «помер» в этот раз. Сегодня, выносить чью-то жизнь на помойку предстояло мне."
+    
+    "О том как погиб муж тёти Асуки мне рассказал дядя Ватанабэ, который жил с нами на одной улице. "
+    "Он был другом дяди Макото, и в прошлом, тоже - радиолюбителем."
+    
+    image Evening_Watanabe_Bike_WorkShop = "./images/bg/Outdoor/Watanabe_Bike_WorkShop/Evening/Watanabe_Bike_WorkShop.png"
+    image Evening_Watanabe_Bike_WorkShop_Dream:
+        contains:
+            "Evening_Watanabe_Bike_WorkShop"
+        contains:
+            "Dream_Frame"
+    
+    scene Evening_Watanabe_Bike_WorkShop_Dream with dissolve
+    
+    image Watanabe_01_Normal_Say = im.Scale( "./images/sprites/Watanabe/Watanabe_01_Normal_Say.png", 622, 1080 )
+    image Watanabe_01_Normal_Silent = im.Scale( "./images/sprites/Watanabe/Watanabe_01_Normal_Silent.png", 622, 1080 )
+    
+    show Watanabe_01_Normal_Say with Dissolve( 0.1 )
+    
+    vatanabe "Он хотел сделать антенну. Из провода высоковольтной линии что проходит в саду."
+
+    show Watanabe_01_Normal_Silent with Dissolve( 0.2 )
+    hide Watanabe_01_Normal_Say
+    
+    kenji "Он упал с нее?"
+    
+    show Watanabe_01_Normal_Say with Dissolve( 0.2 )
+    hide Watanabe_01_Normal_Silent
+
+    vatanabe "Да нет. Прихлопнуло его, когда свою антенну на фазу забрасывал."
+    vatanabe "Если бы упал, тогда, выжил бы, наверное. А так... Руки у него до костей обгорели."
+    
+    show Watanabe_01_Normal_Silent with Dissolve( 0.2 )
+    hide Watanabe_01_Normal_Say
+
+    "Я не поверил. Подсоединить свою антенну к проводу под большим напряжением — это дикость! "
+
+    kenji "Это больше похоже на самоубийство!"
+    
+    show Watanabe_01_Normal_Say with Dissolve( 0.2 )
+    hide Watanabe_01_Normal_Silent
+    
+    vatanabe "Да что ты! Там всего тридцать пять тысяч вольт, это немного."
+    
+    show Watanabe_01_Normal_Silent with Dissolve( 0.2 )
+    hide Watanabe_01_Normal_Say
+
+    "Немного?! Мне эта цифра показалась неправдоподобно большой. «Всего» тридцать пять тысяч вольт! "
+    
+    show Watanabe_01_Normal_Say with Dissolve( 0.2 )
+    hide Watanabe_01_Normal_Silent
+
+    vatanabe "Если бы у меня была такая возможность, я бы тоже набросил. А Кайоши, не рассчитал чего-то."
+    vatanabe "Может конденсаторы плохие ему попались, или ещё чего..."
+    vatanabe "Ты не подумай, Кендзи. Мы не сумасшедшие и не самоубийцы. Хотя конечно, авантюра очень рискованная."
+    vatanabe "Меня тоже один раз шандарахнуло, но, слава богу — выжил."
+    
+    show Watanabe_01_Normal_Silent with Dissolve( 0.2 )
+    hide Watanabe_01_Normal_Say
+    
+    kenji "Тоже «набросили»?"
+
+    "Дядя Ватанабэ улыбнулся."
+    
+    show Watanabe_01_Normal_Say with Dissolve( 0.2 )
+    hide Watanabe_01_Normal_Silent
+
+    vatanabe "Да нет! На работе. Я же электрик по призванию. Но там ничего интересного, совершенно бытовая ситуация"
+    vatanabe "С тех пор пальцы на правой руке еле двигаются. И вообще, что-то вроде контузии получил. "
+    vatanabe "Полгода ходил как пришибленный. Инвалидом стал и вышел досрочно на пенсию."
+    vatanabe "Приходится подрабатывать автомехаником теперь. "
+    vatanabe "Эх, и как он только умудрился сжечь сцепление? А? Кендзи? Ты не знаешь?"
+    
+    scene Day_Kenji_Home_Pantry_Other_00 with dissolve
+    show expression AlphaMask( "Day_Kenji_Home_Pantry_Mask", At( "dust", center )) as mask
+    
+    "Я тряхнул головой отгоняя воспоминания. "
+    "Что-то залип. Пора и за работу!  "
+    "Я решил сразу взяться за самое трудное — два металлических «чемоданчика», покрытые жёлтой эмалью. "
+    "То что они из металла — видно по потёртым краям, где из-под краски выглядывала потемневшая сталь. "
+    "Причём металл достойной толщины - судя по весу каждого. Один был значительно тяжелее другого, на его передней панели красовались чёрные стрелочные приборы, да несколько тумблеров. "
+    "Второй — легче. Но его приборная панель была закрыта крышкой, с замками как на армейской фляге. "
+    "Для начала унесу тот, что легче — это будет разминка."
+    
+    scene Outdoor_Day_Kenji_Home with dissolve
+    
+    "На улице был типичный июньский полдень. Ужасно яркое солнце, голубое небо и белоснежные облака. Все как обычно. "
+    "Дождей за последнюю неделю не наблюдалось и к зною добавился стойкий запах пыли, который перебивал теперь аромат цветов и прочей зелени. "
+    "Было тихо — это радовало, мне ни к чему лишние свидетели."
+    
+    scene Outdoor_Day_Street_03 with dissolve
+    
+    "Я вышел за ограду и принялся за упражнения со своим новеньким, жёлтеньким и увесистым снарядом. "
+    "Поставил его ребром на плечо — острый край пребольно врезался в шею. "
+    "Попробовал нести его под мышкой — и тут не вышло, рука моментально вспотела и «чемоданчик» норовил выскользнуть из рук. "
+    "Я схватил его обеими руками и понёс, прижимая к груди, но и так было не очень сподручно. "
+    
+    scene Outdoor_Day_BG_With_Railroad_2 with dissolve
+    
+    "Пройдя один квартал я сменил тактику, и решил взять свой снаряд за его родные, заводские ручки — покрытые каким-то плотным, зелёным материалом. "
+    "Постепенно стали ныть плечи и спина, а также зудеть нога в том месте где она тёрлась о край прибора."
+    
+    scene Day_Trash_Place with dissolve
+    
+    "Последние несколько метров я буквально волочил «чемоданчик» по асфальту оставляя блестящий след с чешуйками жёлтой краски. "
+    "Похоже я сегодня был первым посетителем. Никакой электроники до меня никто не выбросил. Площадка для мусора была пуста"
+    
+    image Radio_Set_On_Ground = "/images/cg/DAY_01/Kenji_Moves_Trash/Radio_Set_On_Ground/Radio_Set_On_Ground.png"
+    show Radio_Set_On_Ground with dissolve
+    
+    "Теперь здесь лежал только мой прибор."
+    "Я пнул его напоследок и отправился домой."
+    "На обратном пути мне так же никто не встретился - довольно удачный выдался денёк! "
+    
+    scene Day_Kenji_Home_Kitchen_Other with dissolve
+    show expression AlphaMask( "Day_Kenji_Home_Kitchen_Mask", At( "dust", center )) as mask 
+    
+    "Я ворвался в дом, распахнул холодильник и немедленно выпил холодного пива. Ох, похоже пол банки выдул за несколько глотков! "
+    
+    image Aiko_School_Uniform_01_Angry_Silent = im.Scale( "./images/sprites/Aiko/Aiko_School_Uniform_01/Aiko_School_Uniform_Angry_Silent.png", 686, 900 ) 
+    image Aiko_School_Uniform_01_Angry_Say = im.Scale( "./images/sprites/Aiko/Aiko_School_Uniform_01/Aiko_School_Uniform_Angry_Say.png", 686, 900 ) 
+    image Aiko_School_Uniform_01_Shy_Silent = im.Scale( "./images/sprites/Aiko/Aiko_School_Uniform_01/Aiko_School_Uniform_01_Shy_Silent.png", 686, 900 ) 
+    image Aiko_School_Uniform_02_Normal_Say = im.Scale( "./images/sprites/Aiko/Aiko_School_Uniform_02/Aiko_School_Uniform_02_Normal_Say.png", 587, 900 ) 
+    image Aiko_School_Uniform_02_Normal_Silent = im.Scale( "./images/sprites/Aiko/Aiko_School_Uniform_02/Aiko_School_Uniform_02_Normal_Silent.png", 587, 900 ) 
+    image Aiko_School_Uniform_02_Surprised_Say = im.Scale( "./images/sprites/Aiko/Aiko_School_Uniform_02/Aiko_School_Uniform_02_Surprised_Say.png", 587, 900 ) 
+    image Aiko_School_Uniform_02_Surprised_Silent = im.Scale( "./images/sprites/Aiko/Aiko_School_Uniform_02/Aiko_School_Uniform_02_Surprised_Silent.png", 587, 900 ) 
+    image Aiko_School_Uniform_02_Mocking_Say = im.Scale( "./images/sprites/Aiko/Aiko_School_Uniform_02/Aiko_School_Uniform_02_Mocking_Say.png", 587, 900 ) 
+    image Aiko_School_Uniform_02_Mocking_Silent = im.Scale( "./images/sprites/Aiko/Aiko_School_Uniform_02/Aiko_School_Uniform_02_Mocking_Silent.png", 587, 900 ) 
+    image Aiko_School_Uniform_02_Scared_Say = im.Scale( "./images/sprites/Aiko/Aiko_School_Uniform_02/Aiko_School_Uniform_02_Scared_Say.png", 587, 900 ) 
+    image Aiko_School_Uniform_02_Scared_Silent = im.Scale( "./images/sprites/Aiko/Aiko_School_Uniform_02/Aiko_School_Uniform_02_Scared_Silent.png", 587, 900 ) 
+    
+    show Aiko_School_Uniform_01_Angry_Silent with Dissolve( 0.2 )
+    
+    "Айко была на кухне. Глядя на меня она нахмурилась, но ничего не сказала. "
+    "Я же улыбнулся во весь рот и продемонстрировал сестре оттопыренный вверх большой палец. "
+    
+    show Aiko_School_Uniform_01_Shy_Silent with Dissolve( 0.2 )
+    hide Aiko_School_Uniform_01_Angry_Silent
+    
+    "От моего жеста она почему-то смутилась, а я только теперь заметил, что на ней надета летняя школьная форма."
+    
+    kenji "Ты что, в школу собралась? Разве не каникулы?"
+    
+    show Aiko_School_Uniform_02_Normal_Say with Dissolve( 0.2 )
+    hide Aiko_School_Uniform_01_Shy_Silent with Dissolve( 0.1 )
+    
+    aiko "Каникулы! Но я иду в школьный бассейн."
+    
+    show Aiko_School_Uniform_02_Normal_Silent with Dissolve( 0.2 )
+    hide Aiko_School_Uniform_02_Normal_Say
+    
+    "Бассейн! Я вспомнил о том, что на земле существуют такие замечательные места. Ах! Я бы сейчас с удовольствием окунулся в прохладную водичку. "
+    "И плевать что там народу как сельдей в бочке. Настроение у меня теперь самое располагающее, никакой невроз от тесного общения с людьми не страшен. "
+    "Правда в таком состоянии, в общественный бассейн меня не пустят. Я вздохнул и отглотнул еще пива."
+    
+    show Aiko_School_Uniform_02_Normal_Say with Dissolve( 0.2 )
+    hide Aiko_School_Uniform_02_Normal_Silent
+    
+    aiko "Чего вздыхаешь?"
+    
+    show Aiko_School_Uniform_02_Normal_Silent with Dissolve( 0.2 )
+    hide Aiko_School_Uniform_02_Normal_Say
+    
+    kenji "Разве не понятно? В такую то жару в бассейне поплавать в самый раз!"
+    
+    show Aiko_School_Uniform_02_Surprised_Say with Dissolve( 0.2 )
+    hide Aiko_School_Uniform_02_Normal_Silent
+    
+    aiko "В нашем школьном?"
+    
+    show Aiko_School_Uniform_02_Surprised_Silent with Dissolve( 0.2 )
+    hide Aiko_School_Uniform_02_Surprised_Say
+    
+    kenji "Да какая разница. Но сама понимаешь, народа там — тьма."
+    
+    show Aiko_School_Uniform_02_Normal_Silent with Dissolve( 0.2 )
+    hide Aiko_School_Uniform_02_Surprised_Silent
+    
+    "Айко пожала плечами, и стала чуть серьёзнее. Она знала, чего я боюсь."
+    
+    show Aiko_School_Uniform_02_Normal_Say with Dissolve( 0.2 )
+    hide Aiko_School_Uniform_02_Normal_Silent
+
+    aiko "Можешь съездить к морю. Где-то да найдёшь пустынный пляж."
+    
+    show Aiko_School_Uniform_02_Normal_Silent with Dissolve( 0.2 )
+    hide Aiko_School_Uniform_02_Normal_Say
+    
+    kenji "К морю... да... Но тогда придётся трястись в поезде час или два. В переполненном поезде, Айко!"
+    
+    show Aiko_School_Uniform_02_Mocking_Silent with Dissolve( 0.2 )
+    hide Aiko_School_Uniform_02_Normal_Silent
+    
+    "На лице Айко появилась ухмылка."
+    
+    show Aiko_School_Uniform_02_Mocking_Say with Dissolve( 0.2 )
+    hide Aiko_School_Uniform_02_Mocking_Silent
+    
+    aiko "Ты же принял «лекарство»."
+    
+    show Aiko_School_Uniform_02_Mocking_Silent with Dissolve( 0.2 )
+    hide Aiko_School_Uniform_02_Mocking_Say
+    
+    kenji "С этим лекарством, сама понимаешь, в воду лезть не стоит. Тем более — в одиночку."
+    
+    hide Aiko_School_Uniform_02_Mocking_Silent with Dissolve( 0.1 )
+    show Aiko_School_Uniform_02_Normal_Silent at Move( ( 400, 620 ), ( 400, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    
+    "Айко опять пожала плечами и направилась к выходу. Дескать — не мои проблемы."
+    
+    kenji "Постой Айко! А может быть, завтра, вместе съездим на море? И там найдём этот самый «пустынный» пляж? Я не могу один, вдруг я начну тонуть?"
+    
+    show Aiko_School_Uniform_02_Surprised_Say at Move( ( 400, 620 ), ( 400, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    hide Aiko_School_Uniform_02_Normal_Silent
+    
+    aiko "Думаешь я тебя спасу?"
+    
+    show Aiko_School_Uniform_02_Surprised_Silent at Move( ( 400, 620 ), ( 400, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    hide Aiko_School_Uniform_02_Surprised_Say
+    
+    kenji "Ты же член плавательного кружка!"
+    
+    show Aiko_School_Uniform_01_Angry_Say at Move( ( 400, 620 ), ( 400, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    hide Aiko_School_Uniform_02_Surprised_Silent
+    
+    aiko "А ты опять напьёшься?"
+    
+    show Aiko_School_Uniform_01_Angry_Silent at Move( ( 400, 620 ), ( 400, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    hide Aiko_School_Uniform_01_Angry_Say
+    
+    kenji "Что значит опять? Это же не ради удовольствия, Айко!"
+    
+    show Aiko_School_Uniform_01_Angry_Say at Move( ( 400, 620 ), ( 400, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    hide Aiko_School_Uniform_01_Surprised_Silent
+    
+    aiko "В таком случае - даже не мечтай!"
+    
+    show Aiko_School_Uniform_01_Angry_Silent at Move( ( 400, 620 ), ( 400, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    hide Aiko_School_Uniform_01_Angry_Say
+    
+    kenji "Ну... Айко! Хочешь? Я встану на колени перед тобой, хочешь?"
+    
+    show Aiko_School_Uniform_02_Scared_Silent at Move( ( 400, 620 ), ( 400, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    hide Aiko_School_Uniform_01_Angry_Silent
+    
+    "По лицу Айко пробежала гримасса испуга и отвращения."
+    
+    show Aiko_School_Uniform_02_Scared_Say at Move( ( 400, 620 ), ( 400, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    hide Aiko_School_Uniform_02_Scared_Silent
+    
+    aiko "НЕТ!"
+    aiko "То есть да. Уговорил! Завтра поедем, но только без этого!"
+    
+    
+    
+    "Айко в мгновение ока натянула свои сандалии и исчезла в дверях."
     
     return

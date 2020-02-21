@@ -1,22 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "script.rpy", line 26, in script
-    unknown_character "П-привет!"
-Exception: Sayer 'unknown_character' is not defined.
+  File "script.rpy", line 701, in script
+    show Aiko_School_Uniform_02_Normal_Silent at Left( 0.2 ) with Dissolve( 0.1 )
+  File "script.rpy", line 701, in <module>
+    show Aiko_School_Uniform_02_Normal_Silent at Left( 0.2 ) with Dissolve( 0.1 )
+NameError: name 'Left' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "script.rpy", line 26, in script
-    unknown_character "П-привет!"
-  File "/home/daniel/Documents/Sources/renpy/renpy-7.3.2-sdk/renpy/ast.py", line 676, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "/home/daniel/Documents/Sources/renpy/renpy-7.3.2-sdk/renpy/ast.py", line 574, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who.encode("utf-8"))
-Exception: Sayer 'unknown_character' is not defined.
+  File "script.rpy", line 701, in script
+    show Aiko_School_Uniform_02_Normal_Silent at Left( 0.2 ) with Dissolve( 0.1 )
+  File "/home/daniel/Documents/Sources/renpy/renpy-7.3.2-sdk/renpy/ast.py", line 1181, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "/home/daniel/Documents/Sources/renpy/renpy-7.3.2-sdk/renpy/ast.py", line 1140, in show_imspec
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "/home/daniel/Documents/Sources/renpy/renpy-7.3.2-sdk/renpy/python.py", line 2035, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "/home/daniel/Documents/Sources/renpy/renpy-7.3.2-sdk/renpy/python.py", line 2028, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "script.rpy", line 701, in <module>
+    show Aiko_School_Uniform_02_Normal_Silent at Left( 0.2 ) with Dissolve( 0.1 )
+NameError: name 'Left' is not defined
 
 Linux-4.19.0-8-amd64-x86_64-with-debian-10.3
 Ren'Py 7.3.2.320
 radiopulsarvn 1.0
-Wed Feb 19 14:14:31 2020
+Fri Feb 21 12:51:30 2020

@@ -1,30 +1,68 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "script.rpy", line 701, in script
-    show Aiko_School_Uniform_02_Normal_Silent at Left( 0.2 ) with Dissolve( 0.1 )
-  File "script.rpy", line 701, in <module>
-    show Aiko_School_Uniform_02_Normal_Silent at Left( 0.2 ) with Dissolve( 0.1 )
-NameError: name 'Left' is not defined
+While loading <'Scale' <'Image' u'./images/sprites/Aiko/Aiko_With_Big_Spoon/Aiko_Base_Outfit_03_Normal_Silent.png'> 594 900 True>:
+  File "script.rpy", line 259, in script
+    show Aiko_Base_Outfit_03_Normal_Silent with Dissolve( 0.2 )
+IOError: Couldn't find file './images/sprites/Aiko/Aiko_With_Big_Spoon/Aiko_Base_Outfit_03_Normal_Silent.png'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "script.rpy", line 701, in script
-    show Aiko_School_Uniform_02_Normal_Silent at Left( 0.2 ) with Dissolve( 0.1 )
-  File "/home/daniel/Documents/Sources/renpy/renpy-7.3.2-sdk/renpy/ast.py", line 1181, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "/home/daniel/Documents/Sources/renpy/renpy-7.3.2-sdk/renpy/ast.py", line 1140, in show_imspec
-    at_list = [ renpy.python.py_eval(i) for i in at_list ]
-  File "/home/daniel/Documents/Sources/renpy/renpy-7.3.2-sdk/renpy/python.py", line 2035, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "/home/daniel/Documents/Sources/renpy/renpy-7.3.2-sdk/renpy/python.py", line 2028, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "script.rpy", line 701, in <module>
-    show Aiko_School_Uniform_02_Normal_Silent at Left( 0.2 ) with Dissolve( 0.1 )
-NameError: name 'Left' is not defined
+  File "script.rpy", line 259, in script
+    show Aiko_Base_Outfit_03_Normal_Silent with Dissolve( 0.2 )
+  File "/home/daniel/Documents/Sources/renpy/renpy-7.3.2-sdk/renpy/ast.py", line 1387, in execute
+    renpy.exports.with_statement(trans, paired)
+  File "/home/daniel/Documents/Sources/renpy/renpy-7.3.2-sdk/renpy/exports.py", line 1592, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "/home/daniel/Documents/Sources/renpy/renpy-7.3.2-sdk/renpy/display/core.py", line 2248, in do_with
+    clear=clear)
+  File "/home/daniel/Documents/Sources/renpy/renpy-7.3.2-sdk/renpy/display/core.py", line 2699, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "/home/daniel/Documents/Sources/renpy/renpy-7.3.2-sdk/renpy/display/core.py", line 3191, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "/home/daniel/Documents/Sources/renpy/renpy-7.3.2-sdk/renpy/display/core.py", line 2091, in draw_screen
+    renpy.config.screen_height,
+  File "render.pyx", line 546, in renpy.display.render.render_screen
+  File "render.pyx", line 247, in renpy.display.render.render
+  File "/home/daniel/Documents/Sources/renpy/renpy-7.3.2-sdk/renpy/display/layout.py", line 722, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 154, in renpy.display.render.render
+  File "render.pyx", line 247, in renpy.display.render.render
+  File "/home/daniel/Documents/Sources/renpy/renpy-7.3.2-sdk/renpy/display/transition.py", line 361, in render
+    top = render(self.new_widget, width, height, st, at)
+  File "render.pyx", line 154, in renpy.display.render.render
+  File "render.pyx", line 247, in renpy.display.render.render
+  File "/home/daniel/Documents/Sources/renpy/renpy-7.3.2-sdk/renpy/display/layout.py", line 722, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 154, in renpy.display.render.render
+  File "render.pyx", line 247, in renpy.display.render.render
+  File "/home/daniel/Documents/Sources/renpy/renpy-7.3.2-sdk/renpy/display/layout.py", line 722, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 154, in renpy.display.render.render
+  File "render.pyx", line 247, in renpy.display.render.render
+  File "accelerator.pyx", line 110, in renpy.display.accelerator.transform_render
+  File "render.pyx", line 247, in renpy.display.render.render
+  File "/home/daniel/Documents/Sources/renpy/renpy-7.3.2-sdk/renpy/display/image.py", line 500, in render
+    return wrap_render(self.target, width, height, st, at)
+  File "/home/daniel/Documents/Sources/renpy/renpy-7.3.2-sdk/renpy/display/image.py", line 306, in wrap_render
+    rend = render(child, w, h, st, at)
+  File "render.pyx", line 154, in renpy.display.render.render
+  File "render.pyx", line 247, in renpy.display.render.render
+  File "/home/daniel/Documents/Sources/renpy/renpy-7.3.2-sdk/renpy/display/im.py", line 584, in render
+    return cache.get(self, render=True)
+  File "/home/daniel/Documents/Sources/renpy/renpy-7.3.2-sdk/renpy/display/im.py", line 266, in get
+    surf = image.load()
+  File "/home/daniel/Documents/Sources/renpy/renpy-7.3.2-sdk/renpy/display/im.py", line 809, in load
+    child = cache.get(self.image)
+  File "/home/daniel/Documents/Sources/renpy/renpy-7.3.2-sdk/renpy/display/im.py", line 266, in get
+    surf = image.load()
+  File "/home/daniel/Documents/Sources/renpy/renpy-7.3.2-sdk/renpy/display/im.py", line 629, in load
+    surf = renpy.display.pgrender.load_image(renpy.loader.load(self.filename), self.filename)
+  File "/home/daniel/Documents/Sources/renpy/renpy-7.3.2-sdk/renpy/loader.py", line 576, in load
+    raise IOError("Couldn't find file '%s'." % name)
+IOError: Couldn't find file './images/sprites/Aiko/Aiko_With_Big_Spoon/Aiko_Base_Outfit_03_Normal_Silent.png'.
 
 Linux-4.19.0-8-amd64-x86_64-with-debian-10.3
 Ren'Py 7.3.2.320
 radiopulsarvn 1.0
-Fri Feb 21 12:51:30 2020
+Sat Feb 22 00:17:38 2020

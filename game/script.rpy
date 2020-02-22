@@ -190,56 +190,68 @@ label start:
     "А ведь это героиня популярного сейчас аниме сериала. Я его конечно не смотрел, но подозреваю, что там она отличница, президент кружка чайных церемоний, волонтер в местном храме и вообще — всем ребятам пример!"
     "Если бы она только знала, какую гадость с ней сделал такой никчёмный человек как я..."
 
-    #КОНЕЦ СЦЕНЫ - ДЕНЬ 1, МИДОРИ
-    #СЦЕНА - ДЕНЬ 1, ЗАВТРАК С АЙКО
+    #СЦЕНА - ДЕНЬ 1, АЙКО ЗАХОДИТ В КОНМНАТУ КЕНДЗИ И ВИДИТ МИДОРИ
 
     "Кендзи!"
-    
-    "Я настолько ушел в свои мысли что не сразу сообразил - меня зовут."
-    
-    scene kenji_bedroom_door
-    show aiko_sprite
-    
-    "В дверях стояла Айко, моя младшая сестра."
-    "Ой! Кажется она уставилась в мой монитор!"
-    
-    hide kenji_bedroom_door
-    hide aiko_sprite
-    
-    scene monitor_with_Midori
-    
-    "Я повернулся обратно к монитору. Там как и раньше красовалась Мидори, над которой я сегодня как следует поиздевался."
-    "Черт! Я бы ни за что не стал, добровольно демонстрировать такое творчество своей младшей сестре! Как не вовремя она зашла! "
-    
-    hide monitor_with_Midori
-    scene monitor_with_Kenji_desktop
-    
-    "Я молниеносно закрыл программу для рисования. А после, вновь повернулся к Айко."
-    
-    hide monitor_with_Kenji_desktop
-    scene kenji_bedroom_door
-    show aiko_sprite 
-    
-    "Похоже Айко успела разглядеть Мидори."
-    "На несколько секунд повисла неловкая пауза, но затем моя сестра пришла в себя и тихо сказала."
-    
-    aiko "Ужин готов."
-    
-    "Посмотрела на меня, нахмурилась и выпалила."
-    
-    aiko "Только надень на себя хоть что-то!"
-    
-    "Только сейчас я осознал что сижу в кресле в одних трусах."
-    "Пока я разглядывал себя и своё нижнее белье, Айко исчезла."
     
     image Day_Kenji_Home_Bedroom = "./images/bg/Indoor/Kenji_Bedroom/Day/Day_Kenji_Home_Bedroom.png"
     image Day_Kenji_Home_Bedroom_Mask = "./images/bg/Indoor/Kenji_Bedroom/Day/Day_Kenji_Bedroom_Mask.png"
     scene Day_Kenji_Home_Bedroom  with dissolve
     show expression AlphaMask( "Day_Kenji_Home_Bedroom_Mask", At( "dust", center )) as mask
     
+    "Я настолько ушел в свои мысли что не сразу сообразил - меня зовут."
+    
+    image Aiko_Base_Outfit_03_Normal_Say = im.Scale( "./images/sprites/Aiko/Aiko_Base_Outfit_03/Aiko_Base_Outfit_03_Normal_Say.png", 594, 900 ) 
+    image Aiko_Base_Outfit_03_Normal_Silent = im.Scale( "./images/sprites/Aiko/Aiko_Base_Outfit_03/Aiko_Base_Outfit_03_Normal_Silent.png", 594, 900 ) 
+    image Aiko_Base_Outfit_03_Confused_Silent = im.Scale( "./images/sprites/Aiko/Aiko_Base_Outfit_03/Aiko_Base_Outfit_03_Confused_Silent.png", 594, 900 ) 
+    image Aiko_Base_Outfit_03_Angry_Say = im.Scale( "./images/sprites/Aiko/Aiko_Base_Outfit_03/Aiko_Base_Outfit_03_Angry_Say.png", 594, 900 ) 
+    image Aiko_Base_Outfit_03_Angry_Silent = im.Scale( "./images/sprites/Aiko/Aiko_Base_Outfit_03/Aiko_Base_Outfit_03_Angry_Silent.png", 594, 900 ) 
+    
+    image Day_Kenji_Bedroom_Door = "./images/cg/DAY_01/Day_Kenji_Bedroom_Door/Day_Kenji_Bedroom_Door.png"
+    show Day_Kenji_Bedroom_Door with dissolve
+    show Aiko_Base_Outfit_03_Normal_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    
+    "В дверях стояла Айко, моя младшая сестра."
+    "Ой! Кажется она уставилась в мой монитор!"
+    "Я повернулся обратно к монитору. Там как и раньше красовалась Мидори, над которой я сегодня как следует поиздевался."
+    "Черт! Я бы ни за что не стал, добровольно демонстрировать такое творчество своей младшей сестре! Как не вовремя она зашла! "
+    "Я молниеносно закрыл программу для рисования. А после, вновь повернулся к Айко."
+    
+    show Aiko_Base_Outfit_03_Confused_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    hide Aiko_Base_Outfit_03_Normal_Silent
+    
+    "Похоже Айко успела разглядеть Мидори."
+    "На несколько секунд повисла неловкая пауза, но затем моя сестра пришла в себя и тихо сказала."
+    
+    show Aiko_Base_Outfit_03_Normal_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    hide Aiko_Base_Outfit_03_Confused_Silent
+    
+    aiko "Ужин готов."
+    
+    show Aiko_Base_Outfit_03_Normal_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    hide Aiko_Base_Outfit_03_Normal_Say
+    
+    "Посмотрела на меня, нахмурилась и выпалила."
+    
+    show Aiko_Base_Outfit_03_Angry_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    hide Aiko_Base_Outfit_03_Normal_Silent
+    
+    aiko "Только надень на себя хоть что-то!"
+    
+    show Aiko_Base_Outfit_03_Angry_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    hide Aiko_Base_Outfit_03_Angry_Say
+    
+    "Только сейчас я осознал что сижу в кресле в одних трусах."
+    "Пока я разглядывал себя и своё нижнее белье, Айко исчезла."
+    
+    hide Aiko_Base_Outfit_03_Angry_Silent with Dissolve( 0.1 )
+    hide Day_Kenji_Bedroom_Door with dissolve
+    
     "Не стоило злить свою сестру и опаздывать. Я встал, накинул рубашку, застегнул её через пуговицу."
     "Когда с рубашкой было покончено, я натянул брюки, и пытаясь застегнуть тугую ширинку, сделал несколько шагов по комнате."
-
+    
+    #СЦЕНА - ДЕНЬ 1, ЗАВТРАК С АЙКО
+    
     "Спустился по лестнице и вот я уже в большом холле, который к тому же выполняет роль кухни и столовой."
     
     image Day_Kenji_Home_Kitchen_Other = "./images/bg/Indoor/Kenji_Home_Kitchen/Day/Day_Kenji_Home_Kitchen_Other.jpg"
@@ -249,7 +261,13 @@ label start:
     
 
     kenji "И что сегодня на завтрак?"
+    
+    show Aiko_Base_Outfit_03_Normal_Say with Dissolve( 0.2 )
+    
     aiko "На завтрак — мисо-суп, рис и омлет."
+    
+    show Aiko_Base_Outfit_03_Normal_Silent with Dissolve( 0.2 )
+    hide Aiko_Base_Outfit_03_Normal_Say
     
     "Я сел за стол. Айко же, протёрла его влажной тряпкой. "
     "Поставила на него две деревянные подставки. Протерла их. "
@@ -443,7 +461,6 @@ label start:
     "Когда банка опустела, я почувствовал, что достиг нужной кондиции и двинулся к кладовке."
     "Пора приниматься за дело!"
     
-    #КОНЕЦ СЦЕНЫ - ДЕНЬ 1, ЗАВТРАК С АЙКО
     #СЦЕНА - ДЕНЬ 1, ВЫНОС МУСОРА 
     
     image Day_Kenji_Home_Pantry_Mask = "./images/bg/Indoor/Kenji_Home_Pantry/Day_Kenji_Home_Pantry_Mask.png"
@@ -600,10 +617,6 @@ label start:
     
     "Последние несколько метров я буквально волочил «чемоданчик» по асфальту оставляя блестящий след с чешуйками жёлтой краски. "
     "Похоже я сегодня был первым посетителем. Никакой электроники до меня никто не выбросил. Площадка для мусора была пуста"
-    
-    image Radio_Set_On_Ground = "/images/cg/DAY_01/Kenji_Moves_Trash/Radio_Set_On_Ground/Radio_Set_On_Ground.png"
-    show Radio_Set_On_Ground with dissolve
-    
     "Теперь здесь лежал только мой прибор."
     "Я пнул его напоследок и отправился домой."
     "На обратном пути мне так же никто не встретился - довольно удачный выдался денёк! "
@@ -742,13 +755,156 @@ label start:
     "По лицу Айко пробежала гримасса испуга и отвращения."
     
     show Aiko_School_Uniform_02_Scared_Say at Move( ( 400, 620 ), ( 400, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
-    hide Aiko_School_Uniform_02_Scared_Silent
+    hide Aiko_School_Uniform_02_Scared_Silent 
     
     aiko "НЕТ!"
     aiko "То есть да. Уговорил! Завтра поедем, но только без этого!"
     
-    
+    hide Aiko_School_Uniform_02_Scared_Say with Dissolve( 0.1 )
     
     "Айко в мгновение ока натянула свои сандалии и исчезла в дверях."
+    
+    "Как же мне повезло с сестренкой! Мысль о предстоящем отдыхе подбодрила меня и я с энтузиазмом вернулся к работе."
+    
+    scene Day_Trash_Place with dissolve
+    
+    image Kasumis_Fan_01 = "./images/cg/DAY_01/Kenji_Moves_Trash/Kasumi_Fan/Kasumis_Fan_01.png"
+    image Kasumis_Fan_02 = "./images/cg/DAY_01/Kenji_Moves_Trash/Kasumi_Fan/Kasumis_Fan_02.png"
+    
+    show Kasumis_Fan_01 with dissolve
+    
+    "За время моего отсутствия на площадке появился напольный вентилятор с синими, разлохмаченными от старости лопастями и пожелтевшим пластиком корпуса. "
+    
+    image Radio_Set_On_Ground = "/images/cg/DAY_01/Kenji_Moves_Trash/Radio_Set_On_Ground/Radio_Set_On_Ground.png"
+    show Radio_Set_On_Ground with dissolve
+    
+    "А «мой чемоданчик» похоже был рад знакомству, он приветливо открыл свой рот, или он сделал это от удивления? "
+    "Не знаю зачем это кому-то понадобилось, но крышка на нем была вскрыта. "
+    "Под ней оказалась сложная приборная панель — десятки всевозможных крутилок, тумблеров, циферблатов со стрелками и хитрых разъёмов. "
+    "Наверное кому-то стало интересно что же такое я сюда притащил. "
+    "Хм. Возможно этот кто-то — владелец сломанного вентилятора. Я подошёл к нему поближе. "
+    
+    show Kasumis_Fan_02 with dissolve
+    hide Radio_Set_On_Ground with dissolve
+    
+    "Обычный вентилятор, видно что старый, наверняка ему лет двадцать, не меньше. Сейчас таких не делают. Сквозь запах пыльной улицы, моё обоняние уловило «аромат» горелого пластика и сигарет. "
+    "Да и весь этот жёлтый налёт на нем, явно сигаретная копоть, налипшая за годы эксплуатации. "
+    "Стало немного противно, и в то же время в памяти всколыхнулись воспоминания былых лет."
+    
+    image smocking_old_man = "./images/cg/DAY_01/Kenji_Moves_Trash/Old_Smocking_Man/smocking_old_man.png"
+    image smocking_old_man_dream:
+        contains:
+            "smocking_old_man"
+        contains:
+            "Dream_Frame"
+    
+    scene smocking_old_man_dream with dissolve
+    
+    "Я вспомнил своего, давно умершего деда, который всю жизнь смолил какие-то американские сигареты. "
+    "Весь его дом, и каждая вещь в нем накрепко пропитались застарелым запахом сигаретного дыма."
+    
+    scene Day_Trash_Place with dissolve
+    
+    "Я подумал о том, что наверняка, столь активные курильщики — болеют какими-то заболеваниями. "
+    "Например Туберкулёз — неприятная и очень заразная болезнь, я слышал о такой. "
+    "Я отшагнул подальше от вентилятора и посмотрел на свою левую ладонь."
+    
+    "Ею я только что прикасался к прибору, принесенному ранее, а до меня его, похоже, трогал чужак. "
+    "Вот будет весело, если такой домосед как я, подцепит редкую и смертельную болезнь! А точнее, совсем не весело!"
+    "Я поспешил домой. Надо скорее вымыть руки!"
+    
+    scene Day_Kenji_Home_Pantry_Other_01 with dissolve
+    show expression AlphaMask( "Day_Kenji_Home_Pantry_Mask", At( "dust", center )) as mask
+    
+    "В свой третий поход до мусорки я взял два стареньких радиоприёмника, хотя они были довольно громоздкие — но в то же время совсем не тяжёлые."
+    
+    scene Day_Kenji_Home_Pantry_Other_02 with dissolve
+    show expression AlphaMask( "Day_Kenji_Home_Pantry_Mask", At( "dust", center )) as mask
+
+    kenji "Остальное, думаю, можно оставить и на потом"
+    kenji "За день сделано достаточно! Пожалуй еще одну вещь и довольно!"
+    
+    "Тяжёлого собрата жёлтого чемоданчика, я решил вынести сегодня во что бы то не стало. "
+    "А между тем, вторая банка пива подошла к концу. Я сходил на кухню и взял последнюю. Открывать её не стал — положил в карман брюк. "
+    "В последнем и самом тяжелом походе мне понадобятся обе руки!"
+    
+    scene Day_Trash_Place with dissolve
+    
+    "Поход был действительно трудный! "
+    "Когда я наконец дотащил свою ношу до места — у меня ужасно ныли плечи и спина, а в мокрые от пота ладони врезался узор тканевых ручек. "
+    
+    image Radio_Set_Power_Supply_On_ground = "./images/cg/DAY_01/Kenji_Moves_Trash/Radio_Set_Power_supply_On_Ground/Radio_Set_Power_Supply_On_ground.png"
+    show Radio_Set_Power_Supply_On_ground with dissolve
+    
+    "Прибор, тоже потерял товарный вид. Дело в том, что бока его были не гладкие, а состояли из сотен мелких рёбер — пластин. "
+    "Видимо при работе прибор грелся, и такая конструкция была нужна, для охлаждения. Ребра теперь были все погнуты, особенно те что по краям. "
+    "В просветы между ними забилась трава, земля и частички асфальта. Один из циферблатов на передней панели — треснул. "
+    
+    hide Radio_Set_Power_Supply_On_ground with dissolve
+    
+    "Но мне, конечно, было наплевать. Не на выставку же нёс, в самом деле!"
+    
+    "Ну вот и всё, пришло время передохнуть!"
+    "Я окинул взглядом и оценил вещи принесённые мной. Да я просто герой!"
+    "Эх, жалко я Айко не показал, какая эта жёлтая зараза - тяжёлая! Она бы мной гордилась! "
+    "Пожалела меня, и позабыла про свои придирки не меньше чем на месяц! И почему я такой не догадливый!"
+    
+    "С этими мыслями я открыл пиво, которое дожидалось в кармане брюк. "
+    "Да уж, взболтал я содержимое банки здорово — пена полезла наружу, липкие струйки потекли по пальцам. "
+    "Я тихо ругнулся, сдул пену, вытер руку о штаны, и поставил ногу на тот прибор, что принёс раньше остальных — как на поверженного врага. "
+    "Сделал глубокий глоток, затем огляделся по сторонам."
+    
+    image Kasumi_Walks = "./images/cg/DAY_01/Trash_Place_Meeting/Kasumi_Walks/Kasumi_Walks.png"
+    scene Kasumi_Walks with dissolve
+    
+    "Мне навстречу шла девушка, и катила перед собой маленькую тележку для вещей. "
+    "Тележка была пуста. "
+    "Зачем она это делала, было не понятно, да и способ перемещения тележки странный — гораздо проще везти тележку за собой."
+    "А такую маленькую — вообще, лучше было бы сложить, взять подмышку и идти так. "
+    "Внезапно девушка остановилась, отвернулась к обочине дороги и замерла."
+    
+    image Kasumi_And_Interesting_Wall = "./images/cg/DAY_01/Trash_Place_Meeting/Kasumi_And_Interesting_Wall/Kasumi_And_Interesting_Wall.png"
+    scene Kasumi_And_Interesting_Wall with dissolve
+    
+    "Не меньше минуты она стояла перед каменной кладкой, словно рассматривала интереснейшую картину."
+    "Я между тем терялся в догадках, чего же такого интересного она там увидела."
+    "Когда я проходил это место, то не приметил ничего необычного."
+    "Но может быть, девчонке этой надо на площадку для мусора? Я её стесняю, и поэтому она так внезапно принялась изучать эту стену?"
+    
+    scene Kasumi_Walks with dissolve
+    
+    "Как только я подумал об этом, школьница отвернулась от стены и продолжила свой путь в мою сторону. "
+    "Обычно я в таких случаях перехожу на другую сторону улицы или вообще стараюсь побыстрее скрыться с глаз встречного прохожего. "
+    "Но в этот раз повышенная концентрация «лекарства» позволила мне и далее с любопытством наблюдать за незнакомкой."
+    "Привычный страх перед людьми на время оставил меня полностью."
+    
+    scene Day_Trash_Place with dissolve
+    
+    "Девушка наконец достигла площадки для сбора мусора. И находилась метрах в пяти от меня."
+    "Она остановилась и отвесила мне учтивый поклон! Я бы даже сказал - чересчур учтивый!"
+    
+    image On_All_Fours = "./images/cg/DAY_01/Trash_Place_Meeting/On_All_Fours/On_All_Fours.png"
+    scene On_All_Fours with dissolve
+    
+    "Ее ладони коснулись асфальта, и она встала на четвереньки. "
+    "Если честно, мне захотелось воскликнуть от удивления, но я продолжил стоять как вкопанный, только глаза мои опускались все ниже. "
+    "Её руки замелькали по асфальту."
+    
+    image Kasumi_Hands_On_Kenji_Leg = "./images/cg/DAY_01/Trash_Place_Meeting/Kasumi_Hands_On_Kenji_Leg/Kasumi_Hands_On_Kenji_Leg.png"
+    show Kasumi_Hands_On_Kenji_Leg with dissolve
+    
+    "А через мгновение принялись ощупывать жёлтый чемоданчик и далее - мой кроссовок, штанину..."
+    
+    kenji "Эй! Ты чего творишь?"
+    
+    image Kasumi_Fells = "./images/cg/DAY_01/Trash_Place_Meeting/Kasumi_Fells/Kasumi_Fells.png"
+    scene Kasumi_Fells with dissolve
+
+    "Руки девушки отцепились от моих брюк, а сама она отпрянула так стремительно что не удержалась на ногах и села на асфальт."
+    "Но не успел я моргнуть, как она оправилась и встала."
+    
+    scene Day_Trash_Place with dissolve
+    
+    ""
     
     return

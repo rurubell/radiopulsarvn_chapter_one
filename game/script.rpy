@@ -12,8 +12,42 @@ define tv = Character( "Телевизор", color="#FFC95C" )
 
 
 label start:
+    #Пыль
     image dust = Dust( "./images/other/dust.png" )
+    #Рамка для флешбеков
     image Dream_Frame = "./images/cg/Misc/Dream_Frame/Dream_Frame.png"
+    #пустая картинка
+    image empty_image = "./images/other/empty.png"
+    
+    #Рамки для мини-цг
+    image border_01_right = "./images/other/borders/01_Right/border.png"
+    image border_01_right_mask = "./images/other/borders/01_Right/mask.png"
+    image border_01_left = "./images/other/borders/01_Left/border.png"
+    image border_01_left_mask = "./images/other/borders/01_Left/mask.png"
+    
+    
+    #Спрайты
+    #Айко в домашней одежде
+    image Aiko_Base_Outfit_03_Normal_Say = im.Scale( "./images/sprites/Aiko/Aiko_Base_Outfit_03/Aiko_Base_Outfit_03_Normal_Say.png", 594, 900 ) 
+    image Aiko_Base_Outfit_03_Normal_Silent = im.Scale( "./images/sprites/Aiko/Aiko_Base_Outfit_03/Aiko_Base_Outfit_03_Normal_Silent.png", 594, 900 ) 
+    image Aiko_Base_Outfit_03_Confused_Silent = im.Scale( "./images/sprites/Aiko/Aiko_Base_Outfit_03/Aiko_Base_Outfit_03_Confused_Silent.png", 594, 900 ) 
+    image Aiko_Base_Outfit_03_Angry_Say = im.Scale( "./images/sprites/Aiko/Aiko_Base_Outfit_03/Aiko_Base_Outfit_03_Angry_Say.png", 594, 900 ) 
+    image Aiko_Base_Outfit_03_Angry_Silent = im.Scale( "./images/sprites/Aiko/Aiko_Base_Outfit_03/Aiko_Base_Outfit_03_Angry_Silent.png", 594, 900 )
+    
+    #Айко в школьной одежде
+    image Aiko_School_Uniform_01_Angry_Silent = im.Scale( "./images/sprites/Aiko/Aiko_School_Uniform_01/Aiko_School_Uniform_Angry_Silent.png", 686, 900 ) 
+    image Aiko_School_Uniform_01_Angry_Say = im.Scale( "./images/sprites/Aiko/Aiko_School_Uniform_01/Aiko_School_Uniform_Angry_Say.png", 686, 900 ) 
+    image Aiko_School_Uniform_01_Shy_Silent = im.Scale( "./images/sprites/Aiko/Aiko_School_Uniform_01/Aiko_School_Uniform_01_Shy_Silent.png", 686, 900 ) 
+    image Aiko_School_Uniform_02_Normal_Say = im.Scale( "./images/sprites/Aiko/Aiko_School_Uniform_02/Aiko_School_Uniform_02_Normal_Say.png", 587, 900 ) 
+    image Aiko_School_Uniform_02_Normal_Silent = im.Scale( "./images/sprites/Aiko/Aiko_School_Uniform_02/Aiko_School_Uniform_02_Normal_Silent.png", 587, 900 ) 
+    image Aiko_School_Uniform_02_Surprised_Say = im.Scale( "./images/sprites/Aiko/Aiko_School_Uniform_02/Aiko_School_Uniform_02_Surprised_Say.png", 587, 900 ) 
+    image Aiko_School_Uniform_02_Surprised_Silent = im.Scale( "./images/sprites/Aiko/Aiko_School_Uniform_02/Aiko_School_Uniform_02_Surprised_Silent.png", 587, 900 ) 
+    image Aiko_School_Uniform_02_Mocking_Say = im.Scale( "./images/sprites/Aiko/Aiko_School_Uniform_02/Aiko_School_Uniform_02_Mocking_Say.png", 587, 900 ) 
+    image Aiko_School_Uniform_02_Mocking_Silent = im.Scale( "./images/sprites/Aiko/Aiko_School_Uniform_02/Aiko_School_Uniform_02_Mocking_Silent.png", 587, 900 ) 
+    image Aiko_School_Uniform_02_Scared_Say = im.Scale( "./images/sprites/Aiko/Aiko_School_Uniform_02/Aiko_School_Uniform_02_Scared_Say.png", 587, 900 ) 
+    image Aiko_School_Uniform_02_Scared_Silent = im.Scale( "./images/sprites/Aiko/Aiko_School_Uniform_02/Aiko_School_Uniform_02_Scared_Silent.png", 587, 900 ) 
+    
+    
     
     #СЦЕНА - ДЕНЬ 1, МИДОРИ
     
@@ -194,21 +228,38 @@ label start:
 
     "Кендзи!"
     
-    image Day_Kenji_Home_Bedroom = "./images/bg/Indoor/Kenji_Bedroom/Day/Day_Kenji_Home_Bedroom.png"
-    image Day_Kenji_Home_Bedroom_Mask = "./images/bg/Indoor/Kenji_Bedroom/Day/Day_Kenji_Bedroom_Mask.png"
-    scene Day_Kenji_Home_Bedroom  with dissolve
-    show expression AlphaMask( "Day_Kenji_Home_Bedroom_Mask", At( "dust", center )) as mask
+    scene Day_Kenji_Home_Bedroom with dissolve
     
     "Я настолько ушел в свои мысли что не сразу сообразил - меня зовут."
     
-    image Aiko_Base_Outfit_03_Normal_Say = im.Scale( "./images/sprites/Aiko/Aiko_Base_Outfit_03/Aiko_Base_Outfit_03_Normal_Say.png", 594, 900 ) 
-    image Aiko_Base_Outfit_03_Normal_Silent = im.Scale( "./images/sprites/Aiko/Aiko_Base_Outfit_03/Aiko_Base_Outfit_03_Normal_Silent.png", 594, 900 ) 
-    image Aiko_Base_Outfit_03_Confused_Silent = im.Scale( "./images/sprites/Aiko/Aiko_Base_Outfit_03/Aiko_Base_Outfit_03_Confused_Silent.png", 594, 900 ) 
-    image Aiko_Base_Outfit_03_Angry_Say = im.Scale( "./images/sprites/Aiko/Aiko_Base_Outfit_03/Aiko_Base_Outfit_03_Angry_Say.png", 594, 900 ) 
-    image Aiko_Base_Outfit_03_Angry_Silent = im.Scale( "./images/sprites/Aiko/Aiko_Base_Outfit_03/Aiko_Base_Outfit_03_Angry_Silent.png", 594, 900 ) 
+    #Мини ЦГ - дверь в комнату Кендзи, на фоне которого стоит Айко
+    image Day_Kenji_Bedroom_Door = "./images/bg/Indoor/Kenji_Bedroom/Day/Day_Kenji_Bedroom_Door.png"
+    image Day_Kenji_Bedroom_Door_Moved:
+        contains:
+            "Day_Kenji_Bedroom_Door"
+            xpos 500
     
-    image Day_Kenji_Bedroom_Door = "./images/cg/DAY_01/Day_Kenji_Bedroom_Door/Day_Kenji_Bedroom_Door.png"
-    show Day_Kenji_Bedroom_Door with dissolve
+    image border_01_right_moved:
+        contains:
+            "border_01_right"
+            xpos 900
+    
+    image border_01_right_mask_moved:
+        contains:
+            "border_01_right_mask"
+            xpos 900
+    
+    image Day_Kenji_Bedroom_Door_Masked = AlphaMask( "Day_Kenji_Bedroom_Door_Moved", "border_01_right_mask_moved" )
+    
+    image Day_Kenji_Bedroom_Door_With_Border_01:
+        contains:
+            "Day_Kenji_Bedroom_Door_Masked"
+        contains:
+            "border_01_right_moved"
+    
+    show Day_Kenji_Bedroom_Door_With_Border_01 with Dissolve( 0.2 )
+    ##
+    
     show Aiko_Base_Outfit_03_Normal_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
     
     "В дверях стояла Айко, моя младшая сестра."
@@ -226,7 +277,7 @@ label start:
     show Aiko_Base_Outfit_03_Normal_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
     hide Aiko_Base_Outfit_03_Confused_Silent
     
-    aiko "Ужин готов."
+    aiko "Завтрак готов."
     
     show Aiko_Base_Outfit_03_Normal_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
     hide Aiko_Base_Outfit_03_Normal_Say
@@ -245,7 +296,7 @@ label start:
     "Пока я разглядывал себя и своё нижнее белье, Айко исчезла."
     
     hide Aiko_Base_Outfit_03_Angry_Silent with Dissolve( 0.1 )
-    hide Day_Kenji_Bedroom_Door with dissolve
+    hide Day_Kenji_Bedroom_Door_With_Border_01 with dissolve
     
     "Не стоило злить свою сестру и опаздывать. Я встал, накинул рубашку, застегнул её через пуговицу."
     "Когда с рубашкой было покончено, я натянул брюки, и пытаясь застегнуть тугую ширинку, сделал несколько шагов по комнате."
@@ -626,18 +677,6 @@ label start:
     
     "Я ворвался в дом, распахнул холодильник и немедленно выпил холодного пива. Ох, похоже пол банки выдул за несколько глотков! "
     
-    image Aiko_School_Uniform_01_Angry_Silent = im.Scale( "./images/sprites/Aiko/Aiko_School_Uniform_01/Aiko_School_Uniform_Angry_Silent.png", 686, 900 ) 
-    image Aiko_School_Uniform_01_Angry_Say = im.Scale( "./images/sprites/Aiko/Aiko_School_Uniform_01/Aiko_School_Uniform_Angry_Say.png", 686, 900 ) 
-    image Aiko_School_Uniform_01_Shy_Silent = im.Scale( "./images/sprites/Aiko/Aiko_School_Uniform_01/Aiko_School_Uniform_01_Shy_Silent.png", 686, 900 ) 
-    image Aiko_School_Uniform_02_Normal_Say = im.Scale( "./images/sprites/Aiko/Aiko_School_Uniform_02/Aiko_School_Uniform_02_Normal_Say.png", 587, 900 ) 
-    image Aiko_School_Uniform_02_Normal_Silent = im.Scale( "./images/sprites/Aiko/Aiko_School_Uniform_02/Aiko_School_Uniform_02_Normal_Silent.png", 587, 900 ) 
-    image Aiko_School_Uniform_02_Surprised_Say = im.Scale( "./images/sprites/Aiko/Aiko_School_Uniform_02/Aiko_School_Uniform_02_Surprised_Say.png", 587, 900 ) 
-    image Aiko_School_Uniform_02_Surprised_Silent = im.Scale( "./images/sprites/Aiko/Aiko_School_Uniform_02/Aiko_School_Uniform_02_Surprised_Silent.png", 587, 900 ) 
-    image Aiko_School_Uniform_02_Mocking_Say = im.Scale( "./images/sprites/Aiko/Aiko_School_Uniform_02/Aiko_School_Uniform_02_Mocking_Say.png", 587, 900 ) 
-    image Aiko_School_Uniform_02_Mocking_Silent = im.Scale( "./images/sprites/Aiko/Aiko_School_Uniform_02/Aiko_School_Uniform_02_Mocking_Silent.png", 587, 900 ) 
-    image Aiko_School_Uniform_02_Scared_Say = im.Scale( "./images/sprites/Aiko/Aiko_School_Uniform_02/Aiko_School_Uniform_02_Scared_Say.png", 587, 900 ) 
-    image Aiko_School_Uniform_02_Scared_Silent = im.Scale( "./images/sprites/Aiko/Aiko_School_Uniform_02/Aiko_School_Uniform_02_Scared_Silent.png", 587, 900 ) 
-    
     show Aiko_School_Uniform_01_Angry_Silent with Dissolve( 0.2 )
     
     "Айко была на кухне. Глядя на меня она нахмурилась, но ничего не сказала. "
@@ -833,14 +872,43 @@ label start:
     "Поход был действительно трудный! "
     "Когда я наконец дотащил свою ношу до места — у меня ужасно ныли плечи и спина, а в мокрые от пота ладони врезался узор тканевых ручек. "
     
+    
+    #Мини ЦГ - БП от рации на земле
     image Radio_Set_Power_Supply_On_ground = "./images/cg/DAY_01/Kenji_Moves_Trash/Radio_Set_Power_supply_On_Ground/Radio_Set_Power_Supply_On_ground.png"
-    show Radio_Set_Power_Supply_On_ground with dissolve
+    image Radio_Set_Power_Supply_On_ground_Moved:
+        contains:
+            "Radio_Set_Power_Supply_On_ground"
+            xpos 400
+            pause 0.7
+            linear 5.0 xpos 900
+    
+    image border_01_right_moved:
+        contains:
+            "border_01_right"
+            xpos 900
+    
+    image border_01_right_mask_moved:
+        contains:
+            "border_01_right_mask"
+            xpos 900
+    
+    image Radio_Set_Power_Supply_On_ground_Masked = AlphaMask( "Radio_Set_Power_Supply_On_ground_Moved", "border_01_right_mask_moved" )
+    
+    image Radio_Set_Power_Supply_On_ground_With_Border_01:
+        contains:
+            "Radio_Set_Power_Supply_On_ground_Masked"
+        contains:
+            "border_01_right_moved"
+    
+    show Radio_Set_Power_Supply_On_ground_With_Border_01 with Dissolve( 0.2 )
+    ##
+    
     
     "Прибор, тоже потерял товарный вид. Дело в том, что бока его были не гладкие, а состояли из сотен мелких рёбер — пластин. "
     "Видимо при работе прибор грелся, и такая конструкция была нужна, для охлаждения. Ребра теперь были все погнуты, особенно те что по краям. "
     "В просветы между ними забилась трава, земля и частички асфальта. Один из циферблатов на передней панели — треснул. "
     
-    hide Radio_Set_Power_Supply_On_ground with dissolve
+    hide Radio_Set_Power_Supply_On_ground_With_Border_01 with dissolve
     
     "Но мне, конечно, было наплевать. Не на выставку же нёс, в самом деле!"
     
@@ -854,8 +922,36 @@ label start:
     "Я тихо ругнулся, сдул пену, вытер руку о штаны, и поставил ногу на тот прибор, что принёс раньше остальных — как на поверженного врага. "
     "Сделал глубокий глоток, затем огляделся по сторонам."
     
+    #Мини ЦГ - Касуми идет с тележкой
     image Kasumi_Walks = "./images/cg/DAY_01/Trash_Place_Meeting/Kasumi_Walks/Kasumi_Walks.png"
-    scene Kasumi_Walks with dissolve
+    image Kasumi_Walks_Moved:
+        contains:
+            "Kasumi_Walks"
+            xpos 700
+            #xpos 500
+            #pause 0.7
+            #linear 5.0 xpos 700
+    
+    image border_01_right_moved:
+        contains:
+            "border_01_right"
+            xpos 900
+    
+    image border_01_right_mask_moved:
+        contains:
+            "border_01_right_mask"
+            xpos 900
+    
+    image Kasumi_Walks_Masked = AlphaMask( "Kasumi_Walks_Moved", "border_01_right_mask_moved" )
+    
+    image Kasumi_Walks_With_Border_01:
+        contains:
+            "Kasumi_Walks_Masked"
+        contains:
+            "border_01_right_moved"
+    
+    show Kasumi_Walks_With_Border_01 with Dissolve( 0.2 )
+    ##
     
     "Мне навстречу шла девушка, и катила перед собой маленькую тележку для вещей. "
     "Тележка была пуста. "
@@ -863,47 +959,165 @@ label start:
     "А такую маленькую — вообще, лучше было бы сложить, взять подмышку и идти так. "
     "Внезапно девушка остановилась, отвернулась к обочине дороги и замерла."
     
+    hide Kasumi_Walks_With_Border_01 with Dissolve( 0.1 )
+    
+    #Мини ЦГ - Касуми стоит с тележкой
     image Kasumi_And_Interesting_Wall = "./images/cg/DAY_01/Trash_Place_Meeting/Kasumi_And_Interesting_Wall/Kasumi_And_Interesting_Wall.png"
-    scene Kasumi_And_Interesting_Wall with dissolve
+    image Kasumi_And_Interesting_Wall_Moved:
+        contains:
+            "Kasumi_And_Interesting_Wall"
+            xpos -600
+            #xpos -900
+            #pause 0.7
+            #linear 5.0 xpos -600
+    
+    image border_01_left_moved:
+        contains:
+            "border_01_left"
+            xpos -1000
+    
+    image border_01_left_mask_moved:
+        contains:
+            "border_01_left_mask"
+            xpos -1000
+    
+    image Kasumi_And_Interesting_Wall_Masked = AlphaMask( "Kasumi_And_Interesting_Wall_Moved", "border_01_left_mask_moved" )
+    
+    image Kasumi_And_Interesting_Wall_With_Border_01:
+        contains:
+            "Kasumi_And_Interesting_Wall_Masked"
+        contains:
+            "border_01_left_moved"
+    
+    show Kasumi_And_Interesting_Wall_With_Border_01 with Dissolve( 0.2 )
+    ##
     
     "Не меньше минуты она стояла перед каменной кладкой, словно рассматривала интереснейшую картину."
     "Я между тем терялся в догадках, чего же такого интересного она там увидела."
     "Когда я проходил это место, то не приметил ничего необычного."
     "Но может быть, девчонке этой надо на площадку для мусора? Я её стесняю, и поэтому она так внезапно принялась изучать эту стену?"
     
-    scene Kasumi_Walks with dissolve
+    hide Kasumi_And_Interesting_Wall_With_Border_01 with Dissolve( 0.1 )
+    show Kasumi_Walks_With_Border_01 with Dissolve( 0.2 )
     
     "Как только я подумал об этом, школьница отвернулась от стены и продолжила свой путь в мою сторону. "
     "Обычно я в таких случаях перехожу на другую сторону улицы или вообще стараюсь побыстрее скрыться с глаз встречного прохожего. "
     "Но в этот раз повышенная концентрация «лекарства» позволила мне и далее с любопытством наблюдать за незнакомкой."
     "Привычный страх перед людьми на время оставил меня полностью."
     
-    scene Day_Trash_Place with dissolve
+    hide Kasumi_Walks_With_Border_01 with Dissolve( 0.1 )
     
     "Девушка наконец достигла площадки для сбора мусора. И находилась метрах в пяти от меня."
     "Она остановилась и отвесила мне учтивый поклон! Я бы даже сказал - чересчур учтивый!"
     
+    #Мини ЦГ - Касуми стоит на четвереньках
     image On_All_Fours = "./images/cg/DAY_01/Trash_Place_Meeting/On_All_Fours/On_All_Fours.png"
-    scene On_All_Fours with dissolve
+    image On_All_Fours_Moved:
+        contains:
+            "On_All_Fours"
+            xpos -500
+            pause 0.7
+            linear 10.0 xpos -1100
+    
+    image border_01_left_moved:
+        contains:
+            "border_01_left"
+            xpos -1000
+    
+    image border_01_left_mask_moved:
+        contains:
+            "border_01_left_mask"
+            xpos -1000
+    
+    image On_All_Fours_Masked = AlphaMask( "On_All_Fours_Moved", "border_01_left_mask_moved" )
+    
+    image On_All_Fours_With_Border_01:
+        contains:
+            "On_All_Fours_Masked"
+        contains:
+            "border_01_left_moved"
+    
+    show On_All_Fours_With_Border_01 with Dissolve( 0.2 )
+    ##
     
     "Ее ладони коснулись асфальта, и она встала на четвереньки. "
     "Если честно, мне захотелось воскликнуть от удивления, но я продолжил стоять как вкопанный, только глаза мои опускались все ниже. "
     "Её руки замелькали по асфальту."
     
+    hide On_All_Fours_With_Border_01 with Dissolve( 0.1 )
+    
+    #Мини ЦГ - Руки Касуми на штанине Кендзи
     image Kasumi_Hands_On_Kenji_Leg = "./images/cg/DAY_01/Trash_Place_Meeting/Kasumi_Hands_On_Kenji_Leg/Kasumi_Hands_On_Kenji_Leg.png"
-    show Kasumi_Hands_On_Kenji_Leg with dissolve
+    image Kasumi_Hands_On_Kenji_Leg_Moved:
+        contains:
+            "Kasumi_Hands_On_Kenji_Leg"
+            xpos 700
+            #xpos 500
+            #pause 0.7
+            #linear 5.0 xpos 700
+    
+    image border_01_right_moved:
+        contains:
+            "border_01_right"
+            xpos 1000
+    
+    image border_01_right_mask_moved:
+        contains:
+            "border_01_right_mask"
+            xpos 1000
+    
+    image Kasumi_Hands_On_Kenji_Leg_Masked = AlphaMask( "Kasumi_Hands_On_Kenji_Leg_Moved", "border_01_right_mask_moved" )
+    
+    image Kasumi_Hands_On_Kenji_Leg_With_Border_01:
+        contains:
+            "Kasumi_Hands_On_Kenji_Leg_Masked"
+        contains:
+            "border_01_right_moved"
+    
+    show Kasumi_Hands_On_Kenji_Leg_With_Border_01 with Dissolve( 0.2 )
+    ##
     
     "А через мгновение принялись ощупывать жёлтый чемоданчик и далее - мой кроссовок, штанину..."
     
     kenji "Эй! Ты чего творишь?"
     
+    hide Kasumi_Hands_On_Kenji_Leg_With_Border_01 with Dissolve( 0.1 )
+    show empty_image with vpunch #Трясем экран
+    
+    "..."
+    
+    #Мини ЦГ - Касуми упала на пятую точку
     image Kasumi_Fells = "./images/cg/DAY_01/Trash_Place_Meeting/Kasumi_Fells/Kasumi_Fells.png"
-    scene Kasumi_Fells with dissolve
+    image Kasumi_Fells_Moved:
+        contains:
+            "Kasumi_Fells"
+            xpos -700
+            pause 0.7
+            linear 5.0 xpos -500
+    
+    image border_01_left_moved:
+        contains:
+            "border_01_left"
+            xpos -1000
+    
+    image border_01_left_mask_moved:
+        contains:
+            "border_01_left_mask"
+            xpos -1000
+    
+    image Kasumi_Fells_Masked = AlphaMask( "Kasumi_Fells_Moved", "border_01_left_mask_moved" )
+    
+    image Kasumi_Fells_With_Border_01:
+        contains:
+            "Kasumi_Fells_Masked"
+        contains:
+            "border_01_left_moved"
+    
+    show Kasumi_Fells_With_Border_01 with dissolve
+    ##
 
     "Руки девушки отцепились от моих брюк, а сама она отпрянула так стремительно что не удержалась на ногах и села на асфальт."
     "Но не успел я моргнуть, как она оправилась и встала."
-    
-    scene Day_Trash_Place with dissolve
     
     ""
     

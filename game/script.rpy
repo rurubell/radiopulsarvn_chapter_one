@@ -34,6 +34,22 @@ label start:
     image Aiko_Base_Outfit_03_Angry_Say = im.Scale( "./images/sprites/Aiko/Aiko_Base_Outfit_03/Aiko_Base_Outfit_03_Angry_Say.png", 594, 900 ) 
     image Aiko_Base_Outfit_03_Angry_Silent = im.Scale( "./images/sprites/Aiko/Aiko_Base_Outfit_03/Aiko_Base_Outfit_03_Angry_Silent.png", 594, 900 )
     
+    #Айко с ложкой
+    image Aiko_With_Big_Spoon_Angry_Say = im.Scale( "./images/sprites/Aiko/Aiko_With_Big_Spoon/Aiko_With_Big_Spoon_Angry_Say.png", 880, 900 ) 
+    image Aiko_With_Big_Spoon_Angry_Silent = im.Scale( "./images/sprites/Aiko/Aiko_With_Big_Spoon/Aiko_With_Big_Spoon_Angry_Silent.png", 880, 900 ) 
+    image Aiko_With_Big_Spoon_Confused_Silent = im.Scale( "./images/sprites/Aiko/Aiko_With_Big_Spoon/Aiko_With_Big_Spoon_Confused_Silent.png", 880, 900 ) 
+    image Aiko_With_Big_Spoon_Normal_Say = im.Scale( "./images/sprites/Aiko/Aiko_With_Big_Spoon/Aiko_With_Big_Spoon_Normal_Say.png", 880, 900 ) 
+    image Aiko_With_Big_Spoon_Normal_Silent = im.Scale( "./images/sprites/Aiko/Aiko_With_Big_Spoon/Aiko_With_Big_Spoon_Normal_Silent.png", 880, 900 ) 
+    image Aiko_With_Big_Spoon_Surprised_Say = im.Scale( "./images/sprites/Aiko/Aiko_With_Big_Spoon/Aiko_With_Big_Spoon_Surprised_Say.png", 880, 900 ) 
+    image Aiko_With_Big_Spoon_Surprised_Silent = im.Scale( "./images/sprites/Aiko/Aiko_With_Big_Spoon/Aiko_With_Big_Spoon_Surprised_Silent.png", 880, 900 ) 
+    
+    #Айко с пивом
+    image Aiko_With_Beer_Irritated = im.Scale( "./images/sprites/Aiko/Aiko_With_Beer/Aiko_With_Beer_Irritated.png", 880, 900 ) 
+    image Aiko_With_Beer_Normal_Say = im.Scale( "./images/sprites/Aiko/Aiko_With_Beer/Aiko_With_Beer_Normal_Say.png", 880, 900 ) 
+    image Aiko_With_Beer_Normal_Silent = im.Scale( "./images/sprites/Aiko/Aiko_With_Beer/Aiko_With_Beer_Normal_Silent.png", 880, 900 ) 
+    image Aiko_With_Beer_Surprised_Say = im.Scale( "./images/sprites/Aiko/Aiko_With_Beer/Aiko_With_Beer_Surprised_Say.png", 880, 900 ) 
+    image Aiko_With_Beer_Surprised_Silent = im.Scale( "./images/sprites/Aiko/Aiko_With_Beer/Aiko_With_Beer_Surprised_Silent.png", 880, 900 ) 
+    
     #Айко в школьной одежде
     image Aiko_School_Uniform_01_Angry_Silent = im.Scale( "./images/sprites/Aiko/Aiko_School_Uniform_01/Aiko_School_Uniform_Angry_Silent.png", 686, 900 ) 
     image Aiko_School_Uniform_01_Angry_Say = im.Scale( "./images/sprites/Aiko/Aiko_School_Uniform_01/Aiko_School_Uniform_Angry_Say.png", 686, 900 ) 
@@ -329,28 +345,47 @@ label start:
     
     "Даже розовые таблетки — ферменты для пищеварения, которые мне прописали много лет назад — не забыты."
     
-    image Kenji_1st_Day_Breakfast_Normal_Aiko_Say = "./images/cg/DAY_01/Kenji_1st_Day_Breakfast/Normal_Aiko_Say.png"
-    show Kenji_1st_Day_Breakfast_Normal_Aiko_Say with moveinright
+    #Мини ЦГ - кухонная плита, на фоне которой стоит Айко
+    image Day_Kenji_Home_Kitchen_Gas_Stove = "./images/bg/Indoor/Kenji_Home_Kitchen/Day/Day_Kenji_Home_Kitchen_Gas_Stove.jpg"
+    image Day_Kenji_Home_Kitchen_Gas_Stove_Moved:
+        contains:
+            "Day_Kenji_Home_Kitchen_Gas_Stove"
+            xpos 500
+    
+    image border_01_right_moved:
+        contains:
+            "border_01_right"
+            xpos 900
+    
+    image border_01_right_mask_moved:
+        contains:
+            "border_01_right_mask"
+            xpos 900
+    
+    image Day_Kenji_Home_Kitchen_Gas_Stove_Masked = AlphaMask( "Day_Kenji_Home_Kitchen_Gas_Stove_Moved", "border_01_right_mask_moved" )
+    
+    image Day_Kenji_Home_Kitchen_Gas_Stove_With_Border_01:
+        contains:
+            "Day_Kenji_Home_Kitchen_Gas_Stove_Masked"
+        contains:
+            "border_01_right_moved"
+    
+    show Day_Kenji_Home_Kitchen_Gas_Stove_With_Border_01 with Dissolve( 0.2 )
+    ##
+    
+    show Aiko_With_Big_Spoon_Normal_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
     
     aiko "Папа и мама звонили."
     
-    image Kenji_1st_Day_Breakfast_Normal_Aiko_Silent = "./images/cg/DAY_01/Kenji_1st_Day_Breakfast/Normal_Aiko_Silent.png"
-    image Kenji_1st_Day_Breakfast_TV_Strange_Movie = "./images/cg/DAY_01/Kenji_1st_Day_Breakfast/TV_Strange_Movie.png"
-    image Kenji_1st_Day_Breakfast_Confused_Aiko = "./images/cg/DAY_01/Kenji_1st_Day_Breakfast/Confused_Aiko.png"
-    image Kenji_1st_Day_Breakfast_TV_News = "./images/cg/DAY_01/Kenji_1st_Day_Breakfast/TV_News.png"
-    image Kenji_1st_Day_Breakfast_Surprised_Aiko_Say = "./images/cg/DAY_01/Kenji_1st_Day_Breakfast/Surprised_Aiko_Say.png"
-    image Kenji_1st_Day_Breakfast_Surprised_Aiko_Silent = "./images/cg/DAY_01/Kenji_1st_Day_Breakfast/Surprised_Aiko_Silent.png"
-    image Kenji_1st_Day_Breakfast_Angry_Aiko_Say = "./images/cg/DAY_01/Kenji_1st_Day_Breakfast/Angry_Aiko_Say.png"
-    image Kenji_1st_Day_Breakfast_Angry_Aiko_Silent = "./images/cg/DAY_01/Kenji_1st_Day_Breakfast/Angry_Aiko_Silent.png"
-    
-    show Kenji_1st_Day_Breakfast_Normal_Aiko_Silent
-    hide Kenji_1st_Day_Breakfast_Normal_Aiko_Say
+    show Aiko_With_Big_Spoon_Normal_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    hide Aiko_With_Big_Spoon_Normal_Say
     
     "Меня от этой новости немного передёрнуло, отца я побаивался. "
     "Но, последнюю неделю я вёл себя хорошо, не думаю что Айко могла про меня наябедничать. "
     "Я ждал, что Айко скажет что-то еще, но она не стала продолжать. Значит — все нормально!"
     
-    hide Kenji_1st_Day_Breakfast_Normal_Aiko_Silent with moveoutright
+    hide Aiko_With_Big_Spoon_Normal_Silent with Dissolve( 0.1 )
+    hide Day_Kenji_Home_Kitchen_Gas_Stove_With_Border_01 with Dissolve( 0.2 )
     
     "Довольно странно, что Айко так просто называла моего отца «папой»."
     "Дело в том, что Айко не была его родной дочкой. "
@@ -375,12 +410,14 @@ label start:
     
     tv "С-сэмпай!"
     
-    show Kenji_1st_Day_Breakfast_Confused_Aiko with moveinright
+    show Day_Kenji_Home_Kitchen_Gas_Stove_With_Border_01 with Dissolve( 0.2 )
+    show Aiko_With_Big_Spoon_Confused_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
     
     "Я перевёл взгляд на сестру. Что за дурацкий канал она врубила с утра пораньше? "
     "Айко была сильно смущена и стояла как истукан с крышкой от кастрюли и черпаком в руках."
     
-    hide Kenji_1st_Day_Breakfast_Confused_Aiko with moveoutright
+    hide Aiko_With_Big_Spoon_Confused_Silent with Dissolve( 0.1 )
+    hide Day_Kenji_Home_Kitchen_Gas_Stove_With_Border_01 with Dissolve( 0.2 )
     
     "Хвала богам, пульт лежал на столе и через мгновение был у меня в руках."
     "Я перебирал каналы, пока не нашёл что-то наиболее нейтральное. "
@@ -395,21 +432,23 @@ label start:
     
     "Я вновь взялся за палочки для еды, но вдруг Айко остановила меня."
     
-    show Kenji_1st_Day_Breakfast_Normal_Aiko_Say with moveinright
+    show Day_Kenji_Home_Kitchen_Gas_Stove_With_Border_01 with Dissolve( 0.2 )
+    show Aiko_With_Big_Spoon_Normal_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
     
     aiko "Ты не забыл?"
     
-    show Kenji_1st_Day_Breakfast_Normal_Aiko_Silent
-    hide Kenji_1st_Day_Breakfast_Normal_Aiko_Say
+    show Aiko_With_Big_Spoon_Normal_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    hide Aiko_With_Big_Spoon_Normal_Say
     
     kenji "Не забыл «что»?"
     
-    show Kenji_1st_Day_Breakfast_Normal_Aiko_Say
-    hide Kenji_1st_Day_Breakfast_Normal_Aiko_Silent
+    show Aiko_With_Big_Spoon_Normal_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    hide Aiko_With_Big_Spoon_Normal_Silent
     
     aiko "Сегодня четверг, день вывоза электронных приборов. Мама же просила освободить кладовку!"
     
-    hide Kenji_1st_Day_Breakfast_Normal_Aiko_Say with moveoutright
+    hide Aiko_With_Big_Spoon_Normal_Say with Dissolve( 0.1 )
+    hide Day_Kenji_Home_Kitchen_Gas_Stove_With_Border_01 with Dissolve( 0.2 )
     
     "Черт! Я помнил про это вчера, но с утра конечно позабыл все на свете."
     "Вот бы еще и Айко забыла! "
@@ -422,50 +461,52 @@ label start:
     
     kenji "Айко! Ты ещё не налила себе порцию?"
     
-    show Kenji_1st_Day_Breakfast_Normal_Aiko_Say with moveinright
+    show Day_Kenji_Home_Kitchen_Gas_Stove_With_Border_01 with Dissolve( 0.2 )
+    show Aiko_With_Big_Spoon_Normal_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
     
     aiko "Что? Нет. Но собираюсь."
     
-    show Kenji_1st_Day_Breakfast_Normal_Aiko_Silent
-    hide Kenji_1st_Day_Breakfast_Normal_Aiko_Say
+    show Aiko_With_Big_Spoon_Normal_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    hide Aiko_With_Big_Spoon_Normal_Say
     
     kenji "Возьми мою, я суп не буду!"
     
-    show Kenji_1st_Day_Breakfast_Surprised_Aiko_Say
-    hide Kenji_1st_Day_Breakfast_Normal_Aiko_Silent
+    show Aiko_With_Big_Spoon_Surprised_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    hide Aiko_With_Big_Spoon_Normal_Silent
     
     aiko "Это ещё почему?"
     
-    show Kenji_1st_Day_Breakfast_Surprised_Aiko_Silent
-    hide Kenji_1st_Day_Breakfast_Surprised_Aiko_Say
+    show Aiko_With_Big_Spoon_Surprised_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    hide Aiko_With_Big_Spoon_Surprised_Say
     
     "Не то, чтобы я вдруг внезапно перестал быть голодным. Но мне требовалось оставить место в желудке для кое-чего другого."
     
     kenji "Мне салата хватит! А вместо супа, достань ка мне из холодильника баночку пива! Там же ещё осталось?"
     
-    show Kenji_1st_Day_Breakfast_Angry_Aiko_Say
-    hide Kenji_1st_Day_Breakfast_Surprised_Aiko_Silent
+    show Aiko_With_Big_Spoon_Angry_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    hide Aiko_With_Big_Spoon_Surprised_Silent
     
     aiko "Пиво! С утра?!"
     
-    show Kenji_1st_Day_Breakfast_Angry_Aiko_Silent
-    hide Kenji_1st_Day_Breakfast_Angry_Aiko_Say
+    show Aiko_With_Big_Spoon_Angry_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    hide Aiko_With_Big_Spoon_Angry_Say
     
     kenji "А что такого?"
     
-    show Kenji_1st_Day_Breakfast_Angry_Aiko_Say
-    hide Kenji_1st_Day_Breakfast_Angry_Aiko_Silent
+    show Aiko_With_Big_Spoon_Angry_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    hide Aiko_With_Big_Spoon_Angry_Silent
     
     aiko "Нет, ничего! Суп ты теперь вообще есть не будешь? Может мне тогда начать варить пиво для тебя?"
     
-    show Kenji_1st_Day_Breakfast_Angry_Aiko_Silent
-    hide Kenji_1st_Day_Breakfast_Angry_Aiko_Say
+    show Aiko_With_Big_Spoon_Angry_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    hide Aiko_With_Big_Spoon_Angry_Say
     
     "Айко была крайне возмущёна."
     
     kenji "Остынь Айко. Мне надо, понимаешь? Это как лекарство. Я же на улицу пойду. А там люди кругом. Это мне для храбрости!"
     
-    hide Kenji_1st_Day_Breakfast_Angry_Aiko_Silent with moveoutright
+    hide Aiko_With_Big_Spoon_Angry_Silent with Dissolve( 0.1 )
+    hide Day_Kenji_Home_Kitchen_Gas_Stove_With_Border_01 with Dissolve( 0.2 )
     
     "Конечно Айко не понять меня. "
     "Но мне — тридцатилетнему затворнику, проводящему дни и ночи за компьютером, известно насколько это тяжело встречать по дороге соседей и знакомых, и хриплым голосом желать им доброго дня. "
@@ -473,26 +514,49 @@ label start:
 
     "Айко с угрюмым видом кинула черпак в кастрюлю и пошла к холодильнику."
     
-    image Kenji_1st_Day_Breakfast_Fridge_Normal_Aiko_Say = "./images/cg/DAY_01/Kenji_1st_Day_Breakfast/Fridge_Normal_Aiko_Say.png"
-    image Kenji_1st_Day_Breakfast_Fridge_Normal_Aiko_Silent = "./images/cg/DAY_01/Kenji_1st_Day_Breakfast/Fridge_Normal_Aiko_Silent.png"
-    image Kenji_1st_Day_Breakfast_Fridge_Surprised_Aiko_Say = "./images/cg/DAY_01/Kenji_1st_Day_Breakfast/Fridge_Surprised_Aiko_Say.png"
-    image Kenji_1st_Day_Breakfast_Fridge_Surprised_Aiko_Silent = "./images/cg/DAY_01/Kenji_1st_Day_Breakfast/Fridge_Surprised_Aiko_Silent.png"
-    image Kenji_1st_Day_Breakfast_Fridge_Angry_Aiko_Say = "./images/cg/DAY_01/Kenji_1st_Day_Breakfast/Fridge_Angry_Aiko_Say.png"
-    image Kenji_1st_Day_Breakfast_Fridge_Angry_Aiko_Silent = "./images/cg/DAY_01/Kenji_1st_Day_Breakfast/Fridge_Angry_Aiko_Silent.png"
-    image Kenji_1st_Day_Breakfast_Fridge_Irritated_Aiko = "./images/cg/DAY_01/Kenji_1st_Day_Breakfast/Fridge_Irritated_Aiko.png"
+    #Мини ЦГ - холодильник на фоне которой стоит Айко
+    image Day_Kenji_Home_Kitchen_Fridge = "./images/bg/Indoor/Kenji_Home_Kitchen/Day/Day_Kenji_Home_Kitchen_Fridge.jpg"
+    image Day_Kenji_Home_Kitchen_Fridge_Moved:
+        contains:
+            "Day_Kenji_Home_Kitchen_Fridge"
+            xpos 700
     
-    show Kenji_1st_Day_Breakfast_Fridge_Normal_Aiko_Say with moveinright
+    image Day_Kenji_Home_Kitchen_Fridge_border_01_right_moved:
+        contains:
+            "border_01_right"
+            xpos 800
+    
+    image Day_Kenji_Home_Kitchen_Fridge_border_01_right_mask_moved:
+        contains:
+            "border_01_right_mask"
+            xpos 800
+    
+    image Day_Kenji_Home_Kitchen_Fridge_Masked = AlphaMask( "Day_Kenji_Home_Kitchen_Fridge_Moved", "Day_Kenji_Home_Kitchen_Fridge_border_01_right_mask_moved" )
+    
+    image Day_Kenji_Home_Kitchen_Fridge_With_Border_01:
+        contains:
+            "Day_Kenji_Home_Kitchen_Fridge_Masked"
+        contains:
+            "Day_Kenji_Home_Kitchen_Fridge_border_01_right_moved"
+    ##
+    
+    show Day_Kenji_Home_Kitchen_Fridge_With_Border_01 with Dissolve( 0.2 )
+    show Aiko_With_Beer_Normal_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 ) 
     
     aiko "Ну, какое тебе?"
+    
+    show Aiko_With_Beer_Normal_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 ) 
+    hide Aiko_With_Beer_Normal_Say
+    
     kenji "Да оно же одинаковое, любое!"
     
-    show Kenji_1st_Day_Breakfast_Fridge_Surprised_Aiko_Say
-    hide Kenji_1st_Day_Breakfast_Fridge_Normal_Aiko_Say
+    show Aiko_With_Beer_Surprised_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 ) 
+    hide Aiko_With_Beer_Normal_Silent
     
     aiko "Ты чего думаешь, я в сортах пива — спец?"
     
-    show Kenji_1st_Day_Breakfast_Fridge_Irritated_Aiko with dissolve
-    hide Kenji_1st_Day_Breakfast_Fridge_Surprised_Aiko_Say
+    show Aiko_With_Beer_Irritated at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with dissolve
+    hide Aiko_With_Beer_Surprised_Say
     
     "Айко взяла из холодильника одну из банок. Мне показалось, что сейчас она небрежно кинет банку мне, настолько недовольное было у неё лицо. "
     
@@ -814,17 +878,44 @@ label start:
     
     "За время моего отсутствия на площадке появился напольный вентилятор с синими, разлохмаченными от старости лопастями и пожелтевшим пластиком корпуса. "
     
+    #Мини ЦГ - рация на асфальте, с откинутой крышкой
     image Radio_Set_On_Ground = "/images/cg/DAY_01/Kenji_Moves_Trash/Radio_Set_On_Ground/Radio_Set_On_Ground.png"
-    show Radio_Set_On_Ground with dissolve
+    image Radio_Set_On_Ground_Moved:
+        contains:
+            "Radio_Set_On_Ground"
+            xpos 400
+            pause 0.7
+            linear 5.0 xpos 750
     
-    "А «мой чемоданчик» похоже был рад знакомству, он приветливо открыл свой рот, или он сделал это от удивления? "
+    image Radio_Set_On_Ground_border_01_right_moved:
+        contains:
+            "border_01_right"
+            xpos 900
+    
+    image Radio_Set_On_Ground_border_01_right_mask_moved:
+        contains:
+            "border_01_right_mask"
+            xpos 900
+    
+    image Radio_Set_On_Ground_Masked = AlphaMask( "Radio_Set_On_Ground_Moved", "Radio_Set_On_Ground_border_01_right_mask_moved" )
+    
+    image Radio_Set_On_Ground_With_Border_01:
+        contains:
+            "Radio_Set_On_Ground_Masked"
+        contains:
+            "Radio_Set_On_Ground_border_01_right_moved"
+    ##
+    
+    show Radio_Set_On_Ground_With_Border_01 with dissolve
+    
+    "А «мой чемоданчик» похоже был рад знакомству, он приветливо снял шляпу!"
     "Не знаю зачем это кому-то понадобилось, но крышка на нем была вскрыта. "
     "Под ней оказалась сложная приборная панель — десятки всевозможных крутилок, тумблеров, циферблатов со стрелками и хитрых разъёмов. "
     "Наверное кому-то стало интересно что же такое я сюда притащил. "
     "Хм. Возможно этот кто-то — владелец сломанного вентилятора. Я подошёл к нему поближе. "
     
     show Kasumis_Fan_02 with dissolve
-    hide Radio_Set_On_Ground with dissolve
+    hide Radio_Set_On_Ground_With_Border_01 with dissolve
     
     "Обычный вентилятор, видно что старый, наверняка ему лет двадцать, не меньше. Сейчас таких не делают. Сквозь запах пыльной улицы, моё обоняние уловило «аромат» горелого пластика и сигарет. "
     "Да и весь этот жёлтый налёт на нем, явно сигаретная копоть, налипшая за годы эксплуатации. "

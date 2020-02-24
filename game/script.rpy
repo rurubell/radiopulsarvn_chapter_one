@@ -5,6 +5,7 @@ init python:
 define kenji = Character( "Кендзи", color="#BBFF88" )
 define aiko = Character( "Айко", color="#FF888B" )
 define kasumi = Character( "Касуми", color="#88C0FF" )
+define blind_girl = Character( "Девушка", color="#88C0FF" )
 define vatanabe = Character( "Ватанабе", color="#009900" )
 define zak = Character( "Заказчик", color="#FFC95C" )
 define tv = Character( "Телевизор", color="#FFC95C" )
@@ -63,8 +64,15 @@ label start:
     image Aiko_School_Uniform_02_Scared_Say = im.Scale( "./images/sprites/Aiko/Aiko_School_Uniform_02/Aiko_School_Uniform_02_Scared_Say.png", 587, 900 ) 
     image Aiko_School_Uniform_02_Scared_Silent = im.Scale( "./images/sprites/Aiko/Aiko_School_Uniform_02/Aiko_School_Uniform_02_Scared_Silent.png", 587, 900 ) 
     
+    #Касуми в школьной форме 01
+    image kasumi_01_Normal_Say = im.Scale( "./images/sprites/Kasumi/Kasumi_01/kasumi_01_Normal_Say.png", 646, 1000 ) 
+    image kasumi_01_Normal_Silent = im.Scale( "./images/sprites/Kasumi/Kasumi_01/kasumi_01_Normal_Silent.png", 646, 1000 ) 
+    image kasumi_01_Concerned_Say = im.Scale( "./images/sprites/Kasumi/Kasumi_01/kasumi_01_Concerned_Say.png", 646, 1000 ) 
+    image kasumi_01_Concerned_Silent = im.Scale( "./images/sprites/Kasumi/Kasumi_01/kasumi_01_Concerned_Silent.png", 646, 1000 ) 
+    image kasumi_01_Surprised_Say = im.Scale( "./images/sprites/Kasumi/Kasumi_01/kasumi_01_Surprised_Say.png", 646, 1000 ) 
+    image kasumi_01_Surprised_Silent = im.Scale( "./images/sprites/Kasumi/Kasumi_01/kasumi_01_Surprised_Silent.png", 646, 1000 ) 
     
-    
+        
     #СЦЕНА - ДЕНЬ 1, МИДОРИ
     
     image midori_00 = "./images/cg/DAY_01/Green-Haired_Girl/00.png"
@@ -871,10 +879,33 @@ label start:
     
     scene Day_Trash_Place with dissolve
     
-    image Kasumis_Fan_01 = "./images/cg/DAY_01/Kenji_Moves_Trash/Kasumi_Fan/Kasumis_Fan_01.png"
-    image Kasumis_Fan_02 = "./images/cg/DAY_01/Kenji_Moves_Trash/Kasumi_Fan/Kasumis_Fan_02.png"
+    #Мини-ЦГ вентилятор Касуми 01
+    image Kasumi_Fan_01 = "./images/cg/DAY_01/Kenji_Moves_Trash/Kasumi_Fan/Kasumi_Fan_01.png"
+    image Kasumi_Fan_01_Moved:
+        contains:
+            "Kasumi_Fan_01"
+            xpos -700
     
-    show Kasumis_Fan_01 with dissolve
+    image Kasumi_Fan_01_border_01_left_moved:
+        contains:
+            "border_01_left"
+            xpos -1100
+    
+    image Kasumi_Fan_01_border_01_left_mask_moved:
+        contains:
+            "border_01_left_mask"
+            xpos -1100
+    
+    image Kasumi_Fan_01_Masked = AlphaMask( "Kasumi_Fan_01_Moved", "Kasumi_Fan_01_border_01_left_mask_moved" )
+    
+    image Kasumi_Fan_01_With_Border_01:
+        contains:
+            "Kasumi_Fan_01_Masked"
+        contains:
+            "Kasumi_Fan_01_border_01_left_moved"
+    ##
+    
+    show Kasumi_Fan_01_With_Border_01 with Dissolve( 0.2 )
     
     "За время моего отсутствия на площадке появился напольный вентилятор с синими, разлохмаченными от старости лопастями и пожелтевшим пластиком корпуса. "
     
@@ -910,12 +941,41 @@ label start:
     
     "А «мой чемоданчик» похоже был рад знакомству, он приветливо снял шляпу!"
     "Не знаю зачем это кому-то понадобилось, но крышка на нем была вскрыта. "
+    
+    hide Kasumi_Fan_01_With_Border_01 with Dissolve( 0.1 )
+    
     "Под ней оказалась сложная приборная панель — десятки всевозможных крутилок, тумблеров, циферблатов со стрелками и хитрых разъёмов. "
     "Наверное кому-то стало интересно что же такое я сюда притащил. "
     "Хм. Возможно этот кто-то — владелец сломанного вентилятора. Я подошёл к нему поближе. "
     
-    show Kasumis_Fan_02 with dissolve
-    hide Radio_Set_On_Ground_With_Border_01 with dissolve
+    #Мини-ЦГ вентилятор Касуми 02
+    image Kasumi_Fan_02 = "./images/cg/DAY_01/Kenji_Moves_Trash/Kasumi_Fan/Kasumi_Fan_02.png"
+    image Kasumi_Fan_02_Moved:
+        contains:
+            "Kasumi_Fan_02"
+            xpos -850
+    
+    image Kasumi_Fan_02_border_01_left_moved:
+        contains:
+            "border_01_left"
+            xpos -1100
+    
+    image Kasumi_Fan_02_border_01_left_mask_moved:
+        contains:
+            "border_01_left_mask"
+            xpos -1100
+    
+    image Kasumi_Fan_02_Masked = AlphaMask( "Kasumi_Fan_02_Moved", "Kasumi_Fan_02_border_01_left_mask_moved" )
+    
+    image Kasumi_Fan_02_With_Border_01:
+        contains:
+            "Kasumi_Fan_02_Masked"
+        contains:
+            "Kasumi_Fan_02_border_01_left_moved"
+    ##
+    
+    hide Radio_Set_On_Ground_With_Border_01 with Dissolve( 0.2 )
+    show Kasumi_Fan_02_With_Border_01 with Dissolve( 0.2 )
     
     "Обычный вентилятор, видно что старый, наверняка ему лет двадцать, не меньше. Сейчас таких не делают. Сквозь запах пыльной улицы, моё обоняние уловило «аромат» горелого пластика и сигарет. "
     "Да и весь этот жёлтый налёт на нем, явно сигаретная копоть, налипшая за годы эксплуатации. "
@@ -1210,6 +1270,298 @@ label start:
     "Руки девушки отцепились от моих брюк, а сама она отпрянула так стремительно что не удержалась на ногах и села на асфальт."
     "Но не успел я моргнуть, как она оправилась и встала."
     
-    ""
+    hide Kasumi_Fells_With_Border_01 with Dissolve( 0.1 )
+    show kasumi_01_Normal_Say with Dissolve( 0.2 )
+    
+    blind_girl "Простите! Я не заметила вас!"
+    
+    show kasumi_01_Normal_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Say
+    
+    kenji "Не заметила?!"
+    
+    show kasumi_01_Normal_Say with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Silent
+    
+    blind_girl "Да, я ничего не вижу."
+    
+    #Мини-ЦГ лицо Касуми крупным планом
+    image DAY_01_Kasumi_Big_Face = "./images/cg/DAY_01/Trash_Place_Meeting/Kasumi/Kasumi.png"
+    image DAY_01_Kasumi_Big_Face_Moved:
+        contains:
+            "DAY_01_Kasumi_Big_Face"
+            ypos -300
+            xpos -500
+            #pause 0.7
+            #linear 10.0 xpos -500
+    
+    image DAY_01_Kasumi_Big_Face_border_01_left_moved:
+        contains:
+            "border_01_left"
+            xpos -700
+    
+    image DAY_01_Kasumi_Big_Face_border_01_left_mask_moved:
+        contains:
+            "border_01_left_mask"
+            xpos -700
+    
+    image DAY_01_Kasumi_Big_Face_Masked = AlphaMask( "DAY_01_Kasumi_Big_Face_Moved", "DAY_01_Kasumi_Big_Face_border_01_left_mask_moved" )
+    
+    image DAY_01_Kasumi_Big_Face_With_Border_01:
+        contains:
+            "DAY_01_Kasumi_Big_Face_Masked"
+        contains:
+            "DAY_01_Kasumi_Big_Face_border_01_left_moved"
+    ##
+    
+    hide kasumi_01_Normal_Say with Dissolve( 0.1 )
+    show kasumi_01_Normal_Silent at Move( ( 1500, 600 ), ( 1500, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    show DAY_01_Kasumi_Big_Face_With_Border_01 with dissolve
+    
+    "Я взглянул на её лицо и холодок пробежал у меня по спине."
+    "Солнце ярко высвечивало её загорелое лицо и искрилось в светлых, будто выжженных волосах. "
+    "Но наперекор светилу, зрачки её были так широки, что по тонким радужкам невозможно было определить даже цвет глаз. "
+    "Этот контраст расширенных, как у кошки в ночи, зрачков и яркого солнца, бьющего прямо в глаза — напугал меня. "
+    "Девушка была слепой."
+    
+    hide DAY_01_Kasumi_Big_Face_With_Border_01 with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Silent with Dissolve( 0.1 )
+    show kasumi_01_Normal_Silent with Dissolve( 0.1 )
+    
+    kenji "Извини..."
+
+    "Хрипло прошептал я. "
+    "Я кашлянул и повторил снова, уже в полный голос."
+
+    kenji "Извини!"
+    
+    show kasumi_01_Concerned_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Silents
+    
+    "Девушка встревожилась."
+    
+    show kasumi_01_Concerned_Say with Dissolve( 0.2 )
+    hide kasumi_01_Concerned_Silent
+    
+    blind_girl "Что? Почему? За что?"
+    
+    show kasumi_01_Concerned_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Concerned_Say
+    
+    kenji "Ну... Я... Не думал что ты..."
+    
+    show kasumi_01_Normal_Say with Dissolve( 0.2 )
+    hide kasumi_01_Concerned_Silent
+
+    blind_girl "Всё нормально! Хорошо что я не налетела на вас."
+    blind_girl "Вас совсем не было слышно и я думала что тут никого нет."
+    
+    show kasumi_01_Normal_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Say
+    
+    "Наверное, слепые люди полагаются на слух. Нет. Вовсе не наверное, а точно. На что же ещё? Может на обоняние? "
+    "Тут словно нужную часть мозга мне врубили и я почувствовал как от слепой девушки просто несёт запахом сигарет. "
+    "Она что, курит, и курит настолько много?!"
+
+    "Я помнил какие безобразно коричневые были ногти у моего курящего деда. "
+    "Но нет, опустив взгляд, я увидел приятные, робкие пальчики с аккуратно подстриженными, розовыми ноготками. "
+    "Её руки покрыты сильным загаром, но возле рукавов матроски, кожа стремительно белела. "
+    "На левом запястье надет широкий тканевый напульсник, закрывающий половину предплечья."
+    "В нем было множество кармашков, часть из которых была занята универсальной отверткой и десятком бит под нее. "
+
+    "Мой взгляд скользнул выше, пробежал по шее девушки, тоже загорелой, но и тут из-под матроски проглядывали белые участки, точно повторяющие контур выреза. "
+    "Видимо школьная форма этим летом была её повседневной одеждой. Я подметил, что воротник выцвел - форма была старой и поношенной. "
+
+    "Лицо её мне показалось очень приятным, давно я так близко не разглядывал старшеклассниц."
+    "Но все впечатление портил этот пустой взгляд, в котором казалось навечно застыл испуг."
+    
+    #Мини-ЦГ ус Касуми крупным планом
+    image DAY_01_Kasumi_Big_Face_Mustache = "./images/cg/DAY_01/Trash_Place_Meeting/Kasumi/Kasumi.png"
+    image DAY_01_Kasumi_Big_Face_Mustache_Moved:
+        contains:
+            "DAY_01_Kasumi_Big_Face_Mustache"
+            #ypos -300
+            xpos -1000
+            #pause 0.7
+            #linear 10.0 xpos -500
+    
+    image DAY_01_Kasumi_Big_Face_Mustache_border_01_left_moved:
+        contains:
+            "border_01_left"
+            xpos -1000
+    
+    image DAY_01_Kasumi_Big_Face_Mustache_border_01_left_mask_moved:
+        contains:
+            "border_01_left_mask"
+            xpos -1000
+    
+    image DAY_01_Kasumi_Big_Face_Mustache_Masked = AlphaMask( "DAY_01_Kasumi_Big_Face_Mustache_Moved", "DAY_01_Kasumi_Big_Face_Mustache_border_01_left_mask_moved" )
+    
+    image DAY_01_Kasumi_Big_Face_Mustache_With_Border_01:
+        contains:
+            "DAY_01_Kasumi_Big_Face_Mustache_Masked"
+        contains:
+            "DAY_01_Kasumi_Big_Face_Mustache_border_01_left_moved"
+    ##
+    
+    show DAY_01_Kasumi_Big_Face_Mustache_With_Border_01 with Dissolve( 0.2 )
+    
+    "И ещё одна примечательная деталь — белый ободок с проводками, на кончиках которых блестели маленькие шарики из фольги."
+    "С этим аксессуаром, голова девушки напоминала муравья или инопланетянина из старых черно-белых фильмов."
+    "И зачем ей эти «усы»?"
+    
+    hide DAY_01_Kasumi_Big_Face_Mustache_With_Border_01 with Dissolve( 0.2 )
+
+    "Всё в этой девушке было странным. Её пугающие, невидящие глаза, этот странный ободок, напульсник с отвёртками, нашивки на школьной форме. "
+    "И стойкий запах сигаретного дыма."
+    
+    show kasumi_01_Normal_Say with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Silent
+    
+    blind_girl "Получается эта рация ваша?"
+    
+    show kasumi_01_Normal_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Say
+    
+    "Спросила девушка, а её ладонь указала в сторону моих ног."
+    
+    show Radio_Set_On_Ground_With_Border_01 with dissolve
+    
+    kenji "Так это рация?"
+    
+    "Я удивился, при слове рация мне представлялось маленькое, величиной с мобильный телефон — устройство. "
+    "А такая громадина, и тоже — рация. Ну надо же!"
+    
+    hide Radio_Set_On_Ground_With_Border_01 with Dissolve( 0.1 )
+    
+    show kasumi_01_Normal_Say with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Silent
+    
+    blind_girl "Ну да. Военная рация, очень хорошая, американская, мощная. В конце шестидесятых годов выпускалась. Ещё на германиевых транзисторах!"
+    
+    show kasumi_01_Normal_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Say
+    
+    "Германиевых? Значит ли это, что транзисторы были из Германии? Какое странное словосочетание. "
+    "Интересно, а «япониевый транзистор», есть?"
+
+    kenji "Рация — не совсем моя. Одного родственника"
+    kenji "Я просто, вещи его на свалку выношу. Он видимо радио увлекался, или что-то в этом роде."
+    kenji "Сам я в этих делах ничего не смыслю."
+    
+    show kasumi_01_Normal_Say with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Silent
+    
+    blind_girl "А..."
+    blind_girl "Увлекался?"
+    
+    show kasumi_01_Normal_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Say
+    
+    kenji "Ну да. Умер он. Но очень давно. А сейчас понадобилось расчистить немного места в доме. Вот и выбрасываем, и рацию эту тоже."
+    
+    show kasumi_01_Normal_Say with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Silent
+    
+    blind_girl "А... А я думала, вы наоборот. Пришли сюда за ней."
+    
+    show kasumi_01_Normal_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Say
+    
+    "Теперь я понял, зачем девушке нужна была тележка. И почему была вскрыта крышка на «рации». "
+    "Похоже вещь эта её заинтересовала, и она собралась её забрать себе."
+    
+    kenji "Нет! Мне этот хлам нафиг не сдался. Если хочешь забрать — бери конечно."
+    kenji "Только, как же ты её унесёшь? Думаешь сможешь? Она страшно тяжёлая! И чего она столько весит?"
+    
+    show kasumi_01_Normal_Say with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Silent
+    
+    blind_girl "Вещи тех лет — все такие громоздкие. А это ещё и военная, там все внутри с многократным запасом прочности!"
+    
+    hide kasumi_01_Normal_Say with Dissolve( 0.2 )
+    
+    "С этими словами, она присела и потянула руки в сторону рации. Я поспешно убрал ногу и отступил на шаг. "
+    
+    #Мини ЦГ - Касуми пытается поднять рацию
+    image Kasumi_Lifting_Up_RadioSet = "./images/cg/DAY_01/Trash_Place_Meeting/Kasumi_Lifting_Up_RadioSet/Kasumi_Lifting_Up_RadioSet.png"
+    image Kasumi_Lifting_Up_RadioSet_Moved:
+        contains:
+            "Kasumi_Lifting_Up_RadioSet"
+            xpos 700
+            #xpos 500
+            #pause 0.7
+            #linear 5.0 xpos 700
+    
+    image Kasumi_Lifting_Up_RadioSet_border_01_right_moved:
+        contains:
+            "border_01_right"
+            xpos 1000
+    
+    image Kasumi_Lifting_Up_RadioSet_border_01_right_mask_moved:
+        contains:
+            "border_01_right_mask"
+            xpos 1000
+    
+    image Kasumi_Lifting_Up_RadioSet_Masked = AlphaMask( "Kasumi_Lifting_Up_RadioSet_Moved", "Kasumi_Lifting_Up_RadioSet_border_01_right_mask_moved" )
+    
+    image Kasumi_Lifting_Up_RadioSet_With_Border_01:
+        contains:
+            "Kasumi_Lifting_Up_RadioSet_Masked"
+        contains:
+            "Kasumi_Lifting_Up_RadioSet_border_01_right_moved"
+    ##
+    
+    show Kasumi_Lifting_Up_RadioSet_With_Border_01 with Dissolve( 0.2 )
+    
+    "Девушка ощупала боковины прибора, взялась за тканевую ручку и попыталась встать. "
+    "Послышался скрежет металла об асфальт, прибор поднялся но совсем чуть-чуть, сантиметров на пять. "
+    "Я удивился тому, какие тонкие и изящные у неё руки, и как напряглись мышцы на них, в попытке приподнять рацию."
+    
+    kenji "Позволь помочь!"
+
+    "Сказал я, встал с другой стороны и взял прибор за другую ручку. "
+    
+    hide Kasumi_Lifting_Up_RadioSet_With_Border_01 with Dissolve( 0.1 )
+    show empty_image with vpunch #Трясем экран 
+    
+    "Но в тот же момент, руки девушки разжались и прибор глухо хлопнулся на землю. "
+    
+    show kasumi_01_Surprised_Silent with Dissolve( 0.2 )
+    
+    "А девушка, задыхаясь выпалила."
+    
+    show kasumi_01_Surprised_Say with Dissolve( 0.2 )
+    hide kasumi_01_Surprised_Silent
+    
+    blind_girl "И в правду, очень тяжёлый!"
+    
+    show kasumi_01_Surprised_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Surprised_Say
+
+    "Я вспомнил о банке пива в моей руке, и отглотнул немного. А после - сказал."
+
+    kenji "Давай помогу погрузить эту штуковину на тележку. Похоже, тебе её не поднять."
+    
+    show kasumi_01_Normal_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Surprised_Silent
+    
+    "Она кивнула."
+    
+    show kasumi_01_Normal_Say with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Silent
+
+    blind_girl "Хорошо. Спасибо."
+    
+    show kasumi_01_Normal_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Say
+    
+    "Я взялся за тележку - на вид крайне хлипкую, из алюминиевых трубок, скреплённых пластиковыми уголками и такими же заклёпками. "
+    "Рама её была перехвачена двумя плетёными жгутами красного цвета."
+
+    "Я поставил тележку, поднял рацию и аккуратно установил её на раму. Рама выгнулась и затрещала, но выдержала. "
+    "Я хорошенько обмотал всю эту конструкцию багажными жгутами, наклонил. Вроде всё держалось."
+    
+    "123456"
     
     return

@@ -73,6 +73,9 @@ label start:
     image kasumi_01_Surprised_Say = im.Scale( "./images/sprites/Kasumi/Kasumi_01/kasumi_01_Surprised_Say.png", 646, 1000 ) 
     image kasumi_01_Surprised_Silent = im.Scale( "./images/sprites/Kasumi/Kasumi_01/kasumi_01_Surprised_Silent.png", 646, 1000 ) 
     
+    #Касуми в школьной форме 02
+    image Kasumi_03_Normal_Silent = im.Scale( "./images/sprites/Kasumi/Kasumi_03/Kasumi_03_Normal_Silent.png", 660, 1000 ) 
+    
         
     #СЦЕНА - ДЕНЬ 1, МИДОРИ
     
@@ -1481,6 +1484,7 @@ label start:
     hide kasumi_01_Normal_Say with Dissolve( 0.2 )
     
     "С этими словами, она присела и потянула руки в сторону рации. Я поспешно убрал ногу и отступил на шаг. "
+    "Девушка ощупала боковины прибора, взялась за тканевую ручку и попыталась встать. "
     
     #Мини ЦГ - Касуми пытается поднять рацию
     image Kasumi_Lifting_Up_RadioSet = "./images/cg/DAY_01/Trash_Place_Meeting/Kasumi_Lifting_Up_RadioSet/Kasumi_Lifting_Up_RadioSet.png"
@@ -1513,7 +1517,6 @@ label start:
     
     show Kasumi_Lifting_Up_RadioSet_With_Border_01 with Dissolve( 0.2 )
     
-    "Девушка ощупала боковины прибора, взялась за тканевую ручку и попыталась встать. "
     "Послышался скрежет металла об асфальт, прибор поднялся но совсем чуть-чуть, сантиметров на пять. "
     "Я удивился тому, какие тонкие и изящные у неё руки, и как напряглись мышцы на них, в попытке приподнять рацию."
     
@@ -1550,7 +1553,7 @@ label start:
     show kasumi_01_Normal_Say with Dissolve( 0.2 )
     hide kasumi_01_Normal_Silent
 
-    blind_girl "Хорошо. Спасибо."
+    blind_girl "Если.. Если вам не трудно..."
     
     show kasumi_01_Normal_Silent with Dissolve( 0.2 )
     hide kasumi_01_Normal_Say
@@ -1560,8 +1563,100 @@ label start:
 
     "Я поставил тележку, поднял рацию и аккуратно установил её на раму. Рама выгнулась и затрещала, но выдержала. "
     "Я хорошенько обмотал всю эту конструкцию багажными жгутами, наклонил. Вроде всё держалось."
+
+    kenji "Ну вроде как готово!"
+
+    "Девушка протянула руки в мою сторону. Я немного отступил, захотелось словами указать ей, в каком направлении двигаться, но я сдержался. "
+    "Она поводила руками, и наконец нашла длинную ручку тележки. Затем ощупала стоящую на ней рацию и жгуты."
+
+    kenji "Я хорошо всё закрепил."
+
+    "Сказал я, словно подбадривая её."
     
-    "123456"
+    show kasumi_01_Normal_Say with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Silent
+    
+    blind_girl "Спасибо! Большое вам спасибо за помощь!"
+    
+    show kasumi_01_Normal_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Say
+    
+    "Похоже, это она так прощалась со мной. Действительно, чем мог — я помог, больше говорить было не о чем. "
+    "И тут, какая-то дурацкая грусть окутала мое охмелевшее сознание. "
+    "Грустно от того что девушка уходит, и я её, наверное больше уже никогда не увижу."
+    
+    "И так жалко её. Неужели она действительно справится с этой тяжёлой ношей одна? Доберется ли в целости до дома? А вдруг что-то случится в пути?"
+    "Хотелось проводить ее, побыть еще рядом. Да и хорошенькая она на вид, и вообще я бы сказал что она мне понравилась. "
+    "Хотя, говорят, что когда здорово выпил — любой крокодил за красавицу сойдёт."
+    "А выпил я сегодня действительно здорово, да и жара приморила изрядно."
+
+    "Надо остановить её! Сказать что-то! Но что? "
+    "Я осмотрелся, взгляд упал на остальные, мной принесённые вещи."
+    
+    kenji "Постой! А эта рация, она не из двух частей состоит?"
+    
+    show kasumi_01_Normal_Say with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Silent
+    
+    blind_girl "Двух частей?"
+    
+    show kasumi_01_Normal_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Say
+    
+    kenji "Ну да. Тут ещё что-то. Похоже дополнение к ней. Цвет и габариты, всё такое же."
+    kenji "Я вынес это в последнюю очередь. Посмотри сама..."
+    
+    "Я прикусил язык. Чёрт! Зачем я это сказал, вот идиот. Но девушка не повела и ухом."
+    
+    show kasumi_01_Normal_Say with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Silent
+    
+    blind_girl "А как? Как оно выглядит? Точь-в-точь как эта? Может просто ещё одна?"
+    
+    show kasumi_01_Normal_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Say
+    
+    kenji "Не думаю..."
+    
+    show Radio_Set_Power_Supply_On_ground_With_Border_01 with Dissolve( 0.2 )
+
+    "Я описал ей всё в подробностях. "
+    
+    show kasumi_01_Normal_Say with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Silent
+    
+    blind_girl "А! Это блок питания, для рации."
+    blind_girl "Обычно она работала от аккумулятора. Ну, от танкового например, или ещё какого."
+    blind_girl "А этот блок питания, он для того, чтобы питать её от сети. Дома, от розетки например."
+    
+    hide Radio_Set_Power_Supply_On_ground_With_Border_01 with Dissolve( 0.2 )
+    
+    show kasumi_01_Normal_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Say
+    
+    kenji "Значит он тебе тоже нужен?"
+    
+    "Я был несказанно рад ее последним словам. Но когда услышал ответ, то все мои надежды мигом рухнули."
+    
+    show kasumi_01_Normal_Say with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Silent
+    
+    blind_girl "Нет! У меня есть. Дома. Правда не такой, обычный, но мощный!"
+    blind_girl "Можно напряжение любое выставить. Он подойдёт."
+    
+    show kasumi_01_Normal_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Say
+    
+    kenji "А... Ну ладно."
+    
+    hide kasumi_01_Normal_Silent with Dissolve( 0.2 )
+
+    "Я был раздосадован. Ничего не вышло. Девушка поклонилась мне на прощание, я молча поклонился в ответ. "
+    "Конечно, она этого не видела и надо было попрощаться словами. Но черт с ней! "
+    "Я внезапно разозлился. Пусть чешет своей дорогой! Надо было и вовсе смыться домой ещё когда только заприметил её вдалеке."
+
+    "Я залпом допил оставшееся пиво. Смял банку и кинул в контейнер для металлической тары. "
+    "Хоть я и был пьян — но банка прилетела точно в цель!"
     
     #ЦГ - взрыв тележки Касуми
     image Kasumi_BOOM = "./images/cg/DAY_01/Trash_Place_Meeting/BOOM/Kasumi_Boom.png"
@@ -1585,9 +1680,242 @@ label start:
     ##
     
     show Kasumi_BOOM_animation
-    ""
+    
+    "Ба-бах!"
+    blind_girl "Ай!"
+    
     show Kasumi_BOOM with Dissolve(0.2)
     hide Kasumi_BOOM_animation
-    ""
+    
+    "Я обернулся. Похоже эта школьница наехала тележкой на мину!" 
+    "Нет, конечно, это была полнейшая глупость, никакой мины тут быть не должно. "
+    "Однако тележка сильно кренилась на левый бок, а одно из её колес, кружилось волчком в стороне. Всё-таки не была она рассчитана на такой вес."
+    
+    scene Day_Trash_Place with dissolve
+    
+    "Я был несказанно рад такому повороту событий и немедленно поспешил к месту аварии."
+    
+    #Мини ЦГ - тележка и рация, валяются
+    image Radio_Set_And_Cart_On_The_Ground = "./images/cg/DAY_01/Trash_Place_Meeting/Radio_Set_And_Cart_On_The_Ground/Radio_Set_And_Cart_On_The_Ground.png"
+    image Radio_Set_And_Cart_On_The_Ground_Moved:
+        contains:
+            "Radio_Set_And_Cart_On_The_Ground"
+            xpos 400
+            pause 0.7
+            ease 5.0 xpos 700
+    
+    image Radio_Set_And_Cart_On_The_Ground_border_01_right_moved:
+        contains:
+            "border_01_right"
+            xpos 800
+    
+    image Radio_Set_And_Cart_On_The_Ground_border_01_right_mask_moved:
+        contains:
+            "border_01_right_mask"
+            xpos 800
+    
+    image Radio_Set_And_Cart_On_The_Ground_Masked = AlphaMask( "Radio_Set_And_Cart_On_The_Ground_Moved", "Radio_Set_And_Cart_On_The_Ground_border_01_right_mask_moved" )
+    
+    image Radio_Set_And_Cart_On_The_Ground_With_Border_01:
+        contains:
+            "Radio_Set_And_Cart_On_The_Ground_Masked"
+        contains:
+            "Radio_Set_And_Cart_On_The_Ground_border_01_right_moved"
+    ##
+    
+    show Radio_Set_And_Cart_On_The_Ground_With_Border_01 with Dissolve( 0.2 )
+    show kasumi_01_Surprised_Silent at Move( ( 600, 600 ), ( 600, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.2 )
+    
+    "Вид у девушки был совершенно растерянный. Её тележка валялась в стороне, и судя по всему пришла в полную негодность"
+    
+    show kasumi_01_Surprised_Say at Move( ( 600, 600 ), ( 600, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.2 )
+    hide kasumi_01_Surprised_Silent
+    
+    blind_girl "Что с моей тележкой?"
+    
+    show kasumi_01_Surprised_Silent at Move( ( 600, 600 ), ( 600, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.2 )
+    hide kasumi_01_Surprised_Say
+
+    "С тревогой в голосе спросила она."
+    "Я глянул на то место, где раньше располагались колеса. Там остались только чёрные втулки с обломанными спицами."
+    
+    kenji "Кранты ей похоже."
+    
+    hide Radio_Set_And_Cart_On_The_Ground_With_Border_01 with Dissolve( 0.2 )
+    hide kasumi_01_Surprised_Silent wit Dissolve( 0.1 )
+    show kasumi_01_Surprised_Silent with Dissolve( 0.2 )
+    
+    "Я стащил рацию и подал тележку девушке."
+    
+    show kasumi_01_Concerned_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Surprised_Silent
+    
+    "Она немедленно принялась изучать тележку, пытаясь определить ее состояние. "
+    "Мне почему-то стало смешно от выражения её лица, когда она наконец нащупала места крепления колес. "
+    "Пришлось проглотить идиотский смешок, который чуть было не вырвался наружу."
+
+    kenji "Что теперь делать будешь?"
+    
+    show kasumi_01_Concerned_Say with Dissolve( 0.2 )
+    hide kasumi_01_Concerned_Silent
+    
+    blind_girl "Не знаю..."
+    blind_girl "Эта тележка тёти. Я обещала что верну в целости."
+    
+    show kasumi_01_Concerned_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Concerned_Say
+    
+    "Она вздохнула."
+
+    "Неужели тётка будет отчитывать эту несчастную слепую девчонку из-за какой-то тележки? "
+    "Вполне возможно она добрая женщина, и её племяннице просто стыдно, что она не сдержала обещание. "
+    "Но, в моей голове родился образ омерзительной старой карги, которая по возвращению, ухватит мою случайную знакомую за волосы и потащит по улице, крича о жутком преступлении, которое та совершила."
+
+    "Какие идиотские мысли. Похоже доза пива, выпитая залпом, ударила таки мне в голову. "
+    "Злость испытываемая ранее, внезапно улетучилась и подступила непонятная эйфория. Я посмотрел на девушку, и задал неожиданный вопрос."
+
+    kenji "А как тебя зовут?"
+    
+    show kasumi_01_Surprised_Say with Dissolve( 0.2 )
+    hide kasumi_01_Concerned_Silent
+    
+    blind_girl "А? Меня..."
+    
+    show kasumi_01_Surprised_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Surprised_Say
+    
+    "Девушка сильно заволновалась. Похоже вопрос и в самом деле неожиданный. Но мне было плевать."
+
+    kenji "Кендзи. Танака Кендзи!"
+
+    "Сказал я и театрально ткнул себя пальцем в грудь."
+    
+    show kasumi_01_Normal_Say with Dissolve( 0.2 )
+    hide kasumi_01_Surprised_Silent
+
+    blind_girl "Накамура... Касуми."
+    
+    show kasumi_01_Normal_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Say
+    
+    "Кротко ответила девушка. Свою, бесполезную теперь, тележку она всё ещё не выпускала из рук."
+
+    kenji "Сколько тебе лет?"
+
+    "Вот это да! Я даже удивился собственной дерзости!"
+    
+    show kasumi_01_Normal_Say with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Silent
+
+    kasumi "Шесть... Шестнадцать!"
+    
+    show kasumi_01_Normal_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Say
+
+    "Отлично. Накамура Касуми, шестнадцать лет! Язык развязался и я не в силах удержать внезапную словоохотливость задвинул впечатляющую речь: "
+    
+    kenji "Послушай Касуми, я знаю, людям с твоими, эм... проблемами неприятно слышать такое, но вид у тебя совершенно потерянный."
+    kenji "Ты уж извини! Я понимаю, что тебе хочется казаться сильной и независимой. И показать всем что ты прекрасно обходишься, ну... ты меня поняла."
+    kenji "Но вся эта чехарда с никчемной тележкой, у меня вызывает только жалость."
+    kenji "Давай-ка я сам возьму в руки эту несчастную рацию и отнесу туда, куда тебе нужно."
+    kenji "А ты выбрось эту тележку на свалку. Это теперь больше похоже на ходунки для стариков. Тёте твоей, нужны ходунки, Касуми?"
+    
+    hide kasumi_01_Normal_Silent with Dissolve( 0.2 )
+    show Kasumi_03_Normal_Silent with Dissolve( 0.2 )
+    
+    "Касуми смотрела куда-то всторону и молчала. "
+
+    kenji "Или может мне лучше и вовсе унести эту рацию домой? Обратно к себе."
+    kenji "Чего это я так разбрасываюсь вещами. А, Касуми? За сколько это барахло можно толкнуть на барахолке?"
+    
+    hide Kasumi_03_Normal_Silent with Dissolve( 0.2 )
+    show kasumi_01_Normal_Say with Dissolve( 0.2 )
+
+    kasumi "Нет! Простите, Танака-сан! Но мне очень нужна эта вещь."
+    kasumi "Пожалуйста! Помогите мне донести её до дома!"
+    
+    show kasumi_01_Normal_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Say
+    
+    "Я был рад этим словам, но кажется она догадалась, что я напрашивался в попутчики."
+    "Впрочем мне уже было все равно. "
+    "Я подозревал, что веду себя очень странно, и наверное, в такой ситуации, правильнее было бы вызвать такси для бедной девочки, и избавить ее от своего присутствия."
+    "Но мне жутко не хотелось с ней расставаться."
+
+    "Я поднял рацию за её родные ручки."
+
+    kenji "Эй, Касуми? Ты где живёшь?"
+    
+    "Касуми назвала свой адрес. Это было далеко отсюда, дальше раз в пять чем до моего дома."
+
+    kenji "Э? Так далеко? Почему ты выносишь мусор именно сюда? У вас что там, своего места для хлама нет, поблизости?"
+    
+    show kasumi_01_Normal_Say with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Silent
+    
+    kasumi "Есть. Совсем недалеко."
+    kasumi "Но надо идти через канал, а весной, пешеходный мост подмыло после сильного дождя."
+    kasumi "Ремонт затянулся и теперь там не пройти. "
+    kasumi "Недалеко есть автомобильная дамба. Но я не хожу там. Очень шумно - мне трудно ориентироваться."
+    
+    show kasumi_01_Normal_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Say
+
+    "Ну надо же! А ведь я тоже некомфортно себя чувствую в шумных местах! И наверняка Касуми не любит большие скопления людей. "
+    "Ну прямо как я! Или вообще людей не жалует... "
+    "Особенно навязчивых алкашей!"
+    "От этой мысли я чуть приуныл."
+
+    kenji "Ну что, идём? Да брось ты свою тележку! Хана ей!"
+    
+    show kasumi_01_Normal_Say with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Silent
+    
+    kasumi "Нет. Я попробую её починить! Колеса от неё, они где?"
+    
+    show kasumi_01_Normal_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Say
+
+    "Я недовольно проворчал."
+
+    kenji "Ну одно колесо, оно вроде как здесь лежит. А второго нет."
+    
+    show kasumi_01_Concerned_Say with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Silent
+    
+    kasumi "Нет?"
+    
+    show kasumi_01_Concerned_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Concerned_Say
+    
+    kenji "Да, улетело, и теперь его нет. Хочешь пойти поискать?"
+    
+
+    "Я опять говорил с ней неприлично резким тоном. Услышав мои слова, Касуми тихо вздохнула."
+    
+    show kasumi_01_Normal_Say with Dissolve( 0.2 )
+    hide kasumi_01_Concerned_Silent
+
+    kasumi "Нет. Если улетело, то пусть. Но я всё равно возьму тележку с собой. Ладно?"
+    
+    show kasumi_01_Normal_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Say
+    
+    kenji "Это ещё что за вопрос? Делай со своей тележкой что хочешь."
+    
+    scene Outdoor_Day_BG_With_Railroad_2 with dissolve
+
+    "Мы двинулись, я пристроился справа, встав между ней и обочиной дороги."
+    
+    show kasumi_01_Normal_Say with Dissolve( 0.2 )
+
+    kasumi "Простите Танака-сан... Но... не могли бы вы встать с другой стороны от меня?"
+    
+    show kasumi_01_Normal_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Say
+
+    "Я удивленно промычал."
+
+    kenji "Ммм?"
     
     return

@@ -13,6 +13,7 @@ define tv = Character( "Телевизор", color="#FFC95C" )
 
 
 label start:
+    image white_image = "./images/other/colored/white.png"
     #Пыль
     image dust = Dust( "./images/other/dust.png" )
     #Рамка для флешбеков
@@ -724,14 +725,12 @@ label start:
     "Дождей за последнюю неделю не наблюдалось и к зною добавился стойкий запах пыли, который перебивал теперь аромат цветов и прочей зелени. "
     "Было тихо — это радовало, мне ни к чему лишние свидетели."
     
-    scene Outdoor_Day_Street_03 with dissolve
-    
     "Я вышел за ограду и принялся за упражнения со своим новеньким, жёлтеньким и увесистым снарядом. "
     "Поставил его ребром на плечо — острый край пребольно врезался в шею. "
     "Попробовал нести его под мышкой — и тут не вышло, рука моментально вспотела и «чемоданчик» норовил выскользнуть из рук. "
     "Я схватил его обеими руками и понёс, прижимая к груди, но и так было не очень сподручно. "
     
-    scene Outdoor_Day_BG_With_Railroad_2 with dissolve
+    scene Outdoor_Day_Street_03 with dissolve
     
     "Пройдя один квартал я сменил тактику, и решил взять свой снаряд за его родные, заводские ручки — покрытые каким-то плотным, зелёным материалом. "
     "Постепенно стали ныть плечи и спина, а также зудеть нога в том месте где она тёрлась о край прибора."
@@ -916,7 +915,7 @@ label start:
             "Radio_Set_On_Ground"
             xpos 400
             pause 0.7
-            linear 5.0 xpos 750
+            ease 5.0 xpos 750
     
     image Radio_Set_On_Ground_border_01_right_moved:
         contains:
@@ -1031,7 +1030,7 @@ label start:
             "Radio_Set_Power_Supply_On_ground"
             xpos 400
             pause 0.7
-            linear 5.0 xpos 900
+            ease 5.0 xpos 900
     
     image border_01_right_moved:
         contains:
@@ -1168,7 +1167,7 @@ label start:
             "On_All_Fours"
             xpos -500
             pause 0.7
-            linear 10.0 xpos -1100
+            ease 10.0 xpos -1100
     
     image border_01_left_moved:
         contains:
@@ -1244,7 +1243,7 @@ label start:
             "Kasumi_Fells"
             xpos -700
             pause 0.7
-            linear 5.0 xpos -500
+            ease 5.0 xpos -500
     
     image border_01_left_moved:
         contains:
@@ -1563,5 +1562,32 @@ label start:
     "Я хорошенько обмотал всю эту конструкцию багажными жгутами, наклонил. Вроде всё держалось."
     
     "123456"
+    
+    #ЦГ - взрыв тележки Касуми
+    image Kasumi_BOOM = "./images/cg/DAY_01/Trash_Place_Meeting/BOOM/Kasumi_Boom.png"
+    image Kasumi_BOOM_animation_frame_00 = "./images/cg/DAY_01/Trash_Place_Meeting/BOOM/frame_00.png"
+    image Kasumi_BOOM_animation_frame_01 = "./images/cg/DAY_01/Trash_Place_Meeting/BOOM/frame_01.png"
+    image Kasumi_BOOM_animation_frame_02 = "./images/cg/DAY_01/Trash_Place_Meeting/BOOM/frame_02.png"
+    
+    image Kasumi_BOOM_animation:
+        contains:
+            "Kasumi_BOOM_animation_frame_00"
+            0.1
+            "Kasumi_BOOM_animation_frame_01"
+            0.1
+            "Kasumi_BOOM_animation_frame_02"
+            0.1
+            repeat
+        contains:
+            "white_image"
+            pause 0.5
+            linear 1.0 alpha 0.0
+    ##
+    
+    show Kasumi_BOOM_animation
+    ""
+    show Kasumi_BOOM with Dissolve(0.2)
+    hide Kasumi_BOOM_animation
+    ""
     
     return

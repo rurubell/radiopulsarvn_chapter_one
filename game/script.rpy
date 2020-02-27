@@ -76,6 +76,10 @@ label start:
     #Касуми в школьной форме 02
     image Kasumi_03_Normal_Silent = im.Scale( "./images/sprites/Kasumi/Kasumi_03/Kasumi_03_Normal_Silent.png", 660, 1000 ) 
     
+    #Касуми в школьной форме "задумалась"
+    image Kasumi_School_Uniform_Hmm_Normal_Say = im.Scale( "./images/sprites/Kasumi/Kasumi_School_Uniform_Hmm/Kasumi_School_Uniform_Hmm_Normal_Say.png", 624, 1000 ) 
+    image Kasumi_School_Uniform_Hmm_Normal_Silent = im.Scale( "./images/sprites/Kasumi/Kasumi_School_Uniform_Hmm/Kasumi_School_Uniform_Hmm_Normal_Silent.png", 624, 1000 ) 
+    
         
     #СЦЕНА - ДЕНЬ 1, МИДОРИ
     
@@ -2050,9 +2054,282 @@ label start:
 
     kenji "Я? Нет! Зачем мне это нужно?"
     
-    
+    show kasumi_01_Normal_Say with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Silent
     
     kasumi "Говорят, можно чувствовать кожей взгляды людей. Я подумала, почему-то что вы смотрите именно туда."
+    
+    show kasumi_01_Normal_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Say
+    
     kenji "Неправильно подумала!"
+    
+    "Пробурчал  я, и решил сменить тему."
+
+    kenji "Чего это ты слушаешь в наушнике? Радио?"
+    
+    show kasumi_01_Normal_Say with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Silent
+    
+    kasumi "Нет."
+    
+    show kasumi_01_Normal_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Say
+
+    "Касуми подняла руку и коснулась своего ободка с «усами»."
+
+    show kasumi_01_Normal_Say with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Silent
+
+    kasumi "Это."
+    
+    show kasumi_01_Normal_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Say
+    
+    kenji "А что это такое?"
+
+    "Мне было и правда интересно."
+    
+    show kasumi_01_Normal_Say with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Silent
+
+    kasumi "Это что-то вроде ёмкостного реле."
+    
+    show kasumi_01_Normal_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Say
+    
+    "Черт! Мне бы лучше подошёл ответ уровня - «это устройство для связи с внеземными цивилизациями»."
+    "Что такое «ёмкостное реле» я даже представить себе не мог. Звучало как термин из учебника физики. "
+    "Но не припомню чтобы школьный или институтский преподаватель физики щеголял на уроке с этим ёмкостным реле на голове. "
+     
+    #ЦГ - Портреты Ньютона и Галилео
+    image Scientists = "./images/cg/DAY_01/05a_Way_To_Kasumi_Home/Scientists/Scientists.png"
+    image Galileo_And_Newton:
+        contains:
+            "Scientists"
+        contains:
+            "Dream_Frame"
+    ##
+    
+    show Galileo_And_Newton with dissolve
+    
+    "Я вспомнил портреты великих учёных, которые висели в коридоре нашего университета. "
+    "Галилео и Ньютон — оба на портретах были одеты в костюмы и никаких штуковин на голове у них не было. "
+    
+    #ЦГ - Портреты Эдисона и Теслы
+    image Edison_And_Tesla:
+        contains:
+            "Scientists"
+            ease 1.0 xpos -1920
+            
+        contains:
+            "Dream_Frame"
+    ##
+    
+    show Edison_And_Tesla
+    hide Galileo_And_Newton
+    
+    "Даже такие интересные личности как Эдисон и Тесла — ни разу это самое «реле» не одели. Удивительно!"
+    
+    hide Edison_And_Tesla with dissolve
+    
+    kenji "А зачем оно? Для чего?"
+
+    "Спросил я. И мне подумалось, следующий ответ будет ещё непонятнее. "
+    "Что-нибудь вроде «чтобы измерять угловой коэффициент пролетающих мимо нейтрино» или что-то в таком духе."
+    
+    show kasumi_01_Normal_Say with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Silent
+    
+    kasumi "Оно реагирует на предметы. Чтобы было проще ориентироваться в пространстве."
+    kasumi "Когда рядом с антеннами что-то есть, в наушнике пищит."
+    
+    show kasumi_01_Normal_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Say
+    
+    kenji "Хм... Здорово придумано, сама сделала?"
+
+    "Касуми покачала головой."
+    
+    show kasumi_01_Normal_Say with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Silent
+
+    kasumi "Не совсем. Мне помогли собрать."
+    kasumi "Но вообще, он не очень точный, в сухую погоду ещё неплохо работает. А в сырую или в туман — с ума сходит."
+    kasumi "Пищит по любому поводу. Приходится отключать его. Но тогда он тоже помогает, как усы у кошки."
+    kasumi "Хотя — в плохую погоду, на улицу я и не выхожу."
+    
+    show kasumi_01_Normal_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Say
+
+    "Интересно, кто помогал Касуми со сборкой этого приспособления? Должно быть её отец. "
+    
+    image Old_Kasumis_Dad = "./images/cg/DAY_01/05a_Way_To_Kasumi_Home/Kasumi_Father/Old_Kasumi_Dad.png"
+    image Old_Kasumis_Dad_Dream:
+        contains:
+            "Old_Kasumis_Dad"
+        contains:
+            "Dream_Frame"
+        
+    image Young_Kasumi_Dad = "./images/cg/DAY_01/05a_Way_To_Kasumi_Home/Kasumi_Father/Young_Kasumi_Dad.png"
+    image Young_Kasumi_Dad_Dream:
+        contains:
+            "Young_Kasumi_Dad"
+        contains:
+            "Dream_Frame"
+
+            
+    image Dad_In_Room = "./images/cg/DAY_01/05a_Way_To_Kasumi_Home/Kasumi_Father/Dad_In_Room.png"
+    image Dad_In_Room_Dream:
+        contains:
+            "Dad_In_Room"
+        contains:
+            "Dream_Frame"
+    
+    image Kasumi_And_Pervert = "./images/cg/DAY_01/05a_Way_To_Kasumi_Home/Kasumi_Father/Kasumi_And_Pervert.png"
+    image Kasumi_And_Pervert_Dream:
+        contains:
+            "Kasumi_And_Pervert"
+        contains:
+            "Dream_Frame"
+    
+    scene Old_Kasumis_Dad_Dream with dissolve
+    
+    "Я представил его себе как интеллигентного, худощавого, в толстых очках и с пышной зачёсанной набок шевелюрой. "
+    "Похожего на профессора по физике в университете, где я учился. "
+    
+    scene Young_Kasumi_Dad_Dream with dissolve
+    
+    "Но профессор был старый, а отец Касуми, он должен быть моложе. Если Касуми всего шестнадцать лет — ему максимум, слегка за сорок. "
+    "Вероятно он тоже радиолюбитель, как Макото-сан. Такой же увлечённый. "
+    "Небось за своей радиостанцией и забыл что его незрячая дочь шатается одна по улицам неизвестно где. "
+    "И наверное это он такой заядлый курильщик."
+    
+    scene Dad_In_Room_Dream with dissolve
+    
+    "Я представил как её отец, сидит за рацией, крутит всякие крутилки, щёлкает тумблерами, да смолит сигарету. "
+    "Затем подходит к открытому окну и задумчиво смотрит на городской пейзаж. "
+    
+    scene Kasumi_And_Pervert_Dream with dissolve
+    
+    "И видит свою дочь, а рядом с ней, какого-то небритого, лохматого и нетрезвого извращенца. "
+    
+    scene Outdoor_Day_BG_With_Railroad_2 with dissolve
+
+    "Я поёжился. Посмотрел на мятую рубаху и неопрятные брюки. Провёл ладонью по щетине и растрёпанной шевелюре. "
+    "Слава богу, волосы на затылке, которые по утрам стояли дыбом — теперь улеглись. Видимо намокли от пота и перестали топорщиться. "
+    "Хоть какой-то плюс, правда - небольшой. "
+    "Вообще хорошо, что Касуми меня не видит, если бы она внезапно прозрела — убежала бы в миг с криками. "
+    "А так, я кажусь ей вполне обычным человеком, если не брать во внимание запах алкоголя."
+    "На всякий случай я понюхал и свои подмышки. Вроде приемлемо. "
+    "По крайней мере запах сигарет, исходивший от Касуми, ощущается явно сильнее. Надо же как пропахла!"
+
+    kenji "Касуми. А эта рация? Она тебе для чего?"
+    kenji "Ты тоже как и мой погибший дядя — радиолюбитель? Или рацию ты хочешь кому-то отдать?"
+    
+    show kasumi_01_Normal_Say with Dissolve( 0.2 )
+    
+    kasumi "Что значит кому-то отдать? Нет! Эта рация нужна мне самой."
+    kasumi "И да, Танака-сан, я наверное всё-таки радиолюбитель."
+    
+    show kasumi_01_Concerned_Say with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Say
+
+    kasumi "А ваш дядя? Почему он погиб?"
+    
+    show kasumi_01_Concerned_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Concerned_Say
+    
+    kenji "Мой дядя?"
+
+    "Я пересказал историю, которую слышал от дяди Ватанабэ и в конце рассказа добавил:"
+
+    kenji "Кажется он обманул меня."
+    
+    show kasumi_01_Normal_Say with Dissolve( 0.2 )
+    hide kasumi_01_Concerned_Silent
+    
+    kasumi "Почему-же обманул?"
+    
+    show kasumi_01_Normal_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Say
+    
+    kenji "А ты веришь в эту ерунду? Это самоубийство какое-то, провод под напряжением — вместо антенны. Чушь полная!"
+
+    "Касуми пожала плечами."
+    
+    show kasumi_01_Normal_Say with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Silent
+
+    kasumi "Я однажды использовала вместо антенны нашу, бытовую сеть. Домашнюю."
+    kasumi "Там правда всего сто десять вольт, а не несколько тысяч."
+    kasumi "Но тоже немного опасно, конденсатор надо подобрать тщательно. Это не чушь!"
+    
+    show kasumi_01_Normal_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Say
+    
+    "Опять этот конденсатор! Везде конденсатор! "
+    "Похоже этот конденсатор — нечто вроде философского камня в среде радиолюбителей. "
+    "А я про него ничего не знаю!"
+
+    kenji "А зачем тогда вообще закидывать провод туда, где такое большое напряжение?"
+    kenji "Раз ты говоришь, что в розетке всего сто десять вольт. Вот бы и втыкался туда!"
+    
+    show kasumi_01_Normal_Say with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Silent
+    
+    kasumi "Но тогда сигнал, дальше домашней сети не выйдет. Там же трансформатор, слабая выйдет антенна."
+    
+    show kasumi_01_Normal_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Say
+    
+    kenji "Точно! И как я забыл про трансформатор!"
+    
+    "Но, если честно, про трансформатор я никогда и не вспоминал. Да и вообще, слово это произносил в своей жизни впервые."
+
+    kenji "Почему нельзя было просто привязать свою антенну к металлической опоре? Она же вон какая огромная?"
+    kenji "Чего ему не хватало?"
+    
+    hide kasumi_01_Normal_Silent with Dissolve( 0.1 )
+    show Kasumi_03_Normal_Silent with Dissolve( 0.1 )
+    
+    "Касуми отвернулась и поджала губы. Мне показалось, что она едва сдержала смешок. "
+    "Ну да, подозреваю, что говорю я полнейшую ерунду."
+    
+    hide Kasumi_03_Normal_Silent with Dissolve( 0.1 )
+    show kasumi_01_Normal_Say with Dissolve( 0.1 )
+    
+    kasumi "Она же заземлена. Не получится из неё антенна!"
+    
+    show kasumi_01_Normal_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Say
+    
+    "Я вспомнил ту металлическую опору, что стояла в нашем саду. "
+    "Каждая из четырёх её лап, была толстыми болтами прикручена к железобетонной плите. "
+    "Она точно не соприкасалась с землёй!"
+
+    kenji "Нет! Нет на ней никакого заземления!"
+    
+    show kasumi_01_Normal_Say with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Silent
+    
+    kasumi "Не может быть! Должно быть вы просто не заметили, Танака-сан."
+    
+    show kasumi_01_Normal_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Say
+    
+    kenji "Нет! Я прекрасно вижу! Ничего там не было!"
+    
+    "Воскликнул я. А через секунду понял, насколько неприятную для собеседницы вещь сказал."
+    "Но Касуми будто бы и не заметила ничего. На мгновение она задумалась."
+    
+    hide kasumi_01_Normal_Silent with Dissolve( 0.1 )
+    show Kasumi_School_Uniform_Hmm_Normal_Say with Dissolve( 0.1 )
+    
+    kasumi "Она наверное... Она наверное заземлена сверху!"
+    
+    show Kasumi_School_Uniform_Hmm_Normal_Silent with Dissolve( 0.1 )
+    hide Kasumi_School_Uniform_Hmm_Normal_Say
+    
     
     return

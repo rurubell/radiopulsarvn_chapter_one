@@ -79,12 +79,12 @@ label start:
         
     #СЦЕНА - ДЕНЬ 1, МИДОРИ
     
-    image midori_00 = "./images/cg/DAY_01/Green-Haired_Girl/00.png"
-    image midori_01 = "./images/cg/DAY_01/Green-Haired_Girl/01.png"
-    image midori_02 = "./images/cg/DAY_01/Green-Haired_Girl/02.png"
-    image midori_03 = "./images/cg/DAY_01/Green-Haired_Girl/03.png"
-    image midori_04 = "./images/cg/DAY_01/Green-Haired_Girl/04.png"
-    image midori_05 = "./images/cg/DAY_01/Green-Haired_Girl/05.png"
+    image midori_00 = "./images/cg/DAY_01/01a_Green-Haired_Girl/00.png"
+    image midori_01 = "./images/cg/DAY_01/01a_Green-Haired_Girl/01.png"
+    image midori_02 = "./images/cg/DAY_01/01a_Green-Haired_Girl/02.png"
+    image midori_03 = "./images/cg/DAY_01/01a_Green-Haired_Girl/03.png"
+    image midori_04 = "./images/cg/DAY_01/01a_Green-Haired_Girl/04.png"
+    image midori_05 = "./images/cg/DAY_01/01a_Green-Haired_Girl/05.png"
     
     show Sea_Midori_Scene with dissolve
     
@@ -352,7 +352,7 @@ label start:
     "Поставила на него две деревянные подставки. Протерла их. "
     "Затем аккуратно расставила передо мной тарелки, положила палочки для еды. Все в лучшем виде. "
     
-    image Kenji_1st_Day_Breakfast_Food = "./images/cg/DAY_01/Kenji_1st_Day_Breakfast/Food.png"
+    image Kenji_1st_Day_Breakfast_Food = "./images/cg/DAY_01/02a_Kenji_1st_Day_Breakfast/Food.png"
     scene Kenji_1st_Day_Breakfast_Food with dissolve
     
     "Даже розовые таблетки — ферменты для пищеварения, которые мне прописали много лет назад — не забыты."
@@ -572,7 +572,7 @@ label start:
     
     "Айко взяла из холодильника одну из банок. Мне показалось, что сейчас она небрежно кинет банку мне, настолько недовольное было у неё лицо. "
     
-    image Kenji_1st_Day_Breakfast_Food_With_Beer = "./images/cg/DAY_01/Kenji_1st_Day_Breakfast/Food_With_Beer.png" 
+    image Kenji_1st_Day_Breakfast_Food_With_Beer = "./images/cg/DAY_01/02a_Kenji_1st_Day_Breakfast/Food_With_Beer.png" 
     scene Kenji_1st_Day_Breakfast_Food_With_Beer with dissolve
     
     "Но нет, она поставила пиво на подставку, забрала мою порцию супа и села напротив."
@@ -620,7 +620,7 @@ label start:
     "Айко на все это отцовское барахло тоже похоже наплевать. Она совсем его не помнит. "
     "Ну да, фотографий в альбоме и урны с прахом на местном кладбище ей достаточно. Кому нужна груда металлолома?"
     
-    image TV_Heap = "images/cg/DAY_01/Kenji_Moves_Trash/TV_Heap/TV_Heap.png"
+    image TV_Heap = "images/cg/DAY_01/03a_Kenji_Moves_Trash/TV_Heap/TV_Heap.png"
     image TV_Heap_Dream:
         contains:
             "TV_Heap"
@@ -882,7 +882,7 @@ label start:
     scene Day_Trash_Place with dissolve
     
     #Мини-ЦГ вентилятор Касуми 01
-    image Kasumi_Fan_01 = "./images/cg/DAY_01/Kenji_Moves_Trash/Kasumi_Fan/Kasumi_Fan_01.png"
+    image Kasumi_Fan_01 = "./images/cg/DAY_01/03a_Kenji_Moves_Trash/Kasumi_Fan/Kasumi_Fan_01.png"
     image Kasumi_Fan_01_Moved:
         contains:
             "Kasumi_Fan_01"
@@ -912,7 +912,7 @@ label start:
     "За время моего отсутствия на площадке появился напольный вентилятор с синими, разлохмаченными от старости лопастями и пожелтевшим пластиком корпуса. "
     
     #Мини ЦГ - рация на асфальте, с откинутой крышкой
-    image Radio_Set_On_Ground = "/images/cg/DAY_01/Kenji_Moves_Trash/Radio_Set_On_Ground/Radio_Set_On_Ground.png"
+    image Radio_Set_On_Ground = "/images/cg/DAY_01/03a_Kenji_Moves_Trash/Radio_Set_On_Ground/Radio_Set_On_Ground.png"
     image Radio_Set_On_Ground_Moved:
         contains:
             "Radio_Set_On_Ground"
@@ -951,7 +951,7 @@ label start:
     "Хм. Возможно этот кто-то — владелец сломанного вентилятора. Я подошёл к нему поближе. "
     
     #Мини-ЦГ вентилятор Касуми 02
-    image Kasumi_Fan_02 = "./images/cg/DAY_01/Kenji_Moves_Trash/Kasumi_Fan/Kasumi_Fan_02.png"
+    image Kasumi_Fan_02 = "./images/cg/DAY_01/03a_Kenji_Moves_Trash/Kasumi_Fan/Kasumi_Fan_02.png"
     image Kasumi_Fan_02_Moved:
         contains:
             "Kasumi_Fan_02"
@@ -983,7 +983,7 @@ label start:
     "Да и весь этот жёлтый налёт на нем, явно сигаретная копоть, налипшая за годы эксплуатации. "
     "Стало немного противно, и в то же время в памяти всколыхнулись воспоминания былых лет."
     
-    image smocking_old_man = "./images/cg/DAY_01/Kenji_Moves_Trash/Old_Smocking_Man/smocking_old_man.png"
+    image smocking_old_man = "./images/cg/DAY_01/03a_Kenji_Moves_Trash/Old_Smocking_Man/smocking_old_man.png"
     image smocking_old_man_dream:
         contains:
             "smocking_old_man"
@@ -1027,7 +1027,7 @@ label start:
     
     
     #Мини ЦГ - БП от рации на земле
-    image Radio_Set_Power_Supply_On_ground = "./images/cg/DAY_01/Kenji_Moves_Trash/Radio_Set_Power_supply_On_Ground/Radio_Set_Power_Supply_On_ground.png"
+    image Radio_Set_Power_Supply_On_ground = "./images/cg/DAY_01/03a_Kenji_Moves_Trash/Radio_Set_Power_supply_On_Ground/Radio_Set_Power_Supply_On_ground.png"
     image Radio_Set_Power_Supply_On_ground_Moved:
         contains:
             "Radio_Set_Power_Supply_On_ground"
@@ -1076,7 +1076,7 @@ label start:
     "Сделал глубокий глоток, затем огляделся по сторонам."
     
     #Мини ЦГ - Касуми идет с тележкой
-    image Kasumi_Walks = "./images/cg/DAY_01/Trash_Place_Meeting/Kasumi_Walks/Kasumi_Walks.png"
+    image Kasumi_Walks = "./images/cg/DAY_01/04a_Trash_Place_Meeting/Kasumi_Walks/Kasumi_Walks.png"
     image Kasumi_Walks_Moved:
         contains:
             "Kasumi_Walks"
@@ -1115,7 +1115,7 @@ label start:
     hide Kasumi_Walks_With_Border_01 with Dissolve( 0.1 )
     
     #Мини ЦГ - Касуми стоит с тележкой
-    image Kasumi_And_Interesting_Wall = "./images/cg/DAY_01/Trash_Place_Meeting/Kasumi_And_Interesting_Wall/Kasumi_And_Interesting_Wall.png"
+    image Kasumi_And_Interesting_Wall = "./images/cg/DAY_01/04a_Trash_Place_Meeting/Kasumi_And_Interesting_Wall/Kasumi_And_Interesting_Wall.png"
     image Kasumi_And_Interesting_Wall_Moved:
         contains:
             "Kasumi_And_Interesting_Wall"
@@ -1164,7 +1164,7 @@ label start:
     "Она остановилась и отвесила мне учтивый поклон! Я бы даже сказал - чересчур учтивый!"
     
     #Мини ЦГ - Касуми стоит на четвереньках
-    image On_All_Fours = "./images/cg/DAY_01/Trash_Place_Meeting/On_All_Fours/On_All_Fours.png"
+    image On_All_Fours = "./images/cg/DAY_01/04a_Trash_Place_Meeting/On_All_Fours/On_All_Fours.png"
     image On_All_Fours_Moved:
         contains:
             "On_All_Fours"
@@ -1200,7 +1200,7 @@ label start:
     hide On_All_Fours_With_Border_01 with Dissolve( 0.1 )
     
     #Мини ЦГ - Руки Касуми на штанине Кендзи
-    image Kasumi_Hands_On_Kenji_Leg = "./images/cg/DAY_01/Trash_Place_Meeting/Kasumi_Hands_On_Kenji_Leg/Kasumi_Hands_On_Kenji_Leg.png"
+    image Kasumi_Hands_On_Kenji_Leg = "./images/cg/DAY_01/04a_Trash_Place_Meeting/Kasumi_Hands_On_Kenji_Leg/Kasumi_Hands_On_Kenji_Leg.png"
     image Kasumi_Hands_On_Kenji_Leg_Moved:
         contains:
             "Kasumi_Hands_On_Kenji_Leg"
@@ -1240,7 +1240,7 @@ label start:
     "..."
     
     #Мини ЦГ - Касуми упала на пятую точку
-    image Kasumi_Fells = "./images/cg/DAY_01/Trash_Place_Meeting/Kasumi_Fells/Kasumi_Fells.png"
+    image Kasumi_Fells = "./images/cg/DAY_01/04a_Trash_Place_Meeting/Kasumi_Fells/Kasumi_Fells.png"
     image Kasumi_Fells_Moved:
         contains:
             "Kasumi_Fells"
@@ -1288,7 +1288,7 @@ label start:
     blind_girl "Да, я ничего не вижу."
     
     #Мини-ЦГ лицо Касуми крупным планом
-    image DAY_01_Kasumi_Big_Face = "./images/cg/DAY_01/Trash_Place_Meeting/Kasumi/Kasumi.png"
+    image DAY_01_Kasumi_Big_Face = "./images/cg/DAY_01/04a_Trash_Place_Meeting/Kasumi/Kasumi.png"
     image DAY_01_Kasumi_Big_Face_Moved:
         contains:
             "DAY_01_Kasumi_Big_Face"
@@ -1378,7 +1378,7 @@ label start:
     "Но все впечатление портил этот пустой взгляд, в котором казалось навечно застыл испуг."
     
     #Мини-ЦГ ус Касуми крупным планом
-    image DAY_01_Kasumi_Big_Face_Mustache = "./images/cg/DAY_01/Trash_Place_Meeting/Kasumi/Kasumi.png"
+    image DAY_01_Kasumi_Big_Face_Mustache = "./images/cg/DAY_01/04a_Trash_Place_Meeting/Kasumi/Kasumi.png"
     image DAY_01_Kasumi_Big_Face_Mustache_Moved:
         contains:
             "DAY_01_Kasumi_Big_Face_Mustache"
@@ -1487,7 +1487,7 @@ label start:
     "Девушка ощупала боковины прибора, взялась за тканевую ручку и попыталась встать. "
     
     #Мини ЦГ - Касуми пытается поднять рацию
-    image Kasumi_Lifting_Up_RadioSet = "./images/cg/DAY_01/Trash_Place_Meeting/Kasumi_Lifting_Up_RadioSet/Kasumi_Lifting_Up_RadioSet.png"
+    image Kasumi_Lifting_Up_RadioSet = "./images/cg/DAY_01/04a_Trash_Place_Meeting/Kasumi_Lifting_Up_RadioSet/Kasumi_Lifting_Up_RadioSet.png"
     image Kasumi_Lifting_Up_RadioSet_Moved:
         contains:
             "Kasumi_Lifting_Up_RadioSet"
@@ -1559,7 +1559,7 @@ label start:
     hide kasumi_01_Normal_Say
     
     #Мини ЦГ - тележка Касуми (пустая)
-    image Kasumi_Cart = "./images/cg/DAY_01/Trash_Place_Meeting/Kasumi_Cart/Kasumi_Cart.png"
+    image Kasumi_Cart = "./images/cg/DAY_01/04a_Trash_Place_Meeting/Kasumi_Cart/Kasumi_Cart.png"
     image Kasumi_Cart_Moved:
         contains:
             "Kasumi_Cart"
@@ -1595,7 +1595,7 @@ label start:
     "Я поставил тележку, поднял рацию и аккуратно установил её на раму. Рама выгнулась и затрещала, но выдержала. "
     
     #Мини ЦГ - тележка Касуми (с радиостанцией)
-    image Kasumi_Cart_And_Radio_Set = "./images/cg/DAY_01/Trash_Place_Meeting/Kasumi_Cart_And_Radio_Set/Kasumi_Cart_And_Radio_Set.png"
+    image Kasumi_Cart_And_Radio_Set = "./images/cg/DAY_01/04a_Trash_Place_Meeting/Kasumi_Cart_And_Radio_Set/Kasumi_Cart_And_Radio_Set.png"
     image Kasumi_Cart_And_Radio_Set_Moved:
         contains:
             "Kasumi_Cart_And_Radio_Set"
@@ -1725,10 +1725,10 @@ label start:
     "Хоть я и был пьян — но банка прилетела точно в цель!"
     
     #ЦГ - взрыв тележки Касуми
-    image Kasumi_BOOM = "./images/cg/DAY_01/Trash_Place_Meeting/BOOM/Kasumi_Boom.png"
-    image Kasumi_BOOM_animation_frame_00 = "./images/cg/DAY_01/Trash_Place_Meeting/BOOM/frame_00.png"
-    image Kasumi_BOOM_animation_frame_01 = "./images/cg/DAY_01/Trash_Place_Meeting/BOOM/frame_01.png"
-    image Kasumi_BOOM_animation_frame_02 = "./images/cg/DAY_01/Trash_Place_Meeting/BOOM/frame_02.png"
+    image Kasumi_BOOM = "./images/cg/DAY_01/04a_Trash_Place_Meeting/BOOM/Kasumi_Boom.png"
+    image Kasumi_BOOM_animation_frame_00 = "./images/cg/DAY_01/04a_Trash_Place_Meeting/BOOM/frame_00.png"
+    image Kasumi_BOOM_animation_frame_01 = "./images/cg/DAY_01/04a_Trash_Place_Meeting/BOOM/frame_01.png"
+    image Kasumi_BOOM_animation_frame_02 = "./images/cg/DAY_01/04a_Trash_Place_Meeting/BOOM/frame_02.png"
     
     image Kasumi_BOOM_animation:
         contains:
@@ -1762,7 +1762,7 @@ label start:
     "Я был несказанно рад такому повороту событий и немедленно поспешил к месту аварии."
     
     #Мини ЦГ - тележка и рация, валяются
-    image Radio_Set_And_Cart_On_The_Ground = "./images/cg/DAY_01/Trash_Place_Meeting/Radio_Set_And_Cart_On_The_Ground/Radio_Set_And_Cart_On_The_Ground.png"
+    image Radio_Set_And_Cart_On_The_Ground = "./images/cg/DAY_01/04a_Trash_Place_Meeting/Radio_Set_And_Cart_On_The_Ground/Radio_Set_And_Cart_On_The_Ground.png"
     image Radio_Set_And_Cart_On_The_Ground_Moved:
         contains:
             "Radio_Set_And_Cart_On_The_Ground"
@@ -1983,5 +1983,76 @@ label start:
     "Я удивленно промычал."
 
     kenji "Ммм?"
+
+    "Касуми подняла правую руку и указала на свое ухо."
+    
+    ##Мини ЦГ - Касуми в профиль
+    image Kasumi_Profile = "./images/cg/DAY_01/05a_Way_To_Kasumi_Home/Kasumi_Profile/Kasumi_Profile.png"
+    image Kasumi_Profile_Moved:
+        contains:
+            "Kasumi_Profile"
+            ypos -200
+            xpos -700
+            #pause 0.7
+            #linear 10.0 xpos -500
+    
+    image Kasumi_Profile_border_01_left_moved:
+        contains:
+            "border_01_left"
+            xpos -800
+    
+    image Kasumi_Profile_border_01_left_mask_moved:
+        contains:
+            "border_01_left_mask"
+            xpos -800
+    
+    image Kasumi_Profile_Masked = AlphaMask( "Kasumi_Profile_Moved", "Kasumi_Profile_border_01_left_mask_moved" )
+    
+    image Kasumi_Profile_With_Border_01:
+        contains:
+            "Kasumi_Profile_Masked"
+        contains:
+            "Kasumi_Profile_border_01_left_moved"
+    ##
+    
+    hide kasumi_01_Normal_Silent with Dissolve( 0.1 )
+    show kasumi_01_Normal_Silent at Move( ( 1200, 600 ), ( 1200, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    show Kasumi_Profile_With_Border_01 with dissolve
+    
+    "Я увидел что в него вставлен белый наушник."
+    
+    show kasumi_01_Normal_Say at Move( ( 1200, 600 ), ( 1200, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Silent
+
+    kasumi "Я вас плохо буду слышать. Лучше встаньте слева."
+    
+    show kasumi_01_Normal_Silent at Move( ( 1200, 600 ), ( 1200, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Say
+
+    "Я уж было подумал что Касуми ещё и глухая, а в ухе у неё не что иное, как слуховой аппарат. "
+    "Но нет, она же говорит встать с другой стороны!"
+    "В левом ухе никаких наушников не было. Я стал разглядывать мою новую знакомую в профиль. "
+    "Так, не было видно её необычных глаз и казалось со мной рядом шла совершенно обычная девчёнка."
+    
+    show kasumi_01_Normal_Say at Move( ( 1200, 600 ), ( 1200, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Silent
+    
+    kasumi "Вы смотрите на моё ухо, Танака-сан?"
+    
+    show kasumi_01_Normal_Silent at Move( ( 1200, 600 ), ( 1200, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Say
+
+    "Вдруг спросила Касуми"
+    
+    hide Kasumi_Profile_With_Border_01 with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Silent with Dissolve( 0.1 )
+    show kasumi_01_Normal_Silent with Dissolve( 0.1 )
+
+    kenji "Я? Нет! Зачем мне это нужно?"
+    
+    
+    
+    kasumi "Говорят, можно чувствовать кожей взгляды людей. Я подумала, почему-то что вы смотрите именно туда."
+    kenji "Неправильно подумала!"
     
     return

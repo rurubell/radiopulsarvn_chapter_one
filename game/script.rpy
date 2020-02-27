@@ -1558,16 +1558,82 @@ label start:
     show kasumi_01_Normal_Silent with Dissolve( 0.2 )
     hide kasumi_01_Normal_Say
     
+    #Мини ЦГ - тележка Касуми (пустая)
+    image Kasumi_Cart = "./images/cg/DAY_01/Trash_Place_Meeting/Kasumi_Cart/Kasumi_Cart.png"
+    image Kasumi_Cart_Moved:
+        contains:
+            "Kasumi_Cart"
+            xpos 600
+            #xpos 500
+            #pause 0.7
+            #linear 5.0 xpos 700
+    
+    image Kasumi_Cart_border_01_right_moved:
+        contains:
+            "border_01_right"
+            xpos 1000
+    
+    image Kasumi_Cart_border_01_right_mask_moved:
+        contains:
+            "border_01_right_mask"
+            xpos 1000
+    
+    image Kasumi_Cart_Masked = AlphaMask( "Kasumi_Cart_Moved", "Kasumi_Cart_border_01_right_mask_moved" )
+    
+    image Kasumi_Cart_With_Border_01:
+        contains:
+            "Kasumi_Cart_Masked"
+        contains:
+            "Kasumi_Cart_border_01_right_moved"
+    ##
+    
+    show Kasumi_Cart_With_Border_01 with dissolve
+    
     "Я взялся за тележку - на вид крайне хлипкую, из алюминиевых трубок, скреплённых пластиковыми уголками и такими же заклёпками. "
     "Рама её была перехвачена двумя плетёными жгутами красного цвета."
 
     "Я поставил тележку, поднял рацию и аккуратно установил её на раму. Рама выгнулась и затрещала, но выдержала. "
+    
+    #Мини ЦГ - тележка Касуми (с радиостанцией)
+    image Kasumi_Cart_And_Radio_Set = "./images/cg/DAY_01/Trash_Place_Meeting/Kasumi_Cart_And_Radio_Set/Kasumi_Cart_And_Radio_Set.png"
+    image Kasumi_Cart_And_Radio_Set_Moved:
+        contains:
+            "Kasumi_Cart_And_Radio_Set"
+            xpos 600
+            #xpos 500
+            #pause 0.7
+            #linear 5.0 xpos 700
+    
+    image Kasumi_Cart_And_Radio_Set_border_01_right_moved:
+        contains:
+            "border_01_right"
+            xpos 1000
+    
+    image Kasumi_Cart_And_Radio_Set_border_01_right_mask_moved:
+        contains:
+            "border_01_right_mask"
+            xpos 1000
+    
+    image Kasumi_Cart_And_Radio_Set_Masked = AlphaMask( "Kasumi_Cart_And_Radio_Set_Moved", "Kasumi_Cart_And_Radio_Set_border_01_right_mask_moved" )
+    
+    image Kasumi_Cart_And_Radio_Set_With_Border_01:
+        contains:
+            "Kasumi_Cart_And_Radio_Set_Masked"
+        contains:
+            "Kasumi_Cart_And_Radio_Set_border_01_right_moved"
+    ##
+    
+    show Kasumi_Cart_And_Radio_Set_With_Border_01 with Dissolve( 0.2 )
+    hide Kasumi_Cart_With_Border_01 with Dissolve( 0.2 )
+    
     "Я хорошенько обмотал всю эту конструкцию багажными жгутами, наклонил. Вроде всё держалось."
 
     kenji "Ну вроде как готово!"
 
     "Девушка протянула руки в мою сторону. Я немного отступил, захотелось словами указать ей, в каком направлении двигаться, но я сдержался. "
     "Она поводила руками, и наконец нашла длинную ручку тележки. Затем ощупала стоящую на ней рацию и жгуты."
+    
+    hide Kasumi_Cart_And_Radio_Set_With_Border_01 with Dissolve( 0.2 )
 
     kenji "Я хорошо всё закрепил."
 

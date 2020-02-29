@@ -21,65 +21,12 @@ label start:
     #пустая картинка
     image empty_image = "./images/other/empty.png"
     
+    
     #Рамки для мини-цг
     image border_01_right = "./images/other/borders/01_Right/border.png"
     image border_01_right_mask = "./images/other/borders/01_Right/mask.png"
     image border_01_left = "./images/other/borders/01_Left/border.png"
     image border_01_left_mask = "./images/other/borders/01_Left/mask.png"
-    
-    
-    #Спрайты
-    #Айко в домашней одежде
-    image Aiko_Base_Outfit_03_Normal_Say = im.Scale( "./images/sprites/Aiko/Aiko_Base_Outfit_03/Aiko_Base_Outfit_03_Normal_Say.png", 594, 900 ) 
-    image Aiko_Base_Outfit_03_Normal_Silent = im.Scale( "./images/sprites/Aiko/Aiko_Base_Outfit_03/Aiko_Base_Outfit_03_Normal_Silent.png", 594, 900 ) 
-    image Aiko_Base_Outfit_03_Confused_Silent = im.Scale( "./images/sprites/Aiko/Aiko_Base_Outfit_03/Aiko_Base_Outfit_03_Confused_Silent.png", 594, 900 ) 
-    image Aiko_Base_Outfit_03_Angry_Say = im.Scale( "./images/sprites/Aiko/Aiko_Base_Outfit_03/Aiko_Base_Outfit_03_Angry_Say.png", 594, 900 ) 
-    image Aiko_Base_Outfit_03_Angry_Silent = im.Scale( "./images/sprites/Aiko/Aiko_Base_Outfit_03/Aiko_Base_Outfit_03_Angry_Silent.png", 594, 900 )
-    
-    #Айко с ложкой
-    image Aiko_With_Big_Spoon_Angry_Say = im.Scale( "./images/sprites/Aiko/Aiko_With_Big_Spoon/Aiko_With_Big_Spoon_Angry_Say.png", 880, 900 ) 
-    image Aiko_With_Big_Spoon_Angry_Silent = im.Scale( "./images/sprites/Aiko/Aiko_With_Big_Spoon/Aiko_With_Big_Spoon_Angry_Silent.png", 880, 900 ) 
-    image Aiko_With_Big_Spoon_Confused_Silent = im.Scale( "./images/sprites/Aiko/Aiko_With_Big_Spoon/Aiko_With_Big_Spoon_Confused_Silent.png", 880, 900 ) 
-    image Aiko_With_Big_Spoon_Normal_Say = im.Scale( "./images/sprites/Aiko/Aiko_With_Big_Spoon/Aiko_With_Big_Spoon_Normal_Say.png", 880, 900 ) 
-    image Aiko_With_Big_Spoon_Normal_Silent = im.Scale( "./images/sprites/Aiko/Aiko_With_Big_Spoon/Aiko_With_Big_Spoon_Normal_Silent.png", 880, 900 ) 
-    image Aiko_With_Big_Spoon_Surprised_Say = im.Scale( "./images/sprites/Aiko/Aiko_With_Big_Spoon/Aiko_With_Big_Spoon_Surprised_Say.png", 880, 900 ) 
-    image Aiko_With_Big_Spoon_Surprised_Silent = im.Scale( "./images/sprites/Aiko/Aiko_With_Big_Spoon/Aiko_With_Big_Spoon_Surprised_Silent.png", 880, 900 ) 
-    
-    #Айко с пивом
-    image Aiko_With_Beer_Irritated = im.Scale( "./images/sprites/Aiko/Aiko_With_Beer/Aiko_With_Beer_Irritated.png", 880, 900 ) 
-    image Aiko_With_Beer_Normal_Say = im.Scale( "./images/sprites/Aiko/Aiko_With_Beer/Aiko_With_Beer_Normal_Say.png", 880, 900 ) 
-    image Aiko_With_Beer_Normal_Silent = im.Scale( "./images/sprites/Aiko/Aiko_With_Beer/Aiko_With_Beer_Normal_Silent.png", 880, 900 ) 
-    image Aiko_With_Beer_Surprised_Say = im.Scale( "./images/sprites/Aiko/Aiko_With_Beer/Aiko_With_Beer_Surprised_Say.png", 880, 900 ) 
-    image Aiko_With_Beer_Surprised_Silent = im.Scale( "./images/sprites/Aiko/Aiko_With_Beer/Aiko_With_Beer_Surprised_Silent.png", 880, 900 ) 
-    
-    #Айко в школьной одежде
-    image Aiko_School_Uniform_01_Angry_Silent = im.Scale( "./images/sprites/Aiko/Aiko_School_Uniform_01/Aiko_School_Uniform_Angry_Silent.png", 686, 900 ) 
-    image Aiko_School_Uniform_01_Angry_Say = im.Scale( "./images/sprites/Aiko/Aiko_School_Uniform_01/Aiko_School_Uniform_Angry_Say.png", 686, 900 ) 
-    image Aiko_School_Uniform_01_Shy_Silent = im.Scale( "./images/sprites/Aiko/Aiko_School_Uniform_01/Aiko_School_Uniform_01_Shy_Silent.png", 686, 900 ) 
-    image Aiko_School_Uniform_02_Normal_Say = im.Scale( "./images/sprites/Aiko/Aiko_School_Uniform_02/Aiko_School_Uniform_02_Normal_Say.png", 587, 900 ) 
-    image Aiko_School_Uniform_02_Normal_Silent = im.Scale( "./images/sprites/Aiko/Aiko_School_Uniform_02/Aiko_School_Uniform_02_Normal_Silent.png", 587, 900 ) 
-    image Aiko_School_Uniform_02_Surprised_Say = im.Scale( "./images/sprites/Aiko/Aiko_School_Uniform_02/Aiko_School_Uniform_02_Surprised_Say.png", 587, 900 ) 
-    image Aiko_School_Uniform_02_Surprised_Silent = im.Scale( "./images/sprites/Aiko/Aiko_School_Uniform_02/Aiko_School_Uniform_02_Surprised_Silent.png", 587, 900 ) 
-    image Aiko_School_Uniform_02_Mocking_Say = im.Scale( "./images/sprites/Aiko/Aiko_School_Uniform_02/Aiko_School_Uniform_02_Mocking_Say.png", 587, 900 ) 
-    image Aiko_School_Uniform_02_Mocking_Silent = im.Scale( "./images/sprites/Aiko/Aiko_School_Uniform_02/Aiko_School_Uniform_02_Mocking_Silent.png", 587, 900 ) 
-    image Aiko_School_Uniform_02_Scared_Say = im.Scale( "./images/sprites/Aiko/Aiko_School_Uniform_02/Aiko_School_Uniform_02_Scared_Say.png", 587, 900 ) 
-    image Aiko_School_Uniform_02_Scared_Silent = im.Scale( "./images/sprites/Aiko/Aiko_School_Uniform_02/Aiko_School_Uniform_02_Scared_Silent.png", 587, 900 ) 
-    
-    #Касуми в школьной форме 01
-    image kasumi_01_Normal_Say = im.Scale( "./images/sprites/Kasumi/Kasumi_01/kasumi_01_Normal_Say.png", 646, 1000 ) 
-    image kasumi_01_Normal_Silent = im.Scale( "./images/sprites/Kasumi/Kasumi_01/kasumi_01_Normal_Silent.png", 646, 1000 ) 
-    image kasumi_01_Concerned_Say = im.Scale( "./images/sprites/Kasumi/Kasumi_01/kasumi_01_Concerned_Say.png", 646, 1000 ) 
-    image kasumi_01_Concerned_Silent = im.Scale( "./images/sprites/Kasumi/Kasumi_01/kasumi_01_Concerned_Silent.png", 646, 1000 ) 
-    image kasumi_01_Surprised_Say = im.Scale( "./images/sprites/Kasumi/Kasumi_01/kasumi_01_Surprised_Say.png", 646, 1000 ) 
-    image kasumi_01_Surprised_Silent = im.Scale( "./images/sprites/Kasumi/Kasumi_01/kasumi_01_Surprised_Silent.png", 646, 1000 ) 
-    
-    #Касуми в школьной форме 02
-    image Kasumi_03_Normal_Silent = im.Scale( "./images/sprites/Kasumi/Kasumi_03/Kasumi_03_Normal_Silent.png", 660, 1000 ) 
-    
-    #Касуми в школьной форме "задумалась"
-    image Kasumi_School_Uniform_Hmm_Normal_Say = im.Scale( "./images/sprites/Kasumi/Kasumi_School_Uniform_Hmm/Kasumi_School_Uniform_Hmm_Normal_Say.png", 624, 1000 ) 
-    image Kasumi_School_Uniform_Hmm_Normal_Silent = im.Scale( "./images/sprites/Kasumi/Kasumi_School_Uniform_Hmm/Kasumi_School_Uniform_Hmm_Normal_Silent.png", 624, 1000 ) 
-    
         
     #СЦЕНА - ДЕНЬ 1, МИДОРИ
     
@@ -1324,8 +1271,8 @@ label start:
     show kasumi_01_Normal_Silent at Move( ( 1500, 600 ), ( 1500, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
     show DAY_01_Kasumi_Big_Face_With_Border_01 with dissolve
     
-    "Я взглянул на её лицо и холодок пробежал у меня по спине."
-    "Солнце ярко высвечивало её загорелое лицо и искрилось в светлых, будто выжженных волосах. "
+    "Я взглянул на лицо девушки, и холодок пробежал у меня по спине."
+    "Солнце ярко высвечивало её лицо и искрилось на прядях её волос. "
     "Но наперекор светилу, зрачки её были так широки, что по тонким радужкам невозможно было определить даже цвет глаз. "
     "Этот контраст расширенных, как у кошки в ночи, зрачков и яркого солнца, бьющего прямо в глаза — напугал меня. "
     "Девушка была слепой."
@@ -2328,8 +2275,290 @@ label start:
     
     kasumi "Она наверное... Она наверное заземлена сверху!"
     
-    show Kasumi_School_Uniform_Hmm_Normal_Silent with Dissolve( 0.1 )
-    hide Kasumi_School_Uniform_Hmm_Normal_Say
+    hide Kasumi_School_Uniform_Hmm_Normal_Say with Dissolve( 0.1 )
+    show kasumi_01_Normal_Silent with Dissolve( 0.1 )
+    
+    "Заземлена сверху... Эта фраза совершенно добила меня. Да, черт возьми, Кендзи - сверху! "
+    "Ха — ха! Плевать, что земля - она внизу. Тут как пить дать, дело не обошлось без конденсатора. "
+    "Впрочем куда же без него, а Кендзи? Как тебя вообще земля носит, без конденсатора то?"
+    
+    "Наверное дальше спорить не имело смысла. Я совершенно ничего не смыслил в этих делах."
+    "На некоторое время мы замолчали"
+    
+    scene Outdoor_Day_Street_01 with dissolve
+    
+    "Я взглянул на небо. Судя по солнцу, сейчас уже часов пять дня. Я достал телефон из брюк и посмотрел время. Пять часов, десять минут. "
+    "Ещё час и улицы наводнят люди, возвращающиеся с работы."
+    
+    "Пока на улицах никто не встретился нам, однако мы прошли больше чем половину пути, полагаю, здесь уже жили люди, которые могли знать Касуми. "
+    "Кто-то из них, выглянет в окно, увидит что к ней привязался какой-то мутный тип. Позвонит её отцу..."
+    
+    #ЦГ - Але тут педофилы
+    image Here_Is_A_Pedo_01 = "./images/cg/DAY_01/05a_Way_To_Kasumi_Home/Here_Is_A_Pedo/01.png"
+    image Here_Is_A_Pedo_02 = "./images/cg/DAY_01/05a_Way_To_Kasumi_Home/Here_Is_A_Pedo/02.png"
+    image Here_Is_A_Pedo_03 = "./images/cg/DAY_01/05a_Way_To_Kasumi_Home/Here_Is_A_Pedo/03.png"
+    image Here_Is_A_Pedo_04 = "./images/cg/DAY_01/05a_Way_To_Kasumi_Home/Here_Is_A_Pedo/04.png"
+    image Here_Is_A_Pedo_05 = "./images/cg/DAY_01/05a_Way_To_Kasumi_Home/Here_Is_A_Pedo/05.png"
+    image Here_Is_A_Pedo_06 = "./images/cg/DAY_01/05a_Way_To_Kasumi_Home/Here_Is_A_Pedo/06.png"
+    
+    image Here_Is_A_Pedo:
+        contains:
+            "Here_Is_A_Pedo_01"
+        
+        contains:
+            pause 0.2
+            "Here_Is_A_Pedo_02"
+        
+        contains:
+            pause 0.4
+            "Here_Is_A_Pedo_03"
+        
+        contains:
+            pause 0.6
+            "Here_Is_A_Pedo_04"
+        
+        contains:
+            pause 0.8
+            "Here_Is_A_Pedo_05"
+        
+        contains:
+            pause 1.0
+            "Here_Is_A_Pedo_06"
+    
+    show Here_Is_A_Pedo
+    
+    "..."
+    
+    hide Here_Is_A_Pedo with Dissolve( 0.1 )
+    
+    kenji "Касуми? А твои родители? Они дома?"
+    
+    show Kasumi_03_Normal_Silent with Dissolve( 0.2 )
+
+    "Моя спутница опустила голову, и немного отвернулась от меня. Я что задал неудобный вопрос?"
+    
+    show Kasumi_03_Normal_Say with Dissolve( 0.2 )
+    hide Kasumi_03_Normal_Silent
+
+    kasumi "Мои родители... У меня... Нет родителей!"
+    
+    show Kasumi_03_Normal_Silent with Dissolve( 0.2 )
+    hide Kasumi_03_Normal_Say
+
+    "Да и в самом деле неудачный вопрос."
+
+    kenji "Извини... Что спросил про такое."
+
+    "Касуми пожала плечами."
+    
+    hide Kasumi_03_Normal_Silent with Dissolve( 0.2 )
+    show kasumi_01_Normal_Say with Dissolve( 0.2 )
+
+    kasumi "Ничего. Я наверное, к этому уже привыкла."
+    
+    scene Outdoor_Day_Kasumi_Street with dissolve
+    
+    "Пару кварталов мы прошли молча. Не знаю о чем думала Касуми, меня же донимали мысли о её отце. "
+    "А скорее, о том несуществующем человеке, которого я сам придумал. Мне даже стало жалко эту вымышленную личность."
+
+    "Узнать бы у Касуми о судьбе её родителей, но это не то, что должен спрашивать такой малознакомый человек, как я. "
+    "Всё же я поинтересовался, хоть и не напрямую."
+
+    kenji "А здесь, ты с кем живёшь, Касуми?"
+    
+    show kasumi_01_Normal_Say with Dissolve( 0.2 )
+    
+    kasumi "С тётей."
+    
+    show kasumi_01_Normal_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Say
+
+    "Значит это её тётка столько курит! Хотелось спросить, как же эта женщина так пристрастилась к сигаретам. "
+    "Но это был бы уже не просто неудобный, а крайне свинский вопрос. "
+    "Я глубоко вдохнул, стараясь уловить побольше этого, «аромата» исходившего от моей спутницы. "
+    "Интересно, а как по настоящему пахнет Касуми?"
+    
+    show kasumi_01_Normal_Say with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Silent
+    
+    kasumi "Почему вы вздыхаете? Танака-сан?"
+    kasumi "Вам жаль меня? Из-за родителей?"
+    
+    show kasumi_01_Normal_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Say
+    
+    kenji "Да нет я... Нет, мне конечно жаль что их нет, Касуми. Но вздохнул я... Я просто переводил дух. Устал."
+    
+    show kasumi_01_Normal_Say with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Silent
+    
+    kasumi "Мы почти на месте!"
+    
+    show kasumi_01_Normal_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Say
+    
+    "Я не так хорошо знал этот район города. Впрочем я вообще мало знал окрестности вдали от дома, как и полагалось порядочному хиккикомори."
+    "Мы шли по узенькой улочке. Я опасливо озирался по сторонам, обшаривая взглядом окна и балконы."
+    "Особенно я боялся увидеть тетку Касуми. Хоть и совершенно не имел представления, как она выглядит."
+    
+    show kasumi_01_Normal_Say with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Silent
+
+    kasumi "Мой дом слева, второй за перекрестком. Он желтого цвета, с синей черепицей."
+    kasumi "Чтобы не утруждать вас, Танака-сан, я не буду проводить свои обычные, эм... Ритуалы."
+    
+    show kasumi_01_Normal_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Say
+    
+    kenji "Ритуалы?"
+    
+    show kasumi_01_Normal_Say with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Silent
+    
+    kasumi "Ну, мне нужно найти важные ориентиры, вы же понимаете. Кажется, сейчас я немного дезориентирована."
+    
+    show kasumi_01_Normal_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Say
+    
+    kenji "А, ну да."
+    
+    scene Day_Kasumi_Home with dissolve
+
+    "Действительно, как только мы прошли перекресток, и первый дом за ним я увидел маленький домик выкрашенный бледно-желтой краской."
+    "Площадка перед домом была посыпана гравием и усеяна разбитой тратуарной плиткой, забор и ворота отсутствовали. "
+    "По краям участка росли помидорные кусты."
+
+    kenji "Кажется пришли! Это у тебя во дворе растут помидоры, Касуми?"
+
+    "Касуми не ответила, но повернулась в сторону своего дома, вытянула руки и пошла вперед. "
+    
+    show kasumi_01_Normal_Silent with Dissolve( 0.2 )
+    
+    "Как только ее ноги ступили на гравий, она положила свою тележку на землю и повернулась ко мне. Похоже теперь она сориентировалась."
+    
+    show kasumi_01_Normal_Say with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Silent
+
+    kasumi "Танака-сан! Вы так помогли мне!"
+    
+    show kasumi_01_Normal_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Say
+
+    "Она учтиво мне поклонилась."
+    
+    show kasumi_01_Normal_Say with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Silent
+
+    kasumi "Большое вам спасибо! Может быть вы хотите выпить чая?"
+    
+    show kasumi_01_Normal_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Say
+
+    "Да, конечно! Я бы выпил чая с Касуми, если бы знал, что на этом всё, и больше никогда я её не увижу. "
+    "Но ещё в пути у меня созрел хитрый план."
+
+    kenji "Нет, Касуми!"
+
+    "Похоже что мои слова ее удивили."
+    
+    show kasumi_01_Normal_Say with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Silent
+
+    kasumi "Не хотите?"
+    
+    show kasumi_01_Normal_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Say
+    
+    kenji "Не очень. Я лучше пойду поскорее домой."
+
+    "Касуми выглядела растерянной. Я поставил рацию на землю, возле бетонного столбика."
+
+    kenji "Рация. Я здесь оставлю её. Донесёшь до дома? Касуми?"
+    
+    show kasumi_01_Normal_Say with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Silent
+    
+    kasumi "Тётя поможет мне!"
+    
+    show kasumi_01_Normal_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Say
+
+    kenji "Хорошо. А тележку твою, я конфискую."
+    
+    show kasumi_01_Surprised_Say with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Silent
+    
+    kasumi "Но зачем? Что значит конфискуете? Это не моя, тётина. Что я ей скажу?"
+    
+    show kasumi_01_Surprised_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Surprised_Say
+    
+    kenji "Не боись. Завтра верну в целости."
+    
+    show kasumi_01_Normal_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Surprised_Silent
+
+    "Я поднял тележку и повесил на плечо."
+    
+    show kasumi_01_Normal_Say with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Silent
+
+    kasumi "Завтра?"
+    
+    show kasumi_01_Normal_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Say
+    
+    kenji "Во сколько могу её занести? В час дня, например?"
+    
+    show kasumi_01_Normal_Say with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Silent
+    
+    kasumi "В час дня..."
+    
+    show kasumi_01_Normal_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Say
+
+    "Рассеянно произнесла девушка. А потом, словно встрепенулась."
+    
+    show kasumi_01_Normal_Say with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Silent
+
+    kasumi "Да, как вам будет удобно!"
+    
+    show kasumi_01_Normal_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Say
+    
+    kenji "А ты будешь дома?"
+    
+    show kasumi_01_Normal_Say with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Silent
+    
+    kasumi "Да! Буду дома."
+    
+    show kasumi_01_Normal_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Say
+    
+    kenji "Ну и отлично..."
+
+    "Касуми ещё раз поклонилась мне."
+
+    show kasumi_01_Normal_Say with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Silent
+
+    kasumi "Прощайте, Танака-сан!"
+    
+    show kasumi_01_Normal_Silent with Dissolve( 0.2 )
+    hide kasumi_01_Normal_Say
+    
+    kenji "Пока!"
+    
+    hide kasumi_01_Normal_Silent with Dissolve( 0.2 )
+
+    "Ответил я ей. Хотелось ещё добавить «до завтра», но мне показалось, что это будет слишком."
+    
+    scene Outdoor_Evening_BG_With_Railroad_2 with dissolve
+    
+    "123456"
     
     
     return

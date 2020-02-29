@@ -1,10 +1,10 @@
-image Sea_Midori_Sky = "./images/cg/DAY_01/Green-Haired_Girl/sky.jpg"
-image Sea_Midori_Clouds = "./images/cg/DAY_01/Green-Haired_Girl/clouds.png"
-image Sea_Midori_Sea_01 = "./images/cg/DAY_01/Green-Haired_Girl/sea_01.png"
-image Sea_Midori_Sea_02 = "./images/cg/DAY_01/Green-Haired_Girl/sea_02.png"
-image Sea_Midori_Sea_03 = "./images/cg/DAY_01/Green-Haired_Girl/sea_03.png"
-image Sea_Midori_Chore = "./images/cg/DAY_01/Green-Haired_Girl/chore.png"
-image Sea_Midori = "./images/cg/DAY_01/Green-Haired_Girl/midori.png"
+image Sea_Midori_Sky = "./images/cg/DAY_01/01a_Green-Haired_Girl/sky.jpg"
+image Sea_Midori_Clouds = "./images/cg/DAY_01/01a_Green-Haired_Girl/clouds.png"
+image Sea_Midori_Sea_01 = "./images/cg/DAY_01/01a_Green-Haired_Girl/sea_01.png"
+image Sea_Midori_Sea_02 = "./images/cg/DAY_01/01a_Green-Haired_Girl/sea_02.png"
+image Sea_Midori_Sea_03 = "./images/cg/DAY_01/01a_Green-Haired_Girl/sea_03.png"
+image Sea_Midori_Chore = "./images/cg/DAY_01/01a_Green-Haired_Girl/chore.png"
+image Sea_Midori = "./images/cg/DAY_01/01a_Green-Haired_Girl/midori.png"
 
 
 image Sea_Midori_Scene:

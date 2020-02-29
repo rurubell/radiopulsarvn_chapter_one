@@ -1749,14 +1749,14 @@ label start:
     kenji "А ты выбрось эту тележку на свалку. Это теперь больше похоже на ходунки для стариков. Тёте твоей, нужны ходунки, Касуми?"
     
     hide kasumi_01 Normal_Silent with Dissolve( 0.2 )
-    show Kasumi_03_Normal_Silent with Dissolve( 0.2 )
+    show Kasumi_03 Normal_Silent with Dissolve( 0.2 )
     
     "Касуми смотрела куда-то всторону и молчала. "
 
     kenji "Или может мне лучше и вовсе унести эту рацию домой? Обратно к себе."
     kenji "Чего это я так разбрасываюсь вещами. А, Касуми? За сколько это барахло можно толкнуть на барахолке?"
     
-    hide Kasumi_03_Normal_Silent with Dissolve( 0.2 )
+    hide Kasumi_03 Normal_Silent with Dissolve( 0.2 )
     show kasumi_01 Normal_Say with Dissolve( 0.2 )
 
     kasumi "Нет! Простите, Танака-сан! Но мне очень нужна эта вещь."
@@ -2115,12 +2115,12 @@ label start:
     kenji "Чего ему не хватало?"
     
     hide kasumi_01 Normal_Silent with Dissolve( 0.1 )
-    show Kasumi_03_Normal_Silent with Dissolve( 0.1 )
+    show Kasumi_03 Normal_Silent with Dissolve( 0.1 )
     
     "Касуми отвернулась и поджала губы. Мне показалось, что она едва сдержала смешок. "
     "Ну да, подозреваю, что говорю я полнейшую ерунду."
     
-    hide Kasumi_03_Normal_Silent with Dissolve( 0.1 )
+    hide Kasumi_03 Normal_Silent with Dissolve( 0.1 )
     show kasumi_01 Normal_Say with Dissolve( 0.1 )
     
     kasumi "Она же заземлена. Не получится из неё антенна!"
@@ -2207,15 +2207,15 @@ label start:
     
     kenji "Касуми? А твои родители? Они дома?"
     
-    show Kasumi_03_Normal_Silent with Dissolve( 0.2 )
+    show Kasumi_03 Normal_Silent with Dissolve( 0.2 )
 
     "Моя спутница опустила голову, и немного отвернулась от меня. Я что задал неудобный вопрос?"
     
-    show Kasumi_03_Normal_Say with Dissolve( 0.2 )
+    show Kasumi_03 Normal_Say with Dissolve( 0.2 )
 
     kasumi "Мои родители... У меня... Нет родителей!"
     
-    show Kasumi_03_Normal_Silent with Dissolve( 0.2 )
+    show Kasumi_03 Normal_Silent with Dissolve( 0.2 )
 
     "Да и в самом деле неудачный вопрос."
 
@@ -2223,7 +2223,7 @@ label start:
 
     "Касуми пожала плечами."
     
-    hide Kasumi_03_Normal_Silent with Dissolve( 0.2 )
+    hide Kasumi_03 Normal_Silent with Dissolve( 0.2 )
     show kasumi_01 Normal_Say with Dissolve( 0.2 )
 
     kasumi "Ничего. Я наверное, к этому уже привыкла."

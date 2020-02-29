@@ -143,7 +143,7 @@ layeredimage kasumi_01:
 image Kasumi_03_Normal_Silent = im.Scale( "./images/sprites/Kasumi/Kasumi_03/Kasumi_03_Normal_Silent.png", 660, 1000 ) 
 image Kasumi_03_Normal_Say = im.Scale( "./images/sprites/Kasumi/Kasumi_03/Kasumi_03_Normal_Say.png", 660, 1000 ) 
 
-layeredimage kasumi_03:
+layeredimage Kasumi_03:
     group emotion:
         attribute Normal_Say:
             "Kasumi_03_Normal_Say"

@@ -27,19 +27,15 @@ label start:
     image border_01_right_mask = "./images/other/borders/01_Right/mask.png"
     image border_01_left = "./images/other/borders/01_Left/border.png"
     image border_01_left_mask = "./images/other/borders/01_Left/mask.png"
-        
-    #СЦЕНА - ДЕНЬ 1, МИДОРИ
     
-    image midori_00 = "./images/cg/DAY_01/01a_Green-Haired_Girl/00.png"
-    image midori_01 = "./images/cg/DAY_01/01a_Green-Haired_Girl/01.png"
-    image midori_02 = "./images/cg/DAY_01/01a_Green-Haired_Girl/02.png"
-    image midori_03 = "./images/cg/DAY_01/01a_Green-Haired_Girl/03.png"
-    image midori_04 = "./images/cg/DAY_01/01a_Green-Haired_Girl/04.png"
-    image midori_05 = "./images/cg/DAY_01/01a_Green-Haired_Girl/05.png"
+    image Midori_01 = "./images/cg/DAY_01/01a_Green-Haired_Girl/Midori/Midori_01.png"
     
     scene Midori_Sea_BG with dissolve
     window hide
     pause 3.0
+    
+    show Midori_01 with dissolve
+    
     window show
     
     ""

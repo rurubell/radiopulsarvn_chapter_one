@@ -37,6 +37,13 @@ label start:
     image midori_04 = "./images/cg/DAY_01/01a_Green-Haired_Girl/04.png"
     image midori_05 = "./images/cg/DAY_01/01a_Green-Haired_Girl/05.png"
     
+    scene Midori_Sea_BG with dissolve
+    window hide
+    pause 3.0
+    window show
+    
+    ""
+    
     show Sea_Midori_Scene with dissolve
     
     "П-привет!"

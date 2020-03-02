@@ -22,6 +22,7 @@ label start:
     image empty_image = "./images/other/empty.png"
     
     
+    
     #Рамки для мини-цг
     image border_01_right = "./images/other/borders/01_Right/border.png"
     image border_01_right_mask = "./images/other/borders/01_Right/mask.png"
@@ -37,10 +38,6 @@ label start:
     show Midori_01 with dissolve
     
     window show
-    
-    ""
-    
-    show Sea_Midori_Scene with dissolve
     
     "П-привет!"
 
@@ -79,8 +76,20 @@ label start:
 
     kenji "Но ты не бойся! Я продал тебя очень хорошему человеку! Я надеюсь…"
     
-    show midori_02 with dissolve
-    hide Sea_Midori_Scene
+    #ЦГ - Мидори в графическом редакторе
+    image Midori_Sea_BG_Non_Animated = "./images/cg/DAY_01/01a_Green-Haired_Girl/Midori_Sea_BG/Midori_Sea_BG.jpg"
+    image Midori_GE_Interface = "./images/cg/DAY_01/01a_Green-Haired_Girl/GE_Interface.png"
+    image Midori_02 = "./images/cg/DAY_01/01a_Green-Haired_Girl/Midori/Midori_02.png"
+    image Midori_In_GE_01:
+        contains:
+            "Midori_Sea_BG_Non_Animated"
+        contains:
+            "Midori_02"
+        contains:
+            "Midori_GE_Interface"
+    
+    
+    scene Midori_In_GE_01 with dissolve
     
     "Я потёр глаза и чуть отодвинулся от монитора. "
     "Да, Мидори вышла очень миленькой. Думаю человек, что заказал её — будет доволен."
@@ -132,11 +141,20 @@ label start:
     "Однако спорить с этим парнем я не стал. Он заказал Мидори, он её хозяин, а мне только одно остаётся — выполнить все его прихоти. "
     "Я попросил заказчика, чтобы он написал мне через полчаса, а сам принялся за рисунок."
 
-    hide midori_02 with dissolve
+    scene black with dissolve
+    
+    image Midori_03 = "./images/cg/DAY_01/01a_Green-Haired_Girl/Midori/Midori_03.png"
+    image Midori_In_GE_02:
+        contains:
+            "Midori_Sea_BG_Non_Animated"
+        contains:
+            "Midori_03"
+        contains:
+            "Midori_GE_Interface"
     
     "..."
     
-    show midori_03 with dissolve
+    scene Midori_In_GE_02 with dissolve
     
     "Да, теперь определённо можно сказать, чего хочет Мидори. "
     "Вот только хочет ли она это в самом деле? Взяла ли Мидори, эту штуку в рот по своей воле, или я её заставил? "
@@ -156,11 +174,20 @@ label start:
     kenji "Надеюсь это все?"
     zak "Всё чувак! Просто сделай ей ахегао личико, и я заплачу сколько ты скажешь."
     
-    hide midori_03 with dissolve
+    scene black with dissolve
+    
+    image Midori_04 = "./images/cg/DAY_01/01a_Green-Haired_Girl/Midori/Midori_04.png"
+    image Midori_In_GE_03:
+        contains:
+            "Midori_Sea_BG_Non_Animated"
+        contains:
+            "Midori_04"
+        contains:
+            "Midori_GE_Interface"
     
     "..."
     
-    show midori_04 with dissolve
+    scene Midori_In_GE_03 with dissolve
     
     "Пока я перерисовывал физиономию девушки, на душе у меня становилось все гаже. "
     "Я столько времени потратил на первоначальный рисунок, столько труда в него вложил! "
@@ -190,11 +217,20 @@ label start:
 
     "Однако, увидев новую порцию пожеланий заказчика, я нервно сглотнул."
     
-    hide midori_04 with dissolve
+    scene black with dissolve
+    
+    image Midori_05 = "./images/cg/DAY_01/01a_Green-Haired_Girl/Midori/Midori_05.png"
+    image Midori_In_GE_04:
+        contains:
+            "Midori_Sea_BG_Non_Animated"
+        contains:
+            "Midori_05"
+        contains:
+            "Midori_GE_Interface"
     
     "..."
     
-    show midori_05 with dissolve
+    scene Midori_In_GE_04 with dissolve
     
     "Действительно. Времени потребовалось совсем чуть-чуть. Хотя не припомню, чтобы я рисовал такое раньше. "
     "Мидори теперь была по настоящему испорчена. Она была осквернена, окончательно и бесповоротно. "

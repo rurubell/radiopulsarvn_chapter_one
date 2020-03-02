@@ -615,58 +615,50 @@ label start:
     
     scene Evening_Watanabe_Bike_WorkShop_Dream with dissolve
     
-    image Watanabe_01_Normal_Say = im.Scale( "./images/sprites/Watanabe/Watanabe_01_Normal_Say.png", 622, 1080 )
-    image Watanabe_01_Normal_Silent = im.Scale( "./images/sprites/Watanabe/Watanabe_01_Normal_Silent.png", 622, 1080 )
-    
-    show Watanabe_01_Normal_Say with Dissolve( 0.1 )
+    show Watanabe_01 Normal_Say with Dissolve( 0.1 )
     
     vatanabe "Он хотел сделать антенну. Из провода высоковольтной линии что проходит в саду."
 
-    show Watanabe_01_Normal_Silent with Dissolve( 0.2 )
-    hide Watanabe_01_Normal_Say
+    show Watanabe_01 Normal_Silent with Dissolve( 0.2 )
     
     kenji "Он упал с нее?"
     
-    show Watanabe_01_Normal_Say with Dissolve( 0.2 )
-    hide Watanabe_01_Normal_Silent
+    show Watanabe_01 Normal_Say with Dissolve( 0.2 )
 
     vatanabe "Да нет. Прихлопнуло его, когда свою антенну на фазу забрасывал."
     vatanabe "Если бы упал, тогда, выжил бы, наверное. А так... Руки у него до костей обгорели."
     
-    show Watanabe_01_Normal_Silent with Dissolve( 0.2 )
-    hide Watanabe_01_Normal_Say
+    show Watanabe_01 Normal_Silent with Dissolve( 0.2 )
 
     "Я не поверил. Подсоединить свою антенну к проводу под большим напряжением — это дикость! "
 
     kenji "Это больше похоже на самоубийство!"
     
-    show Watanabe_01_Normal_Say with Dissolve( 0.2 )
-    hide Watanabe_01_Normal_Silent
+    show Watanabe_01 Normal_Say with Dissolve( 0.2 )
     
     vatanabe "Да что ты! Там всего тридцать пять тысяч вольт, это немного."
     
-    show Watanabe_01_Normal_Silent with Dissolve( 0.2 )
-    hide Watanabe_01_Normal_Say
+    show Watanabe_01 Normal_Silent with Dissolve( 0.2 )
 
     "Немного?! Мне эта цифра показалась неправдоподобно большой. «Всего» тридцать пять тысяч вольт! "
     
-    show Watanabe_01_Normal_Say with Dissolve( 0.2 )
-    hide Watanabe_01_Normal_Silent
+    show Watanabe_01 Normal_Say with Dissolve( 0.2 )
 
     vatanabe "Если бы у меня была такая возможность, я бы тоже набросил. А Кайоши, не рассчитал чего-то."
     vatanabe "Может конденсаторы плохие ему попались, или ещё чего..."
     vatanabe "Ты не подумай, Кендзи. Мы не сумасшедшие и не самоубийцы. Хотя конечно, авантюра очень рискованная."
     vatanabe "Меня тоже один раз шандарахнуло, но, слава богу — выжил."
     
-    show Watanabe_01_Normal_Silent with Dissolve( 0.2 )
-    hide Watanabe_01_Normal_Say
+    show Watanabe_01 Normal_Silent with Dissolve( 0.2 )
     
     kenji "Тоже «набросили»?"
+    
+    hide Watanabe_01 with Dissolve( 0.1 )
+    show Watanabe_02 Normal_Silent with Dissolve( 0.1 )
 
     "Дядя Ватанабэ улыбнулся."
     
-    show Watanabe_01_Normal_Say with Dissolve( 0.2 )
-    hide Watanabe_01_Normal_Silent
+    show Watanabe_02 Normal_Say with Dissolve( 0.2 )
 
     vatanabe "Да нет! На работе. Я же электрик по призванию. Но там ничего интересного, совершенно бытовая ситуация"
     vatanabe "С тех пор пальцы на правой руке еле двигаются. И вообще, что-то вроде контузии получил. "

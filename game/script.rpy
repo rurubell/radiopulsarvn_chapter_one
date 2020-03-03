@@ -6,7 +6,7 @@ define kenji = Character( "Кендзи", color="#BBFF88" )
 define aiko = Character( "Айко", color="#FF888B" )
 define kasumi = Character( "Касуми", color="#88C0FF" )
 define blind_girl = Character( "Девушка", color="#88C0FF" )
-define vatanabe = Character( "Ватанабе", color="#009900" )
+define watanabe = Character( "Ватанабе", color="#009900" )
 define zak = Character( "Заказчик", color="#FFC95C" )
 define tv = Character( "Телевизор", color="#FFC95C" )
 
@@ -617,7 +617,7 @@ label start:
     
     show Watanabe_01 Normal_Say with Dissolve( 0.1 )
     
-    vatanabe "Он хотел сделать антенну. Из провода высоковольтной линии что проходит в саду."
+    watanabe "Он хотел сделать антенну. Из провода высоковольтной линии что проходит в саду."
 
     show Watanabe_01 Normal_Silent with Dissolve( 0.2 )
     
@@ -625,8 +625,8 @@ label start:
     
     show Watanabe_01 Normal_Say with Dissolve( 0.2 )
 
-    vatanabe "Да нет. Прихлопнуло его, когда свою антенну на фазу забрасывал."
-    vatanabe "Если бы упал, тогда, выжил бы, наверное. А так... Руки у него до костей обгорели."
+    watanabe "Да нет. Прихлопнуло его, когда свою антенну на фазу забрасывал."
+    watanabe "Если бы упал, тогда, выжил бы, наверное. А так... Руки у него до костей обгорели."
     
     show Watanabe_01 Normal_Silent with Dissolve( 0.2 )
 
@@ -636,7 +636,7 @@ label start:
     
     show Watanabe_01 Normal_Say with Dissolve( 0.2 )
     
-    vatanabe "Да что ты! Там всего тридцать пять тысяч вольт, это немного."
+    watanabe "Да что ты! Там всего тридцать пять тысяч вольт, это немного."
     
     show Watanabe_01 Normal_Silent with Dissolve( 0.2 )
 
@@ -644,10 +644,10 @@ label start:
     
     show Watanabe_01 Normal_Say with Dissolve( 0.2 )
 
-    vatanabe "Если бы у меня была такая возможность, я бы тоже набросил. А Кайоши, не рассчитал чего-то."
-    vatanabe "Может конденсаторы плохие ему попались, или ещё чего..."
-    vatanabe "Ты не подумай, Кендзи. Мы не сумасшедшие и не самоубийцы. Хотя конечно, авантюра очень рискованная."
-    vatanabe "Меня тоже один раз шандарахнуло, но, слава богу — выжил."
+    watanabe "Если бы у меня была такая возможность, я бы тоже набросил. А Кайоши, не рассчитал чего-то."
+    watanabe "Может конденсаторы плохие ему попались, или ещё чего..."
+    watanabe "Ты не подумай, Кендзи. Мы не сумасшедшие и не самоубийцы. Хотя конечно, авантюра очень рискованная."
+    watanabe "Меня тоже один раз шандарахнуло, но, слава богу — выжил."
     
     show Watanabe_01 Normal_Silent with Dissolve( 0.2 )
     
@@ -660,11 +660,11 @@ label start:
     
     show Watanabe_02 Normal_Say with Dissolve( 0.2 )
 
-    vatanabe "Да нет! На работе. Я же электрик по призванию. Но там ничего интересного, совершенно бытовая ситуация"
-    vatanabe "С тех пор пальцы на правой руке еле двигаются. И вообще, что-то вроде контузии получил. "
-    vatanabe "Полгода ходил как пришибленный. Инвалидом стал и вышел досрочно на пенсию."
-    vatanabe "Приходится подрабатывать автомехаником теперь. "
-    vatanabe "Эх, и как он только умудрился сжечь сцепление? А? Кендзи? Ты не знаешь?"
+    watanabe "Да нет! На работе. Я же электрик по призванию. Но там ничего интересного, совершенно бытовая ситуация"
+    watanabe "С тех пор пальцы на правой руке еле двигаются. И вообще, что-то вроде контузии получил. "
+    watanabe "Полгода ходил как пришибленный. Инвалидом стал и вышел досрочно на пенсию."
+    watanabe "Приходится подрабатывать автомехаником теперь. "
+    watanabe "Эх, и как он только умудрился сжечь сцепление? А? Кендзи? Ты не знаешь?"
     
     scene Day_Kenji_Home_Pantry_Other_00 with dissolve
     show expression AlphaMask( "Day_Kenji_Home_Pantry_Mask", At( "dust", center )) as mask
@@ -2427,7 +2427,351 @@ label start:
     
     scene Outdoor_Evening_BG_With_Railroad_2 with dissolve
     
-    "123456"
+    "Около семи часов вечера я вернулся на площадку для сбора мусора. Она опустела — все уже забрали уборщики."
+    "Подоспел к площадке я вовремя, чипсы, которые я купил на обратном пути от дома Касуми — я уже доел, и мне надо было избавиться от упаковки."
+
+    "На улицах стало оживлённее, всё чаще мимо проезжали машины, мопеды, мелькали велосипедисты. "
+    "Собачники повели своих питомцев на прогулку. На детских площадках появились дети и присматривающие за ними мамочки. "
+    "Я как мог, увиливал от идущих мне навстречу людей. Переходил улицу, чтобы встать с другой стороны. Проскакивал в узких, безлюдных переулках. От одной группы смеющихся старшеклассниц и вовсе спрятался в кустах! "
+    "Сейчас, конечно, самое правильное решение - укрыться поскорее в доме, но мне за  сегодня нужно сделать еще одно дельце. "
     
+    
+    #Спрайты Айко в мобильном телефоне
+    image Kenji_MObile_Phone = "./images/cg/DAY_01/06a_Watanabe/Kenji_Mobile_Phone/Kenji_Mobile_Phone.png"
+    image Kenji_MObile_Phone_Mask = "./images/cg/DAY_01/06a_Watanabe/Kenji_Mobile_Phone/Kenji_Mobile_Phone_Mask.png"
+    
+    image Aiko_Base_Outfit_03_Normal_Say_Mobile:
+        contains:
+            xpos 1350
+            ypos 100
+            "Aiko_Base_Outfit_03_Normal_Say"
+    
+    image Aiko_Base_Outfit_03_Normal_Silent_Mobile:
+        contains:
+            xpos 1350
+            ypos 100
+            "Aiko_Base_Outfit_03_Normal_Silent"
+    
+    image Aiko_Base_Outfit_03_Surprised_Say_Mobile:
+        contains:
+            xpos 1350
+            ypos 100
+            "Aiko_Base_Outfit_03_Surprised_Say"
+    
+    image Aiko_Base_Outfit_03_Surprised_Silent_Mobile:
+        contains:
+            xpos 1350
+            ypos 100
+            "Aiko_Base_Outfit_03_Surprised_Silent"
+            
+    image Aiko_Base_Outfit_03_Angry_Say_Mobile:
+        contains:
+            xpos 1350
+            ypos 100
+            "Aiko_Base_Outfit_03_Angry_Say"
+    
+    image Aiko_Base_Outfit_03_Angry_Silent_Mobile:
+        contains:
+            xpos 1350
+            ypos 100
+            "Aiko_Base_Outfit_03_Angry_Silent"
+    
+    image Aiko_Base_Outfit_03_Normal_Say_Mobile_Masked = AlphaMask( "Aiko_Base_Outfit_03_Normal_Say_Mobile", "Kenji_MObile_Phone_Mask" )
+    image Aiko_Base_Outfit_03_Normal_Silent_Mobile_Masked = AlphaMask( "Aiko_Base_Outfit_03_Normal_Silent_Mobile", "Kenji_MObile_Phone_Mask" )
+    image Aiko_Base_Outfit_03_Surprised_Say_Mobile_Masked = AlphaMask( "Aiko_Base_Outfit_03_Surprised_Say_Mobile", "Kenji_MObile_Phone_Mask" )
+    image Aiko_Base_Outfit_03_Surprised_Silent_Mobile_Masked = AlphaMask( "Aiko_Base_Outfit_03_Surprised_Silent_Mobile", "Kenji_MObile_Phone_Mask" )
+    image Aiko_Base_Outfit_03_Angry_Say_Mobile_Masked = AlphaMask( "Aiko_Base_Outfit_03_Angry_Say_Mobile", "Kenji_MObile_Phone_Mask" )
+    image Aiko_Base_Outfit_03_Angry_Silent_Mobile_Masked = AlphaMask( "Aiko_Base_Outfit_03_Angry_Silent_Mobile", "Kenji_MObile_Phone_Mask" )
+    #
+    
+    show Kenji_MObile_Phone with Dissolve( 0.2 )
+    show Aiko_Base_Outfit_03_Normal_Silent_Mobile_Masked with Dissolve( 0.1 )
+
+    "У меня зазвонил телефон, это была Айко."
+    
+    show Aiko_Base_Outfit_03_Surprised_Say_Mobile_Masked with Dissolve( 0.1 )
+    hide Aiko_Base_Outfit_03_Normal_Silent_Mobile_Masked
+
+    aiko "Кендзи? Ты где?"
+    
+    show Aiko_Base_Outfit_03_Surprised_Silent_Mobile_Masked with Dissolve( 0.1 )
+    hide Aiko_Base_Outfit_03_Surprised_Say_Mobile_Masked
+
+    "Голос её был взволнован."
+
+    kenji "Я? Да практически возле дома. Но приду чуть позже."
+    
+    show Aiko_Base_Outfit_03_Surprised_Say_Mobile_Masked with Dissolve( 0.1 )
+    hide Aiko_Base_Outfit_03_Surprised_Silent_Mobile_Masked
+    
+    aiko "Я думала, ты так напился, что не смог найти путь домой. Ты что, выпил всё своё пиво?"
+    
+    show Aiko_Base_Outfit_03_Surprised_Silent_Mobile_Masked with Dissolve( 0.1 )
+    hide Aiko_Base_Outfit_03_Surprised_Say_Mobile_Masked
+    
+    kenji "Ну да..."
+
+    "Айко возмущенно завопила:"
+    
+    show Aiko_Base_Outfit_03_Angry_Say_Mobile_Masked with Dissolve( 0.1 )
+    hide Aiko_Base_Outfit_03_Surprised_Silent_Mobile_Masked
+
+    aiko "Ты алкоголик!"
+    
+    show Aiko_Base_Outfit_03_Angry_Silent_Mobile_Masked with Dissolve( 0.1 )
+    hide Aiko_Base_Outfit_03_Angry_Say_Mobile_Masked
+    
+    kenji "Постой Айко! Три банки пива это не три бутылки сакэ, ты не путай! Чего ты так раскричалась?"
+
+    "Но ей конечно было всё одно, что сакэ, что пиво. Я действительно, редко выпивал за день больше одной или двух банок. Если пил вообще."
+    
+    show Aiko_Base_Outfit_03_Angry_Say_Mobile_Masked with Dissolve( 0.1 )
+    hide Aiko_Base_Outfit_03_Angry_Silent_Mobile_Masked
+
+    aiko "В магазин утром пойдёшь сам! И завтрак в дорогу сам себе готовить будешь!"
+    
+    show Aiko_Base_Outfit_03_Angry_Silent_Mobile_Masked with Dissolve( 0.1 )
+    hide Aiko_Base_Outfit_03_Angry_Say_Mobile_Masked
+    
+    kenji "Завтрак в дорогу? Зачем? Ты меня из дома завтра погонишь?"
+    
+    show Aiko_Base_Outfit_03_Surprised_Say_Mobile_Masked with Dissolve( 0.1 )
+    hide Aiko_Base_Outfit_03_Angry_Silent_Mobile_Masked
+    
+    aiko "Ты же на море собрался, разве нет?"
+    
+    show Aiko_Base_Outfit_03_Surprised_Silent_Mobile_Masked with Dissolve( 0.1 )
+    hide Aiko_Base_Outfit_03_Surprised_Say_Mobile_Masked
+    
+    kenji "Ах, точно! Я совсем забыл. Прости, Айко, но похоже, с поездкой на море придётся повременить."
+    
+    show Aiko_Base_Outfit_03_Surprised_Say_Mobile_Masked with Dissolve( 0.1 )
+    hide Aiko_Base_Outfit_03_Surprised_Silent_Mobile_Masked
+    
+    aiko "Что так?"
+    
+    show Aiko_Base_Outfit_03_Surprised_Silent_Mobile_Masked with Dissolve( 0.1 )
+    hide Aiko_Base_Outfit_03_Surprised_Say_Mobile_Masked
+    
+    kenji "Дела. Мне надо... Встретиться кое с кем."
+    
+    show Aiko_Base_Outfit_03_Angry_Say_Mobile_Masked with Dissolve( 0.1 )
+    hide Aiko_Base_Outfit_03_Surprised_Silent_Mobile_Masked
+    
+    aiko "Этот кто-то, тоже алкоголик?"
+    
+    show Aiko_Base_Outfit_03_Angry_Silent_Mobile_Masked with Dissolve( 0.1 )
+    hide Aiko_Base_Outfit_03_Angry_Say_Mobile_Masked
+    
+    kenji "Айко, бросай свои шуточки! Надеюсь ты не обиделась, что на море мы завтра не едем?"
+    
+    show Aiko_Base_Outfit_03_Normal_Say_Mobile_Masked with Dissolve( 0.1 )
+    hide Aiko_Base_Outfit_03_Angry_Silent_Mobile_Masked
+    
+    aiko "Мне то что. Я могу в любой день пойти в бассейн. А могу даже поехать на пляж без тебя, с подружками."
+    
+    show Aiko_Base_Outfit_03_Normal_Silent_Mobile_Masked with Dissolve( 0.1 )
+    hide Aiko_Base_Outfit_03_Normal_Say_Mobile_Masked
+
+    "Я вздохнул. Айко помолчала какое-то время и спросила."
+
+    show Aiko_Base_Outfit_03_Normal_Say_Mobile_Masked with Dissolve( 0.1 )
+    hide Aiko_Base_Outfit_03_Normal_Silent_Mobile_Masked
+
+    aiko "Куда ты сейчас?"
+    
+    show Aiko_Base_Outfit_03_Normal_Silent_Mobile_Masked with Dissolve( 0.1 )
+    hide Aiko_Base_Outfit_03_Normal_Say_Mobile_Masked
+    
+    kenji "Мне надо зайти к дяде Ватанабэ."
+    
+    show Aiko_Base_Outfit_03_Angry_Say_Mobile_Masked with Dissolve( 0.1 )
+    hide Aiko_Base_Outfit_03_Normal_Silent_Mobile_Masked
+    
+    aiko "Да? Ладно. Но я позвоню ему, и скажу чтобы он тебе не наливал!"
+    
+    hide Aiko_Base_Outfit_03_Angry_Say_Mobile_Masked with Dissolve( 0.1 )
+    hide Kenji_MObile_Phone with Dissolve( 0.2 )
+    
+    kenji "Айко!"
+
+    "Айко бросила трубку. Я выругался про себя и убрал телефон в карман. "
+    "Теперь меня занимали мысли о алкоголиках. А точнее, стал ли я уже одним из них или Айко как всегда — преувеличивала. "
+    "Настоящих алкоголиков я знал немного. Да, пожалуй, всего одного. Это был тот самый, умерший телемастер из моего детства, дядя Сато. "
+    "Тот, в чью честь воздвигли пирамиду из его же телевизоров. "
+    "Он пил «по настоящему», мои нынешние пивные посиделки — капля в море сакэ, которое выпил дядя Сато. "
+    "Я же саке на дух не переносил, как и любой другой крепкий алкоголь. "
+    "Нет. Мне быть алкоголиком не грозит, ну кто же может стать алкашом, употребляя только пиво?"
+    
+    scene Evening_Watanabe_Bike_WorkShop with dissolve
+    
+    "Размышляя над этим, я и не заметил как добрался до дома Ватанабэ. На мою радость его гараж, и одновременно — мастерская был открыт. "
+    "Дядя Ватанабэ ещё не закончил работать. "
+    "Я подошёл ближе и поздоровался с ним."
+    
+    show Watanabe_01 Normal_Say with Dissolve( 0.2 )
+    
+    watanabe "А, привет Кендзи! Гляди. Парень десять тысяч накрутил, а звёздочка распредвала — не съедена."
+    watanabe "И цепь не растянулась, ни на миллиметр! И натяжитель держит."
+    
+    show Watanabe_01 Normal_Silent with Dissolve( 0.2 )
+    
+    "Что такое \"цепь\" и \"звездочка\" мне может быть было понятно"
+    "Но что за зверь такой \"распредвал\" я не знал совершенно"
+    
+    show Watanabe_01 Normal_Say with Dissolve( 0.2 )
+    
+    watanabe "Но что-то гремит. Я думал — ну точно распредвал, что ещё может?"
+    watanabe "Столько времени потратил чтобы генератор снять. Плотно он засел!"
+    watanabe "Чуть на съёмнике резьбу не съело! Прокладку порвал! А внутри — всё целёхонькое!"
+    watanabe "Что же тогда гремит то, Кендзи?"
+    
+    show Watanabe_01 Normal_Silent with Dissolve( 0.2 )
+    
+    "Как обычно, дядя Ватанабэ задавал мне вопросы на которые я не знал ответа. И он сам это понимал, но такая уж у него была привычка."
+    
+    show Watanabe_01 Normal_Say with Dissolve( 0.2 )
+
+    watanabe "А!"
+    watanabe "Айко звонила. Говорит, ты нажрался как свинья и шатаешься по городу!"
+    
+    show Watanabe_01 Normal_Silent with Dissolve( 0.2 )
+
+    "Айко! Вот чертовка!"
+    
+    show Watanabe_01 Normal_Say with Dissolve( 0.2 )
+    
+    watanabe "Ты правда пьяный?"
+    
+    show Watanabe_01 Normal_Silent with Dissolve( 0.2 )
+    
+    kenji "Три банки пива выпил, только и всего. А Айко как всегда на своей волне, ну вы же знаете."
+    
+    show Watanabe_01 Normal_Say with Dissolve( 0.2 )
+
+    watanabe "Три банки! Не смертельно, но солидно. Что празднуешь?"
+    
+    show Watanabe_01 Normal_Silent with Dissolve( 0.2 )
+    
+    kenji "Да я мусор выносил. Кладовку освобождаю. Тётя Асука просила, чтобы я вещи дяди Макото выбросил."
+    kenji "Вещи тяжёлые, рация там и ещё что-то к ней. Уморился."
+    
+    show Watanabe_01 Sad_Say with Dissolve( 0.2 )
+
+    watanabe "А..."
+    
+    show Watanabe_01 Sad_Silent with Dissolve( 0.2 )
+
+    "Голос его внезапно стал сиплым."
+    
+    show Watanabe_01 Sad_Say with Dissolve( 0.2 )
+    
+    watanabe "Асука ко мне приходила, спрашивала не хочу ли я забрать чего."
+    watanabe "Но мне бы своё барахло выбросить. Так и лежит, пыль собирает, с тех пор как эти дела забросил."
+    
+    show Watanabe_01 Sad_Silent with Dissolve( 0.2 )
+    
+    kenji "Радио?"
+    
+    show Watanabe_01 Normal_Say with Dissolve( 0.2 )
+    
+    watanabe "Ну да."
+    
+    show Watanabe_01 Normal_Silent with Dissolve( 0.2 )
+    
+    kenji "А почему забросили?"
+    
+    hide Watanabe_01 with Dissolve( 0.1 )
+    show Watanabe_02 Normal_Say with Dissolve( 0.1 )
+    
+    watanabe "Почему забросил..."
+    
+    show Watanabe_02 Normal_Silent with Dissolve( 0.2 )
+
+    "Он задумался."
+    
+    hide Watanabe_02 with Dissolve( 0.1 )
+    show Watanabe_01 Normal_Say with Dissolve( 0.1 )
+
+    watanabe "А что же мне, до скончанья веков этим заниматься?"
+    watanabe "Ты вот тоже, Кендзи, небось скоро забросишь компьютеры свои, найдёшь девчонку себе, женишься. Давно пора."
+    
+    show Watanabe_01 Normal_Silent with Dissolve( 0.2 )
+
+    "Почему-то при словах «найдёшь девчонку», я подумал о Касуми. Меня эта мысль немного смутила, даже слегка потеплели уши. "
+    "А дядя Ватанабэ продолжал:"
+    
+    show Watanabe_01 Normal_Say with Dissolve( 0.2 )
+    
+    watanabe "Теперь там все по другому - наши времена прошли." 
+    watanabe "А Кайоши, он даже был «радиопульсаром»! Он мне потом признался." 
+    watanabe "Если бы в школьные годы узнал — я бы ему рожу начистил. А потом уже, так..."
+    
+    show Watanabe_01 Normal_Silent with Dissolve( 0.2 )
+    
+    "Он махнул рукой."
+    kenji "Радио... Пульс... Пульсаром? Что значит, был «радиопульсаром»?"
+    
+    show Watanabe_01 Normal_Say with Dissolve( 0.2 )
+    
+    watanabe "Да это местное тайное общество, можно сказать, радиолюбительская «масонская ложа»!"
+    watanabe "А по мне — так просто хулиганы они."
+    watanabe "Каждый из нас их ненавидел, но каждый, мне кажется, если бы была возможность — моментально вступил к ним в клуб." 
+    watanabe "Клуб — секретный! Никто не знал, кто в нём, и как туда попасть."
+    
+    show Watanabe_01 Normal_Silent with Dissolve( 0.2 )
+
+    "Дядя Ватанабэ замолчал и о чем-то задумался. Я не вытерпел и спросил:"
+
+    kenji "А что они делали?"
+    
+    show Watanabe_01 Normal_Say with Dissolve( 0.2 )
+    
+    watanabe "Нам мешали! Правила вводили дурацкие. У каждого, дескать должен быть позывной."
+    watanabe "Он и на самом деле должен быть. Но нам, пацаном разве прикажешь."
+    watanabe "Кто их не слушал — того они вышибали из эфира. Были у них способы, глушилка, например."
+    watanabe "Ещё и цензура, про что можно говорить в эфире, про что нельзя. Была даже листовка у меня, свод правил для вещания."
+    watanabe "Вот такие были эти ребята."
+    watanabe "Говорят, они строили что-то вроде «глушащей пушки», очень мощной. Можно было направить в любую сторону и глушить всех кто там есть."
+    watanabe "Но вроде как не достроили. А потом мы уже из школы выпустились."
+    watanabe "И «радиопульсар» тоже поредел, много видимо ребят из нашего выпуска там было. Теперь его, клуба этого, и нет вовсе."
+    
+    show Watanabe_01 Normal_Silent with Dissolve( 0.2 )
+    
+    kenji "А как это, глушат?"
+    
+    show Watanabe_01 Normal_Say with Dissolve( 0.2 )
+    
+    watanabe "Да как глушат?"
+    watanabe "Включил рацию, а там неслышно ни хрена, значит глушат. Вот как!"
+    
+    show Watanabe_01 Normal_Silent with Dissolve( 0.2 )
+    
+    "Я конечно ничего не понял, но дальше распрашивать не стал - не мое в общем-то дело, что там у них и как. "
+    
+    show Watanabe_01 Normal_Say with Dissolve( 0.2 )
+
+    watanabe "А что это за штуковина у тебя, Кендзи?"
+    
+    show Watanabe_01 Normal_Silent with Dissolve( 0.2 )
+    
+    kenji "А это..."
+    kenji "Я ведь по делу пришел, дядя Ватанабэ. Починить надо..."
+
+    "Я показал ему на культи, которые остались у тележки вместо колес. "
+    "Он выхватил тележку у меня из рук и внимательно ее осмотрел."
+
+    watanabe "А зачем? Тут проще новую купить, Кендзи."
+    kenji "Купить... Это не моя тележка!"
+    watanabe "Ты значит, когда мусор выносил, у кого-то тележку позаимствовал, и угробил?"
+    kenji "Ну... Почти что так."
+    watanabe "Ну так купи и отдай им новую! Сколько такая хрень стоит? Три — пять тысяч йен, не больше"
+    kenji "Нет, дядя Ватанабэ. Мне бы починить её, ну можно же?"
+    watanabe "Да где я тебе найду колеса такие?"
+    kenji "Ну, не обязательно прямо такие. От чего другого может подойдет?"
+
+    "Ватанабэ опустил тележку на землю, покряхтел, встал со своего табурета и скрылся в гараже. "
+    "Из глубины гаража донеслись гремящие звуки, кашель, тихая ругань. Спустя минуту дядя Ватанабэ вышел ко мне. "
+    "В руках он нёс детский велосипед. Я невольно воскликнул."
     
     return

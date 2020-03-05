@@ -7,6 +7,11 @@ image Aiko_Base_Outfit_03_Angry_Say = im.Scale( "./images/sprites/Aiko/Aiko_Base
 image Aiko_Base_Outfit_03_Angry_Silent = im.Scale( "./images/sprites/Aiko/Aiko_Base_Outfit_03/Aiko_Base_Outfit_03_Angry_Silent.png", 594, 900 )
 image Aiko_Base_Outfit_03_Surprised_Say = im.Scale( "./images/sprites/Aiko/Aiko_Base_Outfit_03/Aiko_Base_Outfit_03_Surprised_Say.png", 594, 900 ) 
 image Aiko_Base_Outfit_03_Surprised_Silent = im.Scale( "./images/sprites/Aiko/Aiko_Base_Outfit_03/Aiko_Base_Outfit_03_Surprised_Silent.png", 594, 900 )
+image Aiko_Base_Outfit_03_Suspect_Say = im.Scale( "./images/sprites/Aiko/Aiko_Base_Outfit_03/Aiko_Base_Outfit_03_Suspect_Say.png", 594, 900 )
+image Aiko_Base_Outfit_03_Suspect_Silent = im.Scale( "./images/sprites/Aiko/Aiko_Base_Outfit_03/Aiko_Base_Outfit_03_Suspect_Silent.png", 594, 900 )
+image Aiko_Base_Outfit_03_Smile_Say = im.Scale( "./images/sprites/Aiko/Aiko_Base_Outfit_03/Aiko_Base_Outfit_03_Smile_Say.png", 594, 900 )
+image Aiko_Base_Outfit_03_Smile_Silent = im.Scale( "./images/sprites/Aiko/Aiko_Base_Outfit_03/Aiko_Base_Outfit_03_Smile_Silent.png", 594, 900 )
+
 
 layeredimage Aiko_Base_Outfit_03:
     group emotion:
@@ -22,6 +27,14 @@ layeredimage Aiko_Base_Outfit_03:
             "Aiko_Base_Outfit_03_Angry_Silent"
         attribute Angry_Say:
             "Aiko_Base_Outfit_03_Angry_Say"
+        attribute Suspect_Say:
+            "Aiko_Base_Outfit_03_Suspect_Say"
+        attribute Suspect_Silent:
+            "Aiko_Base_Outfit_03_Suspect_Silent"
+        attribute Smile_Say:
+            "Aiko_Base_Outfit_03_Smile_Say"
+        attribute Smile_Silent:
+            "Aiko_Base_Outfit_03_Smile_Silent"
 
 
 #Айко с ложкой

@@ -3207,6 +3207,35 @@ label start:
     
     scene Evening_Kenji_Parents_Room with dissolve
     
+    #Мини ЦГ - дверь в комнату родителей Кендзи
+    image Kenji_Parents_Room_Door = "./images/bg/Indoor/Kenji_Parents_Room/Evening/enji_Parents_Room_Door.jpg"
+    image Kenji_Parents_Room_Door_Moved:
+        contains:
+            "Kenji_Parents_Room_Door"
+            xpos 500
+    
+    image border_01_right_moved:
+        contains:
+            "border_01_right"
+            xpos 900
+    
+    image border_01_right_mask_moved:
+        contains:
+            "border_01_right_mask"
+            xpos 900
+    
+    image Kenji_Parents_Room_Door_Masked = AlphaMask( "Kenji_Parents_Room_Door_Moved", "border_01_right_mask_moved" )
+    
+    image Kenji_Parents_Room_Door_With_Border_01:
+        contains:
+            "Kenji_Parents_Room_Door_Masked"
+        contains:
+            "border_01_right_moved"
+    ##
+    
+    show Kenji_Parents_Room_Door_With_Border_01 with Dissolve( 0.2 )
+    
+    
     "123456"
 
     

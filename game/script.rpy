@@ -31,6 +31,10 @@ label start:
     
     image Midori_01 = "./images/cg/DAY_01/01a_Green-Haired_Girl/Midori/Midori_01.png"
     
+    show Electronics_For_Dummies
+    
+    ""
+    
     scene Midori_Sea_BG with dissolve
     window hide
     pause 3.0

@@ -14,6 +14,7 @@ define tv = Character( "Телевизор", color="#FFC95C" )
 
 label start:
     image white_image = "./images/other/colored/white.png"
+    image black_image = "./images/other/colored/black.png"
     #Пыль
     image dust = Dust( "./images/other/dust.png" )
     #Рамка для флешбеков
@@ -3207,6 +3208,18 @@ label start:
     
     scene Evening_Kenji_Parents_Room with dissolve
     
+    "На виду необходимая мне вещь не лежала.  "
+    "Я открыл один из ящичков под телевизором. Он был доверху набит дисками. Они лежали ровными пачками - видимо Айко постаралась. "
+    "Я вынул диски из ящика и расставил на полу. Я надеялся что за ними, в дальнем углу обнаружу микрофон. "
+    "Но ничего подобного — тут были только диски. "
+
+    "Зато одна находка меня сильно заинтересовала. "
+    "Последняя пачка дисков практически наполовину состояла из фильмов для взрослых! Это явно отцовские! "
+    "Я взял один фильм, чтобы рассмотреть поближе. "
+    "Дизайн был совершенно идиотский, да и коробка видавшая виды — вся потёртая и в трещинах."
+
+    aiko "Ты чего тут делаешь?"
+    
     #Мини ЦГ - дверь в комнату родителей Кендзи
     image Kenji_Parents_Room_Door = "./images/bg/Indoor/Kenji_Parents_Room/Evening/enji_Parents_Room_Door.jpg"
     image Kenji_Parents_Room_Door_Moved:
@@ -3234,9 +3247,252 @@ label start:
     ##
     
     show Kenji_Parents_Room_Door_With_Border_01 with Dissolve( 0.2 )
+    show Aiko_In_Nightie Normal_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
     
-    
-    "123456"
+    "Я обернулся. В дверях комнаты стояла Айко. Похоже что она собиралась спать и переоделась в пижаму."
+    "Она перевела взгляд на мои руки, державшие диск с порнушкой."
+    "Ба! Вот так ситуация! Надо как-то оправдаться!"
 
+    kenji "Я искал тут кое что!"
     
+    show Aiko_In_Nightie Suspect_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    
+    aiko "Искал?"
+    
+    show Aiko_In_Nightie Suspect_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+
+    "Почти шёпотом спросила Айко, и добавила:"
+    
+    show Aiko_In_Nightie Suspect_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+
+    aiko "И нашёл?"
+    
+    show Aiko_In_Nightie Suspect_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    
+    kenji "Что значит нашёл?"
+
+    "Я поспешил избавится от компроментирующего диска, положив его на пол."
+
+    kenji "Ничего не нашёл! Я искал не это!"
+    
+    show Aiko_In_Nightie Suspect_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    
+    aiko "Ты понимаешь, что ты извращенец? Это же для извращенцев кино!"
+    
+    show Aiko_In_Nightie Suspect_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+
+    "Ну как всегда! Эту ретро порнографию я не стал бы смотреть ни за какие коврижки. А тут такое!"
+
+    kenji "Что значит извращенец? С чего ты так решила?"
+    kenji "Я не виноват что здесь валяется эта фигня."
+    kenji "И вообще, это же моего отца! Он что тоже извращенец?"
+    kenji "Или нет, может это твоего отца вещь, а Айко? И он был извращенцем? Неужели так?"
+    
+    show Aiko_In_Nightie Sorry_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+
+    "Наверное зря я приплёл сюда покойного отца Айко. После этой фразы она опустила голову, и произнесла жалобно:"
+    
+    show Aiko_In_Nightie Sorry_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+
+    aiko "Я хотела выкинуть! Когда убиралась здесь. Но потом забыла. Не хотела чтобы ты нашёл, а ты всё-таки нашёл!"
+    
+    show Aiko_In_Nightie Sorry_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    
+    kenji "Да не нужна мне вся эта ерунда... Мне нужен... Микрофон для караоке! Вот зачем я полез сюда! Я ищу микрофон!"
+    
+    show Aiko_In_Nightie Angry_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    
+    aiko "Ты врёшь!"
+    aiko "Наверное ждал когда я усну, чтобы взять это."
+    aiko "Я поняла какие у тебя завтра «дела»."
+    aiko "Ты небось вступил в какой-то клуб извращенцев. И вы, в этом вашем клубе будете смотреть эти непристойности!"
+    
+    show Aiko_In_Nightie Angry_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+
+    "Да уж, неплохо у Айко фантазия работает! Теперь я ещё и в клуб извращенцев вступил. "
+    "Странно, что не в клуб — «алкоголиков и извращенцев»! Теперь её уж точно не переубедить! "
+    "Раз уж я взял эту гадость в руки мне не отвертеться! Остаётся только прогнать её поскорее из комнаты, а самому продолжить поиски."
+    "Я театрально засмеялся:"
+
+    kenji "Ха-ха! Ты меня раскусила! Да! Завтра у меня встреча в клубе извращенцев!"
+    kenji "Я возьму эти диски с собой, и завтра мы будем смотреть все фильмы! Здорово а?"
+    
+    ##ЦГ - диск с порнущкой про сестру
+    image Trip_To_Sea_With_Cute_Little_Sis = "./images/cg/DAY_01/09a_Porn_In_Parents_Room/Trip_To_Sea_With_Cute_Little_Sis/Trip_To_Sea_With_Cute_Little_Sis.png"
+    image Trip_To_Sea_With_Cute_Little_Sis_cg:
+        contains:
+            "black_image"
+            alpha 0.5
+        
+        contains:
+            xpos 473
+            ypos 100
+            "Trip_To_Sea_With_Cute_Little_Sis"
+    #
+    
+    show Trip_To_Sea_With_Cute_Little_Sis_cg with dissolve
+
+    "Я взял другой диск из кучи. Прочёл название фильма на обложке."
+
+    kenji "Путешествие к морю с хорошенькой младшей сестрой..."
+
+    "Господи! Неужели отец и такое смотрит? Или чьё это вообще? Почему мне попалось в руки именно это? "
+    
+    scene Evening_Kenji_Parents_Room with Dissolve( 0.2 ) 
+    show Kenji_Parents_Room_Door_With_Border_01 with Dissolve( 0.2 )
+    show Aiko_In_Nightie Scared_Shy_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    
+    "Лицо Айко исказила гримаса страха. Её уши и щеки, а потом и всё лицо залила густая краснота."
+    "Я откинул диск в сторону и вскочил."
+
+    kenji "Айко, я..."
+    
+    show Aiko_In_Nightie Scared_Shy_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    
+    aiko "Неееет!"
+    
+    hide Aiko_In_Nightie with Dissolve( 0.1 )
+    hide Kenji_Parents_Room_Door_With_Border_01 with hpunch
+    
+    "Айко встрепенулась, резко дёрнулась в сторону двери и исчезла за ней. "
+    "Раздался топот босых ног по лестнице, а затем я услышал как захлопнулась дверь ее комнаты."
+
+    "Черт! А что если Айко расскажет отцу? Наверное ему не понравится такое!"
+    "А впрочем! Это же его вещи! Это он виноват, а не я! А мне между прочим тридцать лет. Стыдить меня просмотром порнушки - это бред."
+
+    "Я приободрил себя этими мыслями, сложил пачки дисков обратно в ящик и выдвинул следующий. "
+    "Тут меня ожидала удача! В ящике лежала толстая книжка — каталог песен, и коробка с микрофоном. "
+
+    "Больше мне в комнате родителей делать было нечего, и я поспешил к себе. "
+    
+    scene Evening_Kenji_Bedroom with dissolve
+    
+    "Я распутал микрофонный шнур, поднёс штекер микрофона к разьёму на компьютере."
+
+    kenji "Чёрт!"
+
+    "Штекер оказался намного больше гнезда. Этот микрофон был совершенно не совместим с моим компьютером. "
+    "Полный провал! "
+    "Я порылся в коробке, может быть там есть что-то вроде переходника? Нет, коробка была пуста."
+
+    "Но возможно, эта неудача была моим спасением. "
+    "По правде сказать, я ужасно боялся, что и с этим «нормальным» микрофоном мой голос не станет лучше. "
+
+    "Увы. Я не обладал обворожительным, бархатным баритоном с хрипотцой. Говорят, от такого тащатся все девушки. "
+    "Теперь мне совершенно ясно, почему у меня никогда не было подруги. "
+    "Сейчас я бы пожертвовал любой деталью своей внешности которая мне казалась «нормальной». "
+    "Пусть у меня будут кривые зубы, маленький подбородок или даже лысина. "
+    "Но уверенный, красивый голос дал бы мне шанс на знакомство! Миллион шансов! Как жаль, что у меня нет и одного. "
+
+    "Я сложил микрофон обратно в коробку, сел на стул и уставился в потолок. "
+    "Мне подумалось, что наверное в интернете полно уроков, для того чтобы устранить гнусавость. "
+    "Я включил компьютер и посмотрел парочку. "
+    "Естественно везде говорилось об упражнениях, которые надо выполнять вслух. "
+    "Хотелось приступить прямо сейчас, но за тонкой стенкой, всего в нескольких метрах от меня была Айко. "
+    "Я надеялся что она успокоилась после недавнего происшествия, позабыла, что я извращенец — любитель фильмов для взрослых и сейчас уже спокойно спит."
+
+    kenji "А ведь у девчонок все иначе! Им гнусавость даже идёт!"
+    
+    "Вполголоса воскликнул я. "
+    
+    #"Спрайты" одноклассников Кендзи
+    image Kenji_Classmate_Girl = im.Scale( "./images/cg/DAY_01/10a_Makoto's_Books/Kenji_Classmates/Kenji_Classmate_Girl.png", 726, 1100 )
+    image Kenji_Classmate_Girl_In_armor = im.Scale( "./images/cg/DAY_01/10a_Makoto's_Books/Kenji_Classmates/Kenji_Classmate_Girl_In_armor.png", 726, 1100 )
+    image Kenji_Classmate_Boy = im.Scale( "./images/cg/DAY_01/10a_Makoto's_Books/Kenji_Classmates/Kenji_Classmate_Boy.png", 836, 1100 )
+    image Kenji_Classmate_Boy_In_Armor = im.Scale( "./images/cg/DAY_01/10a_Makoto's_Books/Kenji_Classmates/Kenji_Classmate_Boy_In_Armor.png", 836, 1100 )
+    
+    #Мини - ЦГ полупрозрачный черный бэк справа
+    image Kenji_Clasmate_Girl_BG_Right_border_01_right_moved:
+        contains:
+            "border_01_right"
+            xpos 1000
+    
+    image Kenji_Clasmate_Girl_BG_Right_border_01_right_mask_moved:
+        contains:
+            "border_01_right_mask"
+            xpos 1000
+    
+    image Kenji_Clasmate_Girl_BG_Right_Masked = AlphaMask( "black_image", "Kenji_Clasmate_Girl_BG_Right_border_01_right_mask_moved" )
+    
+    image Kenji_Clasmate_Girl_BG_Right:
+        contains:
+            alpha 0.5
+            "Kenji_Clasmate_Girl_BG_Right_Masked"
+        contains:
+            "Kenji_Clasmate_Girl_BG_Right_border_01_right_moved"
+    ##
+    
+    show Kenji_Clasmate_Girl_BG_Right with Dissolve( 0.2 )
+    show Kenji_Classmate_Girl at Move( ( 1600, 520 ), ( 1600, 520 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+
+    "Я вспомнил одну свою однокурсницу. Она — сильно гнусавила! "
+    "Наверное благодаря пронзительному голосу её постоянно назначали старостой группы. "
+    "Она могла докричаться до любого в аудитории, при любом уровне шума."
+
+    "Я вспомнил её внешность. Она была довольно симпатичная. Небольшого роста, с длинными чёрными волосами.  Также я хорошо помнил что она носила очки в тонкой оправе. Но летом переходила на контактные линзы."
+
+    "Говорят, девчонка эта многим нравилась. И у меня тоже была к ней некоторая симпатия. Естественно я это скрывал. "
+    "Однажды весной, она принесла мне домой материалы для тестов, когда меня свалила простуда."
+    "Это был невероятно удачный случай предложить ей встречаться или что-то в этом духе, но у меня не хватило храбрости."
+    "Тяжело живется таким трусам как я."
+
+    "А потом я узнал что у нее есть парень! Мне тогда показался странным ее выбор."
+    
+    #Мини - ЦГ полупрозрачный черный бэк слева
+    image Kenji_Clasmate_Boy_BG_Left_border_01_left_moved:
+        contains:
+            "border_01_left"
+            xpos -1000
+    
+    image Kenji_Clasmate_Boy_BG_Left_border_01_left_mask_moved:
+        contains:
+            "border_01_left_mask"
+            xpos -1000
+    
+    image Kenji_Clasmate_Boy_BG_Left_Masked = AlphaMask( "black_image", "Kenji_Clasmate_Boy_BG_Left_border_01_left_mask_moved" )
+    
+    image Kenji_Clasmate_Boy_BG_Left:
+        contains:
+            alpha 0.5
+            "Kenji_Clasmate_Boy_BG_Left_Masked"
+        contains:
+            "Kenji_Clasmate_Boy_BG_Left_border_01_left_moved"
+    ##
+    
+    show Kenji_Clasmate_Boy_BG_Left with Dissolve( 0.2 )
+    show Kenji_Classmate_Boy at Move( ( 300, 520 ), ( 300, 520 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    
+    "Во первых — он был толстый как бочка! Когда на улице было тепло с него ручьями тёк пот и пахло чем-то неприятным. "
+    "У него была совершенно карикатурная, жёсткая кудрявая шевелюра, сросшиеся брови и невероятных размеров угри на носу."
+    "Довершали образ нелепые очки в толстой роговой оправе. "
+    
+    "Несмотря на свой тучный вид, роста он был не великого - я не припомню парней меньше него. "
+    "И самое главное — он страшно гнусавил, говорил очень торопливо, глотая слова. "
+
+    "И этот человек — был парнем нашей миленькой старосты! "
+    "Каждую переменку они встречались и весело щебетали в коридоре, а во время большой перемены он неизменно вёл её к аппарату по продаже напитков и покупал сок."
+    "В качестве ответной благодарности она угощала его домашним бенто. "
+    "После учебы этот парень всегда провожал её до дома."
+    "Кто-то даже говорил, что видел как они целовались и лица тех, кто слышал эту новость, невольно искажались отвращением."
+
+    "Я как-то спросил своего соседа по парте: «Почему наша миленькая староста встречается с этим страшилищем?»."
+    
+    hide Kenji_Classmate_Girl with Dissolve( 0.1 )
+    hide Kenji_Classmate_Boy with Dissolve( 0.1 )
+    show Kenji_Classmate_Girl_In_armor at Move( ( 1600, 520 ), ( 1600, 520 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    show Kenji_Classmate_Boy_In_Armor at Move( ( 300, 520 ), ( 300, 520 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    
+    "Помню он ответил мне, что они вместе играли в одну игрушку, ММО или что-то в этом роде."
+    "Улекались одним делом в общем..."
+    
+    scene Evening_Kenji_Bedroom with dissolve
+
+    "Я резко встал из-за стола. Вот что мне было нужно! Увлечение! Общее с Касуми увлечение! "
+    "А уж чем увлекается она, мне известно. Жаль я сам в этом деле полный ноль, но ничего! Я приложу усилия и удивлю её! "
+    "Ха-ха! Все эти конденсаторы, транзисторы, ёмкостные реле — я их как орешки перещёлкаю!"
+    
+    image Evening_Kenji_Home_Pantry_Other_03 = "./images/bg/Indoor/Kenji_Home_Pantry/Evening/Evening_Kenji_Home_Pantry_Other_03.jpg"
+    scene Evening_Kenji_Home_Pantry_Other_03 with dissolve
+    
+    ""
     return

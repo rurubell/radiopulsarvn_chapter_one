@@ -114,6 +114,10 @@ image Aiko_In_Nightie_Smile_Say = im.Scale( "./images/sprites/Aiko/Aiko_In_Night
 image Aiko_In_Nightie_Smile_Silent = im.Scale( "./images/sprites/Aiko/Aiko_In_Nightie/Aiko_In_Nightie_Smile_Silent.png", 594, 900 )
 image Aiko_In_Nightie_Scared_Say = im.Scale( "./images/sprites/Aiko/Aiko_In_Nightie/Aiko_In_Nightie_Scared_Say.png", 594, 900 )
 image Aiko_In_Nightie_Scared_Silent = im.Scale( "./images/sprites/Aiko/Aiko_In_Nightie/Aiko_In_Nightie_Scared_Silent.png", 594, 900 )
+image Aiko_In_Nightie_Scared_Shy_Say = im.Scale( "./images/sprites/Aiko/Aiko_In_Nightie/Aiko_In_Nightie_Scared_Shy_Say.png", 594, 900 )
+image Aiko_In_Nightie_Scared_Shy_Silent = im.Scale( "./images/sprites/Aiko/Aiko_In_Nightie/Aiko_In_Nightie_Scared_Shy_Silent.png", 594, 900 )
+image Aiko_In_Nightie_Sorry_Say = im.Scale( "./images/sprites/Aiko/Aiko_In_Nightie/Aiko_In_Nightie_Sorry_Say.png", 594, 900 )
+image Aiko_In_Nightie_Sorry_Silent = im.Scale( "./images/sprites/Aiko/Aiko_In_Nightie/Aiko_In_Nightie_Sorry_Silent.png", 594, 900 )
 
 
 layeredimage Aiko_In_Nightie:
@@ -142,6 +146,14 @@ layeredimage Aiko_In_Nightie:
             "Aiko_In_Nightie_Scared_Say"
         attribute Scared_Silent:
             "Aiko_In_Nightie_Scared_Silent"
+        attribute Sorry_Say:
+            "Aiko_In_Nightie_Sorry_Say"
+        attribute Sorry_Silent:
+            "Aiko_In_Nightie_Sorry_Silent"
+        attribute Scared_Shy_Say:
+            "Aiko_In_Nightie_Scared_Shy_Say"
+        attribute Scared_Shy_Silent:
+            "Aiko_In_Nightie_Scared_Shy_Silent"
 
 
 #Айко в школьной одежде 02

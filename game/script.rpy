@@ -15,6 +15,12 @@ define tv = Character( "Телевизор", color="#FFC95C" )
 label start:
     image white_image = "./images/other/colored/white.png"
     image black_image = "./images/other/colored/black.png"
+    image black_image_alpha_50pc:
+        contains:
+            "black_image"
+            alpha 0.5
+    
+    
     #Пыль
     image dust = Dust( "./images/other/dust.png" )
     #Рамка для флешбеков
@@ -30,10 +36,6 @@ label start:
     image border_01_left_mask = "./images/other/borders/01_Left/mask.png"
     
     image Midori_01 = "./images/cg/DAY_01/01a_Green-Haired_Girl/Midori/Midori_01.png"
-    
-    show Electronics_For_Dummies
-    
-    ""
     
     scene Midori_Sea_BG with dissolve
     window hide
@@ -3495,8 +3497,165 @@ label start:
     "А уж чем увлекается она, мне известно. Жаль я сам в этом деле полный ноль, но ничего! Я приложу усилия и удивлю её! "
     "Ха-ха! Все эти конденсаторы, транзисторы, ёмкостные реле — я их как орешки перещёлкаю!"
     
+    "Я выскочил из комнаты. Мне снова надо было на нижний этаж - в кладовку. "
+    
     image Evening_Kenji_Home_Pantry_Other_03 = "./images/bg/Indoor/Kenji_Home_Pantry/Evening/Evening_Kenji_Home_Pantry_Other_03.jpg"
     scene Evening_Kenji_Home_Pantry_Other_03 with dissolve
     
-    ""
+    "Я окинул взглядом стеллаж, на котором лежали книги. Старые книги дяди Макото, посвящённые радио и прочим сопутствующим вещам. "
+    "Я ещё не успел разложить их по коробкам и они занимали целую полку стеллажа."
+    
+    image Tube_Amplifiers_Book_Cover = "./images/cg/DAY_01/10a_Makoto's_Books/Tube_Amplifiers/Tube_Amplifiers_Book_Cover.png"
+    image Tube_Amplifiers_Book_Content = "./images/cg/DAY_01/10a_Makoto's_Books/Tube_Amplifiers/Tube_Amplifiers_Book_Content.png"
+    
+    image Tube_Amplifiers_Book_Cover_CG:
+        contains:
+            "black_image"
+            alpha 0.5
+        
+        contains:
+            "Tube_Amplifiers_Book_Cover"
+
+    image Tube_Amplifiers_Book_Content_CG:
+        contains:
+            "black_image"
+            alpha 0.5
+        
+        contains:
+            "Tube_Amplifiers_Book_Content"
+
+    show Tube_Amplifiers_Book_Cover_CG with dissolve
+    
+    "Я вытянул первую попавшуюся. На обложке красовалась надпись «Ламповые усилители»"
+    "Название мне сразу не понравилось, но я на всякий случай полистал её. "
+    
+    hide Tube_Amplifiers_Book_Cover_CG with Dissolve( 0.2 )
+    show Tube_Amplifiers_Book_Content_CG with Dissolve( 0.2 )
+    
+    "Какие-то непонятные тексты и схемы на пожелтевших от времени страницах. "
+    "Я кинул книгу в лежащий на полу, пустой ящик. Первый блин комом, но разве меня это остановит? Как бы не так!"
+    
+    scene Evening_Kenji_Home_Pantry_Other_03 with dissolve
+
+    "Из разноцветной стопки книг на полке, я выцепил другую, тоненькую книжку."
+    
+    image Pan_Stretching = "./images/cg/DAY_01/10a_Makoto's_Books/Pan_Stretching/Pan_Stretching.png"
+    image Pan_Stretching_CG:
+        contains:
+            "black_image"
+            alpha 0.5
+        
+        contains:
+            "Pan_Stretching"
+    
+    show Pan_Stretching_CG with dissolve
+    
+    "«Расширение панорамы с помощью лыжной мази»"
+    "Я перечитал название несколько раз. Но похоже эта книга здесь оказалась случайно и не имела к электронике никакого отношения. "
+    "Я не стал открывать её и сразу бросил в ящик."
+    
+    hide Pan_Stretching_CG with dissolve
+    
+    "Третья книга которая попалась мне на глаза не имела никакого названия."
+    
+    image KT315_Gondola_Cover = "./images/cg/DAY_01/10a_Makoto's_Books/KT315_Gondola/KT315_Gondola_Cover.png"
+    image KT315_Gondola_Cover_CG:
+        contains:
+            "black_image"
+            alpha 0.5
+        
+        contains:
+            "KT315_Gondola_Cover"
+    
+    image KT315_Gondola_Content = "./images/cg/DAY_01/10a_Makoto's_Books/KT315_Gondola/KT315_Gondola_Content.png"
+    image KT315_Gondola_Content_CG:
+        contains:
+            "black_image"
+            alpha 0.5
+        
+        contains:
+            "KT315_Gondola_Content"
+    
+    show KT315_Gondola_Cover_CG with dissolve
+    
+    "Что это вообще за ерунда?"
+    "Я открыл её и перелистал."
+    
+    hide KT315_Gondola_Cover_CG with Dissolve( 0.2 )
+    show KT315_Gondola_Content_CG with Dissolve( 0.2 )
+    
+    "Это о чем вообще?"
+    "Что за бред сумашедшего?"
+    
+    hide KT315_Gondola_Content_CG with dissolve
+    
+    kenji "Нет спасибо."
+
+    "Сказал я в вполголоса и швырнул непонятную книгу вслед за остальными."
+    
+    image Electronics_For_Dummies_book_light = "./images/cg/DAY_01/10a_Makoto's_Books/Electronics_For_Dummies/book_light.png"
+    
+    show black_image_alpha_50pc with Dissolve( 0.2 )
+    show Electronics_For_Dummies_book_light with Dissolve( 0.2 )
+    
+    "И вот наконец!"
+    
+    show Electronics_For_Dummies with dissolve
+    hide Electronics_For_Dummies_book_light with Dissolve( 0.2 )
+    
+    "То что надо! Яркая, глянцевая суперобложка и приятный аромат свежей типографии, а не замшелой бумаги. "
+    "Название согревает сердце и душу: «Электроника. Пособие для слабоумных хиккикомори»!"
+    "О да! Слезы радости заблестели на моих глазах..."
+    
+    hide Electronics_For_Dummies with Dissolve( 0.2 )
+    hide black_image_alpha_50pc with Dissolve( 0.2 )
+    
+    "Конечно нет. Не было у меня в руках такой книги. Здесь вообще нет книг. Только бесполезная макулатура! "
+    "Зачем пишут эту отвратительную заумь и кто читает эту хрень? Неужели Касуми в этом море непонятной информации чувствует себя как рыба в воде? Как ей это удается?"
+    "Может будь здесь хоть одна книга для новичков и я бы смог разобраться? Почему здесь только громоздкие, неподъемные для моего слабого мозга энциклопедии. "
+
+    kenji "Интернет!"
+
+    "Роясь в этой бесполезной макулатуре, я напрочь забыл про интернет."
+    "Я пулей бросился обратно в свою комнату."
+    
+    scene Evening_Kenji_Bedroom with dissolve
+    
+    kenji "Интернет! Интернет! Интернет!"
+
+    "Радостно нашёптывал я, щёлкая по клавишам компьютера. И глядя на превью первой ссылки поиска, моё сердце затрепетало!"
+
+    "Я зашёл на страницу интернет магазина, продающего именно то что мне нужно: «Радиоэлектроника для начинающих». "
+    
+    image Electronics_For_Beginners_Manga_Cover = "./images/cg/DAY_01/10a_Makoto's_Books/Internet_Book/Electronics_For_Beginners_Manga_Cover.png"
+    image Electronics_For_Beginners_Manga_Cover_CG:
+        contains:
+            "black_image"
+            alpha 0.5
+        
+        contains:
+            "Electronics_For_Beginners_Manga_Cover"
+    
+    show Electronics_For_Beginners_Manga_Cover_CG with dissolve
+    
+    "Да, таких книг сотни, но эта особенная — это был комикс. "
+    "На обложке, мультяшная, жизнерадостная школьница с большими и радостными глазами приветливо махала мне руками. "
+    "А вокруг неё все эти транзисторы, конденсаторы и ещё чёрт знает что. Вот что мне было нужно!"
+    
+    hide Electronics_For_Beginners_Manga_Cover_CG with dissolve
+
+    "Я глянул на цену — пять тысяч йен. Да, дороговато. Но ещё больше если с немедленной доставкой до дома - пятнадцать тысяч. Но мне не жалко таких денег, эта книга должна была стать моей!"
+
+    "Но увы, как только я перешёл к заказу, на сайте высветилась предательская, красная надпись. "
+    "«Извините, но сейчас данный товар отсутствует, последний раз он был в наличии...». Я взглянул на дату — два года назад!"
+
+    "Я обследовал другие интернет магазины, что выдал мне поисковик. Но тщетно. Нигде этой книги не было в наличии. "
+
+    "Я прошерстил интернет, в попытке не купить, а скачать эту книгу, но и тут меня ожидала неудача."
+
+    "Раздосадованный и опустошенный я выключил компьютер. На часах была половина первого. "
+    "Я включил будильник в телефоне на десять, скинул с себя в верхнюю одежду и лёг в кровать."
+    "Уснул я практически мгновенно."
+    
+    
     return

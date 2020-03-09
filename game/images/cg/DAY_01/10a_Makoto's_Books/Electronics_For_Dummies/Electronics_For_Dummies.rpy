@@ -44,10 +44,7 @@ image Electronics_For_Dummies_Angel_04_Animated_Wings:
     repeat
 
 
-image Electronics_For_Dummies:
-    contains:
-        "Electronics_For_Dummies_Book"
-    
+image Electronics_For_Dummies_Angels:
     contains:
         "Electronics_For_Dummies_Angel_01_Animated_Wings"
         ease 2.0 ypos 50
@@ -76,3 +73,13 @@ image Electronics_For_Dummies:
         ease 1.7 ypos 450
         ease 1.7 ypos 400
         repeat
+
+
+image Electronics_For_Dummies:
+    contains:
+        "Electronics_For_Dummies_Book"
+    
+    contains:
+        "Electronics_For_Dummies_Angels"
+    
+

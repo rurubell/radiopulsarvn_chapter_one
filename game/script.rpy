@@ -397,7 +397,32 @@ label start:
     "Я потянул руки, чтобы взять палочки для еды, но тут моё внимание отвлёк работающий телевизор. "
     "Оттуда раздавалось частое дыхание. "
     
-    show Kenji_1st_Day_Breakfast_TV_Strange_Movie with moveinleft
+    ##Мини ЦГ - Телевизор с фильмом
+    image TV_Strange_Movie_Moved:
+        contains:
+            "TV_Strange_Movie"
+            xpos -700
+    
+    image TV_Strange_Movie_border_01_left_moved:
+        contains:
+            "border_01_left"
+            xpos -1000
+    
+    image TV_Strange_Movie_border_01_left_mask_moved:
+        contains:
+            "border_01_left_mask"
+            xpos -1000
+    
+    image TV_Strange_Movie_Masked = AlphaMask( "TV_Strange_Movie_Moved", "TV_Strange_Movie_border_01_left_mask_moved" )
+    
+    image TV_Strange_Movie_With_Border_01:
+        contains:
+            "TV_Strange_Movie_Masked"
+        contains:
+            "TV_Strange_Movie_border_01_left_moved"
+    ##
+    
+    show TV_Strange_Movie_With_Border_01 with dissolve
     
     "На экране какой-то тип держал за плечи худенькую девушку в школьной форме. Видимо он пытался её поцеловать."
     "Та, дрожа, издала жалобный писк."
@@ -416,13 +441,38 @@ label start:
     "Хвала богам, пульт лежал на столе и через мгновение был у меня в руках."
     "Я перебирал каналы, пока не нашёл что-то наиболее нейтральное. "
     
-    show Kenji_1st_Day_Breakfast_TV_News with dissolve
-    hide Kenji_1st_Day_Breakfast_TV_Strange_Movie
+    ##Мини ЦГ - Телевизор с новостями
+    image TV_News_Moved:
+        contains:
+            "TV_News"
+            xpos -700
+    
+    image TV_News_border_01_left_moved:
+        contains:
+            "border_01_left"
+            xpos -1000
+    
+    image TV_News_border_01_left_mask_moved:
+        contains:
+            "border_01_left_mask"
+            xpos -1000
+    
+    image TV_News_Masked = AlphaMask( "TV_News_Moved", "TV_News_border_01_left_mask_moved" )
+    
+    image TV_News_With_Border_01:
+        contains:
+            "TV_News_Masked"
+        contains:
+            "TV_News_border_01_left_moved"
+    ##
+    
+    show TV_News_With_Border_01 with dissolve
+    hide TV_Strange_Movie_With_Border_01 with Dissolve( 0.2 )
     
     "Новости."
     "Выпуск в самом разгаре, обсуждают ближнее зарубежье. Китай, Корея, США. Отлично, самое оно! "
     
-    hide Kenji_1st_Day_Breakfast_TV_News with moveoutleft
+    scene Kenji_1st_Day_Breakfast_Food with dissolve
     
     "Я вновь взялся за палочки для еды, но вдруг Айко остановила меня."
     

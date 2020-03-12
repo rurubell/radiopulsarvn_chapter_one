@@ -1,7 +1,7 @@
-image right_to_left_jet = "./images/bg/Outdoor/Day_Jets/right_to_left_jet.png"
+image right_to_left_jet = "./images/bg/Outdoor/Jets/Day/right_to_left_jet.png"
 
 
-image Right_To_Left_Jet:
+image Day_Right_To_Left_Jet:
     contains:
         subpixel True
         HBox( "right_to_left_jet", "right_to_left_jet" )

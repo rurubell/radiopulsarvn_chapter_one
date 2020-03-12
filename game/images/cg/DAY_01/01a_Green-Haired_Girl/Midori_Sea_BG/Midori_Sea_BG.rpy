@@ -31,8 +31,12 @@ image Midori_Sea_BG:
     contains:
         "Midori_Sea_BG_Other"
     
+    #contains:
+    #    "Midori_Sea_BG_Sea_Foam_Animated"
+        
     contains:
-        "Midori_Sea_BG_Sea_Foam_Animated"
+        ypos 30
+        "Midori_Sea_BG_Sea_Foam"
         
     contains:
         "Midori_Sea_BG_Sea_Blinks"

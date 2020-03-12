@@ -610,14 +610,7 @@ label start:
     
     #СЦЕНА - ДЕНЬ 1, ВЫНОС МУСОРА 
     
-    image Day_Kenji_Home_Pantry_Mask = "./images/bg/Indoor/Kenji_Home_Pantry/Day_Kenji_Home_Pantry_Mask.png"
-    image Day_Kenji_Home_Pantry_Other_00 = "./images/bg/Indoor/Kenji_Home_Pantry/Day_Kenji_Home_Pantry_Other_00.jpg"
-    image Day_Kenji_Home_Pantry_Other_01 = "./images/bg/Indoor/Kenji_Home_Pantry/Day_Kenji_Home_Pantry_Other_01.jpg"
-    image Day_Kenji_Home_Pantry_Other_02 = "./images/bg/Indoor/Kenji_Home_Pantry/Day_Kenji_Home_Pantry_Other_02.jpg"
-    image Day_Kenji_Home_Pantry_Other_03 = "./images/bg/Indoor/Kenji_Home_Pantry/Day_Kenji_Home_Pantry_Other_03.jpg"
-    
-    scene Day_Kenji_Home_Pantry_Other_00 with dissolve
-    show expression AlphaMask( "Day_Kenji_Home_Pantry_Mask", At( "dust", center )) as mask
+    scene Day_Kenji_Home_Pantry_01 with dissolve
     
     "Всю левую половину кладовки, занимал стеллаж, который тётя Асука планировала освободить и устроить здесь гардероб. "
     "Не знаю, зачем ей это вдруг понадобилось, учитывая, что в доме она не живет несколько лет."
@@ -654,8 +647,7 @@ label start:
     "Потом мы с мальчишками устроили настоящую бойню. Расстреляли всю эту кучу камнями, пока не разбили каждый телек вдребезги."
     "Нам конечно здорово влетело, а на асфальте в том месте ещё несколько лет поблескивали кристаллики стекла."
     
-    scene Day_Kenji_Home_Pantry_Other_00 with dissolve
-    show expression AlphaMask( "Day_Kenji_Home_Pantry_Mask", At( "dust", center )) as mask
+    scene Day_Kenji_Home_Pantry_01 with dissolve
     
     "Тогда нам было весело, а мне, сейчас, не очень. Умер человек — и вся его жизнь оказалась на свалке. "
     "Чтобы напоследок, люди по этим вещам могли определить, кто же «помер» в этот раз. Сегодня, выносить чью-то жизнь на помойку предстояло мне."
@@ -723,14 +715,20 @@ label start:
     watanabe "Приходится подрабатывать автомехаником теперь. "
     watanabe "Эх, и как он только умудрился сжечь сцепление? А? Кендзи? Ты не знаешь?"
     
-    scene Day_Kenji_Home_Pantry_Other_00 with dissolve
-    show expression AlphaMask( "Day_Kenji_Home_Pantry_Mask", At( "dust", center )) as mask
+    scene Day_Kenji_Home_Pantry_01 with dissolve
     
     "Я тряхнул головой отгоняя воспоминания. "
     "Что-то залип. Пора и за работу!  "
+    
+    show Day_Kenji_Home_Pantry_Blink_01_Animated with dissolve
+    
     "Я решил сразу взяться за самое трудное — два металлических «чемоданчика», покрытые жёлтой эмалью. "
     "То что они из металла — видно по потёртым краям, где из-под краски выглядывала потемневшая сталь. "
     "Причём металл достойной толщины - судя по весу каждого. Один был значительно тяжелее другого, на его передней панели красовались чёрные стрелочные приборы, да несколько тумблеров. "
+    
+    hide Day_Kenji_Home_Pantry_Blink_01_Animated with Dissolve( 0.2 )
+    show Day_Kenji_Home_Pantry_Blink_02_Animated with Dissolve( 0.2 )
+    
     "Второй — легче. Но его приборная панель была закрыта крышкой, с замками как на армейской фляге. "
     "Для начала унесу тот, что легче — это будет разминка."
     
@@ -872,6 +870,12 @@ label start:
     
     "Как же мне повезло с сестренкой! Мысль о предстоящем отдыхе подбодрила меня и я с энтузиазмом вернулся к работе."
     
+    scene Day_Kenji_Home_Pantry_02 with dissolve
+    show Day_Kenji_Home_Pantry_Blink_03_Animated with Dissolve( 0.2 )
+    
+    "В следующий свой поход я решил не брать тяжелого собрата желтого чемоданчика. Я оставил его на потом."
+    "Я взял с собой моток провода, который лежал на верхней полке."
+    
     scene Day_Trash_Place with dissolve
     
     #Мини-ЦГ вентилятор Касуми 01
@@ -998,13 +1002,12 @@ label start:
     "Вот будет весело, если такой домосед как я, подцепит редкую и смертельную болезнь! А точнее, совсем не весело!"
     "Я поспешил домой. Надо скорее вымыть руки!"
     
-    scene Day_Kenji_Home_Pantry_Other_01 with dissolve
-    show expression AlphaMask( "Day_Kenji_Home_Pantry_Mask", At( "dust", center )) as mask
+    scene Day_Kenji_Home_Pantry_Other_03 with dissolve
+    show Day_Kenji_Home_Pantry_Blink_04_Animated with Dissolve( 0.2 )
     
     "В свой третий поход до мусорки я взял два стареньких радиоприёмника, хотя они были довольно громоздкие — но в то же время совсем не тяжёлые."
     
-    scene Day_Kenji_Home_Pantry_Other_02 with dissolve
-    show expression AlphaMask( "Day_Kenji_Home_Pantry_Mask", At( "dust", center )) as mask
+    scene Day_Kenji_Home_Pantry_Other_04 with dissolve
 
     kenji "Остальное, думаю, можно оставить и на потом"
     kenji "За день сделано достаточно! Пожалуй еще одну вещь и довольно!"
@@ -1459,7 +1462,6 @@ label start:
     "Девушка ощупала боковины прибора, взялась за тканевую ручку и попыталась встать. "
     
     #Мини ЦГ - Касуми пытается поднять рацию
-    image Kasumi_Lifting_Up_RadioSet = "./images/cg/DAY_01/04a_Trash_Place_Meeting/Kasumi_Lifting_Up_RadioSet/Kasumi_Lifting_Up_RadioSet.png"
     image Kasumi_Lifting_Up_RadioSet_Moved:
         contains:
             "Kasumi_Lifting_Up_RadioSet"
@@ -1490,7 +1492,7 @@ label start:
     show Kasumi_Lifting_Up_RadioSet_With_Border_01 with Dissolve( 0.2 )
     
     "Послышался скрежет металла об асфальт, прибор поднялся но совсем чуть-чуть, сантиметров на пять. "
-    "Я удивился тому, какие тонкие и изящные у неё руки, и как напряглись мышцы на них, в попытке приподнять рацию."
+    "Моя случайная знакомая тянула лямку прибора изо всех сил, но походе такая тяжесть ей была не по зубам."
     
     kenji "Позволь помочь!"
 
@@ -2095,14 +2097,12 @@ label start:
             "Dream_Frame"
 
             
-    image Dad_In_Room = "./images/cg/DAY_01/05a_Way_To_Kasumi_Home/Kasumi_Father/Dad_In_Room.png"
     image Dad_In_Room_Dream:
         contains:
             "Dad_In_Room"
         contains:
             "Dream_Frame"
     
-    image Kasumi_And_Pervert = "./images/cg/DAY_01/05a_Way_To_Kasumi_Home/Kasumi_Father/Kasumi_And_Pervert.png"
     image Kasumi_And_Pervert_Dream:
         contains:
             "Kasumi_And_Pervert"
@@ -3707,5 +3707,11 @@ label start:
     "Я включил будильник в телефоне на десять, скинул с себя в верхнюю одежду и лёг в кровать."
     "Уснул я практически мгновенно."
     
+    window hide
+    scene Night_Street_01 with dissolve
+    
+    pause
+    
+    ""
     
     return

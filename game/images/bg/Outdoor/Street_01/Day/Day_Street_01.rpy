@@ -12,7 +12,7 @@ image Outdoor_Day_Street_01:
         "Day_Clouds"
         
     contains:
-        "Right_To_Left_Jet"
+        "Day_Right_To_Left_Jet"
     
     contains:
         "Outdoor_Day_Street_01_Other"

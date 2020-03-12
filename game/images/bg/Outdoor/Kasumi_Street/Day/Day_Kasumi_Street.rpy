@@ -12,7 +12,7 @@ image Outdoor_Day_Kasumi_Street:
         "Day_Clouds"
         
     contains:
-        "Right_To_Left_Jet"
+        "Day_Right_To_Left_Jet"
     
     contains:
         "Outdoor_Day_Kasumi_Street_Other"

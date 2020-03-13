@@ -39,15 +39,16 @@ label start:
     
     scene Midori_Sea_BG with dissolve
     window hide
-    pause 3.0
+    pause 1.0
     
     show Midori_01 with dissolve
     
     window show
     
+    "Передо мной стаяла девушка и улыбалась мне."
+    "Я робко поздоровался."
+    
     "П-привет!"
-
-    "Робко поздоровался я."
 
     "Меня Кендзи зовут. Танака Кендзи!"
     
@@ -123,11 +124,11 @@ label start:
     zak "Ага чувак… Раньше, она казалась мне такой чистой и непорочной..."
     zak "А сейчас, я все больше замечаю какая она женственная… Какая притягательная..."
 
-    "О чем он вообще? Единственное чего мне хотелось сейчас — получить свои деньги."
+    "Единственное чего мне хотелось сейчас — получить свои деньги, а этот парень нес какую-то чушь."
 
     zak "Какая у нее тонкая шея… А её ямочки на ключицах… Ох..."
 
-    "Похоже этот парень был не в себе. "
+    "Похоже он был не в себе. "
 
     zak "Чувак, ты можешь немного переделать рисунок?"
     kenji "Переделать? Но мы же все обсудили! Я показывал наброски!"
@@ -143,7 +144,7 @@ label start:
     zak "Нет чувак! Оставь купальник на месте! Так даже интереснее! Может выражение лица поменять?"
     zak "Ну чтобы сразу стало понятно чего она хочет!"
 
-    "А мне казалось, что такой милой девочке как Мидори, хочется побегать со своими подружками по пляжу, без всякой задней мысли. "
+    "Мне самому казалось, что такой милой девочке как Мидори, хочется побегать со своими подружками по пляжу, без всякой задней мысли. "
     "Однако спорить с этим парнем я не стал. Он заказал Мидори, он её хозяин, а мне только одно остаётся — выполнить все его прихоти. "
     "Я попросил заказчика, чтобы он написал мне через полчаса, а сам принялся за рисунок."
 
@@ -308,7 +309,7 @@ label start:
     
     show Aiko_Base_Outfit_03 Angry_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
     
-    "Только сейчас я осознал что сижу в кресле в одних трусах."
+    "Только сейчас я осознал что сижу на стуле в одних трусах."
     "Пока я разглядывал себя и своё нижнее белье, Айко исчезла."
     
     hide Aiko_Base_Outfit_03 with Dissolve( 0.1 )
@@ -390,7 +391,7 @@ label start:
     "Моя новая сестра осталась тоже."
     "Говорила — что не хочет менять школу и расставаться со школьными подружками. Я ожидал что она уедет после перехода в среднюю школу, но этого не случилось. "
     "Возможно, потому, что она стала чувствовать себя лишней. Ведь у отца и тёти Асуки появился совместный ребёнок, а у нас с Айко — младший брат. "
-    "Впрочем точной причины я не знаю, да и знать не желаю. И я бы сам не хотел, чтобы Айко уезжала, от неё много пользы. "
+    "Впрочем точной причины я не знал, да и знать не желал. И я бы сам не хотел, чтобы Айко уезжала, от неё много пользы. "
     "Она неплохо готовит, и за домом следит. Ей даже не лень выращивать цветы в палисаднике и стричь кусты под окнами. "
     "С другой стороны — чуть что не так, она всегда готова нажаловаться на меня родителям. Приходится быть паинькой."
 
@@ -630,6 +631,7 @@ label start:
 
     "Еще Макото-сан тратил много денег на оборудование. Чего конечно не одобряла тётя Асука. "
     "В общем как это обычно и бывает - жена не особо была рада увлечениям мужа. "
+    "А вещи, которым он посвещал времени больше чем ей, радости не вызывают и подавно."
     "Айко на все это отцовское барахло тоже похоже наплевать. Она совсем его не помнит. "
     "Ну да, фотографий в альбоме и урны с прахом на местном кладбище ей достаточно. Кому нужна груда металлолома?"
     
@@ -866,8 +868,7 @@ label start:
     
     hide Aiko_School_Uniform_02 with Dissolve( 0.1 )
     
-    "Айко в мгновение ока натянула свои сандалии и исчезла в дверях."
-    
+    "Айко в мгновение ока изчезла, оставив меня на кухне в одиночестве."
     "Как же мне повезло с сестренкой! Мысль о предстоящем отдыхе подбодрила меня и я с энтузиазмом вернулся к работе."
     
     scene Day_Kenji_Home_Pantry_02 with dissolve
@@ -944,8 +945,10 @@ label start:
     hide Kasumi_Fan_01_With_Border_01 with Dissolve( 0.1 )
     
     "Под ней оказалась сложная приборная панель — десятки всевозможных крутилок, тумблеров, циферблатов со стрелками и хитрых разъёмов. "
-    "Наверное кому-то стало интересно что же такое я сюда притащил. "
-    "Хм. Возможно этот кто-то — владелец сломанного вентилятора. Я подошёл к нему поближе. "
+    "Модет быть крышка спала сама? Прибор нагрелся под солнцем и она слетела?"
+    "Я потрогал его. Да, горячий."
+    "Но наверное кому-то стало интересно что же такое я сюда притащил. "
+    "Хм... Возможно этот кто-то — владелец сломанного вентилятора. Я подошёл к нему поближе. "
     
     #Мини-ЦГ вентилятор Касуми 02
     image Kasumi_Fan_02 = "./images/cg/DAY_01/03a_Kenji_Moves_Trash/Kasumi_Fan/Kasumi_Fan_02.png"
@@ -991,11 +994,11 @@ label start:
     
     "Я вспомнил своего, давно умершего деда, который всю жизнь смолил какие-то американские сигареты. "
     "Весь его дом, и каждая вещь в нем накрепко пропитались застарелым запахом сигаретного дыма."
+    "Я подумал о том, что наверняка, столь активные курильщики — болеют какими-то заболеваниями. "
+    "Например Туберкулёз — неприятная и очень заразная болезнь, я слышал о такой. "
     
     scene Day_Trash_Place with dissolve
     
-    "Я подумал о том, что наверняка, столь активные курильщики — болеют какими-то заболеваниями. "
-    "Например Туберкулёз — неприятная и очень заразная болезнь, я слышал о такой. "
     "Я отшагнул подальше от вентилятора и посмотрел на свою левую ладонь."
     
     "Ею я только что прикасался к прибору, принесенному ранее, а до меня его, похоже, трогал чужак. "
@@ -1031,23 +1034,23 @@ label start:
             pause 0.7
             ease 5.0 xpos 900
     
-    image border_01_right_moved:
+    image Radio_Set_Power_Supply_On_ground_border_01_right_moved:
         contains:
             "border_01_right"
-            xpos 900
+            xpos 1000
     
-    image border_01_right_mask_moved:
+    image Radio_Set_Power_Supply_On_ground_border_01_right_mask_moved:
         contains:
             "border_01_right_mask"
-            xpos 900
+            xpos 1000
     
-    image Radio_Set_Power_Supply_On_ground_Masked = AlphaMask( "Radio_Set_Power_Supply_On_ground_Moved", "border_01_right_mask_moved" )
+    image Radio_Set_Power_Supply_On_ground_Masked = AlphaMask( "Radio_Set_Power_Supply_On_ground_Moved", "Radio_Set_Power_Supply_On_ground_border_01_right_mask_moved" )
     
     image Radio_Set_Power_Supply_On_ground_With_Border_01:
         contains:
             "Radio_Set_Power_Supply_On_ground_Masked"
         contains:
-            "border_01_right_moved"
+            "Radio_Set_Power_Supply_On_ground_border_01_right_moved"
     ##
     
     show Radio_Set_Power_Supply_On_ground_With_Border_01 with Dissolve( 0.2 )
@@ -1068,7 +1071,7 @@ label start:
     "С этими мыслями я открыл пиво, которое дожидалось в кармане брюк. "
     "Да уж, взболтал я содержимое банки здорово — пена полезла наружу, липкие струйки потекли по пальцам. "
     "Я тихо ругнулся, сдул пену, вытер руку о штаны, и поставил ногу на тот прибор, что принёс раньше остальных — как на поверженного врага. "
-    "Сделал глубокий глоток, затем огляделся по сторонам."
+    "Сделал глубокий глоток, затем огляделся по сторонам. Я был не один."
     
     #Мини ЦГ - Касуми идет с тележкой
     image Kasumi_Walks = "./images/cg/DAY_01/04a_Trash_Place_Meeting/Kasumi_Walks/Kasumi_Walks.png"
@@ -1080,23 +1083,23 @@ label start:
             #pause 0.7
             #linear 5.0 xpos 700
     
-    image border_01_right_moved:
+    image Kasumi_Walks_border_01_right_moved:
         contains:
             "border_01_right"
             xpos 900
     
-    image border_01_right_mask_moved:
+    image Kasumi_Walks_border_01_right_mask_moved:
         contains:
             "border_01_right_mask"
             xpos 900
     
-    image Kasumi_Walks_Masked = AlphaMask( "Kasumi_Walks_Moved", "border_01_right_mask_moved" )
+    image Kasumi_Walks_Masked = AlphaMask( "Kasumi_Walks_Moved", "Kasumi_Walks_border_01_right_mask_moved" )
     
     image Kasumi_Walks_With_Border_01:
         contains:
             "Kasumi_Walks_Masked"
         contains:
-            "border_01_right_moved"
+            "Kasumi_Walks_border_01_right_moved"
     ##
     show Kasumi_Walks_With_Border_01 with Dissolve( 0.2 )
     
@@ -1198,28 +1201,28 @@ label start:
     image Kasumi_Hands_On_Kenji_Leg_Moved:
         contains:
             "Kasumi_Hands_On_Kenji_Leg"
-            xpos 700
+            xpos 600
             #xpos 500
             #pause 0.7
             #linear 5.0 xpos 700
     
-    image border_01_right_moved:
+    image Kasumi_Hands_On_Kenji_Leg_border_01_right_moved:
         contains:
             "border_01_right"
             xpos 1000
     
-    image border_01_right_mask_moved:
+    image Kasumi_Hands_On_Kenji_Leg_border_01_right_mask_moved:
         contains:
             "border_01_right_mask"
             xpos 1000
     
-    image Kasumi_Hands_On_Kenji_Leg_Masked = AlphaMask( "Kasumi_Hands_On_Kenji_Leg_Moved", "border_01_right_mask_moved" )
+    image Kasumi_Hands_On_Kenji_Leg_Masked = AlphaMask( "Kasumi_Hands_On_Kenji_Leg_Moved", "Kasumi_Hands_On_Kenji_Leg_border_01_right_mask_moved" )
     
     image Kasumi_Hands_On_Kenji_Leg_With_Border_01:
         contains:
             "Kasumi_Hands_On_Kenji_Leg_Masked"
         contains:
-            "border_01_right_moved"
+            "Kasumi_Hands_On_Kenji_Leg_border_01_right_moved"
     
     show Kasumi_Hands_On_Kenji_Leg_With_Border_01 with Dissolve( 0.2 )
     ##
@@ -1313,7 +1316,7 @@ label start:
     show DAY_01_Kasumi_Big_Face_With_Border_01 with dissolve
     
     "Я взглянул на лицо девушки, и холодок пробежал у меня по спине."
-    "Солнце ярко высвечивало её лицо и искрилось на прядях её волос. "
+    "Солнце ярко высвечивало её лицо и искрилось на прядях волос. "
     "Но наперекор светилу, зрачки её были так широки, что по тонким радужкам невозможно было определить даже цвет глаз. "
     "Этот контраст расширенных, как у кошки в ночи, зрачков и яркого солнца, бьющего прямо в глаза — напугал меня. "
     "Девушка была слепой."
@@ -1492,7 +1495,7 @@ label start:
     show Kasumi_Lifting_Up_RadioSet_With_Border_01 with Dissolve( 0.2 )
     
     "Послышался скрежет металла об асфальт, прибор поднялся но совсем чуть-чуть, сантиметров на пять. "
-    "Моя случайная знакомая тянула лямку прибора изо всех сил, но походе такая тяжесть ей была не по зубам."
+    "Моя случайная знакомая тянула лямку прибора изо всех сил, но такая тяжесть ей была не по зубам."
     
     kenji "Позволь помочь!"
 
@@ -1595,7 +1598,7 @@ label start:
     show Kasumi_Cart_And_Radio_Set_With_Border_01 with Dissolve( 0.2 )
     hide Kasumi_Cart_With_Border_01 with Dissolve( 0.2 )
     
-    "Я хорошенько обмотал всю эту конструкцию багажными жгутами, наклонил. Вроде всё держалось."
+    "Я хорошенько обмотал всю эту конструкцию багажными жгутами, наклонил. Похоже, что всё держалось."
 
     kenji "Ну вроде как готово!"
 
@@ -1967,20 +1970,21 @@ label start:
 
     "Я уж было подумал что Касуми ещё и глухая, а в ухе у неё не что иное, как слуховой аппарат. "
     "Но нет, она же говорит встать с другой стороны!"
+    
+    hide Kasumi_Profile_With_Border_01 with Dissolve( 0.2 )
+    hide kasumi_01 with Dissolve( 0.2 )
+    show kasumi_01 Normal_Silent with Dissolve( 0.2 )
+    
     "В левом ухе никаких наушников не было. Я стал разглядывать мою новую знакомую в профиль. "
     "Так, не было видно её необычных глаз и казалось со мной рядом шла совершенно обычная девчёнка."
     
-    show kasumi_01 Normal_Say at Move( ( 1200, 600 ), ( 1200, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.2 )
+    show kasumi_01 Normal_Say with Dissolve( 0.2 )
     
     kasumi "Вы смотрите на моё ухо, Танака-сан?"
     
-    show kasumi_01 Normal_Silent at Move( ( 1200, 600 ), ( 1200, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.2 )
+    show kasumi_01 Normal_Silent with Dissolve( 0.2 )
 
     "Вдруг спросила Касуми"
-    
-    hide Kasumi_Profile_With_Border_01 with Dissolve( 0.2 )
-    hide kasumi_01 Normal_Silent with Dissolve( 0.1 )
-    show kasumi_01 Normal_Silent with Dissolve( 0.1 )
 
     kenji "Я? Нет! Зачем мне это нужно?"
     
@@ -2287,7 +2291,7 @@ label start:
     
     "..."
     
-    hide Here_Is_A_Pedo with Dissolve( 0.1 )
+    hide Here_Is_A_Pedo with dissolve
     
     kenji "Касуми? А твои родители? Они дома?"
     
@@ -2888,7 +2892,7 @@ label start:
     
     show Aiko_Bike_With_Border_01 with dissolve
     
-    "В руках он нёс детский велосипед. Я невольно воскликнул."
+    "В руках он нёс детский велосипед. Я воскликнул."
     
     kenji "О! Это же старый велик Айко!"
     

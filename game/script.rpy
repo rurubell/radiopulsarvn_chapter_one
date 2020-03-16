@@ -12,6 +12,14 @@ define zak = Character( "Заказчик", color="#FFC95C" )
 define tv = Character( "Телевизор", color="#FFC95C" )
 
 
+label splashscreen:
+    pause 1.0
+    show Splash with dissolve
+    pause 5.0
+    hide Splash with dissolve
+    pause 1.0
+    return
+
 
 label start:
     image white_image = "./images/other/colored/white.png"
@@ -3201,7 +3209,8 @@ label start:
         
         contains:
             "Dream_Frame"
-    
+    play environment_sounds_dream "./sounds/environment/Shower_Dream.mp3" fadein 1
+    stop environment_sounds fadeout 1
     show Dreams_About_Kasumi_Moved with dissolve
     
     "Я снова задумался о том, как пахнет Касуми."
@@ -3209,6 +3218,8 @@ label start:
 
     "Мысль, о том что я выгляжу как идиот, кольнула меня."
     
+    stop environment_sounds_dream fadeout 1
+    play environment_sounds "./sounds/environment/Shower.mp3" fadein 1 fadeout 1
     hide Dreams_About_Kasumi_Moved with dissolve
     
     "Я открыл глаза и опустил руки. "
@@ -3231,6 +3242,7 @@ label start:
 
     "Я закончил гигиенические процедуры душем и вышел из ванной."
     
+    play environment_sounds "./sounds/environment/Bedroom.mp3" fadein 1 fadeout 1
     scene Evening_Kenji_Bedroom with dissolve
     
     "В своей комнате, я приступил к подбору одежды для завтрашнего мероприятия. "

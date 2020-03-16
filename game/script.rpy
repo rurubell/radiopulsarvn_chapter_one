@@ -1,5 +1,6 @@
 init python:
-    None
+    renpy.music.register_channel( "environment_sounds", "sfx", loop=True, stop_on_mute=True, tight=True ) #Канал для звуков улиц/помещений
+    renpy.music.register_channel( "environment_sounds_dream", "sfx", loop=True, stop_on_mute=True, tight=True ) #Канал для звуков улиц/помещений (во время воспоминаний)
 
 
 define kenji = Character( "Кендзи", color="#BBFF88" )
@@ -37,6 +38,8 @@ label start:
     
     image Midori_01 = "./images/cg/DAY_01/01a_Green-Haired_Girl/Midori/Midori_01.png"
     
+    stop music fadeout 1
+    play environment_sounds "./sounds/environment/Sea.mp3" fadein 2 fadeout 1
     scene Midori_Sea_BG with dissolve
     window hide
     pause 1.0
@@ -45,7 +48,7 @@ label start:
     
     window show
     
-    "Передо мной стаяла девушка и улыбалась мне."
+    "Передо мной стояла девушка и улыбалась мне."
     "Я робко поздоровался."
     
     "П-привет!"
@@ -97,6 +100,7 @@ label start:
     
     
     scene Midori_In_GE_01 with dissolve
+    play environment_sounds "./sounds/environment/Bedroom.mp3" fadein 1 fadeout 1
     
     "Я потёр глаза и чуть отодвинулся от монитора. "
     "Да, Мидори вышла очень миленькой. Думаю человек, что заказал её — будет доволен."
@@ -323,6 +327,7 @@ label start:
     "Спустился по лестнице и вот я уже в большом холле, который к тому же выполнял роль кухни и столовой."
     
     scene Day_Kenji_Home_Kitchen with dissolve
+    play environment_sounds "./sounds/environment/Kitchen_With_Boiled_Water.mp3" fadein 1
 
     kenji "И что сегодня на завтрак?"
     
@@ -336,6 +341,7 @@ label start:
     "Поставила на него две деревянные подставки. Протерла их. "
     "Затем аккуратно расставила передо мной тарелки, положила палочки для еды. Все в лучшем виде. "
     
+    play sound "./sounds/sounds/Plate_On_Table.mp3"
     image Kenji_1st_Day_Breakfast_Food = "./images/cg/DAY_01/02a_Kenji_1st_Day_Breakfast/Food.png"
     scene Kenji_1st_Day_Breakfast_Food with dissolve
     
@@ -598,6 +604,9 @@ label start:
     scene Kenji_1st_Day_Breakfast_Food_With_Beer with dissolve
     
     "Но нет, она поставила пиво на подставку, забрала мою порцию супа и села напротив."
+    
+    play sound "./sounds/sounds/Opening_Beer_Can.mp3"
+    
     "Я взял в руки банку, и дёрнул за открывашку. "
     "Затем я схватил розовую таблеточку, запихнул её в рот и запил пивом. "
     "Увидев это, Айко изобразила гримасу неодобрения, но промолчала, и принялась за еду. "
@@ -612,6 +621,7 @@ label start:
     #СЦЕНА - ДЕНЬ 1, ВЫНОС МУСОРА 
     
     scene Day_Kenji_Home_Pantry_01 with dissolve
+    play environment_sounds "./sounds/environment/Pantry_Day.mp3" fadein 1 fadeout 1
     
     "Всю левую половину кладовки, занимал стеллаж, который тётя Асука планировала освободить и устроить здесь гардероб. "
     "Не знаю, зачем ей это вдруг понадобилось, учитывая, что в доме она не живет несколько лет."
@@ -635,13 +645,17 @@ label start:
     "Айко на все это отцовское барахло тоже похоже наплевать. Она совсем его не помнит. "
     "Ну да, фотографий в альбоме и урны с прахом на местном кладбище ей достаточно. Кому нужна груда металлолома?"
     
+    ##ЦГ - Гора телевизоров
     image TV_Heap = "images/cg/DAY_01/03a_Kenji_Moves_Trash/TV_Heap/TV_Heap.png"
     image TV_Heap_Dream:
         contains:
             "TV_Heap"
         contains:
             "Dream_Frame"
-            
+    #
+    
+    play environment_sounds_dream "./sounds/environment/Pantry_Day_Dream.mp3" fadein 1 fadeout 1
+    stop environment_sounds fadeout 1
     scene TV_Heap_Dream with dissolve
     
     "Однажды в детстве я проходил с отцом мимо площадки для сбора мусора. Там возвышалась грандиозная пирамида из телевизоров всех форм и размеров."
@@ -649,6 +663,8 @@ label start:
     "Потом мы с мальчишками устроили настоящую бойню. Расстреляли всю эту кучу камнями, пока не разбили каждый телек вдребезги."
     "Нам конечно здорово влетело, а на асфальте в том месте ещё несколько лет поблескивали кристаллики стекла."
     
+    play environment_sounds "./sounds/environment/Pantry_Day.mp3" fadein 1 fadeout 1
+    stop environment_sounds_dream fadeout 1
     scene Day_Kenji_Home_Pantry_01 with dissolve
     
     "Тогда нам было весело, а мне, сейчас, не очень. Умер человек — и вся его жизнь оказалась на свалке. "
@@ -664,6 +680,8 @@ label start:
         contains:
             "Dream_Frame"
     
+    play environment_sounds_dream "./sounds/environment/Pantry_Day_Dream.mp3" fadein 1 fadeout 1
+    stop environment_sounds fadeout 1
     scene Evening_Watanabe_Bike_WorkShop_Dream with dissolve
     
     show Watanabe_01 Normal_Say with Dissolve( 0.1 )
@@ -717,6 +735,8 @@ label start:
     watanabe "Приходится подрабатывать автомехаником теперь. "
     watanabe "Эх, и как он только умудрился сжечь сцепление? А? Кендзи? Ты не знаешь?"
     
+    play environment_sounds "./sounds/environment/Pantry_Day.mp3" fadein 1 fadeout 1
+    stop environment_sounds_dream fadeout 1
     scene Day_Kenji_Home_Pantry_01 with dissolve
     
     "Я тряхнул головой отгоняя воспоминания. "
@@ -734,6 +754,7 @@ label start:
     "Второй — легче. Но его приборная панель была закрыта крышкой, с замками как на армейской фляге. "
     "Для начала унесу тот, что легче — это будет разминка."
     
+    play environment_sounds "./sounds/environment/City_Suburb_Day.mp3" fadein 2 fadeout 1
     scene Outdoor_Day_Kenji_Home with dissolve
     
     "На улице был типичный июньский полдень. Ужасно яркое солнце, голубое небо и белоснежные облака. Все как обычно. "
@@ -758,6 +779,7 @@ label start:
     "Я пнул его напоследок и отправился домой."
     "На обратном пути мне так же никто не встретился - довольно удачный выдался денёк! "
     
+    play environment_sounds "./sounds/environment/Kitchen.mp3" fadein 1 fadeout 1
     scene Day_Kenji_Home_Kitchen with dissolve
     
     "Я ворвался в дом, распахнул холодильник и немедленно выпил холодного пива. Ох, похоже пол банки выдул за несколько глотков! "
@@ -871,12 +893,14 @@ label start:
     "Айко в мгновение ока изчезла, оставив меня на кухне в одиночестве."
     "Как же мне повезло с сестренкой! Мысль о предстоящем отдыхе подбодрила меня и я с энтузиазмом вернулся к работе."
     
+    play environment_sounds "./sounds/environment/Pantry_Day.mp3" fadein 1 fadeout 1
     scene Day_Kenji_Home_Pantry_02 with dissolve
     show Day_Kenji_Home_Pantry_Blink_03_Animated with Dissolve( 0.2 )
     
     "В следующий свой поход я решил не брать тяжелого собрата желтого чемоданчика. Я оставил его на потом."
     "Я взял с собой моток провода, который лежал на верхней полке."
     
+    play environment_sounds "./sounds/environment/City_Suburb_Day.mp3" fadein 2 fadeout 2
     scene Day_Trash_Place with dissolve
     
     #Мини-ЦГ вентилятор Касуми 01
@@ -990,6 +1014,9 @@ label start:
         contains:
             "Dream_Frame"
     
+    
+    play environment_sounds_dream "./sounds/environment/City_Suburb_Day_Dream.mp3" fadein 1
+    stop environment_sounds fadeout 2
     scene smocking_old_man_dream with dissolve
     
     "Я вспомнил своего, давно умершего деда, который всю жизнь смолил какие-то американские сигареты. "
@@ -997,6 +1024,8 @@ label start:
     "Я подумал о том, что наверняка, столь активные курильщики — болеют какими-то заболеваниями. "
     "Например Туберкулёз — неприятная и очень заразная болезнь, я слышал о такой. "
     
+    play environment_sounds "./sounds/environment/City_Suburb_Day.mp3" fadein 2
+    stop environment_sounds_dream fadeout 2
     scene Day_Trash_Place with dissolve
     
     "Я отшагнул подальше от вентилятора и посмотрел на свою левую ладонь."
@@ -1005,6 +1034,7 @@ label start:
     "Вот будет весело, если такой домосед как я, подцепит редкую и смертельную болезнь! А точнее, совсем не весело!"
     "Я поспешил домой. Надо скорее вымыть руки!"
     
+    play environment_sounds "./sounds/environment/Pantry_Day.mp3" fadein 1 fadeout 1
     scene Day_Kenji_Home_Pantry_Other_03 with dissolve
     show Day_Kenji_Home_Pantry_Blink_04_Animated with Dissolve( 0.2 )
     
@@ -1019,6 +1049,7 @@ label start:
     "А между тем, вторая банка пива подошла к концу. Я сходил на кухню и взял последнюю. Открывать её не стал — положил в карман брюк. "
     "В последнем и трудном походе мне понадобятся обе руки!"
     
+    play environment_sounds "./sounds/environment/City_Suburb_Day.mp3" fadein 2 fadeout 1
     scene Day_Trash_Place with dissolve
     
     "Поход был действительно трудный! "
@@ -1708,6 +1739,9 @@ label start:
     ##
     
     show Kasumi_BOOM_animation
+    play sound "./sounds/sounds/TNT.mp3"
+    stop environment_sounds fadeout 1
+    play environment_sounds_dream "./sounds/environment/City_Suburb_Day_Dream.mp3" fadein 2 fadeout 1
     
     "Ба-бах!"
     blind_girl "Ай!"
@@ -1719,6 +1753,8 @@ label start:
     "Нет, конечно, это была полнейшая глупость, никакой мины тут быть не должно. "
     "Однако тележка сильно кренилась на левый бок, а одно из её колес, кружилось волчком в стороне. Всё-таки не была она рассчитана на такой вес."
     
+    stop environment_sounds_dream fadeout 10
+    play environment_sounds "./sounds/environment/City_Suburb_Day.mp3" fadein 10 fadeout 1
     scene Day_Trash_Place with dissolve
     
     "Я был несказанно рад такому повороту событий и немедленно поспешил к месту аварии."
@@ -2037,6 +2073,8 @@ label start:
             "Dream_Frame"
     ##
     
+    play environment_sounds_dream "./sounds/environment/City_Suburb_Day_Dream.mp3" fadein 1
+    stop environment_sounds fadeout 1
     show Galileo_And_Newton with dissolve
     
     "Я вспомнил портреты великих учёных, которые висели в коридоре нашего университета. "
@@ -2057,6 +2095,8 @@ label start:
     
     "Даже такие интересные личности как Эдисон и Тесла — ни разу это самое «реле» не одели. Удивительно!"
     
+    play environment_sounds "./sounds/environment/City_Suburb_Day.mp3" fadein 1
+    stop environment_sounds_dream fadeout 1
     hide Edison_And_Tesla with dissolve
     
     kenji "А зачем оно? Для чего?"
@@ -2113,6 +2153,8 @@ label start:
         contains:
             "Dream_Frame"
     
+    play environment_sounds_dream "./sounds/environment/City_Suburb_Day_Dream.mp3" fadein 1
+    stop environment_sounds fadeout 1
     scene Old_Kasumis_Dad_Dream with dissolve
     
     "Я представил его себе как интеллигентного, худощавого, в толстых очках и с пышной зачёсанной набок шевелюрой. "
@@ -2134,6 +2176,8 @@ label start:
     
     "И видит свою дочь, а рядом с ней, какого-то небритого, лохматого и нетрезвого извращенца. "
     
+    play environment_sounds "./sounds/environment/City_Suburb_Day.mp3" fadein 1
+    stop environment_sounds_dream fadeout 1
     scene Outdoor_Day_BG_With_Railroad_2 with dissolve
 
     "Я поёжился. Посмотрел на мятую рубаху и неопрятные брюки. Провёл ладонью по щетине и растрёпанной шевелюре. "
@@ -2977,6 +3021,7 @@ label start:
     "И десяти минут не прошло как я был возле дома. Тележку я в дом заносить не стал, спрятав её за палисадником с цветами. "
     "Земля в палисаднике была влажная, видимо Айко совсем недавно поливала цветы. Я вошёл в дом."
     
+    play environment_sounds "./sounds/environment/Kitchen.mp3" fadein 1 fadeout 1
     scene Evening_Kenji_Home_Kitchen with dissolve 
     
     "Айко на кухне не было. Я включил телевизор и задумался о своём ужине. Очень хотелось есть. "
@@ -3124,6 +3169,7 @@ label start:
     "Я между тем закончил свой ужин, сложил посуду в мойку и отправился на второй этаж. "
     
     image Evening_Kenji_Bedroom = "./images/bg/Indoor/Kenji_Bedroom/Evening/Base.jpg"
+    play environment_sounds "./sounds/environment/Shower.mp3" fadein 1 fadeout 1
     scene Kenji_Home_Bathroom with dissolve
     
     "Ванна была полна чуть более чем на половину. "
@@ -3712,10 +3758,15 @@ label start:
     "Уснул я практически мгновенно."
     
     window hide
+    
+    play environment_sounds "./sounds/environment/Suburb_Night.mp3" fadein 1
     scene Night_Street_01 with dissolve
     
-    pause
+    pause 2.0
     
-    ""
+    image titles_image = "./images/other/Titles.png"
+    show titles_image with dissolve
+    
+    pause
     
     return

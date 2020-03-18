@@ -1276,31 +1276,30 @@ label start:
     "..."
     
     #Мини ЦГ - Касуми упала на пятую точку
-    image Kasumi_Fells = "./images/cg/DAY_01/04a_Trash_Place_Meeting/Kasumi_Fells/Kasumi_Fells.png"
     image Kasumi_Fells_Moved:
         contains:
             "Kasumi_Fells"
-            xpos -700
+            xpos -600
             pause 0.7
             ease 5.0 xpos -500
     
-    image border_01_left_moved:
+    image Kasumi_Fells_border_01_left_moved:
         contains:
             "border_01_left"
             xpos -1000
     
-    image border_01_left_mask_moved:
+    image Kasumi_Fells_border_01_left_mask_moved:
         contains:
             "border_01_left_mask"
             xpos -1000
     
-    image Kasumi_Fells_Masked = AlphaMask( "Kasumi_Fells_Moved", "border_01_left_mask_moved" )
+    image Kasumi_Fells_Masked = AlphaMask( "Kasumi_Fells_Moved", "Kasumi_Fells_border_01_left_mask_moved" )
     
     image Kasumi_Fells_With_Border_01:
         contains:
             "Kasumi_Fells_Masked"
         contains:
-            "border_01_left_moved"
+            "Kasumi_Fells_border_01_left_moved"
     
     show Kasumi_Fells_With_Border_01 with dissolve
     ##
@@ -2538,6 +2537,7 @@ label start:
 
     "Ответил я ей. Хотелось ещё добавить «до завтра», но мне показалось, что это будет слишком."
     
+    play environment_sounds "./sounds/environment/City_Evening.mp3" fadein 1 fadeout 1
     scene Outdoor_Evening_BG_With_Railroad_2 with dissolve
     
     "Около семи часов вечера я вернулся на площадку для сбора мусора. Она опустела — все уже забрали уборщики."
@@ -2716,6 +2716,7 @@ label start:
     "Я же саке на дух не переносил, как и любой другой крепкий алкоголь. "
     "Нет. Мне быть алкоголиком не грозит, ну кто же может стать алкашом, употребляя только пиво?"
     
+    play environment_sounds "./sounds/environment/City_Industrial_Day.mp3" fadein 1 fadeout 1
     scene Evening_Watanabe_Bike_WorkShop with dissolve
     
     "Размышляя над этим, я и не заметил как добрался до дома Ватанабэ. На мою радость его гараж, и одновременно — мастерская был открыт. "
@@ -2914,7 +2915,21 @@ label start:
     
     scene Evening_Watanabe_Bike_WorkShop with dissolve
     
+    #Мини ЦГ - звук из гаража Ватанабэ
+    image Watanabe_Garage_Sounds:
+        contains:
+            "empty_image"
+        
+        contains:
+            ypos 250
+            xpos 700
+            "Emo_What_Horizontal_Flipped"
+    ##
+    
+    play sound "./sounds/sounds/Metal_Parts.mp3"
+    show Watanabe_Garage_Sounds
     "Из глубины гаража донеслись гремящие звуки, кашель, тихая ругань. Спустя минуту дядя Ватанабэ вышел ко мне. "
+    hide Watanabe_Garage_Sounds
     
     ##Мини-ЦГ - велосипед Айко
     image Aiko_Bike = "./images/cg/DAY_01/06a_Watanabe/Aiko_Bike/Aiko_Bike.png"
@@ -2971,7 +2986,11 @@ label start:
     scene Evening_Watanabe_Bike_WorkShop with dissolve
     
     "Он схватил тележку, велосипед и колеса и вновь скрылся в гараже."
+    
+    show Watanabe_Garage_Sounds
+    play sound "./sounds/sounds/Drill.mp3"
     "Послышалось жужжание и скрежет сверлильного станка. А через минуту дядя Ватанабе показался с тележкой."
+    hide Watanabe_Garage_Sounds
     
     ##Мини ЦГ - Тележка с новыми колесами
     image Kasumi_Cart_With_New_Wheels_Evening = "./images/cg/DAY_01/06a_Watanabe/Kasumi_Cart_With_New_Wheels/Kasumi_Cart_With_New_Wheels_Evening.png"
@@ -3023,6 +3042,7 @@ label start:
     
     watanabe "Нисколько! Только помоги мне закатить мотоциклы в гараж. Но смотри, держи под наклоном, чтобы масло не вытекло!"
     
+    play environment_sounds "./sounds/environment/City_Evening.mp3" fadein 1 fadeout 1
     scene Outdoor_Evening_Kenji_Home with dissolve
 
     "Покончив с этим я отправился домой."

@@ -1,6 +1,7 @@
 /log.txt
 /game/log.txt
 /game/errors.txt
+/game/traceback.txt
 /errors.txt
 /traceback.txt
 

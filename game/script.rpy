@@ -3799,7 +3799,7 @@ label start:
     
     image End_Splash_Logo_JP = im.Scale( "./images/other/logo_jp.png", 900, 506 )
     image End_Splash_Text = VBox(
-        Text( "{color=#FFE680}РадиоПульсар ПреДемо{/color}" ),
+        Text( "{b}{color=#FFE680}РадиоПульсар ПреДемо{/color}{/b}" ),
         Text( "" ),
         Text( "{color=#FFE680}Сценарий:{/color} Дим Осторожно, Puankar, rurubell" ),
         Text( "{color=#FFE680}Картинки, код:{/color} rurubell" ),
@@ -3829,8 +3829,6 @@ label start:
             alpha 0.4
     
     show end_splash with dissolve
-    #image titles_image = "./images/other/Titles.png"
-    #show titles_image with dissolve
     
     pause
     

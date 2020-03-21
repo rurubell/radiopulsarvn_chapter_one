@@ -48,7 +48,7 @@ image Night_Street_01_Street_Lights:
             pause renpy.random.uniform( 0.1, 0.3 )
         
         choice:
-            pause renpy.random.randint( 5, 20 )
+            pause renpy.random.randint( 20, 60 )
             
         repeat
         
@@ -87,7 +87,7 @@ image Night_Street_01_Street_Lights:
             pause renpy.random.uniform( 0.1, 0.3 )
         
         choice:
-            pause renpy.random.randint( 5, 20 )
+            pause renpy.random.randint( 20, 60 )
         
         repeat
 

@@ -554,15 +554,18 @@ screen about():
         style_prefix "about"
 
         vbox:
-
-            label "[config.name!t]"
-            text _("Версия [config.version!t]\n")
-
-            ## gui.about обычно установлено в options.rpy.
-            if gui.about:
-                text "[gui.about!t]\n"
-
-            text _("Сделано с помощью {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
+            text _( "{color=#FFE680}РадиоПульсар ПреДемо{/color}" )
+            text _( "" )
+            text _( "{color=#FFE680}Сценарий:{/color} Дим Осторожно, Puankar, rurubell" )
+            text _( "{color=#FFE680}Картинки, код:{/color} rurubell" )
+            text _( "" )
+            text _( "{color=#FFE680}Благодарности{/color}" )
+            text _( "{color=#FFE680}yakuji-lover{/color} - за помощь с кодом" )
+            text _( "{color=#FFE680}noteblock, Russian J-12{/color} - за обсуждение сюжета и персонажей" )
+            text _( "{color=#FFE680}fOkusnik{/color} - за попытку всех переубедить" )
+            text _( "Имиджбордам {color=#FFE680}2ch.hk{/color} и {color=#FFE680}iichan.hk{/color}" )
+            text _( "" )
+            text _( "Музыка и звуки взяты с сайтов ..." )
 
 
 ## Это переустанавливается в options.rpy для добавления текста на экран Об игре.
@@ -583,7 +586,7 @@ style about_label_text:
 ## как они почти одинаковые, оба реализованы по правилам третьего экрана —
 ## file_slots.
 ##
-## https://www.renpy.org/doc/html/screen_special.html#save 
+## https://www.renpy.org/doc/html/screen_special.html#save
 
 screen save():
 
@@ -719,6 +722,7 @@ screen preferences():
     tag menu
 
     use game_menu(_("Настройки"), scroll="viewport"):
+        #add "black_image" # The Background image.
 
         vbox:
 

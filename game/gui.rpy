@@ -23,29 +23,29 @@ init python:
 ## The colors of text in the interface.
 
 ## An accent color used throughout the interface to label and highlight text.
-define gui.accent_color = '#0099cc'
+define gui.accent_color = '#FFE680'
 
 ## The color used for a text button when it is neither selected nor hovered.
-define gui.idle_color = '#FFFFFF'
+define gui.idle_color = '#ffffff'
 
 ## The small color is used for small text, which needs to be brighter/darker to
 ## achieve the same effect.
 define gui.idle_small_color = '#aaaaaa'
 
 ## The color that is used for buttons and bars that are hovered.
-define gui.hover_color = '#66c1e0'
+define gui.hover_color = '#FFE680'
 
 ## The color used for a text button when it is selected but not focused. A
 ## button is selected if it is the current screen or preference value.
 define gui.selected_color = '#ffffff'
 
 ## The color used for a text button when it cannot be selected.
-define gui.insensitive_color = '#FFFFFF7f'
+define gui.insensitive_color = '#8888887f'
 
 ## Colors used for the portions of bars that are not filled in. These are not
 ## used directly, but are used when re-generating bar image files.
-define gui.muted_color = '#003d51'
-define gui.hover_muted_color = '#005b7a'
+define gui.muted_color = '#515100'
+define gui.hover_muted_color = '#7a7a00'
 
 ## The colors used for dialogue and menu choice text.
 define gui.text_color = '#ffffff'
@@ -61,7 +61,7 @@ define gui.text_font = "./fonts/ubuntu/Ubuntu-L.ttf"
 define gui.name_text_font = "./fonts/ubuntu/Ubuntu-C.ttf"
 
 ## The font used for out-of-game text.
-define gui.interface_text_font = "./fonts/ubuntu/Ubuntu-B.ttf"
+define gui.interface_text_font = "./fonts/ubuntu/Ubuntu-M.ttf"
 
 ## The size of normal dialogue text.
 define gui.text_size = 33
@@ -179,9 +179,9 @@ define gui.button_text_xalign = 0.0
 ##
 ## These customizations are used by the default interface:
 
-define gui.radio_button_borders = Borders(27, 6, 6, 6)
+define gui.radio_button_borders = Borders(50, 6, 6, 6)
 
-define gui.check_button_borders = Borders(27, 6, 6, 6)
+define gui.check_button_borders = Borders(50, 6, 6, 6)
 
 define gui.confirm_button_text_xalign = 0.5
 

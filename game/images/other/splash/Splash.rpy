@@ -5,9 +5,13 @@ image Splash_Saw_Mask = "./images/other/splash/mask.png"
 
 image Splash_Saw_Animated:
     contains:
-        xpos 0
+        "empty_image"
+    
+    contains:
+        xpos 405
+        ypos 485
         "Splash_Saw"
-        linear 1.0 xpos -41
+        linear 1.0 xpos 364
         pause 0.5
         repeat
 

@@ -22,6 +22,7 @@ label splashscreen:
 
 
 label start:
+        
     image white_image = "./images/other/colored/white.png"
     image black_image = "./images/other/colored/black.png"
     image black_image_alpha_50pc:
@@ -3796,8 +3797,40 @@ label start:
     
     pause 2.0
     
-    image titles_image = "./images/other/Titles.png"
-    show titles_image with dissolve
+    image End_Splash_Logo_JP = im.Scale( "./images/other/logo_jp.png", 900, 506 )
+    image End_Splash_Text = VBox(
+        Text( "{color=#FFE680}РадиоПульсар ПреДемо{/color}" ),
+        Text( "" ),
+        Text( "{color=#FFE680}Сценарий:{/color} Дим Осторожно, Puankar, rurubell" ),
+        Text( "{color=#FFE680}Картинки, код:{/color} rurubell" ),
+        Text( "" ),
+        Text( "{color=#FFE680}Благодарности{/color}" ),
+        Text( "{color=#FFE680}yakuji-lover{/color} - за помощь с кодом" ),
+        Text( "{color=#FFE680}noteblock, Russian J-12{/color} - за обсуждение сюжета и персонажей" ),
+        Text( "{color=#FFE680}fOkusnik{/color} - за попытку всех переубедить" ),
+        Text( "Имиджбордам {color=#FFE680}2ch.hk{/color} и {color=#FFE680}iichan.hk{/color}" ),
+        Text( "" ),
+        Text( "Музыка и звуки взяты с сайтов ..." ),
+        )
+    
+    image end_splash:
+        contains:
+            "empty_image"
+        
+        contains:
+            xpos 50
+            ypos 500
+            "End_Splash_Text"
+       
+        contains:
+            xpos 1000
+            ypos 500
+            "End_Splash_Logo_JP"
+            alpha 0.4
+    
+    show end_splash with dissolve
+    #image titles_image = "./images/other/Titles.png"
+    #show titles_image with dissolve
     
     pause
     

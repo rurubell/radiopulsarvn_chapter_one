@@ -5,6 +5,7 @@ init python:
 
 define kenji = Character( "Кендзи", color="#BBFF88" )
 define aiko = Character( "Айко", color="#FF888B" )
+define aiko_voice = Character( "Голос", color="#FF888B" )
 define kasumi = Character( "Касуми", color="#88C0FF" )
 define blind_girl = Character( "Девушка", color="#88C0FF" )
 define watanabe = Character( "Ватанабе", color="#009900" )
@@ -114,6 +115,7 @@ label start:
     "Я потёр глаза и чуть отодвинулся от монитора. "
     "Да, Мидори вышла очень миленькой. Думаю человек, что заказал её — будет доволен."
 
+    play sound "./sounds/sounds/Mobile_Phone_Vibration.mp3"
     "Вдруг завибрировал телефон. Похоже что мне прислали сообщение! "
     "Писал тот парень что заказал рисунок с Мидори. Вовремя он появился!"
 
@@ -256,12 +258,14 @@ label start:
     "Мидори теперь была по настоящему испорчена. Она была осквернена, окончательно и бесповоротно. "
     "И я сделал это собственными руками!"
 
-    "А ведь это героиня популярного сейчас аниме сериала. Я его конечно не смотрел, но подозреваю, что там она отличница, президент кружка чайных церемоний, волонтер в местном храме и вообще — всем ребятам пример!"
+    "А ведь это героиня популярного сейчас аниме сериала."
+    "Я его конечно не смотрел, но подозреваю, что Мидори там - отличница, президент кружка чайных церемоний, волонтер в местном храме."
+    "И вообще — всем ребятам пример!"
     "Если бы она только знала, какую гадость с ней сделал такой никчёмный человек как я..."
 
     #СЦЕНА - ДЕНЬ 1, АЙКО ЗАХОДИТ В КОНМНАТУ КЕНДЗИ И ВИДИТ МИДОРИ
 
-    "Кендзи!"
+    aiko_voice "Кендзи!"
     
     scene Day_Kenji_Home_Bedroom with dissolve
     
@@ -978,7 +982,7 @@ label start:
     hide Kasumi_Fan_01_With_Border_01 with Dissolve( 0.1 )
     
     "Под ней оказалась сложная приборная панель — десятки всевозможных крутилок, тумблеров, циферблатов со стрелками и хитрых разъёмов. "
-    "Модет быть крышка спала сама? Прибор нагрелся под солнцем и она слетела?"
+    "Может быть крышка спала сама? Прибор нагрелся под солнцем и она слетела?"
     "Я потрогал его. Да, горячий."
     "Но наверное кому-то стало интересно что же такое я сюда притащил. "
     "Хм... Возможно этот кто-то — владелец сломанного вентилятора. Я подошёл к нему поближе. "
@@ -3490,6 +3494,7 @@ label start:
     
     aiko "Неееет!"
     
+    play sound "./sounds/sounds/Aiko_Run_Away_From_Parents_Room.mp3"
     hide Aiko_In_Nightie with Dissolve( 0.1 )
     hide Kenji_Parents_Room_Door_With_Border_01 with hpunch
     
@@ -3632,6 +3637,7 @@ label start:
     
     "Я выскочил из комнаты. Мне снова надо было на нижний этаж - в кладовку. "
     
+    play environment_sounds "./sounds/environment/Pantry_Evening.mp3" fadein 1
     image Evening_Kenji_Home_Pantry_Other_03 = "./images/bg/Indoor/Kenji_Home_Pantry/Evening/Evening_Kenji_Home_Pantry_Other_03.jpg"
     scene Evening_Kenji_Home_Pantry_Other_03 with dissolve
     
@@ -3662,6 +3668,7 @@ label start:
     "Я вытянул первую попавшуюся. На обложке красовалась надпись «Ламповые усилители»"
     "Название мне сразу не понравилось, но я на всякий случай полистал её. "
     
+    play sound "./sounds/sounds/Open_Book.mp3"
     hide Tube_Amplifiers_Book_Cover_CG with Dissolve( 0.2 )
     show Tube_Amplifiers_Book_Content_CG with Dissolve( 0.2 )
     
@@ -3714,6 +3721,7 @@ label start:
     "Что это вообще за ерунда?"
     "Я открыл её и перелистал."
     
+    play sound "./sounds/sounds/Open_Book.mp3"
     hide KT315_Gondola_Cover_CG with Dissolve( 0.2 )
     show KT315_Gondola_Content_CG with Dissolve( 0.2 )
     
@@ -3728,6 +3736,7 @@ label start:
     
     image Electronics_For_Dummies_book_light = "./images/cg/DAY_01/10a_Makoto's_Books/Electronics_For_Dummies/book_light.png"
     
+    play environment_sounds_dream "./sounds/sounds/Aah.mp3" fadein 1
     show black_image_alpha_50pc with Dissolve( 0.2 )
     show Electronics_For_Dummies_book_light with Dissolve( 0.2 )
     
@@ -3740,6 +3749,9 @@ label start:
     "Название согревает сердце и душу: «Электроника. Пособие для слабоумных хиккикомори»!"
     "О да! Слезы радости заблестели на моих глазах..."
     
+    
+    play sound "./sounds/sounds/Aah_Stop_Tape.mp3" fadein 1
+    stop environment_sounds_dream fadeout 1
     hide Electronics_For_Dummies with Dissolve( 0.2 )
     hide black_image_alpha_50pc with Dissolve( 0.2 )
     
@@ -3804,7 +3816,7 @@ label start:
         Text( "{color=#FFE680}Сценарий:{/color} Дим Осторожно, Puankar, rurubell" ),
         Text( "{color=#FFE680}Картинки, код:{/color} rurubell" ),
         Text( "" ),
-        Text( "{color=#FFE680}Благодарности{/color}" ),
+        Text( "{b}{color=#FFE680}Благодарности{/color}{/b}" ),
         Text( "{color=#FFE680}yakuji-lover{/color} - за помощь с кодом" ),
         Text( "{color=#FFE680}noteblock, Russian J-12{/color} - за обсуждение сюжета и персонажей" ),
         Text( "{color=#FFE680}fOkusnik{/color} - за попытку всех переубедить" ),

@@ -15,6 +15,14 @@
 define config.name = _("radiopulsarvn_predemo")
 
 
+#Переменные скорости анимаций перехода ( между сценами, появления цг, спрайтов и т. п. )
+define my_dissolve_01 = 0.1
+define my_dissolve_02 = 0.2
+define my_dissolve_03 = 0.3
+define my_dissolve_04 = 0.4
+define my_dissolve_05 = 0.5
+
+
 #Музыка в главном меню
 define config.main_menu_music = "./sounds/environment/City_Suburb_Day.mp3"
 

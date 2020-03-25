@@ -2,7 +2,6 @@ init python:
     renpy.music.register_channel( "environment_sounds", "sfx", loop=True, stop_on_mute=True, tight=True ) #Канал для звуков улиц/помещений
     renpy.music.register_channel( "environment_sounds_dream", "sfx", loop=True, stop_on_mute=True, tight=True ) #Канал для звуков улиц/помещений (во время воспоминаний)
 
-
 define kenji = Character( "Кендзи", color="#BBFF88" )
 define aiko = Character( "Айко", color="#FF888B" )
 define aiko_voice = Character( "Голос", color="#FF888B" )
@@ -15,15 +14,14 @@ define tv = Character( "Телевизор", color="#FFC95C" )
 
 label splashscreen:
     pause 1.0
-    show Splash with dissolve
+    show Splash with Dissolve( my_dissolve_05 )
     pause 5.0
-    hide Splash with dissolve
+    hide Splash with Dissolve( my_dissolve_05 )
     pause 1.0
     return
 
 
 label start:
-        
     image white_image = "./images/other/colored/white.png"
     image black_image = "./images/other/colored/black.png"
     image black_image_alpha_50pc:
@@ -50,11 +48,11 @@ label start:
     
     stop music fadeout 1
     play environment_sounds "./sounds/environment/Sea.mp3" fadein 2 fadeout 1
-    scene Midori_Sea_BG with dissolve
+    scene Midori_Sea_BG with Dissolve( my_dissolve_05 )
     window hide
     pause 1.0
     
-    show Midori_01 with dissolve
+    show Midori_01 with Dissolve( my_dissolve_05 )
     
     window show
     
@@ -109,7 +107,7 @@ label start:
             "Midori_GE_Interface"
     
     
-    scene Midori_In_GE_01 with dissolve
+    scene Midori_In_GE_01 with Dissolve( my_dissolve_05 )
     play environment_sounds "./sounds/environment/Bedroom.mp3" fadein 1 fadeout 1
     
     "Я потёр глаза и чуть отодвинулся от монитора. "
@@ -163,7 +161,7 @@ label start:
     "Однако спорить с этим парнем я не стал. Он заказал Мидори, он её хозяин, а мне только одно остаётся — выполнить все его прихоти. "
     "Я попросил заказчика, чтобы он написал мне через полчаса, а сам принялся за рисунок."
 
-    scene black with dissolve
+    scene black with Dissolve( my_dissolve_05 )
     
     image Midori_03 = "./images/cg/DAY_01/01a_Green-Haired_Girl/Midori/Midori_03.png"
     image Midori_In_GE_02:
@@ -176,7 +174,7 @@ label start:
     
     "..."
     
-    scene Midori_In_GE_02 with dissolve
+    scene Midori_In_GE_02 with Dissolve( my_dissolve_05 )
     
     "Да, теперь определённо можно сказать, чего хочет Мидори. "
     "Вот только хочет ли она это в самом деле? Взяла ли Мидори, эту штуку в рот по своей воле, или я её заставил? "
@@ -196,7 +194,7 @@ label start:
     kenji "Надеюсь это все?"
     zak "Всё чувак! Просто сделай ей ахегао личико, и я заплачу сколько ты скажешь."
     
-    scene black with dissolve
+    scene black with Dissolve( my_dissolve_05 )
     
     image Midori_04 = "./images/cg/DAY_01/01a_Green-Haired_Girl/Midori/Midori_04.png"
     image Midori_In_GE_03:
@@ -209,7 +207,7 @@ label start:
     
     "..."
     
-    scene Midori_In_GE_03 with dissolve
+    scene Midori_In_GE_03 with Dissolve( my_dissolve_05 )
     
     "Пока я перерисовывал физиономию девушки, на душе у меня становилось все гаже. "
     "Я столько времени потратил на первоначальный рисунок, столько труда в него вложил! "
@@ -239,7 +237,7 @@ label start:
 
     "Однако, увидев новую порцию пожеланий заказчика, я нервно сглотнул."
     
-    scene black with dissolve
+    scene black with Dissolve( my_dissolve_05 )
     
     image Midori_05 = "./images/cg/DAY_01/01a_Green-Haired_Girl/Midori/Midori_05.png"
     image Midori_In_GE_04:
@@ -252,7 +250,7 @@ label start:
     
     "..."
     
-    scene Midori_In_GE_04 with dissolve
+    scene Midori_In_GE_04 with Dissolve( my_dissolve_05 )
     
     "Действительно. Времени потребовалось совсем чуть-чуть. Хотя не припомню, чтобы я рисовал такое раньше. "
     "Мидори теперь была по настоящему испорчена. Она была осквернена, окончательно и бесповоротно. "
@@ -267,7 +265,7 @@ label start:
 
     aiko_voice "Кендзи!"
     
-    scene Day_Kenji_Home_Bedroom with dissolve
+    scene Day_Kenji_Home_Bedroom with Dissolve( my_dissolve_05 )
     
     "Я настолько ушел в свои мысли что не сразу сообразил - меня зовут."
     
@@ -296,10 +294,10 @@ label start:
         contains:
             "border_01_right_moved"
     
-    show Day_Kenji_Bedroom_Door_With_Border_01 with Dissolve( 0.2 )
+    show Day_Kenji_Bedroom_Door_With_Border_01 with Dissolve( my_dissolve_02 )
     ##
     
-    show Aiko_Base_Outfit_03 Normal_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    show Aiko_Base_Outfit_03 Normal_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     "В дверях стояла Айко, моя младшая сестра."
     "Ой! Кажется она уставилась в мой монитор!"
@@ -307,30 +305,30 @@ label start:
     "Черт! Я бы ни за что не стал, добровольно демонстрировать такое творчество своей младшей сестре! Как не вовремя она зашла! "
     "Я молниеносно закрыл программу для рисования. А после, вновь повернулся к Айко."
     
-    show Aiko_Base_Outfit_03 Confused_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    show Aiko_Base_Outfit_03 Confused_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     "Похоже Айко успела разглядеть Мидори."
     "На несколько секунд повисла неловкая пауза, но затем моя сестра пришла в себя и тихо сказала."
     
-    show Aiko_Base_Outfit_03 Normal_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    show Aiko_Base_Outfit_03 Normal_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     aiko "Завтрак готов."
     
-    show Aiko_Base_Outfit_03 Normal_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    show Aiko_Base_Outfit_03 Normal_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     "Посмотрела на меня, нахмурилась и выпалила."
     
-    show Aiko_Base_Outfit_03 Angry_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    show Aiko_Base_Outfit_03 Angry_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     aiko "Только надень на себя хоть что-то!"
     
-    show Aiko_Base_Outfit_03 Angry_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    show Aiko_Base_Outfit_03 Angry_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     "Только сейчас я осознал что сижу на стуле в одних трусах."
     "Пока я разглядывал себя и своё нижнее белье, Айко исчезла."
     
-    hide Aiko_Base_Outfit_03 with Dissolve( 0.1 )
-    hide Day_Kenji_Bedroom_Door_With_Border_01 with dissolve
+    hide Aiko_Base_Outfit_03 with Dissolve( my_dissolve_01 )
+    hide Day_Kenji_Bedroom_Door_With_Border_01 with Dissolve( my_dissolve_05 )
     
     "Не стоило злить свою сестру и опаздывать. Я встал, накинул рубашку, застегнул её через пуговицу."
     "Когда с рубашкой было покончено, я натянул брюки, и пытаясь застегнуть тугую ширинку, сделал несколько шагов по комнате."
@@ -339,16 +337,16 @@ label start:
     
     "Спустился по лестнице и вот я уже в большом холле, который к тому же выполнял роль кухни и столовой."
     
-    scene Day_Kenji_Home_Kitchen with dissolve
+    scene Day_Kenji_Home_Kitchen with Dissolve( my_dissolve_05 )
     play environment_sounds "./sounds/environment/Kitchen_With_Boiled_Water.mp3" fadein 1
 
     kenji "И что сегодня на завтрак?"
     
-    show Aiko_Base_Outfit_03 Normal_Say with Dissolve( 0.2 )
+    show Aiko_Base_Outfit_03 Normal_Say with Dissolve( my_dissolve_02 )
     
     aiko "На завтрак — мисо-суп, рис и омлет."
     
-    show Aiko_Base_Outfit_03 Normal_Silent with Dissolve( 0.2 )
+    show Aiko_Base_Outfit_03 Normal_Silent with Dissolve( my_dissolve_02 )
     
     "Я сел за стол. Айко же, протёрла его влажной тряпкой. "
     "Поставила на него две деревянные подставки. Протерла их. "
@@ -356,7 +354,7 @@ label start:
     
     play sound "./sounds/sounds/Plate_On_Table.mp3"
     image Kenji_1st_Day_Breakfast_Food = "./images/cg/DAY_01/02a_Kenji_1st_Day_Breakfast/Food.png"
-    scene Kenji_1st_Day_Breakfast_Food with dissolve
+    scene Kenji_1st_Day_Breakfast_Food with Dissolve( my_dissolve_05 )
     
     "Даже розовые таблетки — ферменты для пищеварения, которые мне прописали много лет назад — не забыты."
     
@@ -385,21 +383,21 @@ label start:
         contains:
             "border_01_right_moved"
     
-    show Day_Kenji_Home_Kitchen_Gas_Stove_With_Border_01 with Dissolve( 0.2 )
+    show Day_Kenji_Home_Kitchen_Gas_Stove_With_Border_01 with Dissolve( my_dissolve_02 )
     ##
     
-    show Aiko_With_Big_Spoon Normal_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    show Aiko_With_Big_Spoon Normal_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     aiko "Папа и мама звонили."
     
-    show Aiko_With_Big_Spoon Normal_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    show Aiko_With_Big_Spoon Normal_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     "Меня от этой новости немного передёрнуло, отца я побаивался. "
     "Но, последнюю неделю я вёл себя хорошо, не думаю что Айко могла про меня наябедничать. "
     "Я ждал, что Айко скажет что-то еще, но она не стала продолжать. Значит — все нормально!"
     
-    hide Aiko_With_Big_Spoon with Dissolve( 0.1 )
-    hide Day_Kenji_Home_Kitchen_Gas_Stove_With_Border_01 with Dissolve( 0.2 )
+    hide Aiko_With_Big_Spoon with Dissolve( my_dissolve_01 )
+    hide Day_Kenji_Home_Kitchen_Gas_Stove_With_Border_01 with Dissolve( my_dissolve_02 )
     
     "Довольно странно, что Айко так просто называла моего отца «папой»."
     "Дело в том, что Айко не была его родной дочкой. "
@@ -442,21 +440,21 @@ label start:
             "TV_Strange_Movie_border_01_left_moved"
     ##
     
-    show TV_Strange_Movie_With_Border_01 with dissolve
+    show TV_Strange_Movie_With_Border_01 with Dissolve( my_dissolve_05 )
     
     "На экране какой-то тип держал за плечи худенькую девушку в школьной форме. Видимо он пытался её поцеловать."
     "Та, дрожа, издала жалобный писк."
     
     tv "С-сэмпай!"
     
-    show Day_Kenji_Home_Kitchen_Gas_Stove_With_Border_01 with Dissolve( 0.2 )
-    show Aiko_With_Big_Spoon Confused_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    show Day_Kenji_Home_Kitchen_Gas_Stove_With_Border_01 with Dissolve( my_dissolve_02 )
+    show Aiko_With_Big_Spoon Confused_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     "Я перевёл взгляд на сестру. Что за дурацкий канал она врубила с утра пораньше? "
     "Айко была сильно смущена и стояла как истукан с крышкой от кастрюли и черпаком в руках."
     
-    hide Aiko_With_Big_Spoon with Dissolve( 0.1 )
-    hide Day_Kenji_Home_Kitchen_Gas_Stove_With_Border_01 with Dissolve( 0.2 )
+    hide Aiko_With_Big_Spoon with Dissolve( my_dissolve_01 )
+    hide Day_Kenji_Home_Kitchen_Gas_Stove_With_Border_01 with Dissolve( my_dissolve_02 )
     
     "Хвала богам, пульт лежал на столе и через мгновение был у меня в руках."
     "Я перебирал каналы, пока не нашёл что-то наиболее нейтральное. "
@@ -486,31 +484,31 @@ label start:
             "TV_News_border_01_left_moved"
     ##
     
-    show TV_News_With_Border_01 with dissolve
-    hide TV_Strange_Movie_With_Border_01 with Dissolve( 0.2 )
+    show TV_News_With_Border_01 with Dissolve( my_dissolve_05 )
+    hide TV_Strange_Movie_With_Border_01 with Dissolve( my_dissolve_02 )
     
     "Новости."
     "Выпуск в самом разгаре, обсуждают ближнее зарубежье. Китай, Корея, США. Отлично, самое оно! "
     
-    scene Kenji_1st_Day_Breakfast_Food with dissolve
+    scene Kenji_1st_Day_Breakfast_Food with Dissolve( my_dissolve_05 )
     
     "Я вновь взялся за палочки для еды, но вдруг Айко остановила меня."
     
-    show Day_Kenji_Home_Kitchen_Gas_Stove_With_Border_01 with Dissolve( 0.2 )
-    show Aiko_With_Big_Spoon Normal_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    show Day_Kenji_Home_Kitchen_Gas_Stove_With_Border_01 with Dissolve( my_dissolve_02 )
+    show Aiko_With_Big_Spoon Normal_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     aiko "Ты не забыл?"
     
-    show Aiko_With_Big_Spoon Normal_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    show Aiko_With_Big_Spoon Normal_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     kenji "Не забыл «что»?"
     
-    show Aiko_With_Big_Spoon Normal_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    show Aiko_With_Big_Spoon Normal_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     aiko "Сегодня четверг, день вывоза электронных приборов. Мама же просила освободить кладовку!"
     
-    hide Aiko_With_Big_Spoon with Dissolve( 0.1 )
-    hide Day_Kenji_Home_Kitchen_Gas_Stove_With_Border_01 with Dissolve( 0.2 )
+    hide Aiko_With_Big_Spoon with Dissolve( my_dissolve_01 )
+    hide Day_Kenji_Home_Kitchen_Gas_Stove_With_Border_01 with Dissolve( my_dissolve_02 )
     
     "Черт! Я помнил про это вчера, но с утра конечно позабыл все на свете."
     "Вот бы еще и Айко забыла! "
@@ -523,45 +521,45 @@ label start:
     
     kenji "Айко! Ты ещё не налила себе порцию?"
     
-    show Day_Kenji_Home_Kitchen_Gas_Stove_With_Border_01 with Dissolve( 0.2 )
-    show Aiko_With_Big_Spoon Normal_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    show Day_Kenji_Home_Kitchen_Gas_Stove_With_Border_01 with Dissolve( my_dissolve_02 )
+    show Aiko_With_Big_Spoon Normal_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     aiko "Что? Нет. Но собираюсь."
     
-    show Aiko_With_Big_Spoon Normal_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    show Aiko_With_Big_Spoon Normal_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     kenji "Возьми мою, я суп не буду!"
     
-    show Aiko_With_Big_Spoon Surprised_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    show Aiko_With_Big_Spoon Surprised_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     aiko "Это ещё почему?"
     
-    show Aiko_With_Big_Spoon Surprised_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    show Aiko_With_Big_Spoon Surprised_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     "Не то, чтобы я вдруг внезапно перестал быть голодным. Но мне требовалось оставить место в желудке для кое-чего другого."
     
     kenji "Мне салата хватит! А вместо супа, достань ка мне из холодильника баночку пива! Там же ещё осталось?"
     
-    show Aiko_With_Big_Spoon Angry_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    show Aiko_With_Big_Spoon Angry_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     aiko "Пиво! С утра?!"
     
-    show Aiko_With_Big_Spoon Angry_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    show Aiko_With_Big_Spoon Angry_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     kenji "А что такого?"
     
-    show Aiko_With_Big_Spoon Angry_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    show Aiko_With_Big_Spoon Angry_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     aiko "Нет, ничего! Суп ты теперь вообще есть не будешь? Может мне тогда начать варить пиво для тебя?"
     
-    show Aiko_With_Big_Spoon Angry_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    show Aiko_With_Big_Spoon Angry_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     "Айко была крайне возмущёна."
     
     kenji "Остынь Айко. Мне надо, понимаешь? Это как лекарство. Я же на улицу пойду. А там люди кругом. Это мне для храбрости!"
     
-    hide Aiko_With_Big_Spoon with Dissolve( 0.1 )
-    hide Day_Kenji_Home_Kitchen_Gas_Stove_With_Border_01 with Dissolve( 0.2 )
+    hide Aiko_With_Big_Spoon with Dissolve( my_dissolve_01 )
+    hide Day_Kenji_Home_Kitchen_Gas_Stove_With_Border_01 with Dissolve( my_dissolve_02 )
     
     "Конечно Айко не понять меня. "
     "Но мне — тридцатилетнему затворнику, проводящему дни и ночи за компьютером, известно насколько это тяжело встречать по дороге соседей и знакомых, и хриплым голосом желать им доброго дня. "
@@ -595,26 +593,26 @@ label start:
             "Day_Kenji_Home_Kitchen_Fridge_border_01_right_moved"
     ##
     
-    show Day_Kenji_Home_Kitchen_Fridge_With_Border_01 with Dissolve( 0.2 )
-    show Aiko_With_Beer Normal_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 ) 
+    show Day_Kenji_Home_Kitchen_Fridge_With_Border_01 with Dissolve( my_dissolve_02 )
+    show Aiko_With_Beer Normal_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 ) 
     
     aiko "Ну, какое тебе?"
     
-    show Aiko_With_Beer Normal_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 ) 
+    show Aiko_With_Beer Normal_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 ) 
     
     kenji "Да оно же одинаковое, любое!"
     
-    show Aiko_With_Beer Surprised_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 ) 
+    show Aiko_With_Beer Surprised_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 ) 
     
     aiko "Ты чего думаешь, я в сортах пива — спец?"
     
-    hide Aiko_With_Beer with Dissolve( 0.2 )
-    show Aiko_With_Beer Irritated at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.2 )
+    hide Aiko_With_Beer with Dissolve( my_dissolve_02 )
+    show Aiko_With_Beer Irritated at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 )
     
     "Айко взяла из холодильника одну из банок. Мне показалось, что сейчас она небрежно кинет банку мне, настолько недовольное было у неё лицо. "
     
     image Kenji_1st_Day_Breakfast_Food_With_Beer = "./images/cg/DAY_01/02a_Kenji_1st_Day_Breakfast/Food_With_Beer.png" 
-    scene Kenji_1st_Day_Breakfast_Food_With_Beer with dissolve
+    scene Kenji_1st_Day_Breakfast_Food_With_Beer with Dissolve( my_dissolve_05 )
     
     "Но нет, она поставила пиво на подставку, забрала мою порцию супа и села напротив."
     
@@ -626,14 +624,14 @@ label start:
     "Я тоже не медлил и торопливо потягивал пиво из банки, закусывая салатом. "
     "Есть я старался быстро, но и аккуратно чтобы не испачкать стол и не раздосадовать Айко снова."
     
-    scene Day_Kenji_Home_Kitchen with dissolve
+    scene Day_Kenji_Home_Kitchen with Dissolve( my_dissolve_05 )
     
     "Когда банка опустела, я почувствовал, что достиг нужной кондиции и двинулся к кладовке."
     "Пора приниматься за дело!"
     
     #СЦЕНА - ДЕНЬ 1, ВЫНОС МУСОРА 
     
-    scene Day_Kenji_Home_Pantry_01 with dissolve
+    scene Day_Kenji_Home_Pantry_01 with Dissolve( my_dissolve_05 )
     play environment_sounds "./sounds/environment/Pantry_Day.mp3" fadein 1 fadeout 1
     
     "Всю левую половину кладовки, занимал стеллаж, который тётя Асука планировала освободить и устроить здесь гардероб. "
@@ -669,7 +667,7 @@ label start:
     
     play environment_sounds_dream "./sounds/environment/Pantry_Day_Dream.mp3" fadein 1 fadeout 1
     stop environment_sounds fadeout 1
-    scene TV_Heap_Dream with dissolve
+    scene TV_Heap_Dream with Dissolve( my_dissolve_05 )
     
     "Однажды в детстве я проходил с отцом мимо площадки для сбора мусора. Там возвышалась грандиозная пирамида из телевизоров всех форм и размеров."
     "«Дядя Сато помер, телемастер» - пояснил мне отец. "
@@ -678,7 +676,7 @@ label start:
     
     play environment_sounds "./sounds/environment/Pantry_Day.mp3" fadein 1 fadeout 1
     stop environment_sounds_dream fadeout 1
-    scene Day_Kenji_Home_Pantry_01 with dissolve
+    scene Day_Kenji_Home_Pantry_01 with Dissolve( my_dissolve_05 )
     
     "Тогда нам было весело, а мне, сейчас, не очень. Умер человек — и вся его жизнь оказалась на свалке. "
     "Чтобы напоследок, люди по этим вещам могли определить, кто же «помер» в этот раз. Сегодня, выносить чью-то жизнь на помойку предстояло мне."
@@ -695,52 +693,52 @@ label start:
     
     play environment_sounds_dream "./sounds/environment/Pantry_Day_Dream.mp3" fadein 1 fadeout 1
     stop environment_sounds fadeout 1
-    scene Evening_Watanabe_Bike_WorkShop_Dream with dissolve
+    scene Evening_Watanabe_Bike_WorkShop_Dream with Dissolve( my_dissolve_05 )
     
-    show Watanabe_01 Normal_Say with Dissolve( 0.1 )
+    show Watanabe_01 Normal_Say with Dissolve( my_dissolve_01 )
     
     watanabe "Он хотел сделать антенну. Из провода высоковольтной линии что проходит в саду."
 
-    show Watanabe_01 Normal_Silent with Dissolve( 0.2 )
+    show Watanabe_01 Normal_Silent with Dissolve( my_dissolve_02 )
     
     kenji "Он упал с нее?"
     
-    show Watanabe_01 Normal_Say with Dissolve( 0.2 )
+    show Watanabe_01 Normal_Say with Dissolve( my_dissolve_02 )
 
     watanabe "Да нет. Прихлопнуло его, когда свою антенну на фазу забрасывал."
     watanabe "Если бы упал, тогда, выжил бы, наверное. А так... Руки у него до костей обгорели."
     
-    show Watanabe_01 Normal_Silent with Dissolve( 0.2 )
+    show Watanabe_01 Normal_Silent with Dissolve( my_dissolve_02 )
 
     "Я не поверил. Подсоединить свою антенну к проводу под большим напряжением — это дикость! "
 
     kenji "Это больше похоже на самоубийство!"
     
-    show Watanabe_01 Normal_Say with Dissolve( 0.2 )
+    show Watanabe_01 Normal_Say with Dissolve( my_dissolve_02 )
     
     watanabe "Да что ты! Там всего тридцать пять тысяч вольт, это немного."
     
-    show Watanabe_01 Normal_Silent with Dissolve( 0.2 )
+    show Watanabe_01 Normal_Silent with Dissolve( my_dissolve_02 )
 
     "Немного?! Мне эта цифра показалась неправдоподобно большой. «Всего» тридцать пять тысяч вольт! "
     
-    show Watanabe_01 Normal_Say with Dissolve( 0.2 )
+    show Watanabe_01 Normal_Say with Dissolve( my_dissolve_02 )
 
     watanabe "Если бы у меня была такая возможность, я бы тоже набросил. А Кайоши, не рассчитал чего-то."
     watanabe "Может конденсаторы плохие ему попались, или ещё чего..."
     watanabe "Ты не подумай, Кендзи. Мы не сумасшедшие и не самоубийцы. Хотя конечно, авантюра очень рискованная."
     watanabe "Меня тоже один раз шандарахнуло, но, слава богу — выжил."
     
-    show Watanabe_01 Normal_Silent with Dissolve( 0.2 )
+    show Watanabe_01 Normal_Silent with Dissolve( my_dissolve_02 )
     
     kenji "Тоже «набросили»?"
     
-    hide Watanabe_01 with Dissolve( 0.1 )
-    show Watanabe_02 Normal_Silent with Dissolve( 0.1 )
+    hide Watanabe_01 with Dissolve( my_dissolve_01 )
+    show Watanabe_02 Normal_Silent with Dissolve( my_dissolve_01 )
 
     "Дядя Ватанабэ улыбнулся."
     
-    show Watanabe_02 Normal_Say with Dissolve( 0.2 )
+    show Watanabe_02 Normal_Say with Dissolve( my_dissolve_02 )
 
     watanabe "Да нет! На работе. Я же электрик по призванию. Но там ничего интересного, совершенно бытовая ситуация"
     watanabe "С тех пор пальцы на правой руке еле двигаются. И вообще, что-то вроде контузии получил. "
@@ -750,25 +748,25 @@ label start:
     
     play environment_sounds "./sounds/environment/Pantry_Day.mp3" fadein 1 fadeout 1
     stop environment_sounds_dream fadeout 1
-    scene Day_Kenji_Home_Pantry_01 with dissolve
+    scene Day_Kenji_Home_Pantry_01 with Dissolve( my_dissolve_05 )
     
     "Я тряхнул головой отгоняя воспоминания. "
     "Что-то залип. Пора и за работу!  "
     
-    show Day_Kenji_Home_Pantry_Blink_01_Animated with dissolve
+    show Day_Kenji_Home_Pantry_Blink_01_Animated with Dissolve( my_dissolve_05 )
     
     "Я решил сразу взяться за самое трудное — два металлических «чемоданчика», покрытые жёлтой эмалью. "
     "То что они из металла — видно по потёртым краям, где из-под краски выглядывала потемневшая сталь. "
     "Причём металл достойной толщины - судя по весу каждого. Один был значительно тяжелее другого, на его передней панели красовались чёрные стрелочные приборы, да несколько тумблеров. "
     
-    hide Day_Kenji_Home_Pantry_Blink_01_Animated with Dissolve( 0.2 )
-    show Day_Kenji_Home_Pantry_Blink_02_Animated with Dissolve( 0.2 )
+    hide Day_Kenji_Home_Pantry_Blink_01_Animated with Dissolve( my_dissolve_02 )
+    show Day_Kenji_Home_Pantry_Blink_02_Animated with Dissolve( my_dissolve_02 )
     
     "Второй — легче. Но его приборная панель была закрыта крышкой, с замками как на армейской фляге. "
     "Для начала унесу тот, что легче — это будет разминка."
     
     play environment_sounds "./sounds/environment/City_Suburb_Day.mp3" fadein 2 fadeout 1
-    scene Outdoor_Day_Kenji_Home with dissolve
+    scene Outdoor_Day_Kenji_Home with Dissolve( my_dissolve_05 )
     
     "На улице был типичный июньский полдень. Ужасно яркое солнце, голубое небо и белоснежные облака. Все как обычно. "
     "Дождей за последнюю неделю не наблюдалось и к зною добавился стойкий запах пыли, который перебивал теперь аромат цветов и прочей зелени. "
@@ -779,142 +777,174 @@ label start:
     "Попробовал нести его под мышкой — и тут не вышло, рука моментально вспотела и «чемоданчик» норовил выскользнуть из рук. "
     "Я схватил его обеими руками и понёс, прижимая к груди, но и так было не очень сподручно. "
     
-    scene Outdoor_Day_Street_03 with dissolve
+    scene Outdoor_Day_Street_03 with Dissolve( my_dissolve_05 )
     
     "Пройдя один квартал я сменил тактику, и решил взять свой снаряд за его родные, заводские ручки — покрытые каким-то плотным, зелёным материалом. "
     "Постепенно стали ныть плечи и спина, а также зудеть нога в том месте где она тёрлась о край прибора."
     
-    scene Day_Trash_Place with dissolve
+    scene Day_Trash_Place with Dissolve( my_dissolve_05 )
+    play sound "./sounds/sounds/Metal_Item_Drag_And_Fall.mp3"
     
     "Последние несколько метров я буквально волочил «чемоданчик» по асфальту оставляя блестящий след с чешуйками жёлтой краски. "
     "Похоже я сегодня был первым посетителем. Никакой электроники до меня никто не выбросил. Площадка для мусора была пуста"
+    
+    #Мини ЦГ - рация на асфальте
+    image Radio_Set_On_Ground_Closed = "./images/cg/DAY_01/03a_Kenji_Moves_Trash/Radio_Set_On_Ground_Closed/Radio_Set_On_Ground_Closed.png"
+    image Radio_Set_On_Ground_Closed_Moved:
+        contains:
+            "Radio_Set_On_Ground_Closed"
+            xpos 400
+            pause 0.7
+            ease 5.0 xpos 750
+    
+    image Radio_Set_On_Ground_Closed_border_01_right_moved:
+        contains:
+            "border_01_right"
+            xpos 900
+    
+    image Radio_Set_On_Ground_Closed_border_01_right_mask_moved:
+        contains:
+            "border_01_right_mask"
+            xpos 900
+    
+    image Radio_Set_On_Ground_Closed_Masked = AlphaMask( "Radio_Set_On_Ground_Closed_Moved", "Radio_Set_On_Ground_Closed_border_01_right_mask_moved" )
+    
+    image Radio_Set_On_Ground_Closed_With_Border_01:
+        contains:
+            "Radio_Set_On_Ground_Closed_Masked"
+        contains:
+            "Radio_Set_On_Ground_Closed_border_01_right_moved"
+    ##
+    
+    show Radio_Set_On_Ground_Closed_With_Border_01 with Dissolve( my_dissolve_05 )
+    
     "Теперь здесь лежал только мой прибор."
     "Я пнул его напоследок и отправился домой."
     "На обратном пути мне так же никто не встретился - довольно удачный выдался денёк! "
     
     play environment_sounds "./sounds/environment/Kitchen.mp3" fadein 1 fadeout 1
-    scene Day_Kenji_Home_Kitchen with dissolve
+    scene Day_Kenji_Home_Kitchen with Dissolve( my_dissolve_05 )
     
     "Я ворвался в дом, распахнул холодильник и немедленно выпил холодного пива. Ох, похоже пол банки выдул за несколько глотков! "
     
-    show Aiko_School_Uniform_01 Angry_Silent with Dissolve( 0.2 )
+    show Aiko_School_Uniform_01 Angry_Silent with Dissolve( my_dissolve_02 )
     
     "Айко была на кухне. Глядя на меня она нахмурилась, но ничего не сказала. "
     "Я же улыбнулся во весь рот и продемонстрировал сестре оттопыренный вверх большой палец. "
     
-    show Aiko_School_Uniform_01 Shy_Silent with Dissolve( 0.2 )
+    show Aiko_School_Uniform_01 Shy_Silent with Dissolve( my_dissolve_02 )
     
     "От моего жеста она почему-то смутилась, а я только теперь заметил, что на ней надета летняя школьная форма."
     
     kenji "Ты что, в школу собралась? Разве не каникулы?"
     
-    hide Aiko_School_Uniform_01 Shy_Silent with Dissolve( 0.1 )
-    show Aiko_School_Uniform_02 Normal_Say with Dissolve( 0.1 )
+    hide Aiko_School_Uniform_01 Shy_Silent with Dissolve( my_dissolve_01 )
+    show Aiko_School_Uniform_02 Normal_Say with Dissolve( my_dissolve_01 )
     
     aiko "Каникулы! Но я иду в школьный бассейн."
     
-    show Aiko_School_Uniform_02 Normal_Silent with Dissolve( 0.2 )
+    show Aiko_School_Uniform_02 Normal_Silent with Dissolve( my_dissolve_02 )
     
     "Бассейн! Я вспомнил о том, что на земле существуют такие замечательные места. Ах! Я бы сейчас с удовольствием окунулся в прохладную водичку. "
     "И плевать что там народу как сельдей в бочке. Настроение у меня теперь самое располагающее, никакой невроз от тесного общения с людьми не страшен. "
     "Правда в таком состоянии, в общественный бассейн меня не пустят. Я вздохнул и отглотнул еще пива."
     
-    show Aiko_School_Uniform_02 Normal_Say with Dissolve( 0.2 )
+    show Aiko_School_Uniform_02 Normal_Say with Dissolve( my_dissolve_02 )
     
     aiko "Чего вздыхаешь?"
     
-    show Aiko_School_Uniform_02 Normal_Silent with Dissolve( 0.2 )
+    show Aiko_School_Uniform_02 Normal_Silent with Dissolve( my_dissolve_02 )
     
     kenji "Разве не понятно? В такую то жару в бассейне поплавать в самый раз!"
     
-    show Aiko_School_Uniform_02 Surprised_Say with Dissolve( 0.2 )
+    show Aiko_School_Uniform_02 Surprised_Say with Dissolve( my_dissolve_02 )
     
     aiko "В нашем школьном?"
     
-    show Aiko_School_Uniform_02 Surprised_Silent with Dissolve( 0.2 )
+    show Aiko_School_Uniform_02 Surprised_Silent with Dissolve( my_dissolve_02 )
     
     kenji "Да какая разница. Но сама понимаешь, народа там — тьма."
     
-    show Aiko_School_Uniform_02 Normal_Silent with Dissolve( 0.2 )
+    show Aiko_School_Uniform_02 Normal_Silent with Dissolve( my_dissolve_02 )
     
     "Айко пожала плечами, и стала чуть серьёзнее. Она знала, чего я боюсь."
     
-    show Aiko_School_Uniform_02 Normal_Say with Dissolve( 0.2 )
+    show Aiko_School_Uniform_02 Normal_Say with Dissolve( my_dissolve_02 )
 
     aiko "Можешь съездить к морю. Где-то да найдёшь пустынный пляж."
     
-    show Aiko_School_Uniform_02 Normal_Silent with Dissolve( 0.2 )
+    show Aiko_School_Uniform_02 Normal_Silent with Dissolve( my_dissolve_02 )
     
     kenji "К морю... да... Но тогда придётся трястись в поезде час или два. В переполненном поезде, Айко!"
     
-    show Aiko_School_Uniform_02 Mocking_Silent with Dissolve( 0.2 )
+    show Aiko_School_Uniform_02 Mocking_Silent with Dissolve( my_dissolve_02 )
     
     "На лице Айко появилась ухмылка."
     
-    show Aiko_School_Uniform_02 Mocking_Say with Dissolve( 0.2 )
+    show Aiko_School_Uniform_02 Mocking_Say with Dissolve( my_dissolve_02 )
     
     aiko "Ты же принял «лекарство»."
     
-    show Aiko_School_Uniform_02 Mocking_Silent with Dissolve( 0.2 )
+    show Aiko_School_Uniform_02 Mocking_Silent with Dissolve( my_dissolve_02 )
     
     kenji "С этим лекарством, сама понимаешь, в воду лезть не стоит. Тем более — в одиночку."
     
-    #hide Aiko_School_Uniform_02 with Dissolve( 0.1 )
-    show Aiko_School_Uniform_02 Normal_Silent at Move( ( 400, 620 ), ( 400, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    #hide Aiko_School_Uniform_02 with Dissolve( my_dissolve_01 )
+    show Aiko_School_Uniform_02 Normal_Silent at Move( ( 400, 620 ), ( 400, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     "Айко опять пожала плечами и направилась к выходу. Дескать — не мои проблемы."
     
     kenji "Постой Айко! А может быть, завтра, вместе съездим на море? И там найдём этот самый «пустынный» пляж? Я не могу один, вдруг я начну тонуть?"
     
-    show Aiko_School_Uniform_02 Surprised_Say at Move( ( 400, 620 ), ( 400, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    show Aiko_School_Uniform_02 Surprised_Say at Move( ( 400, 620 ), ( 400, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     aiko "Думаешь я тебя спасу?"
     
-    show Aiko_School_Uniform_02 Surprised_Silent at Move( ( 400, 620 ), ( 400, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    show Aiko_School_Uniform_02 Surprised_Silent at Move( ( 400, 620 ), ( 400, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     kenji "Ты же член плавательного кружка!"
     
-    hide Aiko_School_Uniform_02 with Dissolve( 0.1 )
-    show Aiko_School_Uniform_01 Angry_Say at Move( ( 400, 620 ), ( 400, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    hide Aiko_School_Uniform_02 with Dissolve( my_dissolve_01 )
+    show Aiko_School_Uniform_01 Angry_Say at Move( ( 400, 620 ), ( 400, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     aiko "А ты опять напьёшься?"
     
-    show Aiko_School_Uniform_01 Angry_Silent at Move( ( 400, 620 ), ( 400, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    show Aiko_School_Uniform_01 Angry_Silent at Move( ( 400, 620 ), ( 400, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     kenji "Что значит опять? Это же не ради удовольствия, Айко!"
     
-    show Aiko_School_Uniform_01 Angry_Say at Move( ( 400, 620 ), ( 400, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    show Aiko_School_Uniform_01 Angry_Say at Move( ( 400, 620 ), ( 400, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     aiko "В таком случае - даже не мечтай!"
     
-    show Aiko_School_Uniform_01 Angry_Silent at Move( ( 400, 620 ), ( 400, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    show Aiko_School_Uniform_01 Angry_Silent at Move( ( 400, 620 ), ( 400, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     kenji "Ну... Айко! Хочешь? Я встану на колени перед тобой, хочешь?"
     
-    hide Aiko_School_Uniform_01 with Dissolve( 0.1 )
-    show Aiko_School_Uniform_02 Scared_Silent at Move( ( 400, 620 ), ( 400, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    hide Aiko_School_Uniform_01 with Dissolve( my_dissolve_01 )
+    show Aiko_School_Uniform_02 Scared_Silent at Move( ( 400, 620 ), ( 400, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     "По лицу Айко пробежала гримасса испуга и отвращения."
     
-    show Aiko_School_Uniform_02 Scared_Say at Move( ( 400, 620 ), ( 400, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    show Aiko_School_Uniform_02 Scared_Say at Move( ( 400, 620 ), ( 400, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     aiko "НЕТ!"
     aiko "То есть да. Уговорил! Завтра поедем, но только без этого!"
     
-    hide Aiko_School_Uniform_02 with Dissolve( 0.1 )
+    hide Aiko_School_Uniform_02 with Dissolve( my_dissolve_01 )
     
     "Айко в мгновение ока изчезла, оставив меня на кухне в одиночестве."
     "Как же мне повезло с сестренкой! Мысль о предстоящем отдыхе подбодрила меня и я с энтузиазмом вернулся к работе."
     
     play environment_sounds "./sounds/environment/Pantry_Day.mp3" fadein 1 fadeout 1
-    scene Day_Kenji_Home_Pantry_02 with dissolve
-    show Day_Kenji_Home_Pantry_Blink_03_Animated with Dissolve( 0.2 )
+    scene Day_Kenji_Home_Pantry_02 with Dissolve( my_dissolve_05 )
+    show Day_Kenji_Home_Pantry_Blink_03_Animated with Dissolve( my_dissolve_02 )
     
     "В следующий свой поход я решил не брать тяжелого собрата желтого чемоданчика. Я оставил его на потом."
     "Я взял с собой моток провода, который лежал на верхней полке."
     
     play environment_sounds "./sounds/environment/City_Suburb_Day.mp3" fadein 2 fadeout 2
-    scene Day_Trash_Place with dissolve
+    scene Day_Trash_Place with Dissolve( my_dissolve_05 )
     
     #Мини-ЦГ вентилятор Касуми 01
     image Kasumi_Fan_01 = "./images/cg/DAY_01/03a_Kenji_Moves_Trash/Kasumi_Fan/Kasumi_Fan_01.png"
@@ -942,7 +972,7 @@ label start:
             "Kasumi_Fan_01_border_01_left_moved"
     ##
     
-    show Kasumi_Fan_01_With_Border_01 with Dissolve( 0.2 )
+    show Kasumi_Fan_01_With_Border_01 with Dissolve( my_dissolve_02 )
     
     "За время моего отсутствия на площадке появился напольный вентилятор с синими, разлохмаченными от старости лопастями и пожелтевшим пластиком корпуса. "
     
@@ -974,12 +1004,12 @@ label start:
             "Radio_Set_On_Ground_border_01_right_moved"
     ##
     
-    show Radio_Set_On_Ground_With_Border_01 with dissolve
+    show Radio_Set_On_Ground_With_Border_01 with Dissolve( my_dissolve_05 )
     
     "А «мой чемоданчик» похоже был рад знакомству, он приветливо снял шляпу!"
     "Не знаю зачем это кому-то понадобилось, но крышка на нем была вскрыта. "
     
-    hide Kasumi_Fan_01_With_Border_01 with Dissolve( 0.1 )
+    hide Kasumi_Fan_01_With_Border_01 with Dissolve( my_dissolve_01 )
     
     "Под ней оказалась сложная приборная панель — десятки всевозможных крутилок, тумблеров, циферблатов со стрелками и хитрых разъёмов. "
     "Может быть крышка спала сама? Прибор нагрелся под солнцем и она слетела?"
@@ -1013,10 +1043,11 @@ label start:
             "Kasumi_Fan_02_border_01_left_moved"
     ##
     
-    hide Radio_Set_On_Ground_With_Border_01 with Dissolve( 0.2 )
-    show Kasumi_Fan_02_With_Border_01 with Dissolve( 0.2 )
+    hide Radio_Set_On_Ground_With_Border_01 with Dissolve( my_dissolve_02 )
+    show Kasumi_Fan_02_With_Border_01 with Dissolve( my_dissolve_02 )
     
-    "Обычный вентилятор, видно что старый, наверняка ему лет двадцать, не меньше. Сейчас таких не делают. Сквозь запах пыльной улицы, моё обоняние уловило «аромат» горелого пластика и сигарет. "
+    "Обычный вентилятор, видно что старый, наверняка ему лет двадцать, не меньше. Сейчас таких не делают."
+    "Сквозь запах пыльной улицы, моё обоняние уловило «аромат» горелого пластика и сигарет. "
     "Да и весь этот жёлтый налёт на нем, явно сигаретная копоть, налипшая за годы эксплуатации. "
     "Стало немного противно, и в то же время в памяти всколыхнулись воспоминания былых лет."
     
@@ -1030,7 +1061,7 @@ label start:
     
     play environment_sounds_dream "./sounds/environment/City_Suburb_Day_Dream.mp3" fadein 1
     stop environment_sounds fadeout 2
-    scene smocking_old_man_dream with dissolve
+    scene smocking_old_man_dream with Dissolve( my_dissolve_05 )
     
     "Я вспомнил своего, давно умершего деда, который всю жизнь смолил какие-то американские сигареты. "
     "Весь его дом, и каждая вещь в нем накрепко пропитались застарелым запахом сигаретного дыма."
@@ -1039,7 +1070,7 @@ label start:
     
     play environment_sounds "./sounds/environment/City_Suburb_Day.mp3" fadein 2
     stop environment_sounds_dream fadeout 2
-    scene Day_Trash_Place with dissolve
+    scene Day_Trash_Place with Dissolve( my_dissolve_05 )
     
     "Я отшагнул подальше от вентилятора и посмотрел на свою левую ладонь."
     
@@ -1048,12 +1079,12 @@ label start:
     "Я поспешил домой. Надо скорее вымыть руки!"
     
     play environment_sounds "./sounds/environment/Pantry_Day.mp3" fadein 1 fadeout 1
-    scene Day_Kenji_Home_Pantry_Other_03 with dissolve
-    show Day_Kenji_Home_Pantry_Blink_04_Animated with Dissolve( 0.2 )
+    scene Day_Kenji_Home_Pantry_Other_03 with Dissolve( my_dissolve_05 )
+    show Day_Kenji_Home_Pantry_Blink_04_Animated with Dissolve( my_dissolve_02 )
     
     "В свой третий поход до мусорки я взял два стареньких радиоприёмника, хотя они были довольно громоздкие — но в то же время совсем не тяжёлые."
     
-    scene Day_Kenji_Home_Pantry_Other_04 with dissolve
+    scene Day_Kenji_Home_Pantry_Other_04 with Dissolve( my_dissolve_05 )
 
     kenji "Остальное, думаю, можно оставить и на потом"
     kenji "За день сделано достаточно! Пожалуй еще одну вещь и довольно!"
@@ -1063,7 +1094,7 @@ label start:
     "В последнем и трудном походе мне понадобятся обе руки!"
     
     play environment_sounds "./sounds/environment/City_Suburb_Day.mp3" fadein 2 fadeout 1
-    scene Day_Trash_Place with dissolve
+    scene Day_Trash_Place with Dissolve( my_dissolve_05 )
     
     "Поход был действительно трудный! "
     "Когда я наконец дотащил свою ношу до места — у меня ужасно ныли плечи и спина, а в мокрые от пота ладони врезался узор тканевых ручек. "
@@ -1097,13 +1128,13 @@ label start:
             "Radio_Set_Power_Supply_On_ground_border_01_right_moved"
     ##
     
-    show Radio_Set_Power_Supply_On_ground_With_Border_01 with Dissolve( 0.2 )
+    show Radio_Set_Power_Supply_On_ground_With_Border_01 with Dissolve( my_dissolve_02 )
     
     "Прибор, тоже потерял товарный вид. Дело в том, что бока его были не гладкие, а состояли из сотен мелких рёбер — пластин. "
     "Видимо при работе прибор грелся, и такая конструкция была нужна, для охлаждения. Ребра теперь были все погнуты, особенно те что по краям. "
     "В просветы между ними забилась трава, земля и частички асфальта. Один из циферблатов на передней панели — треснул. "
     
-    hide Radio_Set_Power_Supply_On_ground_With_Border_01 with dissolve
+    hide Radio_Set_Power_Supply_On_ground_With_Border_01 with Dissolve( my_dissolve_05 )
     
     "Но мне, конечно, было наплевать. Не на выставку же нёс, в самом деле!"
     
@@ -1145,7 +1176,7 @@ label start:
         contains:
             "Kasumi_Walks_border_01_right_moved"
     ##
-    show Kasumi_Walks_With_Border_01 with Dissolve( 0.2 )
+    show Kasumi_Walks_With_Border_01 with Dissolve( my_dissolve_02 )
     
     "Мне навстречу шла девушка, и катила перед собой маленькую тележку для вещей. "
     "Тележка была пуста. "
@@ -1153,7 +1184,7 @@ label start:
     "А такую маленькую — вообще, лучше было бы сложить, взять подмышку и идти так. "
     "Внезапно девушка остановилась, отвернулась к обочине дороги и замерла."
     
-    hide Kasumi_Walks_With_Border_01 with Dissolve( 0.1 )
+    hide Kasumi_Walks_With_Border_01 with Dissolve( my_dissolve_01 )
     
     #Мини ЦГ - Касуми стоит с тележкой
     image Kasumi_And_Interesting_Wall = "./images/cg/DAY_01/04a_Trash_Place_Meeting/Kasumi_And_Interesting_Wall/Kasumi_And_Interesting_Wall.png"
@@ -1183,7 +1214,7 @@ label start:
         contains:
             "border_01_left_moved"
     
-    show Kasumi_And_Interesting_Wall_With_Border_01 with Dissolve( 0.2 )
+    show Kasumi_And_Interesting_Wall_With_Border_01 with Dissolve( my_dissolve_02 )
     ##
     
     "Не меньше минуты она стояла перед каменной кладкой, словно рассматривала интереснейшую картину."
@@ -1191,15 +1222,15 @@ label start:
     "Когда я проходил это место, то не приметил ничего необычного."
     "Но может быть, девчонке этой надо на площадку для мусора? Я её стесняю, и поэтому она так внезапно принялась изучать эту стену?"
     
-    hide Kasumi_And_Interesting_Wall_With_Border_01 with Dissolve( 0.1 )
-    show Kasumi_Walks_With_Border_01 with Dissolve( 0.2 )
+    hide Kasumi_And_Interesting_Wall_With_Border_01 with Dissolve( my_dissolve_01 )
+    show Kasumi_Walks_With_Border_01 with Dissolve( my_dissolve_02 )
     
     "Как только я подумал об этом, школьница отвернулась от стены и продолжила свой путь в мою сторону. "
     "Обычно я в таких случаях перехожу на другую сторону улицы или вообще стараюсь побыстрее скрыться с глаз встречного прохожего. "
     "Но в этот раз повышенная концентрация «лекарства» позволила мне и далее с любопытством наблюдать за незнакомкой."
     "Привычный страх перед людьми на время оставил меня полностью."
     
-    hide Kasumi_Walks_With_Border_01 with Dissolve( 0.1 )
+    hide Kasumi_Walks_With_Border_01 with Dissolve( my_dissolve_01 )
     
     "Девушка наконец достигла площадки для сбора мусора. И находилась метрах в пяти от меня."
     "Она остановилась и отвесила мне учтивый поклон! Я бы даже сказал - чересчур учтивый!"
@@ -1231,14 +1262,14 @@ label start:
         contains:
             "border_01_left_moved"
     
-    show On_All_Fours_With_Border_01 with Dissolve( 0.2 )
+    show On_All_Fours_With_Border_01 with Dissolve( my_dissolve_02 )
     ##
     
     "Ее ладони коснулись асфальта, и она встала на четвереньки. "
     "Если честно, мне захотелось воскликнуть от удивления, но я продолжил стоять как вкопанный, только глаза мои опускались все ниже. "
     "Её руки замелькали по асфальту."
     
-    hide On_All_Fours_With_Border_01 with Dissolve( 0.1 )
+    hide On_All_Fours_With_Border_01 with Dissolve( my_dissolve_01 )
     
     #Мини ЦГ - Руки Касуми на штанине Кендзи
     image Kasumi_Hands_On_Kenji_Leg = "./images/cg/DAY_01/04a_Trash_Place_Meeting/Kasumi_Hands_On_Kenji_Leg/Kasumi_Hands_On_Kenji_Leg.png"
@@ -1268,14 +1299,15 @@ label start:
         contains:
             "Kasumi_Hands_On_Kenji_Leg_border_01_right_moved"
     
-    show Kasumi_Hands_On_Kenji_Leg_With_Border_01 with Dissolve( 0.2 )
+    show Kasumi_Hands_On_Kenji_Leg_With_Border_01 with Dissolve( my_dissolve_02 )
     ##
     
     "А через мгновение принялись ощупывать жёлтый чемоданчик и далее - мой кроссовок, штанину..."
     
     kenji "Эй! Ты чего творишь?"
     
-    hide Kasumi_Hands_On_Kenji_Leg_With_Border_01 with Dissolve( 0.1 )
+    hide Kasumi_Hands_On_Kenji_Leg_With_Border_01 with Dissolve( my_dissolve_01 )
+    play sound "./sounds/sounds/Body_Fall_On_Ground.mp3"
     show empty_image with vpunch #Трясем экран
     
     "..."
@@ -1306,22 +1338,22 @@ label start:
         contains:
             "Kasumi_Fells_border_01_left_moved"
     
-    show Kasumi_Fells_With_Border_01 with dissolve
+    show Kasumi_Fells_With_Border_01 with Dissolve( my_dissolve_05 )
     ##
 
     "Руки девушки отцепились от моих брюк, а сама она отпрянула так стремительно что не удержалась на ногах и села на асфальт."
     "Но не успел я моргнуть, как она оправилась и встала."
     
-    hide Kasumi_Fells_With_Border_01 with Dissolve( 0.1 )
-    show kasumi_01 Normal_Say with Dissolve( 0.2 )
+    hide Kasumi_Fells_With_Border_01 with Dissolve( my_dissolve_01 )
+    show kasumi_01 Normal_Say with Dissolve( my_dissolve_02 )
     
     blind_girl "Простите! Я не заметила вас!"
     
-    show kasumi_01 Normal_Silent with Dissolve( 0.2 )
+    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_02 )
     
     kenji "Не заметила?!"
     
-    show kasumi_01 Normal_Say with Dissolve( 0.2 )
+    show kasumi_01 Normal_Say with Dissolve( my_dissolve_02 )
     
     blind_girl "Да, я ничего не вижу."
     
@@ -1354,9 +1386,9 @@ label start:
             "DAY_01_Kasumi_Big_Face_border_01_left_moved"
     ##
     
-    hide kasumi_01 Normal_Say with Dissolve( 0.1 )
-    show kasumi_01 Normal_Silent at Move( ( 1500, 600 ), ( 1500, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
-    show DAY_01_Kasumi_Big_Face_With_Border_01 with dissolve
+    hide kasumi_01 Normal_Say with Dissolve( my_dissolve_01 )
+    show kasumi_01 Normal_Silent at Move( ( 1500, 600 ), ( 1500, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show DAY_01_Kasumi_Big_Face_With_Border_01 with Dissolve( my_dissolve_05 )
     
     "Я взглянул на лицо девушки, и холодок пробежал у меня по спине."
     "Солнце ярко высвечивало её лицо и искрилось на прядях волос. "
@@ -1364,9 +1396,9 @@ label start:
     "Этот контраст расширенных, как у кошки в ночи, зрачков и яркого солнца, бьющего прямо в глаза — напугал меня. "
     "Девушка была слепой."
     
-    hide DAY_01_Kasumi_Big_Face_With_Border_01 with Dissolve( 0.2 )
-    hide kasumi_01 Normal_Silent with Dissolve( 0.1 )
-    show kasumi_01 Normal_Silent with Dissolve( 0.1 )
+    hide DAY_01_Kasumi_Big_Face_With_Border_01 with Dissolve( my_dissolve_02 )
+    hide kasumi_01 Normal_Silent with Dissolve( my_dissolve_01 )
+    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_01 )
     
     kenji "Извини..."
 
@@ -1375,24 +1407,24 @@ label start:
 
     kenji "Извини!"
     
-    show kasumi_01 Concerned_Silent with Dissolve( 0.2 )
+    show kasumi_01 Concerned_Silent with Dissolve( my_dissolve_02 )
     
     "Девушка встревожилась."
     
-    show kasumi_01 Concerned_Say with Dissolve( 0.2 )
+    show kasumi_01 Concerned_Say with Dissolve( my_dissolve_02 )
     
     blind_girl "Что? Почему? За что?"
     
-    show kasumi_01 Concerned_Silent with Dissolve( 0.2 )
+    show kasumi_01 Concerned_Silent with Dissolve( my_dissolve_02 )
     
     kenji "Ну... Я... Не думал что ты..."
     
-    show kasumi_01 Normal_Say with Dissolve( 0.2 )
+    show kasumi_01 Normal_Say with Dissolve( my_dissolve_02 )
 
     blind_girl "Всё нормально! Хорошо что я не налетела на вас."
     blind_girl "Вас совсем не было слышно и я думала что тут никого нет."
     
-    show kasumi_01 Normal_Silent with Dissolve( 0.2 )
+    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_02 )
     
     "Наверное, слепые люди полагаются на слух. Нет. Вовсе не наверное, а точно. На что же ещё? Может на обоняние? "
     "Тут словно нужную часть мозга мне врубили и я почувствовал как от слепой девушки просто несёт запахом сигарет. "
@@ -1436,39 +1468,39 @@ label start:
             "DAY_01_Kasumi_Big_Face_Mustache_border_01_left_moved"
     ##
     
-    show DAY_01_Kasumi_Big_Face_Mustache_With_Border_01 with Dissolve( 0.2 )
+    show DAY_01_Kasumi_Big_Face_Mustache_With_Border_01 with Dissolve( my_dissolve_02 )
     
     "И ещё одна примечательная деталь — белый ободок с проводками, на кончиках которых блестели маленькие шарики из фольги."
     "С этим аксессуаром, голова девушки напоминала муравья или инопланетянина из старых черно-белых фильмов."
     "И зачем ей эти «усы»?"
     
-    hide DAY_01_Kasumi_Big_Face_Mustache_With_Border_01 with Dissolve( 0.2 )
+    hide DAY_01_Kasumi_Big_Face_Mustache_With_Border_01 with Dissolve( my_dissolve_02 )
 
     "Всё в этой девушке было странным. Её пугающие, невидящие глаза и этот странный ободок на голове."
     "И стойкий запах сигаретного дыма."
     
-    show kasumi_01 Normal_Say with Dissolve( 0.2 )
+    show kasumi_01 Normal_Say with Dissolve( my_dissolve_02 )
     
     blind_girl "Получается эта рация ваша?"
     
-    show kasumi_01 Normal_Silent with Dissolve( 0.2 )
+    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_02 )
     
     "Спросила девушка, а её ладонь указала в сторону моих ног."
     
-    show Radio_Set_On_Ground_With_Border_01 with dissolve
+    show Radio_Set_On_Ground_With_Border_01 with Dissolve( my_dissolve_05 )
     
     kenji "Так это рация?"
     
     "Я удивился, при слове рация мне представлялось маленькое, величиной с мобильный телефон — устройство. "
     "А такая громадина, и тоже — рация. Ну надо же!"
     
-    hide Radio_Set_On_Ground_With_Border_01 with Dissolve( 0.1 )
+    hide Radio_Set_On_Ground_With_Border_01 with Dissolve( my_dissolve_01 )
     
-    show kasumi_01 Normal_Say with Dissolve( 0.2 )
+    show kasumi_01 Normal_Say with Dissolve( my_dissolve_02 )
     
     blind_girl "Ну да. Военная рация, очень хорошая, американская, мощная. В конце шестидесятых годов выпускалась. Ещё на германиевых транзисторах!"
     
-    show kasumi_01 Normal_Silent with Dissolve( 0.2 )
+    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_02 )
     
     "Германиевых? Значит ли это, что транзисторы были из Германии? Какое странное словосочетание. "
     "Интересно, а «япониевый транзистор», есть?"
@@ -1477,20 +1509,20 @@ label start:
     kenji "Я просто, вещи его на свалку выношу. Он видимо радио увлекался, или что-то в этом роде."
     kenji "Сам я в этих делах ничего не смыслю."
     
-    show kasumi_01 Normal_Say with Dissolve( 0.2 )
+    show kasumi_01 Normal_Say with Dissolve( my_dissolve_02 )
     
     blind_girl "А..."
     blind_girl "Увлекался?"
     
-    show kasumi_01 Normal_Silent with Dissolve( 0.2 )
+    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_02 )
     
     kenji "Ну да. Умер он. Но очень давно. А сейчас понадобилось расчистить немного места в доме. Вот и выбрасываем, и рацию эту тоже."
     
-    show kasumi_01 Normal_Say with Dissolve( 0.2 )
+    show kasumi_01 Normal_Say with Dissolve( my_dissolve_02 )
     
     blind_girl "А... А я думала, вы наоборот. Пришли сюда за ней."
     
-    show kasumi_01 Normal_Silent with Dissolve( 0.2 )
+    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_02 )
     
     "Теперь я понял, зачем девушке нужна была тележка. И почему была вскрыта крышка на «рации». "
     "Похоже вещь эта её заинтересовала, и она собралась её забрать себе."
@@ -1498,11 +1530,11 @@ label start:
     kenji "Нет! Мне этот хлам нафиг не сдался. Если хочешь забрать — бери конечно."
     kenji "Только, как же ты её унесёшь? Думаешь сможешь? Она страшно тяжёлая! И чего она столько весит?"
     
-    show kasumi_01 Normal_Say with Dissolve( 0.2 )
+    show kasumi_01 Normal_Say with Dissolve( my_dissolve_02 )
     
     blind_girl "Вещи тех лет — все такие громоздкие. А это ещё и военная, там все внутри с многократным запасом прочности!"
     
-    hide kasumi_01 Normal_Say with Dissolve( 0.2 )
+    hide kasumi_01 Normal_Say with Dissolve( my_dissolve_02 )
     
     "С этими словами, она присела и потянула руки в сторону рации. Я поспешно убрал ногу и отступил на шаг. "
     "Девушка ощупала боковины прибора, взялась за тканевую ручку и попыталась встать. "
@@ -1535,7 +1567,8 @@ label start:
             "Kasumi_Lifting_Up_RadioSet_border_01_right_moved"
     ##
     
-    show Kasumi_Lifting_Up_RadioSet_With_Border_01 with Dissolve( 0.2 )
+    play sound "./sounds/sounds/Submarine_Creaking.mp3"
+    show Kasumi_Lifting_Up_RadioSet_With_Border_01 with Dissolve( my_dissolve_02 )
     
     "Послышался скрежет металла об асфальт, прибор поднялся но совсем чуть-чуть, сантиметров на пять. "
     "Моя случайная знакомая тянула лямку прибора изо всех сил, но такая тяжесть ей была не по зубам."
@@ -1544,34 +1577,36 @@ label start:
 
     "Сказал я, встал с другой стороны и взял прибор за другую ручку. "
     
-    hide Kasumi_Lifting_Up_RadioSet_With_Border_01 with Dissolve( 0.1 )
+    stop sound fadeout 0.5
+    hide Kasumi_Lifting_Up_RadioSet_With_Border_01 with Dissolve( my_dissolve_01 )
+    play sound "./sounds/sounds/Metal_Item_Fall.mp3"
     show empty_image with vpunch #Трясем экран 
     
     "Но в тот же момент, руки девушки разжались и прибор глухо хлопнулся на землю. "
     
-    show kasumi_01 Surprised_Silent with Dissolve( 0.2 )
+    show kasumi_01 Surprised_Silent with Dissolve( my_dissolve_02 )
     
     "А девушка, задыхаясь выпалила."
     
-    show kasumi_01 Surprised_Say with Dissolve( 0.2 )
+    show kasumi_01 Surprised_Say with Dissolve( my_dissolve_02 )
     
     blind_girl "И в правду, очень тяжёлый!"
     
-    show kasumi_01 Surprised_Silent with Dissolve( 0.2 )
+    show kasumi_01 Surprised_Silent with Dissolve( my_dissolve_02 )
 
     "Я вспомнил о банке пива в моей руке, и отглотнул немного. А после - сказал."
 
     kenji "Давай помогу погрузить эту штуковину на тележку. Похоже, тебе её не поднять."
     
-    show kasumi_01 Normal_Silent with Dissolve( 0.2 )
+    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_02 )
     
     "Она кивнула."
     
-    show kasumi_01 Normal_Say with Dissolve( 0.2 )
+    show kasumi_01 Normal_Say with Dissolve( my_dissolve_02 )
 
     blind_girl "Если.. Если вам не трудно..."
     
-    show kasumi_01 Normal_Silent with Dissolve( 0.2 )
+    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_02 )
     
     #Мини ЦГ - тележка Касуми (пустая)
     image Kasumi_Cart = "./images/cg/DAY_01/04a_Trash_Place_Meeting/Kasumi_Cart/Kasumi_Cart.png"
@@ -1602,7 +1637,7 @@ label start:
             "Kasumi_Cart_border_01_right_moved"
     ##
     
-    show Kasumi_Cart_With_Border_01 with dissolve
+    show Kasumi_Cart_With_Border_01 with Dissolve( my_dissolve_05 )
     
     "Я взялся за тележку - на вид крайне хлипкую, из алюминиевых трубок, скреплённых пластиковыми уголками и такими же заклёпками. "
     "Рама её была перехвачена двумя плетёными жгутами красного цвета."
@@ -1638,8 +1673,8 @@ label start:
             "Kasumi_Cart_And_Radio_Set_border_01_right_moved"
     ##
     
-    show Kasumi_Cart_And_Radio_Set_With_Border_01 with Dissolve( 0.2 )
-    hide Kasumi_Cart_With_Border_01 with Dissolve( 0.2 )
+    show Kasumi_Cart_And_Radio_Set_With_Border_01 with Dissolve( my_dissolve_02 )
+    hide Kasumi_Cart_With_Border_01 with Dissolve( my_dissolve_02 )
     
     "Я хорошенько обмотал всю эту конструкцию багажными жгутами, наклонил. Похоже, что всё держалось."
 
@@ -1648,17 +1683,17 @@ label start:
     "Девушка протянула руки в мою сторону. Я немного отступил, захотелось словами указать ей, в каком направлении двигаться, но я сдержался. "
     "Она поводила руками, и наконец нашла длинную ручку тележки. Затем ощупала стоящую на ней рацию и жгуты."
     
-    hide Kasumi_Cart_And_Radio_Set_With_Border_01 with Dissolve( 0.2 )
+    hide Kasumi_Cart_And_Radio_Set_With_Border_01 with Dissolve( my_dissolve_02 )
 
     kenji "Я хорошо всё закрепил."
 
     "Сказал я, словно подбадривая её."
     
-    show kasumi_01 Normal_Say with Dissolve( 0.2 )
+    show kasumi_01 Normal_Say with Dissolve( my_dissolve_02 )
     
     blind_girl "Спасибо! Большое вам спасибо за помощь!"
     
-    show kasumi_01 Normal_Silent with Dissolve( 0.2 )
+    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_02 )
     
     "Похоже, это она так прощалась со мной. Действительно, чем мог — я помог, больше говорить было не о чем. "
     "И тут, какая-то дурацкая грусть окутала мое охмелевшее сознание. "
@@ -1674,53 +1709,53 @@ label start:
     
     kenji "Постой! А эта рация, она не из двух частей состоит?"
     
-    show kasumi_01 Normal_Say with Dissolve( 0.2 )
+    show kasumi_01 Normal_Say with Dissolve( my_dissolve_02 )
     
     blind_girl "Двух частей?"
     
-    show kasumi_01 Normal_Silent with Dissolve( 0.2 )
+    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_02 )
     
     kenji "Ну да. Тут ещё что-то. Похоже дополнение к ней. Цвет и габариты, всё такое же."
     kenji "Я вынес это в последнюю очередь. Посмотри сама..."
     
     "Я прикусил язык. Чёрт! Зачем я это сказал, вот идиот. Но девушка не повела и ухом."
     
-    show kasumi_01 Normal_Say with Dissolve( 0.2 )
+    show kasumi_01 Normal_Say with Dissolve( my_dissolve_02 )
     
     blind_girl "А как? Как оно выглядит? Точь-в-точь как эта? Может просто ещё одна?"
     
-    show kasumi_01 Normal_Silent with Dissolve( 0.2 )
+    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_02 )
     
     kenji "Не думаю..."
     
-    show Radio_Set_Power_Supply_On_ground_With_Border_01 with Dissolve( 0.2 )
+    show Radio_Set_Power_Supply_On_ground_With_Border_01 with Dissolve( my_dissolve_02 )
 
     "Я описал ей всё в подробностях. "
     
-    show kasumi_01 Normal_Say with Dissolve( 0.2 )
+    show kasumi_01 Normal_Say with Dissolve( my_dissolve_02 )
     
     blind_girl "А! Это блок питания, для рации."
     blind_girl "Обычно она работала от аккумулятора. Ну, от танкового например, или ещё какого."
     blind_girl "А этот блок питания, он для того, чтобы питать её от сети. Дома, от розетки например."
     
-    hide Radio_Set_Power_Supply_On_ground_With_Border_01 with Dissolve( 0.2 )
+    hide Radio_Set_Power_Supply_On_ground_With_Border_01 with Dissolve( my_dissolve_02 )
     
-    show kasumi_01 Normal_Silent with Dissolve( 0.2 )
+    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_02 )
     
     kenji "Значит он тебе тоже нужен?"
     
     "Я был несказанно рад ее последним словам. Но когда услышал ответ, то все мои надежды мигом рухнули."
     
-    show kasumi_01 Normal_Say with Dissolve( 0.2 )
+    show kasumi_01 Normal_Say with Dissolve( my_dissolve_02 )
     
     blind_girl "Нет! У меня есть. Дома. Правда не такой, обычный, но мощный!"
     blind_girl "Можно напряжение любое выставить. Он подойдёт."
     
-    show kasumi_01 Normal_Silent with Dissolve( 0.2 )
+    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_02 )
     
     kenji "А... Ну ладно."
     
-    hide kasumi_01 with Dissolve( 0.2 )
+    hide kasumi_01 with Dissolve( my_dissolve_02 )
 
     "Я был раздосадован. Ничего не вышло. Девушка поклонилась мне на прощание, я молча поклонился в ответ. "
     "Конечно, она этого не видела и надо было попрощаться словами. Но черт с ней! "
@@ -1767,7 +1802,7 @@ label start:
     
     stop environment_sounds_dream fadeout 10
     play environment_sounds "./sounds/environment/City_Suburb_Day.mp3" fadein 10 fadeout 1
-    scene Day_Trash_Place with dissolve
+    scene Day_Trash_Place with Dissolve( my_dissolve_05 )
     
     "Я был несказанно рад такому повороту событий и немедленно поспешил к месту аварии."
     
@@ -1799,29 +1834,29 @@ label start:
             "Radio_Set_And_Cart_On_The_Ground_border_01_right_moved"
     ##
     
-    show Radio_Set_And_Cart_On_The_Ground_With_Border_01 with Dissolve( 0.2 )
-    show kasumi_01 Surprised_Silent at Move( ( 600, 600 ), ( 600, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.2 )
+    show Radio_Set_And_Cart_On_The_Ground_With_Border_01 with Dissolve( my_dissolve_02 )
+    show kasumi_01 Surprised_Silent at Move( ( 600, 600 ), ( 600, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 )
     
     "Вид у девушки был совершенно растерянный. Её тележка валялась в стороне, и судя по всему пришла в полную негодность"
     
-    show kasumi_01 Surprised_Say at Move( ( 600, 600 ), ( 600, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.2 )
+    show kasumi_01 Surprised_Say at Move( ( 600, 600 ), ( 600, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 )
     
     blind_girl "Что с моей тележкой?"
     
-    show kasumi_01 Surprised_Silent at Move( ( 600, 600 ), ( 600, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.2 )
+    show kasumi_01 Surprised_Silent at Move( ( 600, 600 ), ( 600, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 )
 
     "С тревогой в голосе спросила она."
     "Я глянул на то место, где раньше располагались колеса. Там остались только чёрные втулки с обломанными спицами."
     
     kenji "Кранты ей похоже."
     
-    hide Radio_Set_And_Cart_On_The_Ground_With_Border_01 with Dissolve( 0.2 )
-    hide kasumi_01 Surprised_Silent wit Dissolve( 0.1 )
-    show kasumi_01 Surprised_Silent with Dissolve( 0.2 )
+    hide Radio_Set_And_Cart_On_The_Ground_With_Border_01 with Dissolve( my_dissolve_02 )
+    hide kasumi_01 Surprised_Silent wit Dissolve( my_dissolve_01 )
+    show kasumi_01 Surprised_Silent with Dissolve( my_dissolve_02 )
     
     "Я стащил рацию и подал тележку девушке."
     
-    show kasumi_01 Concerned_Silent with Dissolve( 0.2 )
+    show kasumi_01 Concerned_Silent with Dissolve( my_dissolve_02 )
     
     "Она немедленно принялась изучать тележку, пытаясь определить ее состояние. "
     "Мне почему-то стало смешно от выражения её лица, когда она наконец нащупала места крепления колес. "
@@ -1829,12 +1864,12 @@ label start:
 
     kenji "Что теперь делать будешь?"
     
-    show kasumi_01 Concerned_Say with Dissolve( 0.2 )
+    show kasumi_01 Concerned_Say with Dissolve( my_dissolve_02 )
     
     blind_girl "Не знаю..."
     blind_girl "Эта тележка тёти. Я обещала что верну в целости."
     
-    show kasumi_01 Concerned_Silent with Dissolve( 0.2 )
+    show kasumi_01 Concerned_Silent with Dissolve( my_dissolve_02 )
     
     "Она вздохнула."
 
@@ -1847,11 +1882,11 @@ label start:
 
     kenji "А как тебя зовут?"
     
-    show kasumi_01 Surprised_Say with Dissolve( 0.2 )
+    show kasumi_01 Surprised_Say with Dissolve( my_dissolve_02 )
     
     blind_girl "А? Меня..."
     
-    show kasumi_01 Surprised_Silent with Dissolve( 0.2 )
+    show kasumi_01 Surprised_Silent with Dissolve( my_dissolve_02 )
     
     "Девушка сильно заволновалась. Похоже вопрос и в самом деле неожиданный. Но мне было плевать."
 
@@ -1859,11 +1894,11 @@ label start:
 
     "Сказал я и театрально ткнул себя пальцем в грудь."
     
-    show kasumi_01 Normal_Say with Dissolve( 0.2 )
+    show kasumi_01 Normal_Say with Dissolve( my_dissolve_02 )
 
     blind_girl "Накамура... Касуми."
     
-    show kasumi_01 Normal_Silent with Dissolve( 0.2 )
+    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_02 )
     
     "Кротко ответила девушка. Свою, бесполезную теперь, тележку она всё ещё не выпускала из рук."
 
@@ -1871,11 +1906,11 @@ label start:
 
     "Вот это да! Я даже удивился собственной дерзости!"
     
-    show kasumi_01 Normal_Say with Dissolve( 0.2 )
+    show kasumi_01 Normal_Say with Dissolve( my_dissolve_02 )
 
     kasumi "Шесть... Шестнадцать!"
     
-    show kasumi_01 Normal_Silent with Dissolve( 0.2 )
+    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_02 )
 
     "Отлично. Накамура Касуми, шестнадцать лет! Язык развязался и я не в силах удержать внезапную словоохотливость задвинул впечатляющую речь: "
     
@@ -1885,21 +1920,21 @@ label start:
     kenji "Давай-ка я сам возьму в руки эту несчастную рацию и отнесу туда, куда тебе нужно."
     kenji "А ты выбрось эту тележку на свалку. Это теперь больше похоже на ходунки для стариков. Тёте твоей, нужны ходунки, Касуми?"
     
-    hide kasumi_01 Normal_Silent with Dissolve( 0.2 )
-    show Kasumi_03 Normal_Silent with Dissolve( 0.2 )
+    hide kasumi_01 Normal_Silent with Dissolve( my_dissolve_02 )
+    show Kasumi_03 Normal_Silent with Dissolve( my_dissolve_02 )
     
     "Касуми смотрела куда-то всторону и молчала. "
 
     kenji "Или может мне лучше и вовсе унести эту рацию домой? Обратно к себе."
     kenji "Чего это я так разбрасываюсь вещами. А, Касуми? За сколько это барахло можно толкнуть на барахолке?"
     
-    hide Kasumi_03 Normal_Silent with Dissolve( 0.2 )
-    show kasumi_01 Normal_Say with Dissolve( 0.2 )
+    hide Kasumi_03 Normal_Silent with Dissolve( my_dissolve_02 )
+    show kasumi_01 Normal_Say with Dissolve( my_dissolve_02 )
 
     kasumi "Нет! Простите, Танака-сан! Но мне очень нужна эта вещь."
     kasumi "Пожалуйста! Помогите мне донести её до дома!"
     
-    show kasumi_01 Normal_Silent with Dissolve( 0.2 )
+    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_02 )
     
     "Я был рад этим словам, но кажется она догадалась, что я напрашивался в попутчики."
     "Впрочем мне уже было все равно. "
@@ -1914,14 +1949,14 @@ label start:
 
     kenji "Э? Так далеко? Почему ты выносишь мусор именно сюда? У вас что там, своего места для хлама нет, поблизости?"
     
-    show kasumi_01 Normal_Say with Dissolve( 0.2 )
+    show kasumi_01 Normal_Say with Dissolve( my_dissolve_02 )
     
     kasumi "Есть. Совсем недалеко."
     kasumi "Но надо идти через канал, а весной, пешеходный мост подмыло после сильного дождя."
     kasumi "Ремонт затянулся и теперь там не пройти. "
     kasumi "Недалеко есть автомобильная дамба. Но я не хожу там. Очень шумно - мне трудно ориентироваться."
     
-    show kasumi_01 Normal_Silent with Dissolve( 0.2 )
+    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_02 )
 
     "Ну надо же! А ведь я тоже некомфортно себя чувствую в шумных местах! И наверняка Касуми не любит большие скопления людей. "
     "Ну прямо как я! Или вообще людей не жалует... "
@@ -1930,44 +1965,44 @@ label start:
 
     kenji "Ну что, идём? Да брось ты свою тележку! Хана ей!"
     
-    show kasumi_01 Normal_Say with Dissolve( 0.2 )
+    show kasumi_01 Normal_Say with Dissolve( my_dissolve_02 )
     
     kasumi "Нет. Я попробую её починить! Колеса от неё, они где?"
     
-    show kasumi_01 Normal_Silent with Dissolve( 0.2 )
+    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_02 )
 
     "Я недовольно проворчал."
 
     kenji "Ну одно колесо, оно вроде как здесь лежит. А второго нет."
     
-    show kasumi_01 Concerned_Say with Dissolve( 0.2 )
+    show kasumi_01 Concerned_Say with Dissolve( my_dissolve_02 )
     
     kasumi "Нет?"
     
-    show kasumi_01 Concerned_Silent with Dissolve( 0.2 )
+    show kasumi_01 Concerned_Silent with Dissolve( my_dissolve_02 )
     
     kenji "Да, улетело, и теперь его нет. Хочешь пойти поискать?"
     
 
     "Я опять говорил с ней неприлично резким тоном. Услышав мои слова, Касуми тихо вздохнула."
     
-    show kasumi_01 Normal_Say with Dissolve( 0.2 )
+    show kasumi_01 Normal_Say with Dissolve( my_dissolve_02 )
 
     kasumi "Нет. Если улетело, то пусть. Но я всё равно возьму тележку с собой. Ладно?"
     
-    show kasumi_01 Normal_Silent with Dissolve( 0.2 )
+    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_02 )
     
     kenji "Это ещё что за вопрос? Делай со своей тележкой что хочешь."
     
-    scene Outdoor_Day_BG_With_Railroad_2 with dissolve
+    scene Outdoor_Day_BG_With_Railroad_2 with Dissolve( my_dissolve_05 )
 
     "Мы двинулись, я пристроился справа, встав между ней и обочиной дороги."
     
-    show kasumi_01 Normal_Say with Dissolve( 0.2 )
+    show kasumi_01 Normal_Say with Dissolve( my_dissolve_02 )
 
     kasumi "Простите Танака-сан... Но... не могли бы вы встать с другой стороны от меня?"
     
-    show kasumi_01 Normal_Silent with Dissolve( 0.2 )
+    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_02 )
 
     "Я удивленно промычал."
 
@@ -2004,43 +2039,43 @@ label start:
             "Kasumi_Profile_border_01_left_moved"
     ##
     
-    hide kasumi_01 Normal_Silent with Dissolve( 0.1 )
-    show kasumi_01 Normal_Silent at Move( ( 1200, 600 ), ( 1200, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
-    show Kasumi_Profile_With_Border_01 with dissolve
+    hide kasumi_01 Normal_Silent with Dissolve( my_dissolve_01 )
+    show kasumi_01 Normal_Silent at Move( ( 1200, 600 ), ( 1200, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Kasumi_Profile_With_Border_01 with Dissolve( my_dissolve_05 )
     
     "Я увидел что в него вставлен белый наушник."
     
-    show kasumi_01 Normal_Say at Move( ( 1200, 600 ), ( 1200, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.2 )
+    show kasumi_01 Normal_Say at Move( ( 1200, 600 ), ( 1200, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 )
 
     kasumi "Я вас плохо буду слышать. Лучше встаньте слева."
     
-    show kasumi_01 Normal_Silent at Move( ( 1200, 600 ), ( 1200, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.2 )
+    show kasumi_01 Normal_Silent at Move( ( 1200, 600 ), ( 1200, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 )
 
     "Я уж было подумал что Касуми ещё и глухая, а в ухе у неё не что иное, как слуховой аппарат. "
     "Но нет, она же говорит встать с другой стороны!"
     
-    hide Kasumi_Profile_With_Border_01 with Dissolve( 0.2 )
-    hide kasumi_01 with Dissolve( 0.2 )
-    show kasumi_01 Normal_Silent with Dissolve( 0.2 )
+    hide Kasumi_Profile_With_Border_01 with Dissolve( my_dissolve_02 )
+    hide kasumi_01 with Dissolve( my_dissolve_02 )
+    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_02 )
     
     "В левом ухе никаких наушников не было. Я стал разглядывать мою новую знакомую в профиль. "
     "Так, не было видно её необычных глаз и казалось со мной рядом шла совершенно обычная девчёнка."
     
-    show kasumi_01 Normal_Say with Dissolve( 0.2 )
+    show kasumi_01 Normal_Say with Dissolve( my_dissolve_02 )
     
     kasumi "Вы смотрите на моё ухо, Танака-сан?"
     
-    show kasumi_01 Normal_Silent with Dissolve( 0.2 )
+    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_02 )
 
     "Вдруг спросила Касуми"
 
     kenji "Я? Нет! Зачем мне это нужно?"
     
-    show kasumi_01 Normal_Say with Dissolve( 0.2 )
+    show kasumi_01 Normal_Say with Dissolve( my_dissolve_02 )
     
     kasumi "Говорят, можно чувствовать кожей взгляды людей. Я подумала, почему-то что вы смотрите именно туда."
     
-    show kasumi_01 Normal_Silent with Dissolve( 0.2 )
+    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_02 )
     
     kenji "Неправильно подумала!"
     
@@ -2048,29 +2083,29 @@ label start:
 
     kenji "Чего это ты слушаешь в наушнике? Радио?"
     
-    show kasumi_01 Normal_Say with Dissolve( 0.2 )
+    show kasumi_01 Normal_Say with Dissolve( my_dissolve_02 )
     
     kasumi "Нет."
     
-    show kasumi_01 Normal_Silent with Dissolve( 0.2 )
+    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_02 )
 
     "Касуми подняла руку и коснулась своего ободка с «усами»."
 
-    show kasumi_01 Normal_Say with Dissolve( 0.2 )
+    show kasumi_01 Normal_Say with Dissolve( my_dissolve_02 )
 
     kasumi "Это."
     
-    show kasumi_01 Normal_Silent with Dissolve( 0.2 )
+    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_02 )
     
     kenji "А что это такое?"
 
     "Мне было и правда интересно."
     
-    show kasumi_01 Normal_Say with Dissolve( 0.2 )
+    show kasumi_01 Normal_Say with Dissolve( my_dissolve_02 )
 
     kasumi "Это что-то вроде ёмкостного реле."
     
-    show kasumi_01 Normal_Silent with Dissolve( 0.2 )
+    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_02 )
     
     "Черт! Мне бы лучше подошёл ответ уровня - «это устройство для связи с внеземными цивилизациями»."
     "Что такое «ёмкостное реле» я даже представить себе не мог. Звучало как термин из учебника физики. "
@@ -2087,7 +2122,7 @@ label start:
     
     play environment_sounds_dream "./sounds/environment/City_Suburb_Day_Dream.mp3" fadein 1
     stop environment_sounds fadeout 1
-    show Galileo_And_Newton with dissolve
+    show Galileo_And_Newton with Dissolve( my_dissolve_05 )
     
     "Я вспомнил портреты великих учёных, которые висели в коридоре нашего университета. "
     "Галилео и Ньютон — оба на портретах были одеты в костюмы и никаких штуковин на голове у них не было. "
@@ -2109,32 +2144,32 @@ label start:
     
     play environment_sounds "./sounds/environment/City_Suburb_Day.mp3" fadein 1
     stop environment_sounds_dream fadeout 1
-    hide Edison_And_Tesla with dissolve
+    hide Edison_And_Tesla with Dissolve( my_dissolve_05 )
     
     kenji "А зачем оно? Для чего?"
 
     "Спросил я. И мне подумалось, следующий ответ будет ещё непонятнее. "
     "Что-нибудь вроде «чтобы измерять угловой коэффициент пролетающих мимо нейтрино» или что-то в таком духе."
     
-    show kasumi_01 Normal_Say with Dissolve( 0.2 )
+    show kasumi_01 Normal_Say with Dissolve( my_dissolve_02 )
     
     kasumi "Оно реагирует на предметы. Чтобы было проще ориентироваться в пространстве."
     kasumi "Когда рядом с антеннами что-то есть, в наушнике пищит."
     
-    show kasumi_01 Normal_Silent with Dissolve( 0.2 )
+    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_02 )
     
     kenji "Хм... Здорово придумано, сама сделала?"
 
     "Касуми покачала головой."
     
-    show kasumi_01 Normal_Say with Dissolve( 0.2 )
+    show kasumi_01 Normal_Say with Dissolve( my_dissolve_02 )
 
     kasumi "Не совсем. Мне помогли собрать."
     kasumi "Но вообще, он не очень точный, в сухую погоду ещё неплохо работает. А в сырую или в туман — с ума сходит."
     kasumi "Пищит по любому поводу. Приходится отключать его. Но тогда он тоже помогает, как усы у кошки."
     kasumi "Хотя — в плохую погоду, на улицу я и не выхожу."
     
-    show kasumi_01 Normal_Silent with Dissolve( 0.2 )
+    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_02 )
 
     "Интересно, кто помогал Касуми со сборкой этого приспособления? Должно быть её отец. "
     
@@ -2167,30 +2202,32 @@ label start:
     
     play environment_sounds_dream "./sounds/environment/City_Suburb_Day_Dream.mp3" fadein 1
     stop environment_sounds fadeout 1
-    scene Old_Kasumis_Dad_Dream with dissolve
+    scene Old_Kasumis_Dad_Dream with Dissolve( my_dissolve_05 )
     
     "Я представил его себе как интеллигентного, худощавого, в толстых очках и с пышной зачёсанной набок шевелюрой. "
     "Похожего на профессора по физике в университете, где я учился. "
     
-    scene Young_Kasumi_Dad_Dream with dissolve
+    scene Young_Kasumi_Dad_Dream with Dissolve( my_dissolve_05 )
     
     "Но профессор был старый, а отец Касуми, он должен быть моложе. Если Касуми всего шестнадцать лет — ему максимум, слегка за сорок. "
     "Вероятно он тоже радиолюбитель, как Макото-сан. Такой же увлечённый. "
     "Небось за своей радиостанцией и забыл что его незрячая дочь шатается одна по улицам неизвестно где. "
     "И наверное это он такой заядлый курильщик."
     
-    scene Dad_In_Room_Dream with dissolve
+    play sound "./sounds/sounds/Morse_Code.mp3" fadein 1
+    scene Dad_In_Room_Dream with Dissolve( my_dissolve_05 )
     
     "Я представил как её отец, сидит за рацией, крутит всякие крутилки, щёлкает тумблерами, да смолит сигарету. "
     "Затем подходит к открытому окну и задумчиво смотрит на городской пейзаж. "
     
-    scene Kasumi_And_Pervert_Dream with dissolve
+    stop sound fadeout 3
+    scene Kasumi_And_Pervert_Dream with Dissolve( my_dissolve_05 )
     
     "И видит свою дочь, а рядом с ней, какого-то небритого, лохматого и нетрезвого извращенца. "
     
     play environment_sounds "./sounds/environment/City_Suburb_Day.mp3" fadein 1
     stop environment_sounds_dream fadeout 1
-    scene Outdoor_Day_BG_With_Railroad_2 with dissolve
+    scene Outdoor_Day_BG_With_Railroad_2 with Dissolve( my_dissolve_05 )
 
     "Я поёжился. Посмотрел на мятую рубаху и неопрятные брюки. Провёл ладонью по щетине и растрёпанной шевелюре. "
     "Слава богу, волосы на затылке, которые по утрам стояли дыбом — теперь улеглись. Видимо намокли от пота и перестали топорщиться. "
@@ -2203,16 +2240,16 @@ label start:
     kenji "Касуми. А эта рация? Она тебе для чего?"
     kenji "Ты тоже как и мой погибший дядя — радиолюбитель? Или рацию ты хочешь кому-то отдать?"
     
-    show kasumi_01 Normal_Say with Dissolve( 0.2 )
+    show kasumi_01 Normal_Say with Dissolve( my_dissolve_02 )
     
     kasumi "Что значит кому-то отдать? Нет! Эта рация нужна мне самой."
     kasumi "И да, Танака-сан, я наверное всё-таки радиолюбитель."
     
-    show kasumi_01 Concerned_Say with Dissolve( 0.2 )
+    show kasumi_01 Concerned_Say with Dissolve( my_dissolve_02 )
 
     kasumi "А ваш дядя? Почему он погиб?"
     
-    show kasumi_01 Concerned_Silent with Dissolve( 0.2 )
+    show kasumi_01 Concerned_Silent with Dissolve( my_dissolve_02 )
     
     kenji "Мой дядя?"
 
@@ -2220,23 +2257,23 @@ label start:
 
     kenji "Кажется он обманул меня."
     
-    show kasumi_01 Normal_Say with Dissolve( 0.2 )
+    show kasumi_01 Normal_Say with Dissolve( my_dissolve_02 )
     
     kasumi "Почему-же обманул?"
     
-    show kasumi_01 Normal_Silent with Dissolve( 0.2 )
+    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_02 )
     
     kenji "А ты веришь в эту ерунду? Это самоубийство какое-то, провод под напряжением — вместо антенны. Чушь полная!"
 
     "Касуми пожала плечами."
     
-    show kasumi_01 Normal_Say with Dissolve( 0.2 )
+    show kasumi_01 Normal_Say with Dissolve( my_dissolve_02 )
 
     kasumi "Я однажды использовала вместо антенны нашу, бытовую сеть. Домашнюю."
     kasumi "Там правда всего сто десять вольт, а не несколько тысяч."
     kasumi "Но тоже немного опасно, конденсатор надо подобрать тщательно. Это не чушь!"
     
-    show kasumi_01 Normal_Silent with Dissolve( 0.2 )
+    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_02 )
     
     "Опять этот конденсатор! Везде конденсатор! "
     "Похоже этот конденсатор — нечто вроде философского камня в среде радиолюбителей. "
@@ -2245,11 +2282,11 @@ label start:
     kenji "А зачем тогда вообще закидывать провод туда, где такое большое напряжение?"
     kenji "Раз ты говоришь, что в розетке всего сто десять вольт. Вот бы и втыкался туда!"
     
-    show kasumi_01 Normal_Say with Dissolve( 0.2 )
+    show kasumi_01 Normal_Say with Dissolve( my_dissolve_02 )
     
     kasumi "Но тогда сигнал, дальше домашней сети не выйдет. Там же трансформатор, слабая выйдет антенна."
     
-    show kasumi_01 Normal_Silent with Dissolve( 0.2 )
+    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_02 )
     
     kenji "Точно! И как я забыл про трансформатор!"
     
@@ -2258,18 +2295,18 @@ label start:
     kenji "Почему нельзя было просто привязать свою антенну к металлической опоре? Она же вон какая огромная?"
     kenji "Чего ему не хватало?"
     
-    hide kasumi_01 Normal_Silent with Dissolve( 0.1 )
-    show Kasumi_03 Normal_Silent with Dissolve( 0.1 )
+    hide kasumi_01 Normal_Silent with Dissolve( my_dissolve_01 )
+    show Kasumi_03 Normal_Silent with Dissolve( my_dissolve_01 )
     
     "Касуми отвернулась и поджала губы. Мне показалось, что она едва сдержала смешок. "
     "Ну да, подозреваю, что говорю я полнейшую ерунду."
     
-    hide Kasumi_03 Normal_Silent with Dissolve( 0.1 )
-    show kasumi_01 Normal_Say with Dissolve( 0.1 )
+    hide Kasumi_03 Normal_Silent with Dissolve( my_dissolve_01 )
+    show kasumi_01 Normal_Say with Dissolve( my_dissolve_01 )
     
     kasumi "Она же заземлена. Не получится из неё антенна!"
     
-    show kasumi_01 Normal_Silent with Dissolve( 0.2 )
+    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_02 )
     
     "Я вспомнил ту металлическую опору, что стояла в нашем саду. "
     "Каждая из четырёх её лап, была толстыми болтами прикручена к железобетонной плите. "
@@ -2277,24 +2314,24 @@ label start:
 
     kenji "Нет! Нет на ней никакого заземления!"
     
-    show kasumi_01 Normal_Say with Dissolve( 0.2 )
+    show kasumi_01 Normal_Say with Dissolve( my_dissolve_02 )
     
     kasumi "Не может быть! Должно быть вы просто не заметили, Танака-сан."
     
-    show kasumi_01 Normal_Silent with Dissolve( 0.2 )
+    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_02 )
     
     kenji "Нет! Я прекрасно вижу! Ничего там не было!"
     
     "Воскликнул я. А через секунду понял, насколько неприятную для собеседницы вещь сказал."
     "Но Касуми будто бы и не заметила ничего. На мгновение она задумалась."
     
-    hide kasumi_01 Normal_Silent with Dissolve( 0.1 )
-    show Kasumi_School_Uniform_Hmm Normal_Say with Dissolve( 0.1 )
+    hide kasumi_01 Normal_Silent with Dissolve( my_dissolve_01 )
+    show Kasumi_School_Uniform_Hmm Normal_Say with Dissolve( my_dissolve_01 )
     
     kasumi "Она наверное... Она наверное заземлена сверху!"
     
-    hide Kasumi_School_Uniform_Hmm Normal_Say with Dissolve( 0.1 )
-    show kasumi_01 Normal_Silent with Dissolve( 0.1 )
+    hide Kasumi_School_Uniform_Hmm Normal_Say with Dissolve( my_dissolve_01 )
+    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_01 )
     
     "Заземлена сверху... Эта фраза совершенно добила меня. Да, черт возьми, Кендзи - сверху! "
     "Ха — ха! Плевать, что земля - она внизу. Тут как пить дать, дело не обошлось без конденсатора. "
@@ -2303,7 +2340,7 @@ label start:
     "Наверное дальше спорить не имело смысла. Я совершенно ничего не смыслил в этих делах."
     "На некоторое время мы замолчали"
     
-    scene Outdoor_Day_Street_01 with dissolve
+    scene Outdoor_Day_Street_01 with Dissolve( my_dissolve_05 )
     
     "Я взглянул на небо. Судя по солнцу, сейчас уже часов пять дня. Я достал телефон из брюк и посмотрел время. Пять часов, десять минут. "
     "Ещё час и улицы наводнят люди, возвращающиеся с работы."
@@ -2347,19 +2384,19 @@ label start:
     
     "..."
     
-    hide Here_Is_A_Pedo with dissolve
+    hide Here_Is_A_Pedo with Dissolve( my_dissolve_05 )
     
     kenji "Касуми? А твои родители? Они дома?"
     
-    show Kasumi_03 Normal_Silent with Dissolve( 0.2 )
+    show Kasumi_03 Normal_Silent with Dissolve( my_dissolve_02 )
 
     "Моя спутница опустила голову, и немного отвернулась от меня. Я что задал неудобный вопрос?"
     
-    show Kasumi_03 Normal_Say with Dissolve( 0.2 )
+    show Kasumi_03 Normal_Say with Dissolve( my_dissolve_02 )
 
     kasumi "Мои родители... У меня... Нет родителей!"
     
-    show Kasumi_03 Normal_Silent with Dissolve( 0.2 )
+    show Kasumi_03 Normal_Silent with Dissolve( my_dissolve_02 )
 
     "Да и в самом деле неудачный вопрос."
 
@@ -2367,12 +2404,12 @@ label start:
 
     "Касуми пожала плечами."
     
-    hide Kasumi_03 Normal_Silent with Dissolve( 0.2 )
-    show kasumi_01 Normal_Say with Dissolve( 0.2 )
+    hide Kasumi_03 Normal_Silent with Dissolve( my_dissolve_02 )
+    show kasumi_01 Normal_Say with Dissolve( my_dissolve_02 )
 
     kasumi "Ничего. Я наверное, к этому уже привыкла."
     
-    scene Outdoor_Day_Kasumi_Street with dissolve
+    scene Outdoor_Day_Kasumi_Street with Dissolve( my_dissolve_05 )
     
     "Пару кварталов мы прошли молча. Не знаю о чем думала Касуми, меня же донимали мысли о её отце. "
     "А скорее, о том несуществующем человеке, которого я сам придумал. Мне даже стало жалко эту вымышленную личность."
@@ -2382,54 +2419,54 @@ label start:
 
     kenji "А здесь, ты с кем живёшь, Касуми?"
     
-    show kasumi_01 Normal_Say with Dissolve( 0.2 )
+    show kasumi_01 Normal_Say with Dissolve( my_dissolve_02 )
     
     kasumi "С тётей."
     
-    show kasumi_01 Normal_Silent with Dissolve( 0.2 )
+    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_02 )
 
     "Значит это её тётка столько курит! Хотелось спросить, как же эта женщина так пристрастилась к сигаретам. "
     "Но это был бы уже не просто неудобный, а крайне свинский вопрос. "
     "Я глубоко вдохнул, стараясь уловить побольше этого, «аромата» исходившего от моей спутницы. "
     "Интересно, а как по настоящему пахнет Касуми?"
     
-    show kasumi_01 Normal_Say with Dissolve( 0.2 )
+    show kasumi_01 Normal_Say with Dissolve( my_dissolve_02 )
     
     kasumi "Почему вы вздыхаете? Танака-сан?"
     kasumi "Вам жаль меня? Из-за родителей?"
     
-    show kasumi_01 Normal_Silent with Dissolve( 0.2 )
+    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_02 )
     
     kenji "Да нет я... Нет, мне конечно жаль что их нет, Касуми. Но вздохнул я... Я просто переводил дух. Устал."
     
-    show kasumi_01 Normal_Say with Dissolve( 0.2 )
+    show kasumi_01 Normal_Say with Dissolve( my_dissolve_02 )
     
     kasumi "Мы почти на месте!"
     
-    show kasumi_01 Normal_Silent with Dissolve( 0.2 )
+    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_02 )
     
     "Я не так хорошо знал этот район города. Впрочем я вообще мало знал окрестности вдали от дома, как и полагалось порядочному хиккикомори."
     "Мы шли по узенькой улочке. Я опасливо озирался по сторонам, обшаривая взглядом окна и балконы."
     "Особенно я боялся увидеть тетку Касуми. Хоть и совершенно не имел представления, как она выглядит."
     
-    show kasumi_01 Normal_Say with Dissolve( 0.2 )
+    show kasumi_01 Normal_Say with Dissolve( my_dissolve_02 )
 
     kasumi "Мой дом слева, второй за перекрестком. Он желтого цвета, с синей черепицей."
     kasumi "Чтобы не утруждать вас, Танака-сан, я не буду проводить свои обычные, эм... Ритуалы."
     
-    show kasumi_01 Normal_Silent with Dissolve( 0.2 )
+    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_02 )
     
     kenji "Ритуалы?"
     
-    show kasumi_01 Normal_Say with Dissolve( 0.2 )
+    show kasumi_01 Normal_Say with Dissolve( my_dissolve_02 )
     
     kasumi "Ну, мне нужно найти важные ориентиры, вы же понимаете. Кажется, сейчас я немного дезориентирована."
     
-    show kasumi_01 Normal_Silent with Dissolve( 0.2 )
+    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_02 )
     
     kenji "А, ну да."
     
-    scene Day_Kasumi_Home with dissolve
+    scene Day_Kasumi_Home with Dissolve( my_dissolve_05 )
 
     "Действительно, как только мы прошли перекресток, и первый дом за ним я увидел маленький домик выкрашенный бледно-желтой краской."
     "Площадка перед домом была посыпана гравием и усеяна разбитой тратуарной плиткой, забор и ворота отсутствовали. "
@@ -2439,23 +2476,23 @@ label start:
 
     "Касуми не ответила, но повернулась в сторону своего дома, вытянула руки и пошла вперед. "
     
-    show kasumi_01 Normal_Silent with Dissolve( 0.2 )
+    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_02 )
     
     "Как только ее ноги ступили на гравий, она положила свою тележку на землю и повернулась ко мне. Похоже теперь она сориентировалась."
     
-    show kasumi_01 Normal_Say with Dissolve( 0.2 )
+    show kasumi_01 Normal_Say with Dissolve( my_dissolve_02 )
 
     kasumi "Танака-сан! Вы так помогли мне!"
     
-    show kasumi_01 Normal_Silent with Dissolve( 0.2 )
+    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_02 )
 
     "Она учтиво мне поклонилась."
     
-    show kasumi_01 Normal_Say with Dissolve( 0.2 )
+    show kasumi_01 Normal_Say with Dissolve( my_dissolve_02 )
 
     kasumi "Большое вам спасибо! Может быть вы хотите выпить чая?"
     
-    show kasumi_01 Normal_Silent with Dissolve( 0.2 )
+    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_02 )
 
     "Да, конечно! Я бы выпил чая с Касуми, если бы знал, что на этом всё, и больше никогда я её не увижу. "
     "Но ещё в пути у меня созрел хитрый план."
@@ -2464,11 +2501,11 @@ label start:
 
     "Похоже что мои слова ее удивили."
     
-    show kasumi_01 Normal_Say with Dissolve( 0.2 )
+    show kasumi_01 Normal_Say with Dissolve( my_dissolve_02 )
 
     kasumi "Не хотите?"
     
-    show kasumi_01 Normal_Silent with Dissolve( 0.2 )
+    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_02 )
     
     kenji "Не очень. Я лучше пойду поскорее домой."
 
@@ -2476,74 +2513,74 @@ label start:
 
     kenji "Рация. Я здесь оставлю её. Донесёшь до дома? Касуми?"
     
-    show kasumi_01 Normal_Say with Dissolve( 0.2 )
+    show kasumi_01 Normal_Say with Dissolve( my_dissolve_02 )
     
     kasumi "Тётя поможет мне!"
     
-    show kasumi_01 Normal_Silent with Dissolve( 0.2 )
+    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_02 )
 
     kenji "Хорошо. А тележку твою, я конфискую."
     
-    show kasumi_01 Surprised_Say with Dissolve( 0.2 )
+    show kasumi_01 Surprised_Say with Dissolve( my_dissolve_02 )
     
     kasumi "Но зачем? Что значит конфискуете? Это не моя, тётина. Что я ей скажу?"
     
-    show kasumi_01 Surprised_Silent with Dissolve( 0.2 )
+    show kasumi_01 Surprised_Silent with Dissolve( my_dissolve_02 )
     
     kenji "Не боись. Завтра верну в целости."
     
-    show kasumi_01 Normal_Silent with Dissolve( 0.2 )
+    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_02 )
 
     "Я поднял тележку и повесил на плечо."
     
-    show kasumi_01 Normal_Say with Dissolve( 0.2 )
+    show kasumi_01 Normal_Say with Dissolve( my_dissolve_02 )
 
     kasumi "Завтра?"
     
-    show kasumi_01 Normal_Silent with Dissolve( 0.2 )
+    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_02 )
     
     kenji "Во сколько могу её занести? В час дня, например?"
     
-    show kasumi_01 Normal_Say with Dissolve( 0.2 )
+    show kasumi_01 Normal_Say with Dissolve( my_dissolve_02 )
     
     kasumi "В час дня..."
     
-    show kasumi_01 Normal_Silent with Dissolve( 0.2 )
+    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_02 )
 
     "Рассеянно произнесла девушка. А потом, словно встрепенулась."
     
-    show kasumi_01 Normal_Say with Dissolve( 0.2 )
+    show kasumi_01 Normal_Say with Dissolve( my_dissolve_02 )
 
     kasumi "Да, как вам будет удобно!"
     
-    show kasumi_01 Normal_Silent with Dissolve( 0.2 )
+    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_02 )
     
     kenji "А ты будешь дома?"
     
-    show kasumi_01 Normal_Say with Dissolve( 0.2 )
+    show kasumi_01 Normal_Say with Dissolve( my_dissolve_02 )
     
     kasumi "Да! Буду дома."
     
-    show kasumi_01 Normal_Silent with Dissolve( 0.2 )
+    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_02 )
     
     kenji "Ну и отлично..."
 
     "Касуми ещё раз поклонилась мне."
 
-    show kasumi_01 Normal_Say with Dissolve( 0.2 )
+    show kasumi_01 Normal_Say with Dissolve( my_dissolve_02 )
 
     kasumi "Прощайте, Танака-сан!"
     
-    show kasumi_01 Normal_Silent with Dissolve( 0.2 )
+    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_02 )
     
     kenji "Пока!"
     
-    hide kasumi_01 with Dissolve( 0.2 )
+    hide kasumi_01 with Dissolve( my_dissolve_02 )
 
     "Ответил я ей. Хотелось ещё добавить «до завтра», но мне показалось, что это будет слишком."
     
     play environment_sounds "./sounds/environment/City_Evening.mp3" fadein 1 fadeout 1
-    scene Outdoor_Evening_BG_With_Railroad_2 with dissolve
+    scene Outdoor_Evening_BG_With_Railroad_2 with Dissolve( my_dissolve_05 )
     
     "Около семи часов вечера я вернулся на площадку для сбора мусора. Она опустела — все уже забрали уборщики."
     "Подоспел к площадке я вовремя, чипсы, которые я купил на обратном пути от дома Касуми — я уже доел, и мне надо было избавиться от упаковки."
@@ -2602,114 +2639,114 @@ label start:
     image Aiko_Base_Outfit_03_Angry_Silent_Mobile_Masked = AlphaMask( "Aiko_Base_Outfit_03_Angry_Silent_Mobile", "Kenji_MObile_Phone_Mask" )
     #
     
-    show Kenji_MObile_Phone with Dissolve( 0.2 )
-    show Aiko_Base_Outfit_03_Normal_Silent_Mobile_Masked with Dissolve( 0.1 )
+    show Kenji_MObile_Phone with Dissolve( my_dissolve_02 )
+    show Aiko_Base_Outfit_03_Normal_Silent_Mobile_Masked with Dissolve( my_dissolve_01 )
 
     "У меня зазвонил телефон, это была Айко."
     
-    show Aiko_Base_Outfit_03_Surprised_Say_Mobile_Masked with Dissolve( 0.1 )
+    show Aiko_Base_Outfit_03_Surprised_Say_Mobile_Masked with Dissolve( my_dissolve_01 )
     hide Aiko_Base_Outfit_03_Normal_Silent_Mobile_Masked
 
     aiko "Кендзи? Ты где?"
     
-    show Aiko_Base_Outfit_03_Surprised_Silent_Mobile_Masked with Dissolve( 0.1 )
+    show Aiko_Base_Outfit_03_Surprised_Silent_Mobile_Masked with Dissolve( my_dissolve_01 )
     hide Aiko_Base_Outfit_03_Surprised_Say_Mobile_Masked
 
     "Голос её был взволнован."
 
     kenji "Я? Да практически возле дома. Но приду чуть позже."
     
-    show Aiko_Base_Outfit_03_Surprised_Say_Mobile_Masked with Dissolve( 0.1 )
+    show Aiko_Base_Outfit_03_Surprised_Say_Mobile_Masked with Dissolve( my_dissolve_01 )
     hide Aiko_Base_Outfit_03_Surprised_Silent_Mobile_Masked
     
     aiko "Я думала, ты так напился, что не смог найти путь домой. Ты что, выпил всё своё пиво?"
     
-    show Aiko_Base_Outfit_03_Surprised_Silent_Mobile_Masked with Dissolve( 0.1 )
+    show Aiko_Base_Outfit_03_Surprised_Silent_Mobile_Masked with Dissolve( my_dissolve_01 )
     hide Aiko_Base_Outfit_03_Surprised_Say_Mobile_Masked
     
     kenji "Ну да..."
 
     "Айко возмущенно завопила:"
     
-    show Aiko_Base_Outfit_03_Angry_Say_Mobile_Masked with Dissolve( 0.1 )
+    show Aiko_Base_Outfit_03_Angry_Say_Mobile_Masked with Dissolve( my_dissolve_01 )
     hide Aiko_Base_Outfit_03_Surprised_Silent_Mobile_Masked
 
     aiko "Ты алкоголик!"
     
-    show Aiko_Base_Outfit_03_Angry_Silent_Mobile_Masked with Dissolve( 0.1 )
+    show Aiko_Base_Outfit_03_Angry_Silent_Mobile_Masked with Dissolve( my_dissolve_01 )
     hide Aiko_Base_Outfit_03_Angry_Say_Mobile_Masked
     
     kenji "Постой Айко! Три банки пива это не три бутылки сакэ, ты не путай! Чего ты так раскричалась?"
 
     "Но ей конечно было всё одно, что сакэ, что пиво. Я действительно, редко выпивал за день больше одной или двух банок. Если пил вообще."
     
-    show Aiko_Base_Outfit_03_Angry_Say_Mobile_Masked with Dissolve( 0.1 )
+    show Aiko_Base_Outfit_03_Angry_Say_Mobile_Masked with Dissolve( my_dissolve_01 )
     hide Aiko_Base_Outfit_03_Angry_Silent_Mobile_Masked
 
     aiko "В магазин утром пойдёшь сам! И завтрак в дорогу сам себе готовить будешь!"
     
-    show Aiko_Base_Outfit_03_Angry_Silent_Mobile_Masked with Dissolve( 0.1 )
+    show Aiko_Base_Outfit_03_Angry_Silent_Mobile_Masked with Dissolve( my_dissolve_01 )
     hide Aiko_Base_Outfit_03_Angry_Say_Mobile_Masked
     
     kenji "Завтрак в дорогу? Зачем? Ты меня из дома завтра погонишь?"
     
-    show Aiko_Base_Outfit_03_Surprised_Say_Mobile_Masked with Dissolve( 0.1 )
+    show Aiko_Base_Outfit_03_Surprised_Say_Mobile_Masked with Dissolve( my_dissolve_01 )
     hide Aiko_Base_Outfit_03_Angry_Silent_Mobile_Masked
     
     aiko "Ты же на море собрался, разве нет?"
     
-    show Aiko_Base_Outfit_03_Surprised_Silent_Mobile_Masked with Dissolve( 0.1 )
+    show Aiko_Base_Outfit_03_Surprised_Silent_Mobile_Masked with Dissolve( my_dissolve_01 )
     hide Aiko_Base_Outfit_03_Surprised_Say_Mobile_Masked
     
     kenji "Ах, точно! Я совсем забыл. Прости, Айко, но похоже, с поездкой на море придётся повременить."
     
-    show Aiko_Base_Outfit_03_Surprised_Say_Mobile_Masked with Dissolve( 0.1 )
+    show Aiko_Base_Outfit_03_Surprised_Say_Mobile_Masked with Dissolve( my_dissolve_01 )
     hide Aiko_Base_Outfit_03_Surprised_Silent_Mobile_Masked
     
     aiko "Что так?"
     
-    show Aiko_Base_Outfit_03_Surprised_Silent_Mobile_Masked with Dissolve( 0.1 )
+    show Aiko_Base_Outfit_03_Surprised_Silent_Mobile_Masked with Dissolve( my_dissolve_01 )
     hide Aiko_Base_Outfit_03_Surprised_Say_Mobile_Masked
     
     kenji "Дела. Мне надо... Встретиться кое с кем."
     
-    show Aiko_Base_Outfit_03_Angry_Say_Mobile_Masked with Dissolve( 0.1 )
+    show Aiko_Base_Outfit_03_Angry_Say_Mobile_Masked with Dissolve( my_dissolve_01 )
     hide Aiko_Base_Outfit_03_Surprised_Silent_Mobile_Masked
     
     aiko "Этот кто-то, тоже алкоголик?"
     
-    show Aiko_Base_Outfit_03_Angry_Silent_Mobile_Masked with Dissolve( 0.1 )
+    show Aiko_Base_Outfit_03_Angry_Silent_Mobile_Masked with Dissolve( my_dissolve_01 )
     hide Aiko_Base_Outfit_03_Angry_Say_Mobile_Masked
     
     kenji "Айко, бросай свои шуточки! Надеюсь ты не обиделась, что на море мы завтра не едем?"
     
-    show Aiko_Base_Outfit_03_Normal_Say_Mobile_Masked with Dissolve( 0.1 )
+    show Aiko_Base_Outfit_03_Normal_Say_Mobile_Masked with Dissolve( my_dissolve_01 )
     hide Aiko_Base_Outfit_03_Angry_Silent_Mobile_Masked
     
     aiko "Мне то что. Я могу в любой день пойти в бассейн. А могу даже поехать на пляж без тебя, с подружками."
     
-    show Aiko_Base_Outfit_03_Normal_Silent_Mobile_Masked with Dissolve( 0.1 )
+    show Aiko_Base_Outfit_03_Normal_Silent_Mobile_Masked with Dissolve( my_dissolve_01 )
     hide Aiko_Base_Outfit_03_Normal_Say_Mobile_Masked
 
     "Я вздохнул. Айко помолчала какое-то время и спросила."
 
-    show Aiko_Base_Outfit_03_Normal_Say_Mobile_Masked with Dissolve( 0.1 )
+    show Aiko_Base_Outfit_03_Normal_Say_Mobile_Masked with Dissolve( my_dissolve_01 )
     hide Aiko_Base_Outfit_03_Normal_Silent_Mobile_Masked
 
     aiko "Куда ты сейчас?"
     
-    show Aiko_Base_Outfit_03_Normal_Silent_Mobile_Masked with Dissolve( 0.1 )
+    show Aiko_Base_Outfit_03_Normal_Silent_Mobile_Masked with Dissolve( my_dissolve_01 )
     hide Aiko_Base_Outfit_03_Normal_Say_Mobile_Masked
     
     kenji "Мне надо зайти к дяде Ватанабэ."
     
-    show Aiko_Base_Outfit_03_Angry_Say_Mobile_Masked with Dissolve( 0.1 )
+    show Aiko_Base_Outfit_03_Angry_Say_Mobile_Masked with Dissolve( my_dissolve_01 )
     hide Aiko_Base_Outfit_03_Normal_Silent_Mobile_Masked
     
     aiko "Да? Ладно. Но я позвоню ему, и скажу чтобы он тебе не наливал!"
     
-    hide Aiko_Base_Outfit_03_Angry_Say_Mobile_Masked with Dissolve( 0.1 )
-    hide Kenji_MObile_Phone with Dissolve( 0.2 )
+    hide Aiko_Base_Outfit_03_Angry_Say_Mobile_Masked with Dissolve( my_dissolve_01 )
+    hide Kenji_MObile_Phone with Dissolve( my_dissolve_02 )
     
     kenji "Айко!"
 
@@ -2722,129 +2759,129 @@ label start:
     "Нет. Мне быть алкоголиком не грозит, ну кто же может стать алкашом, употребляя только пиво?"
     
     play environment_sounds "./sounds/environment/City_Industrial_Day.mp3" fadein 1 fadeout 1
-    scene Evening_Watanabe_Bike_WorkShop with dissolve
+    scene Evening_Watanabe_Bike_WorkShop with Dissolve( my_dissolve_05 )
     
     "Размышляя над этим, я и не заметил как добрался до дома Ватанабэ. На мою радость его гараж, и одновременно — мастерская был открыт. "
     "Дядя Ватанабэ ещё не закончил работать. "
     "Я подошёл ближе и поздоровался с ним."
     
-    show Watanabe_01 Normal_Say with Dissolve( 0.2 )
+    show Watanabe_01 Normal_Say with Dissolve( my_dissolve_02 )
     
     watanabe "А, привет Кендзи! Гляди. Парень десять тысяч накрутил, а звёздочка распредвала — не съедена."
     watanabe "И цепь не растянулась, ни на миллиметр! И натяжитель держит."
     
-    show Watanabe_01 Normal_Silent with Dissolve( 0.2 )
+    show Watanabe_01 Normal_Silent with Dissolve( my_dissolve_02 )
     
     "Что такое \"цепь\" и \"звездочка\" мне может быть было понятно"
     "Но что за зверь такой \"распредвал\" я не знал совершенно"
     
-    show Watanabe_01 Normal_Say with Dissolve( 0.2 )
+    show Watanabe_01 Normal_Say with Dissolve( my_dissolve_02 )
     
     watanabe "Но что-то гремит. Я думал — ну точно распредвал, что ещё может?"
     watanabe "Столько времени потратил чтобы генератор снять. Плотно он засел!"
     watanabe "Чуть на съёмнике резьбу не съело! Прокладку порвал! А внутри — всё целёхонькое!"
     watanabe "Что же тогда гремит то, Кендзи?"
     
-    show Watanabe_01 Normal_Silent with Dissolve( 0.2 )
+    show Watanabe_01 Normal_Silent with Dissolve( my_dissolve_02 )
     
     "Как обычно, дядя Ватанабэ задавал мне вопросы на которые я не знал ответа. И он сам это понимал, но такая уж у него была привычка."
     
-    show Watanabe_01 Normal_Say with Dissolve( 0.2 )
+    show Watanabe_01 Normal_Say with Dissolve( my_dissolve_02 )
 
     watanabe "А!"
     watanabe "Айко звонила. Говорит, ты нажрался как свинья и шатаешься по городу!"
     
-    show Watanabe_01 Normal_Silent with Dissolve( 0.2 )
+    show Watanabe_01 Normal_Silent with Dissolve( my_dissolve_02 )
 
     "Айко! Вот чертовка!"
     
-    show Watanabe_01 Normal_Say with Dissolve( 0.2 )
+    show Watanabe_01 Normal_Say with Dissolve( my_dissolve_02 )
     
     watanabe "Ты правда пьяный?"
     
-    show Watanabe_01 Normal_Silent with Dissolve( 0.2 )
+    show Watanabe_01 Normal_Silent with Dissolve( my_dissolve_02 )
     
     kenji "Три банки пива выпил, только и всего. А Айко как всегда на своей волне, ну вы же знаете."
     
-    show Watanabe_01 Normal_Say with Dissolve( 0.2 )
+    show Watanabe_01 Normal_Say with Dissolve( my_dissolve_02 )
 
     watanabe "Три банки! Не смертельно, но солидно. Что празднуешь?"
     
-    show Watanabe_01 Normal_Silent with Dissolve( 0.2 )
+    show Watanabe_01 Normal_Silent with Dissolve( my_dissolve_02 )
     
     kenji "Да я мусор выносил. Кладовку освобождаю. Тётя Асука просила, чтобы я вещи дяди Макото выбросил."
     kenji "Вещи тяжёлые, рация там и ещё что-то к ней. Уморился."
     
-    show Watanabe_01 Sad_Say with Dissolve( 0.2 )
+    show Watanabe_01 Sad_Say with Dissolve( my_dissolve_02 )
 
     watanabe "А..."
     
-    show Watanabe_01 Sad_Silent with Dissolve( 0.2 )
+    show Watanabe_01 Sad_Silent with Dissolve( my_dissolve_02 )
 
     "Голос его внезапно стал сиплым."
     
-    show Watanabe_01 Sad_Say with Dissolve( 0.2 )
+    show Watanabe_01 Sad_Say with Dissolve( my_dissolve_02 )
     
     watanabe "Асука ко мне приходила, спрашивала не хочу ли я забрать чего."
     watanabe "Но мне бы своё барахло выбросить. Так и лежит, пыль собирает, с тех пор как эти дела забросил."
     
-    show Watanabe_01 Sad_Silent with Dissolve( 0.2 )
+    show Watanabe_01 Sad_Silent with Dissolve( my_dissolve_02 )
     
     kenji "Радио?"
     
-    show Watanabe_01 Normal_Say with Dissolve( 0.2 )
+    show Watanabe_01 Normal_Say with Dissolve( my_dissolve_02 )
     
     watanabe "Ну да."
     
-    show Watanabe_01 Normal_Silent with Dissolve( 0.2 )
+    show Watanabe_01 Normal_Silent with Dissolve( my_dissolve_02 )
     
     kenji "А почему забросили?"
     
-    hide Watanabe_01 with Dissolve( 0.1 )
-    show Watanabe_02 Normal_Say with Dissolve( 0.1 )
+    hide Watanabe_01 with Dissolve( my_dissolve_01 )
+    show Watanabe_02 Normal_Say with Dissolve( my_dissolve_01 )
     
     watanabe "Почему забросил..."
     
-    show Watanabe_02 Normal_Silent with Dissolve( 0.2 )
+    show Watanabe_02 Normal_Silent with Dissolve( my_dissolve_02 )
 
     "Он задумался."
     
-    hide Watanabe_02 with Dissolve( 0.1 )
-    show Watanabe_01 Normal_Say with Dissolve( 0.1 )
+    hide Watanabe_02 with Dissolve( my_dissolve_01 )
+    show Watanabe_01 Normal_Say with Dissolve( my_dissolve_01 )
 
     watanabe "А что же мне, до скончанья веков этим заниматься?"
     watanabe "Ты вот тоже, Кендзи, небось скоро забросишь компьютеры свои, найдёшь девчонку себе, женишься. Давно пора."
     
-    show Watanabe_01 Normal_Silent with Dissolve( 0.2 )
+    show Watanabe_01 Normal_Silent with Dissolve( my_dissolve_02 )
 
     "Почему-то при словах «найдёшь девчонку», я подумал о Касуми. Меня эта мысль немного смутила, даже слегка потеплели уши. "
     "А дядя Ватанабэ продолжал:"
     
-    show Watanabe_01 Normal_Say with Dissolve( 0.2 )
+    show Watanabe_01 Normal_Say with Dissolve( my_dissolve_02 )
     
     watanabe "Теперь там все по другому - наши времена прошли." 
     watanabe "А Кайоши, он даже был «радиопульсаром»! Он мне потом признался." 
     watanabe "Если бы в школьные годы узнал — я бы ему рожу начистил. А потом уже, так..."
     
-    show Watanabe_01 Normal_Silent with Dissolve( 0.2 )
+    show Watanabe_01 Normal_Silent with Dissolve( my_dissolve_02 )
     
     "Он махнул рукой."
     kenji "Радио... Пульс... Пульсаром? Что значит, был «радиопульсаром»?"
     
-    show Watanabe_01 Normal_Say with Dissolve( 0.2 )
+    show Watanabe_01 Normal_Say with Dissolve( my_dissolve_02 )
     
     watanabe "Да это местное тайное общество, можно сказать, радиолюбительская «масонская ложа»!"
     watanabe "А по мне — так просто хулиганы они."
     watanabe "Каждый из нас их ненавидел, но каждый, мне кажется, если бы была возможность — моментально вступил к ним в клуб." 
     watanabe "Клуб — секретный! Никто не знал, кто в нём, и как туда попасть."
     
-    show Watanabe_01 Normal_Silent with Dissolve( 0.2 )
+    show Watanabe_01 Normal_Silent with Dissolve( my_dissolve_02 )
 
     "Дядя Ватанабэ замолчал и о чем-то задумался. Я не вытерпел и спросил:"
 
     kenji "А что они делали?"
     
-    show Watanabe_01 Normal_Say with Dissolve( 0.2 )
+    show Watanabe_01 Normal_Say with Dissolve( my_dissolve_02 )
     
     watanabe "Нам мешали! Правила вводили дурацкие. У каждого, дескать должен быть позывной."
     watanabe "Он и на самом деле должен быть. Но нам, пацаном разве прикажешь."
@@ -2855,24 +2892,24 @@ label start:
     watanabe "Но вроде как не достроили. А потом мы уже из школы выпустились."
     watanabe "И «радиопульсар» тоже поредел, много видимо ребят из нашего выпуска там было. Теперь его, клуба этого, и нет вовсе."
     
-    show Watanabe_01 Normal_Silent with Dissolve( 0.2 )
+    show Watanabe_01 Normal_Silent with Dissolve( my_dissolve_02 )
     
     kenji "А как это, глушат?"
     
-    show Watanabe_01 Normal_Say with Dissolve( 0.2 )
+    show Watanabe_01 Normal_Say with Dissolve( my_dissolve_02 )
     
     watanabe "Да как глушат?"
     watanabe "Включил рацию, а там неслышно ни хрена, значит глушат. Вот как!"
     
-    show Watanabe_01 Normal_Silent with Dissolve( 0.2 )
+    show Watanabe_01 Normal_Silent with Dissolve( my_dissolve_02 )
     
     "Я конечно ничего не понял, но дальше распрашивать не стал - не мое в общем-то дело, что там у них и как. "
     
-    show Watanabe_01 Normal_Say with Dissolve( 0.2 )
+    show Watanabe_01 Normal_Say with Dissolve( my_dissolve_02 )
 
     watanabe "А что это за штуковина у тебя, Кендзи?"
     
-    show Watanabe_01 Normal_Silent with Dissolve( 0.2 )
+    show Watanabe_01 Normal_Silent with Dissolve( my_dissolve_02 )
     
     kenji "А это..."
     
@@ -2882,43 +2919,43 @@ label start:
 
     "Я показал ему на культи, которые остались у тележки вместо колес. "
     
-    show Watanabe_01 Normal_Say with Dissolve( 0.2 )
+    show Watanabe_01 Normal_Say with Dissolve( my_dissolve_02 )
 
     watanabe "А зачем? Тут проще новую купить, Кендзи."
     
-    show Watanabe_01 Normal_Silent with Dissolve( 0.2 )
+    show Watanabe_01 Normal_Silent with Dissolve( my_dissolve_02 )
     
     kenji "Купить... Это не моя тележка!"
     
-    hide Watanabe_01 with Dissolve( 0.1 )
-    show Watanabe_02 Normal_Say with Dissolve( 0.1 )
+    hide Watanabe_01 with Dissolve( my_dissolve_01 )
+    show Watanabe_02 Normal_Say with Dissolve( my_dissolve_01 )
     
     watanabe "Ты значит, когда мусор выносил, у кого-то тележку позаимствовал, и угробил?"
     
-    show Watanabe_02 Normal_Silent with Dissolve( 0.2 )
+    show Watanabe_02 Normal_Silent with Dissolve( my_dissolve_02 )
     
     kenji "Ну... Почти что так."
     
-    show Watanabe_02 Normal_Say with Dissolve( 0.1 )
+    show Watanabe_02 Normal_Say with Dissolve( my_dissolve_01 )
     
     watanabe "Ну так купи и отдай им новую! Сколько такая хрень стоит? Три — пять тысяч йен, не больше"
     
-    show Watanabe_02 Normal_Silent with Dissolve( 0.2 )
+    show Watanabe_02 Normal_Silent with Dissolve( my_dissolve_02 )
     
     kenji "Нет, дядя Ватанабэ. Мне бы починить её, ну можно же?"
     
-    hide Watanabe_02 with Dissolve( 0.1 )
-    show Watanabe_01 Normal_Say with Dissolve( 0.1 )
+    hide Watanabe_02 with Dissolve( my_dissolve_01 )
+    show Watanabe_01 Normal_Say with Dissolve( my_dissolve_01 )
     
     watanabe "Да где я тебе найду колеса такие?"
     
-    show Watanabe_01 Normal_Silent with Dissolve( 0.2 )
+    show Watanabe_01 Normal_Silent with Dissolve( my_dissolve_02 )
     
     kenji "Ну, не обязательно прямо такие. От чего другого может подойдет?"
 
     "Ватанабэ покряхтел и скрылся в своей мастерской - гараже."
     
-    scene Evening_Watanabe_Bike_WorkShop with dissolve
+    scene Evening_Watanabe_Bike_WorkShop with Dissolve( my_dissolve_05 )
     
     #Мини ЦГ - звук из гаража Ватанабэ
     image Watanabe_Garage_Sounds:
@@ -2962,33 +2999,33 @@ label start:
             "Aiko_Bike_border_01_right_moved"
     ##
     
-    show Aiko_Bike_With_Border_01 with dissolve
+    show Aiko_Bike_With_Border_01 with Dissolve( my_dissolve_05 )
     
     "В руках он нёс детский велосипед. Я воскликнул."
     
     kenji "О! Это же старый велик Айко!"
     
-    show Watanabe_01 Normal_Say with Dissolve( 0.2 )
+    show Watanabe_01 Normal_Say with Dissolve( my_dissolve_02 )
     
     watanabe "Ага! Твой отец мне его отдал когда-то. Кажись — нашёлся донор!"
     
-    scene Evening_Watanabe_Bike_WorkShop with dissolve
+    scene Evening_Watanabe_Bike_WorkShop with Dissolve( my_dissolve_05 )
     
     "Дядя Ватанабэ снял какие-то металлические кольца с краёв оси тележки, выкинул то что осталось от прежних колес и примерил новые."
     
-    show Watanabe_02 Normal_Say with Dissolve( 0.2 )
+    show Watanabe_02 Normal_Say with Dissolve( my_dissolve_02 )
 
     watanabe "Не подходят ни хрена! У тележки — ось толще!"
     
-    show Watanabe_02 Normal_Silent with Dissolve( 0.2 )
+    show Watanabe_02 Normal_Silent with Dissolve( my_dissolve_02 )
 
     kenji "И что? Никак?"
     
-    show Watanabe_02 Normal_Say with Dissolve( 0.2 )
+    show Watanabe_02 Normal_Say with Dissolve( my_dissolve_02 )
     
     watanabe "Почему никак? Щас рассверлим!"
     
-    scene Evening_Watanabe_Bike_WorkShop with dissolve
+    scene Evening_Watanabe_Bike_WorkShop with Dissolve( my_dissolve_05 )
     
     "Он схватил тележку, велосипед и колеса и вновь скрылся в гараже."
     
@@ -3025,37 +3062,37 @@ label start:
             "Kasumi_Cart_With_New_Wheels_Evening_border_01_left_moved"
     ##
     
-    show Kasumi_Cart_With_New_Wheels_Evening_With_Border_01 with dissolve
+    show Kasumi_Cart_With_New_Wheels_Evening_With_Border_01 with Dissolve( my_dissolve_05 )
     
     watanabe "Ну вроде всё."
 
     "Он протянул тележку мне."
     
-    show Watanabe_01 Normal_Say with Dissolve( 0.2 )
+    show Watanabe_01 Normal_Say with Dissolve( my_dissolve_02 )
 
     watanabe "Эти колёса в сто раз лучше будут. Крепкие! Уже не сломаешь!"
     
-    show Watanabe_01 Normal_Silent with Dissolve( 0.2 )
+    show Watanabe_01 Normal_Silent with Dissolve( my_dissolve_02 )
 
     "Я покатал тележку по земле, колеса крутились, но туго. "
     
-    hide Kasumi_Cart_With_New_Wheels_Evening_With_Border_01 with dissolve
+    hide Kasumi_Cart_With_New_Wheels_Evening_With_Border_01 with Dissolve( my_dissolve_05 )
 
     kenji "Сколько с меня?"
     
-    show Watanabe_01 Normal_Say with Dissolve( 0.2 )
+    show Watanabe_01 Normal_Say with Dissolve( my_dissolve_02 )
     
     watanabe "Нисколько! Только помоги мне закатить мотоциклы в гараж. Но смотри, держи под наклоном, чтобы масло не вытекло!"
     
     play environment_sounds "./sounds/environment/City_Evening.mp3" fadein 1 fadeout 1
-    scene Outdoor_Evening_Kenji_Home with dissolve
+    scene Outdoor_Evening_Kenji_Home with Dissolve( my_dissolve_05 )
 
     "Покончив с этим я отправился домой."
     "И десяти минут не прошло как я был возле дома. Тележку я в дом заносить не стал, спрятав её за палисадником с цветами. "
     "Земля в палисаднике была влажная, видимо Айко совсем недавно поливала цветы. Я вошёл в дом."
     
     play environment_sounds "./sounds/environment/Kitchen.mp3" fadein 1 fadeout 1
-    scene Evening_Kenji_Home_Kitchen with dissolve 
+    scene Evening_Kenji_Home_Kitchen with Dissolve( my_dissolve_05 ) 
     
     "Айко на кухне не было. Я включил телевизор и задумался о своём ужине. Очень хотелось есть. "
     "За сегодняшний день я съел только тарелку салата да пачку чипсов. А уже поздно — восьмой час. "
@@ -3064,7 +3101,7 @@ label start:
     "Я решил заварить себе рамэн. "
     
     image Instant_Noodles = "./images/cg/DAY_01/07a_Kenji_Evening_Meal/Instant_Noodles/Instant_Noodles.png"
-    scene Instant_Noodles with dissolve
+    scene Instant_Noodles with Dissolve( my_dissolve_05 )
     
     "Телевизор по прежнему показывал новости. Шел блок про незначительные события."
 
@@ -3126,43 +3163,43 @@ label start:
             "Evening_Kenji_Kitchen_Door_border_01_left_moved"
     ##
     
-    show Evening_Kenji_Kitchen_Door_With_Border_01 with Dissolve( 0.2 )
-    show Aiko_Base_Outfit_03 Suspect_Silent at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.2 ) 
+    show Evening_Kenji_Kitchen_Door_With_Border_01 with Dissolve( my_dissolve_02 )
+    show Aiko_Base_Outfit_03 Suspect_Silent at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 ) 
     
     "Я и не заметил как на кухню пробралась Айко. Она внимательно смотрела на меня."
     "Наверное хочет определить, насколько я пьян! А я уже практически трезв. "
     "Надеюсь она не слышала моих извинений!"
     
-    show Aiko_Base_Outfit_03 Suspect_Say at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.2 ) 
+    show Aiko_Base_Outfit_03 Suspect_Say at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 ) 
 
     aiko "Где ты был?"
     
-    show Aiko_Base_Outfit_03 Suspect_Silent at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.2 ) 
+    show Aiko_Base_Outfit_03 Suspect_Silent at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 ) 
     
     kenji "Как где? У дяди Ватанабэ! Я же говорил, а до этого — вещи из кладовки выносил. Где же мне ещё быть?"
     
-    show Aiko_Base_Outfit_03 Suspect_Say at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.2 ) 
+    show Aiko_Base_Outfit_03 Suspect_Say at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 ) 
     
     aiko "Что-то долго ты выносил вещи на свалку!"
     
-    show Aiko_Base_Outfit_03 Suspect_Silent at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.2 )
+    show Aiko_Base_Outfit_03 Suspect_Silent at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 )
 
     "Не хотелось рассказывать Айко про Касуми."
 
     kenji "Ну да, выносил чуть не до шести часов. Что тут такого?"
     kenji "И вообще, это что за допрос? Я жутко устал! Отстань, Айко!"
     
-    show Aiko_Base_Outfit_03 Normal_Silent at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.2 )
+    show Aiko_Base_Outfit_03 Normal_Silent at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 )
 
     "Айко вздохнула."
     
-    show Aiko_Base_Outfit_03 Normal_Say at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.2 )
+    show Aiko_Base_Outfit_03 Normal_Say at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 )
 
     aiko "Ладно, извини. Всё-таки я волновалась за тебя."
     aiko "Ушёл и с концами. И пиво всё выпил!" 
     aiko "Я думала, вдруг в канаве утонешь. Помнишь, как тот алкоголик, про которого рассказывал папа?"
     
-    show Aiko_Base_Outfit_03 Normal_Silent at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.2 )
+    show Aiko_Base_Outfit_03 Normal_Silent at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 )
 
     "Меня снова чуть покоробило, когда Айко назвала моего отца «папой». "
     "А алкоголик утонувший в канаве, ни кто иной как дядя Сато. Именно так он отправился на тот свет. "
@@ -3170,40 +3207,40 @@ label start:
 
     kenji "Да сейчас в канаве и не утонуть. Они же все пересохли!"
     
-    show Aiko_Base_Outfit_03 Smile_Silent at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.2 )
+    show Aiko_Base_Outfit_03 Smile_Silent at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 )
 
     "Айко улыбнулась."
     
-    show Aiko_Base_Outfit_03 Smile_Say at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.2 )
+    show Aiko_Base_Outfit_03 Smile_Say at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 )
 
     aiko "Ну да!"
     
-    show Aiko_Base_Outfit_03 Smile_Silent at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.2 )
+    show Aiko_Base_Outfit_03 Smile_Silent at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 )
     
     kenji "Кстати! Раз уж речь о утопленниках и канавах! Ты сейчас не идёшь в душ Айко?"
     
-    show Aiko_Base_Outfit_03 Normal_Say at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.2 )
+    show Aiko_Base_Outfit_03 Normal_Say at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 )
     
     aiko "А? Нет! Почему спрашиваешь?"
     
-    show Aiko_Base_Outfit_03 Normal_Silent at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.2 )
+    show Aiko_Base_Outfit_03 Normal_Silent at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 )
     
     kenji "Мне туда надо! Срочно! Кажись я здорово употел пока с барахлом из кладовки возился!"
     kenji "Айко, пожалуйста, наполни ванную водой!"
     
-    show Aiko_Base_Outfit_03 Normal_Say at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.2 )
+    show Aiko_Base_Outfit_03 Normal_Say at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 )
     
     aiko "Хорошо!"
     
-    hide Aiko_Base_Outfit_03 with Dissolve( 0.1 )
-    scene Evening_Kenji_Home_Kitchen with dissolve 
+    hide Aiko_Base_Outfit_03 with Dissolve( my_dissolve_01 )
+    scene Evening_Kenji_Home_Kitchen with Dissolve( my_dissolve_05 ) 
 
     "Айко убежала вверх по лестнице. Видимо она немедленно решила исполнить мою просьбу."
     "Я между тем закончил свой ужин, сложил посуду в мойку и отправился на второй этаж. "
     
     image Evening_Kenji_Bedroom = "./images/bg/Indoor/Kenji_Bedroom/Evening/Base.jpg"
     play environment_sounds "./sounds/environment/Shower.mp3" fadein 1 fadeout 1
-    scene Kenji_Home_Bathroom with dissolve
+    scene Kenji_Home_Bathroom with Dissolve( my_dissolve_05 )
     
     "Ванна была полна чуть более чем на половину. "
     "Я тщательно выскоблил себя мочалкой. Правда руки и шея здорово сгорели на солнышке и мочалкой к ним было не прикоснуться. "
@@ -3236,7 +3273,7 @@ label start:
             "Dream_Frame"
     play environment_sounds_dream "./sounds/environment/Shower_Dream.mp3" fadein 1
     stop environment_sounds fadeout 1
-    show Dreams_About_Kasumi_Moved with dissolve
+    show Dreams_About_Kasumi_Moved with Dissolve( my_dissolve_05 )
     
     "Я снова задумался о том, как пахнет Касуми."
     "Закрыл глаза, представил, как она стоит прямо перед мною. Я положил ладони ей на плечи и слегка наклонился чтобы почуять запах кожи, в том месте, где её шея выглядывает из под ворота матроски."
@@ -3245,7 +3282,7 @@ label start:
     
     stop environment_sounds_dream fadeout 1
     play environment_sounds "./sounds/environment/Shower.mp3" fadein 1 fadeout 1
-    hide Dreams_About_Kasumi_Moved with dissolve
+    hide Dreams_About_Kasumi_Moved with Dissolve( my_dissolve_05 )
     
     "Я открыл глаза и опустил руки. "
     "Конечно, никакого запаха Касуми я не мог почувствовать даже если бы и в самом деле взял её за плечи и уткнулся носом в шею."
@@ -3268,7 +3305,7 @@ label start:
     "Я закончил гигиенические процедуры душем и вышел из ванной."
     
     play environment_sounds "./sounds/environment/Bedroom.mp3" fadein 1 fadeout 1
-    scene Evening_Kenji_Bedroom with dissolve
+    scene Evening_Kenji_Bedroom with Dissolve( my_dissolve_05 )
     
     "В своей комнате, я приступил к подбору одежды для завтрашнего мероприятия. "
     "У меня есть отличные джинсы для особых случаев, им уже лет пять, не меньше, но они в отличном состоянии, так редко я их одеваю. "
@@ -3307,14 +3344,14 @@ label start:
             "Kenji_Glasses_border_01_right_moved"
     ##
     
-    show Kenji_Glasses_With_Border_01 with dissolve
+    show Kenji_Glasses_With_Border_01 with Dissolve( my_dissolve_05 )
     
     "Этот способ — очки. "
     "Нет, у меня хорошее зрение, пусть оно и немного подсажено сидением за компьютером сутки напролёт. "
     "Это очки без диоптрий, в чёрной пластмассовой оправе. Специальные. "
     "Говорят — спасают от излучения испускаемого монитором. На самом деле это очки отца, но и мне подошли идеально."
     
-    hide Kenji_Glasses_With_Border_01 with dissolve
+    hide Kenji_Glasses_With_Border_01 with Dissolve( my_dissolve_05 )
 
     "Я одел очки и подошёл к зеркалу. "
 
@@ -3349,7 +3386,7 @@ label start:
 
     "Мне нужно было в комнату отца и тёти Асуки! Это комната на первом этаже, соседняя с кухней. "
     
-    scene Evening_Kenji_Parents_Room with dissolve
+    scene Evening_Kenji_Parents_Room with Dissolve( my_dissolve_05 )
     
     "На виду необходимая мне вещь не лежала.  "
     "Я открыл один из ящичков под телевизором. Он был доверху набит дисками. Они лежали ровными пачками - видимо Айко постаралась. "
@@ -3389,8 +3426,8 @@ label start:
             "border_01_right_moved"
     ##
     
-    show Kenji_Parents_Room_Door_With_Border_01 with Dissolve( 0.2 )
-    show Aiko_In_Nightie Normal_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    show Kenji_Parents_Room_Door_With_Border_01 with Dissolve( my_dissolve_02 )
+    show Aiko_In_Nightie Normal_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     "Я обернулся. В дверях комнаты стояла Айко. Похоже что она собиралась спать и переоделась в пижаму."
     "Она перевела взгляд на мои руки, державшие диск с порнушкой."
@@ -3398,19 +3435,19 @@ label start:
 
     kenji "Я искал тут кое что!"
     
-    show Aiko_In_Nightie Suspect_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    show Aiko_In_Nightie Suspect_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     aiko "Искал?"
     
-    show Aiko_In_Nightie Suspect_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    show Aiko_In_Nightie Suspect_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
 
     "Почти шёпотом спросила Айко, и добавила:"
     
-    show Aiko_In_Nightie Suspect_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    show Aiko_In_Nightie Suspect_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
 
     aiko "И нашёл?"
     
-    show Aiko_In_Nightie Suspect_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    show Aiko_In_Nightie Suspect_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     kenji "Что значит нашёл?"
 
@@ -3418,11 +3455,11 @@ label start:
 
     kenji "Ничего не нашёл! Я искал не это!"
     
-    show Aiko_In_Nightie Suspect_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    show Aiko_In_Nightie Suspect_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     aiko "Ты понимаешь, что ты извращенец? Это же для извращенцев кино!"
     
-    show Aiko_In_Nightie Suspect_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    show Aiko_In_Nightie Suspect_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
 
     "Ну как всегда! Эту ретро порнографию я не стал бы смотреть ни за какие коврижки. А тут такое!"
 
@@ -3431,26 +3468,26 @@ label start:
     kenji "И вообще, это же моего отца! Он что тоже извращенец?"
     kenji "Или нет, может это твоего отца вещь, а Айко? И он был извращенцем? Неужели так?"
     
-    show Aiko_In_Nightie Sorry_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    show Aiko_In_Nightie Sorry_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
 
     "Наверное зря я приплёл сюда покойного отца Айко. После этой фразы она опустила голову, и произнесла жалобно:"
     
-    show Aiko_In_Nightie Sorry_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    show Aiko_In_Nightie Sorry_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
 
     aiko "Я хотела выкинуть! Когда убиралась здесь. Но потом забыла. Не хотела чтобы ты нашёл, а ты всё-таки нашёл!"
     
-    show Aiko_In_Nightie Sorry_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    show Aiko_In_Nightie Sorry_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     kenji "Да не нужна мне вся эта ерунда... Мне нужен... Микрофон для караоке! Вот зачем я полез сюда! Я ищу микрофон!"
     
-    show Aiko_In_Nightie Angry_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    show Aiko_In_Nightie Angry_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     aiko "Ты врёшь!"
     aiko "Наверное ждал когда я усну, чтобы взять это."
     aiko "Я поняла какие у тебя завтра «дела»."
     aiko "Ты небось вступил в какой-то клуб извращенцев. И вы, в этом вашем клубе будете смотреть эти непристойности!"
     
-    show Aiko_In_Nightie Angry_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    show Aiko_In_Nightie Angry_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
 
     "Да уж, неплохо у Айко фантазия работает! Теперь я ещё и в клуб извращенцев вступил. "
     "Странно, что не в клуб — «алкоголиков и извращенцев»! Теперь её уж точно не переубедить! "
@@ -3473,7 +3510,7 @@ label start:
             "Trip_To_Sea_With_Cute_Little_Sis"
     #
     
-    show Trip_To_Sea_With_Cute_Little_Sis_cg with dissolve
+    show Trip_To_Sea_With_Cute_Little_Sis_cg with Dissolve( my_dissolve_05 )
 
     "Я взял другой диск из кучи. Прочёл название фильма на обложке."
 
@@ -3481,21 +3518,21 @@ label start:
 
     "Господи! Неужели отец и такое смотрит? Или чьё это вообще? Почему мне попалось в руки именно это? "
     
-    scene Evening_Kenji_Parents_Room with Dissolve( 0.2 ) 
-    show Kenji_Parents_Room_Door_With_Border_01 with Dissolve( 0.2 )
-    show Aiko_In_Nightie Scared_Shy_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    scene Evening_Kenji_Parents_Room with Dissolve( my_dissolve_02 ) 
+    show Kenji_Parents_Room_Door_With_Border_01 with Dissolve( my_dissolve_02 )
+    show Aiko_In_Nightie Scared_Shy_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     "Лицо Айко исказила гримаса страха. Её уши и щеки, а потом и всё лицо залила густая краснота."
     "Я откинул диск в сторону и вскочил."
 
     kenji "Айко, я..."
     
-    show Aiko_In_Nightie Scared_Shy_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    show Aiko_In_Nightie Scared_Shy_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     aiko "Неееет!"
     
     play sound "./sounds/sounds/Aiko_Run_Away_From_Parents_Room.mp3"
-    hide Aiko_In_Nightie with Dissolve( 0.1 )
+    hide Aiko_In_Nightie with Dissolve( my_dissolve_01 )
     hide Kenji_Parents_Room_Door_With_Border_01 with hpunch
     
     "Айко встрепенулась, резко дёрнулась в сторону двери и исчезла за ней. "
@@ -3509,7 +3546,7 @@ label start:
 
     "Больше мне в комнате родителей делать было нечего, и я поспешил к себе. "
     
-    scene Evening_Kenji_Bedroom with dissolve
+    scene Evening_Kenji_Bedroom with Dissolve( my_dissolve_05 )
     
     "Я распутал микрофонный шнур, поднёс штекер микрофона к разьёму на компьютере."
 
@@ -3566,8 +3603,8 @@ label start:
             "Kenji_Clasmate_Girl_BG_Right_border_01_right_moved"
     ##
     
-    show Kenji_Clasmate_Girl_BG_Right with Dissolve( 0.2 )
-    show Kenji_Classmate_Girl at Move( ( 1600, 520 ), ( 1600, 520 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    show Kenji_Clasmate_Girl_BG_Right with Dissolve( my_dissolve_02 )
+    show Kenji_Classmate_Girl at Move( ( 1600, 520 ), ( 1600, 520 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
 
     "Я вспомнил одну свою однокурсницу. Она — сильно гнусавила! "
     "Наверное благодаря пронзительному голосу её постоянно назначали старостой группы. "
@@ -3603,8 +3640,8 @@ label start:
             "Kenji_Clasmate_Boy_BG_Left_border_01_left_moved"
     ##
     
-    show Kenji_Clasmate_Boy_BG_Left with Dissolve( 0.2 )
-    show Kenji_Classmate_Boy at Move( ( 300, 520 ), ( 300, 520 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    show Kenji_Clasmate_Boy_BG_Left with Dissolve( my_dissolve_02 )
+    show Kenji_Classmate_Boy at Move( ( 300, 520 ), ( 300, 520 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     "Во первых — он был толстый как бочка! Когда на улице было тепло с него ручьями тёк пот и пахло чем-то неприятным. "
     "У него была совершенно карикатурная, жёсткая кудрявая шевелюра, сросшиеся брови и невероятных размеров угри на носу."
@@ -3621,15 +3658,15 @@ label start:
 
     "Я как-то спросил своего соседа по парте: «Почему наша миленькая староста встречается с этим страшилищем?»."
     
-    hide Kenji_Classmate_Girl with Dissolve( 0.1 )
-    hide Kenji_Classmate_Boy with Dissolve( 0.1 )
-    show Kenji_Classmate_Girl_In_armor at Move( ( 1600, 520 ), ( 1600, 520 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
-    show Kenji_Classmate_Boy_In_Armor at Move( ( 300, 520 ), ( 300, 520 ), 0.0, xanchor="center", yanchor="center") with Dissolve( 0.1 )
+    hide Kenji_Classmate_Girl with Dissolve( my_dissolve_01 )
+    hide Kenji_Classmate_Boy with Dissolve( my_dissolve_01 )
+    show Kenji_Classmate_Girl_In_armor at Move( ( 1600, 520 ), ( 1600, 520 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Kenji_Classmate_Boy_In_Armor at Move( ( 300, 520 ), ( 300, 520 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     "Помню он ответил мне, что они вместе играли в одну игрушку, ММО или что-то в этом роде."
     "Улекались одним делом в общем..."
     
-    scene Evening_Kenji_Bedroom with dissolve
+    scene Evening_Kenji_Bedroom with Dissolve( my_dissolve_05 )
 
     "Я резко встал из-за стола. Вот что мне было нужно! Увлечение! Общее с Касуми увлечение! "
     "А уж чем увлекается она, мне известно. Жаль я сам в этом деле полный ноль, но ничего! Я приложу усилия и удивлю её! "
@@ -3639,7 +3676,7 @@ label start:
     
     play environment_sounds "./sounds/environment/Pantry_Evening.mp3" fadein 1
     image Evening_Kenji_Home_Pantry_Other_03 = "./images/bg/Indoor/Kenji_Home_Pantry/Evening/Evening_Kenji_Home_Pantry_Other_03.jpg"
-    scene Evening_Kenji_Home_Pantry_Other_03 with dissolve
+    scene Evening_Kenji_Home_Pantry_Other_03 with Dissolve( my_dissolve_05 )
     
     "Я окинул взглядом стеллаж, на котором лежали книги. Старые книги дяди Макото, посвящённые радио и прочим сопутствующим вещам. "
     "Я ещё не успел разложить их по коробкам и они занимали целую полку стеллажа."
@@ -3663,19 +3700,22 @@ label start:
         contains:
             "Tube_Amplifiers_Book_Content"
 
-    show Tube_Amplifiers_Book_Cover_CG with dissolve
+    show Tube_Amplifiers_Book_Cover_CG with Dissolve( my_dissolve_05 )
     
     "Я вытянул первую попавшуюся. На обложке красовалась надпись «Ламповые усилители»"
     "Название мне сразу не понравилось, но я на всякий случай полистал её. "
     
     play sound "./sounds/sounds/Open_Book.mp3"
-    hide Tube_Amplifiers_Book_Cover_CG with Dissolve( 0.2 )
-    show Tube_Amplifiers_Book_Content_CG with Dissolve( 0.2 )
+    hide Tube_Amplifiers_Book_Cover_CG with Dissolve( my_dissolve_02 )
+    show Tube_Amplifiers_Book_Content_CG with Dissolve( my_dissolve_02 )
     
-    "Какие-то непонятные тексты и схемы на пожелтевших от времени страницах. "
+    "Какие-то тексты и схемы на пожелтевших от времени страницах. "
+    "В которых я совершенно ничего не понимал."
+    
+    play sound "./sounds/sounds/Thick_Book_Fall.mp3"
+    scene Evening_Kenji_Home_Pantry_Other_03 with Dissolve( my_dissolve_05 )
+    
     "Я кинул книгу в лежащий на полу, пустой ящик. Первый блин комом, но разве меня это остановит? Как бы не так!"
-    
-    scene Evening_Kenji_Home_Pantry_Other_03 with dissolve
 
     "Из разноцветной стопки книг на полке, я выцепил другую, тоненькую книжку."
     
@@ -3688,13 +3728,16 @@ label start:
         contains:
             "Pan_Stretching"
     
-    show Pan_Stretching_CG with dissolve
+    show Pan_Stretching_CG with Dissolve( my_dissolve_05 )
     
     "«Расширение панорамы с помощью лыжной мази»"
     "Я перечитал название несколько раз. Но похоже эта книга здесь оказалась случайно и не имела к электронике никакого отношения. "
+    
+    hide Pan_Stretching_CG with Dissolve( my_dissolve_05 )
+    play sound "./sounds/sounds/Thin_Book_Fall.mp3"
+    
     "Я не стал открывать её и сразу бросил в ящик."
     
-    hide Pan_Stretching_CG with dissolve
     
     "Третья книга которая попалась мне на глаза не имела никакого названия."
     
@@ -3716,34 +3759,35 @@ label start:
         contains:
             "KT315_Gondola_Content"
     
-    show KT315_Gondola_Cover_CG with dissolve
+    show KT315_Gondola_Cover_CG with Dissolve( my_dissolve_05 )
     
     "Что это вообще за ерунда?"
     "Я открыл её и перелистал."
     
     play sound "./sounds/sounds/Open_Book.mp3"
-    hide KT315_Gondola_Cover_CG with Dissolve( 0.2 )
-    show KT315_Gondola_Content_CG with Dissolve( 0.2 )
+    hide KT315_Gondola_Cover_CG with Dissolve( my_dissolve_02 )
+    show KT315_Gondola_Content_CG with Dissolve( my_dissolve_02 )
     
     "Это о чем вообще?"
     "Что за бред сумашедшего?"
     
-    hide KT315_Gondola_Content_CG with dissolve
+    hide KT315_Gondola_Content_CG with Dissolve( my_dissolve_05 )
     
     kenji "Нет спасибо."
 
+    play sound "./sounds/sounds/Thick_Book_Fall.mp3"
     "Сказал я в вполголоса и швырнул непонятную книгу вслед за остальными."
     
     image Electronics_For_Dummies_book_light = "./images/cg/DAY_01/10a_Makoto's_Books/Electronics_For_Dummies/book_light.png"
     
     play environment_sounds_dream "./sounds/sounds/Aah.mp3" fadein 1
-    show black_image_alpha_50pc with Dissolve( 0.2 )
-    show Electronics_For_Dummies_book_light with Dissolve( 0.2 )
+    show black_image_alpha_50pc with Dissolve( my_dissolve_02 )
+    show Electronics_For_Dummies_book_light with Dissolve( my_dissolve_02 )
     
     "И вот наконец!"
     
-    show Electronics_For_Dummies with dissolve
-    hide Electronics_For_Dummies_book_light with Dissolve( 0.2 )
+    show Electronics_For_Dummies with Dissolve( my_dissolve_05 )
+    hide Electronics_For_Dummies_book_light with Dissolve( my_dissolve_02 )
     
     "То что надо! Яркая, глянцевая суперобложка и приятный аромат свежей типографии, а не замшелой бумаги. "
     "Название согревает сердце и душу: «Электроника. Пособие для слабоумных хиккикомори»!"
@@ -3752,8 +3796,8 @@ label start:
     
     play sound "./sounds/sounds/Aah_Stop_Tape.mp3" fadein 1
     stop environment_sounds_dream fadeout 1
-    hide Electronics_For_Dummies with Dissolve( 0.2 )
-    hide black_image_alpha_50pc with Dissolve( 0.2 )
+    hide Electronics_For_Dummies with Dissolve( my_dissolve_02 )
+    hide black_image_alpha_50pc with Dissolve( my_dissolve_02 )
     
     "Конечно нет. Не было у меня в руках такой книги. Здесь вообще нет книг. Только бесполезная макулатура! "
     "Зачем пишут эту отвратительную заумь и кто читает эту хрень? Неужели Касуми в этом море непонятной информации чувствует себя как рыба в воде? Как ей это удается?"
@@ -3764,7 +3808,7 @@ label start:
     "Роясь в этой бесполезной макулатуре, я напрочь забыл про интернет."
     "Я пулей бросился обратно в свою комнату."
     
-    scene Evening_Kenji_Bedroom with dissolve
+    scene Evening_Kenji_Bedroom with Dissolve( my_dissolve_05 )
     
     kenji "Интернет! Интернет! Интернет!"
 
@@ -3781,13 +3825,13 @@ label start:
         contains:
             "Electronics_For_Beginners_Manga_Cover"
     
-    show Electronics_For_Beginners_Manga_Cover_CG with dissolve
+    show Electronics_For_Beginners_Manga_Cover_CG with Dissolve( my_dissolve_05 )
     
     "Да, таких книг сотни, но эта особенная — это был комикс. "
     "На обложке, мультяшная, жизнерадостная школьница с большими и радостными глазами приветливо махала мне руками. "
     "А вокруг неё все эти транзисторы, конденсаторы и ещё чёрт знает что. Вот что мне было нужно!"
     
-    hide Electronics_For_Beginners_Manga_Cover_CG with dissolve
+    hide Electronics_For_Beginners_Manga_Cover_CG with Dissolve( my_dissolve_05 )
 
     "Я глянул на цену — пять тысяч йен. Да, дороговато. Но ещё больше если с немедленной доставкой до дома - пятнадцать тысяч. Но мне не жалко таких денег, эта книга должна была стать моей!"
 
@@ -3805,22 +3849,22 @@ label start:
     window hide
     
     play environment_sounds "./sounds/environment/Suburb_Night.mp3" fadein 1
-    scene Night_Street_01 with dissolve
+    scene Night_Street_01 with Dissolve( my_dissolve_05 )
     
     pause 2.0
     
     image End_Splash_Logo_JP = im.Scale( "./images/other/logo_jp.png", 900, 506 )
     image End_Splash_Text = VBox(
         Text( "{b}{color=#FFE680}РадиоПульсар ПреДемо{/color}{/b}" ),
-        Text( "" ),
+        #Text( "" ),
         Text( "{color=#FFE680}Сценарий:{/color} Дим Осторожно, Puankar, rurubell" ),
         Text( "{color=#FFE680}Картинки, код:{/color} rurubell" ),
         Text( "" ),
-        Text( "{b}{color=#FFE680}Благодарности{/color}{/b}" ),
+        Text( "{b}{color=#FFE680}Спасибо{/color}{/b}" ),
         Text( "{color=#FFE680}yakuji-lover{/color} - за помощь с кодом" ),
         Text( "{color=#FFE680}noteblock, Russian J-12{/color} - за обсуждение сюжета и персонажей" ),
         Text( "{color=#FFE680}fOkusnik{/color} - за попытку всех переубедить" ),
-        Text( "Имиджбордам {color=#FFE680}2ch.hk{/color} и {color=#FFE680}iichan.hk{/color}" ),
+        Text( "Пользователям имиджборд {color=#FFE680}2ch.hk{/color} и {color=#FFE680}iichan.hk{/color}" ),
         Text( "" ),
         Text( "Музыка и звуки взяты с сайтов ..." ),
         )
@@ -3840,7 +3884,7 @@ label start:
             "End_Splash_Logo_JP"
             alpha 0.4
     
-    show end_splash with dissolve
+    show end_splash with Dissolve( my_dissolve_05 )
     
     pause
     

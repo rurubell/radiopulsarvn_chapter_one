@@ -560,12 +560,12 @@ screen about():
             text _( "{color=#FFE680}Картинки, код:{/color} rurubell" )
             text _( "" )
             text _( "{color=#FFE680}Благодарности{/color}" )
-            text _( "{color=#FFE680}yakuji-lover{/color} - за помощь с кодом" )
+            text _( "{color=#FFE680}yakui-lover{/color} - за помощь с кодом" )
             text _( "{color=#FFE680}noteblock, Russian J-12{/color} - за обсуждение сюжета и персонажей" )
             text _( "{color=#FFE680}fOkusnik{/color} - за попытку всех переубедить" )
             text _( "Имиджбордам {color=#FFE680}2ch.hk{/color} и {color=#FFE680}iichan.hk{/color}" )
             text _( "" )
-            text _( "Музыка и звуки взяты с сайтов ..." )
+            text _( "Музыка и звуки взяты с сайтов {color=#FFE680}wav-library.net, download-sounds.ru, youtube.com{/color}" )
 
 
 ## Это переустанавливается в options.rpy для добавления текста на экран Об игре.

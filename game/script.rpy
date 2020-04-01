@@ -172,7 +172,7 @@ label start:
         contains:
             "Midori_GE_Interface"
     
-    "..."
+    pause 0.5
     
     scene Midori_In_GE_02 with Dissolve( my_dissolve_05 )
     
@@ -205,7 +205,7 @@ label start:
         contains:
             "Midori_GE_Interface"
     
-    "..."
+    pause 0.5
     
     scene Midori_In_GE_03 with Dissolve( my_dissolve_05 )
     
@@ -248,7 +248,7 @@ label start:
         contains:
             "Midori_GE_Interface"
     
-    "..."
+    pause 0.5
     
     scene Midori_In_GE_04 with Dissolve( my_dissolve_05 )
     
@@ -772,7 +772,7 @@ label start:
     "Второй — легче. Но его приборная панель была закрыта крышкой, с замками как на армейской фляге. "
     "Для начала унесу тот, что легче — это будет разминка."
     
-    play environment_sounds "./sounds/environment/City_Suburb_Day.mp3" fadein 2 fadeout 1
+    play environment_sounds "./sounds/environment/City_Suburb_Day_01.mp3" fadein 1 fadeout 1
     scene Outdoor_Day_Kenji_Home with Dissolve( my_dissolve_05 )
     
     "На улице был типичный июньский полдень. Ужасно яркое солнце, голубое небо и белоснежные облака. Все как обычно. "
@@ -789,6 +789,7 @@ label start:
     "Пройдя один квартал я сменил тактику, и решил взять свой снаряд за его родные, заводские ручки — покрытые каким-то плотным, зелёным материалом. "
     "Постепенно стали ныть плечи и спина, а также зудеть нога в том месте где она тёрлась о край прибора."
     
+    play environment_sounds "./sounds/environment/City_Suburb_Day_02.mp3" fadein 1 fadeout 1
     scene Day_Trash_Place with Dissolve( my_dissolve_05 )
     play sound "./sounds/sounds/Metal_Item_Drag_And_Fall.mp3"
     
@@ -951,7 +952,7 @@ label start:
     "В следующий свой поход я решил не брать тяжелого собрата желтого чемоданчика. Я оставил его на потом."
     "Я взял с собой моток провода, который лежал на верхней полке."
     
-    play environment_sounds "./sounds/environment/City_Suburb_Day.mp3" fadein 2 fadeout 2
+    play environment_sounds "./sounds/environment/City_Suburb_Day_02.mp3" fadein 2 fadeout 2
     scene Day_Trash_Place with Dissolve( my_dissolve_05 )
     
     #Мини-ЦГ вентилятор Касуми 01
@@ -1067,7 +1068,7 @@ label start:
             "Dream_Frame"
     
     
-    play environment_sounds_dream "./sounds/environment/City_Suburb_Day_Dream.mp3" fadein 1
+    play environment_sounds_dream "./sounds/environment/City_Suburb_Day_02_Dream.mp3" fadein 1
     stop environment_sounds fadeout 2
     scene smocking_old_man_dream with Dissolve( my_dissolve_05 )
     
@@ -1076,7 +1077,7 @@ label start:
     "Наверняка, столь активные курильщики — болеют какими-то заболеваниями. "
     "Например Туберкулёз — неприятная и очень заразная болезнь, я слышал о такой. "
     
-    play environment_sounds "./sounds/environment/City_Suburb_Day.mp3" fadein 2
+    play environment_sounds "./sounds/environment/City_Suburb_Day_02.mp3" fadein 2
     stop environment_sounds_dream fadeout 2
     scene Day_Trash_Place with Dissolve( my_dissolve_05 )
     
@@ -1100,7 +1101,7 @@ label start:
     "А между тем, вторая банка пива подошла к концу. Я сходил на кухню и взял последнюю. Открывать её не стал — положил в карман брюк. "
     "В последнем и трудном походе мне понадобятся обе руки!"
     
-    play environment_sounds "./sounds/environment/City_Suburb_Day.mp3" fadein 2 fadeout 1
+    play environment_sounds "./sounds/environment/City_Suburb_Day_02.mp3" fadein 2 fadeout 1
     scene Day_Trash_Place with Dissolve( my_dissolve_05 )
     
     "Поход был действительно трудный! "
@@ -1797,7 +1798,7 @@ label start:
     show Kasumi_BOOM_animation
     play sound "./sounds/sounds/TNT.mp3"
     stop environment_sounds fadeout 1
-    play environment_sounds_dream "./sounds/environment/City_Suburb_Day_Dream.mp3" fadein 2 fadeout 1
+    play environment_sounds_dream "./sounds/environment/City_Suburb_Day_02_Dream.mp3" fadein 2 fadeout 1
     
     "Ба-бах!"
     blind_girl "Ай!"
@@ -1810,7 +1811,7 @@ label start:
     "Однако тележка сильно кренилась на левый бок, а одно из её колес, кружилось волчком в стороне. Всё-таки не была она рассчитана на такой вес."
     
     stop environment_sounds_dream fadeout 10
-    play environment_sounds "./sounds/environment/City_Suburb_Day.mp3" fadein 10 fadeout 1
+    play environment_sounds "./sounds/environment/City_Suburb_Day_02.mp3" fadein 10 fadeout 1
     scene Day_Trash_Place with Dissolve( my_dissolve_05 )
     
     "Я был несказанно рад такому повороту событий и немедленно поспешил к месту аварии."
@@ -2003,6 +2004,7 @@ label start:
     
     kenji "Это ещё что за вопрос? Делай со своей тележкой что хочешь."
     
+    play environment_sounds "./sounds/environment/City_Suburb_Day_03.mp3" fadein 2
     scene Outdoor_Day_BG_With_Railroad_2 with Dissolve( my_dissolve_05 )
 
     "Мы двинулись, я пристроился справа, встав между моей новой знакомой и обочиной дороги."
@@ -2129,7 +2131,7 @@ label start:
             "Dream_Frame"
     ##
     
-    play environment_sounds_dream "./sounds/environment/City_Suburb_Day_Dream.mp3" fadein 1
+    play environment_sounds_dream "./sounds/environment/City_Suburb_Day_03_Dream.mp3" fadein 1
     stop environment_sounds fadeout 1
     show Galileo_And_Newton with Dissolve( my_dissolve_05 )
     
@@ -2151,7 +2153,7 @@ label start:
     
     "Даже такие интересные личности как Эдисон и Тесла — ни разу это самое «реле» не одели. Удивительно!"
     
-    play environment_sounds "./sounds/environment/City_Suburb_Day.mp3" fadein 1
+    play environment_sounds "./sounds/environment/City_Suburb_Day_03.mp3" fadein 1
     stop environment_sounds_dream fadeout 1
     hide Edison_And_Tesla with Dissolve( my_dissolve_05 )
     
@@ -2209,7 +2211,7 @@ label start:
         contains:
             "Dream_Frame"
     
-    play environment_sounds_dream "./sounds/environment/City_Suburb_Day_Dream.mp3" fadein 1
+    play environment_sounds_dream "./sounds/environment/City_Suburb_Day_03_Dream.mp3" fadein 1
     stop environment_sounds fadeout 1
     scene Old_Kasumis_Dad_Dream with Dissolve( my_dissolve_05 )
     
@@ -2234,7 +2236,7 @@ label start:
     
     "И видит свою дочь, а рядом с ней, какого-то небритого, лохматого и нетрезвого извращенца. "
     
-    play environment_sounds "./sounds/environment/City_Suburb_Day.mp3" fadein 1
+    play environment_sounds "./sounds/environment/City_Suburb_Day_03.mp3" fadein 1
     stop environment_sounds_dream fadeout 1
     scene Outdoor_Day_BG_With_Railroad_2 with Dissolve( my_dissolve_05 )
 
@@ -2418,6 +2420,7 @@ label start:
 
     kasumi "Ничего. Я наверное, к этому уже привыкла."
     
+    play environment_sounds "./sounds/environment/City_Suburb_Day_04.mp3" fadein 1
     scene Outdoor_Day_Kasumi_Street with Dissolve( my_dissolve_05 )
     
     "Пару кварталов мы прошли молча. Не знаю о чем думала Касуми, меня же донимали мысли о её отце. "

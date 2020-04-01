@@ -24,7 +24,7 @@ define my_dissolve_05 = 0.5
 
 
 #Музыка в главном меню
-define config.main_menu_music = "./sounds/environment/City_Suburb_Day.mp3"
+define config.main_menu_music = "./sounds/environment/City_Suburb_Day_02.mp3"
 
 
 ## Определяет, показывать ли заголовок, данный выше, на экране главного меню.

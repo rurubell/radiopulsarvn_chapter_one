@@ -1,5 +1,5 @@
 image Kasumi_And_Pervert_Other = "images/cg/DAY_01/05a_Way_To_Kasumi_Home/Kasumi_Father/Kasumi_And_Pervert/Other.png"
-image Kasumi_And_Pervert_Sky = "images/cg/DAY_01/05a_Way_To_Kasumi_Home/Kasumi_Father/Kasumi_And_Pervert/Sky.jpg"
+image Kasumi_And_Pervert_Sky = "images/cg/DAY_01/05a_Way_To_Kasumi_Home/Kasumi_Father/Kasumi_And_Pervert/Sky.png"
 
 image Kasumi_And_Pervert_Sun_01 = "images/cg/DAY_01/05a_Way_To_Kasumi_Home/Kasumi_Father/Kasumi_And_Pervert/Sun_01.png"
 image Kasumi_And_Pervert_Sun_02 = "images/cg/DAY_01/05a_Way_To_Kasumi_Home/Kasumi_Father/Kasumi_And_Pervert/Sun_02.png"

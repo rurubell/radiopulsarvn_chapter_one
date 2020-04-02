@@ -1,5 +1,5 @@
 image Midori_Sea_BG_Other = "images/cg/DAY_01/01a_Green-Haired_Girl/Midori_Sea_BG/Other.png"
-image Midori_Sea_BG_Sky = "images/cg/DAY_01/01a_Green-Haired_Girl/Midori_Sea_BG/Sky.jpg"
+image Midori_Sea_BG_Sky = "images/cg/DAY_01/01a_Green-Haired_Girl/Midori_Sea_BG/Sky.png"
 
 image Midori_Sea_BG_Sea_Blinks_01 = "images/cg/DAY_01/01a_Green-Haired_Girl/Midori_Sea_BG/Sea_Blinks_01.png"
 image Midori_Sea_BG_Sea_Blinks_02 = "images/cg/DAY_01/01a_Green-Haired_Girl/Midori_Sea_BG/Sea_Blinks_02.png"

@@ -95,7 +95,7 @@ label start:
     kenji "Но ты не бойся! Я продал тебя очень хорошему человеку! Я надеюсь…"
     
     #ЦГ - Мидори в графическом редакторе
-    image Midori_Sea_BG_Non_Animated = "images/cg/DAY_01/01a_Green-Haired_Girl/Midori_Sea_BG/Midori_Sea_BG.jpg"
+    image Midori_Sea_BG_Non_Animated = "images/cg/DAY_01/01a_Green-Haired_Girl/Midori_Sea_BG/Midori_Sea_BG.png"
     image Midori_GE_Interface = "images/cg/DAY_01/01a_Green-Haired_Girl/GE_Interface.png"
     image Midori_02 = "images/cg/DAY_01/01a_Green-Haired_Girl/Midori/Midori_02.png"
     image Midori_In_GE_01:
@@ -359,7 +359,7 @@ label start:
     "Даже розовые таблетки — ферменты для пищеварения, которые мне прописали много лет назад — не забыты."
     
     #Мини ЦГ - кухонная плита, на фоне которой стоит Айко
-    image Day_Kenji_Home_Kitchen_Gas_Stove = "images/bg/Indoor/Kenji_Home_Kitchen/Day/Day_Kenji_Home_Kitchen_Gas_Stove.jpg"
+    image Day_Kenji_Home_Kitchen_Gas_Stove = "images/bg/Indoor/Kenji_Home_Kitchen/Day/Day_Kenji_Home_Kitchen_Gas_Stove.png"
     image Day_Kenji_Home_Kitchen_Gas_Stove_Moved:
         contains:
             "Day_Kenji_Home_Kitchen_Gas_Stove"
@@ -569,7 +569,7 @@ label start:
     "Айко с угрюмым видом кинула черпак в кастрюлю и пошла к холодильнику."
     
     #Мини ЦГ - холодильник на фоне которой стоит Айко
-    image Day_Kenji_Home_Kitchen_Fridge = "images/bg/Indoor/Kenji_Home_Kitchen/Day/Day_Kenji_Home_Kitchen_Fridge.jpg"
+    image Day_Kenji_Home_Kitchen_Fridge = "images/bg/Indoor/Kenji_Home_Kitchen/Day/Day_Kenji_Home_Kitchen_Fridge.png"
     image Day_Kenji_Home_Kitchen_Fridge_Moved:
         contains:
             "Day_Kenji_Home_Kitchen_Fridge"
@@ -3249,7 +3249,7 @@ label start:
     "Айко убежала вверх по лестнице. Видимо, она немедленно решила исполнить мою просьбу."
     "Я между тем закончил свой ужин, сложил посуду в мойку и отправился на второй этаж. "
     
-    image Evening_Kenji_Bedroom = "images/bg/Indoor/Kenji_Bedroom/Evening/Base.jpg"
+    image Evening_Kenji_Bedroom = "images/bg/Indoor/Kenji_Bedroom/Evening/Base.png"
     play environment_sounds "sounds/environment/Shower.mp3" fadein 1 fadeout 1
     scene Kenji_Home_Bathroom with Dissolve( my_dissolve_05 )
     
@@ -3412,7 +3412,7 @@ label start:
     aiko "Ты чего тут делаешь?"
     
     #Мини ЦГ - дверь в комнату родителей Кендзи
-    image Kenji_Parents_Room_Door = "images/bg/Indoor/Kenji_Parents_Room/Evening/enji_Parents_Room_Door.jpg"
+    image Kenji_Parents_Room_Door = "images/bg/Indoor/Kenji_Parents_Room/Evening/enji_Parents_Room_Door.png"
     image Kenji_Parents_Room_Door_Moved:
         contains:
             "Kenji_Parents_Room_Door"
@@ -3687,7 +3687,7 @@ label start:
     "Я выскочил из комнаты. Мне снова надо было на нижний этаж — в кладовку. "
     
     play environment_sounds "sounds/environment/Pantry_Evening.mp3" fadein 1
-    image Evening_Kenji_Home_Pantry_Other_03 = "images/bg/Indoor/Kenji_Home_Pantry/Evening/Evening_Kenji_Home_Pantry_Other_03.jpg"
+    image Evening_Kenji_Home_Pantry_Other_03 = "images/bg/Indoor/Kenji_Home_Pantry/Evening/Evening_Kenji_Home_Pantry_Other_03.png"
     scene Evening_Kenji_Home_Pantry_Other_03 with Dissolve( my_dissolve_05 )
     
     "Я окинул взглядом стеллаж, на котором лежали книги. Старые книги дяди Макото, посвящённые радио и прочим сопутствующим вещам. "

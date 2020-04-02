@@ -1,4 +1,4 @@
-image Kenji_Home_Bathroom_Base = "images/bg/Indoor/Kenji_Home_Bathroom/Kenji_Home_Bathroom.jpg"
+image Kenji_Home_Bathroom_Base = "images/bg/Indoor/Kenji_Home_Bathroom/Kenji_Home_Bathroom.png"
 
 image Kenji_Home_Bathroom_Shover_Animation:
     "images/bg/Indoor/Kenji_Home_Bathroom/shower_animation/01.png"

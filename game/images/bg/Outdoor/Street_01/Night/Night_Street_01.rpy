@@ -1,5 +1,5 @@
 image Night_Street_01_Base = "images/bg/Outdoor/Street_01/Night/Other.png"
-image Night_Street_01_Sky = "images/bg/Outdoor/Street_01/Night/Sky.jpg"
+image Night_Street_01_Sky = "images/bg/Outdoor/Street_01/Night/Sky.png"
 
 image Night_Street_01_TV = "images/bg/Outdoor/Street_01/Night/tv.png"
 

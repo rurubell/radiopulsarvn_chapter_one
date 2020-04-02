@@ -1,5 +1,5 @@
 image Main_Menu_other = "images/bg/Main_Menu/other.png"
-image Main_Menu_sky = "images/bg/Main_Menu/sky.jpg"
+image Main_Menu_sky = "images/bg/Main_Menu/sky.png"
 image Main_Menu_sfx = "images/bg/Main_Menu/sfx.png"
 image Main_Menu_Logo = "images/bg/Main_Menu/logo_jp.png"
 

@@ -55,13 +55,13 @@ define gui.interface_text_color = '#ffffff'
 ## Fonts and Font Sizes ########################################################
 
 ## The font used for in-game text.
-define gui.text_font = "./fonts/ubuntu/Ubuntu-L.ttf"
+define gui.text_font = "fonts/ubuntu/Ubuntu-L.ttf"
 
 ## The font used for character names.
-define gui.name_text_font = "./fonts/ubuntu/Ubuntu-C.ttf"
+define gui.name_text_font = "fonts/ubuntu/Ubuntu-C.ttf"
 
 ## The font used for out-of-game text.
-define gui.interface_text_font = "./fonts/ubuntu/Ubuntu-M.ttf"
+define gui.interface_text_font = "fonts/ubuntu/Ubuntu-M.ttf"
 
 ## The size of normal dialogue text.
 define gui.text_size = 33
@@ -425,15 +425,15 @@ init python:
     if renpy.variant("small"):
 
         ## Font sizes.
-        gui.text_size = 45
-        gui.name_text_size = 54
+        gui.text_size = 40
+        gui.name_text_size = 43
         gui.notify_text_size = 38
-        gui.interface_text_size = 45
-        gui.button_text_size = 45
-        gui.label_text_size = 51
+        gui.interface_text_size = 40
+        gui.button_text_size = 40
+        gui.label_text_size = 47
 
         ## Adjust the location of the textbox.
-        gui.textbox_height = 360
+        gui.textbox_height = 300
         gui.name_xpos = 120
         gui.text_xpos = 135
         gui.text_width = 1650

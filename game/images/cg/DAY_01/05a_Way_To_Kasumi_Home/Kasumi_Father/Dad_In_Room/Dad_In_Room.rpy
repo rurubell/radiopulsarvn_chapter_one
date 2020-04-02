@@ -1,10 +1,10 @@
-image Dad_In_Room_Other = "./images/cg/DAY_01/05a_Way_To_Kasumi_Home/Kasumi_Father/Dad_In_Room/Dad_In_Room.jpg"
+image Dad_In_Room_Other = "images/cg/DAY_01/05a_Way_To_Kasumi_Home/Kasumi_Father/Dad_In_Room/Dad_In_Room.jpg"
 
-image Dad_In_Room_Lamps_01 = "./images/cg/DAY_01/05a_Way_To_Kasumi_Home/Kasumi_Father/Dad_In_Room/lamps_01.png"
-image Dad_In_Room_Lamps_02 = "./images/cg/DAY_01/05a_Way_To_Kasumi_Home/Kasumi_Father/Dad_In_Room/lamps_02.png"
-image Dad_In_Room_Lamps_03 = "./images/cg/DAY_01/05a_Way_To_Kasumi_Home/Kasumi_Father/Dad_In_Room/lamps_03.png"
-image Dad_In_Room_Lamps_04 = "./images/cg/DAY_01/05a_Way_To_Kasumi_Home/Kasumi_Father/Dad_In_Room/lamps_04.png"
-image Dad_In_Room_Lamps_05 = "./images/cg/DAY_01/05a_Way_To_Kasumi_Home/Kasumi_Father/Dad_In_Room/lamps_05.png"
+image Dad_In_Room_Lamps_01 = "images/cg/DAY_01/05a_Way_To_Kasumi_Home/Kasumi_Father/Dad_In_Room/lamps_01.png"
+image Dad_In_Room_Lamps_02 = "images/cg/DAY_01/05a_Way_To_Kasumi_Home/Kasumi_Father/Dad_In_Room/lamps_02.png"
+image Dad_In_Room_Lamps_03 = "images/cg/DAY_01/05a_Way_To_Kasumi_Home/Kasumi_Father/Dad_In_Room/lamps_03.png"
+image Dad_In_Room_Lamps_04 = "images/cg/DAY_01/05a_Way_To_Kasumi_Home/Kasumi_Father/Dad_In_Room/lamps_04.png"
+image Dad_In_Room_Lamps_05 = "images/cg/DAY_01/05a_Way_To_Kasumi_Home/Kasumi_Father/Dad_In_Room/lamps_05.png"
 
 
 image Dad_In_Room:

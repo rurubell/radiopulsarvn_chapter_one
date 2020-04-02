@@ -1,5 +1,5 @@
-image Day_Kasumi_Home_Other = "./images/bg/Outdoor/Kasumi_Home/Day/Other.png"
-image Day_Kasumi_Home_Sky = "./images/bg/Outdoor/Kasumi_Home/Day/Sky.jpg"
+image Day_Kasumi_Home_Other = "images/bg/Outdoor/Kasumi_Home/Day/Other.png"
+image Day_Kasumi_Home_Sky = "images/bg/Outdoor/Kasumi_Home/Day/Sky.jpg"
 
 image Day_Kasumi_Home:
     contains:

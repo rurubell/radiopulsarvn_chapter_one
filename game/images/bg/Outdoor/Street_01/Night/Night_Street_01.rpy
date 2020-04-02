@@ -1,16 +1,16 @@
-image Night_Street_01_Base = "./images/bg/Outdoor/Street_01/Night/Other.png"
-image Night_Street_01_Sky = "./images/bg/Outdoor/Street_01/Night/Sky.jpg"
+image Night_Street_01_Base = "images/bg/Outdoor/Street_01/Night/Other.png"
+image Night_Street_01_Sky = "images/bg/Outdoor/Street_01/Night/Sky.jpg"
 
-image Night_Street_01_TV = "./images/bg/Outdoor/Street_01/Night/tv.png"
+image Night_Street_01_TV = "images/bg/Outdoor/Street_01/Night/tv.png"
 
-image Night_Street_01_Window_Light_01 = "./images/bg/Outdoor/Street_01/Night/window_light_01.png"
-image Night_Street_01_Window_Light_02 = "./images/bg/Outdoor/Street_01/Night/window_light_02.png"
-image Night_Street_01_Window_Light_03 = "./images/bg/Outdoor/Street_01/Night/window_light_03.png"
-image Night_Street_01_Window_Light_04 = "./images/bg/Outdoor/Street_01/Night/window_light_04.png"
-image Night_Street_01_Window_Light_05 = "./images/bg/Outdoor/Street_01/Night/window_light_05.png"
+image Night_Street_01_Window_Light_01 = "images/bg/Outdoor/Street_01/Night/window_light_01.png"
+image Night_Street_01_Window_Light_02 = "images/bg/Outdoor/Street_01/Night/window_light_02.png"
+image Night_Street_01_Window_Light_03 = "images/bg/Outdoor/Street_01/Night/window_light_03.png"
+image Night_Street_01_Window_Light_04 = "images/bg/Outdoor/Street_01/Night/window_light_04.png"
+image Night_Street_01_Window_Light_05 = "images/bg/Outdoor/Street_01/Night/window_light_05.png"
 
-image Night_Street_01_Street_Light_01 = "./images/bg/Outdoor/Street_01/Night/street_light_01.png"
-image Night_Street_01_Street_Light_02 = "./images/bg/Outdoor/Street_01/Night/street_light_02.png"
+image Night_Street_01_Street_Light_01 = "images/bg/Outdoor/Street_01/Night/street_light_01.png"
+image Night_Street_01_Street_Light_02 = "images/bg/Outdoor/Street_01/Night/street_light_02.png"
 
 
 image Night_Street_01_Street_Lights:

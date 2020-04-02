@@ -1,6 +1,6 @@
-image Meteor_01 = "./images/bg/Outdoor/Meteors/Meteor_01.png"
-image Meteor_02 = "./images/bg/Outdoor/Meteors/Meteor_02.png"
-image Meteor_03 = "./images/bg/Outdoor/Meteors/Meteor_03.png"
+image Meteor_01 = "images/bg/Outdoor/Meteors/Meteor_01.png"
+image Meteor_02 = "images/bg/Outdoor/Meteors/Meteor_02.png"
+image Meteor_03 = "images/bg/Outdoor/Meteors/Meteor_03.png"
 
 image Meteors:
     contains:

@@ -1,4 +1,4 @@
-image TV_News_Other = "./images/cg/DAY_01/02a_Kenji_1st_Day_Breakfast/TV/TV_News.png"
+image TV_News_Other = "images/cg/DAY_01/02a_Kenji_1st_Day_Breakfast/TV/TV_News.png"
 
 
 image TV_News:

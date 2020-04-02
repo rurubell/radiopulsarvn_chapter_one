@@ -1,10 +1,10 @@
-image Kasumi_Lifting_Up_RadioSet_Other = "./images/cg/DAY_01/04a_Trash_Place_Meeting/Kasumi_Lifting_Up_RadioSet/Other.png"
+image Kasumi_Lifting_Up_RadioSet_Other = "images/cg/DAY_01/04a_Trash_Place_Meeting/Kasumi_Lifting_Up_RadioSet/Other.png"
 
-image Kasumi_Lifting_Up_RadioSet_Dummy_Lines_01 = "./images/cg/DAY_01/04a_Trash_Place_Meeting/Kasumi_Lifting_Up_RadioSet/Dummy_Lines_01.png"
-image Kasumi_Lifting_Up_RadioSet_Dummy_Lines_02 = "./images/cg/DAY_01/04a_Trash_Place_Meeting/Kasumi_Lifting_Up_RadioSet/Dummy_Lines_02.png"
-image Kasumi_Lifting_Up_RadioSet_Dummy_Lines_03 = "./images/cg/DAY_01/04a_Trash_Place_Meeting/Kasumi_Lifting_Up_RadioSet/Dummy_Lines_03.png"
+image Kasumi_Lifting_Up_RadioSet_Dummy_Lines_01 = "images/cg/DAY_01/04a_Trash_Place_Meeting/Kasumi_Lifting_Up_RadioSet/Dummy_Lines_01.png"
+image Kasumi_Lifting_Up_RadioSet_Dummy_Lines_02 = "images/cg/DAY_01/04a_Trash_Place_Meeting/Kasumi_Lifting_Up_RadioSet/Dummy_Lines_02.png"
+image Kasumi_Lifting_Up_RadioSet_Dummy_Lines_03 = "images/cg/DAY_01/04a_Trash_Place_Meeting/Kasumi_Lifting_Up_RadioSet/Dummy_Lines_03.png"
 
-image Kasumi_Lifting_Up_RadioSet_Drops = "./images/cg/DAY_01/04a_Trash_Place_Meeting/Kasumi_Lifting_Up_RadioSet/Drops.png"
+image Kasumi_Lifting_Up_RadioSet_Drops = "images/cg/DAY_01/04a_Trash_Place_Meeting/Kasumi_Lifting_Up_RadioSet/Drops.png"
 
 
 image Kasumi_Lifting_Up_RadioSet:

@@ -1,5 +1,5 @@
-image Outdoor_Day_Kasumi_Street_Other = "./images/bg/Outdoor/Kasumi_Street/Day/Other.png"
-image Outdoor_Day_Kasumi_Street_Sky = "./images/bg/Outdoor/Kasumi_Street/Day/Sky.jpg"
+image Outdoor_Day_Kasumi_Street_Other = "images/bg/Outdoor/Kasumi_Street/Day/Other.png"
+image Outdoor_Day_Kasumi_Street_Sky = "images/bg/Outdoor/Kasumi_Street/Day/Sky.jpg"
 
 
 image Outdoor_Day_Kasumi_Street:

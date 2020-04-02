@@ -1,9 +1,9 @@
-image Stars_01 = "./images/bg/Outdoor/Stars/stars_01.png"
-image Stars_02 = "./images/bg/Outdoor/Stars/stars_02.png"
-image Stars_03 = "./images/bg/Outdoor/Stars/stars_03.png"
-image Stars_04 = "./images/bg/Outdoor/Stars/stars_04.png"
-image Stars_05 = "./images/bg/Outdoor/Stars/stars_05.png"
-image Stars_06 = "./images/bg/Outdoor/Stars/stars_06.png"
+image Stars_01 = "images/bg/Outdoor/Stars/stars_01.png"
+image Stars_02 = "images/bg/Outdoor/Stars/stars_02.png"
+image Stars_03 = "images/bg/Outdoor/Stars/stars_03.png"
+image Stars_04 = "images/bg/Outdoor/Stars/stars_04.png"
+image Stars_05 = "images/bg/Outdoor/Stars/stars_05.png"
+image Stars_06 = "images/bg/Outdoor/Stars/stars_06.png"
 
 image Night_Sky_Stars:
     contains:

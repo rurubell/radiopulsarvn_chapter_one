@@ -1,9 +1,9 @@
-image TV_Strange_Movie_Other = "./images/cg/DAY_01/02a_Kenji_1st_Day_Breakfast/TV/TV_Strange_Movie.png"
-image TV_Strange_Movie_Mask = "./images/cg/DAY_01/02a_Kenji_1st_Day_Breakfast/TV/TV_Mask.png"
+image TV_Strange_Movie_Other = "images/cg/DAY_01/02a_Kenji_1st_Day_Breakfast/TV/TV_Strange_Movie.png"
+image TV_Strange_Movie_Mask = "images/cg/DAY_01/02a_Kenji_1st_Day_Breakfast/TV/TV_Mask.png"
 
-image TV_Interference_Line_01 = "./images/cg/DAY_01/02a_Kenji_1st_Day_Breakfast/TV/TV_Interference_Line/01.png"
-image TV_Interference_Line_02 = "./images/cg/DAY_01/02a_Kenji_1st_Day_Breakfast/TV/TV_Interference_Line/02.png"
-image TV_Interference_Line_03 = "./images/cg/DAY_01/02a_Kenji_1st_Day_Breakfast/TV/TV_Interference_Line/03.png"
+image TV_Interference_Line_01 = "images/cg/DAY_01/02a_Kenji_1st_Day_Breakfast/TV/TV_Interference_Line/01.png"
+image TV_Interference_Line_02 = "images/cg/DAY_01/02a_Kenji_1st_Day_Breakfast/TV/TV_Interference_Line/02.png"
+image TV_Interference_Line_03 = "images/cg/DAY_01/02a_Kenji_1st_Day_Breakfast/TV/TV_Interference_Line/03.png"
 
 image TV_Interference_Line_Animated:
     "TV_Interference_Line_01"

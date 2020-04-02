@@ -1,6 +1,6 @@
-image Splash_Text = "./images/other/splash/text.png"
-image Splash_Saw = "./images/other/splash/saw.png"
-image Splash_Saw_Mask = "./images/other/splash/mask.png"
+image Splash_Text = "images/other/splash/text.png"
+image Splash_Saw = "images/other/splash/saw.png"
+image Splash_Saw_Mask = "images/other/splash/mask.png"
 
 
 image Splash_Saw_Animated:

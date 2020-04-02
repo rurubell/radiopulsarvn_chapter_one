@@ -1,4 +1,4 @@
-image right_to_left_jet = "./images/bg/Outdoor/Jets/Day/right_to_left_jet.png"
+image right_to_left_jet = "images/bg/Outdoor/Jets/Day/right_to_left_jet.png"
 
 
 image Day_Right_To_Left_Jet:

@@ -1,5 +1,5 @@
-image Evening_Kenji_Home_Other = "./images/bg/Outdoor/Kenji_Home/Evening/Other.png"
-image Evening_Kenji_Home_Sky = "./images/bg/Outdoor/Kenji_Home/Evening/Sky.jpg"
+image Evening_Kenji_Home_Other = "images/bg/Outdoor/Kenji_Home/Evening/Other.png"
+image Evening_Kenji_Home_Sky = "images/bg/Outdoor/Kenji_Home/Evening/Sky.jpg"
 
 image Outdoor_Evening_Kenji_Home:
     contains:

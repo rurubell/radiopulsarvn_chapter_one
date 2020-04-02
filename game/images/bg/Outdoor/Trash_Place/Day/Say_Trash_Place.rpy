@@ -1,6 +1,6 @@
-image Day_Trash_Place_Sfx = "./images/bg/Outdoor/Trash_Place/Day/sfx.png"
-image Day_Trash_Place_Other = "./images/bg/Outdoor/Trash_Place/Day/other.png"
-image Day_Trash_Place_Sky = "./images/bg/Outdoor/Trash_Place/Day/sky.jpg"
+image Day_Trash_Place_Sfx = "images/bg/Outdoor/Trash_Place/Day/sfx.png"
+image Day_Trash_Place_Other = "images/bg/Outdoor/Trash_Place/Day/other.png"
+image Day_Trash_Place_Sky = "images/bg/Outdoor/Trash_Place/Day/sky.jpg"
 
 
 image Day_Trash_Place:

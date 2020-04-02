@@ -1,16 +1,16 @@
-image Electronics_For_Dummies_Book = "./images/cg/DAY_01/10a_Makoto's_Books/Electronics_For_Dummies/book.png"
+image Electronics_For_Dummies_Book = "images/cg/DAY_01/10a_Makoto's_Books/Electronics_For_Dummies/book.png"
 
-image Electronics_For_Dummies_Angel_01a = "./images/cg/DAY_01/10a_Makoto's_Books/Electronics_For_Dummies/Angel_01a.png"
-image Electronics_For_Dummies_Angel_01b = "./images/cg/DAY_01/10a_Makoto's_Books/Electronics_For_Dummies/Angel_01b.png"
+image Electronics_For_Dummies_Angel_01a = "images/cg/DAY_01/10a_Makoto's_Books/Electronics_For_Dummies/Angel_01a.png"
+image Electronics_For_Dummies_Angel_01b = "images/cg/DAY_01/10a_Makoto's_Books/Electronics_For_Dummies/Angel_01b.png"
 
-image Electronics_For_Dummies_Angel_02a = "./images/cg/DAY_01/10a_Makoto's_Books/Electronics_For_Dummies/Angel_02a.png"
-image Electronics_For_Dummies_Angel_02b = "./images/cg/DAY_01/10a_Makoto's_Books/Electronics_For_Dummies/Angel_02b.png"
+image Electronics_For_Dummies_Angel_02a = "images/cg/DAY_01/10a_Makoto's_Books/Electronics_For_Dummies/Angel_02a.png"
+image Electronics_For_Dummies_Angel_02b = "images/cg/DAY_01/10a_Makoto's_Books/Electronics_For_Dummies/Angel_02b.png"
 
-image Electronics_For_Dummies_Angel_03a = "./images/cg/DAY_01/10a_Makoto's_Books/Electronics_For_Dummies/Angel_03a.png"
-image Electronics_For_Dummies_Angel_03b = "./images/cg/DAY_01/10a_Makoto's_Books/Electronics_For_Dummies/Angel_03b.png"
+image Electronics_For_Dummies_Angel_03a = "images/cg/DAY_01/10a_Makoto's_Books/Electronics_For_Dummies/Angel_03a.png"
+image Electronics_For_Dummies_Angel_03b = "images/cg/DAY_01/10a_Makoto's_Books/Electronics_For_Dummies/Angel_03b.png"
 
-image Electronics_For_Dummies_Angel_04a = "./images/cg/DAY_01/10a_Makoto's_Books/Electronics_For_Dummies/Angel_04a.png"
-image Electronics_For_Dummies_Angel_04b = "./images/cg/DAY_01/10a_Makoto's_Books/Electronics_For_Dummies/Angel_04b.png"
+image Electronics_For_Dummies_Angel_04a = "images/cg/DAY_01/10a_Makoto's_Books/Electronics_For_Dummies/Angel_04a.png"
+image Electronics_For_Dummies_Angel_04b = "images/cg/DAY_01/10a_Makoto's_Books/Electronics_For_Dummies/Angel_04b.png"
 
 
 image Electronics_For_Dummies_Angel_01_Animated_Wings:

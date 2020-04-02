@@ -1,17 +1,17 @@
-image Midori_Sea_BG_Other = "./images/cg/DAY_01/01a_Green-Haired_Girl/Midori_Sea_BG/Other.png"
-image Midori_Sea_BG_Sky = "./images/cg/DAY_01/01a_Green-Haired_Girl/Midori_Sea_BG/Sky.jpg"
+image Midori_Sea_BG_Other = "images/cg/DAY_01/01a_Green-Haired_Girl/Midori_Sea_BG/Other.png"
+image Midori_Sea_BG_Sky = "images/cg/DAY_01/01a_Green-Haired_Girl/Midori_Sea_BG/Sky.jpg"
 
-image Midori_Sea_BG_Sea_Blinks_01 = "./images/cg/DAY_01/01a_Green-Haired_Girl/Midori_Sea_BG/Sea_Blinks_01.png"
-image Midori_Sea_BG_Sea_Blinks_02 = "./images/cg/DAY_01/01a_Green-Haired_Girl/Midori_Sea_BG/Sea_Blinks_02.png"
-image Midori_Sea_BG_Sea_Blinks_03 = "./images/cg/DAY_01/01a_Green-Haired_Girl/Midori_Sea_BG/Sea_Blinks_03.png"
+image Midori_Sea_BG_Sea_Blinks_01 = "images/cg/DAY_01/01a_Green-Haired_Girl/Midori_Sea_BG/Sea_Blinks_01.png"
+image Midori_Sea_BG_Sea_Blinks_02 = "images/cg/DAY_01/01a_Green-Haired_Girl/Midori_Sea_BG/Sea_Blinks_02.png"
+image Midori_Sea_BG_Sea_Blinks_03 = "images/cg/DAY_01/01a_Green-Haired_Girl/Midori_Sea_BG/Sea_Blinks_03.png"
 
-image Midori_Sea_BG_Sea_Colors_01 = "./images/cg/DAY_01/01a_Green-Haired_Girl/Midori_Sea_BG/Sea_colors_01.png"
-image Midori_Sea_BG_Sea_Colors_02 = "./images/cg/DAY_01/01a_Green-Haired_Girl/Midori_Sea_BG/Sea_colors_02.png"
-image Midori_Sea_BG_Sea_Colors_03 = "./images/cg/DAY_01/01a_Green-Haired_Girl/Midori_Sea_BG/Sea_colors_03.png"
+image Midori_Sea_BG_Sea_Colors_01 = "images/cg/DAY_01/01a_Green-Haired_Girl/Midori_Sea_BG/Sea_colors_01.png"
+image Midori_Sea_BG_Sea_Colors_02 = "images/cg/DAY_01/01a_Green-Haired_Girl/Midori_Sea_BG/Sea_colors_02.png"
+image Midori_Sea_BG_Sea_Colors_03 = "images/cg/DAY_01/01a_Green-Haired_Girl/Midori_Sea_BG/Sea_colors_03.png"
 
-image Midori_Sea_BG_Sea_Foam = "./images/cg/DAY_01/01a_Green-Haired_Girl/Midori_Sea_BG/Sea_Foam.png"
+image Midori_Sea_BG_Sea_Foam = "images/cg/DAY_01/01a_Green-Haired_Girl/Midori_Sea_BG/Sea_Foam.png"
 
-image Midori_Sea_BG_Clouds = "./images/cg/DAY_01/01a_Green-Haired_Girl/Midori_Sea_BG/Clouds.png"
+image Midori_Sea_BG_Clouds = "images/cg/DAY_01/01a_Green-Haired_Girl/Midori_Sea_BG/Clouds.png"
 
 
 image Midori_Sea_BG:

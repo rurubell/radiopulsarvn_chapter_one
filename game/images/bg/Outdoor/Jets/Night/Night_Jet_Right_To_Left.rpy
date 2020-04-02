@@ -1,6 +1,6 @@
-image Jet_Red = "./images/bg/Outdoor/Jets/Night/red.png"
-image Jet_Blue = "./images/bg/Outdoor/Jets/Night/blue.png"
-image Jet_Empty = "./images/bg/Outdoor/Jets/Night/empty.png"
+image Jet_Red = "images/bg/Outdoor/Jets/Night/red.png"
+image Jet_Blue = "images/bg/Outdoor/Jets/Night/blue.png"
+image Jet_Empty = "images/bg/Outdoor/Jets/Night/empty.png"
 
 image Jet_Blink_Animation:
     "Jet_Red"

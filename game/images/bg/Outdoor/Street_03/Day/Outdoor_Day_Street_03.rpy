@@ -1,5 +1,5 @@
-image Outdoor_Day_Street_03_Other = "./images/bg/Outdoor/Street_03/Day/Other.png"
-image Outdoor_Day_Street_03_Sky = "./images/bg/Outdoor/Street_03/Day/Sky.jpg"
+image Outdoor_Day_Street_03_Other = "images/bg/Outdoor/Street_03/Day/Other.png"
+image Outdoor_Day_Street_03_Sky = "images/bg/Outdoor/Street_03/Day/Sky.jpg"
 
 
 image Outdoor_Day_Street_03:

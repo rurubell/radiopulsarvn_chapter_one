@@ -1,5 +1,5 @@
-image Outdoor_Evening_BG_With_Railroad_2_Sky = "./images/bg/Outdoor/BG_With_Railroad_2/Evening/Sky.jpg"
-image Outdoor_Evening_BG_With_Railroad_2_Other = "./images/bg/Outdoor/BG_With_Railroad_2/Evening/Other.png"
+image Outdoor_Evening_BG_With_Railroad_2_Sky = "images/bg/Outdoor/BG_With_Railroad_2/Evening/Sky.jpg"
+image Outdoor_Evening_BG_With_Railroad_2_Other = "images/bg/Outdoor/BG_With_Railroad_2/Evening/Other.png"
 
 
 image Outdoor_Evening_BG_With_Railroad_2:

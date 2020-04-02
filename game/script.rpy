@@ -22,8 +22,8 @@ label splashscreen:
 
 
 label start:
-    image white_image = "./images/other/colored/white.png"
-    image black_image = "./images/other/colored/black.png"
+    image white_image = "images/other/colored/white.png"
+    image black_image = "images/other/colored/black.png"
     image black_image_alpha_50pc:
         contains:
             "black_image"
@@ -31,23 +31,23 @@ label start:
     
     
     #Пыль
-    image dust = Dust( "./images/other/dust.png" )
+    image dust = Dust( "images/other/dust.png" )
     #Рамка для флешбеков
-    image Dream_Frame = "./images/cg/Misc/Dream_Frame/Dream_Frame.png"
+    image Dream_Frame = "images/cg/Misc/Dream_Frame/Dream_Frame.png"
     #пустая картинка
-    image empty_image = "./images/other/empty.png"
+    image empty_image = "images/other/empty.png"
     
     
     #Рамки для мини-цг
-    image border_01_right = "./images/other/borders/01_Right/border.png"
-    image border_01_right_mask = "./images/other/borders/01_Right/mask.png"
-    image border_01_left = "./images/other/borders/01_Left/border.png"
-    image border_01_left_mask = "./images/other/borders/01_Left/mask.png"
+    image border_01_right = "images/other/borders/01_Right/border.png"
+    image border_01_right_mask = "images/other/borders/01_Right/mask.png"
+    image border_01_left = "images/other/borders/01_Left/border.png"
+    image border_01_left_mask = "images/other/borders/01_Left/mask.png"
     
-    image Midori_01 = "./images/cg/DAY_01/01a_Green-Haired_Girl/Midori/Midori_01.png"
+    image Midori_01 = "images/cg/DAY_01/01a_Green-Haired_Girl/Midori/Midori_01.png"
     
     stop music fadeout 1
-    play environment_sounds "./sounds/environment/Sea.mp3" fadein 2 fadeout 1
+    play environment_sounds "sounds/environment/Sea.mp3" fadein 2 fadeout 1
     scene Midori_Sea_BG with Dissolve( my_dissolve_05 )
     window hide
     pause 1.0
@@ -95,9 +95,9 @@ label start:
     kenji "Но ты не бойся! Я продал тебя очень хорошему человеку! Я надеюсь…"
     
     #ЦГ - Мидори в графическом редакторе
-    image Midori_Sea_BG_Non_Animated = "./images/cg/DAY_01/01a_Green-Haired_Girl/Midori_Sea_BG/Midori_Sea_BG.jpg"
-    image Midori_GE_Interface = "./images/cg/DAY_01/01a_Green-Haired_Girl/GE_Interface.png"
-    image Midori_02 = "./images/cg/DAY_01/01a_Green-Haired_Girl/Midori/Midori_02.png"
+    image Midori_Sea_BG_Non_Animated = "images/cg/DAY_01/01a_Green-Haired_Girl/Midori_Sea_BG/Midori_Sea_BG.jpg"
+    image Midori_GE_Interface = "images/cg/DAY_01/01a_Green-Haired_Girl/GE_Interface.png"
+    image Midori_02 = "images/cg/DAY_01/01a_Green-Haired_Girl/Midori/Midori_02.png"
     image Midori_In_GE_01:
         contains:
             "Midori_Sea_BG_Non_Animated"
@@ -108,12 +108,12 @@ label start:
     
     
     scene Midori_In_GE_01 with Dissolve( my_dissolve_05 )
-    play environment_sounds "./sounds/environment/Bedroom.mp3" fadein 1 fadeout 1
+    play environment_sounds "sounds/environment/Bedroom.mp3" fadein 1 fadeout 1
     
     "Я потёр глаза и чуть отодвинулся от монитора. "
     "Да, Мидори вышла очень миленькой. Думаю, человек, что заказал её, будет доволен."
 
-    play sound "./sounds/sounds/Mobile_Phone_Vibration.mp3"
+    play sound "sounds/sounds/Mobile_Phone_Vibration.mp3"
     "Вдруг завибрировал телефон. Похоже, мне прислали сообщение! "
     "Писал тот парень, что заказал рисунок с Мидори. Вовремя он появился!"
 
@@ -163,7 +163,7 @@ label start:
 
     scene black with Dissolve( my_dissolve_05 )
     
-    image Midori_03 = "./images/cg/DAY_01/01a_Green-Haired_Girl/Midori/Midori_03.png"
+    image Midori_03 = "images/cg/DAY_01/01a_Green-Haired_Girl/Midori/Midori_03.png"
     image Midori_In_GE_02:
         contains:
             "Midori_Sea_BG_Non_Animated"
@@ -196,7 +196,7 @@ label start:
     
     scene black with Dissolve( my_dissolve_05 )
     
-    image Midori_04 = "./images/cg/DAY_01/01a_Green-Haired_Girl/Midori/Midori_04.png"
+    image Midori_04 = "images/cg/DAY_01/01a_Green-Haired_Girl/Midori/Midori_04.png"
     image Midori_In_GE_03:
         contains:
             "Midori_Sea_BG_Non_Animated"
@@ -239,7 +239,7 @@ label start:
     
     scene black with Dissolve( my_dissolve_05 )
     
-    image Midori_05 = "./images/cg/DAY_01/01a_Green-Haired_Girl/Midori/Midori_05.png"
+    image Midori_05 = "images/cg/DAY_01/01a_Green-Haired_Girl/Midori/Midori_05.png"
     image Midori_In_GE_04:
         contains:
             "Midori_Sea_BG_Non_Animated"
@@ -270,7 +270,7 @@ label start:
     "Я настолько ушел в свои мысли, что не сразу сообразил — меня зовут."
     
     #Мини ЦГ - дверь в комнату Кендзи, на фоне которого стоит Айко
-    image Day_Kenji_Bedroom_Door = "./images/bg/Indoor/Kenji_Bedroom/Day/Day_Kenji_Bedroom_Door.png"
+    image Day_Kenji_Bedroom_Door = "images/bg/Indoor/Kenji_Bedroom/Day/Day_Kenji_Bedroom_Door.png"
     image Day_Kenji_Bedroom_Door_Moved:
         contains:
             "Day_Kenji_Bedroom_Door"
@@ -338,7 +338,7 @@ label start:
     "Спустился по лестнице и вот я уже в большом холле, который к тому же выполняет роли кухни и столовой."
     
     scene Day_Kenji_Home_Kitchen with Dissolve( my_dissolve_05 )
-    play environment_sounds "./sounds/environment/Kitchen_With_Boiled_Water.mp3" fadein 1
+    play environment_sounds "sounds/environment/Kitchen_With_Boiled_Water.mp3" fadein 1
 
     kenji "И что сегодня на завтрак?"
     
@@ -352,14 +352,14 @@ label start:
     "Потом она поставила на него две деревянные подставки. Протерла и их. "
     "Затем аккуратно расставила передо мной тарелки, положила палочки для еды. Всё в лучшем виде. "
     
-    play sound "./sounds/sounds/Plate_On_Table.mp3"
-    image Kenji_1st_Day_Breakfast_Food = "./images/cg/DAY_01/02a_Kenji_1st_Day_Breakfast/Food.png"
+    play sound "sounds/sounds/Plate_On_Table.mp3"
+    image Kenji_1st_Day_Breakfast_Food = "images/cg/DAY_01/02a_Kenji_1st_Day_Breakfast/Food.png"
     scene Kenji_1st_Day_Breakfast_Food with Dissolve( my_dissolve_05 )
     
     "Даже розовые таблетки — ферменты для пищеварения, которые мне прописали много лет назад — не забыты."
     
     #Мини ЦГ - кухонная плита, на фоне которой стоит Айко
-    image Day_Kenji_Home_Kitchen_Gas_Stove = "./images/bg/Indoor/Kenji_Home_Kitchen/Day/Day_Kenji_Home_Kitchen_Gas_Stove.jpg"
+    image Day_Kenji_Home_Kitchen_Gas_Stove = "images/bg/Indoor/Kenji_Home_Kitchen/Day/Day_Kenji_Home_Kitchen_Gas_Stove.jpg"
     image Day_Kenji_Home_Kitchen_Gas_Stove_Moved:
         contains:
             "Day_Kenji_Home_Kitchen_Gas_Stove"
@@ -569,7 +569,7 @@ label start:
     "Айко с угрюмым видом кинула черпак в кастрюлю и пошла к холодильнику."
     
     #Мини ЦГ - холодильник на фоне которой стоит Айко
-    image Day_Kenji_Home_Kitchen_Fridge = "./images/bg/Indoor/Kenji_Home_Kitchen/Day/Day_Kenji_Home_Kitchen_Fridge.jpg"
+    image Day_Kenji_Home_Kitchen_Fridge = "images/bg/Indoor/Kenji_Home_Kitchen/Day/Day_Kenji_Home_Kitchen_Fridge.jpg"
     image Day_Kenji_Home_Kitchen_Fridge_Moved:
         contains:
             "Day_Kenji_Home_Kitchen_Fridge"
@@ -612,12 +612,12 @@ label start:
     
     "Айко взяла из холодильника одну из банок. Мне показалось, что сейчас она небрежно кинет ее, настолько недовольное было у неё лицо. "
     
-    image Kenji_1st_Day_Breakfast_Food_With_Beer = "./images/cg/DAY_01/02a_Kenji_1st_Day_Breakfast/Food_With_Beer.png" 
+    image Kenji_1st_Day_Breakfast_Food_With_Beer = "images/cg/DAY_01/02a_Kenji_1st_Day_Breakfast/Food_With_Beer.png" 
     scene Kenji_1st_Day_Breakfast_Food_With_Beer with Dissolve( my_dissolve_05 )
     
     "Но нет, она поставила пиво на подставку, забрала мою порцию супа и села напротив."
     
-    play sound "./sounds/sounds/Opening_Beer_Can.mp3"
+    play sound "sounds/sounds/Opening_Beer_Can.mp3"
     
     "Я взял в руки банку и дёрнул за открывашку. "
     "Затем я схватил розовую таблеточку, запихнул её в рот и запил пивом. "
@@ -633,7 +633,7 @@ label start:
     #СЦЕНА - ДЕНЬ 1, ВЫНОС МУСОРА 
     
     scene Day_Kenji_Home_Pantry_01 with Dissolve( my_dissolve_05 )
-    play environment_sounds "./sounds/environment/Pantry_Day.mp3" fadein 1 fadeout 1
+    play environment_sounds "sounds/environment/Pantry_Day.mp3" fadein 1 fadeout 1
     
     "Всю левую половину кладовки занимал стеллаж, который тётя Асука планировала освободить, чтобы устроить в нем гардероб. "
     "Не знаю, зачем ей это вдруг понадобилось, учитывая, что в доме она вот уже несколько лет не живет."
@@ -666,7 +666,7 @@ label start:
             "Dream_Frame"
     #
     
-    play environment_sounds_dream "./sounds/environment/Pantry_Day_Dream.mp3" fadein 1 fadeout 1
+    play environment_sounds_dream "sounds/environment/Pantry_Day_Dream.mp3" fadein 1 fadeout 1
     stop environment_sounds fadeout 1
     scene TV_Heap_Dream with Dissolve( my_dissolve_05 )
     
@@ -675,7 +675,7 @@ label start:
     "Потом мы с мальчишками устроили настоящую бойню. Расстреляли всю эту кучу камнями, пока не разбили каждый телек вдребезги."
     "Нам, конечно, здорово влетело, а на асфальте в том месте ещё несколько лет поблескивали кристаллики стекла."
     
-    play environment_sounds "./sounds/environment/Pantry_Day.mp3" fadein 1 fadeout 1
+    play environment_sounds "sounds/environment/Pantry_Day.mp3" fadein 1 fadeout 1
     stop environment_sounds_dream fadeout 1
     scene Day_Kenji_Home_Pantry_01 with Dissolve( my_dissolve_05 )
     
@@ -685,14 +685,14 @@ label start:
     "О том, как погиб муж тёти Асуки, мне рассказал дядя Ватанабэ, который жил с нами на одной улице. "
     "Он был другом дяди Макото, и в прошлом тоже радиолюбителем."
     
-    image Evening_Watanabe_Bike_WorkShop = "./images/bg/Outdoor/Watanabe_Bike_WorkShop/Evening/Watanabe_Bike_WorkShop.png"
+    image Evening_Watanabe_Bike_WorkShop = "images/bg/Outdoor/Watanabe_Bike_WorkShop/Evening/Watanabe_Bike_WorkShop.png"
     image Evening_Watanabe_Bike_WorkShop_Dream:
         contains:
             "Evening_Watanabe_Bike_WorkShop"
         contains:
             "Dream_Frame"
     
-    play environment_sounds_dream "./sounds/environment/Pantry_Day_Dream.mp3" fadein 1 fadeout 1
+    play environment_sounds_dream "sounds/environment/Pantry_Day_Dream.mp3" fadein 1 fadeout 1
     stop environment_sounds fadeout 1
     scene Evening_Watanabe_Bike_WorkShop_Dream with Dissolve( my_dissolve_05 )
     
@@ -748,7 +748,7 @@ label start:
     watanabe "Приходится подрабатывать автомехаником теперь. "
     watanabe "Эх, и как он только умудрился сжечь сцепление? А, Кендзи? Ты не знаешь?"
     
-    play environment_sounds "./sounds/environment/Pantry_Day.mp3" fadein 1 fadeout 1
+    play environment_sounds "sounds/environment/Pantry_Day.mp3" fadein 1 fadeout 1
     stop environment_sounds_dream fadeout 1
     scene Day_Kenji_Home_Pantry_01 with Dissolve( my_dissolve_05 )
     
@@ -772,7 +772,7 @@ label start:
     "Второй — легче. Его приборная панель была закрыта крышкой, с замками, как на армейской фляге. "
     "Для начала унесу тот, что легче — это будет разминка."
     
-    play environment_sounds "./sounds/environment/City_Suburb_Day_01.mp3" fadein 1 fadeout 1
+    play environment_sounds "sounds/environment/City_Suburb_Day_01.mp3" fadein 1 fadeout 1
     scene Outdoor_Day_Kenji_Home with Dissolve( my_dissolve_05 )
     
     "На улице был типичный июньский полдень. Ужасно яркое солнце, голубое небо и белоснежные облака. Всё как обычно. "
@@ -789,15 +789,15 @@ label start:
     "Пройдя один квартал, я сменил тактику и решил взять свой снаряд за его родные, заводские ручки, покрытые каким-то плотным зелёным материалом. "
     "Постепенно стали ныть плечи и спина, а ещё зудеть нога в том месте, где она тёрлась о край прибора."
     
-    play environment_sounds "./sounds/environment/City_Suburb_Day_02.mp3" fadein 1 fadeout 1
+    play environment_sounds "sounds/environment/City_Suburb_Day_02.mp3" fadein 1 fadeout 1
     scene Day_Trash_Place with Dissolve( my_dissolve_05 )
-    play sound "./sounds/sounds/Metal_Item_Drag_And_Fall.mp3"
+    play sound "sounds/sounds/Metal_Item_Drag_And_Fall.mp3"
     
     "Последние несколько метров я буквально волочил «чемоданчик» по асфальту, оставляя блестящий след с чешуйками жёлтой краски. "
     "Похоже, я сегодня был первым посетителем. Никакой электроники до меня никто не выбросил. Площадка для мусора была пуста"
     
     #Мини ЦГ - рация на асфальте
-    image Radio_Set_On_Ground_Closed = "./images/cg/DAY_01/03a_Kenji_Moves_Trash/Radio_Set_On_Ground_Closed/Radio_Set_On_Ground_Closed.png"
+    image Radio_Set_On_Ground_Closed = "images/cg/DAY_01/03a_Kenji_Moves_Trash/Radio_Set_On_Ground_Closed/Radio_Set_On_Ground_Closed.png"
     image Radio_Set_On_Ground_Closed_Moved:
         contains:
             "Radio_Set_On_Ground_Closed"
@@ -830,7 +830,7 @@ label start:
     "Я пнул его напоследок и отправился домой."
     "На обратном пути я вновь никто не встретил. Довольно удачный выдался денёк! "
     
-    play environment_sounds "./sounds/environment/Kitchen.mp3" fadein 1 fadeout 1
+    play environment_sounds "sounds/environment/Kitchen.mp3" fadein 1 fadeout 1
     scene Day_Kenji_Home_Kitchen with Dissolve( my_dissolve_05 )
     
     "Я ворвался в дом, распахнул холодильник и сразу же выпил холодного пива. Ох, похоже, полбанки выдул за несколько глотков! "
@@ -939,24 +939,24 @@ label start:
     aiko "НЕТ!"
     aiko "То есть да. Уговорил! Завтра поедем, но только без этого!"
     
-    play sound "./sounds/sounds/Aiko_Run_Away_From_Kitchen.mp3"
+    play sound "sounds/sounds/Aiko_Run_Away_From_Kitchen.mp3"
     hide Aiko_School_Uniform_02 with vpunch
     
     "Айко в мгновение ока изчезла, скрывшись за дверью в прихожую."
     "Как же мне повезло с сестрёнкой! Мысль о предстоящем отдыхе приободрила меня, и я с энтузиазмом вернулся к работе."
     
-    play environment_sounds "./sounds/environment/Pantry_Day.mp3" fadein 1 fadeout 1
+    play environment_sounds "sounds/environment/Pantry_Day.mp3" fadein 1 fadeout 1
     scene Day_Kenji_Home_Pantry_02 with Dissolve( my_dissolve_05 )
     show Day_Kenji_Home_Pantry_Blink_03_Animated with Dissolve( my_dissolve_02 )
     
     "В следующий свой поход я решил не брать тяжелого собрата желтого чемоданчика. Я оставил его на потом."
     "Вместо него я взял моток провода, который лежал на верхней полке."
     
-    play environment_sounds "./sounds/environment/City_Suburb_Day_02.mp3" fadein 2 fadeout 2
+    play environment_sounds "sounds/environment/City_Suburb_Day_02.mp3" fadein 2 fadeout 2
     scene Day_Trash_Place with Dissolve( my_dissolve_05 )
     
     #Мини-ЦГ вентилятор Касуми 01
-    image Kasumi_Fan_01 = "./images/cg/DAY_01/03a_Kenji_Moves_Trash/Kasumi_Fan/Kasumi_Fan_01.png"
+    image Kasumi_Fan_01 = "images/cg/DAY_01/03a_Kenji_Moves_Trash/Kasumi_Fan/Kasumi_Fan_01.png"
     image Kasumi_Fan_01_Moved:
         contains:
             "Kasumi_Fan_01"
@@ -1027,7 +1027,7 @@ label start:
     "Хм... Возможно, этот кто-то — владелец сломанного вентилятора. Я подошёл поближе. "
     
     #Мини-ЦГ вентилятор Касуми 02
-    image Kasumi_Fan_02 = "./images/cg/DAY_01/03a_Kenji_Moves_Trash/Kasumi_Fan/Kasumi_Fan_02.png"
+    image Kasumi_Fan_02 = "images/cg/DAY_01/03a_Kenji_Moves_Trash/Kasumi_Fan/Kasumi_Fan_02.png"
     image Kasumi_Fan_02_Moved:
         contains:
             "Kasumi_Fan_02"
@@ -1060,7 +1060,7 @@ label start:
     "Да и весь этот жёлтый налёт на нем… явно сигаретная копоть, налипшая за годы эксплуатации. "
     "Стало немного противно, и в то же время в памяти всколыхнулись воспоминания былых лет."
     
-    image smocking_old_man = "./images/cg/DAY_01/03a_Kenji_Moves_Trash/Old_Smocking_Man/smocking_old_man.png"
+    image smocking_old_man = "images/cg/DAY_01/03a_Kenji_Moves_Trash/Old_Smocking_Man/smocking_old_man.png"
     image smocking_old_man_dream:
         contains:
             "smocking_old_man"
@@ -1068,7 +1068,7 @@ label start:
             "Dream_Frame"
     
     
-    play environment_sounds_dream "./sounds/environment/City_Suburb_Day_02_Dream.mp3" fadein 1
+    play environment_sounds_dream "sounds/environment/City_Suburb_Day_02_Dream.mp3" fadein 1
     stop environment_sounds fadeout 2
     scene smocking_old_man_dream with Dissolve( my_dissolve_05 )
     
@@ -1077,7 +1077,7 @@ label start:
     "Столь активные курильщики наверняка болеют какими-то заболеваниями. "
     "Например, туберкулёзом — неприятной и очень заразной болезнью, я слышал о такой. "
     
-    play environment_sounds "./sounds/environment/City_Suburb_Day_02.mp3" fadein 2
+    play environment_sounds "sounds/environment/City_Suburb_Day_02.mp3" fadein 2
     stop environment_sounds_dream fadeout 2
     scene Day_Trash_Place with Dissolve( my_dissolve_05 )
     
@@ -1086,7 +1086,7 @@ label start:
     "Вот будет весело, если такой домосед, как я, подцепит редкую и смертельную болезнь! А точнее — совсем не весело!"
     "Я поспешил домой. Надо скорее вымыть руки!"
     
-    play environment_sounds "./sounds/environment/Pantry_Day.mp3" fadein 1 fadeout 1
+    play environment_sounds "sounds/environment/Pantry_Day.mp3" fadein 1 fadeout 1
     scene Day_Kenji_Home_Pantry_Other_03 with Dissolve( my_dissolve_05 )
     show Day_Kenji_Home_Pantry_Blink_04_Animated with Dissolve( my_dissolve_02 )
     
@@ -1101,7 +1101,7 @@ label start:
     "А между тем вторая банка пива подошла к концу. Я сходил на кухню и взял новую. Открывать её не стал — положил в карман брюк. "
     "В последнем и трудном походе мне понадобятся обе руки!"
     
-    play environment_sounds "./sounds/environment/City_Suburb_Day_02.mp3" fadein 2 fadeout 1
+    play environment_sounds "sounds/environment/City_Suburb_Day_02.mp3" fadein 2 fadeout 1
     scene Day_Trash_Place with Dissolve( my_dissolve_05 )
     
     "Поход был действительно трудный! "
@@ -1109,7 +1109,7 @@ label start:
     
     
     #Мини ЦГ - БП от рации на земле
-    image Radio_Set_Power_Supply_On_ground = "./images/cg/DAY_01/03a_Kenji_Moves_Trash/Radio_Set_Power_supply_On_Ground/Radio_Set_Power_Supply_On_ground.png"
+    image Radio_Set_Power_Supply_On_ground = "images/cg/DAY_01/03a_Kenji_Moves_Trash/Radio_Set_Power_supply_On_Ground/Radio_Set_Power_Supply_On_ground.png"
     image Radio_Set_Power_Supply_On_ground_Moved:
         contains:
             "Radio_Set_Power_Supply_On_ground"
@@ -1159,7 +1159,7 @@ label start:
     "Сделал глубокий глоток и огляделся по сторонам. Я был не один."
     
     #Мини ЦГ - Касуми идет с тележкой
-    image Kasumi_Walks = "./images/cg/DAY_01/04a_Trash_Place_Meeting/Kasumi_Walks/Kasumi_Walks.png"
+    image Kasumi_Walks = "images/cg/DAY_01/04a_Trash_Place_Meeting/Kasumi_Walks/Kasumi_Walks.png"
     image Kasumi_Walks_Moved:
         contains:
             "Kasumi_Walks"
@@ -1197,7 +1197,7 @@ label start:
     hide Kasumi_Walks_With_Border_01 with Dissolve( my_dissolve_01 )
     
     #Мини ЦГ - Касуми стоит с тележкой
-    image Kasumi_And_Interesting_Wall = "./images/cg/DAY_01/04a_Trash_Place_Meeting/Kasumi_And_Interesting_Wall/Kasumi_And_Interesting_Wall.png"
+    image Kasumi_And_Interesting_Wall = "images/cg/DAY_01/04a_Trash_Place_Meeting/Kasumi_And_Interesting_Wall/Kasumi_And_Interesting_Wall.png"
     image Kasumi_And_Interesting_Wall_Moved:
         contains:
             "Kasumi_And_Interesting_Wall"
@@ -1246,7 +1246,7 @@ label start:
     "Она остановилась и отвесила мне учтивый поклон. Я бы даже сказал, чересчур учтивый!"
     
     #Мини ЦГ - Касуми стоит на четвереньках
-    image On_All_Fours = "./images/cg/DAY_01/04a_Trash_Place_Meeting/On_All_Fours/On_All_Fours.png"
+    image On_All_Fours = "images/cg/DAY_01/04a_Trash_Place_Meeting/On_All_Fours/On_All_Fours.png"
     image On_All_Fours_Moved:
         contains:
             "On_All_Fours"
@@ -1282,7 +1282,7 @@ label start:
     hide On_All_Fours_With_Border_01 with Dissolve( my_dissolve_01 )
     
     #Мини ЦГ - Руки Касуми на штанине Кендзи
-    image Kasumi_Hands_On_Kenji_Leg = "./images/cg/DAY_01/04a_Trash_Place_Meeting/Kasumi_Hands_On_Kenji_Leg/Kasumi_Hands_On_Kenji_Leg.png"
+    image Kasumi_Hands_On_Kenji_Leg = "images/cg/DAY_01/04a_Trash_Place_Meeting/Kasumi_Hands_On_Kenji_Leg/Kasumi_Hands_On_Kenji_Leg.png"
     image Kasumi_Hands_On_Kenji_Leg_Moved:
         contains:
             "Kasumi_Hands_On_Kenji_Leg"
@@ -1317,7 +1317,7 @@ label start:
     kenji "Эй! Ты чего творишь?"
     
     hide Kasumi_Hands_On_Kenji_Leg_With_Border_01 with Dissolve( my_dissolve_01 )
-    play sound "./sounds/sounds/Body_Fall_On_Ground.mp3"
+    play sound "sounds/sounds/Body_Fall_On_Ground.mp3"
     show empty_image with vpunch #Трясем экран
     
     "..."
@@ -1368,7 +1368,7 @@ label start:
     blind_girl "Да, я ничего не вижу."
     
     #Мини-ЦГ лицо Касуми крупным планом
-    image DAY_01_Kasumi_Big_Face = "./images/cg/DAY_01/04a_Trash_Place_Meeting/Kasumi/Kasumi.png"
+    image DAY_01_Kasumi_Big_Face = "images/cg/DAY_01/04a_Trash_Place_Meeting/Kasumi/Kasumi.png"
     image DAY_01_Kasumi_Big_Face_Moved:
         contains:
             "DAY_01_Kasumi_Big_Face"
@@ -1450,7 +1450,7 @@ label start:
     "Но всё впечатление портил этот пустой взгляд, в котором, казалось, навечно застыл испуг."
     
     #Мини-ЦГ ус Касуми крупным планом
-    image DAY_01_Kasumi_Big_Face_Mustache = "./images/cg/DAY_01/04a_Trash_Place_Meeting/Kasumi/Kasumi.png"
+    image DAY_01_Kasumi_Big_Face_Mustache = "images/cg/DAY_01/04a_Trash_Place_Meeting/Kasumi/Kasumi.png"
     image DAY_01_Kasumi_Big_Face_Mustache_Moved:
         contains:
             "DAY_01_Kasumi_Big_Face_Mustache"
@@ -1577,7 +1577,7 @@ label start:
             "Kasumi_Lifting_Up_RadioSet_border_01_right_moved"
     ##
     
-    play sound "./sounds/sounds/Submarine_Creaking.mp3"
+    play sound "sounds/sounds/Submarine_Creaking.mp3"
     show Kasumi_Lifting_Up_RadioSet_With_Border_01 with Dissolve( my_dissolve_02 )
     
     "Послышался скрежет металла об асфальт, прибор поднялся… Но совсем чуть-чуть, сантиметров на пять. "
@@ -1589,7 +1589,7 @@ label start:
     
     stop sound fadeout 0.5
     hide Kasumi_Lifting_Up_RadioSet_With_Border_01 with Dissolve( my_dissolve_01 )
-    play sound "./sounds/sounds/Metal_Item_Fall.mp3"
+    play sound "sounds/sounds/Metal_Item_Fall.mp3"
     show empty_image with vpunch #Трясем экран 
     
     "Но в тот же момент руки девушки разжались, и прибор глухо хлопнулся на землю. "
@@ -1619,7 +1619,7 @@ label start:
     show kasumi_01 Normal_Silent with Dissolve( my_dissolve_02 )
     
     #Мини ЦГ - тележка Касуми (пустая)
-    image Kasumi_Cart = "./images/cg/DAY_01/04a_Trash_Place_Meeting/Kasumi_Cart/Kasumi_Cart.png"
+    image Kasumi_Cart = "images/cg/DAY_01/04a_Trash_Place_Meeting/Kasumi_Cart/Kasumi_Cart.png"
     image Kasumi_Cart_Moved:
         contains:
             "Kasumi_Cart"
@@ -1655,7 +1655,7 @@ label start:
     "Я поставил тележку, поднял рацию и аккуратно установил её на раму. Рама выгнулась и затрещала, но выдержала. "
     
     #Мини ЦГ - тележка Касуми (с радиостанцией)
-    image Kasumi_Cart_And_Radio_Set = "./images/cg/DAY_01/04a_Trash_Place_Meeting/Kasumi_Cart_And_Radio_Set/Kasumi_Cart_And_Radio_Set.png"
+    image Kasumi_Cart_And_Radio_Set = "images/cg/DAY_01/04a_Trash_Place_Meeting/Kasumi_Cart_And_Radio_Set/Kasumi_Cart_And_Radio_Set.png"
     image Kasumi_Cart_And_Radio_Set_Moved:
         contains:
             "Kasumi_Cart_And_Radio_Set"
@@ -1775,10 +1775,10 @@ label start:
     "Хоть я и был пьян, банка прилетела точно в цель!"
     
     #ЦГ - взрыв тележки Касуми
-    image Kasumi_BOOM = "./images/cg/DAY_01/04a_Trash_Place_Meeting/BOOM/Kasumi_Boom.png"
-    image Kasumi_BOOM_animation_frame_00 = "./images/cg/DAY_01/04a_Trash_Place_Meeting/BOOM/frame_00.png"
-    image Kasumi_BOOM_animation_frame_01 = "./images/cg/DAY_01/04a_Trash_Place_Meeting/BOOM/frame_01.png"
-    image Kasumi_BOOM_animation_frame_02 = "./images/cg/DAY_01/04a_Trash_Place_Meeting/BOOM/frame_02.png"
+    image Kasumi_BOOM = "images/cg/DAY_01/04a_Trash_Place_Meeting/BOOM/Kasumi_Boom.png"
+    image Kasumi_BOOM_animation_frame_00 = "images/cg/DAY_01/04a_Trash_Place_Meeting/BOOM/frame_00.png"
+    image Kasumi_BOOM_animation_frame_01 = "images/cg/DAY_01/04a_Trash_Place_Meeting/BOOM/frame_01.png"
+    image Kasumi_BOOM_animation_frame_02 = "images/cg/DAY_01/04a_Trash_Place_Meeting/BOOM/frame_02.png"
     
     image Kasumi_BOOM_animation:
         contains:
@@ -1796,9 +1796,9 @@ label start:
     ##
     
     show Kasumi_BOOM_animation
-    play sound "./sounds/sounds/TNT.mp3"
+    play sound "sounds/sounds/TNT.mp3"
     stop environment_sounds fadeout 1
-    play environment_sounds_dream "./sounds/environment/City_Suburb_Day_02_Dream.mp3" fadein 2 fadeout 1
+    play environment_sounds_dream "sounds/environment/City_Suburb_Day_02_Dream.mp3" fadein 2 fadeout 1
     
     "Ба-бах!"
     blind_girl "Ай!"
@@ -1811,13 +1811,13 @@ label start:
     "Однако тележка сильно кренилась на левый бок, а одно из её колес кружилось волчком в стороне. Всё-таки не была она рассчитана на такой вес."
     
     stop environment_sounds_dream fadeout 10
-    play environment_sounds "./sounds/environment/City_Suburb_Day_02.mp3" fadein 10 fadeout 1
+    play environment_sounds "sounds/environment/City_Suburb_Day_02.mp3" fadein 10 fadeout 1
     scene Day_Trash_Place with Dissolve( my_dissolve_05 )
     
     "Я был несказанно рад такому повороту событий и немедленно поспешил к месту аварии."
     
     #Мини ЦГ - тележка и рация, валяются
-    image Radio_Set_And_Cart_On_The_Ground = "./images/cg/DAY_01/04a_Trash_Place_Meeting/Radio_Set_And_Cart_On_The_Ground/Radio_Set_And_Cart_On_The_Ground.png"
+    image Radio_Set_And_Cart_On_The_Ground = "images/cg/DAY_01/04a_Trash_Place_Meeting/Radio_Set_And_Cart_On_The_Ground/Radio_Set_And_Cart_On_The_Ground.png"
     image Radio_Set_And_Cart_On_The_Ground_Moved:
         contains:
             "Radio_Set_And_Cart_On_The_Ground"
@@ -2004,7 +2004,7 @@ label start:
     
     kenji "Это ещё что за вопрос? Делай со своей тележкой что хочешь."
     
-    play environment_sounds "./sounds/environment/City_Suburb_Day_03.mp3" fadein 2
+    play environment_sounds "sounds/environment/City_Suburb_Day_03.mp3" fadein 2
     scene Outdoor_Day_BG_With_Railroad_2 with Dissolve( my_dissolve_05 )
 
     "Мы двинулись. Я пристроился справа, встав между моей новой знакомой и обочиной дороги."
@@ -2020,7 +2020,7 @@ label start:
     "Касуми подняла правую руку и указала на свое ухо."
     
     ##Мини ЦГ - Касуми в профиль
-    image Kasumi_Profile = "./images/cg/DAY_01/05a_Way_To_Kasumi_Home/Kasumi_Profile/Kasumi_Profile.png"
+    image Kasumi_Profile = "images/cg/DAY_01/05a_Way_To_Kasumi_Home/Kasumi_Profile/Kasumi_Profile.png"
     image Kasumi_Profile_Moved:
         contains:
             "Kasumi_Profile"
@@ -2121,7 +2121,7 @@ label start:
     "Но не припомню, чтобы школьный или институтский преподаватель физики щеголял на уроке с этим ёмкостным реле на голове. "
      
     #ЦГ - Портреты Ньютона и Галилео
-    image Scientists = "./images/cg/DAY_01/05a_Way_To_Kasumi_Home/Scientists/Scientists.png"
+    image Scientists = "images/cg/DAY_01/05a_Way_To_Kasumi_Home/Scientists/Scientists.png"
     image Galileo_And_Newton:
         contains:
             "Scientists"
@@ -2129,7 +2129,7 @@ label start:
             "Dream_Frame"
     ##
     
-    play environment_sounds_dream "./sounds/environment/City_Suburb_Day_03_Dream.mp3" fadein 1
+    play environment_sounds_dream "sounds/environment/City_Suburb_Day_03_Dream.mp3" fadein 1
     stop environment_sounds fadeout 1
     show Galileo_And_Newton with Dissolve( my_dissolve_05 )
     
@@ -2151,7 +2151,7 @@ label start:
     
     "Даже такие интересные личности как Эдисон и Тесла ни разу это самое «реле» не надели. Удивительно!"
     
-    play environment_sounds "./sounds/environment/City_Suburb_Day_03.mp3" fadein 1
+    play environment_sounds "sounds/environment/City_Suburb_Day_03.mp3" fadein 1
     stop environment_sounds_dream fadeout 1
     hide Edison_And_Tesla with Dissolve( my_dissolve_05 )
     
@@ -2182,14 +2182,14 @@ label start:
 
     "Интересно, кто помогал Касуми со сборкой этого приспособления? Должно быть, её отец. "
     
-    image Old_Kasumis_Dad = "./images/cg/DAY_01/05a_Way_To_Kasumi_Home/Kasumi_Father/Old_Kasumi_Dad.png"
+    image Old_Kasumis_Dad = "images/cg/DAY_01/05a_Way_To_Kasumi_Home/Kasumi_Father/Old_Kasumi_Dad.png"
     image Old_Kasumis_Dad_Dream:
         contains:
             "Old_Kasumis_Dad"
         contains:
             "Dream_Frame"
         
-    image Young_Kasumi_Dad = "./images/cg/DAY_01/05a_Way_To_Kasumi_Home/Kasumi_Father/Young_Kasumi_Dad.png"
+    image Young_Kasumi_Dad = "images/cg/DAY_01/05a_Way_To_Kasumi_Home/Kasumi_Father/Young_Kasumi_Dad.png"
     image Young_Kasumi_Dad_Dream:
         contains:
             "Young_Kasumi_Dad"
@@ -2209,7 +2209,7 @@ label start:
         contains:
             "Dream_Frame"
     
-    play environment_sounds_dream "./sounds/environment/City_Suburb_Day_03_Dream.mp3" fadein 1
+    play environment_sounds_dream "sounds/environment/City_Suburb_Day_03_Dream.mp3" fadein 1
     stop environment_sounds fadeout 1
     scene Old_Kasumis_Dad_Dream with Dissolve( my_dissolve_05 )
     
@@ -2223,7 +2223,7 @@ label start:
     "Небось за своей радиостанцией и забыл, что его незрячая дочь шатается одна по улицам неизвестно где. "
     "И, наверное, это он такой заядлый курильщик."
     
-    play sound "./sounds/sounds/Morse_Code.mp3" fadein 1
+    play sound "sounds/sounds/Morse_Code.mp3" fadein 1
     scene Dad_In_Room_Dream with Dissolve( my_dissolve_05 )
     
     "Я представил, как её отец сидит за рацией, крутит всякие крутилки, щёлкает тумблерами да смолит сигарету. "
@@ -2234,7 +2234,7 @@ label start:
     
     "И видит свою дочь, а рядом с ней — какого-то небритого, лохматого и нетрезвого извращенца. "
     
-    play environment_sounds "./sounds/environment/City_Suburb_Day_03.mp3" fadein 1
+    play environment_sounds "sounds/environment/City_Suburb_Day_03.mp3" fadein 1
     stop environment_sounds_dream fadeout 1
     scene Outdoor_Day_BG_With_Railroad_2 with Dissolve( my_dissolve_05 )
 
@@ -2358,12 +2358,12 @@ label start:
     "Кто-то из них выглянет в окно, увидит, что к ней привязался какой-то мутный тип. Позвонит её отцу..."
     
     #ЦГ - Але тут педофилы
-    image Here_Is_A_Pedo_01 = "./images/cg/DAY_01/05a_Way_To_Kasumi_Home/Here_Is_A_Pedo/01.png"
-    image Here_Is_A_Pedo_02 = "./images/cg/DAY_01/05a_Way_To_Kasumi_Home/Here_Is_A_Pedo/02.png"
-    image Here_Is_A_Pedo_03 = "./images/cg/DAY_01/05a_Way_To_Kasumi_Home/Here_Is_A_Pedo/03.png"
-    image Here_Is_A_Pedo_04 = "./images/cg/DAY_01/05a_Way_To_Kasumi_Home/Here_Is_A_Pedo/04.png"
-    image Here_Is_A_Pedo_05 = "./images/cg/DAY_01/05a_Way_To_Kasumi_Home/Here_Is_A_Pedo/05.png"
-    image Here_Is_A_Pedo_06 = "./images/cg/DAY_01/05a_Way_To_Kasumi_Home/Here_Is_A_Pedo/06.png"
+    image Here_Is_A_Pedo_01 = "images/cg/DAY_01/05a_Way_To_Kasumi_Home/Here_Is_A_Pedo/01.png"
+    image Here_Is_A_Pedo_02 = "images/cg/DAY_01/05a_Way_To_Kasumi_Home/Here_Is_A_Pedo/02.png"
+    image Here_Is_A_Pedo_03 = "images/cg/DAY_01/05a_Way_To_Kasumi_Home/Here_Is_A_Pedo/03.png"
+    image Here_Is_A_Pedo_04 = "images/cg/DAY_01/05a_Way_To_Kasumi_Home/Here_Is_A_Pedo/04.png"
+    image Here_Is_A_Pedo_05 = "images/cg/DAY_01/05a_Way_To_Kasumi_Home/Here_Is_A_Pedo/05.png"
+    image Here_Is_A_Pedo_06 = "images/cg/DAY_01/05a_Way_To_Kasumi_Home/Here_Is_A_Pedo/06.png"
     
     image Here_Is_A_Pedo:
         contains:
@@ -2418,7 +2418,7 @@ label start:
 
     kasumi "Ничего. Я наверное, к этому уже привыкла."
     
-    play environment_sounds "./sounds/environment/City_Suburb_Day_04.mp3" fadein 1
+    play environment_sounds "sounds/environment/City_Suburb_Day_04.mp3" fadein 1
     scene Outdoor_Day_Kasumi_Street with Dissolve( my_dissolve_05 )
     
     "Пару кварталов мы прошли молча. Не знаю, о чем думала Касуми, но меня донимали мысли об её отце."
@@ -2589,7 +2589,7 @@ label start:
 
     "Ответил я ей. Хотелось ещё добавить «до завтра», но мне показалось, что это будет слишком."
     
-    play environment_sounds "./sounds/environment/City_Evening.mp3" fadein 1 fadeout 1
+    play environment_sounds "sounds/environment/City_Evening.mp3" fadein 1 fadeout 1
     scene Outdoor_Evening_BG_With_Railroad_2 with Dissolve( my_dissolve_05 )
     
     "Около семи часов вечера я вернулся на площадку для сбора мусора. Она опустела — всё уже забрали уборщики."
@@ -2602,8 +2602,8 @@ label start:
     
     
     #Спрайты Айко в мобильном телефоне
-    image Kenji_MObile_Phone = "./images/cg/DAY_01/06a_Watanabe/Kenji_Mobile_Phone/Kenji_Mobile_Phone.png"
-    image Kenji_MObile_Phone_Mask = "./images/cg/DAY_01/06a_Watanabe/Kenji_Mobile_Phone/Kenji_Mobile_Phone_Mask.png"
+    image Kenji_MObile_Phone = "images/cg/DAY_01/06a_Watanabe/Kenji_Mobile_Phone/Kenji_Mobile_Phone.png"
+    image Kenji_MObile_Phone_Mask = "images/cg/DAY_01/06a_Watanabe/Kenji_Mobile_Phone/Kenji_Mobile_Phone_Mask.png"
     
     image Aiko_Base_Outfit_03_Normal_Say_Mobile:
         contains:
@@ -2649,7 +2649,7 @@ label start:
     image Aiko_Base_Outfit_03_Angry_Silent_Mobile_Masked = AlphaMask( "Aiko_Base_Outfit_03_Angry_Silent_Mobile", "Kenji_MObile_Phone_Mask" )
     #
     
-    play sound "./sounds/sounds/Mobile_Phone_Vibration.mp3"
+    play sound "sounds/sounds/Mobile_Phone_Vibration.mp3"
     show Kenji_MObile_Phone with Dissolve( my_dissolve_02 )
     show Aiko_Base_Outfit_03_Normal_Silent_Mobile_Masked with Dissolve( my_dissolve_01 )
 
@@ -2769,7 +2769,7 @@ label start:
     "Я же саке на дух не переносил, как и любой другой крепкий алкоголь. "
     "Нет. Мне быть алкоголиком не грозит. Ну кто же может стать алкашом, употребляя только пиво?"
     
-    play environment_sounds "./sounds/environment/City_Industrial_Day.mp3" fadein 1 fadeout 1
+    play environment_sounds "sounds/environment/City_Industrial_Day.mp3" fadein 1 fadeout 1
     scene Evening_Watanabe_Bike_WorkShop with Dissolve( my_dissolve_05 )
     
     "Размышляя над этим, я и не заметил, как добрался до дома Ватанабэ. На мою радость, его гараж, и одновременно — мастерская, был открыт. "
@@ -2979,13 +2979,13 @@ label start:
             "Emo_What_Horizontal_Flipped"
     ##
     
-    play sound "./sounds/sounds/Metal_Parts.mp3"
+    play sound "sounds/sounds/Metal_Parts.mp3"
     show Watanabe_Garage_Sounds
     "Из глубины гаража донеслись гремящие звуки, кашель, тихая ругань. Спустя минуту дядя Ватанабэ вернулся. "
     hide Watanabe_Garage_Sounds
     
     ##Мини-ЦГ - велосипед Айко
-    image Aiko_Bike = "./images/cg/DAY_01/06a_Watanabe/Aiko_Bike/Aiko_Bike.png"
+    image Aiko_Bike = "images/cg/DAY_01/06a_Watanabe/Aiko_Bike/Aiko_Bike.png"
     image Aiko_Bike_Moved:
         contains:
             "Aiko_Bike"
@@ -3041,12 +3041,12 @@ label start:
     "Он схватил тележку, велосипед и колеса и вновь скрылся в гараже."
     
     show Watanabe_Garage_Sounds
-    play sound "./sounds/sounds/Drill.mp3"
+    play sound "sounds/sounds/Drill.mp3"
     "Послышалось жужжание и скрежет сверлильного станка. А через минуту дядя Ватанабе показался с тележкой."
     hide Watanabe_Garage_Sounds
     
     ##Мини ЦГ - Тележка с новыми колесами
-    image Kasumi_Cart_With_New_Wheels_Evening = "./images/cg/DAY_01/06a_Watanabe/Kasumi_Cart_With_New_Wheels/Kasumi_Cart_With_New_Wheels_Evening.png"
+    image Kasumi_Cart_With_New_Wheels_Evening = "images/cg/DAY_01/06a_Watanabe/Kasumi_Cart_With_New_Wheels/Kasumi_Cart_With_New_Wheels_Evening.png"
     image Kasumi_Cart_With_New_Wheels_Evening_Moved:
         contains:
             "Kasumi_Cart_With_New_Wheels_Evening"
@@ -3095,14 +3095,14 @@ label start:
     
     watanabe "Нисколько! Только помоги мне закатить мотоциклы в гараж. Но смотри, держи под наклоном, чтобы масло не вытекло!"
     
-    play environment_sounds "./sounds/environment/City_Evening.mp3" fadein 1 fadeout 1
+    play environment_sounds "sounds/environment/City_Evening.mp3" fadein 1 fadeout 1
     scene Outdoor_Evening_Kenji_Home with Dissolve( my_dissolve_05 )
 
     "Покончив с этим, я отправился домой."
     "И десяти минут не прошло, как я был возле дома. Тележку я в дом заносить не стал, спрятав её за палисадником с цветами. "
     "Земля в палисаднике была влажная — видимо, Айко совсем недавно поливала цветы. Я вошёл в дом."
     
-    play environment_sounds "./sounds/environment/Kitchen.mp3" fadein 1 fadeout 1
+    play environment_sounds "sounds/environment/Kitchen.mp3" fadein 1 fadeout 1
     scene Evening_Kenji_Home_Kitchen with Dissolve( my_dissolve_05 ) 
     
     "Айко на кухне не было. Я включил телевизор и задумался о своём ужине. Очень хотелось есть. "
@@ -3111,7 +3111,7 @@ label start:
     "Можно было, конечно, сбегать наверх, в её комнату, и попросить приготовить мне чего. Но не хотелось попадаться Айко на глаза."
     "Я решил заварить себе рамэн. "
     
-    image Instant_Noodles = "./images/cg/DAY_01/07a_Kenji_Evening_Meal/Instant_Noodles/Instant_Noodles.png"
+    image Instant_Noodles = "images/cg/DAY_01/07a_Kenji_Evening_Meal/Instant_Noodles/Instant_Noodles.png"
     scene Instant_Noodles with Dissolve( my_dissolve_05 )
     
     "Телевизор по-прежнему показывал новости. Шел блок про незначительные события."
@@ -3147,7 +3147,7 @@ label start:
     aiko "Пришел!"
     
     ##Мини ЦГ - Айко в дверях кухни
-    image Evening_Kenji_Kitchen_Door = "./images/bg/Indoor/Kenji_Home_Kitchen/Evening/Door.png"
+    image Evening_Kenji_Kitchen_Door = "images/bg/Indoor/Kenji_Home_Kitchen/Evening/Door.png"
     image Evening_Kenji_Kitchen_Door_Moved:
         contains:
             "Evening_Kenji_Kitchen_Door"
@@ -3249,8 +3249,8 @@ label start:
     "Айко убежала вверх по лестнице. Видимо, она немедленно решила исполнить мою просьбу."
     "Я между тем закончил свой ужин, сложил посуду в мойку и отправился на второй этаж. "
     
-    image Evening_Kenji_Bedroom = "./images/bg/Indoor/Kenji_Bedroom/Evening/Base.jpg"
-    play environment_sounds "./sounds/environment/Shower.mp3" fadein 1 fadeout 1
+    image Evening_Kenji_Bedroom = "images/bg/Indoor/Kenji_Bedroom/Evening/Base.jpg"
+    play environment_sounds "sounds/environment/Shower.mp3" fadein 1 fadeout 1
     scene Kenji_Home_Bathroom with Dissolve( my_dissolve_05 )
     
     "Ванна была полна чуть больше, чем наполовину. "
@@ -3272,7 +3272,7 @@ label start:
     "Или нет — учитывая, что от неё за версту тянет сигаретным дымом? Хотя, говорят, не чувствовать свой запах — основа нюха!"
     
     ##ЦГ - Касуми с руками Кензи у нее на плечах
-    image Dreams_About_Kasumi = "./images/cg/DAY_01/08a_Kenji_Bath_Time/Dreams_About_Kasumi/Dreams_About_Kasumi.png"
+    image Dreams_About_Kasumi = "images/cg/DAY_01/08a_Kenji_Bath_Time/Dreams_About_Kasumi/Dreams_About_Kasumi.png"
     image Dreams_About_Kasumi_Moved:
         contains:
             ypos -300
@@ -3282,7 +3282,7 @@ label start:
         
         contains:
             "Dream_Frame"
-    play environment_sounds_dream "./sounds/environment/Shower_Dream.mp3" fadein 1
+    play environment_sounds_dream "sounds/environment/Shower_Dream.mp3" fadein 1
     stop environment_sounds fadeout 1
     show Dreams_About_Kasumi_Moved with Dissolve( my_dissolve_05 )
     
@@ -3292,7 +3292,7 @@ label start:
     "Мысль, о том что я выгляжу как идиот, кольнула меня."
     
     stop environment_sounds_dream fadeout 1
-    play environment_sounds "./sounds/environment/Shower.mp3" fadein 1 fadeout 1
+    play environment_sounds "sounds/environment/Shower.mp3" fadein 1 fadeout 1
     hide Dreams_About_Kasumi_Moved with Dissolve( my_dissolve_05 )
     
     "Я открыл глаза и опустил руки. "
@@ -3315,7 +3315,7 @@ label start:
 
     "Я закончил гигиенические процедуры и вышел из ванной."
     
-    play environment_sounds "./sounds/environment/Bedroom.mp3" fadein 1 fadeout 1
+    play environment_sounds "sounds/environment/Bedroom.mp3" fadein 1 fadeout 1
     scene Evening_Kenji_Bedroom with Dissolve( my_dissolve_05 )
     
     "В своей комнате я приступил к подбору одежды для завтрашнего мероприятия. "
@@ -3330,7 +3330,7 @@ label start:
     "Мне в голову пришла свежая идея. Я придумал способ маскировки некоторых недостатков своей внешности. "
     
     #Мини ЦГ - очки Кендзи
-    image Kenji_Glasses = "./images/cg/DAY_01/08a_Kenji_Bath_Time/Kenji_Glasses/Kenji_Glasses.png"
+    image Kenji_Glasses = "images/cg/DAY_01/08a_Kenji_Bath_Time/Kenji_Glasses/Kenji_Glasses.png"
     image Kenji_Glasses_Moved:
         contains:
             "Kenji_Glasses"
@@ -3412,7 +3412,7 @@ label start:
     aiko "Ты чего тут делаешь?"
     
     #Мини ЦГ - дверь в комнату родителей Кендзи
-    image Kenji_Parents_Room_Door = "./images/bg/Indoor/Kenji_Parents_Room/Evening/enji_Parents_Room_Door.jpg"
+    image Kenji_Parents_Room_Door = "images/bg/Indoor/Kenji_Parents_Room/Evening/enji_Parents_Room_Door.jpg"
     image Kenji_Parents_Room_Door_Moved:
         contains:
             "Kenji_Parents_Room_Door"
@@ -3509,7 +3509,7 @@ label start:
     kenji "Я возьму эти диски с собой, и завтра мы будем смотреть все фильмы! Здорово, а?"
     
     ##ЦГ - диск с порнущкой про сестру
-    image Trip_To_Sea_With_Cute_Little_Sis = "./images/cg/DAY_01/09a_Porn_In_Parents_Room/Trip_To_Sea_With_Cute_Little_Sis/Trip_To_Sea_With_Cute_Little_Sis.png"
+    image Trip_To_Sea_With_Cute_Little_Sis = "images/cg/DAY_01/09a_Porn_In_Parents_Room/Trip_To_Sea_With_Cute_Little_Sis/Trip_To_Sea_With_Cute_Little_Sis.png"
     image Trip_To_Sea_With_Cute_Little_Sis_cg:
         contains:
             "black_image"
@@ -3542,7 +3542,7 @@ label start:
     
     aiko "Неееет!"
     
-    play sound "./sounds/sounds/Aiko_Run_Away_From_Parents_Room.mp3"
+    play sound "sounds/sounds/Aiko_Run_Away_From_Parents_Room.mp3"
     hide Aiko_In_Nightie with Dissolve( my_dissolve_01 )
     hide Kenji_Parents_Room_Door_With_Border_01 with hpunch
     
@@ -3588,10 +3588,10 @@ label start:
     "Вполголоса воскликнул я. "
     
     #"Спрайты" одноклассников Кендзи
-    image Kenji_Classmate_Girl = im.Scale( "./images/cg/DAY_01/10a_Makoto's_Books/Kenji_Classmates/Kenji_Classmate_Girl.png", 726, 1100 )
-    image Kenji_Classmate_Girl_In_armor = im.Scale( "./images/cg/DAY_01/10a_Makoto's_Books/Kenji_Classmates/Kenji_Classmate_Girl_In_armor.png", 726, 1100 )
-    image Kenji_Classmate_Boy = im.Scale( "./images/cg/DAY_01/10a_Makoto's_Books/Kenji_Classmates/Kenji_Classmate_Boy.png", 836, 1100 )
-    image Kenji_Classmate_Boy_In_Armor = im.Scale( "./images/cg/DAY_01/10a_Makoto's_Books/Kenji_Classmates/Kenji_Classmate_Boy_In_Armor.png", 836, 1100 )
+    image Kenji_Classmate_Girl = im.Scale( "images/cg/DAY_01/10a_Makoto's_Books/Kenji_Classmates/Kenji_Classmate_Girl.png", 726, 1100 )
+    image Kenji_Classmate_Girl_In_armor = im.Scale( "images/cg/DAY_01/10a_Makoto's_Books/Kenji_Classmates/Kenji_Classmate_Girl_In_armor.png", 726, 1100 )
+    image Kenji_Classmate_Boy = im.Scale( "images/cg/DAY_01/10a_Makoto's_Books/Kenji_Classmates/Kenji_Classmate_Boy.png", 836, 1100 )
+    image Kenji_Classmate_Boy_In_Armor = im.Scale( "images/cg/DAY_01/10a_Makoto's_Books/Kenji_Classmates/Kenji_Classmate_Boy_In_Armor.png", 836, 1100 )
     
     #Мини - ЦГ полупрозрачный черный бэк справа
     image Kenji_Clasmate_Girl_BG_Right_border_01_right_moved:
@@ -3686,15 +3686,15 @@ label start:
     
     "Я выскочил из комнаты. Мне снова надо было на нижний этаж — в кладовку. "
     
-    play environment_sounds "./sounds/environment/Pantry_Evening.mp3" fadein 1
-    image Evening_Kenji_Home_Pantry_Other_03 = "./images/bg/Indoor/Kenji_Home_Pantry/Evening/Evening_Kenji_Home_Pantry_Other_03.jpg"
+    play environment_sounds "sounds/environment/Pantry_Evening.mp3" fadein 1
+    image Evening_Kenji_Home_Pantry_Other_03 = "images/bg/Indoor/Kenji_Home_Pantry/Evening/Evening_Kenji_Home_Pantry_Other_03.jpg"
     scene Evening_Kenji_Home_Pantry_Other_03 with Dissolve( my_dissolve_05 )
     
     "Я окинул взглядом стеллаж, на котором лежали книги. Старые книги дяди Макото, посвящённые радио и прочим сопутствующим вещам. "
     "Вот то, что мне нужно! Я ещё не успел разложить их по коробкам, и они занимали целую полку стеллажа."
     
-    image Tube_Amplifiers_Book_Cover = "./images/cg/DAY_01/10a_Makoto's_Books/Tube_Amplifiers/Tube_Amplifiers_Book_Cover.png"
-    image Tube_Amplifiers_Book_Content = "./images/cg/DAY_01/10a_Makoto's_Books/Tube_Amplifiers/Tube_Amplifiers_Book_Content.png"
+    image Tube_Amplifiers_Book_Cover = "images/cg/DAY_01/10a_Makoto's_Books/Tube_Amplifiers/Tube_Amplifiers_Book_Cover.png"
+    image Tube_Amplifiers_Book_Content = "images/cg/DAY_01/10a_Makoto's_Books/Tube_Amplifiers/Tube_Amplifiers_Book_Content.png"
     
     image Tube_Amplifiers_Book_Cover_CG:
         contains:
@@ -3717,21 +3717,21 @@ label start:
     "Я вытянул первую попавшуюся. На обложке красовалась надпись «Ламповые усилители»"
     "Название мне сразу не понравилось, но я на всякий случай полистал её. "
     
-    play sound "./sounds/sounds/Open_Book.mp3"
+    play sound "sounds/sounds/Open_Book.mp3"
     hide Tube_Amplifiers_Book_Cover_CG with Dissolve( my_dissolve_02 )
     show Tube_Amplifiers_Book_Content_CG with Dissolve( my_dissolve_02 )
     
     "Какие-то тексты и схемы на пожелтевших от времени страницах. "
     "Я совершенно ничего не понимал."
     
-    play sound "./sounds/sounds/Thick_Book_Fall.mp3"
+    play sound "sounds/sounds/Thick_Book_Fall.mp3"
     scene Evening_Kenji_Home_Pantry_Other_03 with Dissolve( my_dissolve_05 )
     
     "Я кинул книгу в стоявший на полу пустой ящик. Первый блин комом, но разве меня это остановит? Как бы не так!"
 
     "Из разноцветной стопки книг я выцепил другую тоненькую книжку."
     
-    image Pan_Stretching = "./images/cg/DAY_01/10a_Makoto's_Books/Pan_Stretching/Pan_Stretching.png"
+    image Pan_Stretching = "images/cg/DAY_01/10a_Makoto's_Books/Pan_Stretching/Pan_Stretching.png"
     image Pan_Stretching_CG:
         contains:
             "black_image"
@@ -3746,14 +3746,14 @@ label start:
     "Я перечитал название несколько раз. Но, похоже, эта книга здесь оказалась случайно и не имела к электронике никакого отношения. "
     
     hide Pan_Stretching_CG with Dissolve( my_dissolve_05 )
-    play sound "./sounds/sounds/Thin_Book_Fall.mp3"
+    play sound "sounds/sounds/Thin_Book_Fall.mp3"
     
     "Я не стал открывать её и сразу бросил в ящик."
     
     
     "Третья книга, которая попалась мне на глаза, не имела никакого названия."
     
-    image KT315_Gondola_Cover = "./images/cg/DAY_01/10a_Makoto's_Books/KT315_Gondola/KT315_Gondola_Cover.png"
+    image KT315_Gondola_Cover = "images/cg/DAY_01/10a_Makoto's_Books/KT315_Gondola/KT315_Gondola_Cover.png"
     image KT315_Gondola_Cover_CG:
         contains:
             "black_image"
@@ -3762,7 +3762,7 @@ label start:
         contains:
             "KT315_Gondola_Cover"
     
-    image KT315_Gondola_Content = "./images/cg/DAY_01/10a_Makoto's_Books/KT315_Gondola/KT315_Gondola_Content.png"
+    image KT315_Gondola_Content = "images/cg/DAY_01/10a_Makoto's_Books/KT315_Gondola/KT315_Gondola_Content.png"
     image KT315_Gondola_Content_CG:
         contains:
             "black_image"
@@ -3776,7 +3776,7 @@ label start:
     "Что это вообще за ерунда?"
     "Я открыл её и перелистал."
     
-    play sound "./sounds/sounds/Open_Book.mp3"
+    play sound "sounds/sounds/Open_Book.mp3"
     hide KT315_Gondola_Cover_CG with Dissolve( my_dissolve_02 )
     show KT315_Gondola_Content_CG with Dissolve( my_dissolve_02 )
     
@@ -3787,12 +3787,12 @@ label start:
     
     kenji "Нет, спасибо."
 
-    play sound "./sounds/sounds/Thick_Book_Fall.mp3"
+    play sound "sounds/sounds/Thick_Book_Fall.mp3"
     "Сказал я вполголоса и швырнул непонятную книгу вслед за остальными."
     
-    image Electronics_For_Dummies_book_light = "./images/cg/DAY_01/10a_Makoto's_Books/Electronics_For_Dummies/book_light.png"
+    image Electronics_For_Dummies_book_light = "images/cg/DAY_01/10a_Makoto's_Books/Electronics_For_Dummies/book_light.png"
     
-    play environment_sounds_dream "./sounds/sounds/Aah.mp3" fadein 1
+    play environment_sounds_dream "sounds/sounds/Aah.mp3" fadein 1
     show black_image_alpha_50pc with Dissolve( my_dissolve_02 )
     show Electronics_For_Dummies_book_light with Dissolve( my_dissolve_02 )
     
@@ -3806,7 +3806,7 @@ label start:
     "О да! Слезы радости заблестели на моих глазах…"
     
     
-    play sound "./sounds/sounds/Aah_Stop_Tape.mp3" fadein 1
+    play sound "sounds/sounds/Aah_Stop_Tape.mp3" fadein 1
     stop environment_sounds_dream fadeout 1
     hide Electronics_For_Dummies with Dissolve( my_dissolve_02 )
     hide black_image_alpha_50pc with Dissolve( my_dissolve_02 )
@@ -3820,7 +3820,7 @@ label start:
     "Копаясь в куче дурацких книг, я напрочь забыл про интернет."
     "Я пулей бросился обратно в свою комнату."
     
-    play environment_sounds "./sounds/environment/Bedroom.mp3" fadein 1 fadeout 1
+    play environment_sounds "sounds/environment/Bedroom.mp3" fadein 1 fadeout 1
     scene Evening_Kenji_Bedroom with Dissolve( my_dissolve_05 )
     
     kenji "Интернет! Интернет! Интернет!"
@@ -3830,7 +3830,7 @@ label start:
 
     "Я зашёл на страницу интернет-магазина, продающего именно то, что мне нужно: «Радиоэлектроника для начинающих». "
     
-    image Electronics_For_Beginners_Manga_Cover = "./images/cg/DAY_01/10a_Makoto's_Books/Internet_Book/Electronics_For_Beginners_Manga_Cover.png"
+    image Electronics_For_Beginners_Manga_Cover = "images/cg/DAY_01/10a_Makoto's_Books/Internet_Book/Electronics_For_Beginners_Manga_Cover.png"
     image Electronics_For_Beginners_Manga_Cover_CG:
         contains:
             "black_image"
@@ -3864,12 +3864,12 @@ label start:
     
     window hide
     
-    play environment_sounds "./sounds/environment/Suburb_Night.mp3" fadein 1
+    play environment_sounds "sounds/environment/Suburb_Night.mp3" fadein 1
     scene Night_Street_01 with Dissolve( my_dissolve_05 )
     
     pause 2.0
     
-    image End_Splash_Logo_JP = im.Scale( "./images/other/logo_jp.png", 900, 506 )
+    image End_Splash_Logo_JP = im.Scale( "images/other/logo_jp.png", 900, 506 )
     image End_Splash_Text = VBox(
         Text( "{b}{color=#FFE680}РадиоПульсар ПреДемо{/color}{/b}" ),
         #Text( "" ),

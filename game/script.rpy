@@ -722,7 +722,7 @@ label start:
     
     show Watanabe_01 Normal_Silent with Dissolve( my_dissolve_02 )
 
-    "Немного?! Мне эта цифра показалась неправдоподобно большой. «Всего» тридцать пять тысяч вольт! "
+    "Немного?! Мне это число показалась неправдоподобно большим. «Всего» тридцать пять тысяч вольт! "
     
     show Watanabe_01 Normal_Say with Dissolve( my_dissolve_02 )
 

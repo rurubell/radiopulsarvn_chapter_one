@@ -557,6 +557,7 @@ screen about():
             text _( "{color=#FFE680}РадиоПульсар ПреДемо{/color}" )
             text _( "" )
             text _( "{color=#FFE680}Сценарий:{/color} Дим Осторожно, Puankar, rurubell" )
+            text _( "{color=#FFE680}Редактура:{/color} lethargic" )
             text _( "{color=#FFE680}Картинки, код:{/color} rurubell" )
             text _( "" )
             text _( "{color=#FFE680}Благодарности{/color}" )

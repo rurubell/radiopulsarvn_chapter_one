@@ -3874,6 +3874,7 @@ label start:
         Text( "{b}{color=#FFE680}РадиоПульсар ПреДемо{/color}{/b}" ),
         #Text( "" ),
         Text( "{color=#FFE680}Сценарий:{/color} Дим Осторожно, Puankar, rurubell" ),
+        Text( "{color=#FFE680}Редактура:{/color} lethargic" ),
         Text( "{color=#FFE680}Картинки, код:{/color} rurubell" ),
         Text( "" ),
         Text( "{b}{color=#FFE680}Спасибо{/color}{/b}" ),

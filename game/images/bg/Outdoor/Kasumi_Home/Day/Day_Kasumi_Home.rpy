@@ -8,7 +8,7 @@ image Day_Kasumi_Home:
         "Day_Kasumi_Home_Sky"
     
     contains:
-        "Day_Right_To_Left_Jet"
+        "Day_Jet"
     
     contains:
         yoffset -100

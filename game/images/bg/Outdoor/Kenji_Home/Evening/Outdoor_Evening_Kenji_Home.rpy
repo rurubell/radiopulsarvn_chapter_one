@@ -8,7 +8,7 @@ image Outdoor_Evening_Kenji_Home:
         "Evening_Kenji_Home_Sky"
     
     contains:
-        "Day_Right_To_Left_Jet"
+        "Day_Jet"
     
     contains:
         yoffset -100

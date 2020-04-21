@@ -10,7 +10,7 @@ image Day_Trash_Place:
         "Day_Trash_Place_Sky"
 
     contains:
-        "Day_Right_To_Left_Jet"
+        "Day_Jet"
 
     contains:
         yoffset -100

@@ -15,7 +15,7 @@ image Main_Menu_BG:
         "Main_Menu_sky"
     
     contains:
-        "Day_Right_To_Left_Jet"
+        "Day_Jet"
     
     contains:
         "Day_Clouds"

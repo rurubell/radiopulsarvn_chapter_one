@@ -9,7 +9,7 @@ image Outdoor_Evening_BG_With_Railroad_2:
         "Outdoor_Evening_BG_With_Railroad_2_Sky"
     
     contains:
-        "Day_Right_To_Left_Jet"
+        "Day_Jet"
     
     contains:
         "Evening_Clouds"

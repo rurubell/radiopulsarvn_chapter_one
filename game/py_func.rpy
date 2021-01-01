@@ -1,7 +1,7 @@
 #Файл - сборник функций на питоне для всей игры
 
 init python:
-    import random
+    from random import randint
     
     #Получить целое рандомное число
     def MyGetRandomInt( n_rand_start, n_rand_end ):

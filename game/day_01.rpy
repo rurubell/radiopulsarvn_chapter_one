@@ -1,3 +1,6 @@
+#День первый
+
+
 label day_01:
     image Midori_01 = "images/cg/DAY_01/01a_Green-Haired_Girl/Midori/Midori_01.png"
     

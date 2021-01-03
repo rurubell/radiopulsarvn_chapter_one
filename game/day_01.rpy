@@ -255,7 +255,7 @@ label day_01:
     show Day_Kenji_Bedroom_Door_With_Border_01 with Dissolve( my_dissolve_02 )
     ##
     
-    show Aiko_Home_Outfit_Hand_Hold_Hand Normal_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Aiko_Home_Outfit_Hand_Hold_Hand Normal_Silent at Move( ( 1600, 630 ), ( 1600, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     "В дверях стояла Айко, моя младшая сестра."
     "Ой! Кажется, она уставилась в мой монитор!"
@@ -263,24 +263,24 @@ label day_01:
     "Черт! Я бы ни за что не стал добровольно демонстрировать такое творчество своей младшей сестре! Как не вовремя она зашла! "
     "Я молниеносно закрыл программу для рисования и вновь повернулся к Айко."
     
-    show Aiko_Home_Outfit_Hand_Hold_Hand Confused_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Aiko_Home_Outfit_Hand_Hold_Hand Confused_Silent at Move( ( 1600, 630 ), ( 1600, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     "Похоже, Айко успела разглядеть Мидори."
     "На несколько секунд повисла неловкая пауза, а затем моя сестра пришла в себя и тихо сказала."
     
-    show Aiko_Home_Outfit_Hand_Hold_Hand Normal_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Aiko_Home_Outfit_Hand_Hold_Hand Normal_Say at Move( ( 1600, 630 ), ( 1600, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     aiko "Завтрак готов."
     
-    show Aiko_Home_Outfit_Hand_Hold_Hand Normal_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Aiko_Home_Outfit_Hand_Hold_Hand Normal_Silent at Move( ( 1600, 630 ), ( 1600, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     "Посмотрела на меня, нахмурилась и выпалила."
     
-    show Aiko_Home_Outfit_Hand_Hold_Hand Angry_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Aiko_Home_Outfit_Hand_Hold_Hand Angry_Say at Move( ( 1600, 630 ), ( 1600, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     aiko "Только надень на себя хоть что-то!"
     
-    show Aiko_Home_Outfit_Hand_Hold_Hand Angry_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Aiko_Home_Outfit_Hand_Hold_Hand Angry_Silent at Move( ( 1600, 630 ), ( 1600, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     "Только сейчас я осознал, что сижу на стуле в одних трусах."
     "Пока я разглядывал себя и своё нижнее белье, Айко исчезла."
@@ -344,11 +344,11 @@ label day_01:
     show Day_Kenji_Home_Kitchen_Gas_Stove_With_Border_01 with Dissolve( my_dissolve_02 )
     ##
     
-    show Aiko_With_Big_Spoon Normal_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Aiko_With_Big_Spoon Normal_Say at Move( ( 1600, 630 ), ( 1600, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     aiko "Папа и мама звонили."
     
-    show Aiko_With_Big_Spoon Normal_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Aiko_With_Big_Spoon Normal_Silent at Move( ( 1600, 630 ), ( 1600, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     "Меня от этой новости немного передёрнуло — отца я побаивался. "
     "Но последнюю неделю я вёл себя хорошо. Не думаю, что Айко могла на меня наябедничать. "
@@ -407,7 +407,7 @@ label day_01:
     tv "С-сэмпай!"
     
     show Day_Kenji_Home_Kitchen_Gas_Stove_With_Border_01 with Dissolve( my_dissolve_02 )
-    show Aiko_With_Big_Spoon Confused_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Aiko_With_Big_Spoon Confused_Silent at Move( ( 1600, 630 ), ( 1600, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     "Я перевёл взгляд на сестру. Что за дурацкий канал она врубила с утра пораньше? "
     "Айко была сильно смущена и стояла как истукан с крышкой от кастрюли и черпаком в руках."
@@ -454,15 +454,15 @@ label day_01:
     "Я вновь взялся за палочки для еды, но вдруг Айко остановила меня."
     
     show Day_Kenji_Home_Kitchen_Gas_Stove_With_Border_01 with Dissolve( my_dissolve_02 )
-    show Aiko_With_Big_Spoon Normal_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Aiko_With_Big_Spoon Normal_Say at Move( ( 1600, 630 ), ( 1600, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     aiko "Ты не забыл?"
     
-    show Aiko_With_Big_Spoon Normal_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Aiko_With_Big_Spoon Normal_Silent at Move( ( 1600, 630 ), ( 1600, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     kenji "Не забыл что?"
     
-    show Aiko_With_Big_Spoon Normal_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Aiko_With_Big_Spoon Normal_Say at Move( ( 1600, 630 ), ( 1600, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     aiko "Сегодня четверг, день вывоза электронных приборов. Мама же просила освободить кладовку!"
     
@@ -481,37 +481,37 @@ label day_01:
     kenji "Айко! Ты ещё не налила себе порцию?"
     
     show Day_Kenji_Home_Kitchen_Gas_Stove_With_Border_01 with Dissolve( my_dissolve_02 )
-    show Aiko_With_Big_Spoon Normal_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Aiko_With_Big_Spoon Normal_Say at Move( ( 1600, 630 ), ( 1600, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     aiko "Что? Нет. Но собираюсь."
     
-    show Aiko_With_Big_Spoon Normal_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Aiko_With_Big_Spoon Normal_Silent at Move( ( 1600, 630 ), ( 1600, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     kenji "Возьми мою, я суп не буду!"
     
-    show Aiko_With_Big_Spoon Surprised_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Aiko_With_Big_Spoon Surprised_Say at Move( ( 1600, 630 ), ( 1600, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     aiko "Это ещё почему?"
     
-    show Aiko_With_Big_Spoon Surprised_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Aiko_With_Big_Spoon Surprised_Silent at Move( ( 1600, 630 ), ( 1600, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     "Не то чтобы я внезапно перестал быть голодным. Но мне требовалось оставить место в желудке для кое-чего другого."
     
     kenji "Мне риса хватит! А вместо супа достань-ка мне из холодильника баночку пива! Там же ещё осталось?"
     
-    show Aiko_With_Big_Spoon Angry_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Aiko_With_Big_Spoon Angry_Say at Move( ( 1600, 630 ), ( 1600, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     aiko "Пиво! С утра?!"
     
-    show Aiko_With_Big_Spoon Angry_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Aiko_With_Big_Spoon Angry_Silent at Move( ( 1600, 630 ), ( 1600, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     kenji "А что такого?"
     
-    show Aiko_With_Big_Spoon Angry_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Aiko_With_Big_Spoon Angry_Say at Move( ( 1600, 630 ), ( 1600, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     aiko "Нет, ничего! Суп ты теперь вообще есть не будешь? Может, мне тогда начать варить пиво для тебя?"
     
-    show Aiko_With_Big_Spoon Angry_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Aiko_With_Big_Spoon Angry_Silent at Move( ( 1600, 630 ), ( 1600, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     "Айко была крайне возмущёна."
     
@@ -553,20 +553,20 @@ label day_01:
     ##
     
     show Day_Kenji_Home_Kitchen_Fridge_With_Border_01 with Dissolve( my_dissolve_02 )
-    show Aiko_With_Beer Normal_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 ) 
+    show Aiko_With_Beer Normal_Say at Move( ( 1600, 630 ), ( 1600, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 ) 
     
     aiko "Ну, какое тебе?"
     
-    show Aiko_With_Beer Normal_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 ) 
+    show Aiko_With_Beer Normal_Silent at Move( ( 1600, 630 ), ( 1600, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 ) 
     
     kenji "Да оно же одинаковое, любое!"
     
-    show Aiko_With_Beer Surprised_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 ) 
+    show Aiko_With_Beer Surprised_Say at Move( ( 1600, 630 ), ( 1600, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 ) 
     
     aiko "Ты чего думаешь, я в сортах пива — спец?"
     
     hide Aiko_With_Beer with Dissolve( my_dissolve_02 )
-    show Aiko_With_Beer Irritated at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 )
+    show Aiko_With_Beer Irritated at Move( ( 1600, 630 ), ( 1600, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 )
     
     "Айко взяла из холодильника одну из банок. Мне показалось, что сейчас она небрежно кинет ее, настолько недовольное было у неё лицо. "
     
@@ -856,43 +856,43 @@ label day_01:
     kenji "С этим лекарством, сама понимаешь, в воду лезть не стоит. Тем более в одиночку."
     
     #hide Aiko_School_Uniform_02 with Dissolve( my_dissolve_01 )
-    show Aiko_School_Uniform_02 Normal_Silent at Move( ( 400, 620 ), ( 400, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Aiko_School_Uniform_02 Normal_Silent at Move( ( 400, 630 ), ( 400, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     "Айко опять пожала плечами и направилась к выходу. Дескать, это не её проблемы."
     
     kenji "Постой, Айко! А может быть, завтра вместе съездим на море и там найдём этот самый пустынный пляж? Я не могу один — вдруг я начну тонуть?"
     
-    show Aiko_School_Uniform_02 Surprised_Say at Move( ( 400, 620 ), ( 400, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Aiko_School_Uniform_02 Surprised_Say at Move( ( 400, 630 ), ( 400, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     aiko "Думаешь, я тебя спасу?"
     
-    show Aiko_School_Uniform_02 Surprised_Silent at Move( ( 400, 620 ), ( 400, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Aiko_School_Uniform_02 Surprised_Silent at Move( ( 400, 630 ), ( 400, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     kenji "Ты же член плавательного кружка!"
     
     hide Aiko_School_Uniform_02 with Dissolve( my_dissolve_01 )
-    show Aiko_School_Uniform_01 Angry_Say at Move( ( 400, 620 ), ( 400, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Aiko_School_Uniform_01 Angry_Say at Move( ( 400, 630 ), ( 400, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     aiko "А ты опять напьёшься?"
     
-    show Aiko_School_Uniform_01 Angry_Silent at Move( ( 400, 620 ), ( 400, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Aiko_School_Uniform_01 Angry_Silent at Move( ( 400, 630 ), ( 400, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     kenji "Что значит «опять»? Это же не ради удовольствия, Айко!"
     
-    show Aiko_School_Uniform_01 Angry_Say at Move( ( 400, 620 ), ( 400, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Aiko_School_Uniform_01 Angry_Say at Move( ( 400, 630 ), ( 400, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     aiko "В таком случае даже не мечтай!"
     
-    show Aiko_School_Uniform_01 Angry_Silent at Move( ( 400, 620 ), ( 400, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Aiko_School_Uniform_01 Angry_Silent at Move( ( 400, 630 ), ( 400, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     kenji "Ну… Айко! Я встану на колени перед тобой, хочешь?"
     
     hide Aiko_School_Uniform_01 with Dissolve( my_dissolve_01 )
-    show Aiko_School_Uniform_02 Scared_Silent at Move( ( 400, 620 ), ( 400, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Aiko_School_Uniform_02 Scared_Silent at Move( ( 400, 630 ), ( 400, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     "По лицу Айко пробежала гримаса испуга и отвращения."
     
-    show Aiko_School_Uniform_02 Scared_Say at Move( ( 400, 620 ), ( 400, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Aiko_School_Uniform_02 Scared_Say at Move( ( 400, 630 ), ( 400, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     aiko "НЕТ!"
     aiko "То есть да. Уговорил! Завтра поедем, но только без этого!"
@@ -3395,7 +3395,7 @@ label day_01:
     ##
     
     show Kenji_Parents_Room_Door_With_Border_01 with Dissolve( my_dissolve_02 )
-    show Aiko_In_Nightie Normal_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Aiko_In_Nightie Normal_Silent at Move( ( 1600, 630 ), ( 1600, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     "Я обернулся. В дверях комнаты стояла Айко. Похоже, она собиралась спать и переоделась в пижаму."
     "Она перевела взгляд на мои руки, державшие диск с порнушкой."
@@ -3403,19 +3403,19 @@ label day_01:
 
     kenji "Я искал тут кое-что!"
     
-    show Aiko_In_Nightie Suspect_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Aiko_In_Nightie Suspect_Say at Move( ( 1600, 630 ), ( 1600, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     aiko "Искал?"
     
-    show Aiko_In_Nightie Suspect_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Aiko_In_Nightie Suspect_Silent at Move( ( 1600, 630 ), ( 1600, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
 
     "Почти шёпотом спросила Айко."
     
-    show Aiko_In_Nightie Suspect_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Aiko_In_Nightie Suspect_Say at Move( ( 1600, 630 ), ( 1600, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
 
     aiko "И нашёл?"
     
-    show Aiko_In_Nightie Suspect_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Aiko_In_Nightie Suspect_Silent at Move( ( 1600, 630 ), ( 1600, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     kenji "Что значит «нашёл»?"
 
@@ -3423,11 +3423,11 @@ label day_01:
 
     kenji "Ничего я не нашёл! Я искал не это!"
     
-    show Aiko_In_Nightie Suspect_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Aiko_In_Nightie Suspect_Say at Move( ( 1600, 630 ), ( 1600, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     aiko "Ты понимаешь, что ты извращенец? Это же для извращенцев кино!"
     
-    show Aiko_In_Nightie Suspect_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Aiko_In_Nightie Suspect_Silent at Move( ( 1600, 630 ), ( 1600, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
 
     "Как всегда! Эту ретропорнографию я не стал бы смотреть ни за какие коврижки. А тут такое!"
 
@@ -3436,26 +3436,26 @@ label day_01:
     kenji "И вообще, это же моего отца! Он что, тоже извращенец?"
     kenji "Или нет, может, это твоего отца вещь, а, Айко? И он был извращенцем? Неужели так?"
     
-    show Aiko_In_Nightie Sorry_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Aiko_In_Nightie Sorry_Silent at Move( ( 1600, 630 ), ( 1600, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
 
     "Наверное, зря я приплёл сюда покойного отца Айко. После этой фразы она опустила голову и произнесла жалобно:"
     
-    show Aiko_In_Nightie Sorry_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Aiko_In_Nightie Sorry_Say at Move( ( 1600, 630 ), ( 1600, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
 
     aiko "Я хотела выкинуть! Когда убиралась здесь. Но потом забыла. Не хотела, чтобы ты нашёл, а ты всё-таки нашёл!"
     
-    show Aiko_In_Nightie Sorry_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Aiko_In_Nightie Sorry_Silent at Move( ( 1600, 630 ), ( 1600, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     kenji "Да не нужна мне вся эта ерунда! Мне нужен… микрофон для караоке! Вот зачем я полез сюда! Я ищу микрофон!"
     
-    show Aiko_In_Nightie Angry_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Aiko_In_Nightie Angry_Say at Move( ( 1600, 630 ), ( 1600, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     aiko "Ты врёшь!"
     aiko "Наверное, ждал, когда я усну, чтобы взять это."
     aiko "Я поняла, какие у тебя завтра «дела»."
     aiko "Ты небось вступил в какой-то клуб извращенцев. И вы в этом вашем клубе будете смотреть эти непристойности!"
     
-    show Aiko_In_Nightie Angry_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Aiko_In_Nightie Angry_Silent at Move( ( 1600, 630 ), ( 1600, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
 
     "Да уж, неплохо у Айко фантазия работает. Теперь я ещё и в клуб извращенцев вступил! "
     "Странно, что не в клуб алкоголиков и извращенцев. Теперь её уж точно не переубедить! "
@@ -3488,14 +3488,14 @@ label day_01:
     
     scene Evening_Kenji_Parents_Room with Dissolve( my_dissolve_02 ) 
     show Kenji_Parents_Room_Door_With_Border_01 with Dissolve( my_dissolve_02 )
-    show Aiko_In_Nightie Scared_Shy_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Aiko_In_Nightie Scared_Shy_Silent at Move( ( 1600, 630 ), ( 1600, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     "Лицо Айко исказила гримаса страха. Её уши и щеки залила густая краснота."
     "Я откинул диск в сторону и вскочил."
 
     kenji "Айко, я…"
     
-    show Aiko_In_Nightie Scared_Shy_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Aiko_In_Nightie Scared_Shy_Say at Move( ( 1600, 630 ), ( 1600, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     aiko "Неееет!"
     

@@ -11,8 +11,11 @@ image Day_Kasumi_Home:
         "Day_Jet"
     
     contains:
-        yoffset -100
+        #yoffset 
         "Day_Clouds"
     
     contains:
         "Day_Kasumi_Home_Other"
+    
+    contains:
+        "Day_Kasumi_Home_wires"

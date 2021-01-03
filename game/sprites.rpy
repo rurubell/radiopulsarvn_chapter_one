@@ -1,40 +1,40 @@
 #Спрайты
 #Айко в домашней одежде
-image Aiko_Base_Outfit_03_Normal_Say = im.Scale( "images/sprites/Aiko/Aiko_Base_Outfit_03/Aiko_Base_Outfit_03_Normal_Say.png", 594, 900 ) 
-image Aiko_Base_Outfit_03_Normal_Silent = im.Scale( "images/sprites/Aiko/Aiko_Base_Outfit_03/Aiko_Base_Outfit_03_Normal_Silent.png", 594, 900 ) 
-image Aiko_Base_Outfit_03_Confused_Silent = im.Scale( "images/sprites/Aiko/Aiko_Base_Outfit_03/Aiko_Base_Outfit_03_Confused_Silent.png", 594, 900 ) 
-image Aiko_Base_Outfit_03_Angry_Say = im.Scale( "images/sprites/Aiko/Aiko_Base_Outfit_03/Aiko_Base_Outfit_03_Angry_Say.png", 594, 900 ) 
-image Aiko_Base_Outfit_03_Angry_Silent = im.Scale( "images/sprites/Aiko/Aiko_Base_Outfit_03/Aiko_Base_Outfit_03_Angry_Silent.png", 594, 900 )
-image Aiko_Base_Outfit_03_Surprised_Say = im.Scale( "images/sprites/Aiko/Aiko_Base_Outfit_03/Aiko_Base_Outfit_03_Surprised_Say.png", 594, 900 ) 
-image Aiko_Base_Outfit_03_Surprised_Silent = im.Scale( "images/sprites/Aiko/Aiko_Base_Outfit_03/Aiko_Base_Outfit_03_Surprised_Silent.png", 594, 900 )
-image Aiko_Base_Outfit_03_Suspect_Say = im.Scale( "images/sprites/Aiko/Aiko_Base_Outfit_03/Aiko_Base_Outfit_03_Suspect_Say.png", 594, 900 )
-image Aiko_Base_Outfit_03_Suspect_Silent = im.Scale( "images/sprites/Aiko/Aiko_Base_Outfit_03/Aiko_Base_Outfit_03_Suspect_Silent.png", 594, 900 )
-image Aiko_Base_Outfit_03_Smile_Say = im.Scale( "images/sprites/Aiko/Aiko_Base_Outfit_03/Aiko_Base_Outfit_03_Smile_Say.png", 594, 900 )
-image Aiko_Base_Outfit_03_Smile_Silent = im.Scale( "images/sprites/Aiko/Aiko_Base_Outfit_03/Aiko_Base_Outfit_03_Smile_Silent.png", 594, 900 )
+image Aiko_Home_Outfit_Hand_Hold_Hand_Normal_Say = im.Scale( "images/sprites/Aiko/Aiko_Home_Outfit_Hand_Hold_Hand/Aiko_Home_Outfit_Hand_Hold_Hand_Normal_Say.png", 594, 900 ) 
+image Aiko_Home_Outfit_Hand_Hold_Hand_Normal_Silent = im.Scale( "images/sprites/Aiko/Aiko_Home_Outfit_Hand_Hold_Hand/Aiko_Home_Outfit_Hand_Hold_Hand_Normal_Silent.png", 594, 900 ) 
+image Aiko_Home_Outfit_Hand_Hold_Hand_Confused_Silent = im.Scale( "images/sprites/Aiko/Aiko_Home_Outfit_Hand_Hold_Hand/Aiko_Home_Outfit_Hand_Hold_Hand_Confused_Silent.png", 594, 900 ) 
+image Aiko_Home_Outfit_Hand_Hold_Hand_Angry_Say = im.Scale( "images/sprites/Aiko/Aiko_Home_Outfit_Hand_Hold_Hand/Aiko_Home_Outfit_Hand_Hold_Hand_Angry_Say.png", 594, 900 ) 
+image Aiko_Home_Outfit_Hand_Hold_Hand_Angry_Silent = im.Scale( "images/sprites/Aiko/Aiko_Home_Outfit_Hand_Hold_Hand/Aiko_Home_Outfit_Hand_Hold_Hand_Angry_Silent.png", 594, 900 )
+image Aiko_Home_Outfit_Hand_Hold_Hand_Surprised_Say = im.Scale( "images/sprites/Aiko/Aiko_Home_Outfit_Hand_Hold_Hand/Aiko_Home_Outfit_Hand_Hold_Hand_Surprised_Say.png", 594, 900 ) 
+image Aiko_Home_Outfit_Hand_Hold_Hand_Surprised_Silent = im.Scale( "images/sprites/Aiko/Aiko_Home_Outfit_Hand_Hold_Hand/Aiko_Home_Outfit_Hand_Hold_Hand_Surprised_Silent.png", 594, 900 )
+image Aiko_Home_Outfit_Hand_Hold_Hand_Suspect_Say = im.Scale( "images/sprites/Aiko/Aiko_Home_Outfit_Hand_Hold_Hand/Aiko_Home_Outfit_Hand_Hold_Hand_Suspect_Say.png", 594, 900 )
+image Aiko_Home_Outfit_Hand_Hold_Hand_Suspect_Silent = im.Scale( "images/sprites/Aiko/Aiko_Home_Outfit_Hand_Hold_Hand/Aiko_Home_Outfit_Hand_Hold_Hand_Suspect_Silent.png", 594, 900 )
+image Aiko_Home_Outfit_Hand_Hold_Hand_Smile_Say = im.Scale( "images/sprites/Aiko/Aiko_Home_Outfit_Hand_Hold_Hand/Aiko_Home_Outfit_Hand_Hold_Hand_Smile_Say.png", 594, 900 )
+image Aiko_Home_Outfit_Hand_Hold_Hand_Smile_Silent = im.Scale( "images/sprites/Aiko/Aiko_Home_Outfit_Hand_Hold_Hand/Aiko_Home_Outfit_Hand_Hold_Hand_Smile_Silent.png", 594, 900 )
 
 
-layeredimage Aiko_Base_Outfit_03:
+layeredimage Aiko_Home_Outfit_Hand_Hold_Hand:
     group emotion:
         attribute Normal_Say:
-            "Aiko_Base_Outfit_03_Normal_Say"
+            "Aiko_Home_Outfit_Hand_Hold_Hand_Normal_Say"
         attribute Normal_Silent:
-            "Aiko_Base_Outfit_03_Normal_Silent"
+            "Aiko_Home_Outfit_Hand_Hold_Hand_Normal_Silent"
         attribute Confused_Silent:
-            "Aiko_Base_Outfit_03_Confused_Silent"
+            "Aiko_Home_Outfit_Hand_Hold_Hand_Confused_Silent"
         attribute Confused_Say:
-            "Aiko_Base_Outfit_03_Confused_Say"
+            "Aiko_Home_Outfit_Hand_Hold_Hand_Confused_Say"
         attribute Angry_Silent:
-            "Aiko_Base_Outfit_03_Angry_Silent"
+            "Aiko_Home_Outfit_Hand_Hold_Hand_Angry_Silent"
         attribute Angry_Say:
-            "Aiko_Base_Outfit_03_Angry_Say"
+            "Aiko_Home_Outfit_Hand_Hold_Hand_Angry_Say"
         attribute Suspect_Say:
-            "Aiko_Base_Outfit_03_Suspect_Say"
+            "Aiko_Home_Outfit_Hand_Hold_Hand_Suspect_Say"
         attribute Suspect_Silent:
-            "Aiko_Base_Outfit_03_Suspect_Silent"
+            "Aiko_Home_Outfit_Hand_Hold_Hand_Suspect_Silent"
         attribute Smile_Say:
-            "Aiko_Base_Outfit_03_Smile_Say"
+            "Aiko_Home_Outfit_Hand_Hold_Hand_Smile_Say"
         attribute Smile_Silent:
-            "Aiko_Base_Outfit_03_Smile_Silent"
+            "Aiko_Home_Outfit_Hand_Hold_Hand_Smile_Silent"
 
 
 #Айко с ложкой

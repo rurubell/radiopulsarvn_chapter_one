@@ -255,7 +255,7 @@ label day_01:
     show Day_Kenji_Bedroom_Door_With_Border_01 with Dissolve( my_dissolve_02 )
     ##
     
-    show Aiko_Base_Outfit_03 Normal_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Aiko_Home_Outfit_Hand_Hold_Hand Normal_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     "В дверях стояла Айко, моя младшая сестра."
     "Ой! Кажется, она уставилась в мой монитор!"
@@ -263,29 +263,29 @@ label day_01:
     "Черт! Я бы ни за что не стал добровольно демонстрировать такое творчество своей младшей сестре! Как не вовремя она зашла! "
     "Я молниеносно закрыл программу для рисования и вновь повернулся к Айко."
     
-    show Aiko_Base_Outfit_03 Confused_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Aiko_Home_Outfit_Hand_Hold_Hand Confused_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     "Похоже, Айко успела разглядеть Мидори."
     "На несколько секунд повисла неловкая пауза, а затем моя сестра пришла в себя и тихо сказала."
     
-    show Aiko_Base_Outfit_03 Normal_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Aiko_Home_Outfit_Hand_Hold_Hand Normal_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     aiko "Завтрак готов."
     
-    show Aiko_Base_Outfit_03 Normal_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Aiko_Home_Outfit_Hand_Hold_Hand Normal_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     "Посмотрела на меня, нахмурилась и выпалила."
     
-    show Aiko_Base_Outfit_03 Angry_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Aiko_Home_Outfit_Hand_Hold_Hand Angry_Say at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     aiko "Только надень на себя хоть что-то!"
     
-    show Aiko_Base_Outfit_03 Angry_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Aiko_Home_Outfit_Hand_Hold_Hand Angry_Silent at Move( ( 1600, 620 ), ( 1600, 620 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     "Только сейчас я осознал, что сижу на стуле в одних трусах."
     "Пока я разглядывал себя и своё нижнее белье, Айко исчезла."
     
-    hide Aiko_Base_Outfit_03 with Dissolve( my_dissolve_01 )
+    hide Aiko_Home_Outfit_Hand_Hold_Hand with Dissolve( my_dissolve_01 )
     hide Day_Kenji_Bedroom_Door_With_Border_01 with Dissolve( my_dissolve_05 )
     
     "Не стоило злить свою сестру и опаздывать. Я встал, накинул рубашку, застегнул её через пуговицу."
@@ -300,11 +300,11 @@ label day_01:
 
     kenji "И что сегодня на завтрак?"
     
-    show Aiko_Base_Outfit_03 Normal_Say with Dissolve( my_dissolve_02 )
+    show Aiko_Home_Outfit_Hand_Hold_Hand Normal_Say with Dissolve( my_dissolve_02 )
     
     aiko "Суп, рис и омлет."
     
-    hide Aiko_Base_Outfit_03 with Dissolve( my_dissolve_02 )
+    hide Aiko_Home_Outfit_Hand_Hold_Hand with Dissolve( my_dissolve_02 )
     
     "Я сел за стол, пока Айко протирала его влажной тряпкой. "
     "Потом она поставила на него две деревянные подставки. Протерла и их. "
@@ -2563,158 +2563,158 @@ label day_01:
     image Kenji_MObile_Phone = "images/cg/DAY_01/06a_Watanabe/Kenji_Mobile_Phone/Kenji_Mobile_Phone.png"
     image Kenji_MObile_Phone_Mask = "images/cg/DAY_01/06a_Watanabe/Kenji_Mobile_Phone/Kenji_Mobile_Phone_Mask.png"
     
-    image Aiko_Base_Outfit_03_Normal_Say_Mobile:
+    image Aiko_Home_Outfit_Hand_Hold_Hand_Normal_Say_Mobile:
         contains:
             xpos 1350
             ypos 100
-            "Aiko_Base_Outfit_03_Normal_Say"
+            "Aiko_Home_Outfit_Hand_Hold_Hand_Normal_Say"
     
-    image Aiko_Base_Outfit_03_Normal_Silent_Mobile:
+    image Aiko_Home_Outfit_Hand_Hold_Hand_Normal_Silent_Mobile:
         contains:
             xpos 1350
             ypos 100
-            "Aiko_Base_Outfit_03_Normal_Silent"
+            "Aiko_Home_Outfit_Hand_Hold_Hand_Normal_Silent"
     
-    image Aiko_Base_Outfit_03_Surprised_Say_Mobile:
+    image Aiko_Home_Outfit_Hand_Hold_Hand_Surprised_Say_Mobile:
         contains:
             xpos 1350
             ypos 100
-            "Aiko_Base_Outfit_03_Surprised_Say"
+            "Aiko_Home_Outfit_Hand_Hold_Hand_Surprised_Say"
     
-    image Aiko_Base_Outfit_03_Surprised_Silent_Mobile:
+    image Aiko_Home_Outfit_Hand_Hold_Hand_Surprised_Silent_Mobile:
         contains:
             xpos 1350
             ypos 100
-            "Aiko_Base_Outfit_03_Surprised_Silent"
+            "Aiko_Home_Outfit_Hand_Hold_Hand_Surprised_Silent"
             
-    image Aiko_Base_Outfit_03_Angry_Say_Mobile:
+    image Aiko_Home_Outfit_Hand_Hold_Hand_Angry_Say_Mobile:
         contains:
             xpos 1350
             ypos 100
-            "Aiko_Base_Outfit_03_Angry_Say"
+            "Aiko_Home_Outfit_Hand_Hold_Hand_Angry_Say"
     
-    image Aiko_Base_Outfit_03_Angry_Silent_Mobile:
+    image Aiko_Home_Outfit_Hand_Hold_Hand_Angry_Silent_Mobile:
         contains:
             xpos 1350
             ypos 100
-            "Aiko_Base_Outfit_03_Angry_Silent"
+            "Aiko_Home_Outfit_Hand_Hold_Hand_Angry_Silent"
     
-    image Aiko_Base_Outfit_03_Normal_Say_Mobile_Masked = AlphaMask( "Aiko_Base_Outfit_03_Normal_Say_Mobile", "Kenji_MObile_Phone_Mask" )
-    image Aiko_Base_Outfit_03_Normal_Silent_Mobile_Masked = AlphaMask( "Aiko_Base_Outfit_03_Normal_Silent_Mobile", "Kenji_MObile_Phone_Mask" )
-    image Aiko_Base_Outfit_03_Surprised_Say_Mobile_Masked = AlphaMask( "Aiko_Base_Outfit_03_Surprised_Say_Mobile", "Kenji_MObile_Phone_Mask" )
-    image Aiko_Base_Outfit_03_Surprised_Silent_Mobile_Masked = AlphaMask( "Aiko_Base_Outfit_03_Surprised_Silent_Mobile", "Kenji_MObile_Phone_Mask" )
-    image Aiko_Base_Outfit_03_Angry_Say_Mobile_Masked = AlphaMask( "Aiko_Base_Outfit_03_Angry_Say_Mobile", "Kenji_MObile_Phone_Mask" )
-    image Aiko_Base_Outfit_03_Angry_Silent_Mobile_Masked = AlphaMask( "Aiko_Base_Outfit_03_Angry_Silent_Mobile", "Kenji_MObile_Phone_Mask" )
+    image Aiko_Home_Outfit_Hand_Hold_Hand_Normal_Say_Mobile_Masked = AlphaMask( "Aiko_Home_Outfit_Hand_Hold_Hand_Normal_Say_Mobile", "Kenji_MObile_Phone_Mask" )
+    image Aiko_Home_Outfit_Hand_Hold_Hand_Normal_Silent_Mobile_Masked = AlphaMask( "Aiko_Home_Outfit_Hand_Hold_Hand_Normal_Silent_Mobile", "Kenji_MObile_Phone_Mask" )
+    image Aiko_Home_Outfit_Hand_Hold_Hand_Surprised_Say_Mobile_Masked = AlphaMask( "Aiko_Home_Outfit_Hand_Hold_Hand_Surprised_Say_Mobile", "Kenji_MObile_Phone_Mask" )
+    image Aiko_Home_Outfit_Hand_Hold_Hand_Surprised_Silent_Mobile_Masked = AlphaMask( "Aiko_Home_Outfit_Hand_Hold_Hand_Surprised_Silent_Mobile", "Kenji_MObile_Phone_Mask" )
+    image Aiko_Home_Outfit_Hand_Hold_Hand_Angry_Say_Mobile_Masked = AlphaMask( "Aiko_Home_Outfit_Hand_Hold_Hand_Angry_Say_Mobile", "Kenji_MObile_Phone_Mask" )
+    image Aiko_Home_Outfit_Hand_Hold_Hand_Angry_Silent_Mobile_Masked = AlphaMask( "Aiko_Home_Outfit_Hand_Hold_Hand_Angry_Silent_Mobile", "Kenji_MObile_Phone_Mask" )
     #
     
     play sound "sounds/sounds/Mobile_Phone_Vibration.mp3"
     show Kenji_MObile_Phone with Dissolve( my_dissolve_02 )
-    show Aiko_Base_Outfit_03_Normal_Silent_Mobile_Masked with Dissolve( my_dissolve_01 )
+    show Aiko_Home_Outfit_Hand_Hold_Hand_Normal_Silent_Mobile_Masked with Dissolve( my_dissolve_01 )
 
     "У меня зазвонил телефон. Это была Айко."
     
-    show Aiko_Base_Outfit_03_Surprised_Say_Mobile_Masked with Dissolve( my_dissolve_01 )
-    hide Aiko_Base_Outfit_03_Normal_Silent_Mobile_Masked
+    show Aiko_Home_Outfit_Hand_Hold_Hand_Surprised_Say_Mobile_Masked with Dissolve( my_dissolve_01 )
+    hide Aiko_Home_Outfit_Hand_Hold_Hand_Normal_Silent_Mobile_Masked
 
     aiko "Кендзи, ты где?"
     
-    show Aiko_Base_Outfit_03_Surprised_Silent_Mobile_Masked with Dissolve( my_dissolve_01 )
-    hide Aiko_Base_Outfit_03_Surprised_Say_Mobile_Masked
+    show Aiko_Home_Outfit_Hand_Hold_Hand_Surprised_Silent_Mobile_Masked with Dissolve( my_dissolve_01 )
+    hide Aiko_Home_Outfit_Hand_Hold_Hand_Surprised_Say_Mobile_Masked
 
     "Голос её был взволнован."
 
     kenji "Я? Да практически возле дома. Но приду чуть позже."
     
-    show Aiko_Base_Outfit_03_Surprised_Say_Mobile_Masked with Dissolve( my_dissolve_01 )
-    hide Aiko_Base_Outfit_03_Surprised_Silent_Mobile_Masked
+    show Aiko_Home_Outfit_Hand_Hold_Hand_Surprised_Say_Mobile_Masked with Dissolve( my_dissolve_01 )
+    hide Aiko_Home_Outfit_Hand_Hold_Hand_Surprised_Silent_Mobile_Masked
     
     aiko "Я думала, ты так напился, что не смог найти дорогу домой. Ты что, выпил всё своё пиво?"
     
-    show Aiko_Base_Outfit_03_Surprised_Silent_Mobile_Masked with Dissolve( my_dissolve_01 )
-    hide Aiko_Base_Outfit_03_Surprised_Say_Mobile_Masked
+    show Aiko_Home_Outfit_Hand_Hold_Hand_Surprised_Silent_Mobile_Masked with Dissolve( my_dissolve_01 )
+    hide Aiko_Home_Outfit_Hand_Hold_Hand_Surprised_Say_Mobile_Masked
     
     kenji "Ну да..."
 
     "Айко возмущенно завопила:"
     
-    show Aiko_Base_Outfit_03_Angry_Say_Mobile_Masked with Dissolve( my_dissolve_01 )
-    hide Aiko_Base_Outfit_03_Surprised_Silent_Mobile_Masked
+    show Aiko_Home_Outfit_Hand_Hold_Hand_Angry_Say_Mobile_Masked with Dissolve( my_dissolve_01 )
+    hide Aiko_Home_Outfit_Hand_Hold_Hand_Surprised_Silent_Mobile_Masked
 
     aiko "Ты алкоголик!"
     
-    show Aiko_Base_Outfit_03_Angry_Silent_Mobile_Masked with Dissolve( my_dissolve_01 )
-    hide Aiko_Base_Outfit_03_Angry_Say_Mobile_Masked
+    show Aiko_Home_Outfit_Hand_Hold_Hand_Angry_Silent_Mobile_Masked with Dissolve( my_dissolve_01 )
+    hide Aiko_Home_Outfit_Hand_Hold_Hand_Angry_Say_Mobile_Masked
     
     kenji "Постой, Айко! Три банки пива — это не три бутылки сакэ, ты не путай! Чего ты так раскричалась?"
 
     "Но ей, конечно, было всё одно, что сакэ, что пиво. Я действительно редко выпивал за день больше одной или двух банок. Если пил вообще."
     
-    show Aiko_Base_Outfit_03_Angry_Say_Mobile_Masked with Dissolve( my_dissolve_01 )
-    hide Aiko_Base_Outfit_03_Angry_Silent_Mobile_Masked
+    show Aiko_Home_Outfit_Hand_Hold_Hand_Angry_Say_Mobile_Masked with Dissolve( my_dissolve_01 )
+    hide Aiko_Home_Outfit_Hand_Hold_Hand_Angry_Silent_Mobile_Masked
 
     aiko "В магазин утром пойдёшь сам! И завтрак в дорогу тоже сам себе готовить будешь!"
     
-    show Aiko_Base_Outfit_03_Angry_Silent_Mobile_Masked with Dissolve( my_dissolve_01 )
-    hide Aiko_Base_Outfit_03_Angry_Say_Mobile_Masked
+    show Aiko_Home_Outfit_Hand_Hold_Hand_Angry_Silent_Mobile_Masked with Dissolve( my_dissolve_01 )
+    hide Aiko_Home_Outfit_Hand_Hold_Hand_Angry_Say_Mobile_Masked
     
     kenji "Завтрак в дорогу? Зачем? Ты меня из дома завтра погонишь?"
     
-    show Aiko_Base_Outfit_03_Surprised_Say_Mobile_Masked with Dissolve( my_dissolve_01 )
-    hide Aiko_Base_Outfit_03_Angry_Silent_Mobile_Masked
+    show Aiko_Home_Outfit_Hand_Hold_Hand_Surprised_Say_Mobile_Masked with Dissolve( my_dissolve_01 )
+    hide Aiko_Home_Outfit_Hand_Hold_Hand_Angry_Silent_Mobile_Masked
     
     aiko "Ты же на море собрался, разве нет?"
     
-    show Aiko_Base_Outfit_03_Surprised_Silent_Mobile_Masked with Dissolve( my_dissolve_01 )
-    hide Aiko_Base_Outfit_03_Surprised_Say_Mobile_Masked
+    show Aiko_Home_Outfit_Hand_Hold_Hand_Surprised_Silent_Mobile_Masked with Dissolve( my_dissolve_01 )
+    hide Aiko_Home_Outfit_Hand_Hold_Hand_Surprised_Say_Mobile_Masked
     
     kenji "Ах, точно! Я совсем забыл. Прости, Айко, но, похоже, с поездкой на море придётся повременить."
     
-    show Aiko_Base_Outfit_03_Surprised_Say_Mobile_Masked with Dissolve( my_dissolve_01 )
-    hide Aiko_Base_Outfit_03_Surprised_Silent_Mobile_Masked
+    show Aiko_Home_Outfit_Hand_Hold_Hand_Surprised_Say_Mobile_Masked with Dissolve( my_dissolve_01 )
+    hide Aiko_Home_Outfit_Hand_Hold_Hand_Surprised_Silent_Mobile_Masked
     
     aiko "Почему?"
     
-    show Aiko_Base_Outfit_03_Surprised_Silent_Mobile_Masked with Dissolve( my_dissolve_01 )
-    hide Aiko_Base_Outfit_03_Surprised_Say_Mobile_Masked
+    show Aiko_Home_Outfit_Hand_Hold_Hand_Surprised_Silent_Mobile_Masked with Dissolve( my_dissolve_01 )
+    hide Aiko_Home_Outfit_Hand_Hold_Hand_Surprised_Say_Mobile_Masked
     
     kenji "Дела. Мне надо… Встретиться кое с кем."
     
-    show Aiko_Base_Outfit_03_Angry_Say_Mobile_Masked with Dissolve( my_dissolve_01 )
-    hide Aiko_Base_Outfit_03_Surprised_Silent_Mobile_Masked
+    show Aiko_Home_Outfit_Hand_Hold_Hand_Angry_Say_Mobile_Masked with Dissolve( my_dissolve_01 )
+    hide Aiko_Home_Outfit_Hand_Hold_Hand_Surprised_Silent_Mobile_Masked
     
     aiko "Этот кто-то — тоже алкоголик?"
     
-    show Aiko_Base_Outfit_03_Angry_Silent_Mobile_Masked with Dissolve( my_dissolve_01 )
-    hide Aiko_Base_Outfit_03_Angry_Say_Mobile_Masked
+    show Aiko_Home_Outfit_Hand_Hold_Hand_Angry_Silent_Mobile_Masked with Dissolve( my_dissolve_01 )
+    hide Aiko_Home_Outfit_Hand_Hold_Hand_Angry_Say_Mobile_Masked
     
     kenji "Айко, бросай свои шуточки! Надеюсь, ты не обиделась, что на море мы завтра не едем?"
     
-    show Aiko_Base_Outfit_03_Normal_Say_Mobile_Masked with Dissolve( my_dissolve_01 )
-    hide Aiko_Base_Outfit_03_Angry_Silent_Mobile_Masked
+    show Aiko_Home_Outfit_Hand_Hold_Hand_Normal_Say_Mobile_Masked with Dissolve( my_dissolve_01 )
+    hide Aiko_Home_Outfit_Hand_Hold_Hand_Angry_Silent_Mobile_Masked
     
     aiko "Мне-то что? Я могу в любой день пойти в бассейн. А могу даже поехать на пляж без тебя, с подружками."
     
-    show Aiko_Base_Outfit_03_Normal_Silent_Mobile_Masked with Dissolve( my_dissolve_01 )
-    hide Aiko_Base_Outfit_03_Normal_Say_Mobile_Masked
+    show Aiko_Home_Outfit_Hand_Hold_Hand_Normal_Silent_Mobile_Masked with Dissolve( my_dissolve_01 )
+    hide Aiko_Home_Outfit_Hand_Hold_Hand_Normal_Say_Mobile_Masked
 
     "Я вздохнул. Айко помолчала какое-то время и спросила."
 
-    show Aiko_Base_Outfit_03_Normal_Say_Mobile_Masked with Dissolve( my_dissolve_01 )
-    hide Aiko_Base_Outfit_03_Normal_Silent_Mobile_Masked
+    show Aiko_Home_Outfit_Hand_Hold_Hand_Normal_Say_Mobile_Masked with Dissolve( my_dissolve_01 )
+    hide Aiko_Home_Outfit_Hand_Hold_Hand_Normal_Silent_Mobile_Masked
 
     aiko "Куда ты сейчас?"
     
-    show Aiko_Base_Outfit_03_Normal_Silent_Mobile_Masked with Dissolve( my_dissolve_01 )
-    hide Aiko_Base_Outfit_03_Normal_Say_Mobile_Masked
+    show Aiko_Home_Outfit_Hand_Hold_Hand_Normal_Silent_Mobile_Masked with Dissolve( my_dissolve_01 )
+    hide Aiko_Home_Outfit_Hand_Hold_Hand_Normal_Say_Mobile_Masked
     
     kenji "Мне надо зайти к дяде Ватанабэ."
     
-    show Aiko_Base_Outfit_03_Angry_Say_Mobile_Masked with Dissolve( my_dissolve_01 )
-    hide Aiko_Base_Outfit_03_Normal_Silent_Mobile_Masked
+    show Aiko_Home_Outfit_Hand_Hold_Hand_Angry_Say_Mobile_Masked with Dissolve( my_dissolve_01 )
+    hide Aiko_Home_Outfit_Hand_Hold_Hand_Normal_Silent_Mobile_Masked
     
     aiko "Да? Ладно. Но я позвоню ему и скажу, чтобы он тебе не наливал!"
     
-    hide Aiko_Base_Outfit_03_Angry_Say_Mobile_Masked with Dissolve( my_dissolve_01 )
+    hide Aiko_Home_Outfit_Hand_Hold_Hand_Angry_Say_Mobile_Masked with Dissolve( my_dissolve_01 )
     hide Kenji_MObile_Phone with Dissolve( my_dissolve_02 )
     
     kenji "Айко!"
@@ -3133,42 +3133,42 @@ label day_01:
     ##
     
     show Evening_Kenji_Kitchen_Door_With_Border_01 with Dissolve( my_dissolve_02 )
-    show Aiko_Base_Outfit_03 Suspect_Silent at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 ) 
+    show Aiko_Home_Outfit_Hand_Hold_Hand Suspect_Silent at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 ) 
     
     "Я и не заметил, как на кухню пробралась Айко. Она внимательно смотрела на меня."
     "Наверное, хочет определить, насколько я пьян! А я уже практически трезв. "
     "Надеюсь, она не слышала моих извинений!"
     
-    show Aiko_Base_Outfit_03 Suspect_Say at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 ) 
+    show Aiko_Home_Outfit_Hand_Hold_Hand Suspect_Say at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 ) 
 
     aiko "Где ты был?"
     
-    show Aiko_Base_Outfit_03 Suspect_Silent at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 ) 
+    show Aiko_Home_Outfit_Hand_Hold_Hand Suspect_Silent at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 ) 
     
     kenji "Как где? У дяди Ватанабэ, я же говорил! А до этого вещи из кладовки выносил. Где же мне ещё быть?"
     
-    show Aiko_Base_Outfit_03 Suspect_Say at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 ) 
+    show Aiko_Home_Outfit_Hand_Hold_Hand Suspect_Say at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 ) 
     
     aiko "Что-то долго ты выносил вещи на свалку!"
     
-    show Aiko_Base_Outfit_03 Suspect_Silent at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 )
+    show Aiko_Home_Outfit_Hand_Hold_Hand Suspect_Silent at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 )
 
     "Не хотелось рассказывать Айко про Касуми."
 
     kenji "Ну да, выносил чуть не до шести часов. Что тут такого?"
     kenji "И вообще, это что за допрос? Я жутко устал! Отстань, Айко!"
     
-    show Aiko_Base_Outfit_03 Normal_Silent at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 )
+    show Aiko_Home_Outfit_Hand_Hold_Hand Normal_Silent at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 )
 
     "Айко вздохнула."
     
-    show Aiko_Base_Outfit_03 Normal_Say at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 )
+    show Aiko_Home_Outfit_Hand_Hold_Hand Normal_Say at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 )
 
     aiko "Ладно, извини. Всё-таки я волновалась за тебя."
     aiko "Ушёл и с концами. И пиво всё выпил!" 
     aiko "Я думала, вдруг в канаве утонешь. Помнишь, как тот алкоголик, про которого рассказывал папа?"
     
-    show Aiko_Base_Outfit_03 Normal_Silent at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 )
+    show Aiko_Home_Outfit_Hand_Hold_Hand Normal_Silent at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 )
 
     "Меня снова чуть покоробило, когда Айко назвала моего отца «папой». "
     "А алкоголик, утонувший в канаве — не кто иной, как дядя Сато. Именно так он отправился на тот свет. "
@@ -3176,32 +3176,32 @@ label day_01:
 
     kenji "Да сейчас в канаве и не утонуть. Они же все пересохли!"
     
-    show Aiko_Base_Outfit_03 Smile_Silent at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 )
+    show Aiko_Home_Outfit_Hand_Hold_Hand Smile_Silent at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 )
 
     "Айко улыбнулась."
     
-    show Aiko_Base_Outfit_03 Smile_Say at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 )
+    show Aiko_Home_Outfit_Hand_Hold_Hand Smile_Say at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 )
 
     aiko "Ну да!"
     
-    show Aiko_Base_Outfit_03 Smile_Silent at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 )
+    show Aiko_Home_Outfit_Hand_Hold_Hand Smile_Silent at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 )
     
     kenji "Кстати! Раз уж речь зашла об утопленниках и канавах! Ты сейчас не идёшь в душ, Айко?"
     
-    show Aiko_Base_Outfit_03 Normal_Say at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 )
+    show Aiko_Home_Outfit_Hand_Hold_Hand Normal_Say at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 )
     
     aiko "А? Нет! Почему спрашиваешь?"
     
-    show Aiko_Base_Outfit_03 Normal_Silent at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 )
+    show Aiko_Home_Outfit_Hand_Hold_Hand Normal_Silent at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 )
     
     kenji "Мне туда надо! Срочно! Кажись, я здорово употел, пока с барахлом из кладовки возился!"
     kenji "Айко, пожалуйста, наполни ванну водой!"
     
-    show Aiko_Base_Outfit_03 Normal_Say at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 )
+    show Aiko_Home_Outfit_Hand_Hold_Hand Normal_Say at Move( ( 300, 600 ), ( 300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 )
     
     aiko "Хорошо!"
     
-    hide Aiko_Base_Outfit_03 with Dissolve( my_dissolve_01 )
+    hide Aiko_Home_Outfit_Hand_Hold_Hand with Dissolve( my_dissolve_01 )
     scene Evening_Kenji_Home_Kitchen with Dissolve( my_dissolve_05 ) 
 
     "Айко убежала вверх по лестнице. Видимо, она немедленно решила исполнить мою просьбу."

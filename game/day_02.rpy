@@ -87,3 +87,40 @@ label day_02:
     "А остальные вещи дяди Макото сожгу и закопаю на заднем дворе. Черта с два я ещё раз пойду на площадку для мусора!"
     
     
+    scene Day_Kenji_Home_Kitchen with Dissolve( my_dissolve_05 )
+    play environment_sounds "sounds/environment/Kitchen_With_Boiled_Water.mp3" fadein 1
+    
+    "..."
+    
+    #Мини ЦГ - Журавлик с осколками стекла
+    image Paper_Crane_And_Plastic_Pieces = "images/cg/DAY_02/01a_Kenji_Breakfast/Paper_Crane_And_Plastic_Pieces/Paper_Crane_And_Plastic_Pieces.png"
+    image Paper_Crane_And_Plastic_Pieces_Moved:
+        contains:
+            "Paper_Crane_And_Plastic_Pieces"
+            xpos -800
+            pause 0.7
+            linear 5.0 xpos -500
+    
+    image Paper_Crane_And_Plastic_Pieces_border_01_left_moved:
+        contains:
+            "border_01_left"
+            xpos -1000
+    
+    image Paper_Crane_And_Plastic_Pieces_border_01_left_mask_moved:
+        contains:
+            "border_01_left_mask"
+            xpos -1000
+    
+    image Paper_Crane_And_Plastic_Pieces_Masked = AlphaMask( "Paper_Crane_And_Plastic_Pieces_Moved", "Paper_Crane_And_Plastic_Pieces_border_01_left_mask_moved" )
+    
+    image Paper_Crane_And_Plastic_Pieces_With_Border_01:
+        contains:
+            "Paper_Crane_And_Plastic_Pieces_Masked"
+        contains:
+            "Paper_Crane_And_Plastic_Pieces_border_01_left_moved"
+    ##
+    
+    show Paper_Crane_And_Plastic_Pieces_With_Border_01
+    
+    "..."
+    

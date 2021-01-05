@@ -90,16 +90,17 @@ label day_02:
     scene Day_Kenji_Home_Kitchen with Dissolve( my_dissolve_05 )
     play environment_sounds "sounds/environment/Kitchen_With_Boiled_Water.mp3" fadein 1
     
-    "..."
+    "Я спустился на первый этаж. Айко была здесь и возилась возле плиты."
     
     #Мини ЦГ - Журавлик с осколками стекла
     image Paper_Crane_And_Plastic_Pieces = "images/cg/DAY_02/01a_Kenji_Breakfast/Paper_Crane_And_Plastic_Pieces/Paper_Crane_And_Plastic_Pieces.png"
     image Paper_Crane_And_Plastic_Pieces_Moved:
         contains:
             "Paper_Crane_And_Plastic_Pieces"
-            xpos -800
-            pause 0.7
-            linear 5.0 xpos -500
+            xpos -500
+            #xpos -800
+            #pause 0.7
+            #linear 5.0 xpos -500
     
     image Paper_Crane_And_Plastic_Pieces_border_01_left_moved:
         contains:
@@ -120,7 +121,22 @@ label day_02:
             "Paper_Crane_And_Plastic_Pieces_border_01_left_moved"
     ##
     
-    show Paper_Crane_And_Plastic_Pieces_With_Border_01
+    show Paper_Crane_And_Plastic_Pieces_With_Border_01 with Dissolve( my_dissolve_02 )
+    
+    "Моё внимание привлекла куча битого стекла лежащего на столе вперемешку с обрывками бумаги."
+    "Я сразу понял что это. Это были останки тех дисков с порнографией что я обнаружил вчера в комнате отца."
+    "На вершине кучи возвышался бумажный журавлик."
+    "Сделан он был из обложки того фильма, про путешествие на море, с сестрой."
+    
+    hide Paper_Crane_And_Plastic_Pieces_With_Border_01 with Dissolve( my_dissolve_02 )
+    
+    "Айко отвернулась от плиты и весело заявила."
+    
+    #Мини ЦГ - кухонная плита, на фоне которой стоит Айко
+    show Day_Kenji_Home_Kitchen_Gas_Stove_With_Border_01 with Dissolve( my_dissolve_02 )
+    ##
+    
+    show Aiko_Home_Outfit_Yahoo Smile_Say at Move( ( 1560, 630 ), ( 1560, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     "..."
     

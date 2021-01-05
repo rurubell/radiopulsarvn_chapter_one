@@ -83,6 +83,20 @@ layeredimage Aiko_With_Beer:
             "Aiko_With_Beer_Surprised_Silent"
         attribute Surprised_Say:
             "Aiko_With_Beer_Surprised_Say"
+            
+
+
+#Айко в домашней одежде, радуется (Руки подняты вверх)
+image Aiko_Home_Outfit_Yahoo_Smile_Say = im.Scale( "images/sprites/Aiko/Aiko_Home_Outfit_Yahoo/Aiko_Home_Outfit_Yahoo_Smile_Say.png", 816, 900 ) 
+image Aiko_Home_Outfit_Yahoo_Smile_Silent = im.Scale( "images/sprites/Aiko/Aiko_Home_Outfit_Yahoo/Aiko_Home_Outfit_Yahoo_Smile_Say.png", 816, 900 ) 
+
+layeredimage Aiko_Home_Outfit_Yahoo:
+    group emotion:
+        attribute Smile_Say:
+            "Aiko_Home_Outfit_Yahoo_Smile_Say"
+        attribute Smile_Silent:
+            "Aiko_Home_Outfit_Yahoo_Smile_Silent"
+
 
 
 #Айко в школьной одежде 01

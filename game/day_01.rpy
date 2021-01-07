@@ -375,32 +375,7 @@ label day_01:
     "Я потянулся к палочкам для еды, но тут моё внимание привлёк работающий телевизор. "
     "Оттуда раздавалось частое дыхание. "
     
-    ##Мини ЦГ - Телевизор с фильмом
-    image TV_Strange_Movie_Moved:
-        contains:
-            "TV_Strange_Movie"
-            xpos -700
-    
-    image TV_Strange_Movie_border_01_left_moved:
-        contains:
-            "border_01_left"
-            xpos -1000
-    
-    image TV_Strange_Movie_border_01_left_mask_moved:
-        contains:
-            "border_01_left_mask"
-            xpos -1000
-    
-    image TV_Strange_Movie_Masked = AlphaMask( "TV_Strange_Movie_Moved", "TV_Strange_Movie_border_01_left_mask_moved" )
-    
-    image TV_Strange_Movie_With_Border_01:
-        contains:
-            "TV_Strange_Movie_Masked"
-        contains:
-            "TV_Strange_Movie_border_01_left_moved"
-    ##
-    
-    show TV_Strange_Movie_With_Border_01 with Dissolve( my_dissolve_05 )
+    show TV_Chad_Movie with Dissolve( my_dissolve_05 )
     
     "На экране какой-то тип держал за плечи худенькую девушку в школьной форме. Видимо, он пытался её поцеловать."
     "Та, дрожа, издала жалобный писк."
@@ -419,33 +394,8 @@ label day_01:
     "Хвала богам, пульт лежал на столе и через мгновение был у меня в руках."
     "Я перебирал каналы, пока не нашёл что-то наиболее нейтральное. "
     
-    ##Мини ЦГ - Телевизор с новостями
-    image TV_News_Moved:
-        contains:
-            "TV_News"
-            xpos -700
-    
-    image TV_News_border_01_left_moved:
-        contains:
-            "border_01_left"
-            xpos -1000
-    
-    image TV_News_border_01_left_mask_moved:
-        contains:
-            "border_01_left_mask"
-            xpos -1000
-    
-    image TV_News_Masked = AlphaMask( "TV_News_Moved", "TV_News_border_01_left_mask_moved" )
-    
-    image TV_News_With_Border_01:
-        contains:
-            "TV_News_Masked"
-        contains:
-            "TV_News_border_01_left_moved"
-    ##
-    
-    show TV_News_With_Border_01 with Dissolve( my_dissolve_05 )
-    hide TV_Strange_Movie_With_Border_01 with Dissolve( my_dissolve_02 )
+    show TV_News_Kim_Chen_In with Dissolve( my_dissolve_05 )
+    hide TV_Chad_Movie
     
     "Новости."
     "Выпуск в самом разгаре, обсуждают ближнее зарубежье. Китай, Корея, США. Отлично, самое оно! "

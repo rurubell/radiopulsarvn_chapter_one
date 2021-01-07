@@ -11,6 +11,8 @@ image Aiko_Home_Outfit_Hand_Hold_Hand_Suspect_Say = im.Scale( "images/sprites/Ai
 image Aiko_Home_Outfit_Hand_Hold_Hand_Suspect_Silent = im.Scale( "images/sprites/Aiko/Aiko_Home_Outfit_Hand_Hold_Hand/Aiko_Home_Outfit_Hand_Hold_Hand_Suspect_Silent.png", 594, 900 )
 image Aiko_Home_Outfit_Hand_Hold_Hand_Smile_Say = im.Scale( "images/sprites/Aiko/Aiko_Home_Outfit_Hand_Hold_Hand/Aiko_Home_Outfit_Hand_Hold_Hand_Smile_Say.png", 594, 900 )
 image Aiko_Home_Outfit_Hand_Hold_Hand_Smile_Silent = im.Scale( "images/sprites/Aiko/Aiko_Home_Outfit_Hand_Hold_Hand/Aiko_Home_Outfit_Hand_Hold_Hand_Smile_Silent.png", 594, 900 )
+image Aiko_Home_Outfit_Hand_Hold_Hand_Sorry_Say = im.Scale( "images/sprites/Aiko/Aiko_Home_Outfit_Hand_Hold_Hand/Aiko_Home_Outfit_Hand_Hold_Hand_Sorry_Say.png", 594, 900 )
+image Aiko_Home_Outfit_Hand_Hold_Hand_Sorry_Silent = im.Scale( "images/sprites/Aiko/Aiko_Home_Outfit_Hand_Hold_Hand/Aiko_Home_Outfit_Hand_Hold_Hand_Sorry_Silent.png", 594, 900 )
 
 
 layeredimage Aiko_Home_Outfit_Hand_Hold_Hand:
@@ -35,6 +37,11 @@ layeredimage Aiko_Home_Outfit_Hand_Hold_Hand:
             "Aiko_Home_Outfit_Hand_Hold_Hand_Smile_Say"
         attribute Smile_Silent:
             "Aiko_Home_Outfit_Hand_Hold_Hand_Smile_Silent"
+        attribute Sorry_Say:
+            "Aiko_Home_Outfit_Hand_Hold_Hand_Sorry_Say"
+        attribute Sorry_Silent:
+            "Aiko_Home_Outfit_Hand_Hold_Hand_Sorry_Silent"
+            
 
 
 #Айко с ложкой
@@ -88,7 +95,7 @@ layeredimage Aiko_With_Beer:
 
 #Айко в домашней одежде, радуется (Руки подняты вверх)
 image Aiko_Home_Outfit_Yahoo_Smile_Say = im.Scale( "images/sprites/Aiko/Aiko_Home_Outfit_Yahoo/Aiko_Home_Outfit_Yahoo_Smile_Say.png", 816, 900 ) 
-image Aiko_Home_Outfit_Yahoo_Smile_Silent = im.Scale( "images/sprites/Aiko/Aiko_Home_Outfit_Yahoo/Aiko_Home_Outfit_Yahoo_Smile_Say.png", 816, 900 ) 
+image Aiko_Home_Outfit_Yahoo_Smile_Silent = im.Scale( "images/sprites/Aiko/Aiko_Home_Outfit_Yahoo/Aiko_Home_Outfit_Yahoo_Smile_Silent.png", 816, 900 ) 
 
 layeredimage Aiko_Home_Outfit_Yahoo:
     group emotion:

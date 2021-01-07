@@ -138,5 +138,61 @@ label day_02:
     
     show Aiko_Home_Outfit_Yahoo Smile_Say at Move( ( 1560, 630 ), ( 1560, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
-    "..."
+    aiko "Заседание в клубе извращенцев — отменяется!"
     
+    show Aiko_Home_Outfit_Yahoo Smile_Silent at Move( ( 1560, 630 ), ( 1560, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
+    "Я в ответ только покачал головой. Конечно же, Айко не забыла про вчерашнее."
+    "Но мне было совершенно все равно. У меня тут совсем другие заботы, ещё я внимание буду обращать на выходки сестры."
+    "Я подвинул мусорную урну к столу и смахнул в неё останки от дисков."
+    "Только журавлика оставил. Как никак — искусство!"
+    
+    hide Aiko_Home_Outfit_Yahoo with Dissolve( my_dissolve_01 )
+    show Aiko_Home_Outfit_Hand_Hold_Hand Normal_Silent at Move( ( 1560, 630 ), ( 1560, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
+    "Наверное Айко ожидала от меня другого поведения."
+    "Наверное думала что я буду плакать навзрыд, роясь в этой куче осколков. Но не тут то было!"
+    
+    scene Kenji_1st_Day_Breakfast_Food with Dissolve( my_dissolve_05 )
+    
+    "Айко поставила перед мной дощечку для еды и тарелки и осторожно спросила."
+    
+    #Мини ЦГ - кухонная плита, на фоне которой стоит Айко
+    show Day_Kenji_Home_Kitchen_Gas_Stove_With_Border_01 with Dissolve( my_dissolve_02 )
+    ##
+    
+    show  Aiko_Home_Outfit_Hand_Hold_Hand Normal_Say at Move( ( 1560, 630 ), ( 1560, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
+    aiko "Ты же правда, никуда не идёшь?"
+    
+    show  Aiko_Home_Outfit_Hand_Hold_Hand Normal_Silent at Move( ( 1560, 630 ), ( 1560, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
+    kenji "Не знаю что ты там себе напридумывала. Но мои дела никто не отменял."
+    
+    "Я взял палочки для еды."
+    
+    show  Aiko_Home_Outfit_Hand_Hold_Hand Normal_Say at Move( ( 1560, 630 ), ( 1560, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
+    aiko "А как же пиво?"
+    
+    show  Aiko_Home_Outfit_Hand_Hold_Hand Normal_Silent at Move( ( 1560, 630 ), ( 1560, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
+    kenji "Пиво? Оно же закончилось! Я же вчера все выпил!"
+    
+    show Aiko_Home_Outfit_Hand_Hold_Hand Sorry_Say at Move( ( 1560, 630 ), ( 1560, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
+    "Да закончилось..."
+    
+    show Aiko_Home_Outfit_Hand_Hold_Hand Sorry_Silent at Move( ( 1560, 630 ), ( 1560, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
+    "Айко была в растерянности."
+    "Наверное подумала что отсутствие пива меня остановит и я никуда не пойду."
+    "Но идти надо было, как бы мне не хотелось."
+    
+    scene Kenji_1st_Day_Breakfast_Food with Dissolve( my_dissolve_02 )
+    
+    "Я включил телевизор."
+    
+    show Gennadiy_Lapin_TV with Dissolve( my_dissolve_02 )
+    
+    "..."

@@ -175,6 +175,63 @@ layeredimage Aiko_In_Nightie:
             "Aiko_In_Nightie_Scared_Shy_Say"
         attribute Scared_Shy_Silent:
             "Aiko_In_Nightie_Scared_Shy_Silent"
+            
+
+#Айко в халате, волосы заправлены в хвосты, фонарика нет
+image Aiko_In_Nightie_PonyTails_Without_FlashLight_Normal_Say = im.Scale( "images/sprites/Aiko/Aiko_In_Nightie_PonyTails_Without_FlashLight/Aiko_In_Nightie_PonyTails_Without_FlashLight_Normal_Say.png", 594, 900 ) 
+image Aiko_In_Nightie_PonyTails_Without_FlashLight_Normal_Silent = im.Scale( "images/sprites/Aiko/Aiko_In_Nightie_PonyTails_Without_FlashLight/Aiko_In_Nightie_PonyTails_Without_FlashLight_Normal_Silent.png", 594, 900 ) 
+image Aiko_In_Nightie_PonyTails_Without_FlashLight_Confused_Silent = im.Scale( "images/sprites/Aiko/Aiko_In_Nightie_PonyTails_Without_FlashLight/Aiko_In_Nightie_PonyTails_Without_FlashLight_Confused_Silent.png", 594, 900 ) 
+image Aiko_In_Nightie_PonyTails_Without_FlashLight_Angry_Say = im.Scale( "images/sprites/Aiko/Aiko_In_Nightie_PonyTails_Without_FlashLight/Aiko_In_Nightie_PonyTails_Without_FlashLight_Angry_Say.png", 594, 900 ) 
+image Aiko_In_Nightie_PonyTails_Without_FlashLight_Angry_Silent = im.Scale( "images/sprites/Aiko/Aiko_In_Nightie_PonyTails_Without_FlashLight/Aiko_In_Nightie_PonyTails_Without_FlashLight_Angry_Silent.png", 594, 900 )
+image Aiko_In_Nightie_PonyTails_Without_FlashLight_Surprised_Say = im.Scale( "images/sprites/Aiko/Aiko_In_Nightie_PonyTails_Without_FlashLight/Aiko_In_Nightie_PonyTails_Without_FlashLight_Surprised_Say.png", 594, 900 ) 
+image Aiko_In_Nightie_PonyTails_Without_FlashLight_Surprised_Silent = im.Scale( "images/sprites/Aiko/Aiko_In_Nightie_PonyTails_Without_FlashLight/Aiko_In_Nightie_PonyTails_Without_FlashLight_Surprised_Silent.png", 594, 900 )
+image Aiko_In_Nightie_PonyTails_Without_FlashLight_Suspect_Say = im.Scale( "images/sprites/Aiko/Aiko_In_Nightie_PonyTails_Without_FlashLight/Aiko_In_Nightie_PonyTails_Without_FlashLight_Suspect_Say.png", 594, 900 )
+image Aiko_In_Nightie_PonyTails_Without_FlashLight_Suspect_Silent = im.Scale( "images/sprites/Aiko/Aiko_In_Nightie_PonyTails_Without_FlashLight/Aiko_In_Nightie_PonyTails_Without_FlashLight_Suspect_Silent.png", 594, 900 )
+image Aiko_In_Nightie_PonyTails_Without_FlashLight_Smile_Say = im.Scale( "images/sprites/Aiko/Aiko_In_Nightie_PonyTails_Without_FlashLight/Aiko_In_Nightie_PonyTails_Without_FlashLight_Smile_Say.png", 594, 900 )
+image Aiko_In_Nightie_PonyTails_Without_FlashLight_Smile_Silent = im.Scale( "images/sprites/Aiko/Aiko_In_Nightie_PonyTails_Without_FlashLight/Aiko_In_Nightie_PonyTails_Without_FlashLight_Smile_Silent.png", 594, 900 )
+image Aiko_In_Nightie_PonyTails_Without_FlashLight_Scared_Say = im.Scale( "images/sprites/Aiko/Aiko_In_Nightie_PonyTails_Without_FlashLight/Aiko_In_Nightie_PonyTails_Without_FlashLight_Scared_Say.png", 594, 900 )
+image Aiko_In_Nightie_PonyTails_Without_FlashLight_Scared_Silent = im.Scale( "images/sprites/Aiko/Aiko_In_Nightie_PonyTails_Without_FlashLight/Aiko_In_Nightie_PonyTails_Without_FlashLight_Scared_Silent.png", 594, 900 )
+image Aiko_In_Nightie_PonyTails_Without_FlashLight_Scared_Shy_Say = im.Scale( "images/sprites/Aiko/Aiko_In_Nightie_PonyTails_Without_FlashLight/Aiko_In_Nightie_PonyTails_Without_FlashLight_Scared_Shy_Say.png", 594, 900 )
+image Aiko_In_Nightie_PonyTails_Without_FlashLight_Scared_Shy_Silent = im.Scale( "images/sprites/Aiko/Aiko_In_Nightie_PonyTails_Without_FlashLight/Aiko_In_Nightie_PonyTails_Without_FlashLight_Scared_Shy_Silent.png", 594, 900 )
+image Aiko_In_Nightie_PonyTails_Without_FlashLight_Sorry_Say = im.Scale( "images/sprites/Aiko/Aiko_In_Nightie_PonyTails_Without_FlashLight/Aiko_In_Nightie_PonyTails_Without_FlashLight_Sorry_Say.png", 594, 900 )
+image Aiko_In_Nightie_PonyTails_Without_FlashLight_Sorry_Silent = im.Scale( "images/sprites/Aiko/Aiko_In_Nightie_PonyTails_Without_FlashLight/Aiko_In_Nightie_PonyTails_Without_FlashLight_Sorry_Silent.png", 594, 900 )
+
+
+layeredimage Aiko_In_Nightie_PonyTails_Without_FlashLight:
+    group emotion:
+        attribute Normal_Say:
+            "Aiko_In_Nightie_PonyTails_Without_FlashLight_Normal_Say"
+        attribute Normal_Silent:
+            "Aiko_In_Nightie_PonyTails_Without_FlashLight_Normal_Silent"
+        attribute Confused_Silent:
+            "Aiko_In_Nightie_PonyTails_Without_FlashLight_Confused_Silent"
+        attribute Confused_Say:
+            "Aiko_In_Nightie_PonyTails_Without_FlashLight_Confused_Say"
+        attribute Angry_Silent:
+            "Aiko_In_Nightie_PonyTails_Without_FlashLight_Angry_Silent"
+        attribute Angry_Say:
+            "Aiko_In_Nightie_PonyTails_Without_FlashLight_Angry_Say"
+        attribute Suspect_Say:
+            "Aiko_In_Nightie_PonyTails_Without_FlashLight_Suspect_Say"
+        attribute Suspect_Silent:
+            "Aiko_In_Nightie_PonyTails_Without_FlashLight_Suspect_Silent"
+        attribute Smile_Say:
+            "Aiko_In_Nightie_PonyTails_Without_FlashLight_Smile_Say"
+        attribute Smile_Silent:
+            "Aiko_In_Nightie_PonyTails_Without_FlashLight_Smile_Silent"
+        attribute Scared_Say:
+            "Aiko_In_Nightie_PonyTails_Without_FlashLight_Scared_Say"
+        attribute Scared_Silent:
+            "Aiko_In_Nightie_PonyTails_Without_FlashLight_Scared_Silent"
+        attribute Sorry_Say:
+            "Aiko_In_Nightie_PonyTails_Without_FlashLight_Sorry_Say"
+        attribute Sorry_Silent:
+            "Aiko_In_Nightie_PonyTails_Without_FlashLight_Sorry_Silent"
+        attribute Scared_Shy_Say:
+            "Aiko_In_Nightie_PonyTails_Without_FlashLight_Scared_Shy_Say"
+        attribute Scared_Shy_Silent:
+            "Aiko_In_Nightie_PonyTails_Without_FlashLight_Scared_Shy_Silent"
+
 
 
 #Айко в школьной одежде 02

@@ -209,6 +209,9 @@ label day_02:
     
     "Она все ещё не обслужила себя а стояла возле плиты и наблюдала за мной."
     
+    show Aiko_In_Nightie_PonyTails_Without_FlashLight Suspect_Silent
+    
+    "1111"
     
     #
     

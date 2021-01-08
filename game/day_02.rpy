@@ -191,8 +191,59 @@ label day_02:
     
     scene Kenji_1st_Day_Breakfast_Food with Dissolve( my_dissolve_02 )
     
-    "Я включил телевизор."
+    "Я включил телевизор. Опять новости."
     
-    show Gennadiy_Lapin_TV with Dissolve( my_dissolve_02 )
+    show Gennadiy_Lapin_TV with Dissolve( my_dissolve_05 )
+    
+    "Похоже выпуск только начался, говорили про Японию."
+    
+    tv "Министр финансов объединил три внешних кредита Японии в один. И вылетел на переговоры в Турцию..."
+    
+    hide Gennadiy_Lapin_TV with Dissolve( my_dissolve_01 )
+    
+    "Меня мало интересовали дела министра финансов и я принялся за суп."
+    "Когда с супом было покончено и я взялся за рис, моё внимание привлекла Айко."
+    
+    show Day_Kenji_Home_Kitchen_Gas_Stove_With_Border_01 with Dissolve( my_dissolve_02 )
+    show Aiko_Home_Outfit_Hand_Hold_Hand Sorry_Silent at Move( ( 1560, 630 ), ( 1560, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
+    "Она все ещё не обслужила себя а стояла возле плиты и наблюдала за мной."
+    
+    
+    #
+    
+    scene Day_Trash_Place with Dissolve( my_dissolve_05 )
+    
+    "..."
+    
+    #Мини ЦГ - Касуми сидит на дорожном отбойнике
+    image Kasumi_On_Guard_Rail = "images/cg/DAY_02/02a_Way_To_Dump/Kasumi_Sit_On_Road_Guard_Rail/Kasumi_On_Guard_Rail.png"
+    image Kasumi_On_Guard_Rail_Moved:
+        contains:
+            "Kasumi_On_Guard_Rail"
+            xpos 550
+            #xpos 500
+            #pause 0.7
+            #linear 5.0 xpos 700
+    
+    image Kasumi_On_Guard_Rail_border_01_right_moved:
+        contains:
+            "border_01_right"
+            xpos 900
+    
+    image Kasumi_On_Guard_Rail_border_01_right_mask_moved:
+        contains:
+            "border_01_right_mask"
+            xpos 900
+    
+    image Kasumi_On_Guard_Rail_Masked = AlphaMask( "Kasumi_On_Guard_Rail_Moved", "Kasumi_On_Guard_Rail_border_01_right_mask_moved" )
+    
+    image Kasumi_On_Guard_Rail_With_Border_01:
+        contains:
+            "Kasumi_On_Guard_Rail_Masked"
+        contains:
+            "Kasumi_On_Guard_Rail_border_01_right_moved"
+    ##
+    show Kasumi_On_Guard_Rail_With_Border_01 with Dissolve( my_dissolve_02 )
     
     "..."

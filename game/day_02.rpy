@@ -208,8 +208,120 @@ label day_02:
     show Aiko_Home_Outfit_Hand_Hold_Hand Sorry_Silent at Move( ( 1560, 630 ), ( 1560, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     "Она все ещё не обслужила себя а стояла возле плиты и наблюдала за мной."
+    "Никогда бы не подумал, что то что я иду на улицу по делам и при этом совершенно трезвый — может её так волновать."
     
-    show Aiko_In_Nightie_PonyTails_Without_FlashLight Suspect_Silent
+    kenji "Айко. Я надеюсь, этот «клуб извращенцев», ты не веришь в него взаправду?"
+    
+    show Aiko_Home_Outfit_Hand_Hold_Hand Confused_Silent at Move( ( 1560, 630 ), ( 1560, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
+    "Айко смутилась и отвела взгляд."
+    
+    show Aiko_Home_Outfit_Hand_Hold_Hand Confused_Say at Move( ( 1560, 630 ), ( 1560, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
+    aiko "Я не знаю… Ты так внезапно куда-то собрался."
+    
+    show Aiko_Home_Outfit_Hand_Hold_Hand Confused_Silent at Move( ( 1560, 630 ), ( 1560, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
+    kenji "Что поделать! У меня срочные дела!"
+    
+    show Aiko_Home_Outfit_Hand_Hold_Hand Sorry_Say at Move( ( 1560, 630 ), ( 1560, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
+    aiko "Ты сказал что хочешь с кем-то встретиться. С кем?"
+    
+    show Aiko_Home_Outfit_Hand_Hold_Hand Sorry_Silent at Move( ( 1560, 630 ), ( 1560, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
+    "Если бы я хотел с кем-то встретиться! На самом деле я уже ничего не хотел."
+    
+    kenji "Ни с кем мне встречаться не надо!"
+    
+    show Aiko_Home_Outfit_Hand_Hold_Hand Sorry_Say at Move( ( 1560, 630 ), ( 1560, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
+    aiko "Ммм? Что же это за дело такое?"
+    
+    show Aiko_Home_Outfit_Hand_Hold_Hand Sorry_Silent at Move( ( 1560, 630 ), ( 1560, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
+    kenji "Какая разница? Просто дело и всё!"
+    
+    show Aiko_Home_Outfit_Hand_Hold_Hand Suspect_Say at Move( ( 1560, 630 ), ( 1560, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
+    "Значит всё-таки клуб!"
+    
+    show Aiko_Home_Outfit_Hand_Hold_Hand Suspect_Silent at Move( ( 1560, 630 ), ( 1560, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
+    kenji "Никакой не клуб, я просто..."
+    
+    "Я похлопал себя по бедру, пытаясь придумать что-то, что бы показалось правдоподобным."
+    "Рука моя нащупала в кармане телефон."
+    
+    kenji "Я иду фотографировать!"
+    
+    show Aiko_Home_Outfit_Hand_Hold_Hand Surprised_Say at Move( ( 1560, 630 ), ( 1560, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
+    aiko "Фотографировать?!"
+    
+    show Aiko_Home_Outfit_Hand_Hold_Hand Surprised_Silent at Move( ( 1560, 630 ), ( 1560, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
+    kenji "Ну да. Фотографировать."
+    
+    "Я обрадовался тому, что придумал удачную отговорку и принялся было за рис."
+    "Айко опять задала вопрос."
+    
+    show Aiko_Home_Outfit_Hand_Hold_Hand Suspect_Say at Move( ( 1560, 630 ), ( 1560, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
+    aiko "А что фотографировать?"
+    
+    show Aiko_Home_Outfit_Hand_Hold_Hand Suspect_Silent at Move( ( 1560, 630 ), ( 1560, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
+    kenji "Как что? Референсы!"
+    
+    show Aiko_Home_Outfit_Hand_Hold_Hand Surprised_Say at Move( ( 1560, 630 ), ( 1560, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
+    aiko "Чего?"
+    
+    show Aiko_Home_Outfit_Hand_Hold_Hand Surprised_Silent at Move( ( 1560, 630 ), ( 1560, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
+    "Я поднял вверх указательный палец, чтобы придать себе значительный вид."
+    
+    kenji "Референсы это фотографии, с которых я буду что-то срисовывать."
+    kenji "Не рисовать же всё из головы! Мне нужны референсы! Я буду смотреть на них, чтобы мои рисунки были правдивее."
+    kenji "Поэтому надо их сделать, да побольше!"
+    
+    show Aiko_Home_Outfit_Hand_Hold_Hand Sorry_Say at Move( ( 1560, 630 ), ( 1560, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
+    aiko "Рисунки..."
+    
+    show Aiko_Home_Outfit_Hand_Hold_Hand Sorry_Silent at Move( ( 1560, 630 ), ( 1560, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
+    kenji "Ну да, рисунки. Ты разве забыла кем я работаю?"
+    kenji "Я художник, и мне нужны референсы! С ними лучше."
+    
+    scene Kenji_1st_Day_Breakfast_Food with Dissolve( my_dissolve_05 )
+    
+    "Айко надолго замолчала. Похоже её убедило моё объяснение."
+    "Я отвлёкся на миску с рисом и принялся за еду, а когда закончил завтрак понял что Айко с кухни пропала"
+    
+    scene Day_Kenji_Home_Kitchen with Dissolve( my_dissolve_05 )
+    
+    "То что Айко ушла с кухни, мне было на руку."
+    "Я сбегал в свою комнату, натянул джинсы, схватил рубаху и вновь спустился на первый этаж."
+    " Разложил на столе доску для глажки и хорошенько прогладил воротник и рукава у рубашки."
+    " Я убрал доску и утюг на место, натянул рубаху, надел очки и уже собирался выйти на улицу."
+    "Но дорогу мне преградила Айко."
+    
+    show Aiko_In_Nightie_PonyTails_Without_FlashLight Suspect_Silent with Dissolve( my_dissolve_02 )
+    
+    "Странно, но на Айко была надета ночная пижама."
+    "Вид у моей сестры был хмурый."
+    
+    kenji "Эй, Айко? Ты чего? Ты не заболела?"
+    
+    "Айко не ответила."
+    
+    hide Aiko_In_Nightie_PonyTails_Without_FlashLight with Dissolve( my_dissolve_01 )
+    show Aiko_School_Swimsuit_Hands_On_Hips Suspect_Silent with Dissolve( my_dissolve_01 )
+    
+    "Вдруг она распахнула полы своей пижамы и скинула её на пол."
+    "Под пижамой был надет школьный купальник."
     
     "1111"
     

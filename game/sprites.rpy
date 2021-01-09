@@ -2,6 +2,7 @@
 #Айко в домашней одежде
 image Aiko_Home_Outfit_Hand_Hold_Hand_Normal_Say = im.Scale( "images/sprites/Aiko/Aiko_Home_Outfit_Hand_Hold_Hand/Aiko_Home_Outfit_Hand_Hold_Hand_Normal_Say.png", 594, 900 ) 
 image Aiko_Home_Outfit_Hand_Hold_Hand_Normal_Silent = im.Scale( "images/sprites/Aiko/Aiko_Home_Outfit_Hand_Hold_Hand/Aiko_Home_Outfit_Hand_Hold_Hand_Normal_Silent.png", 594, 900 ) 
+image Aiko_Home_Outfit_Hand_Hold_Hand_Confused_Say = im.Scale( "images/sprites/Aiko/Aiko_Home_Outfit_Hand_Hold_Hand/Aiko_Home_Outfit_Hand_Hold_Hand_Confused_Say.png", 594, 900 ) 
 image Aiko_Home_Outfit_Hand_Hold_Hand_Confused_Silent = im.Scale( "images/sprites/Aiko/Aiko_Home_Outfit_Hand_Hold_Hand/Aiko_Home_Outfit_Hand_Hold_Hand_Confused_Silent.png", 594, 900 ) 
 image Aiko_Home_Outfit_Hand_Hold_Hand_Angry_Say = im.Scale( "images/sprites/Aiko/Aiko_Home_Outfit_Hand_Hold_Hand/Aiko_Home_Outfit_Hand_Hold_Hand_Angry_Say.png", 594, 900 ) 
 image Aiko_Home_Outfit_Hand_Hold_Hand_Angry_Silent = im.Scale( "images/sprites/Aiko/Aiko_Home_Outfit_Hand_Hold_Hand/Aiko_Home_Outfit_Hand_Hold_Hand_Angry_Silent.png", 594, 900 )
@@ -29,6 +30,10 @@ layeredimage Aiko_Home_Outfit_Hand_Hold_Hand:
             "Aiko_Home_Outfit_Hand_Hold_Hand_Angry_Silent"
         attribute Angry_Say:
             "Aiko_Home_Outfit_Hand_Hold_Hand_Angry_Say"
+        attribute Surprised_Silent:
+            "Aiko_Home_Outfit_Hand_Hold_Hand_Surprised_Silent"
+        attribute Surprised_Say:
+            "Aiko_Home_Outfit_Hand_Hold_Hand_Surprised_Say"
         attribute Suspect_Say:
             "Aiko_Home_Outfit_Hand_Hold_Hand_Suspect_Say"
         attribute Suspect_Silent:
@@ -262,6 +267,41 @@ layeredimage Aiko_School_Uniform_02:
             "Aiko_School_Uniform_02_Scared_Say"
         attribute Scared_Silent:
             "Aiko_School_Uniform_02_Scared_Silent"
+
+
+#Айко в школьном купальнике, руки на боках
+image Aiko_School_Swimsuit_Hands_On_Hips_Normal_Say = im.Scale( "images/sprites/Aiko/Aiko_School_Swimsuit_Hands_On_Hips/Aiko_School_Swimsuit_Hands_On_Hips_Normal_Say.png", 686, 900 ) 
+image Aiko_School_Swimsuit_Hands_On_Hips_Normal_Silent = im.Scale( "images/sprites/Aiko/Aiko_School_Swimsuit_Hands_On_Hips/Aiko_School_Swimsuit_Hands_On_Hips_Normal_Silent.png", 686, 900 ) 
+image Aiko_School_Swimsuit_Hands_On_Hips_Surprised_Say = im.Scale( "images/sprites/Aiko/Aiko_School_Swimsuit_Hands_On_Hips/Aiko_School_Swimsuit_Hands_On_Hips_Surprised_Say.png", 686, 900 ) 
+image Aiko_School_Swimsuit_Hands_On_Hips_Surprised_Silent = im.Scale( "images/sprites/Aiko/Aiko_School_Swimsuit_Hands_On_Hips/Aiko_School_Swimsuit_Hands_On_Hips_Surprised_Silent.png", 686, 900 ) 
+image Aiko_School_Swimsuit_Hands_On_Hips_Angry_Say = im.Scale( "images/sprites/Aiko/Aiko_School_Swimsuit_Hands_On_Hips/Aiko_School_Swimsuit_Hands_On_Hips_Angry_Say.png", 686, 900 ) 
+image Aiko_School_Swimsuit_Hands_On_Hips_Angry_Silent = im.Scale( "images/sprites/Aiko/Aiko_School_Swimsuit_Hands_On_Hips/Aiko_School_Swimsuit_Hands_On_Hips_Angry_Silent.png", 686, 900 ) 
+image Aiko_School_Swimsuit_Hands_On_Hips_Suspect_Say = im.Scale( "images/sprites/Aiko/Aiko_School_Swimsuit_Hands_On_Hips/Aiko_School_Swimsuit_Hands_On_Hips_Suspect_Say.png", 686, 900 ) 
+image Aiko_School_Swimsuit_Hands_On_Hips_Suspect_Silent = im.Scale( "images/sprites/Aiko/Aiko_School_Swimsuit_Hands_On_Hips/Aiko_School_Swimsuit_Hands_On_Hips_Suspect_Silent.png", 686, 900 ) 
+
+
+layeredimage Aiko_School_Swimsuit_Hands_On_Hips:
+    group emotion:
+        attribute Normal_Say:
+            "Aiko_School_Swimsuit_Hands_On_Hips_Normal_Say"
+        attribute Normal_Silent:
+            "Aiko_School_Swimsuit_Hands_On_Hips_Normal_Silent"
+        attribute Surprised_Say:
+            "Aiko_School_Swimsuit_Hands_On_Hips_Surprised_Say"
+        attribute Surprised_Silent:
+            "Aiko_School_Swimsuit_Hands_On_Hips_Surprised_Silent"
+        attribute Angry_Say:
+            "Aiko_School_Swimsuit_Hands_On_Hips_Angry_Say"
+        attribute Angry_Silent:
+            "Aiko_School_Swimsuit_Hands_On_Hips_Angry_Silent"            
+        attribute Suspect_Say:
+            "Aiko_School_Swimsuit_Hands_On_Hips_Suspect_Say"
+        attribute Suspect_Silent:
+            "Aiko_School_Swimsuit_Hands_On_Hips_Suspect_Silent" 
+
+
+
+
 
 
 #Касуми в школьной форме 01

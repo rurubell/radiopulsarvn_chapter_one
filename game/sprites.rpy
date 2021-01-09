@@ -300,6 +300,63 @@ layeredimage Aiko_School_Swimsuit_Hands_On_Hips:
             "Aiko_School_Swimsuit_Hands_On_Hips_Suspect_Silent" 
 
 
+#Айко в в школьном купальнике, рука держит руку
+image Aiko_School_Swimsuit_Hand_Hold_Hand_Normal_Say = im.Scale( "images/sprites/Aiko/Aiko_School_Swimsuit_Hand_Hold_Hand/Aiko_School_Swimsuit_Hand_Hold_Hand_Normal_Say.png", 594, 900 ) 
+image Aiko_School_Swimsuit_Hand_Hold_Hand_Normal_Silent = im.Scale( "images/sprites/Aiko/Aiko_School_Swimsuit_Hand_Hold_Hand/Aiko_School_Swimsuit_Hand_Hold_Hand_Normal_Silent.png", 594, 900 ) 
+image Aiko_School_Swimsuit_Hand_Hold_Hand_Confused_Say = im.Scale( "images/sprites/Aiko/Aiko_School_Swimsuit_Hand_Hold_Hand/Aiko_School_Swimsuit_Hand_Hold_Hand_Confused_Say.png", 594, 900 ) 
+image Aiko_School_Swimsuit_Hand_Hold_Hand_Confused_Silent = im.Scale( "images/sprites/Aiko/Aiko_School_Swimsuit_Hand_Hold_Hand/Aiko_School_Swimsuit_Hand_Hold_Hand_Confused_Silent.png", 594, 900 ) 
+image Aiko_School_Swimsuit_Hand_Hold_Hand_Angry_Say = im.Scale( "images/sprites/Aiko/Aiko_School_Swimsuit_Hand_Hold_Hand/Aiko_School_Swimsuit_Hand_Hold_Hand_Angry_Say.png", 594, 900 ) 
+image Aiko_School_Swimsuit_Hand_Hold_Hand_Angry_Silent = im.Scale( "images/sprites/Aiko/Aiko_School_Swimsuit_Hand_Hold_Hand/Aiko_School_Swimsuit_Hand_Hold_Hand_Angry_Silent.png", 594, 900 )
+image Aiko_School_Swimsuit_Hand_Hold_Hand_Surprised_Say = im.Scale( "images/sprites/Aiko/Aiko_School_Swimsuit_Hand_Hold_Hand/Aiko_School_Swimsuit_Hand_Hold_Hand_Surprised_Say.png", 594, 900 ) 
+image Aiko_School_Swimsuit_Hand_Hold_Hand_Surprised_Silent = im.Scale( "images/sprites/Aiko/Aiko_School_Swimsuit_Hand_Hold_Hand/Aiko_School_Swimsuit_Hand_Hold_Hand_Surprised_Silent.png", 594, 900 )
+image Aiko_School_Swimsuit_Hand_Hold_Hand_Suspect_Say = im.Scale( "images/sprites/Aiko/Aiko_School_Swimsuit_Hand_Hold_Hand/Aiko_School_Swimsuit_Hand_Hold_Hand_Suspect_Say.png", 594, 900 )
+image Aiko_School_Swimsuit_Hand_Hold_Hand_Suspect_Silent = im.Scale( "images/sprites/Aiko/Aiko_School_Swimsuit_Hand_Hold_Hand/Aiko_School_Swimsuit_Hand_Hold_Hand_Suspect_Silent.png", 594, 900 )
+image Aiko_School_Swimsuit_Hand_Hold_Hand_Smile_Say = im.Scale( "images/sprites/Aiko/Aiko_School_Swimsuit_Hand_Hold_Hand/Aiko_School_Swimsuit_Hand_Hold_Hand_Smile_Say.png", 594, 900 )
+image Aiko_School_Swimsuit_Hand_Hold_Hand_Smile_Silent = im.Scale( "images/sprites/Aiko/Aiko_School_Swimsuit_Hand_Hold_Hand/Aiko_School_Swimsuit_Hand_Hold_Hand_Smile_Silent.png", 594, 900 )
+image Aiko_School_Swimsuit_Hand_Hold_Hand_Sorry_Say = im.Scale( "images/sprites/Aiko/Aiko_School_Swimsuit_Hand_Hold_Hand/Aiko_School_Swimsuit_Hand_Hold_Hand_Sorry_Say.png", 594, 900 )
+image Aiko_School_Swimsuit_Hand_Hold_Hand_Sorry_Silent = im.Scale( "images/sprites/Aiko/Aiko_School_Swimsuit_Hand_Hold_Hand/Aiko_School_Swimsuit_Hand_Hold_Hand_Sorry_Silent.png", 594, 900 )
+image Aiko_School_Swimsuit_Hand_Hold_Hand_Scared_Say = im.Scale( "images/sprites/Aiko/Aiko_School_Swimsuit_Hand_Hold_Hand/Aiko_School_Swimsuit_Hand_Hold_Hand_Scared_Say.png", 594, 900 )
+image Aiko_School_Swimsuit_Hand_Hold_Hand_Scared_Silent = im.Scale( "images/sprites/Aiko/Aiko_School_Swimsuit_Hand_Hold_Hand/Aiko_School_Swimsuit_Hand_Hold_Hand_Scared_Silent.png", 594, 900 )
+
+
+
+layeredimage Aiko_School_Swimsuit_Hand_Hold_Hand:
+    group emotion:
+        attribute Normal_Say:
+            "Aiko_School_Swimsuit_Hand_Hold_Hand_Normal_Say"
+        attribute Normal_Silent:
+            "Aiko_School_Swimsuit_Hand_Hold_Hand_Normal_Silent"
+        attribute Confused_Silent:
+            "Aiko_School_Swimsuit_Hand_Hold_Hand_Confused_Silent"
+        attribute Confused_Say:
+            "Aiko_School_Swimsuit_Hand_Hold_Hand_Confused_Say"
+        attribute Angry_Silent:
+            "Aiko_School_Swimsuit_Hand_Hold_Hand_Angry_Silent"
+        attribute Angry_Say:
+            "Aiko_School_Swimsuit_Hand_Hold_Hand_Angry_Say"
+        attribute Surprised_Silent:
+            "Aiko_School_Swimsuit_Hand_Hold_Hand_Surprised_Silent"
+        attribute Surprised_Say:
+            "Aiko_School_Swimsuit_Hand_Hold_Hand_Surprised_Say"
+        attribute Suspect_Say:
+            "Aiko_School_Swimsuit_Hand_Hold_Hand_Suspect_Say"
+        attribute Suspect_Silent:
+            "Aiko_School_Swimsuit_Hand_Hold_Hand_Suspect_Silent"
+        attribute Smile_Say:
+            "Aiko_School_Swimsuit_Hand_Hold_Hand_Smile_Say"
+        attribute Smile_Silent:
+            "Aiko_School_Swimsuit_Hand_Hold_Hand_Smile_Silent"
+        attribute Sorry_Say:
+            "Aiko_School_Swimsuit_Hand_Hold_Hand_Sorry_Say"
+        attribute Sorry_Silent:
+            "Aiko_School_Swimsuit_Hand_Hold_Hand_Sorry_Silent"
+        attribute Scared_Say:
+            "Aiko_School_Swimsuit_Hand_Hold_Hand_Scared_Say"
+        attribute Scared_Silent:
+            "Aiko_School_Swimsuit_Hand_Hold_Hand_Scared_Silent"
+
+
+
 
 
 

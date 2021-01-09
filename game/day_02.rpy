@@ -86,6 +86,7 @@ label day_02:
     
     "А остальные вещи дяди Макото сожгу и закопаю на заднем дворе. Черта с два я ещё раз пойду на площадку для мусора!"
     
+    ##СЦЕНА НА КУХНЕ
     
     scene Day_Kenji_Home_Kitchen with Dissolve( my_dissolve_05 )
     play environment_sounds "sounds/environment/Kitchen_With_Boiled_Water.mp3" fadein 1
@@ -323,7 +324,129 @@ label day_02:
     "Вдруг она распахнула полы своей пижамы и скинула её на пол."
     "Под пижамой был надет школьный купальник."
     
-    "1111"
+    kenji "Э? Ты что, в бассейн что-ли собралась? Зачем ты напялила купальник дома?"
+    
+    "Айко недовольно буркнула."
+    
+    show Aiko_School_Swimsuit_Hands_On_Hips Suspect_Say with Dissolve( my_dissolve_01 )
+    
+    aiko "Нет, ни в какой бассейн я не иду. Это… ну… референсы!"
+    
+    show Aiko_School_Swimsuit_Hands_On_Hips Suspect_Silent with Dissolve( my_dissolve_01 )
+    
+    kenji "Чего?"
+    
+    show Aiko_School_Swimsuit_Hands_On_Hips Suspect_Say with Dissolve( my_dissolve_01 )
+    
+    aiko "Сам же сказал, что собрался фотографировать референсы для своих художеств!"
+    aiko "А теперь и никуда идти не нужно. Скажи мне спасибо, я сегодня добрая."
+    aiko "А на улице будешь фотографировать что не следует, и в полицию попадёшь."
+    aiko "Мне, маме и папе такая слава не нужна знаешь ли!"
+    aiko "Давай, делай свои фотографии и поскорее покончим с этим. Как мне встать?"
+    
+    show Aiko_School_Swimsuit_Hands_On_Hips Suspect_Silent with Dissolve( my_dissolve_01 )
+    
+    "Тут то до меня наконец-то дошло, о чем говорила Айко."
+    "Конечно же, она видела вчерашний мой рисунок и похоже догадалась за какими референсами я собираюсь пойти."
+    "Какие референсы могут понадобиться извращенцу?"
+    "Ну конечно же — фотографии молоденьких девчёнок в купальниках, сделанные тайно."
+    
+    show Aiko_School_Swimsuit_Hands_On_Hips Suspect_Say with Dissolve( my_dissolve_01 )
+    
+    aiko "Так как мне встать?"
+    
+    show Aiko_School_Swimsuit_Hands_On_Hips Suspect_Silent with Dissolve( my_dissolve_01 )
+    
+    "Я приложил ладонь ко лбу и покачал головой."
+    
+    kenji "Как цапля встань."
+    
+    show Aiko_School_Swimsuit_Hands_On_Hips Surprised_Say with Dissolve( my_dissolve_01 )
+    
+    aiko "Как ц-цапля? Это как?"
+    
+    show Aiko_School_Swimsuit_Hands_On_Hips Surprised_Silent with Dissolve( my_dissolve_01 )
+    
+    kenji "Никак! Под референсами я имел ввиду совсем другое."
+    kenji "Машины, дома, деревья, фонарные столбы. А ты о чем подумала?"
+    
+    "Айко не нашла слов чтобы ответить мне."
+    
+    kenji "Ты что же думаешь, я собрался тайно фотографировать молоденьких девченок? Эх Айко… Как же ты испорчена!"
+    
+    show Aiko_School_Swimsuit_Hands_On_Hips Surprised_Say with Dissolve( my_dissolve_01 )
+    
+    aiko "А? Чего?"
+    
+    show Aiko_School_Swimsuit_Hands_On_Hips Surprised_Silent with Dissolve( my_dissolve_01 )
+    
+    kenji "Какие ужасные вещи приходят тебе в голову!"
+    
+    show Aiko_School_Swimsuit_Hands_On_Hips Angry_Say with Dissolve( my_dissolve_01 )
+    
+    aiko "Что ты говоришь! Это не я а ты испорчен, это все из-за тебя!"
+    
+    show Aiko_School_Swimsuit_Hands_On_Hips Angry_Silent with Dissolve( my_dissolve_01 )
+    
+    kenji "Значит ты надеваешь купальник и предлагаешь себя фотографировать. А испорчен я?"
+    
+    show Aiko_School_Swimsuit_Hands_On_Hips Angry_Say with Dissolve( my_dissolve_01 )
+    
+    aiko "Да ну тебя!"
+    aiko "Чтобы вечером показал мне свой телефон и всё что сфотографировал! Ясно?"
+    
+    show Aiko_School_Swimsuit_Hands_On_Hips Angry_Silent with Dissolve( my_dissolve_01 )
+    
+    kenji "А? Чего это ты так раскомандовалась? Сейчас я тебе покажу свой телефон..."
+    
+    "Я достал телефон из кармана, открыл камеру и нажал на спуск. Послышался звук затвора."
+    
+    hide Aiko_School_Swimsuit_Hands_On_Hips with Dissolve( my_dissolve_02 )
+    show Aiko_School_Swimsuit_Hand_Hold_Hand Surprised_Silent at Move( ( 400, 630 ), ( 400, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 )
+    
+    "Айко отпрыгнула в сторону."
+    
+    show Aiko_School_Swimsuit_Hand_Hold_Hand Surprised_Say at Move( ( 400, 630 ), ( 400, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
+    aiko "Ты чего творишь?"
+    
+    show Aiko_School_Swimsuit_Hand_Hold_Hand Surprised_Silent at Move( ( 400, 630 ), ( 400, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
+    kenji "Раз уж ты испортила ценный реквизит, теперь сама станешь реквизитом для сегодняшнего заседания нашего клуба!"
+    
+    "Я направил телефон на сестру и сделал ещё снимок."
+    
+    show Aiko_School_Swimsuit_Hand_Hold_Hand Scared_Say at Move( ( 400, 630 ), ( 400, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
+    aiko "Ай! Нееет!"
+    
+    hide Aiko_School_Swimsuit_Hand_Hold_Hand with Dissolve( my_dissolve_01 )
+    
+    "Айко бросилась наутёк, вверх по лестнице. Только её ночнушка осталась лежать на полу."
+    "Похоже она заметила свои оплошность."
+    "С верхнего этажа послышался её крик полный досады."
+    
+    #Мини ЦГ - звук голоса Айко с верхнего этажа
+    image Aiko_Cries_From_Second_Floor:
+        contains:
+            "empty_image"
+        
+        contains:
+            ypos 250
+            xpos 30
+            "Emo_What_Horizontal_Flipped"
+    ##
+    
+    show Aiko_Cries_From_Second_Floor with Dissolve( my_dissolve_01 )
+    
+    aiko "Только попробуй утащить туда мою ночнушку! Я тебя убью!"
+    
+    ##КОНЕЦ СЦЕНЫ НА КУХНЕ, КЕНДЗИ ВЫХОДИТ НА УЛИЦУ И ИДЕТ К КАСУМИ (ОТНОСИТЬ ТЕЛЕЖКУ)
+    
+    
+    
+    
+    
     
     #
     

@@ -533,7 +533,10 @@ label day_02:
             "DAY_02_Wending_Machines_border_01_left_moved"
     ##
     
-    scene Day_Trash_Place with Dissolve( my_dissolve_05 )
+    scene Day_Shops_And_Vending_Machines_01 with Dissolve( my_dissolve_05 )
+    
+    "..."
+    
     show DAY_02_Wending_Machines_With_Border_01 with Dissolve( my_dissolve_05 )
     
     "..."

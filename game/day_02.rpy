@@ -443,16 +443,29 @@ label day_02:
     
     ##КОНЕЦ СЦЕНЫ НА КУХНЕ, КЕНДЗИ ВЫХОДИТ НА УЛИЦУ И ИДЕТ К КАСУМИ (ОТНОСИТЬ ТЕЛЕЖКУ)
     
+    play environment_sounds "sounds/environment/City_Suburb_Day_01.mp3" fadein 1 fadeout 1
+    scene Outdoor_Day_Kenji_Home with Dissolve( my_dissolve_05 )
     
+    "Я вышел на улицу, точнее не вышел а прокрался."
+    "Аккуратно выглянул из-за двери и убедился что свидетелей нет."
+    "Сегодня пятница, рабочий день, как и вчера. Может быть моё новое приключение никто и не увидит?"
     
+    "Но полностью остаться незамеченным не выйдет."
+    "Перед Касуми и её тёткой предстать во всей красе всё же придётся"
+    "Можно, конечно, незаметно пробраться к ним во двор, поставить туда эту несчастную тележку и смыться."
     
+    "Я достал тележку, сложил её и быстрым шагом отправился в сторону дома Касуми."
+    "На этот раз моё путешествие не было таким мучительным как вчера днём."
+    "В руках только алюминиевая тележка, которая ничего не весила."
+    "Никакой тяжести, только на душе было тяжко."
     
-    
-    #
-    
+    window hide
+    play environment_sounds "sounds/environment/City_Suburb_Day_03.mp3" fadein 1 fadeout 1
     scene Day_Trash_Place with Dissolve( my_dissolve_05 )
+    pause 0.5
     
-    "..."
+    "Я добрался до площадки для мусора быстро как ветер."
+    "Но тут увидел то, от чего пришлось замереть как вкопанному."
     
     #Мини ЦГ - Касуми сидит на дорожном отбойнике
     image Kasumi_On_Guard_Rail = "images/cg/DAY_02/02a_Way_To_Dump/Kasumi_Sit_On_Road_Guard_Rail/Kasumi_On_Guard_Rail.png"
@@ -484,4 +497,44 @@ label day_02:
     ##
     show Kasumi_On_Guard_Rail_With_Border_01 with Dissolve( my_dissolve_02 )
     
+    "На обочине дороги, на отбойнике сидела Касуми."
+    "Я на всякий случай потёр глаза, но девушка не пропала значит сидела здесь взаправду. Интересно, что она тут делала?"
+    "Сегодня электронику никто не выбросит, значит ловить ей здесь нечего."
+    "Неужели она ждёт меня? Может тётка её сюда послала?"
+    "Сказала «Иди и без моей тележки не возвращайся!»."
+    "Надеюсь Касуми не ночевала здесь?"
+    
+    #Мини ЦГ - Торговые автоматы с мороженным
+    image DAY_02_Wending_Machines = "images/cg/DAY_02/02a_Way_To_Dump/Wending_Machines/Wending_Machines.png"
+    image DAY_02_Wending_Machines_Moved:
+        contains:
+            "DAY_02_Wending_Machines"
+            xpos -520
+            #xpos -800
+            #pause 0.7
+            #linear 5.0 xpos -500
+    
+    image DAY_02_Wending_Machines_border_01_left_moved:
+        contains:
+            "border_01_left"
+            xpos -700
+    
+    image DAY_02_Wending_Machines_border_01_left_mask_moved:
+        contains:
+            "border_01_left_mask"
+            xpos -700
+    
+    image DAY_02_Wending_Machines_Masked = AlphaMask( "DAY_02_Wending_Machines_Moved", "DAY_02_Wending_Machines_border_01_left_mask_moved" )
+    
+    image DAY_02_Wending_Machines_With_Border_01:
+        contains:
+            "DAY_02_Wending_Machines_Masked"
+        contains:
+            "DAY_02_Wending_Machines_border_01_left_moved"
+    ##
+    
+    scene Day_Trash_Place with Dissolve( my_dissolve_05 )
+    show DAY_02_Wending_Machines_With_Border_01 with Dissolve( my_dissolve_05 )
+    
     "..."
+    

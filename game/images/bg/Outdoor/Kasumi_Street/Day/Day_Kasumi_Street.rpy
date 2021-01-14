@@ -16,6 +16,3 @@ image Outdoor_Day_Kasumi_Street:
     
     contains:
         "Outdoor_Day_Kasumi_Street_Other"
-    
-    contains:
-        "Day_Kasumi_Street_wires"

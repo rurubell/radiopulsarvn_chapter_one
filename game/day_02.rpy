@@ -504,6 +504,13 @@ label day_02:
     "Сказала «Иди и без моей тележки не возвращайся!»."
     "Надеюсь Касуми не ночевала здесь?"
     
+    ########################################################
+    
+    
+    
+    
+    
+    
     #Мини ЦГ - Торговые автоматы с мороженным
     image DAY_02_Wending_Machines = "images/cg/DAY_02/02a_Way_To_Dump/Wending_Machines/Wending_Machines.png"
     image DAY_02_Wending_Machines_Moved:
@@ -532,6 +539,39 @@ label day_02:
         contains:
             "DAY_02_Wending_Machines_border_01_left_moved"
     ##
+    
+    
+    #Мини ЦГ - Касуми НЕ ХОЧЕТ мороженное с шмелем
+    image Kasumi_Do_Not_Want_IceCream_Moved:
+        contains:
+            "Kasumi_Do_Not_Want_IceCream"
+            xpos 750
+            #xpos 500
+            #pause 0.7
+            #linear 5.0 xpos 700
+    
+    image Kasumi_Do_Not_Want_IceCream_border_01_right_moved:
+        contains:
+            "border_01_right"
+            xpos 900
+    
+    image Kasumi_Do_Not_Want_IceCream_border_01_right_mask_moved:
+        contains:
+            "border_01_right_mask"
+            xpos 900
+    
+    image Kasumi_Do_Not_Want_IceCream_Masked = AlphaMask( "Kasumi_Do_Not_Want_IceCream_Moved", "Kasumi_Do_Not_Want_IceCream_border_01_right_mask_moved" )
+    
+    image Kasumi_Do_Not_Want_IceCream_With_Border_01:
+        contains:
+            "Kasumi_Do_Not_Want_IceCream_Masked"
+        contains:
+            "Kasumi_Do_Not_Want_IceCream_border_01_right_moved"
+    ##
+    
+    show Kasumi_Do_Not_Want_IceCream_With_Border_01
+    
+    "111"
     
     scene Day_Shops_And_Vending_Machines_01 with Dissolve( my_dissolve_05 )
     

@@ -31,7 +31,7 @@ label start:
             
     stop music fadeout 1
     
-    scene Night_RadioPulsar_HomeRoom
+    scene Trash_Place_In_Kenji_Mind_Animated
     
     "...."
     

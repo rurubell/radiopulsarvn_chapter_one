@@ -60,15 +60,15 @@ image Trash_Place_In_Kenji_Mind_Animated:
         "TPIKM_Smoke_Animated"
         ypos -100
         xpos 1550
-        alpha 0.0
-        pause 2
-        linear 3 alpha 1.0
+        #alpha 0.0
+        #pause 2
+        #linear 3 alpha 1.0
 
     contains:
         #pause 2
         "TPIKM_Smoke_Animated"
         ypos -150
         xpos 1750
-        alpha 0.0
-        pause 2
-        linear 3 alpha 1.0
+        #alpha 0.0
+        #pause 2
+        #linear 3 alpha 1.0

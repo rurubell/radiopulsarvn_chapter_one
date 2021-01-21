@@ -1,4 +1,4 @@
-image TPIKM_Smoke_Light = "images/cg/DAY_02/03a_First_Trash_Place/Trash_Place_In_Kenji_Mind/smoke/smoke_sprite_dark.png"
+image TPIKM_Smoke_Dark = "images/cg/DAY_02/03a_First_Trash_Place/Trash_Place_In_Kenji_Mind/smoke/smoke_sprite_dark.png"
 image TPIKM_Smoke_Light = "images/cg/DAY_02/03a_First_Trash_Place/Trash_Place_In_Kenji_Mind/smoke/smoke_sprite_light.png"
 
 

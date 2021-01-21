@@ -1,4 +1,5 @@
-#Спрайты
+#Спрайты Айко
+
 #Айко в домашней одежде
 image Aiko_Home_Outfit_Hand_Hold_Hand_Normal_Say = im.Scale( "images/sprites/Aiko/Aiko_Home_Outfit_Hand_Hold_Hand/Aiko_Home_Outfit_Hand_Hold_Hand_Normal_Say.png", 594, 900 ) 
 image Aiko_Home_Outfit_Hand_Hold_Hand_Normal_Silent = im.Scale( "images/sprites/Aiko/Aiko_Home_Outfit_Hand_Hold_Hand/Aiko_Home_Outfit_Hand_Hold_Hand_Normal_Silent.png", 594, 900 ) 
@@ -354,86 +355,3 @@ layeredimage Aiko_School_Swimsuit_Hand_Hold_Hand:
             "Aiko_School_Swimsuit_Hand_Hold_Hand_Scared_Say"
         attribute Scared_Silent:
             "Aiko_School_Swimsuit_Hand_Hold_Hand_Scared_Silent"
-
-
-
-
-
-
-
-#Касуми в школьной форме 01
-image kasumi_01_Normal_Say = im.Scale( "images/sprites/Kasumi/Kasumi_01/kasumi_01_Normal_Say.png", 646, 1000 ) 
-image kasumi_01_Normal_Silent = im.Scale( "images/sprites/Kasumi/Kasumi_01/kasumi_01_Normal_Silent.png", 646, 1000 ) 
-image kasumi_01_Concerned_Say = im.Scale( "images/sprites/Kasumi/Kasumi_01/kasumi_01_Concerned_Say.png", 646, 1000 ) 
-image kasumi_01_Concerned_Silent = im.Scale( "images/sprites/Kasumi/Kasumi_01/kasumi_01_Concerned_Silent.png", 646, 1000 ) 
-image kasumi_01_Surprised_Say = im.Scale( "images/sprites/Kasumi/Kasumi_01/kasumi_01_Surprised_Say.png", 646, 1000 ) 
-image kasumi_01_Surprised_Silent = im.Scale( "images/sprites/Kasumi/Kasumi_01/kasumi_01_Surprised_Silent.png", 646, 1000 )
-
-layeredimage kasumi_01:
-    group emotion:
-        attribute Normal_Say:
-            "kasumi_01_Normal_Say"
-        attribute Normal_Silent:
-            "kasumi_01_Normal_Silent"
-        attribute Concerned_Say:
-            "kasumi_01_Concerned_Say"
-        attribute Concerned_Silent:
-            "kasumi_01_Concerned_Silent"
-        attribute Surprised_Say:
-            "kasumi_01_Surprised_Say"
-        attribute Surprised_Silent:
-            "kasumi_01_Surprised_Silent"
-
-
-#Касуми в школьной форме 03
-image Kasumi_03_Normal_Silent = im.Scale( "images/sprites/Kasumi/Kasumi_03/Kasumi_03_Normal_Silent.png", 660, 1000 ) 
-image Kasumi_03_Normal_Say = im.Scale( "images/sprites/Kasumi/Kasumi_03/Kasumi_03_Normal_Say.png", 660, 1000 ) 
-
-layeredimage Kasumi_03:
-    group emotion:
-        attribute Normal_Say:
-            "Kasumi_03_Normal_Say"
-        attribute Normal_Silent:
-            "Kasumi_03_Normal_Silent"
-
-
-#Касуми в школьной форме "задумалась"
-image Kasumi_School_Uniform_Hmm_Normal_Say = im.Scale( "images/sprites/Kasumi/Kasumi_School_Uniform_Hmm/Kasumi_School_Uniform_Hmm_Normal_Say.png", 624, 1000 ) 
-image Kasumi_School_Uniform_Hmm_Normal_Silent = im.Scale( "images/sprites/Kasumi/Kasumi_School_Uniform_Hmm/Kasumi_School_Uniform_Hmm_Normal_Silent.png", 624, 1000 ) 
-
-layeredimage Kasumi_School_Uniform_Hmm:
-    group emotion:
-        attribute Normal_Say:
-            "Kasumi_School_Uniform_Hmm_Normal_Say"
-        attribute Normal_Silent:
-            "Kasumi_School_Uniform_Hmm_Normal_Say"
-
-
-#Ватанабе 01
-image Watanabe_01_Normal_Say = im.Scale( "images/sprites/Watanabe/Watanabe_01/Watanabe_01_Normal_Say.png", 622, 1080 )
-image Watanabe_01_Normal_Silent = im.Scale( "images/sprites/Watanabe/Watanabe_01/Watanabe_01_Normal_Silent.png", 622, 1080 )
-image Watanabe_01_Sad_Say = im.Scale( "images/sprites/Watanabe/Watanabe_01/Watanabe_01_Sad_Say.png", 622, 1080 )
-image Watanabe_01_Sad_Silent = im.Scale( "images/sprites/Watanabe/Watanabe_01/Watanabe_01_Sad_Silent.png", 622, 1080 )
-
-layeredimage Watanabe_01:
-    group emotion:
-        attribute Normal_Say:
-            "Watanabe_01_Normal_Say"
-        attribute Normal_Silent:
-            "Watanabe_01_Normal_Silent"
-        attribute Sad_Say:
-            "Watanabe_01_Sad_Say"
-        attribute Sad_Silent:
-            "Watanabe_01_Sad_Silent"
-
-
-#Ватанабе 02
-image Watanabe_02_Normal_Say = im.Scale( "images/sprites/Watanabe/Watanabe_02/Watanabe_02_Normal_Say.png", 622, 1080 )
-image Watanabe_02_Normal_Silent = im.Scale( "images/sprites/Watanabe/Watanabe_02/Watanabe_02_Normal_Silent.png", 622, 1080 )
-
-layeredimage Watanabe_02:
-    group emotion:
-        attribute Normal_Say:
-            "Watanabe_02_Normal_Say"
-        attribute Normal_Silent:
-            "Watanabe_02_Normal_Silent"

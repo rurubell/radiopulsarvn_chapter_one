@@ -5,6 +5,10 @@
 /errors.txt
 /traceback.txt
 
+/my_commit.pl
+/my_run.pl
+/my_backup.pl
+
 /game/saves/*
 /game/cache/*
 

@@ -706,7 +706,35 @@ label day_02:
     "Оглядывал кусты вокруг мусорной площадки, не припрятал ли там кто этот блок питания."
     "И тут мой взгляд задержался на синей табличке, которая висела на столбе рядом с корзинами под мусор."
     
-    #МиниЦГ - Табличка на столбе
+    #Мини ЦГ - Табличка на столбе
+    image Trash_Place_Post_Plate = "images/cg/DAY_02/02a_Way_To_Dump/Trash_Place_Post_Plate/Trash_Place_Post_Plate.png"
+    image Trash_Place_Post_Plate_Moved:
+        contains:
+            "Trash_Place_Post_Plate"
+            xpos 550
+            #xpos 500
+            #pause 0.7
+            #linear 5.0 xpos 700
+    
+    image Trash_Place_Post_Plate_border_01_right_moved:
+        contains:
+            "border_01_right"
+            xpos 900
+    
+    image Trash_Place_Post_Plate_border_01_right_mask_moved:
+        contains:
+            "border_01_right_mask"
+            xpos 900
+    
+    image Trash_Place_Post_Plate_Masked = AlphaMask( "Trash_Place_Post_Plate_Moved", "Trash_Place_Post_Plate_border_01_right_mask_moved" )
+    
+    image Trash_Place_Post_Plate_With_Border_01:
+        contains:
+            "Trash_Place_Post_Plate_Masked"
+        contains:
+            "Trash_Place_Post_Plate_border_01_right_moved"
+    ##
+    show Trash_Place_Post_Plate_With_Border_01 with Dissolve( my_dissolve_03 )
     
     "На табличке было написано расписание мусорщиков по дням, но кроме этого — адрес пункта сбора мусора."
     "В моей голове созрел план."

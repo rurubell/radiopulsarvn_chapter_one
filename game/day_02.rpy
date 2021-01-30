@@ -529,21 +529,21 @@ label day_02:
     "Похоже я перестарался. Воздух пошёл не в то горло, вырвался через нос и я закашлялся"
     "Да уж, хотел как лучше, но лучше бы я молча бросил в Касуми её тележку и убежал поскорее домой."
     
-    show kasumi_01 Surprised_Silent with Dissolve( my_dissolve_02 )
+    show Kasumi_01 Surprised_Silent with Dissolve( my_dissolve_02 )
     
     "Касуми вскочила и повернулась ко мне. Я хватая ртом воздух еле произнёс."
     
     kenji "Ка... Касуми… Добрый день… Это.. Это я… Кендзи!"
     
-    show kasumi_01 Surprised_Say with Dissolve( my_dissolve_01 )
+    show Kasumi_01 Surprised_Say with Dissolve( my_dissolve_01 )
     
     kasumi "А! Танака-сан! Это вы? Что с вами?"
     
-    show kasumi_01 Surprised_Silent with Dissolve( my_dissolve_01 )
+    show Kasumi_01 Surprised_Silent with Dissolve( my_dissolve_01 )
     
     kenji "Все… Всё в порядке… Просто я… Муху проглотил!"
     
-    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_01 )
+    show Kasumi_01 Normal_Silent with Dissolve( my_dissolve_01 )
     
     "Около минуты ушло на то, чтобы я пришел в себя и восстановил способность нормально говорить."
     "Шанс произвести хорошее впечатление при встрече, провалился."
@@ -554,13 +554,13 @@ label day_02:
     
     "Я поставил тележку перед девушкой."
     
-    show kasumi_01 Normal_Say with Dissolve( my_dissolve_01 )
+    show Kasumi_01 Normal_Say with Dissolve( my_dissolve_01 )
     
     kasumi "Ах, тележка!"
     kasumi "Спасибо вам Танака-сан! Наверное вам не стоило так утруждать себя..."
     kasumi "Сколько вам заплатить за ремонт?"
     
-    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_01 )
+    show Kasumi_01 Normal_Silent with Dissolve( my_dissolve_01 )
     
     kenji "Заплатить? Нет! Мне ничего не надо!"
     
@@ -571,36 +571,36 @@ label day_02:
     
     kenji "Касуми, а ты чего тут делаешь? Ждала, когда я принесу тележку? Я же хотел принести её тебе домой."
     
-    show kasumi_01 Normal_Say with Dissolve( my_dissolve_01 )
+    show Kasumi_01 Normal_Say with Dissolve( my_dissolve_01 )
     
     kasumi "Я надеялась что те вещи, что вы вынесли вчера, Танака-сан, они ещё здесь. "
     
-    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_01 )
+    show Kasumi_01 Normal_Silent with Dissolve( my_dissolve_01 )
     
     kenji "Вот как... Но когда вчера вечером я шёл обратно, всё уже забрали. А что? Там было ещё что-то стоящее?"
     
-    show kasumi_01 Normal_Say with Dissolve( my_dissolve_01 )
+    show Kasumi_01 Normal_Say with Dissolve( my_dissolve_01 )
     
     kasumi "Кажется я ошиблась, и тот блок питания для рации, он действительно был нужен. Я надеялась, что он остался лежать здесь."
     
-    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_01 )
+    show Kasumi_01 Normal_Silent with Dissolve( my_dissolve_01 )
     
     kenji "Вот как… Значит ты за ним при шла?"
     
-    show kasumi_01 Normal_Say with Dissolve( my_dissolve_01 )
+    show Kasumi_01 Normal_Say with Dissolve( my_dissolve_01 )
     
     kasumi "Ага."
     
-    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_01 )
+    show Kasumi_01 Normal_Silent with Dissolve( my_dissolve_01 )
     
     kenji "Но как бы ты унесла его домой? Он в два раза тяжелее чем рация."
     kenji "Сидела бы здесь, и ждала того, кто поможет унести его тебе домой?"
     
-    show kasumi_01 Normal_Say with Dissolve( my_dissolve_01 )
+    show Kasumi_01 Normal_Say with Dissolve( my_dissolve_01 )
     
     kasumi "Да, мне его не унести. Но хотя бы оттащила подальше, в кусты. А там, может придумала бы чего."
     
-    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_01 )
+    show Kasumi_01 Normal_Silent with Dissolve( my_dissolve_01 )
     
     "Надеюсь Касуми не сидит здесь целый день, в ожидании, когда выкинут чего интересного."
     "И не просит случайных прохожих помочь ей унести это до дома? В прочем я вчера сам напросился ей помочь."
@@ -608,13 +608,13 @@ label day_02:
     kenji "Да наверное так и следовало поступить. Припрятать его в тенёчек."
     kenji "Но ты же сама вчера сказала что у тебя уже есть, дома?"
     
-    show kasumi_01 Normal_Say with Dissolve( my_dissolve_01 )
+    show Kasumi_01 Normal_Say with Dissolve( my_dissolve_01 )
     
     kasumi "Я ошиблась. Я думала что эта рация, она полностью транзисторная, но это не так."
     kasumi "Кажется выходной каскад, он на лампах сделан. Нужно высокое напряжение для выходных ламп, и для накала."
     kasumi " Хотя, для накала у меня может и найдётся что-то. Но где взять анодное напряжение для выходных ламп?"
     
-    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_01 )
+    show Kasumi_01 Normal_Silent with Dissolve( my_dissolve_01 )
     
     "Вопросы, которые задавала Касуми, сейчас были похлеще тех, какими грешил дядя Ватанабэ."
     "Но вид у девушки был такой серьёзный, что я даже на некоторое время задумался, не знаю ли я случайно, где в самом деле достать «анодное напряжения» для «выходных ламп»"
@@ -644,7 +644,7 @@ label day_02:
     "В прочем, я и хороший поступок совершил. Отнёс ей рацию, починил тележку."
     "Может быть Касуми пришла сюда чтобы ещё раз встретиться со мной? Может быть я ей, понравился?"
     
-    hide kasumi_01 with Dissolve( my_dissolve_02 )
+    hide Kasumi_01 with Dissolve( my_dissolve_02 )
     
     "Я испугался своих мыслей и помотал головой в разные стороны. "
     "Но всё-таки Касуми похоже не собиралась уходить, не прощалась со мной."
@@ -663,40 +663,40 @@ label day_02:
     
     "Касуми встрепенулась, пожала плечами и ответила."
     
-    show kasumi_01 Normal_Say with Dissolve( my_dissolve_01 )
+    show Kasumi_01 Normal_Say with Dissolve( my_dissolve_01 )
     
     kasumi "Не знаю. Я даже не знаю какое там должно быть напряжение"
     kasumi "Это мощная рация, и лампы мощные, генераторные."
     
-    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_01 )
+    show Kasumi_01 Normal_Silent with Dissolve( my_dissolve_01 )
     
     "Слово «генераторные» звучало весомо. Ух и светят наверное они, эти генераторные лампы."
     
-    show kasumi_01 Normal_Say with Dissolve( my_dissolve_01 )
+    show Kasumi_01 Normal_Say with Dissolve( my_dissolve_01 )
     
     kasumi "Таким лампам нужно очень высокое напряжение. Может быть восемьсот вольт, или даже тысяча."
     
-    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_01 )
+    show Kasumi_01 Normal_Silent with Dissolve( my_dissolve_01 )
     
     kenji "Сколько? Тысяча?!"
     
     "Цифры были ошеломляющие. Не удивительно почему этот аппарат столько весил."
     "Тысяча вольт! Вот это прибор! Да он должен был весить тысячу тонн, как по мне!"
     
-    show kasumi_01 Normal_Say with Dissolve( my_dissolve_01 )
+    show Kasumi_01 Normal_Say with Dissolve( my_dissolve_01 )
     
     kasumi "Ну да, тысяча. Столько из бытовых блоков питания никак не получить. Может только сетевое взять и умножить. Но это очень опасно!"
     
-    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_01 )
+    show Kasumi_01 Normal_Silent with Dissolve( my_dissolve_01 )
     
     "Да уж, опасней некуда. Похоже без этого невероятного блока питания, рация действительно — полный хлам."
     
-    show kasumi_01 Normal_Say with Dissolve( my_dissolve_01 )
+    show Kasumi_01 Normal_Say with Dissolve( my_dissolve_01 )
     
     kasumi "Извините Танака-сан, но похоже я зря вас потревожила вчера..."
     kasumi "Хотя… Пусть лежит, может быть я смогу что-то с ней сделать."
     
-    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_01 )
+    show Kasumi_01 Normal_Silent with Dissolve( my_dissolve_01 )
     
     "Я раздумывал о том, что же можно в такой ситуации придумать."
     "К сожалению, в кладовке больше ничего похожего на тот блок питания ну точно не лежало."
@@ -741,11 +741,11 @@ label day_02:
     
     kenji "Эй, Касуми! А что если нам вернуть этот блок питания."
     
-    show kasumi_01 Normal_Say with Dissolve( my_dissolve_01 )
+    show Kasumi_01 Normal_Say with Dissolve( my_dissolve_01 )
     
     kasumi "Вернуть? Как?"
     
-    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_01 )
+    show Kasumi_01 Normal_Silent with Dissolve( my_dissolve_01 )
     
     kenji "Гляди! Тут адрес…"
     
@@ -760,11 +760,11 @@ label day_02:
     
     "Касуми нерешительно спросила."
     
-    show kasumi_01 Normal_Say with Dissolve( my_dissolve_01 )
+    show Kasumi_01 Normal_Say with Dissolve( my_dissolve_01 )
     
     kasumi "Вы тоже? Тоже пойдёте со мной, Танака-сан?"
     
-    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_01 )
+    show Kasumi_01 Normal_Silent with Dissolve( my_dissolve_01 )
     
     "Мне конечно же хотелось пойти с Касуми. Как и вчера, захотелось мне побыть с ней побольше, пообщаться и помочь."
     "Даже несмотря на отсутствие алкоголя в организме, её я больше не боялся."
@@ -773,12 +773,12 @@ label day_02:
     kenji "А как по другому? Если ты и дойдёшь туда Касуми, как ты унесёшь этот блок питания домой?"
     kenji "Он тяжелее чем рация, раза в два, если не больше."
     
-    show kasumi_01 Normal_Say with Dissolve( my_dissolve_01 )
+    show Kasumi_01 Normal_Say with Dissolve( my_dissolve_01 )
     
     kasumi "Ну… Если вам не трудно… Спасибо…"
     kasumi "А как же вы его унесёте если он такой тяжёлый?"
     
-    show kasumi_01 Normal_Silent with Dissolve( my_dissolve_01 )
+    show Kasumi_01 Normal_Silent with Dissolve( my_dissolve_01 )
     
     kenji "А тележка? Теперь на ней колеса уже не сломать. Довезём на ней!"
     

@@ -1,8 +1,8 @@
-#Ватанабе 01
-image Watanabe_01_Normal_Say = im.Scale( "images/sprites/Watanabe/Watanabe_01/Watanabe_01_Normal_Say.png", 622, 1080 )
-image Watanabe_01_Normal_Silent = im.Scale( "images/sprites/Watanabe/Watanabe_01/Watanabe_01_Normal_Silent.png", 622, 1080 )
-image Watanabe_01_Sad_Say = im.Scale( "images/sprites/Watanabe/Watanabe_01/Watanabe_01_Sad_Say.png", 622, 1080 )
-image Watanabe_01_Sad_Silent = im.Scale( "images/sprites/Watanabe/Watanabe_01/Watanabe_01_Sad_Silent.png", 622, 1080 )
+#Watanabe_01
+image Watanabe_01_Normal_Say = im.Scale( "images/sprites/Watanabe/Watanabe_01/Watanabe_01_Normal_Say.png", 621, 1080 )
+image Watanabe_01_Normal_Silent = im.Scale( "images/sprites/Watanabe/Watanabe_01/Watanabe_01_Normal_Silent.png", 621, 1080 )
+image Watanabe_01_Sad_Say = im.Scale( "images/sprites/Watanabe/Watanabe_01/Watanabe_01_Sad_Say.png", 621, 1080 )
+image Watanabe_01_Sad_Silent = im.Scale( "images/sprites/Watanabe/Watanabe_01/Watanabe_01_Sad_Silent.png", 621, 1080 )
 
 layeredimage Watanabe_01:
     group emotion:
@@ -16,7 +16,7 @@ layeredimage Watanabe_01:
             "Watanabe_01_Sad_Silent"
 
 
-#Ватанабе 02
+#Watanabe_02
 image Watanabe_02_Normal_Say = im.Scale( "images/sprites/Watanabe/Watanabe_02/Watanabe_02_Normal_Say.png", 622, 1080 )
 image Watanabe_02_Normal_Silent = im.Scale( "images/sprites/Watanabe/Watanabe_02/Watanabe_02_Normal_Silent.png", 622, 1080 )
 

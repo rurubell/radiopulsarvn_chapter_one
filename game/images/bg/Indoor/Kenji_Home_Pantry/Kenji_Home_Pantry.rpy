@@ -44,41 +44,71 @@ image Day_Kenji_Home_Pantry_04:
 
 image Day_Kenji_Home_Pantry_Blink_01_Animated:
     contains:
-        "Day_Kenji_Home_Pantry_Blink_01"
-        alpha 0.2
-        linear 1.0 alpha 0.6
-        linear 1.0 alpha 0.2
+        "Pointer_01"
+        rotate 45/2
+        xpos 400
+        ypos 500
+        alpha 0.0
+        pause 0.5
+        alpha 1.0
+        pause 0.5
+        repeat
+    contains:
+        "Pointer_01"
+        rotate -45/2
+        xpos 400
+        ypos 620
+        alpha 0.0
+        pause 0.5
+        alpha 1.0
+        pause 0.5
         repeat
 
 image Day_Kenji_Home_Pantry_Blink_01a_Animated:
     contains:
-        "Day_Kenji_Home_Pantry_Blink_01a"
-        alpha 0.2
-        linear 1.0 alpha 0.6
-        linear 1.0 alpha 0.2
+        "Pointer_01"
+        rotate -45/2
+        xpos 400
+        ypos 620
+        alpha 0.0
+        pause 0.5
+        alpha 1.0
+        pause 0.5
         repeat
 
 image Day_Kenji_Home_Pantry_Blink_02_Animated:
     contains:
-        "Day_Kenji_Home_Pantry_Blink_02"
-        alpha 0.2
-        linear 1.0 alpha 0.6
-        linear 1.0 alpha 0.2
+        "Pointer_01"
+        rotate 45/2
+        xpos 400
+        ypos 500
+        alpha 0.0
+        pause 0.5
+        alpha 1.0
+        pause 0.5
         repeat
 
 image Day_Kenji_Home_Pantry_Blink_03_Animated:
     contains:
-        "Day_Kenji_Home_Pantry_Blink_03"
-        alpha 0.2
-        linear 1.0 alpha 0.6
-        linear 1.0 alpha 0.2
+        "Pointer_01"
+        rotate -45/2
+        xpos 700
+        ypos 170
+        alpha 0.0
+        pause 0.5
+        alpha 1.0
+        pause 0.5
         repeat
 
 image Day_Kenji_Home_Pantry_Blink_04_Animated:
     contains:
-        "Day_Kenji_Home_Pantry_Blink_04"
-        alpha 0.2
-        linear 1.0 alpha 0.6
-        linear 1.0 alpha 0.2
+        "Pointer_01"
+        rotate 45/2
+        xpos 850
+        ypos 550
+        alpha 0.0
+        pause 0.5
+        alpha 1.0
+        pause 0.5
         repeat
 

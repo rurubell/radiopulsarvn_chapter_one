@@ -48,8 +48,6 @@ label start:
     
     #Пыль
     image dust = Dust( "images/other/dust.png" )
-    #Рамка для флешбеков
-    image Dream_Frame = "images/cg/Misc/Dream_Frame/Dream_Frame.png"
     #пустая картинка
     image empty_image = "images/other/empty.png"
     

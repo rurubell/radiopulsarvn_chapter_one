@@ -12,7 +12,7 @@ image Outdoor_Day_BG_With_Railroad_2:
         "Day_Jet"
     
     contains:
-        "Day_Clouds"
+        "Day_Clouds_01"
     
     contains:
         "Outdoor_Day_BG_With_Railroad_2_Other"

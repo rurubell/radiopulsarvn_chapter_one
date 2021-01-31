@@ -8,7 +8,7 @@ image Outdoor_Day_Street_05:
         xalign 0.0
         "Outdoor_Day_Street_05_Sky"
     contains:
-        "Day_Clouds"
+        "Day_Clouds_02"
         
     contains:
         "Day_Jet"

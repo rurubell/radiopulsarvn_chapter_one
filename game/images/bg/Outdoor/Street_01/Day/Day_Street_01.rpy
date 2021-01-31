@@ -9,7 +9,7 @@ image Outdoor_Day_Street_01:
         "Outdoor_Day_Street_01_Sky"
     contains:
         xpos -100
-        "Day_Clouds"
+        "Day_Clouds_01"
         
     contains:
         "Day_Jet"

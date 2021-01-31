@@ -12,7 +12,7 @@ image Day_Kasumi_Home:
     
     contains:
         #yoffset 
-        "Day_Clouds"
+        "Day_Clouds_01"
     
     contains:
         "Day_Kasumi_Home_Other"

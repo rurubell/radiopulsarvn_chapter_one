@@ -11,7 +11,7 @@ image Day_Shops_And_Vending_Machines_01:
     
     contains:
         yoffset -100
-        "Day_Clouds"
+        "Day_Clouds_01"
     
     contains:
         "Day_Shops_And_Vending_Machines_01_Other"

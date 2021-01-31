@@ -14,7 +14,7 @@ image Day_Trash_Place:
 
     contains:
         yoffset -100
-        "Day_Clouds"
+        "Day_Clouds_01"
         
     contains:
         "Day_Trash_Place_Other"

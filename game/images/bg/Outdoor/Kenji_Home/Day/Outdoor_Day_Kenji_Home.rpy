@@ -12,7 +12,7 @@ image Outdoor_Day_Kenji_Home:
     
     contains:
         yoffset -100
-        "Day_Clouds"
+        "Day_Clouds_01"
     
     contains:
         "Day_Kenji_Home_Other"

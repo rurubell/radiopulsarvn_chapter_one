@@ -21,7 +21,7 @@ image Main_Menu_BG:
         "Day_Jet"
     
     contains:
-        "Day_Clouds"
+        "Day_Clouds_01"
     
     contains:
         "Main_Menu_other"

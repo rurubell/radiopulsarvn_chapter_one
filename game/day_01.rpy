@@ -266,7 +266,7 @@ label day_01:
     show Day_Aiko_Home_Outfit_Hand_Hold_Hand Confused_Silent at Move( ( 1600, 630 ), ( 1600, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     "Похоже, Айко успела разглядеть Мидори."
-    "На несколько секунд повисла неловкая пауза, а затем моя сестра пришла в себя и тихо сказала."
+    "На несколько секунд повисла неловкая пауза, а затем моя сестра пришла в себя и тихо сказала:"
     
     show Day_Aiko_Home_Outfit_Hand_Hold_Hand Normal_Say at Move( ( 1600, 630 ), ( 1600, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
@@ -1524,7 +1524,7 @@ label day_01:
     
     show Day_Kasumi_School_Uniform_Hands_Behind_Back Surprised_Silent with Dissolve( my_dissolve_02 )
 
-    "Я вспомнил о банке пива в руке и отхлебнул немного. А после сказал."
+    "Я вспомнил о банке пива в руке и отхлебнул немного. А после сказал:"
 
     kenji "Давай я помогу погрузить эту штуковину на тележку. Похоже, тебе её не поднять."
     
@@ -2670,7 +2670,7 @@ label day_01:
     show Day_Aiko_Home_Outfit_Hand_Hold_Hand_Normal_Silent_Mobile_Masked with Dissolve( my_dissolve_01 )
     hide Day_Aiko_Home_Outfit_Hand_Hold_Hand_Normal_Say_Mobile_Masked
 
-    "Я вздохнул. Айко помолчала какое-то время и спросила."
+    "Я вздохнул. Айко помолчала какое-то время и спросила:"
 
     show Day_Aiko_Home_Outfit_Hand_Hold_Hand_Normal_Say_Mobile_Masked with Dissolve( my_dissolve_01 )
     hide Day_Aiko_Home_Outfit_Hand_Hold_Hand_Normal_Silent_Mobile_Masked
@@ -2945,7 +2945,7 @@ label day_01:
     
     show Aiko_Bike_With_Border_01 with Dissolve( my_dissolve_05 )
     
-    "В руках он нёс детский велосипед. Я воскликнул."
+    "В руках он нёс детский велосипед. Я воскликнул:"
     
     kenji "О! Это же старый велик Айко!"
     

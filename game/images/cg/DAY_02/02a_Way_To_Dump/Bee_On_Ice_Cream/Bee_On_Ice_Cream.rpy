@@ -3,6 +3,11 @@ image Bee_On_Ice_Cream_Hand = "/images/cg/DAY_02/02a_Way_To_Dump/Bee_On_Ice_Crea
 image Bee_On_Ice_Cream_Yay = "/images/cg/DAY_02/02a_Way_To_Dump/Bee_On_Ice_Cream/Bee_On_Ice_Cream_Yay.png"
 
 
+image Bee_Fly_Away_Ice_Cream = "images/cg/DAY_02/02a_Way_To_Dump/Bee_On_Ice_Cream/Bee_Fly_Away/Ice_Cream.png"
+image Bee_Fly_Away_Flag = "images/cg/DAY_02/02a_Way_To_Dump/Bee_On_Ice_Cream/Bee_Fly_Away/Flag.png"
+image Bee_Fly_Away_Bee = "images/cg/DAY_02/02a_Way_To_Dump/Bee_On_Ice_Cream/Bee_Fly_Away/Bee.png"
+
+
 image Bee_On_Ice_Cream:
     contains:
         "Bee_On_Ice_Cream_Base"
@@ -33,3 +38,33 @@ image Bee_On_Ice_Cream:
         pause 0.9
         linear 0.9 alpha 0.0
         repeat 
+
+
+image Bee_Fly_away:
+    contains:
+        "Bee_Fly_Away_Ice_Cream"
+    
+    contains:
+        "Bee_Fly_Away_Bee"
+        xpos 364
+        ypos 229
+        
+        parallel:
+            linear 0.5 xpos -1000
+        parallel:
+            linear 0.5 ypos -400
+        parallel:
+            linear 0.5 rotate -700
+        
+    
+    contains:
+        "Bee_Fly_Away_Flag"
+        xpos 199
+        ypos 456
+        
+        parallel:
+            linear 0.5 xpos -1000
+        parallel:
+            linear 0.5 ypos 600
+        parallel:
+            linear 0.5 rotate -700

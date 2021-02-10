@@ -1,5 +1,5 @@
-image That_Fucking_Cat_Mask = "images/cg/DAY_02/That_Fucking_Cat/That_Fucking_Cat_Mask.png"
-image That_Fucking_Cat_Cat = "images/cg/DAY_02/That_Fucking_Cat/That_Fucking_Cat_Cat.png"
+image That_Fucking_Cat_Mask = "images/cg/DAY_02/02a_Way_To_Dump/That_Fucking_Cat/That_Fucking_Cat_Mask.png"
+image That_Fucking_Cat_Cat = "images/cg/DAY_02/02a_Way_To_Dump/That_Fucking_Cat/That_Fucking_Cat_Cat.png"
 
 
 image That_Fucking_Cat_Moved:

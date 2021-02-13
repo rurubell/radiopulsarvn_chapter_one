@@ -3,9 +3,6 @@ image Kasumi_Do_Not_Want_IceCream_Resized = im.Scale( "images/cg/DAY_02/02a_Way_
 
 image Kasumi_Do_Not_Want_IceCream:
     contains:
-        "white_image"
-    
-    contains:
         xpos 500
         ypos 100
         "Kasumi_Do_Not_Want_IceCream_Resized"

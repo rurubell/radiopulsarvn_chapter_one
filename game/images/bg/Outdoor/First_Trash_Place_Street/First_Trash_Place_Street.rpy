@@ -13,3 +13,14 @@ image First_Trash_Place_Street_Kenji_Run:
     
     contains:
         "Run_Stripes"
+
+
+image First_Trash_Place_Blured_Animated:
+    contains:
+        "First_Trash_Place_Blured"
+
+    contains:
+        "black_image"
+        alpha 1.0
+        pause 1.0
+        linear 3.0 alpha 0.0

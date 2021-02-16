@@ -1427,27 +1427,55 @@ label day_02:
     "Догнать его было не сложно, и вскоре я схватил пацана за руку."
     
     scene First_Trash_Place_Street with Dissolve( my_dissolve_02 )
+    show Day_Hooligan_Hide_Hands Surprised_Say with Dissolve( my_dissolve_02 )
     
     hooligan "Эй! Вы чего!"
+    
+    show Day_Hooligan_Hide_Hands Surprised_Silent with Dissolve( my_dissolve_01 )
+    
     kenji "Ты чего творишь, подлец!"
-    hooligan "Я? Это не я! Мне только сказали! Я вообще только рядом стоял и ничего не делал! А вы ещё кто? Она всегда одна ходит!"
-    kenji "Что? Сказали? Только рядом стоял?"
+    
+    show Day_Hooligan_Hide_Hands Surprised_Say with Dissolve( my_dissolve_02 )
+    
+    hooligan "Я? Нет! Произошла ошибка! Меня... Меня подставили!"
+    
+    show Day_Hooligan_Hide_Hands Surprised_Silent with Dissolve( my_dissolve_01 )
+    
+    kenji "Что?"
     
     "Я сильнее сжал руку мальчика."
     
+    show Day_Hooligan_Hide_Hands Surprised_Say with Dissolve( my_dissolve_02 )
+    
     hooligan "Ай! Мне деньги заплатили! Я не хотел сам…"
+    
+    show Day_Hooligan_Hide_Hands Surprised_Silent with Dissolve( my_dissolve_01 )
+    
     kenji "Деньги заплатили? Чего ты мелешь! Сейчас вызовем полицию, пусть скажут твоим родителям, что ты натворил!"
     
     "Услышав такое, мальчик с силой рванул руку, но я её не выпускал."
-    "Тогда он пнул в меня в колено."
+    
+    show Day_Hooligan_Hide_Hands Angry_Silent with hpunch
+    
+    "Тогда он пнул меня в колено."
     
     kenji "Ах ты подлюга!"
     
     "Удар был болезненный, но я стойко вытерпел боль и продолжал держать хулигана за руку."
+    
+    hide Day_Hooligan_Hide_Hands with Dissolve( my_dissolve_01 )
+    show Day_Hooligan_With_Bomb Angry_Silent with Dissolve( my_dissolve_01 )
+    
     "Однако следующая его атака оказалась удачной."
+    
+    scene First_Trash_Place_Blured_Animated with Dissolve( my_dissolve_01 )
+    
     "Мне в лицо прилетел жёлтый снаряд, наполненный водой."
     "Перед глазами всё поплыло, очки слетели и от неожиданности руку мальчика я выпустил."
     "Пока я несколько секунд пытался вернуть зрение, хулиган времени не терял и смылся."
+    
+    scene First_Trash_Place_Street with Dissolve( my_dissolve_05 )
+    
     "Хорошо хоть, очки спасли меня."
     "Без них, удар мог оказаться сильнее."
     "Гнаться за мальчиком было бесполезно."

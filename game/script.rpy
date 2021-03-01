@@ -31,34 +31,12 @@ label splashscreen:
 
 
 label start:
-    image white_image = "images/other/colored/white.png"
-    image black_image = "images/other/colored/black.png"
-    image black_image_alpha_50pc:
-        contains:
-            "black_image"
-            alpha 0.5
             
     stop music fadeout 1
     
-    scene Trash_Place_In_Kenji_Mind_Animated
-    
-    "...."
-    
-    scene black_image
-    
-    "..."
-    
-    scene Day_Cats_Paw_Shrine_Torii_Static_BG
-    
-    "111"
-    
-    show Cats_Paw_Shrine_Stairs_With_Border_01 with dissolve
-    "..."
     
     #Пыль
     image dust = Dust( "images/other/dust.png" )
-    #пустая картинка
-    image empty_image = "images/other/empty.png"
     
     
     #Рамки для мини-цг

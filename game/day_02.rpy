@@ -1455,6 +1455,7 @@ label day_02:
     
     "Услышав такое, мальчик с силой рванул руку, но я её не выпускал."
     
+    show Pain
     show Day_Hooligan_Hide_Hands Angry_Silent with hpunch
     
     "Тогда он пнул меня в колено."
@@ -1480,10 +1481,52 @@ label day_02:
     "Без них, удар мог оказаться сильнее."
     "Гнаться за мальчиком было бесполезно."
     "Его след простыл."
+    
+    
+    #Мини ЦГ - Рогатка хулигана на земле
+    image Hooligans_Catapult = "images/cg/DAY_02/03a_First_Trash_Place/Hooligans_Catapult/Hooligans_Catapult.png"
+    image Hooligans_Catapult_Moved:
+        contains:
+            "white_image"
+        
+        contains:
+            "Hooligans_Catapult"
+            ypos -50
+            xpos 500
+            pause 0.7
+            ease 5.0 xpos 750
+    
+    image Hooligans_Catapult_border_01_right_moved:
+        contains:
+            "border_01_right"
+            xpos 1000
+    
+    image Hooligans_Catapult_border_01_right_mask_moved:
+        contains:
+            "border_01_right_mask"
+            xpos 1000
+    
+    image Hooligans_Catapult_Masked = AlphaMask( "Hooligans_Catapult_Moved", "Hooligans_Catapult_border_01_right_mask_moved" )
+    
+    image Hooligans_Catapult_With_Border_01:
+        contains:
+            "Hooligans_Catapult_Masked"
+        contains:
+            "Hooligans_Catapult_border_01_right_moved"
+    ##
+    
+    show Hooligans_Catapult_With_Border_01 with Dissolve( my_dissolve_03 )
+    
+    
     "На асфальте осталась только его оружие — пластмассовая рогатка для водяных бомбочек."
     "Видимо он выронил её, когда сбежал."
-    "Я со злостью пнул рогатку и она улетела в кусты."
-    "Нога отозвалась сильной болью в колене."
+    
+    show Pain
+    hide Hooligans_Catapult_With_Border_01 with hpunch
+    
+    "Я со злостью пнул рогатку и она улетела в кусты, а нога отозвалась сильной болью в колене."
+    
+    scene Day_First_Trash_Place with Dissolve( my_dissolve_05 ) 
     
     "Когда я доковылял обратно к будке служащего мусорки — он сам уже стоял на улице, рядом с Касуми."
     "В руках у девушки было белое полотенце, которое она прижимала к груди."

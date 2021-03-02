@@ -1422,8 +1422,7 @@ label day_02:
     scene First_Trash_Place_Street_Kenji_Run with Dissolve( my_dissolve_02 )
     
     "Я оценил обстановку и бросился за рослым, тучным пареньком."
-    "Хоть я и так себе бегун, но моя жертва была ещё хуже."
-    "Он пыхтел как паравоз и испуганно оглядывался назад."
+    "Хоть я и так себе бегун, но моя жертва была ещё хуже. Он пыхтел как паравоз и испуганно оглядывался назад."
     "Догнать его было не сложно, и вскоре я схватил пацана за руку."
     
     scene First_Trash_Place_Street with Dissolve( my_dissolve_02 )
@@ -1477,10 +1476,8 @@ label day_02:
     
     scene First_Trash_Place_Street with Dissolve( my_dissolve_05 )
     
-    "Хорошо хоть, очки спасли меня."
-    "Без них, удар мог оказаться сильнее."
-    "Гнаться за мальчиком было бесполезно."
-    "Его след простыл."
+    "Хорошо хоть, очки спасли меня. Без них, удар мог оказаться сильнее."
+    "Гнаться за мальчиком было бесполезно. Его след простыл."
     
     
     #Мини ЦГ - Рогатка хулигана на земле
@@ -1526,67 +1523,126 @@ label day_02:
     
     "Я со злостью пнул рогатку и она улетела в кусты, а нога отозвалась сильной болью в колене."
     
-    scene Day_First_Trash_Place with Dissolve( my_dissolve_05 ) 
+    scene Day_First_Trash_Place with Dissolve( my_dissolve_05 )
+    show Day_First_Trash_Place_Man_Hands_Down Normal_Silent at Move( ( 600, 600 ), ( 600, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 )
+    show Day_Kasumi_School_Uniform_Wet_Hold_Towel Normal_Silent at Move( ( 1300, 600 ), ( 1300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 )
     
     "Когда я доковылял обратно к будке служащего мусорки — он сам уже стоял на улице, рядом с Касуми."
-    "В руках у девушки было белое полотенце, которое она прижимала к груди."
+    "В руках у девушки было полотенце, которое она прижимала к груди."
     
     kenji "Черт! Почти поймал одного, но он выскользнул. А я… Споткнулся…"
+    
+    show Day_First_Trash_Place_Man_Hands_Down Normal_Say at Move( ( 600, 600 ), ( 600, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
     trash_man_01 "Да уж! Хулиганьё! Совести нет у них! Напали на инвалида!"
+    
+    show Day_First_Trash_Place_Man_Hands_Down Normal_Silent at Move( ( 600, 600 ), ( 600, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     "Видимо он уже понял, что Касуми слепая."
     
-    "Я погладил больное, распухшее колено."
-    "И тут подметил, что на стене кирпичной будки, весит камера."
+    "Я погладил больное, распухшее колено. И тут подметил, что на стене, прямо возле ворот, висит камера."
     
     kenji "Это у вас что? Видеосъемка? А запись идёт?"
-    trash_man_01 "Ага! Записываем. Что, хочешь хулиганов опознать? Вообще, хорошая идея. Правда я не знаю как с этой аппаратурой работать. Сейчас позвоню начальству, спрошу…"
+    
+    show Day_First_Trash_Place_Man_Hands_Down Normal_Say at Move( ( 600, 600 ), ( 600, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
+    trash_man_01 "Ага! Записываем. Что, хочешь хулиганов опознать? Вообще, хорошая идея."
+    trash_man_01 "Правда я не знаю как с этой аппаратурой работать. Сейчас позвоню начальству, спрошу…"
+    
+    show Day_First_Trash_Place_Man_Hands_Down Normal_Silent at Move( ( 600, 600 ), ( 600, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     "Он полез в карман штанов за телефоном, но его остановила Касуми."
     
+    show Day_Kasumi_School_Uniform_Wet_Hold_Towel Normal_Say at Move( ( 1300, 600 ), ( 1300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
     kasumi "Не надо. Зачем нам эта запись. В полицию с ней идти? Нет. Не нужно!"
+    
+    show Day_Kasumi_School_Uniform_Wet_Hold_Towel Normal_Silent at Move( ( 1300, 600 ), ( 1300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
     kenji "Касуми ты чего? Ну надо же наказать эту шпану!"
+    
+    show Day_Kasumi_School_Uniform_Wet_Hold_Towel Gloomy_Silent at Move( ( 1300, 600 ), ( 1300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     "Касуми фыркнула и нахмурилась."
     
+    show Day_Kasumi_School_Uniform_Wet_Hold_Towel Gloomy_Say at Move( ( 1300, 600 ), ( 1300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
     kasumi "Не стоит тратить время, Танака-сан."
     
-    "Я повернулся к служащему, и покачал головой."
-    "Он отправил телефон обратно в карман."
+    show Day_Kasumi_School_Uniform_Wet_Hold_Towel Gloomy_Silent at Move( ( 1300, 600 ), ( 1300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
-    trash_man_01 "Я тут Йоши успел позвонить. Он в самом деле не приезжал, и не оставлял вчерашний мусор здесь. Видишь ли, у нас здесь только временное хранение. А вчера мусора было немного. Он всё за один рейс забрал. Ну и поехал сразу на главный полигон. Там где завод по переработке мусора…"
+    "Я повернулся к служащему, и покачал головой. Он отправил телефон обратно в карман."
+    
+    show Day_First_Trash_Place_Man_Hands_Down Normal_Say at Move( ( 600, 600 ), ( 600, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
+    trash_man_01 "Я тут Йоши успел позвонить. Он в самом деле не приезжал, и не оставлял вчерашний мусор здесь."
+    trash_man_01 "Видишь ли, у нас здесь только временное хранение. А вчера значит, мусора было немного."
+    trash_man_01 "Он всё за один рейс забрал. Ну и поехал сразу на главный полигон. Там где завод по переработке мусора…"
+    
+    show Day_First_Trash_Place_Man_Hands_Down Normal_Silent at Move( ( 600, 600 ), ( 600, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Day_Kasumi_School_Uniform_Wet_Hold_Towel Normal_Silent at Move( ( 1300, 600 ), ( 1300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
     kenji "Значит кранты ему… Блоку питания…"
-    trash_man_01 "Зачем же кранты? Не кранты! Сегодня пятница, а мусор перерабатывают по выходным. В будние дни они его только накапливают. Если сегодня побываешь у них, получишь свою вещь обратно. Там на проходной, тоже круглые сутки ребята сидят. Можно и вечером подойти. Скажешь им что да как, они вам отдадут ваш прибор."
+    
+    show Day_First_Trash_Place_Man_Hands_Down Normal_Say at Move( ( 600, 600 ), ( 600, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
+    trash_man_01 "Зачем же кранты? Не кранты! Сегодня пятница, а мусор перерабатывают по выходным. В будние дни они его только накапливают."
+    trash_man_01 "Если сегодня побываешь у них, получишь свою вещь обратно."
+    trash_man_01 "Там на проходной, тоже круглые сутки ребята сидят. Можно и вечером подойти. Скажешь им что да как, они вам отдадут ваш прибор."
+    
+    show Day_First_Trash_Place_Man_Hands_Down Normal_Silent at Move( ( 600, 600 ), ( 600, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     "Он протянул мне картонную визитку."
     
-    trash_man_01 "Вот, тут адрес полигона. Правда это место не в нашем районе уже. И вообще, за городом. Но на поезде остановок пять — шесть. Давайте ребята, удачи. Смотри парень за девчонкой своей хорошо, вдруг ещё чем обольют."
+    show Day_First_Trash_Place_Man_Hands_Down Normal_Say at Move( ( 600, 600 ), ( 600, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
+    trash_man_01 "Вот, тут адрес полигона. Правда это место не в нашем районе уже. И вообще, за городом. Но на поезде остановок пять — шесть."
+    trash_man_01 "Удачи ребята! А ты смотри парень, за девчонкой своей хорошо, вдруг ещё чем обольют."
+    
+    show Day_First_Trash_Place_Man_Hands_Down Normal_Silent at Move( ( 600, 600 ), ( 600, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     "Я поджал губы чтобы не расплыться в глупой улыбке, когда услышал про «свою девчонку»."
-    "Касуми же, отстранила от груди полотенце."
-    "Я увидел, как прозрачная от воды ткань матроски, облепила её тело и под ней, проступили очертания бюстгальтера девушки."
-    "Теперь уже было не до улыбок, захотелось закутать Касуми в это полотенце с головой, чтобы никто больше это представление мокрых футболок не видел."
     
-    kasumi "Спасибо! Полотенце! Пожалуйста возьмите его!"
+    show Day_Kasumi_School_Uniform_Wet_Hold_Towel Normal_Say at Move( ( 1300, 600 ), ( 1300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
-    "Но служащий мусорки, только улыбнулся."
+    kasumi "А... а полотенце?"
+    
+    show Day_Kasumi_School_Uniform_Wet_Hold_Towel Normal_Silent at Move( ( 1300, 600 ), ( 1300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
+    "Похоже касуми решила вернуть обратно полотенце, которым она прикрывалась."
+    "Я не разглядел ничего, когда погнался за хулиганами, но похоже что школьная форма капитально намокла и просвечивала."
+    "Это что же получается, я сейчас увижу нижнее белье Касуми? И... и этот мужик, тоже?"
+    
+    show Day_First_Trash_Place_Man_Hands_Down Normal_Say at Move( ( 600, 600 ), ( 600, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     trash_man_01 "Не нужно! Нам каждую неделю новое выдают! Оставь себе."
     
-    "Касуми вновь прижала полотенце к груди."
+    show Day_First_Trash_Place_Man_Hands_Down Normal_Silent at Move( ( 600, 600 ), ( 600, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
     "Вовремя!"
     "Я уже тянулся руками к пуговицам своей рубашки, чтобы снять её и накрыть ей Касуми."
+    "Похоже что конкурса мокрых футболок сегодня не будет."
+    
+    show Day_First_Trash_Place_Man_Hands_Down Normal_Say at Move( ( 600, 600 ), ( 600, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     trash_man_01 "Ладно ребята! Удачи вам!"
     
-    "Я поклонился ему, а он подмигнул мне, и скрылся в дверях своей каморки."
-    "Мы остались на улице одни."
+    hide Day_First_Trash_Place_Man_Hands_Down with Dissolve( my_dissolve_02 )
+    hide Day_Kasumi_School_Uniform_Wet_Hold_Towel with Dissolve( my_dissolve_01 )
+    show Day_Kasumi_School_Uniform_Wet_Hold_Towel Normal_Silent with Dissolve( my_dissolve_01 )
+    
+    "Я поклонился ему, а он подмигнул мне, и скрылся в дверях своей каморки. Мы остались на улице одни."
     "Касуми по прежнему прижимала к груди полотенце, наверное она понимала, что её мокрая матроска просвечивала."
-    "На плечах, проступили бретельки её бюстгальтера, а на спине, из под мокрой ткани проступили её лопатки."
+    "На плечах, показались очертания бретелек её бюстгальтера, а на спине, из под мокрой ткани проступили её тонкие лопатки."
     "Показалось, что девушка чуточку съёжилась, стала сутулиться."
     "Но лицо Касуми оставалось спокойным."
     
+    show Day_Kasumi_School_Uniform_Wet_Hold_Towel Normal_Say with Dissolve( my_dissolve_01 )
+    
     kasumi "Танака-сан… Это сильно заметно? Что одежда у меня сырая?"
+    
+    show Day_Kasumi_School_Uniform_Wet_Hold_Towel Normal_Silent with Dissolve( my_dissolve_01 )
+    
     kenji "Да нет, не очень… Может, если совсем близко подойти…"
     
     "Я посмотрел на лужу под ногами девушки."
@@ -1594,11 +1650,20 @@ label day_02:
     "Касуми нерешительно переступила ногами, послышался чавкающий звук а из её ботинка выплеснулось немного воды."
     
     kenji "Ой, да у тебя все ноги промокли!"
+    
+    show Day_Kasumi_School_Uniform_Wet_Hold_Towel Normal_Say with Dissolve( my_dissolve_01 )
+    
     kasumi "Ничего…"
+    
+    show Day_Kasumi_School_Uniform_Wet_Hold_Towel Normal_Silent with Dissolve( my_dissolve_01 )
     
     "Касуми опять нерешительно переступила ногами."
     
+    show Day_Kasumi_School_Uniform_Wet_Hold_Towel Normal_Say with Dissolve( my_dissolve_01 )
+    
     kasumi "Танака-сан… Вы можете снять ободок с моей головы? Кажется детектор с ума сошёл, пищит не умолкая. Там разъем на проводе, его нужно разомкнуть."
+    
+    show Day_Kasumi_School_Uniform_Wet_Hold_Towel Normal_Silent with Dissolve( my_dissolve_01 )
     
     "Видимо руки у Касуми были связаны полотенцем, и она ничего не могла сделать."
     "Наверное неприятно когда в ухо тебе что-то пищит без устали."

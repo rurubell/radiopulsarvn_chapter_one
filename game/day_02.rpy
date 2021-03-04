@@ -1661,17 +1661,108 @@ label day_02:
     
     show Day_Kasumi_School_Uniform_Wet_Hold_Towel Normal_Say with Dissolve( my_dissolve_01 )
     
-    kasumi "Танака-сан… Вы можете снять ободок с моей головы? Кажется детектор с ума сошёл, пищит не умолкая. Там разъем на проводе, его нужно разомкнуть."
+    kasumi "Танака-сан… Вы можете снять ободок с моей головы? Кажется детектор с ума сошёл, пищит не умолкая."
+    kasumi "Там разъем на проводе, его нужно разомкнуть."
     
     show Day_Kasumi_School_Uniform_Wet_Hold_Towel Normal_Silent with Dissolve( my_dissolve_01 )
     
     "Видимо руки у Касуми были связаны полотенцем, и она ничего не могла сделать."
-    "Наверное неприятно когда в ухо тебе что-то пищит без устали."
-    "Я не стал медлить, аккуратно поддел пальцами ободок на лбу девушки."
-    "Касуми потрясла головой, помогая мне."
+    
+    hide Day_Kasumi_School_Uniform_Wet_Hold_Towel with Dissolve( my_dissolve_03 )
+    
+    ##Мини ЦГ - Мокрая Касуми в пол-оборота, в ободке
+    image Wet_Kasumi_HalfTurned_With_HeadBand = "images/cg/DAY_02/03a_First_Trash_Place/Wet_Kasumi_HalfTurned/With_HeadBand.png"
+    image Wet_Kasumi_HalfTurned_With_HeadBand_Moved:
+        contains:
+            "Wet_Kasumi_HalfTurned_With_HeadBand"
+            xpos -300
+    
+    image Wet_Kasumi_HalfTurned_With_HeadBand_border_01_left_moved:
+        contains:
+            "border_01_left"
+            xpos -800
+    
+    image Wet_Kasumi_HalfTurned_With_HeadBand_border_01_left_mask_moved:
+        contains:
+            "border_01_left_mask"
+            xpos -800
+    
+    image Wet_Kasumi_HalfTurned_With_HeadBand_Masked = AlphaMask( "Wet_Kasumi_HalfTurned_With_HeadBand_Moved", "Wet_Kasumi_HalfTurned_With_HeadBand_border_01_left_mask_moved" )
+    
+    image Wet_Kasumi_HalfTurned_With_HeadBand_With_Border_01:
+        contains:
+            "Wet_Kasumi_HalfTurned_With_HeadBand_Masked"
+        contains:
+            "Wet_Kasumi_HalfTurned_With_HeadBand_border_01_left_moved"
+    ##
+    show Wet_Kasumi_HalfTurned_With_HeadBand_With_Border_01 with Dissolve( my_dissolve_03 )
+    
+    "Наверное неприятно, когда в ухе что-то пищит без остановки. Надо бы помочь поскорее, но для меня такая просьба была неажиданной."
+    "Уж слишком интимная эта процедура, снять с голову Касуми её ободок"
+    "Я осторожно приблизил руку к голове девушки и потянул за ободок. Стараясь руками не задеть волос Касуми."
+    
+    
+    ##Мини ЦГ - Мокрая Касуми в пол-оборота, ободок снят, тянется провод
+    image Wet_Kasumi_HalfTurned_Without_HeadBand_01 = "images/cg/DAY_02/03a_First_Trash_Place/Wet_Kasumi_HalfTurned/Without_HeadBand_01.png"
+    image Wet_Kasumi_HalfTurned_Without_HeadBand_01_Moved:
+        contains:
+            "Wet_Kasumi_HalfTurned_Without_HeadBand_01"
+            xpos -300
+    
+    image Wet_Kasumi_HalfTurned_Without_HeadBand_01_border_01_left_moved:
+        contains:
+            "border_01_left"
+            xpos -800
+    
+    image Wet_Kasumi_HalfTurned_Without_HeadBand_01_border_01_left_mask_moved:
+        contains:
+            "border_01_left_mask"
+            xpos -800
+    
+    image Wet_Kasumi_HalfTurned_Without_HeadBand_01_Masked = AlphaMask( "Wet_Kasumi_HalfTurned_Without_HeadBand_01_Moved", "Wet_Kasumi_HalfTurned_Without_HeadBand_01_border_01_left_mask_moved" )
+    
+    image Wet_Kasumi_HalfTurned_Without_HeadBand_01_With_Border_01:
+        contains:
+            "Wet_Kasumi_HalfTurned_Without_HeadBand_01_Masked"
+        contains:
+            "Wet_Kasumi_HalfTurned_Without_HeadBand_01_border_01_left_moved"
+    ##
+    show Wet_Kasumi_HalfTurned_Without_HeadBand_01_With_Border_01 with Dissolve( my_dissolve_02 )
+    hide Wet_Kasumi_HalfTurned_With_HeadBand_With_Border_01 with Dissolve( my_dissolve_01 )
+    
+    "Возможно что от волнения я снял ободок не очень аккуратно, и зацепил несколько волос, но Касуми ничего не скозала."
     "Вслед за ободком тянулся тоненький провод."
     "Я всё дальше тянул ободок на себя, и всё больше провода  тянулось след за ним, из под ворота матроски Касуми."
-    "Наконец показались круглые, как у удлинителя для наушников гнездо и вставленные в него штекер."
+    
+    ##Мини ЦГ - Мокрая Касуми в пол-оборота, ободок снят, тянется провод, видно разъем
+    image Wet_Kasumi_HalfTurned_Without_HeadBand_02 = "images/cg/DAY_02/03a_First_Trash_Place/Wet_Kasumi_HalfTurned/Without_HeadBand_02.png"
+    image Wet_Kasumi_HalfTurned_Without_HeadBand_02_Moved:
+        contains:
+            "Wet_Kasumi_HalfTurned_Without_HeadBand_02"
+            xpos -300
+    
+    image Wet_Kasumi_HalfTurned_Without_HeadBand_02_border_01_left_moved:
+        contains:
+            "border_01_left"
+            xpos -800
+    
+    image Wet_Kasumi_HalfTurned_Without_HeadBand_02_border_01_left_mask_moved:
+        contains:
+            "border_01_left_mask"
+            xpos -800
+    
+    image Wet_Kasumi_HalfTurned_Without_HeadBand_02_Masked = AlphaMask( "Wet_Kasumi_HalfTurned_Without_HeadBand_02_Moved", "Wet_Kasumi_HalfTurned_Without_HeadBand_02_border_01_left_mask_moved" )
+    
+    image Wet_Kasumi_HalfTurned_Without_HeadBand_02_With_Border_01:
+        contains:
+            "Wet_Kasumi_HalfTurned_Without_HeadBand_02_Masked"
+        contains:
+            "Wet_Kasumi_HalfTurned_Without_HeadBand_02_border_01_left_moved"
+    ##
+    show Wet_Kasumi_HalfTurned_Without_HeadBand_02_With_Border_01 with Dissolve( my_dissolve_02 )
+    hide Wet_Kasumi_HalfTurned_Without_HeadBand_01_With_Border_01 with Dissolve( my_dissolve_01 )
+    
+    "Наконец показался разьем, к которому был при."
     "Дрожащими руками, я принялся отстёгивать разъем."
     "Я был очень взволнован."
     "Это, можно сказать первый мой шанс прикоснуться к Касуми за всё это время."
@@ -1680,6 +1771,35 @@ label day_02:
     "Или нет?"
     "Я ничего не слышал, слышал только бешеный стук собственного сердца."
     "Надеюсь Касуми его не слышит!"
+    
+    ##Мини ЦГ - Мокрая Касуми в пол-оборота, разъем висит
+    image Wet_Kasumi_HalfTurned_Without_HeadBand_03 = "images/cg/DAY_02/03a_First_Trash_Place/Wet_Kasumi_HalfTurned/Without_HeadBand_03.png"
+    image Wet_Kasumi_HalfTurned_Without_HeadBand_03_Moved:
+        contains:
+            "Wet_Kasumi_HalfTurned_Without_HeadBand_03"
+            xpos -300
+    
+    image Wet_Kasumi_HalfTurned_Without_HeadBand_03_border_01_left_moved:
+        contains:
+            "border_01_left"
+            xpos -800
+    
+    image Wet_Kasumi_HalfTurned_Without_HeadBand_03_border_01_left_mask_moved:
+        contains:
+            "border_01_left_mask"
+            xpos -800
+    
+    image Wet_Kasumi_HalfTurned_Without_HeadBand_03_Masked = AlphaMask( "Wet_Kasumi_HalfTurned_Without_HeadBand_03_Moved", "Wet_Kasumi_HalfTurned_Without_HeadBand_03_border_01_left_mask_moved" )
+    
+    image Wet_Kasumi_HalfTurned_Without_HeadBand_03_With_Border_01:
+        contains:
+            "Wet_Kasumi_HalfTurned_Without_HeadBand_03_Masked"
+        contains:
+            "Wet_Kasumi_HalfTurned_Without_HeadBand_03_border_01_left_moved"
+    ##
+    show Wet_Kasumi_HalfTurned_Without_HeadBand_03_With_Border_01 with Dissolve( my_dissolve_02 )
+    hide Wet_Kasumi_HalfTurned_Without_HeadBand_02_With_Border_01 with Dissolve( my_dissolve_01 )
+   
     "Ободок был успешно отсоединён, вторая половинка штекера повисла на груди Касуми."
     
     kenji "Готово!"

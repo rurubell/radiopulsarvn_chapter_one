@@ -1922,26 +1922,82 @@ label day_02:
     scene Day_Kasumis_Home_Aunt_Room with Dissolve( my_dissolve_05 )
     
     "После я вышел на свет, в небольшую комнату."
-    "На кресле, напротив телевизора, сидела пожилая женщина с короткими седыми волосами."
-    "Одета она была в домашнее кимоно."
+    
+    #Мини-ЦГ - Бэк за спрайтом тётки
+    image Kasumis_Aunt_Sprite_SubBG_Moved:
+        contains:
+            "black_image"
+            alpha 0.6
+    
+    image Kasumis_Aunt_Sprite_SubBG_border_01_left_moved:
+        contains:
+            "border_01_left"
+            xpos -1000
+    
+    image Kasumis_Aunt_Sprite_SubBG_border_01_left_mask_moved:
+        contains:
+            "border_01_left_mask"
+            xpos -1000
+    
+    image Kasumis_Aunt_Sprite_SubBG_Masked = AlphaMask( "Kasumis_Aunt_Sprite_SubBG_Moved", "Kasumis_Aunt_Sprite_SubBG_border_01_left_mask_moved" )
+    
+    image Kasumis_Aunt_Sprite_SubBG_With_Border_01:
+        contains:
+            "Kasumis_Aunt_Sprite_SubBG_Masked"
+        contains:
+            "Kasumis_Aunt_Sprite_SubBG_border_01_left_moved"
+    ##
+    show Kasumis_Aunt_Sprite_SubBG_With_Border_01 with Dissolve( my_dissolve_02 )
+    
+    show Day_Kasumi_Aunt_Home_Outfit_Sit_On_ArmChair_With_Glass Normal_Silent at Move( ( 400, 600 ), ( 400, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
+    "На кресле, напротив телевизора, сидела пожилая женщина с короткими седыми волосами. Одета она была в домашнее кимоно."
+    
     "Женщина эта, была словно с иллюстраций про вредный образ жизни."
-    "Во рту она держала сигарету, а в руках — стакан с тёмной жидкостью и пульт от телевизора."
+    "Во рту она держала сигарету, а в руках — стакан с тёмной жидкостью, очевидно алкоголем."
     "На небольшом столике перед ней, стояла бутылка сливового портвейна и тарелка с сушёными морепродуктами."
     
-    kasumi "Касуми? Кто это с тобой?"
+    show Day_Kasumi_Aunt_Home_Outfit_Sit_On_ArmChair_With_Glass Normal_Say at Move( ( 400, 600 ), ( 400, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
+    kasumis_aunt "Касуми? Кто это с тобой?"
+    
+    show Day_Kasumi_Aunt_Home_Outfit_Sit_On_ArmChair_With_Glass Normal_Silent at Move( ( 400, 600 ), ( 400, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
     kenji "Простите за беспокойство…"
-    kasumi "Это Танака-сан, тётя. Я говорила вчера"
     
-    "Тётка Касуми задумалась."
-    "Затянулась сигаретой и посмотрела в потолок."
+    show Day_Kasumi_School_Uniform_Hands_Behind_Back_Without_Headband Normal_Say at Move( ( 1500, 600 ), ( 1500, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 )
     
-    kasumi "А, конечно, Касуми говорила мне. Говорила, что вы помогли ей. Большое спасибо! Хорошо что находятся люди, которые помогают племяннице в её делах. Ах да, моё имя. Миура Усаги."
+    kasumi "Это Танака-сан, тётя. Я же говорила вчера"
     
-    "Тётка Касуми подняла стакан с портвейном, словно хотела показать, что выпьет его в мою честь."
+    show Day_Kasumi_School_Uniform_Hands_Behind_Back_Without_Headband Normal_Silent at Move( ( 1500, 600 ), ( 1500, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
+    "Тётка Касуми, задумалась, пожевывая сигарету."
+    
+    show Day_Kasumi_Aunt_Home_Outfit_Sit_On_ArmChair_With_Glass Normal_Say at Move( ( 400, 600 ), ( 400, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
+    kasumis_aunt "А, конечно, Касуми говорила мне. Говорила, что вы помогли ей. Большое спасибо!"
+    kasumis_aunt "Хорошо что находятся люди, которые помогают племяннице в её делах. Ах да, моё имя. Миура Усаги."
+    
+    show Day_Kasumi_Aunt_Home_Outfit_Sit_On_ArmChair_With_Glass Normal_Silent at Move( ( 400, 600 ), ( 400, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
+    "Тётка Касуми подняла стакан, словно хотела показать, что выпьет его в мою честь."
+    "Выпивка в стакане весело заплескалась и забулькала."
+    
+    show Day_Kasumi_School_Uniform_Hands_Behind_Back_Without_Headband Normal_Say at Move( ( 1500, 600 ), ( 1500, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     kasumi "Вы опять пьёте… Хотя бы при постороннем человеке…"
+    
+    show Day_Kasumi_School_Uniform_Hands_Behind_Back_Without_Headband Normal_Silent at Move( ( 1500, 600 ), ( 1500, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Day_Kasumi_Aunt_Home_Outfit_Sit_On_ArmChair_With_Glass Normal_Say at Move( ( 400, 600 ), ( 400, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
     kasumis_aunt "Прости Касуми, но откуда же я знала что ты приведёшь гостя? А это вино! Если бы оно простояло в холодильнике ещё ночь, у него вкус был бы как у уксуса!"
+    
+    show Day_Kasumi_Aunt_Home_Outfit_Sit_On_ArmChair_With_Glass Normal_Silent at Move( ( 400, 600 ), ( 400, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Day_Kasumi_School_Uniform_Hands_Behind_Back_Without_Headband Normal_Say at Move( ( 1500, 600 ), ( 1500, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
     kasumi "Какой достойный повод, чтобы выпить…"
+    
+    show Day_Kasumi_School_Uniform_Hands_Behind_Back_Without_Headband Normal_Silent at Move( ( 1500, 600 ), ( 1500, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     "В ответ тётка улыбнулась и подмигнула мне."
     "А я внезапно ощутил такую лёгкость, словно сам выпил кружку этого винца."

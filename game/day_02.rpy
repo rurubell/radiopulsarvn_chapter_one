@@ -1998,52 +1998,69 @@ label day_02:
     kasumi "Какой достойный повод, чтобы выпить…"
     
     show Day_Kasumi_School_Uniform_Hands_Behind_Back_Without_Headband Normal_Silent at Move( ( 1500, 600 ), ( 1500, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    show Day_Kasumi_Aunt_Home_Outfit_Sit_On_ArmChair_With_Glass Smile_Silent at Move( ( 400, 600 ), ( 400, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
-    "В ответ тётка улыбнулась и подмигнула мне."
-    "А я внезапно ощутил такую лёгкость, словно сам выпил кружку этого винца."
-    "Вот человек, которого вчера и сегодня я так боялся."
-    "Я представлял её себе как властную, строгую женщину."
-    "Которая примется изучать меня и выпытывать, чего это я брожу по улицам, к девчонкам молодым пристаю."
-    "Но нет, у тётки Касуми характер добрый и весёлый."
-    "И не только не строгая она, а ещё и порокам подвержена похлеще чем я."
-    "Рядом с ней, я почувствовал себя прямо как в детстве."
-    "Когда по пятницам, к отцу приходили коллеги по работе, напивались сакэ до поросячьего визга."
+    "В ответ тётка улыбнулась и подмигнула мне. А я внезапно ощутил такую лёгкость, словно сам выпил кружку этого винца."
+    
+    "Вот женщина, которую вчера и сегодня я так боялся."
+    "Я представлял её себе как властную, строгую женщину. Которая примется изучать меня и выпытывать, чего это я брожу по улицам, к девчонкам молодым пристаю."
+    "Но нет, у тётки Касуми характер добрый и весёлый. И не только не строгая она, а ещё и порокам подвержена похлеще чем я."
+    
+    "Вспомнились давние события, когда я учился еще в младшей школе."
+    "Когда по пятницам, к отцу приходили коллеги по работе, и хорошенько поддавали."
     "И стоило мне оказаться рядом с ними в то время -  меня одаривали деньгами и сладостями и хвалили мои посредственные успехи в школе."
+    "По моему, люди становятся намного лучше, когда выпьют."
     "И даже когда тётка Касуми таки заинтересовалось моей персоной, меня это нисколько не напрягло."
+    
+    show Day_Kasumi_Aunt_Home_Outfit_Sit_On_ArmChair_With_Glass Normal_Say at Move( ( 400, 600 ), ( 400, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     kasumis_aunt "И кто же твой новый знакомый, Касуми? Вы ещё в школе учитесь? Или в университете, студент?"
     
-    "Кажется моя маскировка сработала!"
-    "Звание студента мне очень подходило."
+    show Day_Kasumi_Aunt_Home_Outfit_Sit_On_ArmChair_With_Glass Normal_Silent at Move( ( 400, 600 ), ( 400, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
+    "Кажется моя маскировка сработала! Звание студента мне очень подходило."
     
     kenji "Да, Усаги-сан, я студент."
     
-    "Я озвучил название своего учебного заведения."
-    "Я не врал, я в самом деле когда-то закончил его."
-    "Пусть и давно."
+    "Я озвучил название своего учебного заведения. Я не соврал, я в самом деле когда-то закончил его. Семь лет назад."
     "Это был достаточно известный университет, хоть и не Токийский но тоже неплохой."
     "На тётку Касуми он произвёл сильное впечатление."
     
+    show Day_Kasumi_Aunt_Home_Outfit_Sit_On_ArmChair_With_Glass Normal_Say at Move( ( 400, 600 ), ( 400, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
     kasumis_aunt "О! Когда я училась в школе, в этот университет смогли попасть только пара ребят из нашего выпуска! А на кого вы там учитесь?"
+    
+    show Day_Kasumi_Aunt_Home_Outfit_Sit_On_ArmChair_With_Glass Normal_Silent at Move( ( 400, 600 ), ( 400, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
     kenji "Филологический факультет. Я переводчик."
     
     "Тётка Касуми удивилась ещё больше."
     
+    show Day_Kasumi_Aunt_Home_Outfit_Sit_On_ArmChair_With_Glass Normal_Say at Move( ( 400, 600 ), ( 400, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
     kasumis_aunt "Ого! Переводчик! С китайского?"
+    
+    show Day_Kasumi_Aunt_Home_Outfit_Sit_On_ArmChair_With_Glass Normal_Silent at Move( ( 400, 600 ), ( 400, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
     kenji "С английского!"
     
-    "От удивления, тётка Касуми чуть не выронила стакан."
-    "Да, английский язык считался трудным, здесь на востоке."
-    "Хотя говорят что в мире он — самый лёгкий."
+    "От удивления, тётка Касуми чуть не выронила стакан. Пусть говорят, что Английский - легкий язык."
     "Но здесь, в Японии, владение английским вызывало уважение."
+    
+    show Day_Kasumi_Aunt_Home_Outfit_Sit_On_ArmChair_With_Glass Normal_Say at Move( ( 400, 600 ), ( 400, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     kasumis_aunt "Английский! Вот это да! Ох, в школе мы тоже учили английский. Правда уже и не помню почти ничего… Может только…"
     
-    "Она замолчала и задумалась."
-    "Видимо попыталась вспомнить хоть какую-то реплику на иностранном языке."
+    show Day_Kasumi_Aunt_Home_Outfit_Sit_On_ArmChair_With_Glass Normal_Silent at Move( ( 400, 600 ), ( 400, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
+    "Она замолчала и задумалась. Видимо попыталась вспомнить хоть какую-то реплику на иностранном языке."
     "Голос Касуми перерезал тишину."
     
+    show Day_Kasumi_School_Uniform_Hands_Behind_Back_Without_Headband Normal_Say at Move( ( 1500, 600 ), ( 1500, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
+    
     kasumi "Тётя! Пожалуйста…"
+    
+    show Day_Kasumi_School_Uniform_Hands_Behind_Back_Without_Headband Normal_Silent at Move( ( 1500, 600 ), ( 1500, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     "Женщина решила послушаться свою племянницу, и промолчала."
     "Налила себе ещё стаканчик портвейна и осушила его."

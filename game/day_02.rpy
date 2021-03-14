@@ -78,7 +78,7 @@ label day_02:
     "Я поднялся и надел свою домашнюю одежду."
     "Проходя мимо зеркала, я с трудом удержался от порыва посмотреть в него."
     "Нет, уж лучше не портить себе настроение ещё больше."
-    "Ну ладно хоть очки есть… впрочем, зачем они мне? Я отвратительный и никому не нужный хикикомори."
+    "Ну ладно хоть очки есть... впрочем, зачем они мне? Я отвратительный и никому не нужный хикикомори."
     "Отнесу эту чёртову тележку, извинюсь перед тёткой Касуми и домой. Посижу дома, пока все не устаканится."
     "Пока все не забудут про моё существование."
     "Пока Касуми не повзрослеет и не выйдет замуж."
@@ -219,7 +219,7 @@ label day_02:
     
     show Day_Aiko_Home_Outfit_Hand_Hold_Hand Confused_Say at Move( ( 1560, 630 ), ( 1560, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
-    aiko "Я не знаю… Ты так внезапно куда-то собрался."
+    aiko "Я не знаю... Ты так внезапно куда-то собрался."
     
     show Day_Aiko_Home_Outfit_Hand_Hold_Hand Confused_Silent at Move( ( 1560, 630 ), ( 1560, 630 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
@@ -330,7 +330,7 @@ label day_02:
     
     show Day_Aiko_School_Swimsuit_Hands_On_Hips Suspect_Say with Dissolve( my_dissolve_01 )
     
-    aiko "Нет, ни в какой бассейн я не иду. Это… ну… референсы!"
+    aiko "Нет, ни в какой бассейн я не иду. Это... ну... референсы!"
     
     show Day_Aiko_School_Swimsuit_Hands_On_Hips Suspect_Silent with Dissolve( my_dissolve_01 )
     
@@ -372,7 +372,7 @@ label day_02:
     
     "Айко не нашла слов чтобы ответить мне."
     
-    kenji "Ты что же думаешь, я собрался тайно фотографировать молоденьких девченок? Эх Айко… Как же ты испорчена!"
+    kenji "Ты что же думаешь, я собрался тайно фотографировать молоденьких девченок? Эх Айко... Как же ты испорчена!"
     
     show Day_Aiko_School_Swimsuit_Hands_On_Hips Surprised_Say with Dissolve( my_dissolve_01 )
     
@@ -524,7 +524,7 @@ label day_02:
     "Набрал побольше воздуха в грудь. Вспомнил вчерашние упражнения на устранение гнусавости, напряг нужные мышцы горла, чтобы сформировать «певческий зевок»."
     "Погладил ладонью живот, чтобы узнать насколько хорошо раздулась диафрагма. Приготовился."
     
-    kenji "Добргыххх… Кха! Кхе!"
+    kenji "Добргыххх... Кха! Кхе!"
     
     "Похоже я перестарался. Воздух пошёл не в то горло, вырвался через нос и я закашлялся"
     "Да уж, хотел как лучше, но лучше бы я молча бросил в Касуми её тележку и убежал поскорее домой."
@@ -533,7 +533,7 @@ label day_02:
     
     "Касуми вскочила и повернулась ко мне. Я хватая ртом воздух еле произнёс."
     
-    kenji "Ка... Касуми… Добрый день… Это.. Это я… Кендзи!"
+    kenji "Ка... Касуми... Добрый день... Это.. Это я... Кендзи!"
     
     show Day_Kasumi_School_Uniform_Hands_Behind_Back Surprised_Say with Dissolve( my_dissolve_01 )
     
@@ -541,7 +541,7 @@ label day_02:
     
     show Day_Kasumi_School_Uniform_Hands_Behind_Back Surprised_Silent with Dissolve( my_dissolve_01 )
     
-    kenji "Все… Всё в порядке… Просто я… Муху проглотил!"
+    kenji "Все... Всё в порядке... Просто я... Муху проглотил!"
     
     show Day_Kasumi_School_Uniform_Hands_Behind_Back Normal_Silent with Dissolve( my_dissolve_01 )
     
@@ -585,7 +585,7 @@ label day_02:
     
     show Day_Kasumi_School_Uniform_Hands_Behind_Back Normal_Silent with Dissolve( my_dissolve_01 )
     
-    kenji "Вот как… Значит ты за ним при шла?"
+    kenji "Вот как... Значит ты за ним при шла?"
     
     show Day_Kasumi_School_Uniform_Hands_Behind_Back Normal_Say with Dissolve( my_dissolve_01 )
     
@@ -694,7 +694,7 @@ label day_02:
     show Day_Kasumi_School_Uniform_Hands_Behind_Back Normal_Say with Dissolve( my_dissolve_01 )
     
     kasumi "Извините Танака-сан, но похоже я зря вас потревожила вчера..."
-    kasumi "Хотя… Пусть лежит, может быть я смогу что-то с ней сделать."
+    kasumi "Хотя... Пусть лежит, может быть я смогу что-то с ней сделать."
     
     show Day_Kasumi_School_Uniform_Hands_Behind_Back Normal_Silent with Dissolve( my_dissolve_01 )
     
@@ -747,7 +747,7 @@ label day_02:
     
     show Day_Kasumi_School_Uniform_Hands_Behind_Back Normal_Silent with Dissolve( my_dissolve_01 )
     
-    kenji "Гляди! Тут адрес…"
+    kenji "Гляди! Тут адрес..."
     
     "Я осёкся на половине фразы. Черт! Я снова сказал то, чего не следовало."
     "Но похоже что девушку мои слова не обидели."
@@ -777,7 +777,7 @@ label day_02:
     
     show Day_Kasumi_School_Uniform_Hands_Behind_Back Normal_Say with Dissolve( my_dissolve_01 )
     
-    kasumi "Ну… Если вам не трудно… Спасибо…"
+    kasumi "Ну... Если вам не трудно... Спасибо..."
     kasumi "А как же вы его унесёте если он такой тяжёлый?"
     
     show Day_Kasumi_School_Uniform_Hands_Behind_Back Normal_Silent with Dissolve( my_dissolve_01 )
@@ -850,7 +850,7 @@ label day_02:
     
     hide Day_Shops_And_Vending_Machines_01_Pointer
     
-    kenji "Касуми? Ты не хочешь… Не хочешь мороженное?"
+    kenji "Касуми? Ты не хочешь... Не хочешь мороженное?"
     
     show Day_Kasumi_School_Uniform_Hands_Behind_Back Normal_Say with Dissolve( my_dissolve_03 )
     
@@ -880,7 +880,7 @@ label day_02:
     
     show Day_Kasumi_School_Uniform_Hands_Behind_Back Normal_Say with Dissolve( my_dissolve_01 )
     
-    kasumi "Но… У меня нет с собой денег..."
+    kasumi "Но... У меня нет с собой денег..."
     
     show Day_Kasumi_School_Uniform_Hands_Behind_Back Normal_Silent with Dissolve( my_dissolve_01 )
     
@@ -888,7 +888,7 @@ label day_02:
     
     show Day_Kasumi_School_Uniform_Hands_Behind_Back Normal_Say with Dissolve( my_dissolve_01 )
     
-    kasumi "Спасибо, Танака-сан… Клубничное."
+    kasumi "Спасибо, Танака-сан... Клубничное."
     
     hide Day_Kasumi_School_Uniform_Hands_Behind_Back with Dissolve( my_dissolve_01 )
     
@@ -938,7 +938,7 @@ label day_02:
     "Всех прохожих как ветром сдуло."
     "Не то чтобы я так хотел, чтобы люди смотрели на нас. Но всё-таки!"
     "Для кого я режиссировал эту сценку? Такой момент и останется никем не замеченным!"
-    "Да… Такой момент…"
+    "Да... Такой момент..."
     "Я полез в карман штанов за телефоном. Не пропадать же зря моменту."
     "Раз это никто не видит, я сделаю фотографию."
     
@@ -976,7 +976,7 @@ label day_02:
     
     hide DAY_02_Wending_Machines_Shooter_Moved_Masked with Dissolve( my_dissolve_02 ) 
     
-    kenji "Ой! Касуми! У тебя на мороженном сидит… Жук!"
+    kenji "Ой! Касуми! У тебя на мороженном сидит... Жук!"
     
     show Day_Kasumi_School_Uniform_Hold_Ice_Cream Normal_Say_with_Bug at Move( ( 450, 600 ), ( 450, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 ) 
     hide Day_Kasumi_School_Uniform_Eat_Ice_Cream with Dissolve( my_dissolve_01 ) 
@@ -1017,7 +1017,7 @@ label day_02:
     "В руке у меня теперь было два стаканчика мороженного."
     "Моё, и мороженное Касуми, которое осквернил шмель."
     
-    kenji "Мороженное… Тебе новое купить, Касуми?"
+    kenji "Мороженное... Тебе новое купить, Касуми?"
     
     show Day_Kasumi_School_Uniform_Hands_Behind_Back Normal_Say at Move( ( 450, 600 ), ( 450, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_03 ) 
     
@@ -1039,7 +1039,7 @@ label day_02:
     
     show Day_Kasumi_School_Uniform_Hands_Behind_Back Normal_Say
     
-    kasumi "Блок питания… Может быть нам уже пойти за ним? Танака-сан?"
+    kasumi "Блок питания... Может быть нам уже пойти за ним? Танака-сан?"
     
     show Day_Kasumi_School_Uniform_Hands_Behind_Back Normal_Silent
     
@@ -1118,7 +1118,7 @@ label day_02:
     
     show Day_Kasumi_Xmas_Elf Concerned_Silent with Dissolve( my_dissolve_01 )
     
-    kenji "Угх… Угху-ху!"
+    kenji "Угх... Угху-ху!"
     
     "Я закашлялся."
     "Выплюнул недоеденный комок мороженного, как кот выплёвывает комок шерсти."
@@ -1131,7 +1131,7 @@ label day_02:
     
     show Day_Kasumi_School_Uniform_Hands_Behind_Back Normal_Silent with Dissolve( my_dissolve_01 )
     
-    kenji "Муха… Чёрт бы её побрал… Кажется ещё одну чуть не проглотил."
+    kenji "Муха... Чёрт бы её побрал... Кажется ещё одну чуть не проглотил."
     
     show Day_Kasumi_School_Uniform_Hands_Behind_Back Normal_Say with Dissolve( my_dissolve_01 )
     
@@ -1145,7 +1145,7 @@ label day_02:
     "В носу свербило от запаха клубники, и я посадил несколько бледно-розовых пятен на свои джинсы и рубаху."
     "Ну и ладно! Оно того стоило!"
     "Это был самый настоящий косвенный поцелуй!"
-    "Ах… Надеюсь Касуми не учует что от меня разит клубникой, и не подумает чего лишнего!"
+    "Ах... Надеюсь Касуми не учует что от меня разит клубникой, и не подумает чего лишнего!"
     
     scene black_image with Dissolve( my_dissolve_05 )
     
@@ -1229,7 +1229,7 @@ label day_02:
     
     hide First_Trashman_Voice_Through_intercom with Dissolve( my_dissolve_01 )
     
-    kenji "Йоши? Нет… Добрый день… Я пришел… Этот адрес был указан на табличке, на мусорной площадке…"
+    kenji "Йоши? Нет... Добрый день... Я пришел... Этот адрес был указан на табличке, на мусорной площадке..."
     
     "Я продиктовал адрес нашей мусорной площадки."
     
@@ -1265,8 +1265,8 @@ label day_02:
     
     show Day_First_Trash_Place_Man_Hands_Down Normal_Say with Dissolve( my_dissolve_01 )
     
-    trash_man_01 "Я думал что Йоши пришел, этот парень у нас водителем работает…"
-    trash_man_01 "Там девчонка с тобой, да? Не понравится ей наш беспорядок…"
+    trash_man_01 "Я думал что Йоши пришел, этот парень у нас водителем работает..."
+    trash_man_01 "Там девчонка с тобой, да? Не понравится ей наш беспорядок..."
     
     show Day_First_Trash_Place_Man_Hands_Down Normal_Silent with Dissolve( my_dissolve_01 )
     
@@ -1309,9 +1309,9 @@ label day_02:
     
     show Day_First_Trash_Place_Man_With_Phone Normal_Say with Dissolve( my_dissolve_01 )
     
-    trash_man_01 "Эй … привет… Послушай, тут какой-то парень пришел, говорит вчера выбросил по ошибке ценную вещь…"
-    trash_man_01 "Да, на нашу площадку… Вчера должны были привезти электронику…"
-    trash_man_01 "В каком боксе? А… Нет? Не было? А… Ну ладно…"
+    trash_man_01 "Эй ... привет... Послушай, тут какой-то парень пришел, говорит вчера выбросил по ошибке ценную вещь..."
+    trash_man_01 "Да, на нашу площадку... Вчера должны были привезти электронику..."
+    trash_man_01 "В каком боксе? А... Нет? Не было? А... Ну ладно..."
     
     hide Day_First_Trash_Place_Man_With_Phone with Dissolve( my_dissolve_01 )
     show Day_First_Trash_Place_Man_Hands_Down Normal_Silent with Dissolve( my_dissolve_01 )
@@ -1321,7 +1321,7 @@ label day_02:
     show Day_First_Trash_Place_Man_Hands_Down Normal_Say with Dissolve( my_dissolve_01 )
     
     trash_man_01 "Похоже что Йоши не привозил вчера мусор."
-    trash_man_01 "Странно… Может он перепутал чего? Сейчас я позвоню самому Йоши, и спрошу что да как…"
+    trash_man_01 "Странно... Может он перепутал чего? Сейчас я позвоню самому Йоши, и спрошу что да как..."
     
     hide Day_First_Trash_Place_Man_Hands_Down with Dissolve( my_dissolve_01 )
     show Day_First_Trash_Place_Man_With_Phone Normal_Silent with Dissolve( my_dissolve_01 )
@@ -1479,7 +1479,7 @@ label day_02:
     
     show Day_Hooligan_Hide_Hands Surprised_Say with Dissolve( my_dissolve_02 )
     
-    hooligan "Ай! Мне деньги заплатили! Я не хотел сам…"
+    hooligan "Ай! Мне деньги заплатили! Я не хотел сам..."
     
     show Day_Hooligan_Hide_Hands Surprised_Silent with Dissolve( my_dissolve_01 )
     
@@ -1563,7 +1563,7 @@ label day_02:
     "Когда я доковылял обратно к будке служащего мусорки — он сам уже стоял на улице, рядом с Касуми."
     "В руках у девушки было полотенце, которое она прижимала к груди."
     
-    kenji "Черт! Почти поймал одного, но он выскользнул. А я… Споткнулся…"
+    kenji "Черт! Почти поймал одного, но он выскользнул. А я... Споткнулся..."
     
     show Day_First_Trash_Place_Man_Hands_Down Normal_Say at Move( ( 600, 600 ), ( 600, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
@@ -1580,7 +1580,7 @@ label day_02:
     show Day_First_Trash_Place_Man_Hands_Down Normal_Say at Move( ( 600, 600 ), ( 600, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
     trash_man_01 "Ага! Записываем. Что, хочешь хулиганов опознать? Вообще, хорошая идея."
-    trash_man_01 "Правда я не знаю как с этой аппаратурой работать. Сейчас позвоню начальству, спрошу…"
+    trash_man_01 "Правда я не знаю как с этой аппаратурой работать. Сейчас позвоню начальству, спрошу..."
     
     show Day_First_Trash_Place_Man_Hands_Down Normal_Silent at Move( ( 600, 600 ), ( 600, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
@@ -1610,12 +1610,12 @@ label day_02:
     
     trash_man_01 "Я тут Йоши успел позвонить. Он в самом деле не приезжал, и не оставлял вчерашний мусор здесь."
     trash_man_01 "Видишь ли, у нас здесь только временное хранение. А вчера значит, мусора было немного."
-    trash_man_01 "Он всё за один рейс забрал. Ну и поехал сразу на главный полигон. Там где завод по переработке мусора…"
+    trash_man_01 "Он всё за один рейс забрал. Ну и поехал сразу на главный полигон. Там где завод по переработке мусора..."
     
     show Day_First_Trash_Place_Man_Hands_Down Normal_Silent at Move( ( 600, 600 ), ( 600, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     show Day_Kasumi_School_Uniform_Wet_Hold_Towel Normal_Silent at Move( ( 1300, 600 ), ( 1300, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
-    kenji "Значит кранты ему… Блоку питания…"
+    kenji "Значит кранты ему... Блоку питания..."
     
     show Day_First_Trash_Place_Man_Hands_Down Normal_Say at Move( ( 600, 600 ), ( 600, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
@@ -1672,11 +1672,11 @@ label day_02:
     
     show Day_Kasumi_School_Uniform_Wet_Hold_Towel Normal_Say with Dissolve( my_dissolve_01 )
     
-    kasumi "Танака-сан… Это сильно заметно? Что одежда у меня сырая?"
+    kasumi "Танака-сан... Это сильно заметно? Что одежда у меня сырая?"
     
     show Day_Kasumi_School_Uniform_Wet_Hold_Towel Normal_Silent with Dissolve( my_dissolve_01 )
     
-    kenji "Да нет, не очень… Может, если совсем близко подойти…"
+    kenji "Да нет, не очень... Может, если совсем близко подойти..."
     
     "Я посмотрел на лужу под ногами девушки."
     "Асфальт стремительно высыхал, и только жёлтые, резиновые ошмётки лежали на нём тут и там."
@@ -1686,7 +1686,7 @@ label day_02:
     
     show Day_Kasumi_School_Uniform_Wet_Hold_Towel Normal_Say with Dissolve( my_dissolve_01 )
     
-    kasumi "Ничего…"
+    kasumi "Ничего..."
     
     show Day_Kasumi_School_Uniform_Wet_Hold_Towel Normal_Silent with Dissolve( my_dissolve_01 )
     
@@ -1694,7 +1694,7 @@ label day_02:
     
     show Day_Kasumi_School_Uniform_Wet_Hold_Towel Normal_Say with Dissolve( my_dissolve_01 )
     
-    kasumi "Танака-сан… Вы можете снять ободок с моей головы? Кажется детектор с ума сошёл, пищит не умолкая."
+    kasumi "Танака-сан... Вы можете снять ободок с моей головы? Кажется детектор с ума сошёл, пищит не умолкая."
     kasumi "Там разъем на проводе, его нужно разомкнуть."
     
     show Day_Kasumi_School_Uniform_Wet_Hold_Towel Normal_Silent with Dissolve( my_dissolve_01 )
@@ -1843,7 +1843,7 @@ label day_02:
     show Day_Kasumi_School_Uniform_Wet_Hold_Towel_Without_HairBand Normal_Silent with Dissolve( my_dissolve_01 )
     
     kenji "Ободок, его тебе обратно, на голову одеть, Касуми?"
-    kasumi "Нет… Если вам не трудно, Танака-сан. Не могли бы вы его подержать некоторое время?"
+    kasumi "Нет... Если вам не трудно, Танака-сан. Не могли бы вы его подержать некоторое время?"
     
     "Держать ободок, который практически ничего не весил, мне было не трудно."
     "Я поднёс эту вещицу поближе к глазам, чтобы рассмотреть. Даже подумал о том, чтобы понюхать её."
@@ -1855,7 +1855,7 @@ label day_02:
     
     show Day_Kasumi_School_Uniform_Wet_Hold_Towel_Without_HairBand Normal_Say with Dissolve( my_dissolve_01 )
     
-    kasumi "Да… но он… Служащий сказал, что перерабатывать мусор будут уже завтра…"
+    kasumi "Да... но он... Служащий сказал, что перерабатывать мусор будут уже завтра..."
     
     show Day_Kasumi_School_Uniform_Wet_Hold_Towel_Without_HairBand Normal_Silent with Dissolve( my_dissolve_01 )
     
@@ -1869,7 +1869,7 @@ label day_02:
     
     show Day_Kasumi_School_Uniform_Wet_Hold_Towel_Without_HairBand Normal_Say with Dissolve( my_dissolve_01 )
     
-    kasumi "Да, пожалуй… Сегодня жарко, форма высохнет и так. А вот ботинки — нет."
+    kasumi "Да, пожалуй... Сегодня жарко, форма высохнет и так. А вот ботинки — нет."
     
     show Day_Kasumi_School_Uniform_Wet_Hold_Towel_Without_HairBand Normal_Silent with Dissolve( my_dissolve_01 )
     
@@ -1879,7 +1879,7 @@ label day_02:
     
     show Day_Kasumi_School_Uniform_Wet_Hold_Towel_Without_HairBand Normal_Say with Dissolve( my_dissolve_01 )
     
-    kasumi "Придётся домой сходить… Ну хоть сможете отдать тележку моей тёте лично в руки, Танака-сан."
+    kasumi "Придётся домой сходить... Ну хоть сможете отдать тележку моей тёте лично в руки, Танака-сан."
     
     show Day_Kasumi_School_Uniform_Wet_Hold_Towel_Without_HairBand Normal_Silent with Dissolve( my_dissolve_01 )
     
@@ -1963,7 +1963,7 @@ label day_02:
     
     show Day_Kasumi_Aunt_Home_Outfit_Sit_On_ArmChair_With_Glass Normal_Silent at Move( ( 400, 600 ), ( 400, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
-    kenji "Простите за беспокойство…"
+    kenji "Простите за беспокойство..."
     
     show Day_Kasumi_School_Uniform_Hands_Behind_Back_Without_Headband Normal_Say at Move( ( 1500, 600 ), ( 1500, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_02 )
     
@@ -1985,7 +1985,7 @@ label day_02:
     
     show Day_Kasumi_School_Uniform_Hands_Behind_Back_Without_Headband Normal_Say at Move( ( 1500, 600 ), ( 1500, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
-    kasumi "Вы опять пьёте… Хотя бы при постороннем человеке…"
+    kasumi "Вы опять пьёте... Хотя бы при постороннем человеке..."
     
     show Day_Kasumi_School_Uniform_Hands_Behind_Back_Without_Headband Normal_Silent at Move( ( 1500, 600 ), ( 1500, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     show Day_Kasumi_Aunt_Home_Outfit_Sit_On_ArmChair_With_Glass Normal_Say at Move( ( 400, 600 ), ( 400, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
@@ -1995,7 +1995,7 @@ label day_02:
     show Day_Kasumi_Aunt_Home_Outfit_Sit_On_ArmChair_With_Glass Normal_Silent at Move( ( 400, 600 ), ( 400, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     show Day_Kasumi_School_Uniform_Hands_Behind_Back_Without_Headband Normal_Say at Move( ( 1500, 600 ), ( 1500, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
-    kasumi "Какой достойный повод, чтобы выпить…"
+    kasumi "Какой достойный повод, чтобы выпить..."
     
     show Day_Kasumi_School_Uniform_Hands_Behind_Back_Without_Headband Normal_Silent at Move( ( 1500, 600 ), ( 1500, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     show Day_Kasumi_Aunt_Home_Outfit_Sit_On_ArmChair_With_Glass Smile_Silent at Move( ( 400, 600 ), ( 400, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
@@ -2049,7 +2049,7 @@ label day_02:
     
     show Day_Kasumi_Aunt_Home_Outfit_Sit_On_ArmChair_With_Glass Normal_Say at Move( ( 400, 600 ), ( 400, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
-    kasumis_aunt "Английский! Вот это да! Ох, в школе мы тоже учили английский. Правда уже и не помню почти ничего… Может только…"
+    kasumis_aunt "Английский! Вот это да! Ох, в школе мы тоже учили английский. Правда уже и не помню почти ничего... Может только..."
     
     show Day_Kasumi_Aunt_Home_Outfit_Sit_On_ArmChair_With_Glass Normal_Silent at Move( ( 400, 600 ), ( 400, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
@@ -2058,7 +2058,7 @@ label day_02:
     
     show Day_Kasumi_School_Uniform_Hands_Behind_Back_Without_Headband Normal_Say at Move( ( 1500, 600 ), ( 1500, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
-    kasumi "Тётя! Пожалуйста…"
+    kasumi "Тётя! Пожалуйста..."
     
     show Day_Kasumi_School_Uniform_Hands_Behind_Back_Without_Headband Normal_Silent at Move( ( 1500, 600 ), ( 1500, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
     
@@ -2151,7 +2151,7 @@ label day_02:
     show Kasumis_Aunt_Sprite_SubBG_With_Border_01 with Dissolve( my_dissolve_02 )
     show Day_Kasumi_Aunt_Home_Outfit_Sit_On_ArmChair_With_Glass Normal_Say at Move( ( 400, 600 ), ( 400, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 ) 
     
-    kasumis_aunt "Похоже Касуми за чем-то пошла в свою комнату…"
+    kasumis_aunt "Похоже Касуми за чем-то пошла в свою комнату..."
     
     show Day_Kasumi_Aunt_Home_Outfit_Sit_On_ArmChair_With_Glass Normal_Silent at Move( ( 400, 600 ), ( 400, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 ) 
     
@@ -2168,7 +2168,7 @@ label day_02:
     "Я спешно принялся придумывать себе возраст."
     "Надо было и не слишком малый взять, и уложиться в срок обучения в университете."
     
-    kenji "Двадцать.. два…"
+    kenji "Двадцать.. два..."
     
     "Тётка Касуми довольно улыбнулась, и потянула руку с фляжкой в сторону моей чашки с чаем."
     "Я уловил это движение и замахал руками в знак протеста."
@@ -2190,7 +2190,7 @@ label day_02:
     
     kasumis_aunt "Не волнуйтесь, Касуми сейчас придёт."
     kasumis_aunt "Наверное опять чудит над чем-то в своей комнате. Вечно у неё какие-то дела!"
-    kasumis_aunt"И мне даже ничего не говорит! Хотя… если и говорит, я ни слова понять не могу…"
+    kasumis_aunt"И мне даже ничего не говорит! Хотя... если и говорит, я ни слова понять не могу..."
     
     show Day_Kasumi_Aunt_Home_Outfit_Sit_On_ArmChair_With_Glass Normal_Silent at Move( ( 400, 600 ), ( 400, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 ) 
     
@@ -2210,7 +2210,7 @@ label day_02:
     
     show Day_Kasumi_Aunt_Home_Outfit_Sit_On_ArmChair_With_Glass Normal_Say at Move( ( 400, 600 ), ( 400, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 ) 
     
-    kasumis_aunt "Да… Как уже достали эти хулиганы… И чего они пристали к этой бедной девочке? Чем она им мешает? То водой обольют, то подножку поставят…"
+    kasumis_aunt "Да... Как уже достали эти хулиганы... И чего они пристали к этой бедной девочке? Чем она им мешает? То водой обольют, то подножку поставят..."
     
     show Day_Kasumi_Aunt_Home_Outfit_Sit_On_ArmChair_With_Glass Normal_Silent at Move( ( 400, 600 ), ( 400, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 ) 
     
@@ -2218,7 +2218,7 @@ label day_02:
     
     show Day_Kasumi_Aunt_Home_Outfit_Sit_On_ArmChair_With_Glass Normal_Say at Move( ( 400, 600 ), ( 400, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 ) 
     
-    kasumis_aunt "Не в первый… Причём Касуми и не говорит ничего. Соседи передали. Видели  как мальчишки помладше нападают на неё."
+    kasumis_aunt "Не в первый... Причём Касуми и не говорит ничего. Соседи передали. Видели  как мальчишки помладше нападают на неё."
     
     show Day_Kasumi_Aunt_Home_Outfit_Sit_On_ArmChair_With_Glass Normal_Silent at Move( ( 400, 600 ), ( 400, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 ) 
     
@@ -2294,9 +2294,9 @@ label day_02:
     show Day_Kasumi_Aunt_Home_Outfit_Sit_On_ArmChair_With_Glass Normal_Silent at Move( ( 400, 600 ), ( 400, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 ) 
     
     kasumis_aunt "Я просила Касуми, не выходить на улицу, раз такое дело. Но она всё равно."
-    kasumis_aunt "Железки какие-то приносит, собирает что-то непонятное…"
+    kasumis_aunt "Железки какие-то приносит, собирает что-то непонятное..."
     kasumis_aunt "Но хоть польза есть от этого. Если что дома ломается — Касуми чинит в минуту. Даже в розетки не боится лезть."
-    kasumis_aunt "Жаль не всё ей по зубам. С вентилятором этим, возилась, возилась… А толку не вышло…"
+    kasumis_aunt "Жаль не всё ей по зубам. С вентилятором этим, возилась, возилась... А толку не вышло..."
     
     show Day_Kasumi_Aunt_Home_Outfit_Sit_On_ArmChair_With_Glass Normal_Silent at Move( ( 400, 600 ), ( 400, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 ) 
     show Day_Kasumi_School_Uniform_Hands_Behind_Back Normal_Say at Move( ( 1500, 600 ), ( 1500, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 )
@@ -2348,7 +2348,7 @@ label day_02:
     kasumis_aunt "Ну что ты, дорогая, это было всего раз и совершенно случайно!"
     
     "Похоже тётка Касуми иногда допивается до такого состояния, что забывает перед сном выключать бытовые приборы. И подливает свое зелье во все чашки что видит.."
-    "Да уж…"
+    "Да уж..."
     "На некоторое время разговоры притихли, раздавался только хруст печенья, бульканье чая и бормотание телевизора."
     "Молчание прервала тётка Касуми."
     
@@ -2359,8 +2359,8 @@ label day_02:
     "Я заметил что на оконной занавеске, была закреплена антенна, очевидно самодельная, сделанная из проволоки."
     
     kasumi "Вы наверное погнули её! А тут, чтобы второй мультиплексор ловило, надо точно настраивать. Потом сделаю, вечером."
-    kasumis_aunt "Эх мультиплексор… Сегодня должны были показать замечательную передачу. "
-    kasumis_aunt "Говорят — в правительстве Японии завелись инопланетяне… Какую только чушь не показывают, правда, Касуми?"
+    kasumis_aunt "Эх мультиплексор... Сегодня должны были показать замечательную передачу. "
+    kasumis_aunt "Говорят — в правительстве Японии завелись инопланетяне... Какую только чушь не показывают, правда, Касуми?"
     
     "Тётка Касуми снова достала фляжку с коньяком из под кимоно. Но в этот раз не налила его в чай а принялась пить прямо из горла."
     
@@ -2395,7 +2395,7 @@ label day_02:
     kasumis_aunt "У вас? Танака-сан, надеюсь Касуми вас не мучает своими просьбами?"
     kasumis_aunt "Большое спасибо, что помогли ей вчера! Но вы же не можете делать это вечно!"
     kasumis_aunt "Касуми! Надеюсь ты не доставляешь много хлопот Танаке-сану? Сама знаешь, в таком приличном университете, наверное и летом надо уделять внимание учёбе."
-    kasumis_aunt "А ты со своими пустяками…"
+    kasumis_aunt "А ты со своими пустяками..."
     
     show Day_Kasumi_Aunt_Home_Outfit_Sit_On_ArmChair_With_Glass Normal_Silent at Move( ( 400, 600 ), ( 400, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 ) 
     
@@ -2413,7 +2413,7 @@ label day_02:
     
     scene black_image with Dissolve( my_dissolve_03 )
     
-    kasumi "Как же, беспокоитесь вы…"
+    kasumi "Как же, беспокоитесь вы..."
     
     scene Day_Kasumi_Home with Dissolve( my_dissolve_05 ) 
     
@@ -2432,7 +2432,7 @@ label day_02:
     "Да и над Касуми тоже, превосходство чувствовал. Вспомнилось, как она торопливо ощупывала грязные чашки и как украдкой отряхивала ступни от грязи, когда надевала обувь в прихожей."
     
     "Видно, что Касуми стесняется своей пьющей тётки, и беспорядка в доме."
-    "Конечно, Касуми ни в чём не виновата, даже наоборот… Да и мне самому, неловко от всего этого, и жалко Касуми."
+    "Конечно, Касуми ни в чём не виновата, даже наоборот... Да и мне самому, неловко от всего этого, и жалко Касуми."
     "Но каким же приятным было это чувство жалости!"
     
     "Вот значит как дело обернулось!"
@@ -2537,7 +2537,7 @@ label day_02:
     
     kenji_phone "Извращенец! Педофил! Вызовите полицию!"
     
-    "Что за чертовщина с моим телефоном⁈ Какого хрена из него доносятся эти крики?"
+    "Что за чертовщина с моим телефоном?! Какого хрена из него доносятся эти крики?"
     "Я принялся давить на качельку громкости, чтобы убавить звук, но не тут то было."
     "Я жал на кнопку выключения, но телефон продолжал верещать на всю улицу."
     
@@ -2546,135 +2546,166 @@ label day_02:
     
     kenji_phone "Педофи-ил! Поли-иция!"
     
+    scene Day_Another_Station with Dissolve( my_dissolve_01 ) 
+    
     "Не с первого раза, но у меня получилось сорвать заднюю крышку телефона и выцарапать аккумулятор."
     "Телефон мгновенно умолк."
-    "В ушах у меня звенело и билось сердце."
-    "А Касуми отскочила от меня на добрые два метра."
+    "В ушах у меня звенело и билось сердце. А Касуми отскочила от меня на добрые два метра."
+    
+    show Day_Kasumi_School_Uniform_Hands_Behind_Back Surprised_Silent at Move( ( 1400, 600 ), ( 1400, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_03 ) 
+    
     "Вид у неё был испуганный."
     "Как только мне удалось справиться с телефоном, она, заикаясь спросила."
     
-    kasumi "Та… нака… сан… Что это… было⁈"
-    kenji "Это…"
+    show Day_Kasumi_School_Uniform_Hands_Behind_Back Surprised_Say at Move( ( 1400, 600 ), ( 1400, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 ) 
     
-    "Вопли эти мне были знакомы."
+    kasumi "Та... нака... сан... Что это... было?!"
+    
+    show Day_Kasumi_School_Uniform_Hands_Behind_Back Surprised_Silent at Move( ( 1400, 600 ), ( 1400, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 ) 
+    
+    kenji "Это... это..."
+    
+    "И в самом деле, что это чёрт возьми такое?!"
+    "Впрочем, вопли эти мне были знакомы."
     "Такие звуки издавал «отпугиватель извращенцев» - брелочек, который носили с собой ученицы младшей школы."
-    "Такие брелочки цепляли к ключам, сумочкам."
-    "И если вдруг какой извращенец поймает маленькую девчонку в тихом месте, зажмет ей рот."
-    "Или если от страха её голос перехватит — нажмёт девочка кнопочку и  брелочек заорёт на всю улицу."
-    "А извращенец — сбежит."
+    "Такие брелочки цепляли к ключам, сумочкам. И если вдруг какой извращенец поймает маленькую девчонку в тихом месте, зажмет ей рот."
+    "Или если от страха её голос перехватит — нажмёт девочка кнопочку и  брелочек заорёт на всю улицу. А извращенец — сбежит."
+    
     "Я сам видел такие, правда когда в школе учился — таких у наших девчонок не было, не изобрели ещё."
     "А вот у Айко таких штук  навалом."
     
-    kenji "Это брелок…"
+    "Не понял я правда, почему эти звуки доносились из моего телефона. Что за шутки?"
+    
+    kenji "Это брелок..."
     
     "Было совершенно непонятно, какого черта телефон так заверещал."
-    "А Касуми наверное и вовсе не поняла, что это тут у меня."
-    "Она вопросительно молчала."
+    "А Касуми наверное и вовсе не поняла, что это тут у меня и вопросительно молчала."
     
-    kenji "Это сестры брелок!"
-    kasumi "Сестры⁈ Это что? Который защитный, для детей?"
+    kenji "Это брелок... сестры!"
+    
+    show Day_Kasumi_School_Uniform_Hands_Behind_Back Surprised_Say at Move( ( 1400, 600 ), ( 1400, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 ) 
+    
+    kasumi "Сестры?! Это что? Который защитный, для детей? От хулиганов?"
+    
+    show Day_Kasumi_School_Uniform_Hands_Behind_Back Surprised_Silent at Move( ( 1400, 600 ), ( 1400, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_01 ) 
     
     "Похоже Касуми знала про существование таких штуковин."
     
-    kenji "Ага! Кажется я… я перепутал и взял с собой ключи от дома, не свои… сестры. А тут брелок этот…"
-    kasumi "Ох… Это было так внезапно…"
+    kenji "Ага! Кажется я... я перепутал и взял с собой ключи от дома, не свои... сестры. А тут брелок этот..."
     
-    "Конечно внезапно."
-    "Я сам чуть концы не отдал от этих воплей."
+    show Day_Kasumi_School_Uniform_Hands_Behind_Back Normal_Say at Move( ( 1400, 600 ), ( 1400, 600 ), 0.0, xanchor="center", yanchor="center") with Dissolve( my_dissolve_03 ) 
+    
+    kasumi "Ох... Это было так внезапно..."
+    
+    hide Day_Kasumi_School_Uniform_Hands_Behind_Back with Dissolve( my_dissolve_01 ) 
+    show Day_Kasumi_School_Uniform_Hands_Behind_Back Normal_Silent with Dissolve( my_dissolve_01 ) 
+    
+    "Конечно внезапно. Я сам чуть концы не отдал от этих воплей."
     "По рукам и ногам бегали мурашки, рубашка прилипла к вспотевшей спине."
     "В дрожащих руках я сжимал телефон и аккумулятор от него."
     "Собирать телефон я не решился и сложил его в разобранном виде в карман."
     
-    kasumi "Как же вы не заметили, Танака-сан? С такими вещами надо аккуратнее, не слышал ли кто…"
+    show Day_Kasumi_School_Uniform_Hands_Behind_Back Normal_Say with Dissolve( my_dissolve_01 ) 
+    
+    kasumi "Как же вы не заметили, Танака-сан? С такими вещами надо аккуратнее, не слышал ли кто..."
+    
+    show Day_Kasumi_School_Uniform_Hands_Behind_Back Normal_Silent with Dissolve( my_dissolve_01 ) 
     
     "Да уж, этого я тоже боялся."
-    "Конечно, телефон он и есть телефон, кричит не так громко как брелочек."
-    "Но всё равно, мог кто и услышать."
+    "Конечно, телефон он и есть телефон, кричит не так громко как брелочек. Но всё равно, мог кто и услышать."
     "Я оглядывался по сторонам, но никого постороннего не увидел."
-    "Похоже этот вопль и не слышал никто."
+    "Похоже что свидетелем этого вопля остались только я и Касуми. И это хорошо."
     "Не хотелось бы разъяснять посторонним или полиции, что да как, и что это просто случайность."
     
     kenji "Да уж. Хорошо что на перроне никого нет."
-    kasumi "А у вас… Есть сестра, Танака-сан?"
+    
+    show Day_Kasumi_School_Uniform_Hands_Behind_Back Normal_Say with Dissolve( my_dissolve_01 ) 
+    
+    kasumi "А у вас... Есть сестра, Танака-сан?"
+    
+    show Day_Kasumi_School_Uniform_Hands_Behind_Back Normal_Silent with Dissolve( my_dissolve_01 ) 
+    
     kenji "Ага! Правда она мне не родная, сводная."
+    
+    show Day_Kasumi_School_Uniform_Hands_Behind_Back Normal_Say with Dissolve( my_dissolve_01 ) 
+    
     kasumi "Не родная?"
     
-    "Я рассказал Касуми про Айко."
-    "Про её и своего отца."
-    "Правда умолчал некоторые подробности о нашей жизни, в основном связанные с моим безвылазным сидением дома."
-    "Наверное не стоило мне рассказывать такие подробности."
-    "Мог бы сказать что Айко — моя родная сестра."
-    "Это бы пошло на пользу моему образу студента!"
-    "Если моей сестре так мало лет, ну разве мой возраст может быть больше двадцати?"
-    "Впрочем, когда то, может быть, Айко придётся познакомить с Касуми."
-    "И неправда раскроется."
+    show Day_Kasumi_School_Uniform_Hands_Behind_Back Normal_Silent with Dissolve( my_dissolve_01 ) 
     
-    kasumi "Так вот значит кем вам приходится Макото-сан… А ваша сестра, она не была против, что вы выносите старые вещи её отца?"
+    "Я рассказал Касуми про Айко. Про её и своего отца."
+    "Правда умолчал некоторые подробности о нашей жизни, в основном связанные с моим безвылазным сидением дома."
+    "Наверное не стоило мне рассказывать и другие подробности. Мог бы сказать что Айко — моя родная сестра. Это бы пошло на пользу моему образу студента!"
+    
+    "Если моей сестре так мало лет, ну разве мой возраст может быть больше двадцати?"
+    "Впрочем, когда то, может быть даже очень скоро, Айко придётся познакомить с Касуми. И неправда раскроется."
+    
+    show Day_Kasumi_School_Uniform_Hands_Behind_Back Normal_Say with Dissolve( my_dissolve_01 ) 
+    
+    kasumi "Так вот значит кем вам приходится Макото-сан... А ваша сестра, она не была против, что вы выносите старые вещи её отца?"
+    
+    show Day_Kasumi_School_Uniform_Hands_Behind_Back Normal_Silent with Dissolve( my_dissolve_01 ) 
+    
     kenji "Айко то? Маленькая была она совсем, когда он погиб. Не помнит его. Поэтому начихать ей на его вещи. Пока я мусор выносил, она смылась из дома, с подружками."
+    
+    show Day_Kasumi_School_Uniform_Hands_Behind_Back Normal_Say with Dissolve( my_dissolve_01 ) 
+    
     kasumi "С подружками?"
+    
+    show Day_Kasumi_School_Uniform_Hands_Behind_Back Normal_Silent with Dissolve( my_dissolve_01 ) 
+    
     kenji "Ага."
     
-    "Хорошо бы, чтобы я сейчас вдруг не встретился с Айко и её подружками."
-    "Впрочем на поезде ей ехать некуда."
+    "Хорошо бы, чтобы я сейчас вдруг не встретился с Айко и её подружками. Впрочем на поезде ей ехать некуда."
     "Разве что на море, но на пляж — это совсем в другую сторону."
-    "А то что Касуми спросила про Айко и её отца."
-    "Наверное сама Касуми переживает из-за смерти своих родителей."
+    
+    hide Day_Kasumi_School_Uniform_Hands_Behind_Back with Dissolve( my_dissolve_03 ) 
+    
+    "А то что Касуми спросила про Айко и её отца. Наверное сама Касуми переживает из-за смерти своих родителей."
     "Может, конечно, как и у Айко, умерли они очень давно и она их не помнит совсем."
     "Вдруг, замигали семафоры на путях, зашипел, засвистел рупор в дальнем конце перрона."
-    "Похоже там что-то объявляли, но нечего не было слышно."
-    "Хотя было очевидно — из-за поворота, из-за деревьев и кустов вынырнул поезд."
-    "Неспешно он подполз к перрону."
-    "Открыл двери."
+    "Похоже там что-то объявляли, но нечего не было слышно. Однако, судя по расписанию это был наш поезд."
+    
+    scene Day_Shaked_Train with Dissolve( my_dissolve_05 ) 
     
     "Всю дорогу в поезде, меня занимали мысли о странном поведении моего телефона."
-    "Надо же, так учудил и прямо в такой момент!"
-    "Ну просто закон подлости какой-то!"
+    "Надо же, так учудил и прямо в такой момент! Ну просто закон подлости какой-то!"
     "Я рылся в карманах, доставал поочерёдно разные запчасти телефона но никак не решался поставить аккумулятор на место и включить его."
     "Вдруг этот мистический глюк проявится снова, и я опять напугаю Касуми?"
-    "Вообще, этот неприятный случай свалился на меня как ведро холодной воды."
-    "Я потерял значительную долю своей бравады и уверенности."
-    "Может мы и знакомы с Касуми уже два дня, и так хорошо ладим, но черт его знает, что она может подумать?"
-    "Вдруг не поверила, что я в самом деле взял ключи сестры."
-    "Вдруг сейчас гадает, откуда у меня этот брелочек?"
-    "Где я его взял."
-    "Я взглянул на Касуми."
-    "Но выражение её лица совершенно ничего не выражала."
-    "Было таким же спокойным как и обычно."
-    "По её лицу пробегали тени от столбов, деревьев и прочих предметов что проносились за окном."
-    "Но глаза девушки никак не реагировали на яркий свет и тень и сосредоточено смотрели неизвестно куда."
-    "Вскоре лицо Касуми полностью погрузилось в тень."
-    "Долина, в которой расположился наш город - заканчивалась, и мы подъезжали к горам."
     
-    "На остановке где мы вышли — никогда не был."
+    "Вообще, этот неприятный случай свалился на меня как ведро холодной воды. Я потерял значительную долю своей бравады и уверенности."
+    "Может мы и знакомы с Касуми уже два дня, и так хорошо ладим, но черт его знает, что она может подумать?"
+    "Вдруг не поверила, что я в самом деле взял ключи сестры. Вдруг сейчас гадает, откуда у меня этот брелочек? Где я его взял?"
+    
+    scene Day_Sakura_Station with Dissolve( my_dissolve_05 )
+    
+    "На остановке где мы вышли — я был впервые."
     "Хотя я вообще не часто езжу в поездах а в этом направлении ехал и вовсе в первый раз."
-    "Всё здесь было не знакомо, даже воздух тут был свежее и не такой пыльный."
-    "Я естественно не знал, куда нам надо идти."
-    "Точнее, я несколько раз просмотрел маршрут на карте, и вроде как идти требовалось совсем не далеко."
-    "Однако карта и реальная жизнь это совсем разные вещи."
-    "Да и воспользоваться её прямо сейчас я не решался."
+    
+    "Всё здесь было не знакомо, даже воздух тут был свежее и не такой пыльный, как в городе."
+    "Я естественно не знал, куда нам надо идти. Точнее, я несколько раз просмотрел маршрут на карте, и вроде как идти требовалось совсем не далеко."
+    "Однако карта и реальная жизнь это совсем разные вещи. Да и воспользоваться её прямо сейчас я не решался."
     "Не решался включить телефон и посмотреть точно, куда же нам нужно."
+    
+    scene Day_Open_Landscape_Static with Dissolve( my_dissolve_05 )
+    
     "Впрочем, найти дорогу к нужному месту оказалось совсем несложно."
-    "Ещё со станции я приметил пару тонких металлических дымовых труб именно в той стороне куда нам надо."
-    "Наверняка эти трубы выбрасывали дым от сжигаемого мусора."
-    "Это был хороший ориентир."
-    "Кроме того — это был не жилой район а промзона."
-    "Улицы широкие, прямые, и никаких переулков или виляющих троп."
-    "По обочинам только глухие бетонные заборы."
-    "Не заблудишься."
+    "Ещё из поезда, я приметил пару тонких металлических дымовых труб именно в той стороне куда нам надо."
+    "Наверняка эти трубы выбрасывали дым от сжигаемого мусора. Это был хороший ориентир."
+    "Кроме того — за городом улицы переплетались не в такой запутанный клубок как в городе."
+    "И мы шли по одной лишь улице, никуда не сворачивая."
+    
+    scene Trash_Factory_Gate_Static with Dissolve( my_dissolve_05 )
+    
     "Через некоторое время, мы практически вплотную подошли к дымовым трубам."
     "Местность, примерно совпадала с тем что я видел на карте."
     "Бетонный забор, вдоль которого мы шли всё это время, расступился."
     "Ворот здесь не было, только шлагбаум и стеклянная пустая будка охранника."
-    "Похоже, что и в этот раз Касуми решила не идти со мной."
-    
-    kasumi "Я здесь подожду, Танака-сан."
-    
-    "Оставлять её одну конечно не хотелось."
-    "Чёрт его знает, что опять может произойти."
-    "Но вряд ли в этой промзоне водятся хулиганы."
-    "Я внимательно осмотрел пустынную улицу, в поисках подозрительных личностей."
-    "Но никого не было."
+    "Похоже, что и в этот раз Касуми решила не идти со мной. Оставлять её одну конечно не хотелось."
+    "Чёрт его знает, что опять может произойти. Но вряд ли в этой глуши водятся хулиганы."
+    "Я внимательно осмотрел пустынную улицу, в поисках подозрительных личностей. Но никого не было."
     "Тогда я оставил Касуми а сам прошёл за шлагбаум."
+    
     "Как и ранее, на предыдущем полигоне для мусора, я не увидел ни гор металлолома, ни прессов."
     "Просторная асфальтовая площадка и длинное, трёхэтажное здание с множеством ворот для проезда большой техники."
     "Возможно это был гараж."
@@ -2697,12 +2728,12 @@ label day_02:
     "С ним, он решительно направился ко мне."
     "Я отступил и замахал руками."
     
-    kenji "Э… Нет, нет! Я тут по другому делу совсем!"
+    kenji "Э... Нет, нет! Я тут по другому делу совсем!"
     trash_man_02 "По другому? Это по какому же?"
     
     "Я рассказал про выброшенный прибор, и про свои сегодняшние похождения."
     
-    trash_man_02 "Хм… Вот значит как… Всё правильно, мусор на переработку отправляется действительно, только завтра. И повезло тебе, что ты пришел за электроникой. Она у нас в отдельном помещении хранится а не в общей куче. Пойдём отведу. Там есть человек, он поможет тебе."
+    trash_man_02 "Хм... Вот значит как... Всё правильно, мусор на переработку отправляется действительно, только завтра. И повезло тебе, что ты пришел за электроникой. Она у нас в отдельном помещении хранится а не в общей куче. Пойдём отведу. Там есть человек, он поможет тебе."
     
     "Парень в белом халате скрылся за открытыми воротами в здании."
     "Я поспешил за ним."
@@ -2723,9 +2754,9 @@ label day_02:
     "Я описал прибор."
     "Слушая мои слова, парень заведовавший складом, почему-то нахмурил брови."
     
-    trash_man_03 "Блок питания для рации говоришь, жёлтый…"
-    kenji "Ага! Там ещё один циферблат сломан, и потёрт он. Слегка…"
-    trash_man_03 "Да… Есть такой прибор… Но видишь ли, вещь особая, военная…"
+    trash_man_03 "Блок питания для рации говоришь, жёлтый..."
+    kenji "Ага! Там ещё один циферблат сломан, и потёрт он. Слегка..."
+    trash_man_03 "Да... Есть такой прибор... Но видишь ли, вещь особая, военная..."
     
     "Он замолчал и отвёл глаза в сторону."
     "Меня его поведение немного напугало."
@@ -2738,7 +2769,7 @@ label day_02:
     
     kenji "Ну да, военная. Но и старая. И не работает уже, наверное. Кому эта дрянь нужна?"
     
-    trash_man_03 "Да военная и старая! А раньше применяли нестандартные материалы. Д Благородные металлы, и даже - драгоценные…"
+    trash_man_03 "Да военная и старая! А раньше применяли нестандартные материалы. Д Благородные металлы, и даже - драгоценные..."
     
     "Ба!"
     "Драгоценные металлы?"
@@ -2749,7 +2780,7 @@ label day_02:
     "Я не богат, и моей щедрости есть предел."
     
     kenji "Благородные? И даже золото?"
-    trash_man_03 "И золото тоже. Но это не главное, часто применяли опасные материалы. И в общем… Долго объяснять, вот лучше сам погляди…"
+    trash_man_03 "И золото тоже. Но это не главное, часто применяли опасные материалы. И в общем... Долго объяснять, вот лучше сам погляди..."
     
     "Он кивком головы указал мне в сторону своего стола."
     "Я подошёл к столу поближе."
@@ -2762,7 +2793,7 @@ label day_02:
     "Верхняя крышка его была снята и он был абсолютно пуст."
     "А то что лежало вокруг него, очевидно в прошлом было его потрохами."
     
-    trash_man_03 "Ты уж извини нас! Вещь была военная и старая. А в те годы всякое бывало, иногда применялись ядовитые или радиоактивные материалы, полоний например или цезий. У нас особый приказ по таким случаям — утилизировать немедленно, и если чего опасного найдём — принять меры. Даже дозиметр для таких случаев имеется. Вот если бы ты вчера пришел, ещё бы успел забрать…"
+    trash_man_03 "Ты уж извини нас! Вещь была военная и старая. А в те годы всякое бывало, иногда применялись ядовитые или радиоактивные материалы, полоний например или цезий. У нас особый приказ по таким случаям — утилизировать немедленно, и если чего опасного найдём — принять меры. Даже дозиметр для таких случаев имеется. Вот если бы ты вчера пришел, ещё бы успел забрать..."
     
     "*  *  *"
     
@@ -2805,7 +2836,7 @@ label day_02:
     "Вот только сказать такое — не просто."
     "Особенно такому трусу как мне."
     "Как же это сделать?"
-    "Начну например так «А что если нам сходить…»."
+    "Начну например так «А что если нам сходить...»."
     "Нет."
     "Не пойдёт."
     "Надо быть увереннее, никаких «а что если»."
@@ -2827,7 +2858,7 @@ label day_02:
     "Только говорить надо твёрдо и чётко, это очень важный момент!"
     "Я набрал побольше воздуха в грудь, но вспомнил о том как облажался утром."
     "Тогда я убавил давление в лёгких на половину."
-    "Немного помассировал горло, мысленно сосчитал до трёх…"
+    "Немного помассировал горло, мысленно сосчитал до трёх..."
     
     kasumi "Танака-сан!"
     
@@ -2835,7 +2866,7 @@ label day_02:
     "Хорошо хоть — не раскашлялся, но дыхание перехватило основательно и ответил я почти шёпотом."
     
     kenji "Да?"
-    kasumi "Танака-сан! Вы… не заняты завтра?"
+    kasumi "Танака-сан! Вы... не заняты завтра?"
     
     "*  *  *"
     
@@ -2864,7 +2895,7 @@ label day_02:
     "С другой стороны, сейчас начнутся её разговоры про клубы извращенцев и прочие небылицы."
     
     aiko "Пришел?"
-    kenji "Ага… Есть чего пожевать?"
+    kenji "Ага... Есть чего пожевать?"
     aiko "Сейчас!"
     
     "Либо Айко забыла про события, что произошли утром, либо что-то другое."
@@ -2876,14 +2907,14 @@ label day_02:
     "Чтобы не сидеть в тишине, я включил телевизор, всё тот же новостной канал."
     "Правда выпуска новостей сейчас не было, начиналась какая-то авторская передача."
     
-    tv "Здравствуйте дорогие друзья и враги…"
+    tv "Здравствуйте дорогие друзья и враги..."
     
     "С экрана на меня смотрел какой-то зализанный франт, на лице его сияла улыбка до ушей."
     "Физиономия его мне была неприятна."
     "Но наверное я сам сейчас выглядел не хуже."
     "Мысли о Касуми и последнем разговоре с ней, невольно вызывали глупую улыбку на моем лице и я щурился как кот на солнышке."
     
-    aiko "Тебе… кажется письмо пришло…"
+    aiko "Тебе... кажется письмо пришло..."
     
     "Айко стояла возле мойки и смотрела на меня."
     "О чём это она?"
@@ -2893,9 +2924,9 @@ label day_02:
     "Зачем ему понадобилось писать письма?"
     
     kenji "В смысле письмо? Бумажное? От папы что-ли?"
-    aiko "Ага, бумажное. Нет не от него. И это и не письмо, скорее записка… Была в дверь вставлена. Может ошиблись? Имени не написано."
+    aiko "Ага, бумажное. Нет не от него. И это и не письмо, скорее записка... Была в дверь вставлена. Может ошиблись? Имени не написано."
     kenji "Если имени не написано, с чего решила что именно мне? Может в самом деле ошиблась. Может подружки тебе написали? Кто мне то письма писать будет, а тем более записки?"
-    aiko "Ну не знаю… Я подумала… Вот сам посмотри…"
+    aiko "Ну не знаю... Я подумала... Вот сам посмотри..."
     
     "Айко передала мне маленький, сложенный пополам листочек."
     "Листок был явно вырван из школьной тетради — он был разлинован в клетку."
@@ -2915,7 +2946,7 @@ label day_02:
     "Листочек шуршал и лихорадочно трясся."
     "Похоже что тряслись мои руки."
     
-    aiko "Значит тебе эта записка…"
+    aiko "Значит тебе эта записка..."
     
     "Я отодвинул записку от лица и перевёл глаза на Айко."
     "Чёрт!"
@@ -2940,7 +2971,7 @@ label day_02:
     "Оказывается у Касуми есть парень!"
     "Я не просто чучело, а чучело, который лезет к чужим девушкам."
     
-    aiko "Это Касуми? Это она⁈"
+    aiko "Это Касуми? Это она?!"
     
     "Перед моими глазами вдруг возникла Касуми."
     "Точнее её фото на моём телефоне."
@@ -2958,7 +2989,7 @@ label day_02:
     
     "Похоже бурная фантазия Айко вновь сработала не туда."
     
-    aiko "Я же говорила что это не лучшая идея! Вот видишь, её парень заметил тебя. Хорошо что не сообщил в полицию. А ты мне сказал, что будешь фотографировать эти… ре-фе-ренсы. Обманывать нехорошо!"
+    aiko "Я же говорила что это не лучшая идея! Вот видишь, её парень заметил тебя. Хорошо что не сообщил в полицию. А ты мне сказал, что будешь фотографировать эти... ре-фе-ренсы. Обманывать нехорошо!"
     
     "Айко самодовольно улыбалась."
     "Мне после получения этой чертовой записки белый свет был не мил."
@@ -2969,7 +3000,7 @@ label day_02:
     "Я выскочил из-за стола."
     
     kenji "Да иди ты к черту!"
-    aiko "Ой! Кендзи…"
+    aiko "Ой! Кендзи..."
     
     "Кажется Айко хотела сказать ещё что-то, но я не услышал."
     "Я пулей поднялся на второй этаж, скрылся в своей комнате и запер за собой дверь."
@@ -3028,7 +3059,7 @@ label day_02:
     "Такой-же, никчёмный хикикомори, может и возрастом меня не обошёл."
     "Вот и боится показаться мне на глаза, чтобы не оказалось так, что я по всем параметрам его лучше."
     
-    kenji "Э… Нет братец! Так дело не пойдёт!"
+    kenji "Э... Нет братец! Так дело не пойдёт!"
     
     "Конечно, Касуми не видит ничегошеньки, парнем её может стать любой ублюдок."
     "Небось там такое страшилище, что я на его фоне просто Апполон!"
@@ -3041,7 +3072,7 @@ label day_02:
     "Да и как встретить его?"
     "За два дня я его и не видел ни разу."
     
-    kenji "Да уж! Что это за парень то такой? Какой-то тип два дня подряд гуляет с его девчонкой, а он только записочки шлёт и сам не появляется. Как же его встретить? А? А-ха… А-ха-ха-ха-ха!"
+    kenji "Да уж! Что это за парень то такой? Какой-то тип два дня подряд гуляет с его девчонкой, а он только записочки шлёт и сам не появляется. Как же его встретить? А? А-ха... А-ха-ха-ха-ха!"
     
     "Ещё одна радостная мысль пронеслась в моём мозгу и заставила меня расхохотаться."
     "Я подумал о том, что парень Касуми — и не парень ей вовсе."
@@ -3073,7 +3104,7 @@ label day_02:
     "Я вновь расхохотался."
     "Внезапно в дверь постучали, я мигом утих."
     
-    kenji "Э… Кто там?"
+    kenji "Э... Кто там?"
     aiko "Кендзи? У тебя там всё в порядке? Чего ты там так хохочешь?"
     kenji "Ой Айко отстань. Анекдот вспомнил."
     
@@ -3087,9 +3118,9 @@ label day_02:
     kenji "И завтра у нас свидание!"
     aiko "И ты пойдёшь?"
     kenji "Пойду конечно, по твоему я кто?"
-    aiko "Не ходил бы ты…"
-    kenji "Чего⁈"
-    aiko "У меня плохое предчувствие… не ходил бы ты."
+    aiko "Не ходил бы ты..."
+    kenji "Чего?!"
+    aiko "У меня плохое предчувствие... не ходил бы ты."
     kenji "Ох Айко, ещё бы я верил в твоё предчувствие. Не говори мне ерунды. Я могу идти куда хочу!"
     
     "Айко вздохнула."

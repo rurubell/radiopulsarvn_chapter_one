@@ -15,5 +15,6 @@ define someones_cry = Character( "Крик", color="#FF3CDA" )
 define kenji_phone = Character( "Телефон", color="#C5001D" )
 define hooligan = Character( "Хулиган", color="#963CFF" )
 
-define dr_diy_voice = Character( "Голос", color="#B3FF00" )
-define dr_diy = Character( "Парень в белом халате", color="#B3FF00" )
+define dr_diy_voice = Character( "Голос", color="#BABD63" )
+define dr_diy = Character( "Парень в белом халате", color="#BABD63" )
+define kreosan = Character( "Наоки", color="#BD6363" )
